@@ -10,7 +10,7 @@ KEY = re.compile(r"акци|скидк|бесплатн|пробн|перв\w* (
                  r"дн[её]м рождени\w* скид|−\s?\d+\s?%|-\s?\d+\s?%|\d+\s?% скид|по будням|счастлив\w* час|"
                  r"абонемент|спецпредложени|выгод|кэшб|cashback|sale|promo", re.I)
 LINK = re.compile(r"akci|aktsi|action|sale|skidk|promo|special|offer|news|novost|акци|скидк|предложени|пробн|trial|free", re.I)
-NOISE = re.compile(r"cookie|персональных данных|политик\w* конфиденц|©|все права", re.I)
+NOISE = re.compile(r"казино|casino|слот|букмекер|ставк|1win|покердом|винлайн|бонус\w* при пополн|влажност|cookie|персональных данных|политик\w* конфиденц|©|все права", re.I)
 
 
 def get(url):
