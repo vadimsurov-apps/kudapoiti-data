@@ -21,6 +21,13 @@ RULES = [
   ("horse", '["sport"="equestrian"]["leisure"~"horse_riding|sports_centre"]'),
   ("lasertag", '["sport"~"laser_tag|paintball"]'), ("bowling", '["leisure"="bowling_alley"]'),
   ("library_kids", '["amenity"="library"]["name"~"[Дд]етск"]'),
+  ("swimming", '["leisure"="sports_centre"]["sport"~"swimming"]["name"]'),
+  ("swimming", '["leisure"="swimming_pool"]["name"]'),
+  ("sports_school", '["leisure"="sports_centre"]["name"~"[Дд]етск|ДЮСШ|СШОР|СДЮШОР|[Шш]кола"]'),
+  ("dance", '["leisure"="dance"]["name"]'),
+  ("kids_center", '["amenity"="community_centre"]["name"~"[Дд]етск|[Тт]ворчеств|[Юю]ност"]'),
+  ("kids_center", '["amenity"~"studio|music_school|arts_centre"]["name"~"[Дд]етск|[Шш]кола|[Сс]тудия"]'),
+  ("kids_center", '["club"]["name"~"[Дд]етск|[Сс]тудия|[Шш]кола"]'),
   ("park", '["leisure"="park"]["name"]["wikidata"]'),
   ("attraction", '["tourism"="attraction"]["name"]'),
 ]
