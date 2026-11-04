@@ -60,6 +60,7 @@ def main():
     out.sort(key=lambda x: x["id"])
     res = {"version": datetime.date.today().isoformat(), "source": "© OpenStreetMap contributors, ODbL",
            "count": len(out), "places": out}
+    import os; os.makedirs("auto", exist_ok=True)
     json.dump(res, open("auto/osm-moscow.json", "w"), ensure_ascii=False, separators=(",", ":"))
     by = {}
     for x in out: by[x["kind"]] = by.get(x["kind"], 0) + 1
