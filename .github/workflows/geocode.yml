@@ -1,0 +1,19 @@
+name: Проверка точности координат (OSM)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "11 23 * * 0"   # раз в неделю, пн 02:11 МСК — новые места
+permissions:
+  contents: write
+jobs:
+  geocode:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 pipeline/geocode.py
+      - run: |
+          git config user.name "kudapoiti-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add auto/
+          git diff --cached --quiet || (git commit -m "Координаты: отчёт проверки по OSM" && git pull --rebase && git push)
