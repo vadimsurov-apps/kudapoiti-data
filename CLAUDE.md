@@ -30,9 +30,11 @@
 
 ## Категории фильтра (колонка «Категории», через запятую)
 parks, playcenters, trampolines, amusement, ropes (верёвочные парки), climbing (скалодромы), karting, skate (скейт-парки,
-памп-треки), sport (спортивные секции), dance (танцы и балет), quests, museums, science, shows, cinema, masterclass, tours,
+памп-треки), спорт по видам: martial (самбо, дзюдо, борьба, карате, бокс), football, racket (падел, теннис, бадминтон),
+gymnastics (гимнастика, акробатика), ballgames (баскетбол, волейбол), hockey (хоккей, фигурное катание), chess,
+sport (прочие секции), dance (танцы и балет), quests, museums, science, shows, cinema, masterclass, tours,
 animals, water, pools, transport, winter, food. Категории `active` больше нет — не использовать.
-Сейчас мало мест в dance и sport: в candidates есть dance (100) и sports_school (94) — брать в приоритет после кафе.
+Сейчас мало мест в dance и спортивных секциях: в candidates есть dance (100) и sports_school (94) — брать в приоритет после кафе.
 
 ## Ежедневная работа (запускается по расписанию)
 1. Снять просроченные акции из deals.json; для акций с checked старше 30 дней — перепроверить страницу (WebFetch).

@@ -64,6 +64,15 @@ def classify(pid, types, tags, name):
         cats = [c for c, ts in TYPES if ts & types]
         if "VR" in name or "Аэротруба" in name:
             cats = ["quests"] if "VR" in name else ["amusement"]
+    SPORT = [("martial", r"самбо|дзюдо|борьб|карат|тхэквон|бокс|айкидо|единоборств|ушу|кикбокс"),
+             ("football", r"футбол|мини-футбол|школа мяча"), ("racket", r"падел|теннис|бадминтон|сквош"),
+             ("gymnastics", r"гимнаст|акробат|спортивн\w* гимн|батут.*секц"), ("ballgames", r"баскетбол|волейбол"),
+             ("hockey", r"хокке|фигурн"), ("chess", r"шахмат|шашк")]
+    if "sport" in cats or "спортивная секция" in types:
+        for c, rx in SPORT:
+            if re.search(rx, name, re.I):
+                cats = [c] + [x for x in cats if x != "sport"]
+                break
     if re.search(r"[Тт]анц|[Бб]алет|[Dd]ance", name):
         cats = ["dance"] + [c for c in cats if c != "sport"]
     if "animals" not in cats and "животные" in tags and not ({"парк", "детская площадка"} & types):
