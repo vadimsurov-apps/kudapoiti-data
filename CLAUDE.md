@@ -7,7 +7,7 @@
   командой `python3 tools/xlsx_to_json.py data/kuda-poiti-mesta.xlsx places.json`. Руками places.json не править.
 - `deals.json` — акции/скидки/пробные занятия. Приложение показывает только действующие (`until` ≥ сегодня или пусто).
   Поля: id, place_id (id места из places.json), kind (trial|free|discount|birthday|promo), title, details, code, until, url, checked.
-- `icons/<id>.png` + `icons/index.json` — иконки новых мест (с 692-го), приложение скачивает их само.
+- `icons/<id>.png` + `icons/index.json` + `icons/versions.json` (хэши — приложение перекачивает перерисованные) — иконки новых мест (с 692-го), приложение скачивает их само.
   Исходники SVG — `icons-src/`. Рендер: `python3 tools/render_icons.py <id> ...`.
 - `auto/candidates.json` — кандидаты в места из OpenStreetMap (робот, раз в неделю).
 - `auto/promo-snippets.json` — фразы про акции с сайтов мест (робот, каждую ночь). `new: true` — новое/изменилось.

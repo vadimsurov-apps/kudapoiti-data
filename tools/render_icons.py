@@ -10,4 +10,8 @@ for pid in sys.argv[1:]:
     cairosvg.svg2png(url=src, write_to=os.path.join(root, "icons", f"{pid}.png"), output_width=192, output_height=192)
 ids = sorted(f[:-4] for f in os.listdir(os.path.join(root, "icons")) if f.endswith(".png"))
 json.dump(ids, open(os.path.join(root, "icons", "index.json"), "w"))
+# версии: хэш картинки — если иконку перерисовали, приложение скачает её заново
+import hashlib
+ver = {i: hashlib.md5(open(os.path.join(root, "icons", i + ".png"), "rb").read()).hexdigest()[:8] for i in ids}
+json.dump(ver, open(os.path.join(root, "icons", "versions.json"), "w"), indent=0)
 print("иконок на GitHub:", len(ids))
