@@ -39,6 +39,24 @@ def query(q):
     return None
 
 
+def photon(q, lat, lon):
+    """Запасной геокодер на данных OSM (komoot Photon) — когда Nominatim не нашёл или ограничил запросы."""
+    url = "https://photon.komoot.io/api/?" + urllib.parse.urlencode({"q": q, "limit": 3, "lat": lat, "lon": lon})
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40) as r:
+            feats = json.load(r).get("features", [])
+    except Exception as e:
+        print("  photon:", e, file=sys.stderr); return []
+    out = []
+    for f in feats:
+        pr = f.get("properties", {}); lo, la = f["geometry"]["coordinates"]
+        out.append({"lat": la, "lon": lo, "address": {"house_number": pr.get("housenumber")},
+                    "category": "building" if pr.get("osm_key") == "building" else pr.get("osm_key"),
+                    "display_name": ", ".join(x for x in [pr.get("street"), pr.get("housenumber"), pr.get("city")] if x),
+                    "osm_type": pr.get("osm_type"), "osm_id": pr.get("osm_id"), "src": "photon"})
+    return out
+
+
 def main():
     places = json.load(open("places.json"))["places"]
     rep = json.load(open("auto/geocode-report.json")) if os.path.exists("auto/geocode-report.json") else {}
@@ -52,12 +70,14 @@ def main():
         if not only and (p.get("coord_exact") or rep.get(pid, {}).get("status") == "high"): continue
         addr = p.get("address") or ""
         if not re.search(r"\d", addr) or p.get("lat") is None: continue
-        if not only and pid in old and old[pid].get("addr") == addr: continue
+        if not only and pid in old and old[pid].get("addr") == addr and old[pid].get("status") == "house": continue
         q = clean(addr)
         region = "Москва" if dist(p["lat"], p["lon"], 55.7558, 37.6173) < 30000 else "Московская область"
         res = query(f"{q}, {region}") or []
         if not res and region == "Москва":
             res = query(f"{q}, Московская область") or []
+        if not any((x.get("address") or {}).get("house_number") for x in res):
+            res = res + photon(q, p["lat"], p["lon"])
         best = None
         for x in res:
             lat, lon = float(x["lat"]), float(x["lon"])
@@ -74,7 +94,7 @@ def main():
         print(i, pid, r["status"], r.get("moved_m"), q, flush=True)
         if len(out) % 20 == 0:
             json.dump(out, open(path, "w"), ensure_ascii=False, indent=0)
-        time.sleep(1.1)
+        time.sleep(1.5)
     json.dump(out, open(path, "w"), ensure_ascii=False, indent=0)
     from collections import Counter
     print("Итого:", Counter(v["status"] for v in out.values()))
