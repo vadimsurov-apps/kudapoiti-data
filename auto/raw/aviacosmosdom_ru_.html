@@ -1,0 +1,768 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+
+    <link href="/favicon.png" rel="icon" type="image/png" />
+
+	  <base href="https://aviacosmosdom.ru/" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="ЦДАиК, Музей космонавтики Москва, центральный дом авиации, Музей гагарина" />
+  <meta name="description" content="Центральный дом авиации и космонавтики ДОСААФ России" />
+  <title>Центральный дом авиации и космонавтики ДОСААФ России</title>
+  <link href="/index.php?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+  <link href="/index.php?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+  <script type="text/javascript" src="/media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="/media/system/js/caption.js"></script>
+
+
+    
+    
+	
+
+
+
+
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/dist/css/bootstrap3.css?ver=21" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="/dist/css/carousel.css?ver=8" rel="stylesheet">
+    
+    
+	    
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+
+    <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="/dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="/assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+		
+		<script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>    
+		<script type="text/javascript" src="/js/script.js"></script>    
+		
+						
+		<link href="/css/jquery.fancybox.css" rel="stylesheet" type="text/css" />	
+
+
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn.kassy.ru/museum/kassy_widget.css?ver=4&10" />
+<script src="https://cdn.kassy.ru/museum/kassy_widget.js?ver=4&10"></script>
+
+
+
+
+	<link rel="stylesheet" href="/templates/aviacosmosdom/css/all.css">
+	<link rel="stylesheet" href="/templates/aviacosmosdom/css/v4-shims.css">
+	<link rel="stylesheet" href="/templates/aviacosmosdom/css/animate.css">
+			
+
+		<script type="text/javascript">	
+		
+			jQuery.noConflict();	
+
+	        jQuery(document).ready(function() {	           
+		    
+			      
+			       
+			    
+                jQuery(".close_zakaz_small").click(function() {	 			
+			        jQuery(".bg_z").fadeOut();
+			        jQuery(".zayvka_head").fadeOut();	
+			    });
+				
+				jQuery(".bg_z").click(function() {			       
+			        jQuery(".bg_z").fadeOut();
+			        jQuery(".zayvka_head").fadeOut();	
+			    });
+  
+			    jQuery(".callformbutton").click(function() {
+			        jQuery(".callform").fadeIn();				        		 			 		
+			        jQuery(".bg_z").fadeIn();
+			    });
+
+			    
+	           	
+	           	jQuery(".lightitem").fancybox({				
+				});
+	           	jQuery(".gallery a").fancybox({				
+				});
+	           	
+		
+
+			})
+			
+	
+            
+            
+             function zakazat(formName,goal){
+                var i;
+                jQuery('#'+formName+' input[type=text]').each(function() {
+                	i=0;
+			        if(jQuery(this).val()==""){
+			            alert('Заполните все поля!');
+                        return false;
+			        }else{
+			            i=1;
+			        }
+			    });	
+				   
+				    
+				    if(jQuery('.agree').is(':checked')) {
+					       if (i==1){	
+					       							           		           
+					           	 	           
+						        
+						      	 jQuery('#'+formName).submit();
+		
+					       }
+					} else {
+					    alert('Необходимо дать согласие на обработку ваших персональных данных!');
+					}  
+				
+				
+				
+				
+            }
+			
+			
+			
+			</script>
+			
+			
+			
+
+
+ 
+	
+			
+			
+
+</head>
+<body>
+	
+
+	<div style="display: none; width:320px;" id="agreeform" class="zayvka_head">
+	<a class="close_zakaz_small"></a>
+	Мы используем cookies для быстрой и удобной работы сайта aviacosmosdom.ru.
+	Продолжая пользоваться сайтом, вы принимаете условия обработки персональных данных. 
+	<br>
+	<br>
+	<button onclick="document.cookie = 'agree=yes';location.reload();" style="padding: 7px 20px;">Согласен</button>
+	</div>
+				
+	
+	
+	
+	<form class="zayvka_head callform" method="post" action="https://aviacosmosdom.ru/send.php" name="topForm1" id="topForm1" style="display: none;"  ENCTYPE="multipart/form-data">
+		           <a class="close_zakaz_small"></a>
+				   <input type="text" placeholder="Имя ребенка и возраст*"      class="text_pole" name="fio" id="fio1">
+				   <input type="text" placeholder="Телефон для связи*"  class="text_pole" name="phone" id="phone1">  
+				   <input type="text" placeholder="E-mail, ТГ или ватсап *"    class="text_pole" name="email" id="email1">
+				   <label for="smeny1" style="font-size: 12px;">Дни недели и время, в которые<br> вам удобно приходить на занятия</label>
+				   <textarea name="smeny" id="smeny1"></textarea>
+				   
+				   
+		
+		  <div class="form-group center">
+			     <div class='form-group center'><img src='/capt/2.jpg' style='margin:auto; display: block;'></div>
+							   		 <input type='hidden' name='imgnum' value='2' />			
+							  
+				<input type="text" class="form-control" name="capt" placeholder="Введите числа с картинки"/>
+		  </div>	
+		  
+		  
+		  
+		  <div class="form-check">
+		    <input type="checkbox" name="agree"  class="form-check-input agree" id="exampleCheck1">
+		    <label class="form-check-label" for="exampleCheck1">
+		    	<span class="fs12px"  style="font-size: 12px;" >Согласие на обработку персональных данных</span></label>
+		  </div>
+				   
+				   <a class="send" onclick="zakazat('topForm1','target1');">Оставить заявку</a>
+			
+		
+				  
+	</form>
+	
+
+		    
+		      
+			       
+
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      
+      	
+      	
+      	 <a href="/" class="logo1"></a>
+      	 <a href="/" class="navbar-brand">
+      	 	
+      	 	
+      	 	
+      	 	Центральный дом авиации и космонавтики ДОСААФ России
+      	 	
+      	 	<br/>      	 	
+      	 	
+      	 </a>
+      	 		 
+  	 	 <a class="linkhead" href="/uslugi#zakazeks">Заказ экскурсий:</a> <b>+7 915 302-98-78    </b>
+  	 	 <span class="deskv"> &nbsp; &nbsp; | &nbsp; &nbsp;  </span>
+		 
+		 <br class="telv"/>
+  	 	 Приемная руководителя: <br class="telv"/><b> +7 (495) 614-38-61</b> <br class="telv"/>
+		 
+		
+		 <span class="deskv"> &nbsp; &nbsp; | &nbsp; &nbsp;  </span> 
+ 
+  	 	 <br class="telv"/>
+  	 	 <br class="telv"/>
+  	 	 
+  	 	 
+  	 	 <a style="cursor:pointer; font-weight: bold; color:#fff;" data-kassy-agent_id="aviacosmosdom.ru" data-kassy-ts-id="18">Купить билет</a>
+		 <br class="telv"/>
+  	 	 <br class="telv"/>
+  	 	
+  	 	 
+  	     
+      	 
+      	 <!-- a href="https://api-museum.kassy.ru/18/" class="logo3" target="_blank"></a -->
+      	 <a href="/" class="logo2"></a>
+          
+          <div class="clr"></div>
+          
+          
+          
+          
+          
+          
+          
+        <div class="navbar-header">
+          <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- div class="callformbutton">Оставить заявку</div -->
+          
+
+                    
+        </div>
+        
+       	
+  
+        <div class="navbar-collapse collapse" id="navbar">
+					<div class="moduletable">
+					<ul class="menu navbar-nav nav" id="menu"><li id="current" class="active item1"><a href="https://aviacosmosdom.ru/"><span>Главная</span></a></li><li class="parent item31"><a href="/novosti"><span>Новости</span></a></li><li class="item10"><a href="/uslugi"><span>Экскурсии</span></a></li><li class="item43"><a href="/master-klassy"><span>Мастер-классы</span></a></li><li class="item42"><a href="/obuchenie"><span>Обучение</span></a></li><li class="parent item44"><a href="/granty"><span>Гранты</span></a></li><li class="item41"><a href="http://aviacosmosdom.tilda.ws/" target="_blank"><span>Архивные фото</span></a></li><li class="item11"><a href="/kontakty"><span>Контакты</span></a></li></ul>		</div>
+	
+				
+        </div>
+  
+  
+    </nav>    
+	
+	
+	
+		
+	
+    
+        		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+				  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				  
+				  
+				</ol>
+				<div class="carousel-inner" role="listbox">
+
+					
+				   
+
+				  
+				  <div class="item active">	
+					     	  			
+		  				 	 <img src="/images/slides/kiberavia.jpg">	
+		  				 	  <div class="container">
+						            <div class="carousel-caption">	
+						              <h2><a href="https://aviacosmosdom.ru/obuchenie" style="color: #fff;"><u>ЦДАиК приглашает детей и взрослых на занятия</u></a></h2>						              	
+						             										  <p>
+									 
+									  <a role="button" href="#" class="callformbutton btn btn-lg  btn-warning" title="">Записаться</a>
+									  </p>
+						            </div>
+					          </div>   
+    				     
+				  </div>	
+				
+				  	
+					  
+				
+				   <div class="item">	
+					     	  			
+		  				 	 <img src="/images/slides/master-klassy.jpg">	
+		  				 	  <div class="container">
+						            <div class="carousel-caption">	
+						              <h2>
+						              	Мастер-классы в Центральном доме авиации и космонавтики
+						              </h2>						              	
+						             		             
+						              <p><a role="button" href="/uslugi/670-master-klassy" class="btn btn-lg  btn-warning" title="">Узнать больше</a></p>
+						            </div>
+					          </div>   
+    				     
+				  </div>	
+				  
+
+	
+
+	
+		
+	  				
+
+				
+				</div>
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+				</div>
+    	
+        
+
+		<!-- br>
+		<h3 style="text-align: center; color: #ff0000">Музей для посещения закрыт до 1 сентября</h3>
+		<br -->
+                  
+    
+    
+			
+	<div class="container innerpage">
+			
+
+        <div class="row">     		        								 	
+	         <div class="col-md-12 gallery">		 
+
+			
+                        			
+								
+                        		
+																
+									<br>
+									<br>
+										  
+									<h3 class="center featurette-heading2"><span>Анонсы</span></h3>														      
+									<div class="clr"></div>
+											  
+													
+                        		                        
+                        		                        	                    	
+	                        	<table class="blog" cellpadding="0" cellspacing="0">
+
+<tr>
+	<td valign="top">
+		<table width="100%"  cellpadding="0" cellspacing="0">
+		<tr>
+										<td valign="top" width="100%" class="article_column">
+				
+	<div class="itemcontainer">
+		<a href="/novosti/11-meropriyatiya/956-vzletaem-k-novym-znaniyam">
+			<table class="titleitem contentpaneopen" cellspacing="0" cellpadding="0">
+			<tr>
+								<td class="contentheading" width="100%">
+					<h3>
+											ВЗЛЕТАЕМ К НОВЫМ ЗНАНИЯМ!										</h3>
+				</td>
+							
+							
+							
+											</tr>
+			</table>
+		</a>
+<table class="bodyitem contentpaneopen" cellspacing="0" cellpadding="0">
+
+
+<tr>
+	<td valign="top" colspan="2" class="createdate">
+		31.10.2026 12:56	</td>
+</tr>
+
+
+<tr>
+<td valign="top" colspan="2">
+<a href="/images/news7/olimpiady-muzei-parki-usadby.jpg" rel="news" title="ВЗЛЕТАЕМ К НОВЫМ ЗНАНИЯМ!">
+<img class="imgtxt1" width="50%" src="/images/news7/olimpiady-muzei-parki-usadby.jpg" alt="ВЗЛЕТАЕМ К НОВЫМ ЗНАНИЯМ!">
+</a>
+
+
+<p>
+<strong>
+Наш музей присоединился к 14 сезону олимпиады          «Музеи.Парки.Усадьбы»!
+</strong>
+</p>
+<p>
+Отличные новости для всех юных исследователей, влюбленных в небо и космос! Центральный дом авиации и космонавтики (ЦДАиК) открывает свои двери для участников 14 сезона олимпиады «Музеи. Парки. Усадьбы». 
+</p>
+<p>
+С 1 сентября 2026 года по 31 марта 2027 года у школьников и дошкольников появится уникальная возможность погрузиться в историю отечественной авиации и космонавтики, отвечая на увлекательные вопросы прямо в залах одного из старейших музеев Москвы
+</p>
+<p>
+ Уникальная экспозиция: от моделей первых летательных аппаратов до личных вещей легендарных конструкторов и космонавтов. Здесь история покорения неба оживает в деталях.
+ </p>
+<p>
+Вопросы разработаны с учетом возраста участников - от простых и игровых загадок для дошкольников и учеников начальной школы до серьезных исследовательских задач для старшеклассников.
+</p>
+<p>
+  <b>Как принять участие?</b>
+  </p>
+<p>
+1. Зарегистрируйтесь на официальном портале олимпиады (<a href="https://museum.cpm.moscow/" target="_blank">museum.cpm.moscow</a>).<br />
+2. Найдите Центральный дом авиации и космонавтики в каталоге площадок.    <br />
+3. Скачайте и распечатайте бланк для ответов.<br />
+4. Приходите в музей, изучайте экспозицию, ищите ответы на вопросы и загружайте результаты в личный кабинет.
+</p>
+<p>
+ЦДАиК - идеальное место для тех, кто мечтает о полётах и исследовании Вселенной. Собирайте команду одноклассников, берите родителей и отправляйтесь за новыми открытиями!
+</p>
+
+
+<div class="clr"></div>
+
+</td>
+</tr>
+
+
+<tr>
+	<td  colspan="2">
+		<a href="/novosti/11-meropriyatiya/956-vzletaem-k-novym-znaniyam" class="btn btn-default readon">
+			Подробнее...</a>
+	</td>
+</tr>
+
+</table>
+</div>
+<span class="article_separator">&nbsp;</span>
+
+	<div class="itemcontainer">
+		<a href="/novosti/11-meropriyatiya/955-nebo-moskvy-konkurs-czdaik-dosaaf-rossii-dlya-gidov-s-prizovym-fondom-1-000-000-rublej">
+			<table class="titleitem contentpaneopen" cellspacing="0" cellpadding="0">
+			<tr>
+								<td class="contentheading" width="100%">
+					<h3>
+											Небо Москвы»: конкурс ЦДАиК ДОСААФ России для гидов с призовым фондом 1 000 000 рублей										</h3>
+				</td>
+							
+							
+							
+											</tr>
+			</table>
+		</a>
+<table class="bodyitem contentpaneopen" cellspacing="0" cellpadding="0">
+
+
+<tr>
+	<td valign="top" colspan="2" class="createdate">
+		23.09.2026 15:27	</td>
+</tr>
+
+
+<tr>
+<td valign="top" colspan="2">
+<a href="/images/news7/nebo-moskvy.jpg" rel="news" title="Небо Москвы»: конкурс ЦДАиК ДОСААФ России для гидов с призовым фондом 1 000 000 рублей">
+<img class="imgtxt1" width="50%" src="/images/news7/nebo-moskvy.jpg" alt="Небо Москвы»: конкурс ЦДАиК ДОСААФ России для гидов с призовым фондом 1 000 000 рублей">
+</a>
+
+
+
+<p>
+<strong>
+Центральный дом авиации и космонавтики ДОСААФ России запускает конкурс профессиональных гидов и экскурсоводов «Небо Москвы». Участникам предлагают создать новый авторский маршрут по Москве, одной из ключевых точек которого станет ЦДАиК. Это может быть маршрут об истории авиации и космонавтики, инженерной мысли, о людях, открытиях и событиях — главное, чтобы идея могла превратиться в настоящий работающий туристический продукт.
+</strong>
+</p>
+<p>
+Конкурс пройдёт в три этапа: заявка и предварительный отбор, разработка авторского маршрута и финальная защита. Общий призовой фонд — 1 000 000 рублей. По итогам проекта определят 10 победителей, каждый из которых сможет получить до 100 000 рублей на запуск и продвижение своего маршрута. Победители и сильные финалисты также смогут войти в рекомендованный пул гидов ЦДАиК и продолжить сотрудничество с музеем.
+</p>
+
+
+
+<p>
+В состав жюри войдут, в том числе, генеральный директор Союза авиапроизводителей России Алексей Рогозин и заместитель министра экономического развития Ростовской области Михаил Зюганов.
+</p>
+
+
+</td>
+</tr>
+
+
+<tr>
+	<td  colspan="2">
+		<a href="/novosti/11-meropriyatiya/955-nebo-moskvy-konkurs-czdaik-dosaaf-rossii-dlya-gidov-s-prizovym-fondom-1-000-000-rublej" class="btn btn-default readon">
+			Подробнее...</a>
+	</td>
+</tr>
+
+</table>
+</div>
+<span class="article_separator">&nbsp;</span>
+</td>
+								
+		</tr>
+		</table>
+	</td>
+</tr>
+
+</table>
+ 
+								
+								
+                        				<div class="moduletable">
+					<h1 class="featurette-heading center">Центральный дом авиации и космонавтики ДОСААФ России</h1>
+	
+  <br class="deskv"/>
+
+<div class="row">
+    <div class="col-md-12">
+      <h2 class="center">Уникальные экспонаты   <span class="text-muted">мирового уровня: </span></h2>
+      <br>
+      <p class="lead">          
+			
+Центральный дом авиации и космонавтики ДОСААФ России является старейшим в Европе и России открытым авиационно-космическим музеем. Он был создан 6 ноября 1924 года и уже почти столетие хранит славную историю отечественной авиации и космонавтики.
+	 </p>     
+      <p class="lead">    
+Музей располагается в здании 1900 года постройки. Экспозиция размещена в 8 тематических залах.  Здесь можно увидеть экспонаты  датированные концом XIX века и уникальные авиационные и космические реликвии, приобретенные музеем на протяжении десятилетий.
+	 </p>   
+
+  
+      <p class="lead">   
+В залах авиации демонстрируются макеты практически всех самолетов от момента зарождения авиации и до современности, уникальные механизмы летательных аппаратов, авиационные моторы, документы и фотографии.
+	 </p>    
+
+
+	 
+   </div>
+</div>
+
+<div class="row">
+    <div class="col-md-7 col-md-push-5">
+    	
+ 
+      <p class="lead">   
+В залах космонавтики рассказывается о ракетостроении, можно увидеть макеты ракет, первые ракетные двигатели, первые искусственные спутники Земли, тренировочную кабину первой собаки-космонавта Лайки, скафандры, снаряжение, продукты питания космонавтов и многое другое. В музее находится настоящая тренажерная кабина корабля-ракетоплана «Буран». Особый интерес гостей вызывает посещение мемориального кабинета первого космонавта планеты Юрия Алексеевича Гагарина.       
+	 </p>     
+
+	
+               
+    </div>
+    <div class="col-md-5 col-md-pull-7">
+      <img class="featurette-image img-responsive center-block" src="/images/main2.jpg" alt="">
+    </div>
+</div>
+  
+  
+
+  <div class="clr"></div>
+  
+  <br/>
+  <br/>
+  <br/>		</div>
+		
+                        		
+                        		
+                        							                        		      
+												              <h2 class="center featurette-heading2"><span>Галереи</span></h2>
+												         
+														      
+														      <div class="row cols3">
+															    <div class="col-lg-2"></div>
+														        <div class="col-lg-4">
+														          <img src="/images/gallery/zal-kosmonavtiki/5.jpg" alt="" width="100%">
+														          <h4>ЗАЛЫ КОСМОНАВТИКИ</h4>
+														          <p>
+														          	 Модели первых летательных аппаратов, первый спутник земли
+																  </p>
+														          <p><a class="btn btn-default" href="/fotogalereya/159-zaly-kosmonavtiki" role="button">Подробнее &raquo;</a></p>
+														        </div>
+														        <div class="col-lg-4">
+														          <img src="/images/gallery/zal-aviacii/122.jpg" alt="" width="100%">
+														          <h4>ЗАЛЫ АВИАЦИИ</h4>
+														          <p>
+														          	  Уникальные экспонаты мирового уровня: оружие авиации ВОВ и многое другое
+															  	  </p>
+														          <p><a class="btn btn-default" href="/fotogalereya/158-zaly-aviaczii" role="button">Подробнее &raquo;</a></p>
+														        </div>
+														        <!-- div class="col-lg-4">
+														          <img src="/images/news2/030421-ot-vostoka-do-burana/small/2.jpg" alt="" width="100%">
+														          <h4>От «Востока» до «Бурана»</h4>
+														          <p>
+														          	Выставка открылась в ЦДАиК ДОСААФ России в Москве
+														
+														          </p>
+														          <p><a class="btn btn-default" href="/fotogalereya/549-ot-lvostokar-do-burana" role="button">Подробнее &raquo;</a></p>
+														        </div -->   
+																<div class="col-lg-2"></div>															      							
+														
+														      </div>
+														      
+									
+														       
+																	
+                        		
+                        		
+                        		                        	                    	
+	                         	
+	                        	
+	                        	
+	                        		                        		                        	
+	                        		
+	   
+		        
+			 </div>        	
+		</div>
+		
+	
+
+
+    </div><!-- /.container -->
+    
+    
+   
+    <div class="clr"></div>
+    
+    <footer class="footer">
+      <div class="container">
+	      	<div class="row">
+	      		
+	      		
+	  		     +7 (495) 614-38-61 <br/> г.Москва, ул. Красноармейская, 4	  		
+
+	  		
+	
+	          	<div class="copy">&copy; 2016 - 2026 Центральный дом авиации и космонавтики ДОСААФ России</div>
+	          	
+	
+				<div class="custom guicosknop">
+				
+				  						
+					      	<div class="social">
+								
+								<a target="_blank" href="https://vk.com/aviacosmosdom" style="color: #fff; font-size: 28px;"><i class="fab fa-vk"></i></a>	&nbsp;							
+								<a target="_blank" href="https://t.me/canal_tm_cdaik" style="color: #fff; font-size: 28px;"><i class="fab fa-telegram"></i></a> &nbsp;
+								<a target="_blank" href="https://rutube.ru/channel/30555830/"><img src="/images/social2/rutube.png" style="width: 30px; margin-top: -13px;"></a> &nbsp;
+								<a target="_blank" href="https://www.youtube.com/playlist?list=PLRxCQGxNFh_ecUd_vNlQBeppChnzUi7Ha" style="color: #fff; font-size: 28px;"><i class="fab fa-youtube"></i></a>
+								
+							</div>	
+						
+				
+				</div>
+				
+				
+				<div class="center copy partners">
+					<p class="center"><a href="/partnery">Наши партнеры</a> &nbsp; | &nbsp;  <a href="/viktoriny">Викторины</a></p>
+	
+	
+					<a href="https://www.cosmatica.org/" title="Русское Космическое Общество" target="_blank" style="background: #fff;display: inline-block;padding: 5px;">
+					   	 <img src="/images/partners/RKO.png" alt="Русское Космическое Общество" style="height: 60px;">
+					</a>
+					
+					<a href="https://privatemuseums.ru/zhurnal/" title="Частные музеи России" target="_blank" style="background: #fff;display: inline-block;padding: 5px;">
+					   	 <img src="/images/partners/associaciya-chastnyh-muzeev.png" alt="Частные музеи России" style="height: 60px;">
+					</a>
+					
+				</div>
+				
+				
+						<div class="moduletable-search">
+					<form action="index.php" method="post">
+	<div class="search-search">
+		<input name="searchword" id="mod_search_searchword" maxlength="20" alt="Поиск" class="inputbox-search" type="text" size="20" value="Искать..."  onblur="if(this.value=='') this.value='Искать...';" onfocus="if(this.value=='Искать...') this.value='';" />	</div>
+	<input type="hidden" name="task"   value="search" />
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="1" />
+</form>		</div>
+		
+				
+<script async src="https://culturaltracking.ru/static/js/spxl.js?pixelId=24619" data-pixel-id="24619"></script>
+
+
+<!-- Yandex.Metrika counter Evgeniya Gorkina -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(92678456, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/92678456" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->		
+	  		
+				 					 										 				   	
+	
+		        
+	        </div>
+      </div>
+    </footer>
+    
+    
+    
+    
+    
+    
+
+     <div class="bg_z"></div>
+	 
+	 
+	 
+	<script type="text/javascript">	
+						jQuery(".bg_z").fadeIn();jQuery("#agreeform").fadeIn()  	
+	</script>
+     
+	 
+	 
+	 
+	 
+  </body>
+</html>
