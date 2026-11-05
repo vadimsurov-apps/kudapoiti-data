@@ -1,0 +1,24 @@
+name: Координаты по адресу (Nominatim)
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "id мест через пробел (пусто — все без точных координат)"
+        required: false
+permissions:
+  contents: write
+jobs:
+  geocode:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 pipeline/geocode_address.py ${{ github.event.inputs.ids }}
+        timeout-minutes: 100
+        continue-on-error: true
+      - if: always()
+        run: |
+          git config user.name "kudapoiti-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add auto/
+          git diff --cached --quiet || (git commit -m "Координаты по адресу (Nominatim)" && git pull --rebase && git push)
