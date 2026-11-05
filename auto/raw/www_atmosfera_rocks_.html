@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="Keywords" />
+<meta name="description" content="Скалодром Атмосфера с секциями для скалолазания в Москве" />
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'LkGdQn':'607b02fcbde0','XEVOpk':'4a0469923e2d','g8taYv':'248633a192d0','rIpOz9':'ee4605036554','4enrz3':'3f7a3da092ba','LRbDtM':'9e85fa6ee0ef','Yzb9kn':'694f222e2fd8','nAlWVK':'b91edf121b95','EmMp4z':'02b973b43837'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'120'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+
+
+<link href="/bitrix/cache/css/s1/skalodrom/kernel_main/kernel_main.css?166634942726562" type="text/css"   rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/skalodrom/template_2a825985f9d75a883d3374ec9ee5f902/template_2a825985f9d75a883d3374ec9ee5f902.css?178067484590110" type="text/css"   data-template-style="true"  rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript"  src="/bitrix/cache/js/s1/skalodrom/kernel_main/kernel_main.js?1666349427296549"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_db.min.js?15132684678699"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_frame_cache.min.js?151326846711191"></script>
+<script type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core.js','/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/json/json2.min.js','/bitrix/js/main/core/core_ls.js','/bitrix/js/main/core/core_fx.js','/bitrix/js/main/session.js','/bitrix/js/main/core/core_window.js','/bitrix/js/main/core/core_popup.js','/bitrix/js/main/core/core_date.js','/bitrix/js/main/utils.js','/local/templates/skalodrom/js/jquery.js','/local/templates/skalodrom/js/jquery-ui.js','/local/templates/skalodrom/fancybox/jquery.fancybox.min.js','/local/templates/skalodrom/js/maskedinput.min.js','/local/templates/skalodrom/js/jquery.validate.min.js','/local/templates/skalodrom/js/bowser.js','/local/templates/skalodrom/js/owl.carousel.min.js','/local/templates/skalodrom/js/js.js']); </script>
+<script type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css','/bitrix/js/main/core/css/core_popup.css','/bitrix/js/main/core/css/core_date.css','/local/templates/skalodrom/css/reset.css','/local/templates/skalodrom/css/owl.carousel.min.css','/local/templates/skalodrom/fancybox/jquery.fancybox.min.css','/local/templates/skalodrom/css/style.css','/local/templates/skalodrom/css/custom.css','/local/templates/skalodrom/template_styles.css']); </script>
+<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="shortcut icon" href="/favicon.png" />
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/styleIEOld.css" />
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+	</script>
+	<![endif]-->
+	<!--[if IE 9]><link rel="stylesheet" type="text/css" href="css/styleIE9.css" /><![endif]-->
+
+
+
+<script type="text/javascript"  src="/bitrix/cache/js/s1/skalodrom/template_fff66aa9894f3c8bd9e6179deedfda06/template_fff66aa9894f3c8bd9e6179deedfda06.js?1734639017895282"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "89464a8a361d667303d26a993b46fe81"]); _ba.push(["host", "atmosfera.rocks"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+    <title>Скалодром «Атмосфера»</title>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter47391988 = new Ya.Metrika2({
+                    id:47391988,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/47391988" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+	
+	ym(89925903, "init", {
+		clickmap:true,
+		trackLinks:true,
+		accurateTrackBounce:true,
+		webvisor:true
+	});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89925903" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-112844659-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1520048381561577');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1520048381561577&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<script type="text/javascript">
+
+         
+        var _alloka = {
+        objects: {
+            'f9eb6ce19cb6d05a': {
+                block_class: 'phone_alloka',
+                jivosite: false,
+                email: false
+            }
+        },
+        trackable_source_types:  ["type_in", "referrer", "utm"],
+        last_source: false,
+          use_geo: true
+    };
+</script>
+<script src="https://analytics.alloka.ru/v4/alloka.js" type="text/javascript"></script>
+
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-206218-hq33M';</script>
+
+</head>
+
+<body>
+<div id="panel">
+    </div>
+<!--[if lt IE 9]>
+<div class="support">Sorry, we don't support this version of Internet Explorer.<br/>
+	<a href="http://windows.microsoft.com/en-US/internet-explorer/download-ie">Please, update your browser</a> or use another.</div>
+<![endif]-->
+<header>
+	<div class="wrapper">
+		<div class="contact-us">
+			<a class="button btn-trigger-open-request-popup">Обратный звонок</a>
+			<div class="phone"><a class="phone_alloka" href="tel:+7(495) 909-96-12"><span>+7(495)</span> 909-96-12</a></div>
+		</div>
+        <div id="bxdynamic_LkGdQn_start" style="display:none"></div>    <a class="humburger"></a>
+    <nav>
+        <ul>
+                        
+                <li>
+            <a style="cursor: default" href="#" href="/skalodrom/">О нас<i class="arrow"></i></a>
+            <ul>
+
+                
+                
+                            
+        
+                    
+                
+                
+                            
+        
+                                            <li>
+                            <a href="/trainers/" title="" >Тренеры</a>
+                        </li>
+                    
+                
+                
+                            
+        
+                                            <li>
+                            <a href="/about/security/" title="" >Безопасность</a>
+                        </li>
+                    
+                
+                
+                            
+        
+                                            <li>
+                            <a href="/news/" title="" >Новости и события</a>
+                        </li>
+                    
+                
+                
+                            
+        
+                                            <li>
+                            <a href="/blog/" title="" >Блог</a>
+                        </li>
+                    
+                
+                
+                            
+        
+                                            <li>
+                            <a href="/about/photo_gallery/" title="" >Фотогалерея</a>
+                        </li>
+                    
+                
+                
+                                    </ul>
+        </li>
+        
+        
+                                            <li>
+                            <a href="/timetable/" title="" >Расписание</a>
+                        </li>
+                    
+                
+                
+                            
+                <li>
+            <a   href="/prices/">Цены<i class="arrow"></i></a>
+            <ul>
+
+                
+                
+                            
+        
+                                            <li>
+                            <a href="/prices/certificates/" title="" >Сертификаты</a>
+                        </li>
+                    
+                
+                
+                                    </ul>
+        </li>
+        
+        
+                                            <li>
+                            <a href="/beginner/" title="" >Начинающим</a>
+                        </li>
+                    
+                
+                
+                            
+                <li>
+            <a style="cursor: default" href="#" href="/babies/">Детям<i class="arrow"></i></a>
+            <ul>
+
+                
+                
+                            
+        
+                                            <li>
+                            <a href="/babies/children_holidays/" title="" >Детские праздники</a>
+                        </li>
+                    
+                
+                
+                            
+        
+                                            <li>
+                            <a href="/babies/childrens_school/" title="" >Детская школа</a>
+                        </li>
+                    
+                
+                
+                            
+        
+                                            <li>
+                            <a href="/babies/prices/" title="" >Цены</a>
+                        </li>
+                    
+                
+                
+                            
+        
+                                            <li>
+                            <a href="/babies/special/" title="" >Занятия для особенных детей</a>
+                        </li>
+                    
+                
+                
+                                    </ul>
+        </li>
+        
+        
+                                            <li>
+                            <a href="/contacts/" title="" >Контакты</a>
+                        </li>
+                    
+                
+                
+                
+                        </ul>
+    </nav>
+<div id="bxdynamic_LkGdQn_end" style="display:none"></div>	</div>
+</header>
+  <div class="intro">
+	<div class="headline">
+		<div class="wrapper">
+			<div class="fake-td left">
+				 <a href="#" class="logo"><img alt="Скалодром «Атмосфера»" src="http://atmosfera.rocks/upload/uf/89b/89bcc9b439e753d2dbdebd759c6baaa3.png"></a>			</div>
+			<div class="fake-td middle">
+				<div class="description">
+					 <h2>Готовы покорить новые вершины?&nbsp;</h2>
+<p>
+	 Скалодром "Атмосфера" - ваш пропуск в мир адреналина, драйва и ярких эмоций!&nbsp; <br>
+	<br>
+</p>
+<p>
+	 Забудьте о скучном досуге!&nbsp; Мы предлагаем вам окунуться в захватывающий мир боулдеринга-&nbsp; увлекательного и доступного вида скалолазания.&nbsp;
+</p>
+<p>
+	 Приходите и откройте для себя мир вертикальных приключений!
+</p>
+ <br>				</div>
+			</div>
+			<div class="fake-td right">
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		     <div class="intro-slider owl-carousel">
+                    <div class="item" id="bx_3218110189_702">
+                <a href="#"><img src="/upload/iblock/2b8/2b868aa73fb3018f39262708a35f3d44.png"/></a>
+            </div>
+                </div>
+    		<div class="intro-header">
+			 <h1>Записаться на пробное занятие</h1>
+ <br>
+<a class="button-danger button-danger btn-trigger-open-trial-lesson-popup" >Записаться сейчас</a>
+ <!-- <br>
+ Постановлением Главного государственного санитарного врача по городу Москве Е.Е.&nbsp;Андреевой с 21 марта 2020 года на территории города Москвы предписано прекратить допуск посетителей&nbsp; на объекты физической культуры и спорта до особого распоряжения.<br>
+ <br>
+ Все абонементы мы <b>замораживаем</b>.&nbsp;<br>
+ <br>
+ Когда откроемся пока не ясно, у нас самих нет другой информации.<br>
+ <br>
+ Не болейте, берегите себя!<br>
+ <br>
+ Следите за нашими новостями в соц сетях!&nbsp;<br>-->		</div>
+	</div>
+</div>
+<!--<div style="font-size: 20px; font-weight: 700; color: red; text-align: center; padding: 20px 0;">С 28 октября по 7 ноября-->
+<!--  скалодром-->
+<!--  закрыт </div>-->
+     <div class="features">
+        <div class="wrapper">
+                                <div class="fake-td">
+                                    <div class="feature icon-new-trace"
+                     id="bx_651765591_23">
+                    <div class="in">Каждую неделю новые трассы<br />сложностью от 5 до 8А</div>
+                </div>
+                                <div class="feature icon-coach"
+                     id="bx_651765591_24">
+                    <div class="in">Тренеры - профессиональные<br />спортсмены, призеры<br />международных соревнований</div>
+                </div>
+                                    </div>
+                                        <div class="fake-td">
+                                    <div class="feature icon-child"
+                     id="bx_651765591_25">
+                    <div class="in">Увлекательный и безопасный<br />скалодром для детей</div>
+                </div>
+                                <div class="feature icon-kant"
+                     id="bx_651765591_26">
+                    <div class="in">Скалодром находится на<br />территории СК Кант</div>
+                </div>
+                                    </div>
+                                        <div class="fake-td">
+                                    <div class="feature icon-wall"
+                     id="bx_651765591_27">
+                    <div class="in">Высота стен до 9 метров<br />и более 1500 зацепов</div>
+                </div>
+                                <div class="feature icon-place"
+                     id="bx_651765591_28">
+                    <div class="in">5 минут от метро, бесплатная<br />стоянка на 300 машиномест</div>
+                </div>
+                                    </div>
+                            </div>
+    </div>
+          <div class="mini-shedule">
+        <div class="wrapper">
+            <h2>Ближайшие занятия</h2>
+            <div class="fake-table mini-shedule-table">
+                <div class="fake-tr">
+                    <div class="fake-th col-1">Тренеры</div>
+                    <div class="fake-th col-2"></div>
+                    <div class="fake-th col-3">Возраст</div>
+                    <div class="fake-th col-4">Время</div>
+                    <div class="fake-th col-5"></div>
+                </div>
+                                    <div class="fake-tr" id="bx_1373509569_707">
+                        <div class="fake-td col-1">
+                                                        <img
+                                src="/upload/resize_cache/iblock/54f/125_125_2/54f40cf987ffecc474023e133db4e442.png"
+                                alt="Ксения Троицкая"/>
+                        </div>
+                        <div class="fake-td col-2">
+                            <h4>Ксения Троицкая</h4>
+                                                    </div>
+                        <div
+                            class="fake-td col-3">Детская школа</div>
+                        <div class="fake-td col-4">
+                            16:30                            -18:00                        </div>
+                        <div class="fake-td col-5">
+                            <a class="button-danger btn-trigger-open-popup-lesson"
+                               data-age="Детская школа"
+                               data-time="16:30                            -18:00"
+                               data-trainer="Ксения Троицкая"><span>Записаться</span></a>
+                        </div>
+                    </div>
+                                        <div class="fake-tr" id="bx_1373509569_565">
+                        <div class="fake-td col-1">
+                                                        <img
+                                src="/upload/resize_cache/iblock/1a6/125_125_2/1a6531682694a312100ff0c00d35e248.png"
+                                alt="Сергей Зимогляд"/>
+                        </div>
+                        <div class="fake-td col-2">
+                            <h4>Сергей Зимогляд</h4>
+                                                    </div>
+                        <div
+                            class="fake-td col-3">Взрослая школа</div>
+                        <div class="fake-td col-4">
+                            18:00                            -20:00                        </div>
+                        <div class="fake-td col-5">
+                            <a class="button-danger btn-trigger-open-popup-lesson"
+                               data-age="Взрослая школа"
+                               data-time="18:00                            -20:00"
+                               data-trainer="Сергей Зимогляд"><span>Записаться</span></a>
+                        </div>
+                    </div>
+                                        <div class="fake-tr" id="bx_1373509569_536">
+                        <div class="fake-td col-1">
+                                                        <img
+                                src="/upload/resize_cache/iblock/b48/125_125_2/b48f76a6a9b705ace0d0dc8ecdb823f4.png"
+                                alt="Лиза Елисеева"/>
+                        </div>
+                        <div class="fake-td col-2">
+                            <h4>Лиза Елисеева</h4>
+                                                    </div>
+                        <div
+                            class="fake-td col-3">Взрослая школа</div>
+                        <div class="fake-td col-4">
+                            19:00                            -22:00                        </div>
+                        <div class="fake-td col-5">
+                            <a class="button-danger btn-trigger-open-popup-lesson"
+                               data-age="Взрослая школа"
+                               data-time="19:00                            -22:00"
+                               data-trainer="Лиза Елисеева"><span>Записаться</span></a>
+                        </div>
+                    </div>
+                                </div>
+            <div class="for-shedule">
+                <a href="/timetable/" class="btn-shedule"><span>Перейти в расписание</span></a>
+            </div>
+        </div>
+    </div>
+         <div class="section-what-we-are">
+        <div class="wrapper">
+            <h2>&laquo;Атмосфера&raquo; - больше, чем просто скалодром</h2>
+                            <div class="we-are-item" id="bx_3485106786_29">
+                    <div class="img">
+                        <img src="/upload/iblock/568/5688f581710699a7cb735ee84284749c.jpg"
+                             alt="Скалодром"/>
+                    </div>
+                    <h3>Скалодром</h3>
+                    <p>Высота стен: до 9 метров.<br />Площадь стен: 527 квадратных метров.<br />Расписание работы:<br />понедельник-пятница с 8.00 до 23.00,<br />выходные и праздничные дни <br /> с 10.00 до 23.00</p>
+                </div>
+                                <div class="we-are-item" id="bx_3485106786_30">
+                    <div class="img">
+                        <img src="/upload/iblock/2d0/2d036518647fc89825159255ba4a1d1d.jpg"
+                             alt="Комфорт"/>
+                    </div>
+                    <h3>Комфорт</h3>
+                    <p>Вендинг, комфортабельные раздевалки<br />(мужская, женская и детская),<br />зал групповых занятий, фитнес зал,<br />2 боулдеринговых зала, детский зал</p>
+                </div>
+                                <div class="we-are-item" id="bx_3485106786_31">
+                    <div class="img">
+                        <img src="/upload/iblock/003/003afa9b2dd84bcacdda7ca5a70844cb.jpg"
+                             alt="Развлечения"/>
+                    </div>
+                    <h3>Развлечения</h3>
+                    <p>Скалодром находится на территории<br />Спорткомплекса КАНТ, который включает в себя<br />магазин КАНТ, Горнолыжный комплекс (18 склонов),<br />ресторан ШАЛЕ</p>
+                </div>
+                        </div>
+    </div>
+    <div class="section-instagram">
+	<div class="wrapper">
+		<div class="sub">
+<!--			<div class="icon">-->
+<!--			</div>-->
+<!--			<h2>Покоряй вершины вместе с нами</h2>-->
+<!--			<h3><a href="https://www.instagram.com/atmosfera_skalodrom/" target="_blank">@atmosfera_skalodrom</a></h3>-->
+<!--			<div class="instagram-plugin">-->
+<!--				<div id="idd">-->
+<!--					<ul>-->
+<!--					</ul>-->
+<!--				</div>-->
+<!--				 <script>-->
+<!--                        $(function () {-->
+<!--                            var clientID = 'a90ab6403f03490e9099969fddaee2a5'; // register and get for your account in https://www.instagram.com/developer/-->
+<!--                            var accessToken = '1661614198.a90ab64.8bccb45466c7414ca1a8e4a648627e86'; // Get access token from URL (replace uppercase varialbles to your value) https://instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT_URI&response_type=token&scope=public_content-->
+<!--                            //var userid = 1661614198; // Get info about user from (replace uppercase varialbles to your value) https://api.instagram.com/v1/users/search?q=USER-SLUG&client_id=CLIENT-ID&response_type=code&scope=public_content&access_token=ACCESS-TOKEN&redirect_uri=REDIRECT_URI&response_type=token-->
+<!--                            var userid = 1661614198; // Get info about user from (replace uppercase varialbles to your value) https://api.instagram.com/v1/users/search?q=USER-SLUG&client_id=CLIENT-ID&response_type=code&scope=public_content&access_token=ACCESS-TOKEN&redirect_uri=REDIRECT_URI&response_type=token-->
+<!--                            $.ajax({-->
+<!--                                url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent',-->
+<!--                                dataType: 'jsonp',-->
+<!--                                type: 'GET',-->
+<!--                                data: { access_token: accessToken, count: 12, client_id: clientID },-->
+<!--                                success: function (data) {-->
+<!--                                    console.log(data);-->
+<!--                                    for (var x in data.data) {-->
+<!--                                        $('#idd ul').append('<li><a href="' + data.data[x].link + '" target="_blank"><div style="background-image:url(' + data.data[x].images.standard_resolution.url + ');"></div></a></li>');-->
+<!--                                    }-->
+<!--                                },-->
+<!--                                error: function (data) {-->
+<!--                                    console.log(data);-->
+<!--                                }-->
+<!--                            });-->
+<!--                        });-->
+<!--                    </script>-->
+<!--			</div>-->
+<!--			<div class="for-button">-->
+<!-- <a href="https://www.instagram.com/atmosfera_skalodrom/" class="button" target="_blank">Подписаться</a>-->
+<!--			</div>-->
+		</div>
+	</div>
+</div>
+<div class="section-contact">
+	<div class="wrapper">
+		<h2>Контакты</h2>
+		<div class="fake-table">
+			<div class="fake-td left">
+				<p>
+					<b>Наш адрес:</b><br>
+					 Электролитный пр., 7б, СК КАНТ<br>
+					 E-mail: <a href="mailto:admin@atmosfera.rocks					">admin@atmosfera.rocks</a><br>
+					 Тел: <span>+7(495)</span> 909-96-12				</p>
+				<p>
+					<b>Расписание работы:</b><br>
+					 понедельник-пятница с 8.00 до 23.00<br />выходные и праздничные дни с 10.00 до 23.00				</p>
+				<p>
+					<b>Как добраться:</b><br>
+					 Станция метро «Нагорная» (последний вагон из центра), из стеклянных дверей налево, при выходе из метро снова налево,  прямо по Электролитному проезду метров 600, далее по указателю КАНТ налево.<br />                 Спортивный комплекс КАНТ находится правее от шлагбаума. Скалодром «Атмосфера» находится на 3 этаже СК КАНТ.				</p>
+			</div>
+			 			<div class="fake-td right">
+				<div id="map" class="map">
+				</div>
+				 <script>
+                            var map;
+                            function initMap() {
+                                var uluru = { lat: 55.675735, lng: 37.611182 };
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    zoom: 13,
+                                    center: uluru,
+                                    mapTypeControl: false,
+                                    streetViewControl: false,
+                                    rotateControl: false
+                                });
+                                var marker = new google.maps.Marker({
+                                    position: uluru,
+                                    map: map
+                                });
+                                google.maps.event.addDomListener(window, "resize", function () { var center = map.getCenter(); google.maps.event.trigger(map, "resize"); map.setCenter(center); });
+                            }
+                        </script> <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqUgae_iOq-0LldP9dSxcQ8Id55q5wkic&callback=initMap" async defer></script>
+			</div>
+			 		</div>
+	</div>
+</div>                <footer>
+            <div class="wrapper footer-main">
+                <div class="fake-tr">
+                    <div class="fake-td">
+                        <div id="bxdynamic_XEVOpk_start" style="display:none"></div>
+<ul>
+			<li><a href="/" class="selected">Главная</a></li>
+		
+			<li><a href="/timetable/">Расписание</a></li>
+		
+			<li><a href="/prices/">Цены</a></li>
+		
+			<li><a href="/beginner/">Начинающим</a></li>
+		
+			<li><a href="/babies/">Детям</a></li>
+		
+			<li><a href="/contacts/">Контакты</a></li>
+		
+</ul>
+<div id="bxdynamic_XEVOpk_end" style="display:none"></div>                    </div>
+                    <div class="fake-td">
+                        <div id="bxdynamic_g8taYv_start" style="display:none"></div>
+<ul>
+			<li><a href="/about/">О скалодроме</a></li>
+		
+			<li><a href="/trainers/">Тренеры</a></li>
+		
+			<li><a href="/about/security/">Безопасность</a></li>
+		
+			<li><a href="/news/">Новости и события</a></li>
+		
+			<li><a href="/about/photo_gallery/">Фотогалерея</a></li>
+		
+</ul>
+<div id="bxdynamic_g8taYv_end" style="display:none"></div>                    </div>
+                    <div class="fake-td">
+                        <div class="phone"><a class="phone_alloka" href="tel:+7(495) 909-96-12"><span>+7(495)</span> 909-96-12</a></div>
+                        <p class="small">понедельник-пятница с 8.00 до 23.00<br />выходные и праздничные дни с 10.00 до 23.00</p>
+                        <p>Электролитный пр., 7б, СК КАНТ</p>
+                        <p>
+                            <a href="mailto:admin@atmosfera.rocks">admin@atmosfera.rocks</a>
+                        </p>
+                    </div>
+                    <div class="fake-td">
+                        <div class="to-right">
+                            <div id="bxdynamic_rIpOz9_start" style="display:none"></div>    <h3>Мы в социальных сетях:</h3>
+    <div class="social">
+                    <a href="https://vk.com/public80247712" target="_blank"><img alt=""
+                                                                    src="/local/templates/skalodrom/img/vk.svg"/></a>
+                    <a href="https://t.me/AtmosferaAdmin/" target="_blank"><img alt=""
+                                                                    src="/local/templates/skalodrom/img/telegram.svg"/></a>
+            </div>
+<div id="bxdynamic_rIpOz9_end" style="display:none"></div>                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper footer-bottom">
+                <div class="fake-td left">
+                                            <a href="#" class="logo"><img src="/upload/uf/c68/c686ff58f57969817deb90d7b32435f4.png" alt="Скалодром «Атмосфера»"/></a>
+                                        </div>
+                <div class="fake-td middle">
+                    <div class="copyrights">&copy; 2023 Скалодром &laquo;Атмосфера&raquo;</div>
+                </div>
+                <div class="fake-td right">
+                    <a href="https://first-top.ru" target="_blank"
+                       class="development"><span>Разработка сайта</span> —  <i class="first-top"></i> First Top</a>
+                </div>
+            </div>
+			<div class="wrapper footer-bottom">
+				<div class="fake-fb">
+					<a href="/privacy-policy/">Политика обработки персональных данных</a>
+					<a href="/personal-data-consent/">Согласие на обработку персональных данных</a>
+					<a href="/cookie-policy/">Политика использования Cookie</a>
+					<a href="/marketing-consent/">Согласие на получение рекламных сообщений</a>
+				</div>
+			</div>
+        </footer>
+
+        <div class="overlay"></div>
+        <div class="popup-wrapper" id="popup-request">
+            <div class="fake-table">
+                <div class="fake-td">
+                    <div class="popup-target">
+                        <a class="close"></a>
+                        <div class="popup-content">
+                            <div id="comp_4eb4d629362d7d1d14773b92b0dff093"><div id="bxdynamic_4enrz3_start" style="display:none"></div>
+<form class="form" id="form-request" name="callback" action="/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="" /><input type="hidden" name="WEB_FORM_ID" value="1" />	<h3>Обратный звонок</h3>
+					<div class="row">
+				<label class="ie9-fallback">Ваши Фамилия и Имя*</label>
+				<input type="text" class="input" placeholder="Ваши Фамилия и Имя" name="form_text_1" value="" size="0" />							</div>
+										<div class="row">
+				<label class="ie9-fallback">Ваш номер телефона*</label>
+				<input type="text" class="input" placeholder="Ваш номер телефона" data-tel name="form_text_2" value="" size="0" />							</div>
+						<p>Введите символы с картинки:<br>
+                <span class="wpcf7-form-control-wrap your-name">
+                    <input type="hidden" name="captcha_sid"
+						   value="0e1ec94cb9517a224e4c15aaae6bfff3"/>
+                    <img
+						src="/bitrix/tools/captcha.php?captcha_sid=0e1ec94cb9517a224e4c15aaae6bfff3"
+						width="180" height="40"/>
+                    <input type="text" name="captcha_word" size="30" maxlength="50" value="" class="inputtext"/>
+					                </span>
+	</p>
+	
+	<input type="hidden" name="check" value=""/>
+
+	<div class="row">
+		<label class="checkbox privacy_checkbox"><i><input type="checkbox" checked="checked" name="accepted" value="1" /></i>Я согласен с передачей персональных данных и <a target="_blank" href="/privacy-policy/">политикой конфиденциальности</a></label>
+        <div class="error_msg privacy_error_hdn privacy_error">Обязательное поле</div>
+	</div>
+	<div class="buttons">
+        		<button type="submit" name="web_form_submit" class="button-danger" value="Заказать обратный звонок">Заказать обратный звонок</button>
+	</div>
+
+
+</form>
+
+<script>
+    $(function () {
+        $('[name="web_form_submit"]').on('click',function(e){
+            var that = $(this);
+            var form = that.closest('form');
+            if(!form.find('.privacy_checkbox').hasClass('on')){
+                e.preventDefault();
+                form.find('.privacy_error').removeClass('privacy_error_hdn');
+                setTimeout(function () {
+                    form.find('.privacy_error').addClass('privacy_error_hdn');
+                }, 4000);
+            }
+        });
+    });
+</script>
+<div id="bxdynamic_4enrz3_end" style="display:none"></div></div>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-wrapper" id="popup-holidays">
+            <div class="fake-table">
+                <div class="fake-td">
+                    <div class="popup-target">
+                        <a class="close"></a>
+                        <div class="popup-content">
+                            <div id="comp_2133f9aeb287f19dc56aabfbca46a3cb"><div id="bxdynamic_LRbDtM_start" style="display:none"></div>
+<form class="form" id="form-request" name="holidays_form" action="/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid_1" value="" /><input type="hidden" name="WEB_FORM_ID" value="4" />	<h3>Заказать праздник</h3>
+					<div class="row">
+				<label class="ie9-fallback">Ваши Фамилия и Имя*</label>
+				<input type="text" class="input" placeholder="Представьтесь" name="form_text_10" value="" size="0" />							</div>
+										<div class="row">
+				<label class="ie9-fallback">Ваш номер телефона*</label>
+				<input type="text" class="input" placeholder="Ваш номер телефона" data-tel name="form_text_11" value="" size="0" />							</div>
+					
+	<input type="hidden" name="check" value=""/>
+
+	<div class="row">
+		<label class="checkbox privacy_checkbox"><i><input type="checkbox" checked="checked" name="accepted" value="1" /></i>Я согласен с передачей персональных данных и <a target="_blank" href="/privacy-policy/">политикой конфиденциальности</a></label>
+        <div class="error_msg privacy_error_hdn privacy_error">Обязательное поле</div>
+	</div>
+	<div class="buttons">
+        		<button type="submit" name="web_form_submit" class="button-danger" value="Заказать праздник">Заказать праздник</button>
+	</div>
+
+
+</form>
+
+<script>
+    $(function () {
+        $('[name="web_form_submit"]').on('click',function(e){
+            var that = $(this);
+            var form = that.closest('form');
+            if(!form.find('.privacy_checkbox').hasClass('on')){
+                e.preventDefault();
+                form.find('.privacy_error').removeClass('privacy_error_hdn');
+                setTimeout(function () {
+                    form.find('.privacy_error').addClass('privacy_error_hdn');
+                }, 4000);
+            }
+        });
+    });
+</script>
+<div id="bxdynamic_LRbDtM_end" style="display:none"></div></div>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-wrapper" id="popup-lesson">
+            <div class="fake-table">
+                <div class="fake-td">
+                    <div class="popup-target">
+                        <a class="close"></a>
+                        <div class="popup-content">
+                            <div id="comp_e939f9e2f74d3aa2b75f84cca17c5c1e"><div id="bxdynamic_Yzb9kn_start" style="display:none"></div>
+<form class="form" id="form-request" name="callback_ocsBs_aRZwa" action="/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid_2" value="" /><input type="hidden" name="WEB_FORM_ID" value="3" />	<h3>Записаться на занятие</h3>
+					<div class="row">
+				<label class="ie9-fallback">Ваши Фамилия и Имя*</label>
+				<input type="text" class="input" placeholder="Ваши Фамилия и Имя" name="form_text_5" value="" size="0" />							</div>
+										<div class="row">
+				<label class="ie9-fallback">Ваш номер телефона*</label>
+				<input type="text" class="input" placeholder="Ваш номер телефона" data-tel name="form_text_6" value="" size="0" />							</div>
+					<input type="hidden" id="lesson-age" name="form_hidden_7" value="" /><input type="hidden" id="lesson-time" name="form_hidden_8" value="" /><input type="hidden" id="lesson-trainer" name="form_hidden_9" value="" />
+	<input type="hidden" name="check" value=""/>
+
+	<div class="row">
+		<label class="checkbox privacy_checkbox"><i><input type="checkbox" checked="checked" name="accepted" value="1" /></i>Я согласен с передачей персональных данных и <a target="_blank" href="/privacy-policy/">политикой конфиденциальности</a></label>
+        <div class="error_msg privacy_error_hdn privacy_error">Обязательное поле</div>
+	</div>
+	<div class="buttons">
+        		<button type="submit" name="web_form_submit" class="button-danger" value="Записаться">Записаться</button>
+	</div>
+
+
+</form>
+
+<script>
+    $(function () {
+        $('[name="web_form_submit"]').on('click',function(e){
+            var that = $(this);
+            var form = that.closest('form');
+            if(!form.find('.privacy_checkbox').hasClass('on')){
+                e.preventDefault();
+                form.find('.privacy_error').removeClass('privacy_error_hdn');
+                setTimeout(function () {
+                    form.find('.privacy_error').addClass('privacy_error_hdn');
+                }, 4000);
+            }
+        });
+    });
+</script>
+<div id="bxdynamic_Yzb9kn_end" style="display:none"></div></div>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-wrapper" id="trial-lesson">
+            <div class="fake-table">
+                <div class="fake-td">
+                    <div class="popup-target">
+                        <a class="close"></a>
+                        <div class="popup-content">
+                            <div id="comp_783c8191f65f10e515679c32f00dfbc6"><div id="bxdynamic_nAlWVK_start" style="display:none"></div>
+<form class="form" id="form-request" name="callback_ocsBs" action="/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid_3" value="" /><input type="hidden" name="WEB_FORM_ID" value="2" />	<h3>Записаться на пробное занятие</h3>
+					<div class="row">
+				<label class="ie9-fallback">Ваши Фамилия и Имя*</label>
+				<input type="text" class="input" placeholder="Ваши Фамилия и Имя" name="form_text_3" value="" size="0" />							</div>
+										<div class="row">
+				<label class="ie9-fallback">Ваш номер телефона*</label>
+				<input type="text" class="input" placeholder="Ваш номер телефона" data-tel name="form_text_4" value="" size="0" />							</div>
+					
+	<input type="hidden" name="check" value=""/>
+
+	<div class="row">
+		<label class="checkbox privacy_checkbox"><i><input type="checkbox" checked="checked" name="accepted" value="1" /></i>Я согласен с передачей персональных данных и <a target="_blank" href="/privacy-policy/">политикой конфиденциальности</a></label>
+        <div class="error_msg privacy_error_hdn privacy_error">Обязательное поле</div>
+	</div>
+	<div class="buttons">
+        		<button type="submit" name="web_form_submit" class="button-danger" value="Отправить">Отправить</button>
+	</div>
+
+
+</form>
+
+<script>
+    $(function () {
+        $('[name="web_form_submit"]').on('click',function(e){
+            var that = $(this);
+            var form = that.closest('form');
+            if(!form.find('.privacy_checkbox').hasClass('on')){
+                e.preventDefault();
+                form.find('.privacy_error').removeClass('privacy_error_hdn');
+                setTimeout(function () {
+                    form.find('.privacy_error').addClass('privacy_error_hdn');
+                }, 4000);
+            }
+        });
+    });
+</script>
+<div id="bxdynamic_nAlWVK_end" style="display:none"></div></div>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-wrapper" id="popup-certificates">
+            <div class="fake-table">
+                <div class="fake-td">
+                    <div class="popup-target">
+                        <a class="close"></a>
+                        <div class="popup-content">
+                            <div id="comp_51c0460f40b9c99831d2d089b226d48d"><div id="bxdynamic_EmMp4z_start" style="display:none"></div>
+<form class="form" id="form-request" name="callback_ocsBs_aRZwa_N3YdN" action="/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid_4" value="" /><input type="hidden" name="WEB_FORM_ID" value="6" />	<h3>Заказать сертификат</h3>
+					<div class="row">
+				<label class="ie9-fallback">Ваши Фамилия и Имя*</label>
+				<input type="text" class="input" placeholder="Ваши Фамилия и Имя" name="form_text_16" value="" size="0" />							</div>
+										<div class="row">
+				<label class="ie9-fallback">Ваш номер телефона*</label>
+				<input type="text" class="input" placeholder="Ваш номер телефона" data-tel name="form_text_17" value="" size="0" />							</div>
+					
+	<input type="hidden" name="check" value=""/>
+
+	<div class="row">
+		<label class="checkbox privacy_checkbox"><i><input type="checkbox" checked="checked" name="accepted" value="1" /></i>Я согласен с передачей персональных данных и <a target="_blank" href="/privacy-policy/">политикой конфиденциальности</a></label>
+        <div class="error_msg privacy_error_hdn privacy_error">Обязательное поле</div>
+	</div>
+	<div class="buttons">
+        		<button type="submit" name="web_form_submit" class="button-danger" value="Заказать">Заказать</button>
+	</div>
+
+
+</form>
+
+<script>
+    $(function () {
+        $('[name="web_form_submit"]').on('click',function(e){
+            var that = $(this);
+            var form = that.closest('form');
+            if(!form.find('.privacy_checkbox').hasClass('on')){
+                e.preventDefault();
+                form.find('.privacy_error').removeClass('privacy_error_hdn');
+                setTimeout(function () {
+                    form.find('.privacy_error').addClass('privacy_error_hdn');
+                }, 4000);
+            }
+        });
+    });
+</script>
+<div id="bxdynamic_EmMp4z_end" style="display:none"></div></div>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-wrapper" id="popup-coach">
+            <div class="fake-table">
+                <div class="fake-td">
+                    <div class="popup">
+                        <a class="close"></a>
+                        <div class="coach-details">
+                            <div class="coach-photo">
+                                <img src="" />
+                            </div>
+                            <div class="coach-text">
+                                <h2></h2>
+                                <div class="coach__text"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html><!--999f6dbd92efb6606bbd532795448c63-->
