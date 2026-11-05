@@ -1,0 +1,20 @@
+name: Раскрыть короткие ссылки
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "URL через пробел"
+        required: true
+permissions:
+  contents: write
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 pipeline/resolve_links.py "${{ github.event.inputs.urls }}"
+      - run: |
+          git config user.name "kudapoiti-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add auto/raw
+          git diff --cached --quiet || (git commit -m "raw: раскрытые ссылки" && git pull --rebase && git push)
