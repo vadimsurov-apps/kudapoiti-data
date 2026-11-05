@@ -66,7 +66,19 @@ def overpass(q):
 
 
 def find(p):
-    toks = tokens(p["name"])
+    r = find_by(p, p["name"])
+    # причалы, ТЦ и т.п.: название объекта часто в адресе — «причал «Киевский вокзал»», «ТРЦ «Ривьера»»
+    addr_q = re.findall(r"[«\"]([^»\"]+)[»\"]", p.get("address") or "")
+    if r.get("status") in ("not-found", "low", "no-name") and addr_q:
+        r2 = find_by(p, addr_q[0], via_address=True)
+        if r2.get("status") in ("high", "medium"):
+            r2["status"] = "medium"; r2["via"] = "адрес: " + addr_q[0]
+            return r2
+    return r
+
+
+def find_by(p, name, via_address=False):
+    toks = tokens(name)
     if not toks or p.get("lat") is None: return {"status": "no-name"}
     rx = "|".join(re.escape(t[:max(4, len(t) - 2)]) for t in toks)
     R = 4000 if p["type"][0] not in ("прогулка",) else 2500
@@ -84,8 +96,8 @@ def find(p):
         lat = e.get("lat") or e.get("center", {}).get("lat"); lon = e.get("lon") or e.get("center", {}).get("lon")
         if lat is None: continue
         names = " ".join(t.get(k, "") for k in ("name", "name:ru", "alt_name", "official_name"))
-        s = sim(p["name"], names)
-        tag_ok = any(k in t and re.search(v, t[k]) for k, v in want) if want else None
+        s = sim(name, names)
+        tag_ok = any(k in t and re.search(v, t[k]) for k, v in want) if want and not via_address else None
         score = s + (0.35 if tag_ok else 0) - (0.3 if want and not tag_ok else 0) - dist(lat, lon, p["lat"], p["lon"]) / 20000
         if s >= 0.5 and (best is None or score > best["score"]):
             best = {"score": round(score, 3), "sim": round(s, 2), "tag_ok": tag_ok, "lat": round(lat, 6), "lon": round(lon, 6),
