@@ -132,4 +132,5 @@ def main():
     print("Итого:", Counter(r["status"] for r in out.values()))
 
 
-main()
+if __name__ == "__main__":
+    main()

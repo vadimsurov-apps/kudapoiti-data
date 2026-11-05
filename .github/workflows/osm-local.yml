@@ -1,0 +1,31 @@
+name: Точность координат и входы (выгрузка OSM)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "11 23 * * 0"
+permissions:
+  contents: write
+jobs:
+  match:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -q && sudo apt-get install -y -q osmium-tool
+      - name: Выгрузка OSM (Центральный ФО, Geofabrik)
+        run: curl -sSL -o cfd.osm.pbf https://download.geofabrik.de/russia/central-fed-district-latest.osm.pbf && ls -lh cfd.osm.pbf
+      - name: Москва и область, объекты с названием и входы
+        run: |
+          osmium extract -b 35.1,54.2,40.3,57.0 cfd.osm.pbf -o mo.osm.pbf --overwrite
+          osmium tags-filter mo.osm.pbf nwr/name -o named.osm.pbf --overwrite
+          osmium tags-filter mo.osm.pbf n/entrance n/barrier=gate,entrance,turnstile,lift_gate -o entr.osm.pbf --overwrite
+          osmium export named.osm.pbf -f geojsonseq -a type,id --geometry-types=point,linestring,polygon -o named.geojsonseq --overwrite
+          osmium export entr.osm.pbf -f geojsonseq -a type,id --geometry-types=point -o entr.geojsonseq --overwrite
+          wc -l named.geojsonseq entr.geojsonseq
+      - run: python3 pipeline/osm_local.py
+      - if: always()
+        run: |
+          git config user.name "kudapoiti-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add auto/
+          git diff --cached --quiet || (git commit -m "Координаты и входы: сверка с выгрузкой OSM" && git pull --rebase -X theirs && git push)

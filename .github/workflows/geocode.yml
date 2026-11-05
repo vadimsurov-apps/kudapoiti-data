@@ -1,8 +1,6 @@
 name: Проверка точности координат (OSM)
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "11 23 * * 0"   # раз в неделю, пн 02:11 МСК — новые места
 permissions:
   contents: write
 jobs:
