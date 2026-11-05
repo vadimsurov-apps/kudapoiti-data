@@ -66,6 +66,7 @@ COLUMNS = {
     "Категории": "cats",
     "Точность координат": "coord_exact",
     "День рождения": "birthday",
+    "Как найти": "how_to_find",
 }
 
 ENERGY = {"спокойно": "calm", "средне": "medium", "активно": "active"}
