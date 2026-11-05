@@ -122,9 +122,12 @@ def main():
         r = find(p); r["src"] = [p.get("lat"), p.get("lon")]; r["name"] = p["name"]; r["type"] = p["type"][0]
         out[p["id"]] = r
         print(i, p["id"], r["status"], r.get("moved_m"), r.get("osm_name"), flush=True)
+        if len(out) % 20 == 0:   # сохраняем по ходу: если прогон прервётся по времени, результаты не пропадут
+            os.makedirs("auto", exist_ok=True)
+            json.dump({**old, **out}, open(path, "w"), ensure_ascii=False, indent=0)
         time.sleep(1.2)
     os.makedirs("auto", exist_ok=True)
-    json.dump(out, open(path, "w"), ensure_ascii=False, indent=0)
+    json.dump(out if not only else {**old, **out}, open(path, "w"), ensure_ascii=False, indent=0)
     from collections import Counter
     print("Итого:", Counter(r["status"] for r in out.values()))
 

@@ -8,12 +8,17 @@ permissions:
 jobs:
   geocode:
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 360
     steps:
       - uses: actions/checkout@v4
       - run: python3 pipeline/geocode.py
+        timeout-minutes: 300
+        continue-on-error: true
       - run: python3 pipeline/entrances.py
-      - run: |
+        timeout-minutes: 40
+        continue-on-error: true
+      - if: always()
+        run: |
           git config user.name "kudapoiti-bot"
           git config user.email "bot@users.noreply.github.com"
           git add auto/
