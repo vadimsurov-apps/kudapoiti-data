@@ -2,7 +2,12 @@
 import openpyxl
 from openpyxl.styles import Font, Alignment, Border, Side
 
-SRC = __import__("os").path.join(__import__("os").path.dirname(__import__("os").path.abspath(__file__)), "..", "data", "kuda-poiti-mesta.xlsx")
+# Куда писать новые строки: у каждого робота своя таблица data/parts/<робот>.xlsx (переменная KP_PART=<робот>),
+# чтобы параллельные роботы не портили один общий двоичный файл. Без KP_PART — основная таблица.
+_os = __import__("os")
+_ROOT = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..")
+SRC = (_os.path.join(_ROOT, "data", "parts", _os.environ["KP_PART"] + ".xlsx") if _os.environ.get("KP_PART")
+       else _os.path.join(_ROOT, "data", "kuda-poiti-mesta.xlsx"))
 KP = "https://www.kp.ru/afisha/msk/obzory/moj-gorod/luchshie-batutnye-parki-moskvy/"
 HALVA = "https://media.halvacard.ru/entertainment/top-batutnyx-parkov-v-moskve"
 

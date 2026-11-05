@@ -1,0 +1,36 @@
+name: Сборка places.json, иконок и страниц
+on:
+  push:
+    branches: [main]
+    paths: ["data/**", "icons-src/**", "tools/xlsx_to_json.py", "tools/build_all.py"]
+  workflow_dispatch:
+concurrency:
+  group: build
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - run: pip install -q openpyxl cairosvg pillow
+      - name: Сборка
+        run: |
+          git pull -q --rebase origin main || true
+          BEFORE="${{ github.event.before }}"
+          CHANGED=""
+          if [ -n "$BEFORE" ] && git cat-file -e "$BEFORE" 2>/dev/null; then
+            CHANGED=$(git diff --name-only "$BEFORE" HEAD -- icons-src | sed -n 's#icons-src/\(.*\)\.svg#\1#p' | tr '\n' ' ')
+          fi
+          python3 tools/build_all.py $CHANGED
+      - run: |
+          git config user.name "kudapoiti-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add places.json icons p icons-catalog
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Сборка: places.json, иконки, страницы"
+          for i in 1 2 3 4 5; do git pull -q --rebase -X theirs origin main && git push -q && exit 0; sleep 10; done
+          exit 1

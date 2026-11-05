@@ -1,0 +1,23 @@
+"""Сборка всего, что генерируется (запускает GitHub Action build.yml после каждого пуша роботов):
+places.json (основная таблица + data/parts/*.xlsx), PNG иконок новых/изменённых SVG, index.json/versions.json,
+страницы «Поделиться», каталог иконок. Роботы сами эти файлы НЕ коммитят — только свою таблицу и icons-src/*.svg.
+python3 tools/build_all.py [id_изменённых_svg ...]"""
+import json, os, subprocess, sys
+root = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(root)
+old = len(json.load(open("places.json"))["places"]) if os.path.exists("places.json") else 0
+subprocess.run([sys.executable, "tools/xlsx_to_json.py", "data/kuda-poiti-mesta.xlsx", "places.json"], check=True,
+               stdout=subprocess.DEVNULL)
+places = json.load(open("places.json"))["places"]
+if len(places) < old:
+    sys.exit(f"мест стало меньше: {old} → {len(places)} — сборка остановлена")
+ids = {p["id"] for p in places}
+# иконки: перерисовать изменённые SVG + отрисовать новые места, у которых есть SVG, а PNG ещё нет
+bundled = set(json.load(open("tools/bundled_icons.json")))
+todo = {a for a in sys.argv[1:] if a in ids}
+todo |= {p for p in ids if p not in bundled and os.path.exists(f"icons-src/{p}.svg") and not os.path.exists(f"icons/{p}.png")}
+if todo:
+    subprocess.run([sys.executable, "tools/render_icons.py", *sorted(todo)], check=True)
+subprocess.run([sys.executable, "tools/make_share_pages.py"], check=True)
+subprocess.run([sys.executable, "tools/make_catalog.py"], check=True)
+no_icon = sorted(p for p in ids if p not in bundled and not os.path.exists(f"icons/{p}.png"))
+print(f"мест: {old} → {len(places)}; иконок отрисовано: {len(todo)}; мест без иконки: {len(no_icon)}", no_icon[:20])

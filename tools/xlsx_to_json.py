@@ -12,7 +12,7 @@
 Скрипт ничего не выдумывает: пустая ячейка -> null в JSON.
 В конце печатает список проблем по каждому месту (нет координат, цены и т.п.).
 """
-import json
+import json, os
 import re
 import sys
 from datetime import date, datetime
@@ -259,15 +259,20 @@ def main():
         sys.exit(__doc__)
     src, dst = args
 
-    ws = openpyxl.load_workbook(src, data_only=True)["Места"]
-    header = [clean(c.value) for c in ws[1]]
-    missing = [c for c in ("id", "Название") if c not in header]
-    if missing:
-        sys.exit(f"В листе «Места» нет колонок: {', '.join(missing)}")
+    # основная таблица + таблицы роботов data/parts/*.xlsx (у каждого робота своя — не мешают друг другу)
+    import glob
+    files = [src] + sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(src)), "parts", "*.xlsx")))
+    rows = []
+    for fpath in files:
+        ws = openpyxl.load_workbook(fpath, data_only=True)["Места"]
+        header = [clean(c.value) for c in ws[1]]
+        missing = [c for c in ("id", "Название") if c not in header]
+        if missing:
+            sys.exit(f"{fpath}: в листе «Места» нет колонок: {', '.join(missing)}")
+        rows += [dict(zip(header, row)) for row in ws.iter_rows(min_row=2, values_only=True)]
 
     places, report, ids = [], [], set()
-    for row in ws.iter_rows(min_row=2, values_only=True):
-        raw = dict(zip(header, row))
+    for raw in rows:
         if not clean(raw.get("id")):
             continue
         problems = []
