@@ -18,8 +18,9 @@ def clean(addr):
     a = re.sub(r",?\s*(ТЦ|ТРЦ|ТРК|БЦ|МФК|ЖК|Депо)\s*[«\"].*$", "", addr)       # всё после названия ТЦ
     a = re.sub(r",?\s*\d+\s*этаж.*$", "", a)
     a = re.sub(r"\bвл\.\s*", "", a)
-    a = re.sub(r",\s*стр\.\s*(\w+)", r"с\1", a)
-    a = re.sub(r",\s*корп\.\s*(\w+)", r"к\1", a)
+    a = re.sub(r"(\d\w*),\s*стр\.\s*(\w+)", r"\1с\2", a)
+    a = re.sub(r"(\d\w*),\s*корп\.\s*(\w+)", r"\1к\2", a)
+    a = re.sub(r",\s*(стр|корп)\.\s*", ", ", a)
     a = re.sub(r"(\d)\s*/\s*(\d)", r"\1/\2", a)
     for k, v in ABBR:
         a = re.sub(k, v, a)
