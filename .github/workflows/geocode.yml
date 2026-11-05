@@ -12,6 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 pipeline/geocode.py
+      - run: python3 pipeline/entrances.py
       - run: |
           git config user.name "kudapoiti-bot"
           git config user.email "bot@users.noreply.github.com"
