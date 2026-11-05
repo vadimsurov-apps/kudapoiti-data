@@ -28,6 +28,8 @@ RULES = [
   ("kids_center", '["amenity"="community_centre"]["name"~"[Дд]етск|[Тт]ворчеств|[Юю]ност"]'),
   ("kids_center", '["amenity"~"studio|music_school|arts_centre"]["name"~"[Дд]етск|[Шш]кола|[Сс]тудия"]'),
   ("kids_center", '["club"]["name"~"[Дд]етск|[Сс]тудия|[Шш]кола"]'),
+  ("kids_cafe", '["amenity"~"restaurant|cafe|fast_food"]["kids_area"~"yes|indoor|outdoor"]'),
+  ("kids_cafe", '["amenity"~"restaurant|cafe"]["name"~"[Дд]етск|[Kk]ids|Андерсон|Чайхона|Урюк|Jooie|Ribambelle|Лепим и варим|Додо|Пицца ?[Фф]абрика"]'),
   ("park", '["leisure"="park"]["name"]["wikidata"]'),
   ("attraction", '["tourism"="attraction"]["name"]'),
 ]
