@@ -40,7 +40,7 @@ def swim(pid, name, lat, lon, site, plus, a0=0, a1=7, price=2500, addr=None, hou
 def section(pid, name, lat, lon, site, plus, sport, a0=4, a1=14, price=1000, addr=None, hours=None):
     return base(pid, name, "спортивная секция", lat, lon, a0, a1, 45, 90, "активно", "спорт и активность", price,
                 "цена «от» за занятие; первое — см. акцию", hours, "да", plus,
-                f"{sport}: группы по возрасту, запись заранее", site, "active", addr=addr, booking="обязательна",
+                f"{sport}: группы по возрасту, запись заранее", site, "sport", addr=addr, booking="обязательна",
                 food="нет", stroller="нет", adult=1)
 
 

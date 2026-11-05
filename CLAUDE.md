@@ -28,6 +28,12 @@
 - Не дублировать места: проверять по названию и расстоянию < 300 м.
 - Коммит → `git pull --rebase` → push в main. В конце коротко отчитаться: сколько мест и акций добавлено/снято.
 
+## Категории фильтра (колонка «Категории», через запятую)
+parks, playcenters, trampolines, amusement, ropes (верёвочные парки), climbing (скалодромы), karting, skate (скейт-парки,
+памп-треки), sport (спортивные секции), dance (танцы и балет), quests, museums, science, shows, cinema, masterclass, tours,
+animals, water, pools, transport, winter, food. Категории `active` больше нет — не использовать.
+Сейчас мало мест в dance и sport: в candidates есть dance (100) и sports_school (94) — брать в приоритет после кафе.
+
 ## Ежедневная работа (запускается по расписанию)
 1. Снять просроченные акции из deals.json; для акций с checked старше 30 дней — перепроверить страницу (WebFetch).
 2. Из `auto/promo-snippets.json` (new: true) выбрать реальные детские акции:

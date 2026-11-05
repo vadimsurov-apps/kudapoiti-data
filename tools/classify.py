@@ -10,7 +10,7 @@ OVERRIDE = {
     "lock-cruise": ["tours", "water"], "city-sightseeing": ["tours"], "annushka-tram": ["tours", "transport", "food"],
     "aeroexpress-ride": ["tours", "transport"], "chistaya-liniya": ["tours", "masterclass"],
     "pobeda-chocolate": ["tours", "masterclass"], "konfael": ["masterclass", "tours"], "mosfilm": ["tours", "museums"],
-    "tsdm": ["playcenters", "tours"], "ded-moroz": ["tours", "shows"], "i-can-fly": ["active"], "vacuum-tube-sokolniki": ["active"],
+    "tsdm": ["playcenters", "tours"], "ded-moroz": ["tours", "shows"], "i-can-fly": ["amusement"], "vacuum-tube-sokolniki": ["amusement"],
     "experimentanium": ["science"], "innopark": ["science"], "lunarium": ["science"], "darwin": ["museums", "science"],
     "polytech-main": ["science", "museums"], "polytech-open": ["science"], "planetarium": ["science"],
     "museum-emotions": ["science"], "brain-museum": ["science"], "museum-darkness": ["science"], "atom-sandbox": ["science"],
@@ -18,13 +18,13 @@ OVERRIDE = {
     "machines-uprising": ["science"], "museum-cryptography": ["science", "museums"], "water-museum": ["science", "museums"],
     "illuzion-cinema": ["cinema"], "cinema-pioner": ["cinema"], "soyuzmultpark": ["cinema", "playcenters"],
     "museum-cinema-vdnh": ["cinema", "museums"], "animation-museum": ["museums", "cinema"],
-    "gaidarovka": ["museums"], "rgdb": ["museums"], "golf-mcc-kids": ["active"], "minigolf-bauman": ["amusement"],
+    "gaidarovka": ["museums"], "rgdb": ["museums"], "golf-mcc-kids": ["sport"], "minigolf-bauman": ["amusement"],
     "arcade-museum": ["museums", "playcenters"], "kidzania": ["playcenters"], "kidburg": ["playcenters"],
     "kidburg-skazki": ["playcenters", "shows"], "fixi-park": ["playcenters"], "hello-park": ["playcenters"],
-    "joki-joya": ["playcenters"], "zamania": ["playcenters"], "panda-park": ["active", "playcenters"],
+    "joki-joya": ["playcenters"], "zamania": ["playcenters"], "panda-park": ["ropes", "playcenters"],
     "kidlandia": ["playcenters"], "more-peska": ["playcenters"], "happy-city": ["playcenters"], "niki-land": ["playcenters"],
-    "veselye-dzhungli": ["playcenters"], "indigo-terra": ["playcenters", "trampolines"], "skytown-vdnh": ["active"],
-    "drift-cdm": ["active", "transport"], "tasty-lab-krasnogorsk": ["masterclass"], "impressions-museum-sp": ["museums"],
+    "veselye-dzhungli": ["playcenters"], "indigo-terra": ["playcenters", "trampolines"], "skytown-vdnh": ["ropes"],
+    "drift-cdm": ["karting", "transport"], "tasty-lab-krasnogorsk": ["masterclass"], "impressions-museum-sp": ["museums"],
     "master-panin": ["shows"], "izmailovo-kremlin": ["museums", "masterclass"],
 }
 # типы → категории (если нет в OVERRIDE)
@@ -33,7 +33,12 @@ TYPES = [
     ("playcenters", {"игровой центр", "игровой город профессий"}),
     ("trampolines", {"батутный центр"}),
     ("amusement", {"парк развлечений"}),
-    ("active", {"верёвочный парк", "скалодром", "картинг", "скейт-парк"}),
+    ("ropes", {"верёвочный парк", "веревочный парк"}),
+    ("climbing", {"скалодром"}),
+    ("karting", {"картинг"}),
+    ("skate", {"скейт-парк"}),
+    ("dance", {"танцы", "балет", "танцевальная студия"}),
+    ("sport", {"спортивная секция"}),
     ("quests", {"квест", "лазертаг"}),
     ("museums", {"музей", "музей-макет", "музей-заповедник", "кремль", "монастырь", "библиотека"}),
     ("science", {"музей науки"}),
@@ -49,7 +54,7 @@ TYPES = [
     ("food", {"кафе", "ресторан"}),
 ]
 # где почти всегда проводят детские праздники
-BDAY_CATS = {"playcenters", "trampolines", "quests", "masterclass", "active"}
+BDAY_CATS = {"playcenters", "trampolines", "quests", "masterclass", "ropes", "climbing", "karting"}
 
 
 def classify(pid, types, tags, name):
@@ -58,7 +63,9 @@ def classify(pid, types, tags, name):
     else:
         cats = [c for c, ts in TYPES if ts & types]
         if "VR" in name or "Аэротруба" in name:
-            cats = ["quests"] if "VR" in name else ["active"]
+            cats = ["quests"] if "VR" in name else ["amusement"]
+    if re.search(r"[Тт]анц|[Бб]алет|[Dd]ance", name):
+        cats = ["dance"] + [c for c in cats if c != "sport"]
     if "animals" not in cats and "животные" in tags and not ({"парк", "детская площадка"} & types):
         cats.append("animals")
     if "transport" not in cats and "машины и транспорт" in tags and ({"музей"} & types):
