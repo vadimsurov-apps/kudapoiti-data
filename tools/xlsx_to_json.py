@@ -212,6 +212,10 @@ def convert_row(raw, problems):
             v = "verified" if v == "проверено" else "draft"
         p[key] = v
 
+    # Цирки — отдельная категория circus (не shows): по типу «цирк»/«театр зверей» или слову «цирк» в названии
+    if p.get("cats") and ({"цирк", "театр зверей"} & set(p.get("type") or []) or "цирк" in (p.get("name") or "").lower()):
+        p["cats"] = ["circus"] + [c for c in p["cats"] if c not in ("shows", "circus")]
+
     # Сезон «11-03» -> [11, 12, 1, 2, 3]; пусто -> круглый год
     p["season_months"] = None
     if p.get("season"):
