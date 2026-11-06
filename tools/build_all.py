@@ -28,8 +28,16 @@ if len(keep) != len(dj["deals"]):
 bundled = set(json.load(open("tools/bundled_icons.json")))
 todo = {a for a in sys.argv[1:] if a in ids}
 todo |= {p for p in ids if p not in bundled and os.path.exists(f"icons-src/{p}.svg") and not os.path.exists(f"icons/{p}.png")}
+# SVG поменялся с прошлой отрисовки (хэш в icons/svg-hashes.json) — перерисовать, даже если пуш был раньше
+import hashlib
+hp = "icons/svg-hashes.json"; hashes = json.load(open(hp)) if os.path.exists(hp) else {}
+cur = {p: hashlib.sha1(open(f"icons-src/{p}.svg", "rb").read()).hexdigest()[:10]
+       for p in ids if p not in bundled and os.path.exists(f"icons-src/{p}.svg")}
+if hashes:
+    todo |= {p for p, h in cur.items() if hashes.get(p) != h}
 if todo:
     subprocess.run([sys.executable, "tools/render_icons.py", *sorted(todo)], check=True)
+json.dump(cur, open(hp, "w"), indent=0, sort_keys=True)
 subprocess.run([sys.executable, "tools/make_share_pages.py"], check=True)
 subprocess.run([sys.executable, "tools/make_catalog.py"], check=True)
 no_icon = sorted(p for p in ids if p not in bundled and not os.path.exists(f"icons/{p}.png"))
