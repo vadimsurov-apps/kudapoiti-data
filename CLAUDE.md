@@ -30,7 +30,7 @@
 
 ## Категории фильтра (колонка «Категории», через запятую)
 parks, playcenters, trampolines, amusement, ropes (верёвочные парки), climbing (скалодромы), karting, skate (скейт-парки,
-памп-треки), спорт по видам: martial (самбо, дзюдо, борьба, карате, бокс), football, racket (падел, теннис, бадминтон),
+памп-треки), спорт по видам: martial (самбо, дзюдо, борьба, карате, бокс), football, padel (падел), racket (теннис, бадминтон, сквош),
 gymnastics (гимнастика, акробатика), ballgames (баскетбол, волейбол), hockey (хоккей, фигурное катание), chess,
 sport (прочие секции), dance (танцы и балет), quests, museums, science, shows, cinema, masterclass, tours,
 animals, water, pools, transport, winter, food. Категории `active` больше нет — не использовать.
@@ -65,7 +65,7 @@ animals, water, pools, transport, winter, food. Категории `active` бо
 | робот | KP_PART | что добавляет | сюжеты иконок |
 |---|---|---|---|
 | cafes | `cafes` | кафе и рестораны с детской комнатой (food) | еда, посуда, кухня, сладости |
-| sections | `sections` | танцы и секции по видам спорта (dance, martial, football, racket, gymnastics, ballgames, hockey, chess, sport), детские бассейны | спортинвентарь, форма, музыка и танец |
+| sections | `sections` | танцы и секции по видам спорта (dance, martial, football, padel, racket, gymnastics, ballgames, hockey, chess, sport), детские бассейны | спортинвентарь, форма, музыка и танец |
 | fun | `fun` | игровые центры, батуты, квесты, верёвочные парки, скалодромы, картинг, музеи, театры, мастер-классы, животные, парки и прочее | игрушки, животные, сказочные персонажи, транспорт, природа, космос |
 
 Правила для каждого робота:
