@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<title>Куда пойти с детьми — карта Москвы и Подмосковья</title>
+<meta name="description" content="Карта детских мест Москвы и Подмосковья: игровые центры, секции, кафе с детской, музеи, бассейны. Часы работы, цены, акции и бесплатные пробные занятия.">
+<meta property="og:title" content="Куда пойти с детьми — карта Москвы и Подмосковья">
+<meta property="og:description" content="1600+ детских мест: игровые, секции, кафе с детской, музеи. Акции и бесплатные пробные занятия.">
+<meta property="og:image" content="https://vadimsurov-apps.github.io/kudapoiti-data/p/app.png">
+<meta property="og:url" content="https://vadimsurov-apps.github.io/kudapoiti-data/">
+<meta name="theme-color" content="#F2905F">
+<link rel="icon" href="p/app.png">
+<link rel="apple-touch-icon" href="p/app.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+:root{--bg:#FFF7F1;--card:#fff;--ink:#2B2320;--mute:#7A6E68;--accent:#F2905F;--accent2:#E5763E;--red:#E5484D;--green:#2E9E5B;--line:#F0E4DB;--chip:#FBEEE5;--shadow:0 6px 24px rgba(60,30,10,.14)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1C1816;--card:#26201D;--ink:#F5EEE9;--mute:#B4A79F;--line:#3A312C;--chip:#332A25;--shadow:0 6px 24px rgba(0,0,0,.5)}}
+:root[data-theme="dark"]{--bg:#1C1816;--card:#26201D;--ink:#F5EEE9;--mute:#B4A79F;--line:#3A312C;--chip:#332A25;--shadow:0 6px 24px rgba(0,0,0,.5)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;overflow:hidden}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+#map{position:fixed;inset:0;z-index:1;background:#eae6df}
+/* верхняя панель */
+.top{position:fixed;z-index:20;left:0;right:0;top:0;padding:calc(10px + env(safe-area-inset-top)) 12px 0;pointer-events:none}
+.top>*{pointer-events:auto}
+.bar{display:flex;gap:8px;max-width:640px}
+.search{flex:1;display:flex;align-items:center;gap:8px;background:var(--card);border-radius:16px;padding:0 12px;box-shadow:var(--shadow);height:46px}
+.search input{flex:1;border:0;outline:0;background:none;color:var(--ink);font:inherit;font-size:16px;min-width:0}
+.ibtn{height:46px;min-width:46px;border-radius:16px;background:var(--card);box-shadow:var(--shadow);display:grid;place-items:center;font-size:20px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:10px 0 4px;scrollbar-width:none;max-width:100%}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;height:36px;padding:0 14px;border-radius:999px;background:var(--card);box-shadow:0 2px 10px rgba(60,30,10,.12);display:flex;align-items:center;gap:6px;white-space:nowrap;font-weight:500}
+.chip.on{background:var(--accent);color:#fff}
+.chip.deal.on{background:var(--red)}
+.chip .n{opacity:.75;font-weight:400}
+/* шторка */
+.sheet{position:fixed;z-index:30;left:0;right:0;bottom:0;background:var(--card);border-radius:22px 22px 0 0;box-shadow:0 -6px 30px rgba(60,30,10,.18);display:flex;flex-direction:column;max-height:88vh;transition:transform .25s ease;padding-bottom:env(safe-area-inset-bottom)}
+.grab{padding:8px 0 4px;display:grid;place-items:center;cursor:grab;touch-action:none}
+.grab i{width:40px;height:5px;border-radius:3px;background:var(--line)}
+.shead{display:flex;align-items:center;justify-content:space-between;padding:2px 16px 8px;gap:8px}
+.shead b{font-size:17px}
+.shead .mute{font-size:13px}
+.list{overflow-y:auto;padding:0 8px 16px;-webkit-overflow-scrolling:touch}
+.item{display:flex;gap:12px;padding:10px 8px;border-radius:16px;align-items:center;width:100%;text-align:left}
+.item:hover{background:var(--chip)}
+.ava{width:52px;height:52px;border-radius:50%;flex:none;background:var(--chip);overflow:hidden}
+.ava img{width:100%;height:100%;display:block}
+.item .t{font-weight:600;line-height:1.25}
+.mute{color:var(--mute)}
+.sm{font-size:13px}
+.badge{display:inline-block;background:var(--red);color:#fff;border-radius:8px;padding:1px 7px;font-size:12px;font-weight:600;margin-top:3px}
+.open{color:var(--green)} .closed{color:var(--red)}
+/* карточка места */
+.det{padding:0 16px 18px;overflow-y:auto}
+.dhead{display:flex;gap:14px;align-items:center}
+.dhead .ava{width:76px;height:76px}
+.det h1{font-size:21px;line-height:1.2;margin:0}
+.row{display:flex;gap:10px;margin-top:12px;align-items:flex-start}
+.row .e{width:22px;text-align:center;flex:none}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tag{background:var(--chip);border-radius:999px;padding:4px 11px;font-size:13px}
+.dealbox{margin-top:12px;border:2px solid var(--red);border-radius:16px;padding:10px 14px}
+.dealbox b{color:var(--red)}
+.code{font-family:ui-monospace,Menlo,monospace;background:var(--chip);padding:1px 6px;border-radius:6px}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.btn{display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;font-weight:600;border-radius:14px;padding:12px;background:var(--chip);color:var(--ink);text-align:center}
+.btn.primary{background:var(--accent);color:#fff;grid-column:1/-1}
+.back{font-size:15px;color:var(--accent2);font-weight:600;padding:4px 0}
+/* категории */
+.cats{padding:0 16px 20px;overflow-y:auto}
+.cats h3{margin:16px 0 8px;font-size:14px;color:var(--mute);font-weight:600;text-transform:uppercase;letter-spacing:.03em}
+.cgrid{display:flex;flex-wrap:wrap;gap:8px}
+.cgrid .chip{box-shadow:none;background:var(--chip)}
+.cgrid .chip.on{background:var(--accent);color:#fff}
+.ages{display:flex;gap:8px;flex-wrap:wrap}
+/* маркеры */
+.pin{width:40px;height:40px;border-radius:50%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.3);overflow:hidden;border:2px solid #fff;position:relative}
+.pin img{width:100%;height:100%;display:block}
+.pin.hasdeal{border-color:var(--red)}
+.pin.sel{transform:scale(1.35);z-index:999;border-color:var(--accent)}
+.marker-cluster{background:rgba(242,144,95,.35);border-radius:50%}
+.marker-cluster div{width:30px;height:30px;margin:5px;border-radius:50%;background:var(--accent);color:#fff;font:700 13px/30px -apple-system,sans-serif;text-align:center}
+.leaflet-control-attribution{font-size:10px}
+.toast{position:fixed;z-index:50;left:50%;top:calc(70px + env(safe-area-inset-top));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:12px;font-size:14px;display:none}
+.promo{margin:6px 8px 4px;padding:10px 12px;border-radius:14px;background:var(--chip);font-size:13px}
+/* десктоп: шторка — панель слева */
+@media (min-width:860px){
+  .sheet{left:12px;right:auto;top:calc(118px + env(safe-area-inset-top));bottom:12px;width:400px;border-radius:22px;max-height:none;transform:none!important}
+  .grab{display:none}
+  .top{left:12px;right:12px}
+}
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<div class="top">
+  <div class="bar">
+    <label class="search"><span>🔎</span><input id="q" type="search" placeholder="Место, метро или занятие" autocomplete="off"></label>
+    <button class="ibtn" id="locate" title="Где я">📍</button>
+  </div>
+  <div class="chips" id="chips"></div>
+</div>
+
+<div class="sheet" id="sheet">
+  <div class="grab" id="grab"><i></i></div>
+  <div id="sheetBody"></div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script>
+"use strict";
+const BOT = "kudapoiti_deti_bot";
+const SITE = "https://vadimsurov-apps.github.io/kudapoiti-data/";
+const tg = window.Telegram && Telegram.WebApp && Telegram.WebApp.initData !== undefined ? Telegram.WebApp : null;
+const inTG = !!(tg && tg.platform && tg.platform !== "unknown");
+if (inTG) { tg.ready(); tg.expand(); try { tg.setHeaderColor("bg_color"); } catch (e) {}
+  document.documentElement.dataset.theme = tg.colorScheme === "dark" ? "dark" : "light"; }
+
+const CATS = [
+ ["Активный отдых", [["playcenters","Игровые центры"],["trampolines","Батуты"],["parks","Площадки и парки"],["amusement","Аттракционы"],["quests","Квесты и лазертаг"],["ropes","Верёвочные парки"],["climbing","Скалодромы"],["karting","Картинг"],["skate","Скейт-парки"]]],
+ ["Секции и занятия", [["dance","Танцы и балет"],["pools","Бассейны"],["martial","Единоборства"],["football","Футбол"],["padel","Падел"],["racket","Теннис"],["badminton","Бадминтон"],["gymnastics","Гимнастика"],["ballgames","Баскетбол и волейбол"],["hockey","Хоккей и фигурное"],["chess","Шахматы"],["sport","Другие секции"]]],
+ ["Культура и познание", [["museums","Музеи"],["science","Научные музеи"],["shows","Театры и цирк"],["cinema","Кино"],["masterclass","Мастер-классы"],["tours","Прогулки и экскурсии"]]],
+ ["Природа, сезон, поездки", [["animals","Животные"],["water","Аквапарки и пляжи"],["winter","Зима"],["transport","Поезда и машины"],["trips","Подмосковье"]]],
+ ["Еда и праздники", [["food","Кафе с детской"],["birthday","День рождения"]]],
+];
+const CATNAME = Object.fromEntries(CATS.flatMap(g => g[1]));
+const QUICK = ["playcenters","food","dance","pools","museums","trampolines","shows","animals"];
+const AGES = [["0–2",0,2],["3–5",3,5],["6–9",6,9],["10–13",10,13],["14+",14,18]];
+const KIND = {trial:"Пробное", free:"Бесплатно", discount:"Скидка", birthday:"Имениннику", promo:"Акция"};
+
+const st = { places: [], byId: {}, deals: {}, cats: new Set(), dealsOnly: false, openNow: false, age: null, q: "", me: null, sel: null, view: "list" };
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const $ = id => document.getElementById(id);
+const rub = n => n.toLocaleString("ru-RU") + " ₽";
+function toast(t) { const el = $("toast"); el.textContent = t; el.style.display = "block"; clearTimeout(toast.t); toast.t = setTimeout(() => el.style.display = "none", 2200); }
+function ls(k, v) { try { if (v === undefined) return JSON.parse(localStorage.getItem(k)); localStorage.setItem(k, JSON.stringify(v)); } catch (e) { return null; } }
+
+// ---------- карта ----------
+const map = L.map("map", { zoomControl: false, attributionControl: true }).setView([55.751, 37.618], 11);
+L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+  { maxZoom: 19, subdomains: "abcd", attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> © <a href="https://carto.com/">CARTO</a>' }).addTo(map);
+const cluster = L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 46, spiderfyOnMaxZoom: true, disableClusteringAtZoom: 16 });
+map.addLayer(cluster);
+const markers = {};
+
+function icon(p) {
+  return `p/img/${encodeURIComponent(p.id)}.png`;
+}
+function makeMarker(p) {
+  const m = L.marker([p.lat, p.lon], { icon: L.divIcon({ className: "", iconSize: [40, 40], iconAnchor: [20, 20],
+    html: `<div class="pin${st.deals[p.id] ? " hasdeal" : ""}" data-id="${esc(p.id)}"><img src="${icon(p)}" alt="" loading="lazy"></div>` }) });
+  m.on("click", () => openPlace(p.id, false));
+  return m;
+}
+
+// ---------- логика ----------
+function dist(p) {
+  if (!st.me || p.lat == null) return null;
+  const R = 6371, toR = x => x * Math.PI / 180;
+  const dLa = toR(p.lat - st.me[0]), dLo = toR(p.lon - st.me[1]);
+  const a = Math.sin(dLa / 2) ** 2 + Math.cos(toR(st.me[0])) * Math.cos(toR(p.lat)) * Math.sin(dLo / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(a));
+}
+function outside(p) { const R = 6371, t = x => x * Math.PI / 180, la = 55.7558, lo = 37.6173;
+  const a = Math.sin(t(p.lat - la) / 2) ** 2 + Math.cos(t(la)) * Math.cos(t(p.lat)) * Math.sin(t(p.lon - lo) / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(a)) > 25; }
+function inCat(p, c) {
+  if (c === "trips") return p.lat != null && outside(p);
+  if (c === "birthday") return p.birthday === true || (p.cats || []).includes("birthday");
+  return (p.cats || []).includes(c);
+}
+function mskNow() { const d = new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Moscow" })); return d; }
+function openState(p) {
+  if (p.open_mode === "always") return ["Открыто всегда", true];
+  if (p.open_mode !== "hours" || !Array.isArray(p.open_week) || p.open_week.length !== 7) return [null, null];
+  const d = mskNow(), i = (d.getDay() + 6) % 7, now = d.getHours() * 60 + d.getMinutes();
+  const s = p.open_week[i], y = p.open_week[(i + 6) % 7];
+  if (y && y[1] > 1440 && now + 1440 < y[1]) return ["Открыто до " + hm(y[1] - 1440), true];
+  if (!s) return ["Сегодня выходной", false];
+  if (now >= s[0] && now < s[1]) return ["Открыто до " + hm(s[1] % 1440), true];
+  if (now < s[0]) return ["Откроется в " + hm(s[0]), false];
+  return ["Закрыто", false];
+}
+const hm = m => String(Math.floor(m / 60)).padStart(2, "0") + ":" + String(m % 60).padStart(2, "0");
+function fitsAge(p) {
+  if (!st.age) return true;
+  if (p.age_min == null || p.age_max == null) return false;
+  const top = p.age_max >= 14 ? 18 : p.age_max;
+  return st.age[1] >= p.age_min && st.age[0] <= top;
+}
+function match(p, ignoreCats) {
+  if (p.status === "closed") return false;
+  if (!ignoreCats && st.cats.size && ![...st.cats].some(c => inCat(p, c))) return false;
+  if (st.dealsOnly && !st.deals[p.id]) return false;
+  if (st.openNow && openState(p)[1] !== true) return false;
+  if (!fitsAge(p)) return false;
+  if (st.q) {
+    const hay = (p.name + " " + (p.metro || "") + " " + (p.address || "") + " " + (p.type || []).join(" ") + " " +
+      (p.cats || []).map(c => CATNAME[c] || "").join(" ")).toLowerCase().replace(/ё/g, "е");
+    if (!st.q.split(/\s+/).every(w => hay.includes(w))) return false;
+  }
+  return true;
+}
+function filtered() { return st.places.filter(p => match(p)); }
+
+function sorted(list) {
+  if (st.me) return list.slice().sort((a, b) => (dist(a) ?? 1e9) - (dist(b) ?? 1e9));
+  return list.slice().sort((a, b) => (st.deals[b.id] ? 1 : 0) - (st.deals[a.id] ? 1 : 0) || a.name.localeCompare(b.name, "ru"));
+}
+
+function priceLine(p) {
+  const t = new Set(p.type || []);
+  if (t.has("кафе") || t.has("ресторан")) return p.price_adult ? "Средний чек ≈ " + rub(p.price_adult) : null;
+  const lesson = ["спортивная секция", "детский бассейн", "бассейн", "мастер-класс", "мастерская", "конный клуб", "скалодром"].some(x => t.has(x));
+  if (p.price_child === 0 && !p.price_adult) return "Бесплатно";
+  if (p.price_child) return (lesson ? "Занятие от " : "Детский билет ") + rub(p.price_child);
+  return null;
+}
+
+// ---------- отрисовка ----------
+function renderChips() {
+  const base = st.places.filter(p => match(p, true));
+  const dealsN = st.places.filter(p => { const s = st.dealsOnly; st.dealsOnly = true; const r = match(p); st.dealsOnly = s; return r; }).length;
+  const chosen = [...st.cats];
+  const extra = chosen.filter(c => !QUICK.includes(c));
+  const quick = [...extra, ...QUICK];
+  let h = `<button class="chip" id="allcats">☰ ${chosen.length ? "Категории: " + chosen.length : "Все категории"}</button>`;
+  h += `<button class="chip deal${st.dealsOnly ? " on" : ""}" data-deal>% Акции <span class="n">${dealsN}</span></button>`;
+  h += `<button class="chip${st.openNow ? " on" : ""}" data-open>Открыто сейчас</button>`;
+  for (const c of quick) {
+    const n = base.filter(p => inCat(p, c)).length;
+    if (!n && !st.cats.has(c)) continue;
+    h += `<button class="chip${st.cats.has(c) ? " on" : ""}" data-cat="${c}">${esc(CATNAME[c])} <span class="n">${n}</span></button>`;
+  }
+  $("chips").innerHTML = h;
+}
+
+let lastKey = "";
+function renderMap(list) {
+  const key = list.map(p => p.id).join(",");
+  if (key === lastKey) return; lastKey = key;
+  cluster.clearLayers();
+  cluster.addLayers(list.filter(p => p.lat != null).map(p => markers[p.id] || (markers[p.id] = makeMarker(p))));
+}
+
+function itemHTML(p) {
+  const d = dist(p), [os, op] = openState(p), dl = st.deals[p.id];
+  const sub = [(p.type || [])[0], p.metro ? "м. " + p.metro : null, d != null ? (d < 1 ? Math.round(d * 1000) + " м" : d.toFixed(1).replace(".", ",") + " км") : null].filter(Boolean).join(" · ");
+  return `<button class="item" data-id="${esc(p.id)}"><div class="ava"><img src="${icon(p)}" alt="" loading="lazy"></div>
+    <div style="min-width:0"><div class="t">${esc(p.name)}</div><div class="mute sm">${esc(sub)}</div>
+    <div class="sm">${os ? `<span class="${op ? "open" : "closed"}">${esc(os)}</span>` : ""}${dl ? ` <span class="badge">% ${esc(dl[0].title)}</span>` : ""}</div></div></button>`;
+}
+
+let listLimit = 60;
+function renderList() {
+  const list = sorted(filtered());
+  const title = st.dealsOnly ? "Акции и скидки" : st.cats.size === 1 ? CATNAME[[...st.cats][0]] : "Места рядом";
+  const n = list.length, w = n % 10 === 1 && n % 100 !== 11 ? "место" : [2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100) ? "места" : "мест";
+  $("sheetBody").innerHTML = `<div class="shead"><div><b>${esc(title)}</b><div class="mute">${n} ${w}${st.me ? " · ближе к вам" : ""}</div></div></div>
+    ${!inTG && !ls("promoHidden") ? `<div class="promo">📱 Приложение для iPhone скоро в App Store. А пока — <a href="https://t.me/${BOT}?start=map">откройте карту в Telegram</a>, чтобы она всегда была под рукой.</div>` : ""}
+    <div class="list" id="list">${list.slice(0, listLimit).map(itemHTML).join("") || '<p class="mute" style="padding:16px">Ничего не нашлось. Попробуйте убрать фильтры.</p>'}
+    ${n > listLimit ? `<button class="btn" id="more" style="width:100%;margin-top:8px">Показать ещё</button>` : ""}</div>`;
+  st.view = "list";
+}
+
+function render() {
+  renderChips();
+  const list = filtered();
+  renderMap(list);
+  if (st.view === "list") renderList();
+  ls("filters", { cats: [...st.cats], age: st.age && st.age[0] });
+}
+
+function openPlace(id, fly = true) {
+  const p = st.byId[id]; if (!p) return;
+  if (st.sel && markers[st.sel]) { const el = markers[st.sel].getElement(); el && el.firstChild.classList.remove("sel"); }
+  st.sel = id; st.view = "place";
+  if (p.lat != null) {
+    if (fly) map.setView([p.lat, p.lon], Math.max(map.getZoom(), 15));
+    const m = markers[id];
+    if (m) { cluster.zoomToShowLayer(m, () => { const el = m.getElement(); el && el.firstChild.classList.add("sel"); }); }
+  }
+  const [os, op] = openState(p), price = priceLine(p);
+  const today = new Date().toISOString().slice(0, 10);
+  const tags = [p.age_min != null && p.age_max != null ? `${p.age_min}–${p.age_max >= 14 ? "14+" : p.age_max} лет` : null,
+    p.indoor === "yes" ? "Под крышей" : p.indoor === "no" ? "На улице" : null, price, p.free_note,
+    p.stroller === "yes" ? "Можно с коляской" : null, p.parking === "yes" ? "Парковка" : null, p.cloakroom === "yes" ? "Гардероб" : null,
+    p.booking === "required" ? "Нужна запись" : null].filter(Boolean);
+  const route = p.lat != null ? `https://yandex.ru/maps/?rtext=~${p.lat},${p.lon}&rtt=auto` : null;
+  const share = SITE + "p/" + encodeURIComponent(p.id) + "/";
+  $("sheetBody").innerHTML = `<div class="shead"><button class="back" id="back">‹ Назад</button>
+    <a class="mute sm" href="https://t.me/${BOT}?start=e_${encodeURIComponent(p.id)}" target="_blank" rel="noopener">Здесь ошибка?</a></div>
+    <div class="det">
+      <div class="dhead"><div class="ava"><img src="${icon(p)}" alt=""></div>
+      <div><h1>${esc(p.name)}</h1><div class="mute">${esc((p.type || [])[0] || "")}${p.metro ? " · м. " + esc(p.metro) : ""}</div></div></div>
+      ${(st.deals[p.id] || []).map(d => `<div class="dealbox"><b>% ${esc(d.title)}</b>${d.details ? `<div>${esc(d.details)}</div>` : ""}
+        ${d.code ? `<div class="sm">Промокод: <span class="code">${esc(d.code)}</span></div>` : ""}
+        <div class="mute sm">${d.until ? "до " + new Date(d.until).toLocaleDateString("ru-RU", { day: "numeric", month: "long" }) + " · " : ""}${d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">условия</a>` : ""}</div></div>`).join("")}
+      ${p.address ? `<div class="row"><span class="e">📍</span><div>${esc(p.address)}</div></div>` : ""}
+      ${p.how_to_find ? `<div class="row"><span class="e">🧭</span><div><b>Как найти:</b> ${esc(p.how_to_find)}</div></div>` : ""}
+      ${p.hours || os ? `<div class="row"><span class="e">🕘</span><div>${os ? `<span class="${op ? "open" : "closed"}">${esc(os)}</span><br>` : ""}<span class="mute">${esc(p.hours || "")}</span></div></div>` : ""}
+      ${p.plus ? `<div class="row"><span class="e">👍</span><div>${esc(p.plus)}</div></div>` : ""}
+      ${p.minus ? `<div class="row"><span class="e">⚠️</span><div class="mute">${esc(p.minus)}</div></div>` : ""}
+      ${tags.length ? `<div class="tags">${tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>` : ""}
+      <div class="btns">
+        ${route ? `<a class="btn primary" href="${route}" target="_blank" rel="noopener">🚗 Маршрут</a>` : ""}
+        ${p.url ? `<a class="btn" href="${esc(p.url)}" target="_blank" rel="noopener">🌐 Сайт</a>` : ""}
+        <button class="btn" id="share" data-url="${share}">↗︎ Поделиться</button>
+      </div>
+    </div>`;
+  showSheet("mid");
+  history.replaceState(null, "", "?id=" + encodeURIComponent(id));
+  if (inTG) { tg.BackButton.show(); }
+}
+function closePlace() {
+  if (st.sel && markers[st.sel]) { const el = markers[st.sel].getElement(); el && el.firstChild.classList.remove("sel"); }
+  st.sel = null; renderList(); history.replaceState(null, "", location.pathname);
+  if (inTG) tg.BackButton.hide();
+}
+
+function renderCats() {
+  st.view = "cats";
+  const base = st.places.filter(p => match(p, true));
+  $("sheetBody").innerHTML = `<div class="shead"><b>Что ищем?</b><button class="back" id="catsDone">Готово</button></div>
+    <div class="cats">
+      <h3>Возраст ребёнка</h3><div class="ages">${AGES.map(a => `<button class="chip${st.age && st.age[0] === a[1] ? " on" : ""}" data-age="${a[1]}">${a[0]}</button>`).join("")}</div>
+      ${CATS.map(([g, list]) => {
+        const items = list.map(([c, n]) => [c, n, base.filter(p => inCat(p, c)).length]).filter(x => x[2] || st.cats.has(x[0]));
+        return items.length ? `<h3>${esc(g)}</h3><div class="cgrid">${items.map(([c, n, k]) => `<button class="chip${st.cats.has(c) ? " on" : ""}" data-cat="${c}">${esc(n)} <span class="n">${k}</span></button>`).join("")}</div>` : "";
+      }).join("")}
+      ${st.cats.size || st.age ? `<button class="btn" id="reset" style="width:100%;margin-top:18px">Сбросить фильтры</button>` : ""}
+    </div>`;
+  showSheet("full");
+}
+
+// ---------- шторка (мобильный) ----------
+const sheet = $("sheet");
+const desktop = () => matchMedia("(min-width:860px)").matches;
+function showSheet(pos) {
+  if (desktop()) { sheet.style.transform = ""; return; }
+  const h = sheet.offsetHeight, vh = innerHeight;
+  const y = pos === "full" ? 0 : pos === "low" ? Math.max(0, h - 150) : Math.max(0, h - vh * 0.5);
+  sheet.style.transform = `translateY(${y}px)`; sheet.dataset.pos = pos;
+}
+(function drag() {
+  let y0 = null, t0 = 0, base = 0;
+  const g = $("grab");
+  g.addEventListener("pointerdown", e => { y0 = e.clientY; base = new DOMMatrix(getComputedStyle(sheet).transform).m42; sheet.style.transition = "none"; g.setPointerCapture(e.pointerId); });
+  g.addEventListener("pointermove", e => { if (y0 == null) return; t0 = Math.max(0, base + e.clientY - y0); sheet.style.transform = `translateY(${t0}px)`; });
+  g.addEventListener("pointerup", e => { if (y0 == null) return; sheet.style.transition = "";
+    const moved = Math.abs(e.clientY - y0) > 6; y0 = null;
+    if (!moved) { showSheet(sheet.dataset.pos === "full" ? "low" : "full"); return; }
+    const h = sheet.offsetHeight, f = t0 / h; showSheet(f < .25 ? "full" : f < .6 ? "mid" : "low"); });
+})();
+map.on("movestart", () => { if (!desktop() && st.view === "list" && sheet.dataset.pos !== "low") showSheet("low"); });
+
+// ---------- события ----------
+document.addEventListener("click", e => {
+  const t = e.target.closest("button,[data-id]"); if (!t) return;
+  if (t.dataset.cat) { const c = t.dataset.cat; st.cats.has(c) ? st.cats.delete(c) : st.cats.add(c); listLimit = 60;
+    render(); if (st.view === "cats") renderCats(); return; }
+  if (t.dataset.age !== undefined) { const a = AGES.find(x => x[1] === +t.dataset.age); st.age = st.age && st.age[0] === a[1] ? null : [a[1], a[2]]; render(); renderCats(); return; }
+  if (t.hasAttribute("data-deal")) { st.dealsOnly = !st.dealsOnly; render(); if (st.view !== "list") renderList(); showSheet("mid"); return; }
+  if (t.hasAttribute("data-open")) { st.openNow = !st.openNow; render(); return; }
+  if (t.id === "allcats") { renderCats(); return; }
+  if (t.id === "catsDone") { renderList(); showSheet("mid"); return; }
+  if (t.id === "reset") { st.cats.clear(); st.age = null; render(); renderCats(); return; }
+  if (t.id === "back") { closePlace(); showSheet("mid"); return; }
+  if (t.id === "more") { listLimit += 60; renderList(); return; }
+  if (t.id === "share") { const url = t.dataset.url, p = st.byId[st.sel];
+    if (inTG) { tg.openTelegramLink("https://t.me/share/url?url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(p.name)); return; }
+    if (navigator.share) navigator.share({ title: p.name, url }).catch(() => {});
+    else navigator.clipboard.writeText(url).then(() => toast("Ссылка скопирована"), () => prompt("Ссылка:", url));
+    return; }
+  if (t.classList.contains("item")) { openPlace(t.dataset.id); return; }
+});
+let qT;
+$("q").addEventListener("input", e => { clearTimeout(qT); qT = setTimeout(() => { st.q = e.target.value.trim().toLowerCase().replace(/ё/g, "е"); listLimit = 60; if (st.view !== "list") renderList(); render(); showSheet("mid"); }, 200); });
+$("locate").addEventListener("click", locate);
+function locate(silent) {
+  const ok = (lat, lon) => { st.me = [lat, lon]; map.setView(st.me, 13);
+    if (!locate.dot) locate.dot = L.circleMarker(st.me, { radius: 8, color: "#fff", weight: 3, fillColor: "#2F7BEA", fillOpacity: 1 }).addTo(map); else locate.dot.setLatLng(st.me);
+    if (st.view === "list") renderList(); };
+  if (inTG && tg.LocationManager && tg.isVersionAtLeast && tg.isVersionAtLeast("8.0")) {
+    tg.LocationManager.init(() => { if (tg.LocationManager.isLocationAvailable) tg.LocationManager.getLocation(l => l ? ok(l.latitude, l.longitude) : (silent !== true && toast("Нет доступа к геопозиции"))); else geo(); }); return; }
+  geo();
+  function geo() { if (!navigator.geolocation) return;
+    navigator.geolocation.getCurrentPosition(p => ok(p.coords.latitude, p.coords.longitude), () => silent !== true && toast("Нет доступа к геопозиции"), { timeout: 8000, maximumAge: 300000 }); }
+}
+if (inTG) tg.BackButton.onClick(() => { if (st.view === "place") { closePlace(); showSheet("mid"); } else if (st.view === "cats") { renderList(); showSheet("mid"); } });
+addEventListener("resize", () => showSheet(sheet.dataset.pos || "mid"));
+
+// ---------- загрузка ----------
+(async function init() {
+  $("sheetBody").innerHTML = '<p class="mute" style="padding:8px 16px 24px">Загружаем места…</p>'; showSheet("low");
+  try {
+    const [pl, dl] = await Promise.all([fetch("places.json", { cache: "no-cache" }).then(r => r.json()), fetch("deals.json", { cache: "no-cache" }).then(r => r.json()).catch(() => ({ deals: [] }))]);
+    st.places = (pl.places || []).filter(p => p.status !== "closed");
+    st.places.forEach(p => st.byId[p.id] = p);
+    const today = new Date().toISOString().slice(0, 10);
+    for (const d of dl.deals || []) if (st.byId[d.place_id] && (!d.until || d.until >= today)) (st.deals[d.place_id] ||= []).push(d);
+    const saved = ls("filters"); if (saved) { (saved.cats || []).forEach(c => CATNAME[c] && st.cats.add(c)); const a = AGES.find(x => x[1] === saved.age); if (a) st.age = [a[1], a[2]]; }
+    const params = new URLSearchParams(location.search);
+    let start = params.get("id") || (inTG && tg.initDataUnsafe && tg.initDataUnsafe.start_param) || "";
+    if (start.startsWith("p_")) start = start.slice(2);
+    if (start === "deals" || params.get("deals")) st.dealsOnly = true;
+    render();
+    if (st.byId[start]) openPlace(start); else showSheet("mid");
+    locate(true);
+  } catch (e) {
+    $("sheetBody").innerHTML = '<p style="padding:8px 16px 24px">Не удалось загрузить места. Проверьте интернет и обновите страницу.</p>';
+  }
+})();
+</script>
+</body>
+</html>

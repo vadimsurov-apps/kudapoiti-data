@@ -50,7 +50,11 @@ const id = "cafe-ilpatio-korolev";
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 document.getElementById("open").href = "kudapoiti://place/" + encodeURIComponent(id);
 const store = document.getElementById("store");
-if (APP_STORE_URL) store.href = APP_STORE_URL; else { store.textContent = "Скоро в App Store"; store.removeAttribute("href"); }
+if (APP_STORE_URL) store.href = APP_STORE_URL;
+else { // пока приложения нет в App Store — главная кнопка ведёт на карту-сайт
+  const op = document.getElementById("open");
+  op.textContent = "Открыть на карте"; op.href = "https://vadimsurov-apps.github.io/kudapoiti-data/?id=" + encodeURIComponent(id);
+  store.textContent = "Карта в Telegram"; store.href = "https://t.me/kudapoiti_deti_bot?start=map"; }
 
 async function load() {
   const card = document.getElementById("card");

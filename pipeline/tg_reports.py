@@ -14,6 +14,14 @@ API = f"https://api.telegram.org/bot{TOKEN}/"
 REP, STATE, ANS = "auto/reports.json", "auto/reports-state.json", "auto/report-answers.json"
 MINUTES = int(sys.argv[sys.argv.index("--minutes") + 1]) if "--minutes" in sys.argv else 0
 
+SITE = "https://vadimsurov-apps.github.io/kudapoiti-data/"
+MAP_KB = json.dumps({"inline_keyboard": [[{"text": "🗺 Открыть карту", "web_app": {"url": SITE}}],
+                                         [{"text": "% Акции и бесплатные пробные", "web_app": {"url": SITE + "?deals=1"}}]]})
+WELCOME = ("👋 Здравствуйте! Это «Куда пойти с детьми» — карта 1600+ детских мест Москвы и Подмосковья: "
+           "игровые центры, секции, кафе с детской комнатой, музеи, бассейны, театры.\n\n"
+           "Часы работы, цены, как найти вход, а ещё акции, скидки и бесплатные пробные занятия.\n\n"
+           "Нажмите «🗺 Открыть карту» 👇 (она же всегда в кнопке «Карта» внизу чата).\n\n"
+           "Нашли неточность? Просто напишите сюда, что не так, — мы проверим и исправим.")
 HELLO = ("👋 Здравствуйте! Это помощник приложения «Куда пойти с детьми».\n\n"
          "Сюда пишут, если в приложении что-то неточно: неверные часы, адрес, цена, место закрылось или "
          "переехало, нет детской комнаты и т.п.\n\n")
@@ -27,8 +35,8 @@ def call(method, http_timeout=30, **params):
         return json.load(r)["result"]
 
 
-def say(chat, text):
-    try: call("sendMessage", chat_id=chat, text=text)
+def say(chat, text, kb=None):
+    try: call("sendMessage", chat_id=chat, text=text, **({"reply_markup": kb} if kb else {}))
     except Exception as e: print("send:", e)
 
 
@@ -67,7 +75,7 @@ def handle(u, places, reports, state):
             say(chat, HELLO + f"📍 Вы сообщаете о месте: «{places[pid]}».\n\n"
                       "✍️ Напишите одним сообщением, что не так. Можно приложить фото.")
         else:
-            say(chat, ASK_PLACE)
+            say(chat, WELCOME, MAP_KB)
         return False
     photo = (m.get("photo") or [{}])[-1].get("file_id")
     pid = state["chats"].get(chat)
@@ -95,10 +103,10 @@ def setup():
     # описание бота видно ещё до нажатия «Запустить»
     try:
         call("setMyDescription", description=
-             "Помощник приложения «Куда пойти с детьми» (Москва и Подмосковье).\n\n"
-             "Нашли неточность — неверные часы, адрес, цена, место закрылось? Нажмите «Запустить» и напишите, "
-             "что не так. Мы проверим и исправим, обычно в течение часа.")
-        call("setMyShortDescription", short_description="Сообщить о неточности в приложении «Куда пойти с детьми»")
+             "Карта детских мест Москвы и Подмосковья: игровые центры, секции, кафе с детской, музеи, бассейны.\n\n"
+             "Часы работы, цены, акции и бесплатные пробные занятия. Нажмите «Запустить» — и откройте карту.")
+        call("setMyShortDescription", short_description="Куда пойти с детьми в Москве: карта 1600+ мест, акции и скидки")
+        call("setChatMenuButton", menu_button=json.dumps({"type": "web_app", "text": "Карта", "web_app": {"url": SITE}}))
     except Exception as e:
         print("описание:", e)
 
