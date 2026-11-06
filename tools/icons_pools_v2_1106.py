@@ -482,7 +482,7 @@ FIT = {
 BGS = ["sky", "teal", "yellow", "pink", "purple", "orange", "green", "blue"]
 # по названию — особенно подходящая сцена
 PREF = {"kitenok": ("whale", None), "kashalot": ("whale", "fountain"), "chaika": ("penguin", "surf"), "flamingo": ("frog", "ring"),
-        "manta": ("manta", "under"), "delfin": ("dolphin", "hoop"), "murena": ("moray", None), "aqua-nemo": ("clownfish", None),
+        "manta": ("manta", "under"), "delfin": ("dolphin", "hoop"), "aqua-nemo": ("clownfish", None),
         "malysh-i-more": ("seal", "twin"), "mama-ya-plyvu": (None, "twin"), "aquababy": (None, "ring"), "zhemchuzhina": ("octopus", "bubble"),
         "okeana": ("orca", "stars"), "orbita": ("narwhal", "stars"), "raduzhny": ("frog", "rain"), "fiji": ("turtle", "ripple"),
         "olimp80": ("kidgirl", "podium"), "atlant": ("walrus", "trophy"), "zorky": ("seal", "snorkel"), "volna": ("seal", "surf"),
@@ -505,6 +505,7 @@ def plan():
             for h in ([ph] if ph else []) + rnd.sample(FIT[sc], len(FIT[sc])):
                 if h not in FIT[sc] and h != ph: continue
                 if (sc, h) in used_pair: continue
+                if hero_n.get(h, 0) >= (2 if h == "moray" else 5): continue   # Вадим: «мурены слишком одинаковые»
                 cost = scene_n.get(sc, 0) * 3 + hero_n.get(h, 0) * 2 - (6 if h == ph else 0) - (6 if sc == ps else 0)
                 cands.append((cost, sc, h))
         cost, sc, h = min(cands)
