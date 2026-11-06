@@ -1,0 +1,29 @@
+name: Сообщения об ошибках (Telegram-бот)
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["auto/report-answers.json"]
+concurrency:
+  group: reports
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 pipeline/tg_reports.py
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      - run: |
+          git config user.name "kudapoiti-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add auto/reports.json auto/reports-state.json
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Сообщения об ошибках"
+          for i in 1 2 3 4 5; do git pull -q --rebase -X theirs origin main && git push -q && exit 0; sleep 5; done
