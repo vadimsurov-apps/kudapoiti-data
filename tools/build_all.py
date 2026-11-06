@@ -4,11 +4,17 @@ places.json (основная таблица + data/parts/*.xlsx), PNG икон�
 python3 tools/build_all.py [id_изменённых_svg ...]"""
 import json, os, subprocess, sys
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(root)
-old = len(json.load(open("places.json"))["places"]) if os.path.exists("places.json") else 0
+old_ids = {p["id"] for p in json.load(open("places.json"))["places"]} if os.path.exists("places.json") else set()
+old = len(old_ids)
 subprocess.run([sys.executable, "tools/xlsx_to_json.py", "data/kuda-poiti-mesta.xlsx", "places.json"], check=True,
                stdout=subprocess.DEVNULL)
 places = json.load(open("places.json"))["places"]
-if len(places) < old:
+closed = {l.split(" — ")[0].strip() for l in open("auto/closed.txt") if l.strip() and not l.startswith("#")} \
+    if os.path.exists("auto/closed.txt") else set()
+gone = old_ids - {p["id"] for p in places}
+if gone and gone <= closed:
+    print("сняты закрытые места (auto/closed.txt):", " ".join(sorted(gone)))
+elif len(places) < old:
     sys.exit(f"мест стало меньше: {old} → {len(places)} — сборка остановлена")
 ids = {p["id"] for p in places}
 # акции: убрать ссылки на взломанные сайты и спам казино/букмекеров
