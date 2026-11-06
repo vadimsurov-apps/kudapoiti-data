@@ -32,9 +32,11 @@ todo |= {p for p in ids if p not in bundled and os.path.exists(f"icons-src/{p}.s
 import hashlib
 hp = "icons/svg-hashes.json"; hashes = json.load(open(hp)) if os.path.exists(hp) else {}
 cur = {p: hashlib.sha1(open(f"icons-src/{p}.svg", "rb").read()).hexdigest()[:10]
-       for p in ids if p not in bundled and os.path.exists(f"icons-src/{p}.svg")}
+       for p in ids if os.path.exists(f"icons-src/{p}.svg")}
 if hashes:
-    todo |= {p for p, h in cur.items() if hashes.get(p) != h}
+    # встроенные в приложение: впервые увиденные — только запомнить хэш; перерисованные — отрисовать,
+    # приложение (с версии, где удалённая иконка важнее встроенной) покажет новую
+    todo |= {p for p, h in cur.items() if (p in hashes or p not in bundled) and hashes.get(p) != h}
 if todo:
     subprocess.run([sys.executable, "tools/render_icons.py", *sorted(todo)], check=True)
 json.dump(cur, open(hp, "w"), indent=0, sort_keys=True)
