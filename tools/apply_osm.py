@@ -34,6 +34,15 @@ def strict(name, osm_name):
 
 
 def main(dry=False):
+    import glob
+    log = []
+    for path in [SRC] + sorted(glob.glob(os.path.join(root, "data", "parts", "*.xlsx"))):
+        log += apply_file(path, dry)
+    return log
+
+
+def apply_file(SRC, dry=False):
+    print(os.path.basename(SRC), end=": ")
     wb = openpyxl.load_workbook(SRC); ws = wb["Места"]
     h = {c.value: i + 1 for i, c in enumerate(ws[1])}
     stats = {"точка": 0, "вход": 0, "пропущено": 0}
