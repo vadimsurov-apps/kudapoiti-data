@@ -65,7 +65,7 @@ def classify(pid, types, tags, name):
         if "VR" in name or "Аэротруба" in name:
             cats = ["quests"] if "VR" in name else ["amusement"]
     SPORT = [("martial", r"самбо|дзюдо|борьб|карат|тхэквон|бокс|айкидо|единоборств|ушу|кикбокс"),
-             ("football", r"футбол|мини-футбол|школа мяча"), ("padel", r"падел|padel"), ("racket", r"теннис|бадминтон|сквош"),
+             ("football", r"футбол|мини-футбол|школа мяча"), ("padel", r"падел|padel"), ("badminton", r"бадминтон"), ("racket", r"теннис|сквош"),
              ("gymnastics", r"гимнаст|акробат|спортивн\w* гимн|батут.*секц"), ("ballgames", r"баскетбол|волейбол"),
              ("hockey", r"хокке|фигурн"), ("chess", r"шахмат|шашк")]
     if "sport" in cats or "спортивная секция" in types:
