@@ -1,7 +1,7 @@
 name: Сбор акций с сайтов мест
 on:
   schedule:
-    - cron: "41 0 * * *"   # каждый день в 03:41 МСК
+    - cron: "41 */3 * * *"   # каждые 3 часа (робот акций разбирает через ~40 мин)
   workflow_dispatch:
 permissions:
   contents: write
