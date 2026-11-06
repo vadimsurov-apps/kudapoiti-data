@@ -23,7 +23,7 @@ except ImportError:
     sys.exit("Нет библиотеки openpyxl. Установи: pip3 install openpyxl")
 
 # Ник в Telegram для кнопки «Здесь ошибка» (без @). Пусто — кнопка скрыта.
-CONTACT_TELEGRAM = "Vadim_Surov"
+CONTACT_TELEGRAM = "kudapoiti_deti_bot"  # бот приёма ошибок (pipeline/tg_reports.py)
 
 # Колонка в таблице -> ключ в JSON
 COLUMNS = {
