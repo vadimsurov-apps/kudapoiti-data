@@ -6,7 +6,8 @@
 import json, os, sys, time, urllib.parse, urllib.request
 
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
-if not TOKEN: sys.exit("нет TELEGRAM_BOT_TOKEN")
+if not TOKEN:
+    print("нет секрета TELEGRAM_BOT_TOKEN — бот ещё не подключён"); sys.exit(0)
 API = f"https://api.telegram.org/bot{TOKEN}/"
 REP, STATE = "auto/reports.json", "auto/reports-state.json"
 
