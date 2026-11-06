@@ -24,7 +24,7 @@ jobs:
         run: |
           git config user.name "kudapoiti-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add auto/pages
+          git add auto/pages auto/spam-domains.txt
           git diff --cached --quiet && exit 0
           git commit -q -m "Кэш сайтов для роботов"
           for i in 1 2 3 4 5; do git pull -q --rebase -X theirs origin main && git push -q && exit 0; sleep 10; done

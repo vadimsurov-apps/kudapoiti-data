@@ -4,6 +4,7 @@
 Для каждого сайта: главная + до 4 внутренних страниц про адреса/филиалы/детское/цены/расписание.
 auto/pages/index.json: {ключ: {url, ok, pages, bytes}}. Ключ: osm-id кандидата или домен+путь для очереди."""
 import concurrent.futures as cf, html, json, os, re, sys, time, urllib.parse, urllib.request
+import spam  # фильтр казино/букмекеров (pipeline/spam.py)
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"
 KIDS = {"kids_cafe", "dance", "sports_school", "swimming", "kids_center", "playcenter", "trampoline", "escape", "climbing",
@@ -52,6 +53,9 @@ def site(key, url):
             pass
         time.sleep(0.5)
     body = "\n\n".join(parts)[:MAX]
+    if spam.is_spam_text("\n".join(parts)):
+        # сайт взломан: текст не сохраняем, чтобы роботы его не читали
+        return key, {"url": url, "ok": False, "spam": True, "tries": 99}, "СПАМ: сайт взломан (казино/букмекеры). Не использовать.\n"
     return key, {"url": url, "ok": True, "pages": done, "bytes": len(body)}, body
 
 
@@ -68,18 +72,21 @@ def main():
         for u in open("auto/fetch-queue.txt").read().split():
             if u.startswith("http"):
                 jobs[re.sub(r"[^a-z0-9]+", "-", u.lower().split("//", 1)[1])[:90].strip("-")] = u
+    bad = spam.load_domains()
+    jobs = {k: u for k, u in jobs.items() if spam.domain(u) not in bad}
     force = "--force" in sys.argv
     todo = {k: u for k, u in jobs.items() if force or k not in idx or not idx[k].get("ok") and idx[k].get("tries", 0) < 3}
     print("сайтов в очереди:", len(todo), "из", len(jobs), flush=True)
     with cf.ThreadPoolExecutor(10) as ex:
         for i, (key, meta, body) in enumerate(ex.map(lambda kv: site(*kv), todo.items())):
-            meta["tries"] = idx.get(key, {}).get("tries", 0) + (0 if meta["ok"] else 1)
+            meta["tries"] = meta.get("tries") or idx.get(key, {}).get("tries", 0) + (0 if meta["ok"] else 1)
             idx[key] = meta
             if body: open(f"auto/pages/{key}.txt", "w").write(body)
             if i % 50 == 0:
                 print(i, key, meta.get("ok"), flush=True)
                 json.dump(idx, open(idx_path, "w"), ensure_ascii=False, indent=0)
     json.dump(idx, open(idx_path, "w"), ensure_ascii=False, indent=0)
+    print("новые спам-домены:", spam.add_domains(spam.domain(v["url"]) for v in idx.values() if v.get("spam")))
     print("готово:", sum(1 for v in idx.values() if v.get("ok")), "сайтов с текстом")
 
 

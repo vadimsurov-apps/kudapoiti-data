@@ -93,6 +93,11 @@ def main():
             "phone": t.get("phone") or t.get("contact:phone"), "wikidata": t.get("wikidata"),
             "desc": t.get("description"), "min_age": t.get("min_age"),
         }.items() if v})
+    # взломанные сайты (казино/букмекеры, см. pipeline/spam.py): ссылку убираем, чтобы роботы её не взяли
+    import spam
+    bad = spam.load_domains()
+    for x in out:
+        if x.get("url") and spam.domain(x["url"]) in bad: x["spam_site"] = x.pop("url")
     out.sort(key=lambda x: (x["cat"], x["name"]))
     os.makedirs("auto", exist_ok=True)
     with open("auto/candidates.json", "w") as f:

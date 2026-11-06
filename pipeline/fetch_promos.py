@@ -4,6 +4,7 @@ import datetime, hashlib, html, json, os, re, sys
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urljoin, urlparse
 import urllib.request
+import spam  # фильтр казино/букмекеров (pipeline/spam.py)
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"
 KEY = re.compile(r"акци|скидк|бесплатн|пробн|перв\w* (?:заняти|посещени|урок|визит)|промокод|подар|именинник|"
@@ -56,10 +57,12 @@ def scan(item):
         p = get(u)
         if p: pages.append((u, p))
         if len(pages) >= 4: break
+    if any(spam.is_spam_text(" ".join(text_blocks(p))) for _, p in pages):
+        return {**item, "ok": True, "spam": True, "snippets": []}  # сайт взломан — фраз не берём
     snippets = []
     for u, p in pages:
         for t in text_blocks(p):
-            if KEY.search(t) and not NOISE.search(t) and t not in (s["t"] for s in snippets):
+            if KEY.search(t) and not NOISE.search(t) and not spam.hits(t) and t not in (s["t"] for s in snippets):
                 snippets.append({"t": t, "page": u})
             if len(snippets) >= 25: break
     h = hashlib.md5("".join(s["t"] for s in snippets).encode()).hexdigest()[:10]
@@ -78,7 +81,8 @@ def main():
     by_host = {}
     for it in items:
         by_host.setdefault(urlparse(it["url"] if "//" in it["url"] else "https://" + it["url"]).netloc.lower().removeprefix("www."), it)
-    todo = list(by_host.values())
+    bad = spam.load_domains()
+    todo = [it for h, it in by_host.items() if h not in bad]
     old = {}
     if os.path.exists("auto/promo-snippets.json"):
         old = {s["ref"]: s.get("hash") for s in json.load(open("auto/promo-snippets.json"))["sites"]}
@@ -87,6 +91,7 @@ def main():
     for r in res:
         r["new"] = r.get("ok") and bool(r.get("snippets")) and old.get(r["ref"]) != r.get("hash")
     res.sort(key=lambda r: (not r["new"], r["name"]))
+    print("новые спам-домены:", spam.add_domains(spam.domain(r["url"]) for r in res if r.get("spam")))
     os.makedirs("auto", exist_ok=True)
     with open("auto/promo-snippets.json", "w") as f:
         json.dump({"version": datetime.date.today().isoformat(), "sites": res}, f, ensure_ascii=False, indent=0)

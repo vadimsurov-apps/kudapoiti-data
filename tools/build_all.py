@@ -11,6 +11,13 @@ places = json.load(open("places.json"))["places"]
 if len(places) < old:
     sys.exit(f"мест стало меньше: {old} → {len(places)} — сборка остановлена")
 ids = {p["id"] for p in places}
+# акции: убрать ссылки на взломанные сайты и спам казино/букмекеров
+sys.path.insert(0, "pipeline"); import spam
+bad = spam.load_domains(); dj = json.load(open("deals.json"))
+keep = [d for d in dj["deals"] if not spam.is_spam_url(d.get("url"), bad) and not spam.is_spam_text(json.dumps(d, ensure_ascii=False))]
+if len(keep) != len(dj["deals"]):
+    print("СПАМ: убраны акции", [d["id"] for d in dj["deals"] if d not in keep])
+    dj["deals"] = keep; json.dump(dj, open("deals.json", "w"), ensure_ascii=False, indent=1)
 # иконки: перерисовать изменённые SVG + отрисовать новые места, у которых есть SVG, а PNG ещё нет
 bundled = set(json.load(open("tools/bundled_icons.json")))
 todo = {a for a in sys.argv[1:] if a in ids}

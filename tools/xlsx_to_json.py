@@ -271,6 +271,10 @@ def main():
             sys.exit(f"{fpath}: в листе «Места» нет колонок: {', '.join(missing)}")
         rows += [dict(zip(header, row)) for row in ws.iter_rows(min_row=2, values_only=True)]
 
+    # ссылки на взломанные сайты (казино/букмекеры) в приложение не пускаем — см. pipeline/spam.py
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "pipeline"))
+    import spam
+    spam_domains = spam.load_domains()
     places, report, ids = [], [], set()
     for raw in rows:
         if not clean(raw.get("id")):
@@ -280,6 +284,12 @@ def main():
         if p["id"] in ids:
             sys.exit(f"Повтор id: {p['id']}")
         ids.add(p["id"])
+        if p.get("url") and spam.is_spam_url(p["url"], spam_domains):
+            print(f"СПАМ-САЙТ убран из места {p['id']}: {p['url']}")
+            p["url"] = None
+        if spam.is_spam_text(" ".join(str(v) for v in p.values() if isinstance(v, str))):
+            print(f"СПАМ в тексте места {p['id']} — место не выгружено")
+            continue
         if only_verified and p["status"] != "verified":
             continue
         places.append(p)
