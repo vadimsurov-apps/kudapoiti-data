@@ -70,6 +70,7 @@ parks, playcenters, trampolines, amusement, ropes (верёвочные парк
 gymnastics (гимнастика, акробатика), ballgames (баскетбол, волейбол), hockey (хоккей, фигурное катание), chess,
 sport (прочие секции), dance (танцы и балет), quests, museums, science, shows (театры), circus (цирки и театры зверей — ставится сборкой сама по типу «цирк»/«театр зверей»), cinema, masterclass, tours,
 animals, water, pools, transport, winter, food. Категории `active` больше нет — не использовать.
+Цирков всего 7 (circus): робот fun — в приоритет цирки, шапито, цирковые шоу и театры зверей Москвы и Подмосковья (тип «цирк» или «театр зверей»).
 Сейчас мало мест в dance и спортивных секциях: в candidates есть dance (100) и sports_school (94) — брать в приоритет после кафе.
 
 ## Робот акций (каждые 3 часа; сбор фраз с сайтов — Action promos.yml тоже каждые 3 часа, за ~40 мин до робота)
