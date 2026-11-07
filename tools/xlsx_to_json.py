@@ -256,6 +256,34 @@ def convert_row(raw, problems):
     return p
 
 
+def apply_precise_points(places):
+    """Точные точки из автоматических сверок (auto/osm-address.json — дом по адресу из OSM, auto/geo-yandex.json —
+    организации Яндекса). Применяются, только если в таблице точку с тех пор не меняли (src совпадает) и место
+    не исправляли вручную по сообщению пользователя (ручная правка важнее)."""
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    def load(name):
+        path = os.path.join(root, "auto", name)
+        return json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {}
+    manual = set()
+    for r in (load("reports.json") or []):
+        if r.get("location") or re.search(r"точк|здани|вход|подъезд|метк|не там|дом", (r.get("text") or "").lower()):
+            if r.get("place_id"): manual.add(r["place_id"])
+    sources = [("osm-address.json", lambda e: e.get("status") == "moved"),
+               ("geo-yandex.json", lambda e: e.get("method") in ("yandex-org", "yandex-addr"))]
+    n = {}
+    for name, ok in sources:
+        data = load(name)
+        for p in places:
+            e = data.get(p["id"])
+            if not e or not ok(e) or p["id"] in manual or p.get("lat") is None: continue
+            src = e.get("src") or [e.get("src_lat"), e.get("src_lon")]
+            if src[0] is None or abs(src[0] - p["lat"]) > 1e-6 or abs(src[1] - p["lon"]) > 1e-6: continue
+            p["lat"], p["lon"], p["coord_exact"] = e["lat"], e["lon"], True
+            n[name] = n.get(name, 0) + 1
+    if n:
+        print("точные точки:", n)
+
+
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     only_verified = "--only-verified" in sys.argv
@@ -299,6 +327,8 @@ def main():
         places.append(p)
         if problems:
             report.append((p["name"], problems))
+
+    apply_precise_points(places)
 
     with open(dst, "w", encoding="utf-8") as f:
         json.dump({"version": date.today().isoformat(),

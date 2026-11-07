@@ -21,8 +21,11 @@ jobs:
           osmium tags-filter mo.osm.pbf n/entrance n/barrier=gate,entrance,turnstile,lift_gate -o entr.osm.pbf --overwrite
           osmium export named.osm.pbf -f geojsonseq -a type,id --geometry-types=point,linestring,polygon -o named.geojsonseq --overwrite
           osmium export entr.osm.pbf -f geojsonseq -a type,id --geometry-types=point -o entr.geojsonseq --overwrite
-          wc -l named.geojsonseq entr.geojsonseq
+          osmium tags-filter mo.osm.pbf w/addr:housenumber r/addr:housenumber -o bld.osm.pbf --overwrite
+          osmium export bld.osm.pbf -f geojsonseq -a type,id --geometry-types=polygon -o bld.geojsonseq --overwrite
+          wc -l named.geojsonseq entr.geojsonseq bld.geojsonseq
       - run: python3 pipeline/osm_local.py
+      - run: python3 pipeline/osm_address.py
       - if: always()
         run: |
           git config user.name "kudapoiti-bot"

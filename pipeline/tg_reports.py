@@ -54,7 +54,7 @@ def load():
 def save(reports, state, msg):
     json.dump(reports, open(REP, "w"), ensure_ascii=False, indent=1)
     json.dump(state, open(STATE, "w"), ensure_ascii=False, indent=1)
-    git("add", REP, STATE)
+    git("add", REP, STATE, "auto/report-photos")
     if git("diff", "--cached", "--quiet").returncode == 0: return
     git("commit", "-q", "-m", msg)
     for _ in range(5):
@@ -73,15 +73,30 @@ def handle(u, places, reports, state):
         state["chats"][chat] = pid if pid in places else None
         if pid in places:
             say(chat, HELLO + f"📍 Вы сообщаете о месте: «{places[pid]}».\n\n"
-                      "✍️ Напишите одним сообщением, что не так. Можно приложить фото.")
+                      "✍️ Напишите одним сообщением, что не так. Можно приложить фото.\n\n"
+                      "🎯 Точка стоит не там? Пришлите геопозицию входа: 📎 → «Геопозиция» → "
+                      "передвиньте метку ровно на вход → «Отправить». Это самый точный способ.")
         else:
             say(chat, WELCOME, MAP_KB)
         return False
     photo = (m.get("photo") or [{}])[-1].get("file_id")
+    loc = m.get("location") or (m.get("venue") or {}).get("location")
+    location = [loc["latitude"], loc["longitude"]] if loc else None
+    if location and not text:
+        text = "Геопозиция входа"
     pid = state["chats"].get(chat)
+    photo_file = None
+    if photo:   # скачиваем фото, чтобы робот-исправитель мог его посмотреть
+        try:
+            fp = call("getFile", file_id=photo)["file_path"]
+            os.makedirs("auto/report-photos", exist_ok=True)
+            photo_file = f"auto/report-photos/{u['update_id']}.jpg"
+            urllib.request.urlretrieve(f"https://api.telegram.org/file/bot{TOKEN}/{fp}", photo_file)
+        except Exception as e:
+            print("photo:", e); photo_file = None
     reports.append({"id": str(u["update_id"]), "date": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(m.get("date", 0))),
                     "chat": chat, "place_id": pid, "place": places.get(pid), "text": text, "photo": photo,
-                    "status": "new"})
+                    "photo_file": photo_file, "location": location, "status": "new"})
     say(chat, DONE)
     return True
 
