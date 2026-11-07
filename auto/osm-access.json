@@ -26039,6 +26039,38 @@
 "fee": "yes"
 }
 },
+"cooknrun-strogino": {
+"gates": [
+{
+"access": "no",
+"barrier": "gate",
+"d": 60
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 113,
+"fee": "yes",
+"parking": "multi-storey"
+},
+{
+"access": "yes",
+"d": 140,
+"fee": "yes",
+"parking": "multi-storey"
+},
+{
+"access": "yes",
+"d": 187,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 249
+}
+]
+},
 "cosmos": {
 "parking": [
 {
@@ -27138,6 +27170,16 @@
 {
 "d": 298,
 "parking": "surface"
+}
+]
+},
+"divny-zoosad": {
+"parking": [
+{
+"d": 130
+},
+{
+"d": 163
 }
 ]
 },
@@ -34641,6 +34683,14 @@
 }
 ]
 },
+"ivanteevka-museum": {
+"building_addr": "Центральный проезд, 1",
+"parking": [
+{
+"d": 272
+}
+]
+},
 "izmailovo-kremlin": {
 "building_addr": "Измайловское шоссе, 73Ж",
 "gates": [
@@ -41201,6 +41251,23 @@
 }
 ]
 },
+"lukhovitsy-museum": {
+"building_addr": "Советская улица, 8А",
+"parking": [
+{
+"d": 20
+},
+{
+"d": 42
+},
+{
+"d": 55
+},
+{
+"d": 62
+}
+]
+},
 "luzhniki-aqua": {
 "parking": [
 {
@@ -41226,6 +41293,28 @@
 "d": 169,
 "fee": "yes",
 "parking": "surface"
+}
+]
+},
+"lytkarino-museum": {
+"gates": [
+{
+"barrier": "gate",
+"d": 40
+}
+],
+"parking": [
+{
+"d": 35
+},
+{
+"d": 49
+},
+{
+"d": 59
+},
+{
+"d": 88
 }
 ]
 },
@@ -49492,6 +49581,29 @@
 }
 ]
 },
+"ozery-museum": {
+"parking": [
+{
+"d": 204,
+"parking": "surface"
+},
+{
+"d": 256
+},
+{
+"access": "yes",
+"d": 277,
+"fee": "no",
+"supervised": "no"
+},
+{
+"access": "yes",
+"d": 291,
+"fee": "no",
+"supervised": "no"
+}
+]
+},
 "padel-buenos-skladochnaya": {
 "building_addr": "Складочная улица, 1 с6",
 "parking": [
@@ -53150,6 +53262,17 @@
 "d": 191,
 "fee": "no",
 "parking": "surface"
+}
+]
+},
+"pushchino-eco-museum": {
+"parking": [
+{
+"access": "yes",
+"d": 175
+},
+{
+"d": 253
 }
 ]
 },
@@ -58065,6 +58188,24 @@
 }
 ]
 },
+"shakhovskaya-museum": {
+"parking": [
+{
+"d": 17
+},
+{
+"d": 52
+},
+{
+"d": 56
+},
+{
+"capacity": "40",
+"d": 62,
+"fee": "no"
+}
+]
+},
 "shalom-novoslobodskaya": {
 "gates": [
 {
@@ -60853,6 +60994,32 @@
 "parking": "surface"
 }
 ]
+},
+"taldom-museum": {
+"parking": [
+{
+"access": "yes",
+"d": 122,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 167,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 175,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 244
+}
+],
+"poi": {
+"fee": "yes"
+}
 },
 "tancuy-tut-tsvetnoy": {
 "gates": [
@@ -64201,6 +64368,24 @@
 }
 ]
 },
+"vereya-museum": {
+"parking": [
+{
+"access": "yes",
+"d": 111,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 222,
+"parking": "street_side"
+}
+],
+"poi": {
+"description": "Режим работы: вторник - пятница с 10 до 17 (касса - до 16), сб с 10 до 16 (касса - до 15). Вс и пн - выходные",
+"note": "Музей располагается в здании бывшего уездного училища"
+}
+},
 "vernadskogo-13": {
 "parking": [
 {
@@ -65704,6 +65889,77 @@
 },
 {
 "d": 179
+}
+]
+},
+"yandex-museum-avrora": {
+"building_addr": "Садовническая улица, 82 с2",
+"building_entrances": [
+{
+"d": 361,
+"entrance": "yes"
+},
+{
+"d": 363,
+"entrance": "main"
+},
+{
+"d": 364,
+"entrance": "yes"
+},
+{
+"d": 408,
+"entrance": "service"
+},
+{
+"d": 412,
+"entrance": "service"
+},
+{
+"d": 486,
+"entrance": "service"
+},
+{
+"d": 513,
+"entrance": "service"
+},
+{
+"d": 515,
+"entrance": "yes"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 47
+}
+],
+"parking": [
+{
+"d": 130,
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity": "3",
+"d": 263,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity": "3",
+"d": 264,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"capacity": "31",
+"charge": "200 RUB/hour",
+"d": 275,
+"fee": "yes",
+"operator": "Swissotel Красные холмы",
+"parking": "street_side"
 }
 ]
 },
