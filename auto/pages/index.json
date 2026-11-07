@@ -11897,7 +11897,7 @@
 "url": "https://mosmuseum.ru/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "shm-ru": {
 "url": "https://shm.ru/",
@@ -11910,7 +11910,7 @@
 "url": "https://mgomz.ru/",
 "ok": false,
 "err": "IncompleteRead(0 bytes read, 18 more expected)",
-"tries": 2
+"tries": 3
 },
 "www-gbmt-ru": {
 "url": "https://www.gbmt.ru/",
@@ -11958,7 +11958,7 @@
 "url": "https://mtyuz.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
-"tries": 2
+"tries": 3
 },
 "ugolokdurova-ru": {
 "url": "https://ugolokdurova.ru/",
@@ -11971,24 +11971,144 @@
 "url": "https://www.moscowpuppets.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 2
+"tries": 3
 },
 "museum-ru-mmw": {
 "url": "https://museum.ru/mmw/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "www-restoclub-ru-msk-search-restorany-s-detskoj-komnatoj-v-gorode-mytishhi": {
 "url": "https://www.restoclub.ru/msk/search/restorany-s-detskoj-komnatoj-v-gorode-mytishhi",
 "ok": false,
 "err": "HTTP Error 503: Service Temporarily Unavailable",
-"tries": 1
+"tries": 2
 },
 "www-restoclub-ru-msk-search-restorany-srednej-cenovoj-kategorii-s-detskoj-komnatoj": {
 "url": "https://www.restoclub.ru/msk/search/restorany-srednej-cenovoj-kategorii-s-detskoj-komnatoj",
 "ok": false,
 "err": "HTTP Error 503: Service Temporarily Unavailable",
+"tries": 2
+},
+"badminton-mossport-ru": {
+"url": "https://badminton.mossport.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 16000,
+"tries": 0
+},
+"athletics-mossport-ru": {
+"url": "https://athletics.mossport.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"tabletennis-mossport-ru": {
+"url": "https://tabletennis.mossport.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 16000,
+"tries": 0
+},
+"chess-mossport-ru": {
+"url": "https://chess.mossport.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"volleyball-mossport-ru": {
+"url": "https://volleyball.mossport.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 16000,
+"tries": 0
+},
+"basketball-mossport-ru": {
+"url": "https://basketball.mossport.ru/",
+"ok": false,
+"spam": true,
+"tries": 99
+},
+"fencing-mossport-ru": {
+"url": "https://fencing.mossport.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 16000,
+"tries": 0
+},
+"gymnastics-mossport-ru": {
+"url": "https://gymnastics.mossport.ru/",
+"ok": false,
+"err": "<urlopen error [Errno -2] Name or service not known>",
+"tries": 1
+},
+"swimming-mossport-ru": {
+"url": "https://swimming.mossport.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"handball-mossport-ru": {
+"url": "https://handball.mossport.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"rugby-mossport-ru": {
+"url": "https://rugby.mossport.ru/",
+"ok": true,
+"pages": 2,
+"bytes": 16000,
+"tries": 0
+},
+"archery-mossport-ru": {
+"url": "https://archery.mossport.ru/",
+"ok": false,
+"err": "<urlopen error [Errno -2] Name or service not known>",
+"tries": 1
+},
+"champion-chesskids-ru": {
+"url": "http://champion-chesskids.ru/",
+"ok": true,
+"pages": 3,
+"bytes": 8212,
+"tries": 0
+},
+"moscowvolley-ru-volleyball-childrensvolleyball-schools": {
+"url": "https://moscowvolley.ru/volleyball/childrensvolleyball/schools/",
+"ok": true,
+"pages": 5,
+"bytes": 14074,
+"tries": 0
+},
+"academkids-ru-lessons-shahmaty": {
+"url": "https://academkids.ru/lessons/shahmaty/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"sportschools-ru-gorod-moscow-sport-table-tenis-deti": {
+"url": "https://sportschools.ru/gorod-Moscow/sport-Table-tenis/Deti",
+"ok": false,
+"err": "<urlopen error _ssl.c:983: The handshake operation timed out>",
+"tries": 1
+},
+"sportschools-ru-gorod-moscow-sport-light-athletics-deti": {
+"url": "https://sportschools.ru/gorod-Moscow/sport-Light-athletics/Deti",
+"ok": false,
+"err": "<urlopen error _ssl.c:983: The handshake operation timed out>",
+"tries": 1
+},
+"sportschools-ru-gorod-moscow-sport-table-tenis-besplatno": {
+"url": "https://sportschools.ru/gorod-Moscow/sport-Table-tenis/besplatno",
+"ok": false,
+"err": "<urlopen error _ssl.c:983: The handshake operation timed out>",
 "tries": 1
 }
 }
