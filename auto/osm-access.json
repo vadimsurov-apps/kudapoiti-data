@@ -4973,10 +4973,18 @@
 "building_addr": "улица Нахимова, 14А",
 "parking": [
 {
-"d": 190
+"d": 55
 },
 {
-"d": 263
+"d": 63
+},
+{
+"d": 100,
+"parking": "surface"
+},
+{
+"d": 104,
+"parking": "surface"
 }
 ]
 },
@@ -5604,17 +5612,25 @@
 "building_addr": "улица Чехова, 6А",
 "parking": [
 {
-"d": 76
-},
-{
-"d": 85
-},
-{
-"d": 172
-},
-{
-"d": 194,
+"access": "yes",
+"d": 96,
 "fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 119,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 141,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 232,
 "parking": "surface"
 }
 ]
@@ -7168,28 +7184,23 @@
 },
 "cafe-crazy-brothers-domodedovo": {
 "building_addr": "Каширское шоссе, 91",
+"gates": [
+{
+"barrier": "gate",
+"d": 39
+}
+],
 "parking": [
 {
-"d": 42,
+"access": "yes",
+"d": 132,
 "fee": "no",
-"supervised": "no"
+"parking": "surface"
 },
 {
-"d": 63,
+"d": 280,
 "fee": "no",
-"parking": "surface",
-"supervised": "yes"
-},
-{
-"capacity": "4",
-"d": 65,
-"fee": "no",
-"parking": "surface",
-"supervised": "no"
-},
-{
-"d": 235,
-"supervised": "no"
+"parking": "surface"
 }
 ]
 },
@@ -8959,15 +8970,42 @@
 },
 "cafe-gospoda-kovboi-aprelevka": {
 "building_addr": "Пролетарская улица, 20А",
+"building_entrances": [
+{
+"access": "yes",
+"d": 4,
+"door": "hinged",
+"entrance": "home",
+"ref": "2"
+},
+{
+"access": "yes",
+"d": 28,
+"door": "hinged",
+"entrance": "home",
+"ref": "1"
+},
+{
+"access": "yes",
+"d": 28,
+"door": "hinged",
+"entrance": "home",
+"ref": "3"
+}
+],
 "parking": [
 {
 "access": "yes",
-"d": 219,
-"fee": "no",
+"d": 29,
 "parking": "surface"
 },
 {
-"d": 236
+"access": "yes",
+"d": 110,
+"parking": "surface"
+},
+{
+"d": 133
 }
 ]
 },
@@ -11960,7 +11998,32 @@
 ]
 },
 "cafe-korchma-odintsovo": {
-"building_addr": "Можайское шоссе, 122"
+"building_addr": "Можайское шоссе, 122",
+"building_entrances": [
+{
+"access": "private",
+"d": 85,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"d": 134,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 159,
+"parking": "street_side"
+},
+{
+"d": 213
+},
+{
+"d": 221,
+"parking": "street_side"
+}
+]
 },
 "cafe-korchma-samotechnaya": {
 "gates": [
@@ -16295,7 +16358,16 @@
 ]
 },
 "cafe-parus-protvino": {
-"building_addr": "улица Ленина, 20"
+"building_addr": "улица Ленина, 20",
+"parking": [
+{
+"d": 151,
+"parking": "surface"
+},
+{
+"d": 159
+}
+]
 },
 "cafe-pasta-verde": {
 "building_addr": "Большая Академическая улица, 85 к3",
@@ -16552,7 +16624,27 @@
 ]
 },
 "cafe-pepepizza-aprelevka": {
-"building_addr": "Августовская улица, 8"
+"building_addr": "Августовская улица, 8",
+"parking": [
+{
+"access": "yes",
+"d": 61,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 102,
+"parking": "surface"
+},
+{
+"d": 123,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 175
+}
+]
 },
 "cafe-peshi-modny-sezon": {
 "building_addr": "улица Охотный Ряд, 2",
@@ -17954,29 +18046,29 @@
 "building_addr": "Наро-Фоминское шоссе, 8",
 "building_entrances": [
 {
-"d": 545,
-"entrance": "staircase",
-"ref": "1"
-},
-{
-"d": 553,
-"entrance": "staircase",
-"ref": "2"
-},
-{
-"d": 563,
+"d": 12,
 "entrance": "staircase",
 "ref": "3"
 },
 {
-"d": 576,
+"d": 25,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"d": 43,
 "entrance": "staircase",
 "ref": "4"
+},
+{
+"d": 52,
+"entrance": "staircase",
+"ref": "1"
 }
 ],
 "parking": [
 {
-"d": 238
+"d": 201
 }
 ]
 },
@@ -18699,29 +18791,30 @@
 "building_addr": "Советская площадь, 2",
 "building_entrances": [
 {
-"d": 344,
+"d": 0,
 "entrance": "main"
 }
 ],
 "parking": [
 {
-"access": "yes",
-"d": 180,
+"access": "customers",
+"d": 24,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 182
-},
-{
 "access": "yes",
-"d": 206
-},
-{
-"access": "yes",
-"d": 237,
+"d": 50,
 "fee": "no",
 "parking": "surface"
+},
+{
+"d": 80
+},
+{
+"capacity": "46",
+"d": 98,
+"parking": "street_side"
 }
 ]
 },
