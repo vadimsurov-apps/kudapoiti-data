@@ -23680,6 +23680,14 @@
 }
 ]
 },
+"chess1-gazoprovod": {
+"parking": [
+{
+"d": 170,
+"parking": "surface"
+}
+]
+},
 "chess1-golitsyno": {
 "building_addr": "Советская улица, 58",
 "building_entrances": [
@@ -23749,6 +23757,25 @@
 }
 ]
 },
+"chess1-lukinskaya": {
+"building_addr": "Лукинская улица, 11",
+"parking": [
+{
+"access": "customers",
+"d": 145
+},
+{
+"d": 203
+},
+{
+"d": 249,
+"parking": "multi-storey"
+},
+{
+"d": 285
+}
+]
+},
 "chess1-moreon-golubinskaya": {
 "building_addr": "Голубинская улица, 16",
 "building_entrances": [
@@ -23771,6 +23798,33 @@
 },
 {
 "d": 104
+}
+]
+},
+"chess1-moskovsky": {
+"building_addr": "1-й микрорайон, 49",
+"building_entrances": [
+{
+"d": 576,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"d": 81,
+"parking": "street_side"
+},
+{
+"d": 86,
+"parking": "street_side"
+},
+{
+"d": 108,
+"parking": "street_side"
+},
+{
+"d": 121,
+"parking": "street_side"
 }
 ]
 },
@@ -23815,6 +23869,24 @@
 }
 ]
 },
+"chess1-pervomayskaya": {
+"building_addr": "7-я Парковая улица, 27",
+"parking": [
+{
+"d": 43,
+"parking": "surface"
+},
+{
+"d": 117
+},
+{
+"d": 170
+},
+{
+"d": 174
+}
+]
+},
 "chess1-sushchevsky-val": {
 "building_addr": "улица Сущёвский Вал, 66",
 "building_entrances": [
@@ -23852,6 +23924,71 @@
 "parking": [
 {
 "d": 84,
+"parking": "surface"
+}
+]
+},
+"chess1-tayninskaya": {
+"building_addr": "Тайнинская улица, 16 к2",
+"building_entrances": [
+{
+"addr:flats": "1-36",
+"d": 495,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "117-152",
+"d": 499,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "153-186",
+"d": 504,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"addr:flats": "187-222",
+"d": 509,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"addr:flats": "223-256",
+"d": 516,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"addr:flats": "257-288",
+"d": 523,
+"entrance": "staircase",
+"ref": "6"
+},
+{
+"addr:flats": "289-320",
+"d": 530,
+"entrance": "staircase",
+"ref": "7"
+},
+{
+"addr:flats": "321-352",
+"d": 538,
+"entrance": "staircase",
+"ref": "8"
+}
+],
+"parking": [
+{
+"d": 173
+},
+{
+"d": 227
+},
+{
+"d": 241,
 "parking": "surface"
 }
 ]
@@ -29805,6 +29942,35 @@
 "d": 174,
 "fee": "no",
 "parking": "surface"
+}
+]
+},
+"flash-fencing-mitino": {
+"building_addr": "Новотушинский проезд, 10",
+"parking": [
+{
+"access": "yes",
+"d": 32,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 41,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 44,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 49,
+"fee": "no",
+"parking": "street_side"
 }
 ]
 },
@@ -38867,6 +39033,290 @@
 }
 ]
 },
+"kurchatov-chess-alye-parusa": {
+"building_addr": "Авиационная улица, 77",
+"building_entrances": [
+{
+"access": "private",
+"d": 468,
+"entrance": "staircase"
+}
+],
+"parking": [
+{
+"d": 172
+},
+{
+"d": 172,
+"parking": "street_side"
+},
+{
+"d": 184,
+"parking": "street_side"
+},
+{
+"d": 185,
+"parking": "street_side"
+}
+]
+},
+"kurchatov-chess-brokkolini": {
+"building_addr": "Ходынский бульвар, 11",
+"parking": [
+{
+"capacity": "5000",
+"d": 80,
+"fee": "yes",
+"parking": "multi-storey"
+},
+{
+"access": "yes",
+"d": 147,
+"fee": "yes"
+},
+{
+"access": "yes",
+"d": 148,
+"fee": "yes"
+},
+{
+"d": 151
+}
+]
+},
+"kurchatov-chess-central": {
+"building_addr": "улица Маршала Василевского, 9 к1 с1",
+"parking": [
+{
+"d": 196,
+"name": "4"
+},
+{
+"d": 198,
+"parking": "surface"
+},
+{
+"d": 214
+},
+{
+"d": 286,
+"parking": "street_side"
+}
+]
+},
+"kurchatov-chess-krasnogorsk-okeana": {
+"building_addr": "Молодёжная улица, 3",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 10
+},
+{
+"barrier": "lift_gate",
+"d": 37
+}
+],
+"parking": [
+{
+"d": 151,
+"parking": "underground"
+},
+{
+"access": "yes",
+"d": 172,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 172,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"access": "yes",
+"d": 207,
+"fee": "no",
+"parking": "street_side"
+}
+]
+},
+"kurchatov-chess-lobachevskogo": {
+"building_addr": "улица Лобачевского, 8",
+"parking": [
+{
+"d": 119,
+"parking": "surface"
+},
+{
+"d": 218
+},
+{
+"d": 237,
+"parking": "street_side"
+}
+]
+},
+"kurchatov-chess-pavshinsky": {
+"building_addr": "Павшинский бульвар, 40",
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 30
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 34
+}
+],
+"parking": [
+{
+"d": 188,
+"fee": "yes",
+"parking": "multi-storey"
+},
+{
+"d": 196,
+"fee": "yes",
+"parking": "surface"
+}
+]
+},
+"kurchatov-chess-ramenki": {
+"building_addr": "улица Лобачевского, 92 к4",
+"gates": [
+{
+"barrier": "gate",
+"d": 31
+},
+{
+"barrier": "gate",
+"d": 42
+}
+],
+"parking": [
+{
+"d": 13,
+"parking": "surface"
+},
+{
+"d": 113,
+"operator": "магазин Русь",
+"parking": "surface"
+},
+{
+"d": 137,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 156,
+"parking": "surface"
+}
+]
+},
+"kurchatov-chess-reutov": {
+"building_addr": "улица Октября, 24",
+"parking": [
+{
+"d": 267
+},
+{
+"d": 294,
+"name": "ГСК-5"
+}
+]
+},
+"kurchatov-chess-smolnaya": {
+"building_addr": "Смольная улица, 61 к1",
+"building_entrances": [
+{
+"addr:flats": "525-620",
+"d": 427,
+"entrance": "staircase",
+"ref": "6"
+},
+{
+"addr:flats": "429-524",
+"d": 451,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"addr:flats": "334-428",
+"d": 469,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"addr:flats": "239-333",
+"d": 490,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"addr:flats": "120-238",
+"d": 507,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "1-119",
+"d": 524,
+"entrance": "staircase",
+"ref": "1"
+}
+],
+"parking": [
+{
+"access": "customers",
+"d": 175,
+"parking": "surface"
+},
+{
+"d": 193
+},
+{
+"d": 197
+},
+{
+"d": 219
+}
+]
+},
+"kurchatov-chess-zazerkalye": {
+"building_addr": "Сходненская улица, 6 к1",
+"building_entrances": [
+{
+"addr:flats": "1-39",
+"d": 1826,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "40-103",
+"d": 1843,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "104-167",
+"d": 1860,
+"entrance": "staircase",
+"ref": "3"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 50
+}
+]
+},
 "kurchatov-school-chess": {
 "building_addr": "улица Академика Бочвара, 2 к2",
 "gates": [
@@ -44120,6 +44570,9 @@
 }
 ]
 },
+"ms-butovo-fencing": {
+"building_addr": "улица Поляны, 35"
+},
 "ms-fk-rodina": {
 "building_addr": "3-я Гражданская улица, 47",
 "gates": [
@@ -44208,6 +44661,27 @@
 "d": 112,
 "fee": "no",
 "parking": "surface"
+}
+]
+},
+"ms-inzhenernaya-athletics": {
+"parking": [
+{
+"access": "yes",
+"d": 49,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 102
+},
+{
+"d": 144
+},
+{
+"d": 235,
+"name": "Народный гараж",
+"parking": "multi-storey"
 }
 ]
 },
@@ -44424,6 +44898,74 @@
 }
 ]
 },
+"ms-moskvorechye-handball": {
+"building_addr": "улица Москворечье, 4 к1",
+"parking": [
+{
+"d": 234
+},
+{
+"access": "yes",
+"d": 257,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 296,
+"parking": "multi-storey"
+},
+{
+"access": "yes",
+"d": 299,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
+"ms-nekrasovka-sections": {
+"building_addr": "Покровская улица, 22",
+"gates": [
+{
+"access": "no",
+"barrier": "gate",
+"d": 44
+}
+],
+"parking": [
+{
+"d": 129,
+"parking": "surface"
+},
+{
+"d": 159
+},
+{
+"d": 225
+},
+{
+"d": 267
+}
+]
+},
+"ms-od80-fencing": {
+"parking": [
+{
+"d": 106,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 115,
+"parking": "surface"
+},
+{
+"d": 143
+},
+{
+"d": 152
+}
+]
+},
 "ms-olimp-suzdalskaya": {
 "gates": [
 {
@@ -44449,6 +44991,21 @@
 },
 {
 "d": 220
+}
+]
+},
+"ms-orienta-chess": {
+"building_addr": "Федеративный проспект, 37Б",
+"parking": [
+{
+"d": 66
+},
+{
+"d": 73
+},
+{
+"d": 270,
+"parking": "surface"
 }
 ]
 },
@@ -58397,6 +58954,28 @@
 "capacity": "4",
 "d": 238,
 "fee": "no"
+}
+]
+},
+"space-vdnh-badminton": {
+"building_addr": "улица Касаткина, 19",
+"parking": [
+{
+"d": 159,
+"parking": "surface"
+},
+{
+"d": 230,
+"parking": "street_side"
+},
+{
+"d": 246,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 248,
+"parking": "surface"
 }
 ]
 },
