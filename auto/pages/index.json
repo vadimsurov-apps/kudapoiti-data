@@ -11705,37 +11705,37 @@
 "url": "https://circ-piligrim.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 2
+"tries": 3
 },
 "teatrfigaro-ru": {
 "url": "https://teatrfigaro.ru/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 2
+"tries": 3
 },
 "www-sandtheatre-ru": {
 "url": "https://www.sandtheatre.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 2
+"tries": 3
 },
 "teatr-skaz-show-ru": {
 "url": "https://teatr-skaz-show.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 2
+"tries": 3
 },
 "www-teatrum-org": {
 "url": "https://www.teatrum.org/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 2
+"tries": 3
 },
 "puppetshow-ru": {
 "url": "https://puppetshow.ru/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-"tries": 2
+"tries": 3
 },
 "oceanarium-gorki-ru": {
 "url": "https://oceanarium-gorki.ru/",
@@ -11748,13 +11748,13 @@
 "url": "https://ekzootikpark.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 2
+"tries": 3
 },
 "www-cosmik-ru": {
 "url": "https://www.cosmik.ru/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 2
+"tries": 3
 },
 "zarnicaclub-ru": {
 "url": "https://zarnicaclub.ru/",
@@ -11767,43 +11767,43 @@
 "url": "https://peshki-park.ru/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 2
+"tries": 3
 },
 "kudago-com-msk-place-dvorec-pionerov": {
 "url": "https://kudago.com/msk/place/dvorec-pionerov/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "kudago-com-msk-place-skazochnyj-teatr": {
 "url": "https://kudago.com/msk/place/skazochnyj-teatr/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "www-tbank-ru-gorod-blog-children-fun": {
 "url": "https://www.tbank.ru/gorod/blog/children-fun/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain ",
-"tries": 2
+"tries": 3
 },
 "www-marina-club-ru-programms-rockclimbing": {
 "url": "https://www.marina-club.ru/programms/rockclimbing/",
 "ok": false,
 "err": "HTTP Error 410: Gone",
-"tries": 2
+"tries": 3
 },
 "www-autorossport-ru": {
 "url": "https://www.autorossport.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 2
+"tries": 3
 },
 "xacku-land-etnopark": {
 "url": "https://xacku.land/etnopark",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 2
+"err": "HTTP Error 456: Unrecoverable Error",
+"tries": 3
 },
 "travelto-ru-blog-moskva-na-3-dnya-s-detmi": {
 "url": "https://travelto.ru/blog/moskva-na-3-dnya-s-detmi/",
@@ -11823,13 +11823,13 @@
 "url": "https://www.smile-theater.ru/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 2
+"tries": 3
 },
 "teatr-scenka-ucoz-ru": {
 "url": "https://teatr-scenka.ucoz.ru/",
 "ok": false,
 "err": "HTTP Error 404: Not found",
-"tries": 2
+"tries": 3
 },
 "www-mos-ru-otvet-kultura-kak-rebyonku-posetit-muzey-besplatno": {
 "url": "https://www.mos.ru/otvet-kultura/kak-rebyonku-posetit-muzey-besplatno/",
@@ -11842,7 +11842,7 @@
 "url": "https://gorbilet.ru/blog/art/museums-in-moscow-for-free",
 "ok": false,
 "err": "HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error messag",
-"tries": 1
+"tries": 2
 },
 "msk-hullabaloo-ru-free-besplatnie-muzei-v-moskve-html": {
 "url": "https://msk.hullabaloo.ru/free/besplatnie-muzei-v-moskve.html",
@@ -11878,5 +11878,105 @@
 "pages": 4,
 "bytes": 16000,
 "tries": 0
+},
+"www-darwinmuseum-ru": {
+"url": "https://www.darwinmuseum.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"kosmo-museum-ru": {
+"url": "https://kosmo-museum.ru/",
+"ok": true,
+"pages": 2,
+"bytes": 11582,
+"tries": 0
+},
+"mosmuseum-ru": {
+"url": "https://mosmuseum.ru/",
+"ok": false,
+"err": "HTTP Error 403: Forbidden",
+"tries": 1
+},
+"shm-ru": {
+"url": "https://shm.ru/",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"mgomz-ru": {
+"url": "https://mgomz.ru/",
+"ok": false,
+"err": "IncompleteRead(0 bytes read, 18 more expected)",
+"tries": 1
+},
+"www-gbmt-ru": {
+"url": "https://www.gbmt.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"zmmu-msu-ru": {
+"url": "https://zmmu.msu.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"www-paleo-ru-museum": {
+"url": "https://www.paleo.ru/museum/",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"www-puppet-ru": {
+"url": "https://www.puppet.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 15377,
+"tries": 0
+},
+"teatr-sats-ru": {
+"url": "https://teatr-sats.ru/",
+"ok": true,
+"pages": 3,
+"bytes": 10624,
+"tries": 0
+},
+"ramt-ru": {
+"url": "https://ramt.ru/",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"mtyuz-ru": {
+"url": "https://mtyuz.ru/",
+"ok": false,
+"err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
+"tries": 1
+},
+"ugolokdurova-ru": {
+"url": "https://ugolokdurova.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 14646,
+"tries": 0
+},
+"www-moscowpuppets-ru": {
+"url": "https://www.moscowpuppets.ru/",
+"ok": false,
+"err": "<urlopen error [Errno -2] Name or service not known>",
+"tries": 1
+},
+"museum-ru-mmw": {
+"url": "https://museum.ru/mmw/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
 }
 }
