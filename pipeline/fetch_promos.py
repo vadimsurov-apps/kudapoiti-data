@@ -11,6 +11,11 @@ KEY = re.compile(r"акци|скидк|бесплатн|пробн|перв\w* (
                  r"дн[её]м рождени\w* скид|−\s?\d+\s?%|-\s?\d+\s?%|\d+\s?% скид|по будням|счастлив\w* час|"
                  r"абонемент|спецпредложени|выгод|кэшб|cashback|sale|promo", re.I)
 LINK = re.compile(r"akci|aktsi|action|sale|skidk|promo|special|offer|news|novost|акци|скидк|предложени|пробн|trial|free", re.I)
+# Работает ли место и когда: сезон, открытие/закрытие, часы, переезд, ремонт (Вадим 07.11: «вчера каток не работал, сегодня заработал»)
+STATUS = re.compile(r"сезон|открыт|закрыт|не работа|работаем|режим работы|часы работы|график работы|ежедневно|"
+                    r"выходн\w* (?:день|дни)|переезд|переехал|новый адрес|ремонт|санитарн|реконструкц|"
+                    r"заливк|каток|с \d{1,2} (?:января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря)|"
+                    r"\b\d{1,2}[:.]\d{2}\s*[-–—]\s*\d{1,2}[:.]\d{2}", re.I)
 NOISE = re.compile(r"казино|casino|слот|букмекер|ставк|1win|покердом|винлайн|бонус\w* при пополн|влажност|cookie|персональных данных|политик\w* конфиденц|©|все права", re.I)
 
 
@@ -59,14 +64,20 @@ def scan(item):
         if len(pages) >= 4: break
     if any(spam.is_spam_text(" ".join(text_blocks(p))) for _, p in pages):
         return {**item, "ok": True, "spam": True, "snippets": []}  # сайт взломан — фраз не берём
-    snippets = []
+    snippets, status = [], []
+    for u, p in pages[:2]:                                   # главная + 1 страница — там часы и объявления
+        for t in text_blocks(p):
+            if STATUS.search(t) and not NOISE.search(t) and not spam.hits(t) and t not in status:
+                status.append(t)
+            if len(status) >= 20: break
     for u, p in pages:
         for t in text_blocks(p):
             if KEY.search(t) and not NOISE.search(t) and not spam.hits(t) and t not in (s["t"] for s in snippets):
                 snippets.append({"t": t, "page": u})
             if len(snippets) >= 25: break
     h = hashlib.md5("".join(s["t"] for s in snippets).encode()).hexdigest()[:10]
-    return {**item, "ok": True, "hash": h, "snippets": snippets}
+    sh = hashlib.md5("".join(status).encode()).hexdigest()[:10]
+    return {**item, "ok": True, "hash": h, "snippets": snippets, "status": status, "status_hash": sh}
 
 
 def main():
@@ -95,6 +106,27 @@ def main():
     os.makedirs("auto", exist_ok=True)
     with open("auto/promo-snippets.json", "w") as f:
         json.dump({"version": datetime.date.today().isoformat(), "sites": res}, f, ensure_ascii=False, indent=0)
+    # статус работы мест: фразы о сезоне/часах/закрытии + сколько раз подряд сайт не открылся
+    host_of = lambda u: urlparse(u if "//" in u else "https://" + u).netloc.lower().removeprefix("www.")
+    ids_by_host = {}
+    for it in items:
+        if not it["ref"].startswith("osm:"):
+            ids_by_host.setdefault(host_of(it["url"]), []).append(it["ref"])
+    sp = "auto/status-snippets.json"
+    prev = json.load(open(sp))["sites"] if os.path.exists(sp) else {}
+    st = {}
+    for r in res:
+        h = host_of(r["url"])
+        if h not in ids_by_host: continue
+        o = prev.get(h, {})
+        fails = 0 if r.get("ok") else o.get("fails", 0) + 1
+        st[h] = {"places": ids_by_host[h], "url": r["url"], "ok": bool(r.get("ok")), "fails": fails,
+                 "status": r.get("status", o.get("status", [])), "status_hash": r.get("status_hash", o.get("status_hash")),
+                 "changed": bool(r.get("ok")) and o.get("status_hash") not in (None, r.get("status_hash")),
+                 "seen": datetime.date.today().isoformat() if r.get("ok") else o.get("seen")}
+    with open(sp, "w") as f:
+        json.dump({"version": datetime.datetime.utcnow().isoformat(timespec="minutes"), "sites": st}, f, ensure_ascii=False, indent=0)
+    print("статус: изменилось", sum(v["changed"] for v in st.values()), "сайт не открывается 3+ раза подряд", sum(v["fails"] >= 3 for v in st.values()))
     ok = sum(r["ok"] for r in res)
     withs = sum(bool(r.get("snippets")) for r in res)
     print(f"Сайтов: {len(res)}, открылось: {ok}, с упоминанием акций: {withs}, новых/изменённых: {sum(r['new'] for r in res)}")

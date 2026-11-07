@@ -1,8 +1,14 @@
 name: Точность координат и входы (выгрузка OSM)
 on:
   workflow_dispatch:
+  push:                       # новые места от роботов — сверяем сразу
+    branches: [main]
+    paths: ["data/**"]
   schedule:
-    - cron: "11 23 * * 0"
+    - cron: "11 23 * * *"     # и каждую ночь (02:11 МСК) — свежая выгрузка OSM
+concurrency:
+  group: osm-local
+  cancel-in-progress: true
 permissions:
   contents: write
   actions: write
@@ -13,11 +19,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: sudo apt-get update -q && sudo apt-get install -y -q osmium-tool
+      - id: day
+        run: echo "d=$(date -u +%F)" >> $GITHUB_OUTPUT
+      - name: Выгрузка OSM — одна на сутки (кэш)
+        uses: actions/cache@v4
+        with:
+          path: mo.osm.pbf
+          key: osm-mo-${{ steps.day.outputs.d }}
       - name: Выгрузка OSM (Центральный ФО, Geofabrik)
-        run: curl -sSL -o cfd.osm.pbf https://download.geofabrik.de/russia/central-fed-district-latest.osm.pbf && ls -lh cfd.osm.pbf
+        run: |
+          if [ ! -f mo.osm.pbf ]; then
+            curl -sSL -o cfd.osm.pbf https://download.geofabrik.de/russia/central-fed-district-latest.osm.pbf && ls -lh cfd.osm.pbf
+            osmium extract -b 35.1,54.2,40.3,57.0 cfd.osm.pbf -o mo.osm.pbf --overwrite
+          fi
       - name: Москва и область, объекты с названием и входы
         run: |
-          osmium extract -b 35.1,54.2,40.3,57.0 cfd.osm.pbf -o mo.osm.pbf --overwrite
           osmium tags-filter mo.osm.pbf nwr/name -o named.osm.pbf --overwrite
           osmium tags-filter mo.osm.pbf n/entrance n/barrier=gate,entrance,turnstile,lift_gate -o entr.osm.pbf --overwrite
           osmium export named.osm.pbf -f geojsonseq -a type,id --geometry-types=point,linestring,polygon -o named.geojsonseq --overwrite
@@ -25,13 +41,16 @@ jobs:
           osmium tags-filter mo.osm.pbf w/addr:housenumber r/addr:housenumber -o bld.osm.pbf --overwrite
           osmium export bld.osm.pbf -f geojsonseq -a type,id --geometry-types=polygon -o bld.geojsonseq --overwrite
           wc -l named.geojsonseq entr.geojsonseq bld.geojsonseq
+      - name: Свежий список мест из таблиц (новые места роботов)
+        run: pip install -q openpyxl && python3 tools/xlsx_to_json.py data/kuda-poiti-mesta.xlsx places.json > /dev/null
       - run: python3 pipeline/osm_local.py
       - run: python3 pipeline/osm_address.py
       - if: always()
         run: |
           git config user.name "kudapoiti-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add auto/
+          git checkout -- places.json auto/table-coords.json 2>/dev/null || true
+          git add auto/geocode-report.json auto/entrances.json auto/osm-address.json
           git diff --cached --quiet || (git commit -m "Координаты и входы: сверка с выгрузкой OSM" && git pull --rebase -X theirs && git push)
       - name: Пересобрать places.json с новыми точками
         if: success()

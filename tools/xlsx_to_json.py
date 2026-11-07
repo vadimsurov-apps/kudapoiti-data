@@ -268,7 +268,9 @@ def apply_precise_points(places):
     for r in (load("reports.json") or []):
         if r.get("location") or re.search(r"точк|здани|вход|подъезд|метк|не там|дом", (r.get("text") or "").lower()):
             if r.get("place_id"): manual.add(r["place_id"])
-    sources = [("osm-address.json", lambda e: e.get("status") == "moved"),
+    # объект OSM с тем же названием — только рядом (≤ 300 м): дальше это часто другой филиал сети («Китёнок», «IL Патио»)
+    sources = [("geocode-report.json", lambda e: e.get("status") == "high" and 15 < e.get("moved_m", 0) <= 300),
+               ("osm-address.json", lambda e: e.get("status") == "moved"),
                ("geo-yandex.json", lambda e: e.get("method") in ("yandex-org", "yandex-addr"))]
     n = {}
     for name, ok in sources:

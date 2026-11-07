@@ -60,6 +60,10 @@ def main():
     print("объектов OSM с названием:", len(objs), flush=True)
 
     places = json.load(open("places.json"))["places"]
+    if os.path.exists("auto/table-coords.json"):     # сверяем от точек из таблиц, без уже применённых уточнений
+        tc = json.load(open("auto/table-coords.json"))
+        for p in places:
+            if p["id"] in tc: p["lat"], p["lon"] = tc[p["id"]]
     out = {}
     for p in places:
         if p.get("lat") is None: continue
