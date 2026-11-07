@@ -130,6 +130,7 @@ def main():
         pts = [p for r in rs for p in r]
         lat = sum(p[1] for p in pts) / len(pts); lon = sum(p[0] for p in pts) / len(pts)
         b = {"lat": lat, "lon": lon, "rings": rs, "osm": f'{t.get("@type")}/{t.get("@id")}',
+             "city": (t.get("addr:city") or t.get("addr:place") or "").lower().replace("ё", "е"),
              "addr": f'{t["addr:street"]}, {t["addr:housenumber"]}'}
         idx[(street_key(t["addr:street"]), house_key(t["addr:housenumber"]))].append(b)
         n += 1
@@ -145,9 +146,17 @@ def main():
         eg[(int(lat / CELL), int(lon / CELL))].append((lat, lon, t))
 
     places = json.load(open("places.json"))["places"]
+    poi = json.load(open("auto/geocode-report.json")) if os.path.exists("auto/geocode-report.json") else {}
+    BIG = {"парк", "усадьба", "прогулка", "зоопарк", "ботанический сад", "пляж", "детская площадка", "экопарк",
+           "парк развлечений", "лесопарк", "музей-заповедник", "ферма", "конный клуб"}
     out = {}
     for p in places:
         if p.get("lat") is None: continue
+        if (p.get("type") or [""])[0] in BIG:          # территории: адрес — это контора, а не вход (входы — osm_local)
+            out[p["id"]] = {"status": "territory"}; continue
+        q = poi.get(p["id"], {})
+        if q.get("status") == "high" and dist(q["lat"], q["lon"], p["lat"], p["lon"]) < 60:
+            out[p["id"]] = {"status": "poi"}; continue   # точка уже на объекте OSM с тем же названием
         key = parse(p.get("address"))
         if not key:
             out[p["id"]] = {"status": "no-address"}; continue
@@ -171,6 +180,12 @@ def main():
             rec.update(lat=round(b["lat"], 6), lon=round(b["lon"], 6), method="osm-building", entrances=len(ents))
         rec["moved_m"] = round(dist(p["lat"], p["lon"], rec["lat"], rec["lon"]))
         rec["status"] = "moved"
+        if rec["moved_m"] > 2000:
+            # далеко: в Подмосковье одинаковые улицы в соседних городах — переносим, только если город сходится
+            first = (p.get("address") or "").split(",")[0].lower().replace("ё", "е")
+            town = re.sub(r"^(г\.?|город|пос\.?|пгт|д\.?|деревня|с\.?|рп)\s+", "", first).strip()
+            if not (b["city"] and town and (town in b["city"] or b["city"] in town)) and not (not b["city"] and p.get("coord_exact") is None and "москва" in (p.get("address") or "").lower()):
+                rec["status"] = "far-unsure"
         out[p["id"]] = rec
     os.makedirs("auto", exist_ok=True)
     json.dump(out, open("auto/osm-address.json", "w"), ensure_ascii=False, indent=0, sort_keys=True)
