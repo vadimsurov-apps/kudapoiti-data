@@ -12945,25 +12945,25 @@
 "url": "https://karofilm.ru/karoclub",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "karofilm-ru-club": {
 "url": "https://karofilm.ru/club",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "karofilm-ru-promo": {
 "url": "https://karofilm.ru/promo",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "karofilm-ru-loyalty": {
 "url": "https://karofilm.ru/loyalty",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "yakitoriya-ru": {
 "url": "https://yakitoriya.ru/",
@@ -12989,8 +12989,8 @@
 "osteriamario-ru-actions": {
 "url": "https://osteriamario.ru/actions/",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 1
+"err": "<urlopen error [Errno 101] Network is unreachable>",
+"tries": 2
 },
 "ilpatio-ru": {
 "url": "https://ilpatio.ru/",
@@ -13003,7 +13003,7 @@
 "url": "https://ilpatio.ru/actions/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "syrovarnya-com": {
 "url": "https://syrovarnya.com/",
@@ -13014,8 +13014,9 @@
 },
 "hatimaki-ru": {
 "url": "https://hatimaki.ru/",
-"ok": false,
-"err": "The read operation timed out",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
 "tries": 1
 },
 "korchma-ru": {
@@ -13050,13 +13051,13 @@
 "url": "https://msk.warpoint.ru/actions/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "cafe-anderson-ru-akcii": {
 "url": "https://cafe-anderson.ru/akcii/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "cafe-anderson-ru-news": {
 "url": "https://cafe-anderson.ru/news/",
@@ -13069,7 +13070,7 @@
 "url": "https://uryk.ru/actions/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "mos-chess-ru": {
 "url": "https://mos-chess.ru/",
@@ -13089,6 +13090,25 @@
 "url": "https://triumfswim.ru/",
 "ok": false,
 "err": "<urlopen error timed out>",
+"tries": 2
+},
+"cafe-kitchen-ru-akcii": {
+"url": "https://cafe-kitchen.ru/akcii/",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"cafe-kitchen-ru-actions": {
+"url": "https://cafe-kitchen.ru/actions/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"cafe-kitchen-ru-promo": {
+"url": "https://cafe-kitchen.ru/promo/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
 "tries": 1
 }
 }
