@@ -16,6 +16,13 @@ STATUS = re.compile(r"сезон|открыт|закрыт|не работа|р�
                     r"выходн\w* (?:день|дни)|переезд|переехал|новый адрес|ремонт|санитарн|реконструкц|"
                     r"заливк|каток|с \d{1,2} (?:января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря)|"
                     r"\b\d{1,2}[:.]\d{2}\s*[-–—]\s*\d{1,2}[:.]\d{2}", re.I)
+# Как попасть внутрь (Вадим 07.11: подъезд, этаж, помещение, домофон, шлагбаум, парковка платная/бесплатная)
+ACCESS = re.compile(r"подъезд|этаж|домофон|шлагбаум|парковк|паркинг|парковоч|машино-?мест|вход\w* (?:со|с |через|рядом|в |напротив|справа|слева|между|под )|"
+                    r"\bвход\b|офис\s*№?\s*\d|помещени\w*\s*№?\s*[\dIVX]|цокол|подвал|полуподвал|со двора|вывеск|лифт|"
+                    r"корпус\s*\d|строени\w*\s*\d|\bстр\.\s*\d|ворот|\bКПП\b|проходн|ресепшн|как (?:нас )?найти|как добраться|"
+                    r"пропуск|ориентир|арк[аеу]\b|торец|торц|нежил", re.I)
+CONTACT = re.compile(r"contact|kontakt|контакт|kak-?dobr|kak-?nas|how-?to|address|adres|адрес|проезд|схем|map|karta|"
+                     r"как добраться|как нас найти|где мы|filial|филиал", re.I)
 NOISE = re.compile(r"казино|casino|слот|букмекер|ставк|1win|покердом|винлайн|бонус\w* при пополн|влажност|cookie|персональных данных|политик\w* конфиденц|©|все права", re.I)
 
 
@@ -49,6 +56,15 @@ def links(page, base):
         if LINK.search(href) or LINK.search(label): yield u
 
 
+def contact_links(page, base):
+    host = urlparse(base).netloc
+    for href, label in re.findall(r'(?is)<a[^>]+href="([^"#]+)"[^>]*>(.*?)</a>', page):
+        u = urljoin(base, href)
+        if urlparse(u).netloc != host or re.search(r"\.(jpe?g|png|pdf|docx?)$", u, re.I): continue
+        label = re.sub(r"<[^>]+>", " ", label)
+        if CONTACT.search(href) or CONTACT.search(label): yield u
+
+
 def scan(item):
     url = item["url"]
     if not url.startswith("http"): url = "https://" + url
@@ -62,6 +78,14 @@ def scan(item):
         p = get(u)
         if p: pages.append((u, p))
         if len(pages) >= 4: break
+    # страницы «Контакты / Как добраться» — там подъезд, этаж, домофон, парковка
+    contacts = []
+    for u in contact_links(home, url):
+        if u in seen: continue
+        seen.add(u)
+        p = get(u)
+        if p: contacts.append((u, p))
+        if len(contacts) >= 2: break
     if any(spam.is_spam_text(" ".join(text_blocks(p))) for _, p in pages):
         return {**item, "ok": True, "spam": True, "snippets": []}  # сайт взломан — фраз не берём
     snippets, status = [], []
@@ -75,6 +99,13 @@ def scan(item):
             if KEY.search(t) and not NOISE.search(t) and not spam.hits(t) and t not in (s["t"] for s in snippets):
                 snippets.append({"t": t, "page": u})
             if len(snippets) >= 25: break
+    access = []
+    for u, p in contacts + pages[:1]:
+        for t in text_blocks(p):
+            if ACCESS.search(t) and not NOISE.search(t) and not spam.hits(t) and t not in (a["t"] for a in access):
+                access.append({"t": t, "page": u})
+            if len(access) >= 30: break
+    item = {**item, "access": access, "access_hash": hashlib.md5("".join(a["t"] for a in access).encode()).hexdigest()[:10]}
     h = hashlib.md5("".join(s["t"] for s in snippets).encode()).hexdigest()[:10]
     sh = hashlib.md5("".join(status).encode()).hexdigest()[:10]
     return {**item, "ok": True, "hash": h, "snippets": snippets, "status": status, "status_hash": sh}
@@ -127,6 +158,15 @@ def main():
     with open(sp, "w") as f:
         json.dump({"version": datetime.datetime.utcnow().isoformat(timespec="minutes"), "sites": st}, f, ensure_ascii=False, indent=0)
     print("статус: изменилось", sum(v["changed"] for v in st.values()), "сайт не открывается 3+ раза подряд", sum(v["fails"] >= 3 for v in st.values()))
+    # как попасть: фразы с сайтов (подъезд, этаж, домофон, шлагбаум, парковка) — разбирает робот «навигатор»
+    ac = {}
+    for r in res:
+        h = host_of(r["url"])
+        if h in ids_by_host and r.get("ok") and r.get("access"):
+            ac[h] = {"places": ids_by_host[h], "url": r["url"], "access": r["access"], "access_hash": r["access_hash"]}
+    with open("auto/access-snippets.json", "w") as f:
+        json.dump({"version": datetime.datetime.utcnow().isoformat(timespec="minutes"), "sites": ac}, f, ensure_ascii=False, indent=0)
+    print("как попасть: сайтов с фразами", len(ac))
     ok = sum(r["ok"] for r in res)
     withs = sum(bool(r.get("snippets")) for r in res)
     print(f"Сайтов: {len(res)}, открылось: {ok}, с упоминанием акций: {withs}, новых/изменённых: {sum(r['new'] for r in res)}")
