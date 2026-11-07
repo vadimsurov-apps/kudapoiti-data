@@ -146,6 +146,11 @@ def main():
         eg[(int(lat / CELL), int(lon / CELL))].append((lat, lon, t))
 
     places = json.load(open("places.json"))["places"]
+    tc_path = "auto/table-coords.json" if not globals().get("ROOT") else os.path.join(ROOT, "auto", "table-coords.json")
+    if os.path.exists(tc_path):                      # точки из таблиц, без уже применённых уточнений
+        tc = json.load(open(tc_path))
+        for p in places:
+            if p["id"] in tc: p["lat"], p["lon"] = tc[p["id"]]
     poi = json.load(open("auto/geocode-report.json")) if os.path.exists("auto/geocode-report.json") else {}
     BIG = {"парк", "усадьба", "прогулка", "зоопарк", "ботанический сад", "пляж", "детская площадка", "экопарк",
            "парк развлечений", "лесопарк", "музей-заповедник", "ферма", "конный клуб"}

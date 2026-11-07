@@ -104,6 +104,11 @@ def main():
     lim_org = int(sys.argv[sys.argv.index("--limit-org") + 1]) if "--limit-org" in sys.argv else 450
     lim_geo = int(sys.argv[sys.argv.index("--limit-geo") + 1]) if "--limit-geo" in sys.argv else 900
     places = json.load(open(os.path.join(ROOT, "places.json"), encoding="utf-8"))["places"]
+    tc_path = "auto/table-coords.json" if not globals().get("ROOT") else os.path.join(ROOT, "auto", "table-coords.json")
+    if os.path.exists(tc_path):                      # точки из таблиц, без уже применённых уточнений
+        tc = json.load(open(tc_path))
+        for p in places:
+            if p["id"] in tc: p["lat"], p["lon"] = tc[p["id"]]
     state = json.load(open(STATE, encoding="utf-8")) if os.path.exists(STATE) else {}
     today = date.today()
 

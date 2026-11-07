@@ -328,6 +328,10 @@ def main():
         if problems:
             report.append((p["name"], problems))
 
+    # координаты из таблиц ДО автоматических уточнений — от них считают сверки (иначе бы «ехали» сами от себя)
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    json.dump({p["id"]: [p["lat"], p["lon"]] for p in places if p.get("lat") is not None},
+              open(os.path.join(root, "auto", "table-coords.json"), "w"), separators=(",", ":"))
     apply_precise_points(places)
 
     with open(dst, "w", encoding="utf-8") as f:
