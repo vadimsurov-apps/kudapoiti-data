@@ -4547,21 +4547,20 @@
 "building_addr": "Московское шоссе, 55",
 "parking": [
 {
-"d": 125,
+"d": 49
+},
+{
+"d": 66,
 "parking": "surface"
 },
 {
-"d": 132
-},
-{
-"d": 161,
-"parking": "street_side"
+"d": 98
 },
 {
 "access": "yes",
 "capacity": "60",
 "capacity:disabled": "yes",
-"d": 185,
+"d": 160,
 "parking": "surface",
 "supervised": "no"
 }
@@ -5415,7 +5414,15 @@
 ]
 },
 "cafe-bonbon-dubna": {
-"building_addr": "улица Орджоникидзе, 13А"
+"building_addr": "улица Орджоникидзе, 13А",
+"parking": [
+{
+"d": 31
+},
+{
+"d": 279
+}
+]
 },
 "cafe-bonkeik-reutov": {
 "building_addr": "Юбилейный проспект, 47",
@@ -10764,7 +10771,12 @@
 ]
 },
 "cafe-kazbegi-klin": {
-"building_addr": "улица Дурыманова, 1/1"
+"building_addr": "улица Дурыманова, 1/1",
+"parking": [
+{
+"d": 241
+}
+]
 },
 "cafe-kazbek-1905": {
 "parking": [
@@ -11636,21 +11648,19 @@
 "building_addr": "Центральная улица, 1",
 "parking": [
 {
-"d": 117
+"d": 23,
+"parking": "street_side"
 },
 {
-"d": 175,
+"d": 93,
 "parking": "surface"
 },
 {
-"access": "yes",
-"d": 177,
-"fee": "no",
+"d": 116,
 "parking": "surface"
 },
 {
-"d": 180,
-"parking": "surface"
+"d": 160
 }
 ]
 },
@@ -12395,28 +12405,46 @@
 },
 "cafe-kushay-slushay-khimki": {
 "building_addr": "Ленинский проспект, 1/2",
+"gates": [
+{
+"barrier": "gate",
+"d": 23
+},
+{
+"barrier": "gate",
+"d": 41
+},
+{
+"barrier": "gate",
+"d": 44
+},
+{
+"barrier": "gate",
+"d": 54
+}
+],
 "parking": [
 {
 "access": "yes",
-"capacity": "10",
-"d": 157,
+"d": 63,
 "fee": "no",
-"parking": "street_side"
+"parking": "surface"
 },
 {
 "access": "yes",
-"capacity": "3",
-"d": 160,
+"d": 120,
 "fee": "no",
 "parking": "surface"
 },
 {
-"access": "customers",
-"d": 197,
+"access": "yes",
+"d": 182,
+"fee": "no",
 "parking": "surface"
 },
 {
-"d": 230
+"d": 275,
+"parking": "surface"
 }
 ]
 },
@@ -13200,16 +13228,19 @@
 "building_addr": "улица Пушкина, 23",
 "parking": [
 {
-"d": 135
+"d": 170
 },
 {
-"d": 162
+"access": "permissive",
+"d": 170,
+"fee": "no",
+"parking": "surface"
 },
 {
 "d": 170
 },
 {
-"d": 199
+"d": 235
 }
 ]
 },
@@ -13300,19 +13331,23 @@
 "building_addr": "проспект Мира, 20",
 "parking": [
 {
-"d": 40
-},
-{
-"d": 149
-},
-{
-"access": "yes",
-"d": 152
-},
-{
 "access": "yes",
 "capacity": "20",
-"d": 261
+"d": 48
+},
+{
+"access": "yes",
+"capacity": "30",
+"d": 87
+},
+{
+"d": 108
+},
+{
+"access": "yes",
+"capacity": "25",
+"d": 141,
+"fee": "no"
 }
 ]
 },
@@ -14444,20 +14479,15 @@
 "building_addr": "улица Бережок, 3",
 "parking": [
 {
-"d": 235,
+"d": 20,
+"parking": "surface"
+},
+{
+"d": 36,
 "parking": "street_side"
 },
 {
-"d": 254,
-"parking": "multi-storey"
-},
-{
-"d": 256,
-"parking": "street_side"
-},
-{
-"d": 259,
-"parking": "street_side"
+"d": 141
 }
 ]
 },
@@ -19097,22 +19127,17 @@
 "building_addr": "улица Бирлово Поле, 1",
 "parking": [
 {
-"access": "customers",
-"d": 111,
-"operator": "Кристал",
+"d": 18,
 "parking": "surface"
 },
 {
-"d": 148,
-"parking": "surface"
+"d": 172
 },
 {
-"d": 172,
-"parking": "surface"
+"d": 172
 },
 {
-"d": 188,
-"parking": "surface"
+"d": 218
 }
 ]
 },
@@ -19332,7 +19357,8 @@
 "building_addr": "улица Ленина, 27Б",
 "parking": [
 {
-"d": 208
+"access": "customers",
+"d": 171
 }
 ]
 },
@@ -19560,22 +19586,71 @@
 },
 "cafe-syr-da-muka-pushkino": {
 "building_addr": "улица Просвещения, 10 к2",
+"building_entrances": [
+{
+"addr:flats": "174-277",
+"d": 33,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"addr:flats": "70-173",
+"d": 34,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "554-657",
+"d": 35,
+"entrance": "staircase",
+"ref": "8"
+},
+{
+"addr:flats": "658-761",
+"d": 37,
+"entrance": "staircase",
+"ref": "9"
+},
+{
+"addr:flats": "362-409",
+"d": 42,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"addr:flats": "410-469",
+"d": 43,
+"entrance": "staircase",
+"ref": "6"
+},
+{
+"addr:flats": "278-361",
+"d": 50,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"addr:flats": "1-69",
+"d": 50,
+"entrance": "staircase",
+"ref": "1"
+}
+],
 "parking": [
 {
-"d": 98
+"d": 64,
+"parking": "street_side"
 },
 {
-"d": 135,
-"parking": "surface"
+"d": 73,
+"parking": "street_side"
 },
 {
-"access": "yes",
-"d": 209,
-"fee": "no",
-"parking": "surface"
+"d": 75,
+"parking": "street_side"
 },
 {
-"d": 295,
+"d": 76,
 "parking": "street_side"
 }
 ]
@@ -21607,19 +21682,19 @@
 "building_addr": "Вознесенская улица, 1",
 "parking": [
 {
-"d": 79,
-"fee": "yes"
+"d": 134
 },
 {
 "access": "customers",
-"d": 95
+"d": 142,
+"parking": "surface",
+"supervised": "yes"
 },
 {
-"d": 96
+"d": 163
 },
 {
-"access": "customers",
-"d": 121
+"d": 240
 }
 ]
 },
@@ -22687,26 +22762,30 @@
 {
 "access": "private",
 "addr:flats": "1-110",
-"d": 421,
+"d": 14,
 "entrance": "staircase",
 "ref": "1"
 }
 ],
 "parking": [
 {
-"d": 40
+"capacity": "4",
+"d": 58,
+"fee": "no"
 },
 {
-"access": "yes",
-"d": 69,
+"d": 93,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 92
+"access": "yes",
+"d": 127,
+"fee": "no",
+"parking": "surface"
 },
 {
-"d": 147,
+"d": 166,
 "fee": "no"
 }
 ]
