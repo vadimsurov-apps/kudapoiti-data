@@ -11983,13 +11983,13 @@
 "url": "https://www.restoclub.ru/msk/search/restorany-s-detskoj-komnatoj-v-gorode-mytishhi",
 "ok": false,
 "err": "HTTP Error 503: Service Temporarily Unavailable",
-"tries": 2
+"tries": 3
 },
 "www-restoclub-ru-msk-search-restorany-srednej-cenovoj-kategorii-s-detskoj-komnatoj": {
 "url": "https://www.restoclub.ru/msk/search/restorany-srednej-cenovoj-kategorii-s-detskoj-komnatoj",
 "ok": false,
 "err": "HTTP Error 503: Service Temporarily Unavailable",
-"tries": 2
+"tries": 3
 },
 "badminton-mossport-ru": {
 "url": "https://badminton.mossport.ru/",
@@ -12043,7 +12043,7 @@
 "url": "https://gymnastics.mossport.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 1
+"tries": 2
 },
 "swimming-mossport-ru": {
 "url": "https://swimming.mossport.ru/",
@@ -12070,7 +12070,7 @@
 "url": "https://archery.mossport.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 1
+"tries": 2
 },
 "champion-chesskids-ru": {
 "url": "http://champion-chesskids.ru/",
@@ -12097,31 +12097,31 @@
 "url": "https://sportschools.ru/gorod-Moscow/sport-Table-tenis/Deti",
 "ok": false,
 "err": "<urlopen error _ssl.c:983: The handshake operation timed out>",
-"tries": 1
+"tries": 2
 },
 "sportschools-ru-gorod-moscow-sport-light-athletics-deti": {
 "url": "https://sportschools.ru/gorod-Moscow/sport-Light-athletics/Deti",
 "ok": false,
 "err": "<urlopen error _ssl.c:983: The handshake operation timed out>",
-"tries": 1
+"tries": 2
 },
 "sportschools-ru-gorod-moscow-sport-table-tenis-besplatno": {
 "url": "https://sportschools.ru/gorod-Moscow/sport-Table-tenis/besplatno",
 "ok": false,
 "err": "<urlopen error _ssl.c:983: The handshake operation timed out>",
-"tries": 1
+"tries": 2
 },
 "zoon-ru-msk-trainings-network-federatsiya-fehtovaniya-na-mechah": {
 "url": "https://zoon.ru/msk/trainings/network/federatsiya_fehtovaniya_na_mechah/",
 "ok": false,
 "err": "HTTP Error 103: Early Hints",
-"tries": 1
+"tries": 2
 },
 "husbasket-ru-glavnaya-filialy": {
 "url": "https://husbasket.ru/glavnaya/filialy/",
 "ok": false,
-"err": "<urlopen error [Errno 101] Network is unreachable>",
-"tries": 1
+"err": "HTTP Error 403: Forbidden",
+"tries": 2
 },
 "cskabasket-school-addr": {
 "url": "https://cskabasket.school/addr/",
@@ -12148,6 +12148,33 @@
 "url": "https://zoon.ru/msk/trainings/detskaya_sportivnaya_sektsiya_federatsiya_fehtovaniya_na_mechah_na_metro_smolenskaya/",
 "ok": false,
 "err": "HTTP Error 103: Early Hints",
+"tries": 2
+},
+"playbadminton-ru": {
+"url": "https://playbadminton.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 8447,
+"tries": 0
+},
+"vbadminton-ru-evropa-rossiya-moskovskaya-oblast-moskva": {
+"url": "https://vbadminton.ru/evropa/rossiya/moskovskaya-oblast/moskva",
+"ok": false,
+"err": "HTTP Error 403: Forbidden",
 "tries": 1
+},
+"hi-horoshkola-ru-nastolnyj-tennis": {
+"url": "https://hi.horoshkola.ru/nastolnyj-tennis",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"vc-ru-services-2002959-nastolnyi-tennis-dlya-detei-v-moskve-top-10-luchshih-mest-gde-yunye": {
+"url": "https://vc.ru/services/2002959-nastolnyi-tennis-dlya-detei-v-moskve-top-10-luchshih-mest-gde-yunye-sportsmeny-stanovyatsya-chempionami",
+"ok": true,
+"pages": 2,
+"bytes": 16000,
+"tries": 0
 }
 }
