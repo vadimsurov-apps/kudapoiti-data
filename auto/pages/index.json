@@ -12043,7 +12043,7 @@
 "url": "https://gymnastics.mossport.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 2
+"tries": 3
 },
 "swimming-mossport-ru": {
 "url": "https://swimming.mossport.ru/",
@@ -12070,7 +12070,7 @@
 "url": "https://archery.mossport.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 2
+"tries": 3
 },
 "champion-chesskids-ru": {
 "url": "http://champion-chesskids.ru/",
@@ -12095,33 +12095,36 @@
 },
 "sportschools-ru-gorod-moscow-sport-table-tenis-deti": {
 "url": "https://sportschools.ru/gorod-Moscow/sport-Table-tenis/Deti",
-"ok": false,
-"err": "<urlopen error _ssl.c:983: The handshake operation timed out>",
+"ok": true,
+"pages": 1,
+"bytes": 16000,
 "tries": 2
 },
 "sportschools-ru-gorod-moscow-sport-light-athletics-deti": {
 "url": "https://sportschools.ru/gorod-Moscow/sport-Light-athletics/Deti",
-"ok": false,
-"err": "<urlopen error _ssl.c:983: The handshake operation timed out>",
+"ok": true,
+"pages": 1,
+"bytes": 12941,
 "tries": 2
 },
 "sportschools-ru-gorod-moscow-sport-table-tenis-besplatno": {
 "url": "https://sportschools.ru/gorod-Moscow/sport-Table-tenis/besplatno",
-"ok": false,
-"err": "<urlopen error _ssl.c:983: The handshake operation timed out>",
+"ok": true,
+"pages": 1,
+"bytes": 16000,
 "tries": 2
 },
 "zoon-ru-msk-trainings-network-federatsiya-fehtovaniya-na-mechah": {
 "url": "https://zoon.ru/msk/trainings/network/federatsiya_fehtovaniya_na_mechah/",
 "ok": false,
 "err": "HTTP Error 103: Early Hints",
-"tries": 2
+"tries": 3
 },
 "husbasket-ru-glavnaya-filialy": {
 "url": "https://husbasket.ru/glavnaya/filialy/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "cskabasket-school-addr": {
 "url": "https://cskabasket.school/addr/",
@@ -12148,7 +12151,7 @@
 "url": "https://zoon.ru/msk/trainings/detskaya_sportivnaya_sektsiya_federatsiya_fehtovaniya_na_mechah_na_metro_smolenskaya/",
 "ok": false,
 "err": "HTTP Error 103: Early Hints",
-"tries": 2
+"tries": 3
 },
 "playbadminton-ru": {
 "url": "https://playbadminton.ru/",
@@ -12161,7 +12164,7 @@
 "url": "https://vbadminton.ru/evropa/rossiya/moskovskaya-oblast/moskva",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 1
+"tries": 2
 },
 "hi-horoshkola-ru-nastolnyj-tennis": {
 "url": "https://hi.horoshkola.ru/nastolnyj-tennis",
@@ -12176,5 +12179,78 @@
 "pages": 2,
 "bytes": 16000,
 "tries": 0
+},
+"www-domgogolya-ru-news": {
+"url": "http://www.domgogolya.ru/news/",
+"ok": true,
+"pages": 3,
+"bytes": 12107,
+"tries": 0
+},
+"t-j-ru-moscow-museum-week": {
+"url": "https://t-j.ru/moscow-museum-week/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"otello-ru-nomer-kuda-skhodit-v-moskve-v-noyabre": {
+"url": "https://otello.ru/nomer/kuda-skhodit-v-moskve-v-noyabre",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"skalodrom-ru": {
+"url": "https://skalodrom.ru/",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"highwall-ru": {
+"url": "https://highwall.ru/",
+"ok": false,
+"err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
+"tries": 1
+},
+"pixelquest-ru": {
+"url": "https://pixelquest.ru/",
+"ok": true,
+"pages": 3,
+"bytes": 14734,
+"tries": 0
+},
+"crazy-cart-ru": {
+"url": "https://crazy-cart.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"www-rock-climbing-ru": {
+"url": "https://www.rock-climbing.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"kudago-com-msk-event-aktsiya-karting-crazy-cart-so-skidkoj": {
+"url": "https://kudago.com/msk/event/aktsiya-karting-crazy-cart-so-skidkoj/",
+"ok": false,
+"err": "HTTP Error 403: Forbidden",
+"tries": 1
+},
+"kudago-com-msk-event-zanyatiya-na-skalodrome-highwall": {
+"url": "https://kudago.com/msk/event/zanyatiya-na-skalodrome-highwall/",
+"ok": false,
+"err": "HTTP Error 403: Forbidden",
+"tries": 1
+},
+"kudago-com-msk-event-zanyatiya-na-skalodrome-x8": {
+"url": "https://kudago.com/msk/event/zanyatiya-na-skalodrome-x8/",
+"ok": false,
+"err": "HTTP Error 403: Forbidden",
+"tries": 1
 }
 }
