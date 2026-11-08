@@ -3265,6 +3265,50 @@
 }
 ]
 },
+"bogolyubov-lib-kids": {
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 19
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 44
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 50
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 166,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 175,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 220,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 253,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
 "bolshaya-strana": {
 "gates": [
 {
@@ -24348,6 +24392,11 @@
 }
 ]
 },
+"chermyanka-park": {
+"poi": {
+"note": "возможно парк называется \"Усадьба Алтуфьево\""
+}
+},
 "chernaya-metka": {
 "parking": [
 {
@@ -40518,6 +40567,31 @@
 }
 ]
 },
+"korolev-memorial-house": {
+"gates": [
+{
+"barrier": "gate",
+"d": 45
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 92
+},
+{
+"access": "yes",
+"d": 95
+},
+{
+"d": 115,
+"parking": "street_side"
+},
+{
+"d": 120
+}
+]
+},
 "korolev-noveishaya-istoriya": {
 "building_addr": "улица Терешковой, 1",
 "parking": [
@@ -42219,6 +42293,55 @@
 }
 ]
 },
+"lib200-istoki-kids": {
+"parking": [
+{
+"d": 106,
+"parking": "street_side"
+},
+{
+"d": 178
+},
+{
+"d": 244
+},
+{
+"access": "yes",
+"d": 256,
+"fee": "no",
+"parking": "surface"
+}
+],
+"poi": {
+"addr:floor": "2",
+"level": "1"
+}
+},
+"lib255-zelenograd-kids": {
+"parking": [
+{
+"d": 42,
+"parking": "surface"
+},
+{
+"d": 114,
+"parking": "lane"
+},
+{
+"d": 158,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 170,
+"fee": "no",
+"parking": "surface"
+}
+],
+"poi": {
+"wheelchair": "limited"
+}
+},
 "lib40-khutorskaya": {
 "gates": [
 {
@@ -42376,6 +42499,46 @@
 },
 {
 "d": 237
+}
+]
+},
+"line-art-zhukovsky": {
+"building_addr": "Солнечная улица, 9",
+"building_entrances": [
+{
+"addr:flats": "1-44",
+"d": 11,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "45-87",
+"d": 32,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "88-130",
+"d": 48,
+"entrance": "staircase",
+"ref": "3"
+}
+],
+"parking": [
+{
+"d": 62
+},
+{
+"d": 65,
+"parking": "surface"
+},
+{
+"d": 77,
+"parking": "street_side"
+},
+{
+"d": 77,
+"parking": "street_side"
 }
 ]
 },
@@ -52758,6 +52921,21 @@
 "level": "0",
 "wheelchair": "no"
 }
+},
+"petrovsky-park": {
+"parking": [
+{
+"access": "customers",
+"d": 251,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 290,
+"parking": "surface"
+}
+]
 },
 "pilot-chess-altufyevskoe": {
 "building_addr": "Алтуфьевское шоссе, 102Б",
@@ -65691,6 +65869,17 @@
 "d": 34
 }
 ]
+},
+"tsarskaya-okhota-balashikha": {
+"gates": [
+{
+"barrier": "gate",
+"d": 28
+}
+],
+"poi": {
+"fee": "yes"
+}
 },
 "tsd-theatre": {
 "gates": [
