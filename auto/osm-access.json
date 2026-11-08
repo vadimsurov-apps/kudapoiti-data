@@ -524,6 +524,31 @@
 }
 ]
 },
+"aparte-taganka": {
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 48
+}
+],
+"parking": [
+{
+"d": 121,
+"parking": "street_side"
+},
+{
+"d": 177,
+"parking": "street_side"
+},
+{
+"d": 191
+},
+{
+"d": 227,
+"parking": "surface"
+}
+]
+},
 "apia-arena": {
 "gates": [
 {
@@ -27889,6 +27914,22 @@
 }
 ]
 },
+"cinemapark-zelenopark": {
+"parking": [
+{
+"d": 115
+},
+{
+"d": 207
+},
+{
+"access": "yes",
+"d": 219,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
 "cinemastar-rumyantsevo": {
 "parking": [
 {
@@ -28534,6 +28575,29 @@
 },
 {
 "d": 225,
+"parking": "surface"
+}
+]
+},
+"crtdu-korolev": {
+"parking": [
+{
+"access": "yes",
+"d": 194,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 211
+},
+{
+"d": 280
+},
+{
+"access": "yes",
+"d": 288,
+"fee": "no",
 "parking": "surface"
 }
 ]
@@ -29526,6 +29590,23 @@
 }
 ]
 },
+"dixxodrom-izmailovo": {
+"parking": [
+{
+"d": 170
+},
+{
+"d": 186
+},
+{
+"d": 269
+},
+{
+"d": 299,
+"parking": "surface"
+}
+]
+},
 "djigit-altufyevo": {
 "parking": [
 {
@@ -30173,6 +30254,26 @@
 "d": 281,
 "fee": "yes",
 "parking": "surface"
+}
+]
+},
+"dobroznanie-zelenograd": {
+"parking": [
+{
+"d": 41,
+"parking": "street_side"
+},
+{
+"d": 54,
+"parking": "street_side"
+},
+{
+"d": 82,
+"parking": "street_side"
+},
+{
+"d": 85,
+"parking": "street_side"
 }
 ]
 },
@@ -34025,6 +34126,36 @@
 },
 {
 "d": 193
+}
+]
+},
+"golovanov-museum": {
+"gates": [
+{
+"barrier": "gate",
+"d": 14
+},
+{
+"barrier": "gate",
+"d": 31
+},
+{
+"barrier": "gate",
+"d": 49
+},
+{
+"barrier": "gate",
+"d": 50
+}
+],
+"parking": [
+{
+"access": "permissive",
+"capacity": "40",
+"d": 296,
+"fee": "yes",
+"parking": "surface",
+"supervised": "yes"
 }
 ]
 },
@@ -39270,6 +39401,42 @@
 "d": 142
 }
 ]
+},
+"kinoparking-depo": {
+"gates": [
+{
+"barrier": "gate",
+"d": 57
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 60
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 50,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 108
+},
+{
+"access": "yes",
+"d": 111
+},
+{
+"d": 227,
+"parking": "surface"
+}
+],
+"poi": {
+"fee": "no"
+}
 },
 "kitenok-akademika-pavlova": {
 "building_addr": "улица Академика Павлова, 56 к1",
@@ -52430,6 +52597,49 @@
 }
 ]
 },
+"omg-vr-leninsky": {
+"parking": [
+{
+"access": "yes",
+"d": 134,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "unknown",
+"capacity": "20",
+"d": 250,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 281
+}
+],
+"poi": {
+"description": "Игровой клуб для детей и взрослых с возможностью погрузиться в виртуальную реальность"
+}
+},
+"omg-vr-lyublinskaya": {
+"building_addr": "Люблинская улица, 169 к2",
+"parking": [
+{
+"d": 66,
+"parking": "street_side"
+},
+{
+"d": 91,
+"parking": "street_side"
+},
+{
+"d": 103
+},
+{
+"d": 108,
+"parking": "street_side"
+}
+]
+},
 "opolchenets-gym": {
 "building_addr": "2-й Южнопортовый проезд, 19 к1",
 "building_entrances": [
@@ -55985,6 +56195,28 @@
 "description": "мини-зоопарк"
 }
 },
+"portal-vr-susalny": {
+"building_addr": "Нижний Сусальный переулок, 9 с4А",
+"gates": [
+{
+"barrier": "gate",
+"d": 55
+}
+],
+"parking": [
+{
+"d": 170,
+"name": "Гаражный комплекс «Гудок»",
+"parking": "multi-storey"
+},
+{
+"access": "yes",
+"d": 262,
+"fee": "yes",
+"parking": "surface"
+}
+]
+},
 "pottery-dual": {
 "building_addr": "Дубининская улица, 57 с3",
 "gates": [
@@ -56492,6 +56724,39 @@
 "parking": "street_side"
 }
 ]
+},
+"prokofiev-museum": {
+"gates": [
+{
+"barrier": "gate",
+"d": 52
+},
+{
+"barrier": "gate",
+"d": 56
+},
+{
+"barrier": "lift_gate",
+"d": 56
+}
+],
+"parking": [
+{
+"d": 199
+},
+{
+"d": 200
+},
+{
+"d": 202
+},
+{
+"d": 206
+}
+],
+"poi": {
+"fee": "yes"
+}
 },
 "proplyt-altaysky": {
 "gates": [
@@ -61510,6 +61775,52 @@
 }
 ]
 },
+"scriabin-museum": {
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 12
+},
+{
+"barrier": "gate",
+"d": 17
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 36
+},
+{
+"barrier": "gate",
+"d": 42
+}
+],
+"parking": [
+{
+"d": 125
+},
+{
+"d": 143
+},
+{
+"capacity": "86",
+"capacity:disabled": "11",
+"charge": "600 RUB/hour",
+"d": 251,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"capacity": "88",
+"capacity:disabled": "10",
+"charge": "600 RUB/hour",
+"d": 267,
+"fee": "yes",
+"parking": "surface"
+}
+]
+},
 "sdc-alekseevsky-zubarev": {
 "parking": [
 {
@@ -64182,6 +64493,46 @@
 },
 {
 "d": 175
+}
+]
+},
+"stanislavsky-music-theatre": {
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 44
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 48
+},
+{
+"barrier": "lift_gate",
+"d": 56
+}
+],
+"parking": [
+{
+"d": 197,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 217,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"d": 223,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 297,
+"fee": "yes",
+"parking": "street_side"
 }
 ]
 },
