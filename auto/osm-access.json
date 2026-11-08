@@ -3186,7 +3186,29 @@
 ]
 },
 "batut-nevalyashka-lobnya": {
-"building_addr": "улица Катюшки, 65А"
+"building_addr": "улица Катюшки, 65А",
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 48
+}
+],
+"parking": [
+{
+"d": 34
+},
+{
+"d": 165
+},
+{
+"d": 186,
+"parking": "street_side"
+},
+{
+"d": 198
+}
+]
 },
 "batut-pantera-shchelkovo": {
 "building_addr": "Фряновское шоссе, 72",
@@ -4899,6 +4921,93 @@
 "level": "1"
 }
 },
+"cafe-adria-mare-preobrazhenka": {
+"building_addr": "Краснобогатырская улица, 90 с1",
+"building_entrances": [
+{
+"access": "private",
+"d": 68,
+"entrance": "staircase",
+"ref": "11"
+},
+{
+"access": "private",
+"d": 82,
+"entrance": "staircase",
+"ref": "10"
+},
+{
+"access": "private",
+"d": 83,
+"entrance": "staircase",
+"ref": "11"
+},
+{
+"access": "private",
+"d": 95,
+"entrance": "staircase",
+"ref": "10"
+},
+{
+"access": "private",
+"d": 99,
+"entrance": "staircase",
+"ref": "9"
+},
+{
+"access": "private",
+"d": 104,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"access": "private",
+"d": 109,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"access": "private",
+"d": 110,
+"entrance": "staircase",
+"ref": "9"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 42
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 48
+},
+{
+"access": "private",
+"barrier": "lift_gate",
+"d": 53
+}
+],
+"parking": [
+{
+"d": 49,
+"parking": "street_side"
+},
+{
+"d": 87,
+"parking": "underground"
+},
+{
+"d": 110,
+"parking": "street_side"
+},
+{
+"d": 123,
+"parking": "street_side"
+}
+]
+},
 "cafe-aist-elektrostal": {
 "building_addr": "Западная улица, 18В",
 "parking": [
@@ -5819,6 +5928,30 @@
 }
 ]
 },
+"cafe-baba-marta-arbat": {
+"building_addr": "улица Арбат, 9 с1",
+"parking": [
+{
+"d": 244
+},
+{
+"capacity": "86",
+"capacity:disabled": "11",
+"charge": "600 RUB/hour",
+"d": 250,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 286,
+"parking": "surface"
+},
+{
+"d": 289
+}
+]
+},
 "cafe-baikal-sergiev": {
 "building_addr": "проспект Красной Армии, 180",
 "parking": [
@@ -5841,6 +5974,41 @@
 "fee": "no",
 "parking": "surface",
 "supervised": "no"
+}
+]
+},
+"cafe-bakinskie-kanikuly-bratislavskaya": {
+"building_addr": "Братиславская улица, 20",
+"building_entrances": [
+{
+"addr:flats": "77-152",
+"d": 136,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "1-76",
+"d": 164,
+"entrance": "staircase",
+"ref": "1"
+}
+],
+"parking": [
+{
+"d": 12,
+"parking": "street_side"
+},
+{
+"d": 68,
+"parking": "street_side"
+},
+{
+"d": 78,
+"parking": "street_side"
+},
+{
+"d": 109,
+"parking": "street_side"
 }
 ]
 },
@@ -6026,6 +6194,44 @@
 "parking": "surface"
 }
 ]
+},
+"cafe-batoni-ostrov": {
+"building_addr": "проспект Андропова, 1",
+"building_entrances": [
+{
+"d": 0,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 145,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 149,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 200,
+"fee": "yes",
+"parking": "underground"
+},
+{
+"access": "yes",
+"d": 257,
+"fee": "yes",
+"parking": "surface"
+}
+],
+"poi": {
+"wheelchair": "no"
+}
 },
 "cafe-bb-grill-riviera": {
 "building_addr": "Автозаводская улица, 18",
@@ -7017,6 +7223,65 @@
 "d": 270,
 "fee": "no",
 "parking": "street_side"
+}
+]
+},
+"cafe-butovo-grill-bartenevskaya": {
+"building_addr": "Бартеневская улица, 14",
+"parking": [
+{
+"access": "yes",
+"d": 81,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 208,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 263,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 283,
+"parking": "multi-storey"
+}
+]
+},
+"cafe-byk-da-baran-ushakova": {
+"building_addr": "бульвар Адмирала Ушакова, 7",
+"building_entrances": [
+{
+"d": 267,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"access": "customers",
+"d": 86,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 117,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 149,
+"fee": "yes"
+},
+{
+"d": 173,
+"parking": "surface"
 }
 ]
 },
@@ -8298,6 +8563,57 @@
 }
 ]
 },
+"cafe-chaikhana-inzhir-pererva": {
+"building_addr": "улица Перерва, 43 к1",
+"building_entrances": [
+{
+"d": 64,
+"entrance": "yes"
+},
+{
+"d": 80,
+"entrance": "yes"
+},
+{
+"d": 87,
+"entrance": "yes"
+},
+{
+"d": 98,
+"entrance": "yes"
+},
+{
+"d": 111,
+"entrance": "yes"
+},
+{
+"d": 154,
+"entrance": "yes"
+},
+{
+"d": 164,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"d": 123,
+"parking": "street_side"
+},
+{
+"d": 140,
+"parking": "street_side"
+},
+{
+"d": 141,
+"parking": "surface"
+},
+{
+"d": 164,
+"parking": "street_side"
+}
+]
+},
 "cafe-chashka-kashira": {
 "building_addr": "Клубная улица, 4А"
 },
@@ -8798,6 +9114,30 @@
 "fee": "no",
 "parking": "surface",
 "supervised": "no"
+}
+]
+},
+"cafe-dirizhabl-lyubertsy": {
+"building_addr": "Октябрьский проспект, 366",
+"parking": [
+{
+"d": 39
+},
+{
+"d": 82,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 144
+},
+{
+"access": "customers",
+"d": 207,
+"fee": "yes",
+"parking": "multi-storey",
+"supervised": "yes"
 }
 ]
 },
@@ -11412,6 +11752,13 @@
 }
 ]
 },
+"cafe-il-pittore-nakhimovsky": {
+"parking": [
+{
+"d": 298
+}
+]
+},
 "cafe-il-sole-solnechnogorsk": {
 "building_addr": "Красная улица, 163А",
 "gates": [
@@ -12268,6 +12615,26 @@
 }
 ]
 },
+"cafe-italoniya-yuzhnobutovskaya": {
+"building_addr": "Южнобутовская улица, 69",
+"gates": [
+{
+"barrier": "gate",
+"d": 32
+},
+{
+"barrier": "gate",
+"d": 32
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 274,
+"parking": "surface"
+}
+]
+},
 "cafe-iyul": {
 "gates": [
 {
@@ -12779,6 +13146,9 @@
 "parking": "surface"
 }
 ]
+},
+"cafe-khmeli-leteli-khimki": {
+"building_addr": "Московская улица, 22/1"
 },
 "cafe-khmeli-suneli-podolsk": {
 "building_addr": "улица Клемента Готвальда, 4Б",
@@ -14038,6 +14408,41 @@
 }
 ]
 },
+"cafe-korgi-skhodnya": {
+"gates": [
+{
+"barrier": "gate",
+"d": 16
+},
+{
+"barrier": "gate",
+"d": 39
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 196,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 224
+},
+{
+"access": "yes",
+"d": 279,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 286,
+"fee": "no",
+"parking": "street_side"
+}
+]
+},
 "cafe-korona-khimki": {
 "building_addr": "улица Маяковского, 2 с2",
 "parking": [
@@ -15112,6 +15517,106 @@
 }
 ]
 },
+"cafe-malatesta-korolev": {
+"building_addr": "Пионерская улица, 30 к13",
+"building_entrances": [
+{
+"d": 185,
+"entrance": "staircase"
+},
+{
+"d": 188,
+"entrance": "staircase"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 35
+},
+{
+"barrier": "gate",
+"d": 57
+}
+],
+"parking": [
+{
+"d": 21,
+"parking": "street_side"
+},
+{
+"d": 38,
+"parking": "surface"
+},
+{
+"d": 90,
+"parking": "street_side"
+},
+{
+"d": 115,
+"parking": "street_side"
+}
+]
+},
+"cafe-malenkaya-italiya-tyumensky": {
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 42
+},
+{
+"barrier": "lift_gate",
+"d": 53
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 126,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 184,
+"fee": "no",
+"parking": "surface"
+},
+{
+"capacity": "2",
+"d": 201,
+"fee": "yes",
+"operator": "ГКУ АМПП",
+"parking": "street_side"
+},
+{
+"d": 219
+}
+]
+},
+"cafe-mama-mia-balashikha": {
+"building_addr": "Зелёная улица, 32 к2",
+"parking": [
+{
+"access": "yes",
+"d": 168,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 196
+},
+{
+"d": 253,
+"parking": "surface"
+},
+{
+"d": 278,
+"fee": "yes",
+"parking": "surface"
+}
+]
+},
 "cafe-maman-mytishchi": {
 "building_addr": "2-я Институтская улица, 28"
 },
@@ -15171,6 +15676,37 @@
 "access": "yes",
 "d": 116,
 "fee": "no",
+"parking": "surface"
+}
+]
+},
+"cafe-mammina-kapitoliy": {
+"building_addr": "проспект Вернадского, 6",
+"building_entrances": [
+{
+"d": 31,
+"entrance": "yes"
+},
+{
+"access": "yes",
+"d": 66,
+"entrance": "yes"
+},
+{
+"d": 121,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 165,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 170,
+"fee": "yes",
 "parking": "surface"
 }
 ]
@@ -16167,6 +16703,145 @@
 "cafe-mokkano-voskresensk": {
 "building_addr": "улица Ломоносова, 119 к2"
 },
+"cafe-molinari-altufevskoe": {
+"building_addr": "Алтуфьевское шоссе, 70 к1",
+"building_entrances": [
+{
+"d": 34,
+"entrance": "yes"
+},
+{
+"d": 54,
+"entrance": "yes"
+},
+{
+"d": 72,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 20,
+"parking": "multi-storey"
+},
+{
+"access": "yes",
+"d": 76,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 148,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 161,
+"fee": "no"
+}
+]
+},
+"cafe-molto-bello-belomorskaya": {
+"building_addr": "Беломорская улица, 16А",
+"building_entrances": [
+{
+"d": 530,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"d": 118
+},
+{
+"d": 128
+},
+{
+"access": "yes",
+"d": 154,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 155
+}
+]
+},
+"cafe-momme-leninsky": {
+"building_addr": "Ленинский проспект, 73/8",
+"building_entrances": [
+{
+"addr:flats": "1-30",
+"d": 65,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "31-58",
+"d": 77,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "59-86",
+"d": 96,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"addr:flats": "87-114",
+"d": 112,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"addr:flats": "115-142",
+"d": 147,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"addr:flats": "143-170",
+"d": 171,
+"entrance": "staircase",
+"ref": "6"
+},
+{
+"addr:flats": "171-225",
+"d": 184,
+"entrance": "staircase",
+"ref": "7"
+},
+{
+"addr:flats": "199-226",
+"d": 198,
+"entrance": "staircase",
+"ref": "8"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 95,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 109
+},
+{
+"access": "yes",
+"d": 176,
+"parking": "surface"
+},
+{
+"d": 209
+}
+]
+},
 "cafe-monpansie-solnechnogorsk": {
 "building_addr": "улица Крупской, 3",
 "parking": [
@@ -16521,6 +17196,54 @@
 },
 "cafe-na-rusi-mytishchi": {
 "building_addr": "Осташковское шоссе, 57"
+},
+"cafe-natahtari-grand-khoroshevskoe": {
+"building_addr": "Хорошёвское шоссе, 25Б",
+"gates": [
+{
+"barrier": "gate",
+"d": 30
+}
+],
+"parking": [
+{
+"d": 69,
+"parking": "street_side"
+},
+{
+"d": 75,
+"parking": "street_side"
+},
+{
+"d": 88,
+"parking": "street_side"
+},
+{
+"d": 109,
+"parking": "street_side"
+}
+]
+},
+"cafe-natura-zvenigorodskaya": {
+"building_addr": "2-я Звенигородская улица, 12 с23",
+"parking": [
+{
+"access": "yes",
+"d": 79,
+"fee": "no"
+},
+{
+"d": 105,
+"parking": "street_side"
+},
+{
+"d": 126
+},
+{
+"d": 177,
+"parking": "surface"
+}
+]
 },
 "cafe-navat-novy-arbat": {
 "gates": [
@@ -17210,6 +17933,58 @@
 "d": 268,
 "fee": "yes",
 "parking": "street_side"
+}
+]
+},
+"cafe-odzhakhuri-khimki": {
+"building_addr": "Молодёжная улица, 6",
+"parking": [
+{
+"d": 59,
+"parking": "underground"
+},
+{
+"d": 101,
+"parking": "surface"
+},
+{
+"d": 170,
+"parking": "surface"
+},
+{
+"d": 173,
+"parking": "surface"
+}
+]
+},
+"cafe-ohana-buninskaya": {
+"building_addr": "улица Бунинская Аллея, 9А",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 15
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 161,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 242
+},
+{
+"d": 268,
+"fee": "yes",
+"parking": "multi-storey"
+},
+{
+"capacity": "20",
+"d": 289,
+"fee": "no",
+"parking": "surface"
 }
 ]
 },
@@ -18352,6 +19127,23 @@
 }
 ]
 },
+"cafe-ovsyanka-balashikha": {
+"parking": [
+{
+"d": 22
+},
+{
+"d": 180
+},
+{
+"access": "customers",
+"d": 194
+},
+{
+"d": 209
+}
+]
+},
 "cafe-pakhomova-sergiev-posad": {
 "building_addr": "проспект Красной Армии, 225/2",
 "parking": [
@@ -19190,6 +19982,43 @@
 }
 ]
 },
+"cafe-piero-zilart": {
+"building_addr": "бульвар Братьев Весниных, 1",
+"building_entrances": [
+{
+"d": 17,
+"entrance": "yes"
+},
+{
+"d": 20,
+"entrance": "yes"
+},
+{
+"d": 20,
+"entrance": "yes"
+},
+{
+"d": 22,
+"entrance": "yes"
+},
+{
+"d": 22,
+"entrance": "emergency"
+},
+{
+"d": 25,
+"entrance": "staircase"
+},
+{
+"d": 25,
+"entrance": "emergency"
+},
+{
+"d": 26,
+"entrance": "yes"
+}
+]
+},
 "cafe-pioppo-albero": {
 "building_addr": "улица Маршала Катукова, 25",
 "parking": [
@@ -19873,6 +20702,23 @@
 }
 ]
 },
+"cafe-pulcinella-khimki": {
+"building_addr": "Совхозная улица, 6",
+"parking": [
+{
+"access": "yes",
+"d": 258,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 289
+},
+{
+"d": 296
+}
+]
+},
 "cafe-punta-prima-khimki": {
 "building_addr": "улица 9 Мая, 21 к3",
 "building_entrances": [
@@ -19901,6 +20747,27 @@
 {
 "d": 88,
 "fee": "no",
+"parking": "surface"
+}
+]
+},
+"cafe-qalaquri-family-bratislavskaya": {
+"building_addr": "Братиславская улица, 29 к1",
+"parking": [
+{
+"d": 49,
+"parking": "street_side"
+},
+{
+"d": 56,
+"parking": "surface"
+},
+{
+"d": 57,
+"parking": "street_side"
+},
+{
+"d": 58,
 "parking": "surface"
 }
 ]
@@ -20079,6 +20946,28 @@
 "capacity": "9",
 "d": 126,
 "parking": "street_side"
+}
+]
+},
+"cafe-raysky-sad-balashikha": {
+"parking": [
+{
+"d": 40
+},
+{
+"d": 80
+},
+{
+"access": "yes",
+"d": 181,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 185,
+"fee": "yes",
+"parking": "surface"
 }
 ]
 },
@@ -21163,6 +22052,17 @@
 }
 ]
 },
+"cafe-shemodi-kulikovskaya": {
+"building_addr": "Куликовская улица, 6",
+"parking": [
+{
+"d": 123
+},
+{
+"d": 287
+}
+]
+},
 "cafe-shokoladnitsa-korolev": {
 "building_addr": "проспект Космонавтов, 12А",
 "parking": [
@@ -21521,6 +22421,63 @@
 "access": "yes",
 "d": 137,
 "fee": "yes",
+"parking": "surface"
+}
+]
+},
+"cafe-sirocco-korolev": {
+"building_addr": "Подмосковная улица, 7",
+"building_entrances": [
+{
+"d": 16,
+"entrance": "staircase"
+},
+{
+"d": 17,
+"entrance": "staircase"
+},
+{
+"d": 27,
+"entrance": "staircase"
+},
+{
+"d": 30,
+"entrance": "staircase"
+},
+{
+"d": 33,
+"entrance": "staircase"
+},
+{
+"d": 35,
+"entrance": "staircase"
+},
+{
+"d": 43,
+"entrance": "staircase"
+},
+{
+"d": 54,
+"entrance": "staircase"
+}
+],
+"parking": [
+{
+"d": 48,
+"parking": "surface"
+},
+{
+"d": 64
+},
+{
+"access": "permissive",
+"d": 81,
+"fee": "no",
+"parking": "surface",
+"supervised": "yes"
+},
+{
+"d": 96,
 "parking": "surface"
 }
 ]
@@ -23948,6 +24905,34 @@
 }
 ]
 },
+"cafe-uti-puti-bakuninskaya": {
+"building_addr": "Бакунинская улица, 69 с1",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 46
+},
+{
+"barrier": "gate",
+"d": 53
+},
+{
+"barrier": "gate",
+"d": 56
+},
+{
+"barrier": "gate",
+"d": 58
+}
+],
+"parking": [
+{
+"capacity:disabled": "2",
+"d": 171,
+"parking": "surface"
+}
+]
+},
 "cafe-utinye-istorii-odintsovo": {
 "building_addr": "Комсомольская улица, 9Б",
 "building_entrances": [
@@ -26044,6 +27029,36 @@
 "parking": "surface"
 }
 ]
+},
+"cafe-zhavoronok-pererva": {
+"building_addr": "улица Перерва, 56/2",
+"building_entrances": [
+{
+"d": 139,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"d": 137,
+"parking": "street_side"
+},
+{
+"d": 147,
+"parking": "street_side"
+},
+{
+"d": 157,
+"parking": "street_side"
+},
+{
+"d": 216,
+"parking": "surface"
+}
+],
+"poi": {
+"wheelchair": "limited"
+}
 },
 "cafe-zhitnaya-kolomna": {
 "parking": [
