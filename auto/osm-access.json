@@ -4018,27 +4018,15 @@
 },
 "cafe-alkasar-egorevsk": {
 "building_addr": "Сиреневый переулок, 7",
-"gates": [
-{
-"barrier": "gate",
-"d": 53
-}
-],
 "parking": [
 {
-"d": 145,
-"parking": "surface"
+"d": 127
 },
 {
-"d": 186,
-"fee": "yes"
+"d": 135
 },
 {
-"d": 194,
-"parking": "surface"
-},
-{
-"d": 205
+"d": 138
 }
 ]
 },
@@ -5131,20 +5119,24 @@
 "building_addr": "Советская улица, 50",
 "parking": [
 {
+"d": 188,
+"fee": "no"
+},
+{
 "access": "yes",
-"d": 120,
-"fee": "yes",
+"d": 207,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"d": 222
+},
+{
+"access": "yes",
+"d": 258,
+"fee": "no",
 "parking": "surface"
-},
-{
-"d": 221
-},
-{
-"d": 231
-},
-{
-"d": 271,
-"parking": "street_side"
 }
 ]
 },
@@ -6470,35 +6462,42 @@
 "building_addr": "улица Ленина, 35А",
 "building_entrances": [
 {
-"d": 177,
+"d": 0,
 "entrance": "main"
 },
 {
-"d": 179,
+"d": 9,
 "entrance": "emergency"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 52
 }
 ],
 "parking": [
 {
 "access": "yes",
-"d": 34,
-"fee": "no",
-"parking": "street_side"
-},
-{
-"access": "yes",
-"d": 50,
-"fee": "no",
-"parking": "street_side"
-},
-{
-"d": 60,
+"d": 61,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 75,
+"d": 70,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 70,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 96,
 "fee": "no",
 "parking": "street_side"
 }
@@ -10100,38 +10099,40 @@
 "building_addr": "Шараповский проезд, вл2 с3",
 "building_entrances": [
 {
-"d": 39,
+"d": 49,
 "entrance": "main"
 },
 {
-"d": 119,
+"d": 101,
 "entrance": "main"
 },
 {
-"d": 143,
+"d": 111,
 "entrance": "main"
 },
 {
-"d": 184,
+"d": 133,
 "entrance": "main"
 }
 ],
 "parking": [
 {
-"d": 57,
+"d": 110,
 "fee": "yes",
 "parking": "surface"
 },
 {
-"d": 105
-},
-{
-"d": 139,
+"d": 136,
 "fee": "yes",
 "parking": "surface"
 },
 {
-"d": 145
+"d": 148,
+"fee": "yes",
+"parking": "multi-storey"
+},
+{
+"d": 151
 }
 ]
 },
@@ -13721,25 +13722,15 @@
 "building_addr": "Можайское шоссе, 71",
 "building_entrances": [
 {
-"d": 720,
+"d": 0,
 "entrance": "main"
 }
 ],
 "parking": [
 {
-"d": 185
-},
-{
-"access": "yes",
-"d": 208,
-"fee": "no",
-"parking": "surface"
-},
-{
-"d": 213
-},
-{
-"d": 224
+"access": "permissive",
+"d": 279,
+"fee": "yes"
 }
 ]
 },
@@ -17481,23 +17472,30 @@
 "building_addr": "улица Партизан, 1В",
 "parking": [
 {
-"d": 85
-},
-{
 "access": "yes",
-"d": 150,
-"fee": "no",
-"parking": "surface",
-"supervised": "no"
-},
-{
-"access": "yes",
-"d": 221,
+"capacity:disabled": "yes",
+"d": 99,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 234
+"access": "yes",
+"capacity:disabled": "yes",
+"d": 116,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity:disabled": "yes",
+"d": 134,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 136,
+"fee": "yes"
 }
 ]
 },
@@ -17548,27 +17546,18 @@
 ]
 },
 "cafe-planeta-sushi-chekhov": {
-"gates": [
-{
-"barrier": "gate",
-"d": 42
-}
-],
 "parking": [
 {
-"d": 102
+"d": 75
 },
 {
-"access": "yes",
-"d": 108,
-"fee": "no",
-"parking": "surface"
+"d": 85
 },
 {
 "d": 117
 },
 {
-"d": 127,
+"d": 134,
 "fee": "yes"
 }
 ]
@@ -18712,33 +18701,49 @@
 "building_addr": "улица Новая Слобода, 4",
 "building_entrances": [
 {
-"d": 631,
+"d": 10,
 "entrance": "staircase"
 },
 {
-"d": 644,
+"d": 12,
 "entrance": "staircase"
 },
 {
-"d": 661,
+"d": 30,
 "entrance": "staircase"
 },
 {
-"d": 679,
+"d": 33,
 "entrance": "staircase"
 },
 {
-"d": 696,
+"d": 49,
 "entrance": "staircase"
 },
 {
-"d": 714,
+"d": 50,
 "entrance": "staircase"
 }
 ],
 "parking": [
 {
-"d": 295
+"d": 19,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"capacity": "149",
+"d": 66,
+"fee": "yes",
+"parking": "multi-storey"
+},
+{
+"d": 85,
+"parking": "street_side"
+},
+{
+"d": 123,
+"parking": "street_side"
 }
 ]
 },
@@ -19923,7 +19928,30 @@
 }
 },
 "cafe-strawbusta-naro-fominsk": {
-"building_addr": "улица Маршала Жукова, 52 к1"
+"building_addr": "улица Маршала Жукова, 52 к1",
+"parking": [
+{
+"access": "customers",
+"capacity": "100",
+"d": 76,
+"parking": "surface"
+},
+{
+"d": 128
+},
+{
+"access": "yes",
+"capacity": "25",
+"d": 221,
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity": "25",
+"d": 223,
+"parking": "surface"
+}
+]
 },
 "cafe-supremo-vernadskogo": {
 "building_addr": "проспект Вернадского, 37 к1",
@@ -20505,13 +20533,16 @@
 "building_addr": "улица Мира, 26",
 "parking": [
 {
-"d": 245
+"d": 62
 },
 {
-"d": 246
+"d": 99
 },
 {
-"d": 294
+"d": 139
+},
+{
+"d": 166
 }
 ]
 },
@@ -20520,28 +20551,18 @@
 "parking": [
 {
 "access": "yes",
-"capacity:disabled": "2",
-"charge": "50 RUB",
-"d": 59,
-"fee": "yes",
-"operator": "Московский паркинг",
-"parking": "street_side"
-},
-{
-"d": 94,
+"d": 50,
 "fee": "no",
 "parking": "surface"
 },
 {
-"access": "yes",
-"d": 98,
-"fee": "no",
-"parking": "surface"
+"d": 72
 },
 {
-"access": "yes",
-"d": 100,
-"fee": "no",
+"d": 80
+},
+{
+"d": 147,
 "parking": "surface"
 }
 ]
@@ -21117,20 +21138,29 @@
 },
 "cafe-up-sushi-odintsovo": {
 "building_addr": "Рябиновая улица, 5",
+"building_entrances": [
+{
+"d": 0,
+"entrance": "staircase"
+}
+],
 "parking": [
 {
-"d": 52,
-"fee": "no",
+"d": 41,
+"parking": "street_side"
+},
+{
+"d": 48,
+"parking": "street_side"
+},
+{
+"d": 80,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 104,
 "parking": "surface"
-},
-{
-"d": 202
-},
-{
-"d": 225
-},
-{
-"d": 251
 }
 ]
 },
@@ -22125,20 +22155,17 @@
 "building_addr": "площадь Партизан, 5",
 "parking": [
 {
-"d": 85,
+"d": 56,
 "fee": "no",
 "parking": "street_side"
 },
 {
-"d": 102,
+"d": 60,
 "fee": "no",
 "parking": "street_side"
 },
 {
-"d": 255
-},
-{
-"d": 292
+"d": 227
 }
 ]
 },
@@ -22405,22 +22432,22 @@
 "parking": [
 {
 "access": "yes",
-"d": 257,
+"d": 103,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 191,
 "fee": "yes",
 "parking": "street_side"
 },
 {
-"d": 257,
+"d": 207,
 "fee": "yes",
 "parking": "street_side"
 },
 {
-"d": 263,
-"fee": "yes",
-"parking": "street_side"
-},
-{
-"d": 266,
+"d": 233,
 "fee": "yes",
 "parking": "street_side"
 }
@@ -22894,22 +22921,17 @@
 },
 "cafe-yakitoriya-pushkino": {
 "building_addr": "Московский проспект, 54А",
+"gates": [
+{
+"barrier": "gate",
+"d": 52
+}
+],
 "parking": [
 {
-"d": 66,
-"parking": "street_side"
-},
-{
-"d": 68,
-"parking": "lane"
-},
-{
-"d": 101,
-"parking": "street_side"
-},
-{
-"d": 131,
-"parking": "surface"
+"access": "yes",
+"d": 245,
+"fee": "no"
 }
 ],
 "poi": {
@@ -22920,11 +22942,16 @@
 "building_addr": "улица Чугунова, 15А",
 "parking": [
 {
-"d": 226,
-"parking": "surface"
+"d": 60
 },
 {
-"d": 299,
+"d": 76
+},
+{
+"d": 97
+},
+{
+"d": 105,
 "parking": "surface"
 }
 ]
@@ -23009,19 +23036,24 @@
 ]
 },
 "cafe-yakitoriya-vidnoe": {
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 59
+}
+],
 "parking": [
 {
-"d": 182
+"d": 121
 },
 {
-"d": 204
+"d": 151
 },
 {
-"d": 215,
-"parking": "surface"
+"d": 181
 },
 {
-"d": 231
+"d": 203
 }
 ]
 },
@@ -23386,22 +23418,29 @@
 },
 "cafe-zhar-egorevsk": {
 "building_addr": "Советская улица, 176",
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 47
+}
+],
 "parking": [
 {
-"d": 70,
-"parking": "surface"
-},
-{
-"d": 102
-},
-{
-"capacity": "10",
-"d": 156,
-"parking": "surface"
-},
-{
 "capacity": "16",
-"d": 171,
+"d": 93,
+"parking": "surface"
+},
+{
+"d": 142
+},
+{
+"d": 170,
+"parking": "surface"
+},
+{
+"capacity": "14",
+"d": 198,
 "parking": "surface"
 }
 ]
