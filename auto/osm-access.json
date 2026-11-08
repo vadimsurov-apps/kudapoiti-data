@@ -2656,6 +2656,24 @@
 }
 ]
 },
+"baza-vr-shchelkovskoe": {
+"parking": [
+{
+"d": 166
+},
+{
+"d": 183,
+"parking": "surface"
+},
+{
+"d": 261
+},
+{
+"d": 267,
+"parking": "surface"
+}
+]
+},
 "beach-volleyball-school-leto-khoroshevo": {
 "building_addr": "проспект Маршала Жукова, 4 с2",
 "building_entrances": [
@@ -4315,8 +4333,11 @@
 ]
 },
 "cafe-anderson-perovo": {
-"building_addr": "Кусковская улица, 47",
 "parking": [
+{
+"d": 25,
+"fee": "no"
+},
 {
 "d": 77
 },
@@ -4325,10 +4346,6 @@
 },
 {
 "d": 143
-},
-{
-"d": 159,
-"parking": "surface"
 }
 ]
 },
@@ -26023,6 +26040,34 @@
 }
 ]
 },
+"cinemastar-rumyantsevo": {
+"parking": [
+{
+"access": "yes",
+"d": 42,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 83,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 96,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 117,
+"fee": "no",
+"parking": "street_side"
+}
+]
+},
 "circus-chudes-kashirka": {
 "building_addr": "Каширское шоссе, 52",
 "building_entrances": [
@@ -28328,6 +28373,24 @@
 }
 ]
 },
+"dolgoprudny-kids-library": {
+"parking": [
+{
+"d": 45
+},
+{
+"d": 46,
+"fee": "no"
+},
+{
+"d": 71,
+"fee": "no"
+},
+{
+"d": 88
+}
+]
+},
 "dolgoprudny-museum": {
 "gates": [
 {
@@ -28745,26 +28808,26 @@
 "dvizhenie-vverkh-basket": {
 "parking": [
 {
+"d": 43,
+"fee": "yes",
+"operator": "ГКУ АМПП",
+"parking": "lane"
+},
+{
 "access": "yes",
 "d": 45,
 "fee": "no",
 "parking": "surface"
 },
 {
+"d": 52,
+"fee": "yes",
+"operator": "ГКУ АМПП",
+"parking": "lane"
+},
+{
 "access": "yes",
 "d": 56,
-"fee": "no",
-"parking": "surface"
-},
-{
-"access": "yes",
-"d": 93,
-"fee": "yes",
-"parking": "surface"
-},
-{
-"access": "yes",
-"d": 231,
 "fee": "no",
 "parking": "surface"
 }
@@ -34948,6 +35011,38 @@
 }
 ]
 },
+"illusion-theatre-perovskaya": {
+"parking": [
+{
+"d": 78
+},
+{
+"d": 231
+},
+{
+"d": 253
+},
+{
+"d": 267
+}
+]
+},
+"ilyinskoe-village-museum": {
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 39
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 171,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
 "impressions-museum-sp": {
 "parking": [
 {
@@ -36314,6 +36409,33 @@
 {
 "d": 204,
 "parking": "street_side"
+}
+]
+},
+"karting-lemans-magistralnaya": {
+"building_addr": "2-я Магистральная улица, 9А",
+"gates": [
+{
+"barrier": "gate",
+"d": 15
+}
+],
+"parking": [
+{
+"d": 132,
+"parking": "surface"
+},
+{
+"d": 140,
+"parking": "surface"
+},
+{
+"d": 187,
+"parking": "surface"
+},
+{
+"d": 211,
+"parking": "surface"
 }
 ]
 },
@@ -37763,19 +37885,22 @@
 ],
 "parking": [
 {
+"d": 34,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 73,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 131,
+"fee": "no",
+"parking": "street_side"
+},
+{
 "d": 174,
-"parking": "street_side"
-},
-{
-"d": 198,
-"parking": "street_side"
-},
-{
-"d": 246,
-"parking": "street_side"
-},
-{
-"d": 247,
 "parking": "street_side"
 }
 ]
@@ -40761,6 +40886,16 @@
 }
 ]
 },
+"kuzminki-estate-museum": {
+"parking": [
+{
+"access": "yes",
+"d": 216,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
 "kuzminki-park": {
 "gates": [
 {
@@ -41401,6 +41536,62 @@
 },
 {
 "d": 47,
+"parking": "street_side"
+}
+]
+},
+"lib152-voronezhskaya": {
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 36
+}
+],
+"parking": [
+{
+"d": 171,
+"parking": "surface"
+},
+{
+"d": 193,
+"parking": "surface"
+},
+{
+"d": 257
+},
+{
+"d": 285,
+"parking": "surface"
+}
+]
+},
+"lib40-khutorskaya": {
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 23
+},
+{
+"barrier": "lift_gate",
+"d": 41
+}
+],
+"parking": [
+{
+"d": 93,
+"parking": "surface"
+},
+{
+"d": 232,
+"parking": "street_side"
+},
+{
+"d": 243,
+"parking": "street_side"
+},
+{
+"d": 252,
+"fee": "no",
 "parking": "street_side"
 }
 ]
@@ -51341,6 +51532,32 @@
 "level": "5"
 }
 },
+"pavposad-shawl-museum": {
+"parking": [
+{
+"access": "yes",
+"d": 27,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 56,
+"parking": "street_side"
+},
+{
+"d": 147
+},
+{
+"access": "yes",
+"d": 153,
+"fee": "no",
+"parking": "surface"
+}
+],
+"poi": {
+"fee": "yes"
+}
+},
 "pbk-cska-aviatorov": {
 "building_addr": "улица Авиаторов, вл 7Б",
 "gates": [
@@ -59366,6 +59583,16 @@
 }
 ]
 },
+"shchapovo-museum": {
+"parking": [
+{
+"d": 93
+},
+{
+"d": 258
+}
+]
+},
 "shchelkovo-central-park": {
 "parking": [
 {
@@ -61768,6 +61995,47 @@
 },
 {
 "d": 133,
+"parking": "street_side"
+}
+]
+},
+"svetlovka-kids-tishinsky": {
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 36
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 40
+},
+{
+"barrier": "lift_gate",
+"d": 43
+},
+{
+"barrier": "lift_gate",
+"d": 58
+}
+],
+"parking": [
+{
+"d": 170
+},
+{
+"d": 185,
+"parking": "surface"
+},
+{
+"access": "customers",
+"capacity": "4",
+"d": 196,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 198,
 "parking": "street_side"
 }
 ]
@@ -67840,6 +68108,35 @@
 "parking": "surface"
 }
 ]
+},
+"zemlevedenie-msu": {
+"parking": [
+{
+"access": "yes",
+"capacity": "60",
+"capacity:disabled": "5",
+"d": 139,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity": "48",
+"capacity:disabled": "6",
+"d": 147,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 159
+},
+{
+"d": 218
+}
+],
+"poi": {
+"fee": "no"
+}
 },
 "zemlyane-chess-kokkinaki": {
 "building_addr": "улица Коккинаки, 3",
