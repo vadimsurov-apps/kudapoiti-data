@@ -7796,36 +7796,46 @@
 "building_addr": "улица Кирова, 17 к1",
 "building_entrances": [
 {
-"d": 567,
+"d": 23,
 "entrance": "staircase"
 },
 {
-"d": 585,
+"d": 30,
 "entrance": "staircase"
 },
 {
-"d": 608,
+"d": 53,
 "entrance": "staircase"
 },
 {
-"d": 627,
+"d": 60,
 "entrance": "staircase"
 },
 {
-"d": 654,
+"d": 87,
 "entrance": "staircase"
 },
 {
-"d": 680,
+"d": 92,
 "entrance": "staircase"
 },
 {
-"d": 716,
+"d": 107,
 "entrance": "staircase"
 },
 {
-"d": 743,
+"d": 124,
 "entrance": "staircase"
+}
+],
+"parking": [
+{
+"d": 205,
+"parking": "lane"
+},
+{
+"d": 254,
+"parking": "street_side"
 }
 ]
 },
@@ -9482,24 +9492,7 @@
 ]
 },
 "cafe-danonna-chistova": {
-"building_addr": "улица Чистова, 16 к3",
-"parking": [
-{
-"access": "yes",
-"d": 74,
-"fee": "no",
-"parking": "surface"
-},
-{
-"d": 86
-},
-{
-"d": 151
-},
-{
-"d": 158
-}
-]
+"building_addr": "улица Чистова, 16 к3"
 },
 "cafe-dapino-bronnaya": {
 "gates": [
@@ -10195,27 +10188,21 @@
 },
 "cafe-dzhondzholi-dmitrovskoe-72": {
 "building_addr": "Дмитровское шоссе, 72",
-"gates": [
-{
-"barrier": "lift_gate",
-"d": 28
-}
-],
 "parking": [
 {
-"d": 245,
+"d": 13,
 "parking": "street_side"
 },
 {
-"d": 263,
+"d": 75,
 "parking": "street_side"
 },
 {
-"d": 287,
+"d": 82,
 "parking": "street_side"
 },
 {
-"d": 292,
+"d": 85,
 "parking": "street_side"
 }
 ]
@@ -10577,10 +10564,13 @@
 "building_addr": "улица Николаева, 40",
 "parking": [
 {
-"d": 251
+"d": 77
 },
 {
-"d": 273
+"d": 233
+},
+{
+"d": 283
 }
 ]
 },
@@ -10999,27 +10989,26 @@
 "building_addr": "Международная улица, 12",
 "building_entrances": [
 {
-"d": 110,
+"d": 251,
 "entrance": "main"
 }
 ],
 "parking": [
 {
-"d": 165,
-"parking": "surface"
-},
-{
-"d": 174,
-"parking": "surface"
-},
-{
 "capacity": "100",
-"d": 211,
+"d": 69,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 212,
+"d": 165
+},
+{
+"d": 185,
+"parking": "surface"
+},
+{
+"d": 270,
 "parking": "surface"
 }
 ]
@@ -11155,35 +11144,44 @@
 "building_addr": "улица Академика Королёва, 8А",
 "gates": [
 {
-"barrier": "lift_gate",
-"d": 40
+"access": "private",
+"barrier": "gate",
+"d": 22
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 31
 },
 {
 "barrier": "lift_gate",
-"d": 46
+"d": 33
+},
+{
+"access": "private;customers",
+"barrier": "lift_gate",
+"d": 45
 }
 ],
 "parking": [
 {
-"capacity": "2",
-"d": 50,
-"parking": "street_side"
-},
-{
-"access": "customers",
-"d": 51,
-"name": "ЖСК Высокий-2"
-},
-{
-"capacity": "3",
-"d": 70,
-"parking": "street_side"
-},
-{
-"access": "customers",
-"d": 90,
-"fee": "yes",
+"access": "yes",
+"d": 25,
+"fee": "no",
 "parking": "surface"
+},
+{
+"access": "customers",
+"d": 26,
+"name": "ЖСК Высокий-2",
+"parking": "surface"
+},
+{
+"d": 44
+},
+{
+"access": "private;customers",
+"d": 45
 }
 ]
 },
@@ -20346,32 +20344,25 @@
 "building_addr": "Северное шоссе, 24",
 "building_entrances": [
 {
-"d": 127,
+"d": 0,
 "entrance": "staircase"
-}
-],
-"gates": [
-{
-"access": "private",
-"barrier": "gate",
-"d": 24
 }
 ],
 "parking": [
 {
-"d": 113,
+"d": 59,
 "parking": "street_side"
 },
 {
-"d": 169,
-"parking": "surface"
-},
-{
-"d": 181,
+"d": 73,
 "parking": "street_side"
 },
 {
-"d": 185,
+"d": 154,
+"parking": "street_side"
+},
+{
+"d": 157,
 "parking": "street_side"
 }
 ]
@@ -24771,14 +24762,24 @@
 "building_addr": "улица Маршала Неделина, 6",
 "building_entrances": [
 {
-"d": 858,
+"d": 0,
 "entrance": "main"
 }
 ],
-"gates": [
+"parking": [
 {
-"barrier": "gate",
-"d": 46
+"d": 47
+},
+{
+"d": 191
+},
+{
+"d": 197,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 240
 }
 ]
 },
@@ -27697,37 +27698,23 @@
 },
 "cafe-zdraste-lipovoy-roshchi": {
 "building_addr": "улица Липовой Рощи, 5 к5",
-"gates": [
-{
-"access": "private",
-"barrier": "lift_gate",
-"d": 29
-},
-{
-"access": "private",
-"barrier": "lift_gate",
-"d": 40
-}
-],
 "parking": [
 {
-"capacity": "6",
-"d": 49
+"d": 113,
+"parking": "underground"
 },
 {
-"d": 192,
+"capacity": "875",
+"d": 115,
+"parking": "underground"
+},
+{
+"d": 155,
 "parking": "street_side"
 },
 {
-"d": 231,
-"fee": "no",
-"parking": "surface"
-},
-{
-"access": "yes",
-"d": 249,
-"fee": "no",
-"parking": "surface"
+"d": 159,
+"parking": "street_side"
 }
 ]
 },
@@ -27735,42 +27722,65 @@
 "building_addr": "улица Маршала Бирюзова, 13",
 "parking": [
 {
-"d": 156,
-"fee": "yes"
+"d": 7
 },
 {
-"d": 173,
-"fee": "yes",
+"capacity": "99",
+"d": 39
+},
+{
+"d": 69
+},
+{
+"d": 81,
 "parking": "surface"
-},
-{
-"access": "yes",
-"d": 176,
-"fee": "no",
-"parking": "surface"
-},
-{
-"d": 190
 }
 ]
 },
 "cafe-zdraste-odintsovo-severnaya": {
 "building_addr": "Северная улица, 5 к2",
+"building_entrances": [
+{
+"d": 20,
+"entrance": "staircase"
+},
+{
+"d": 24,
+"entrance": "staircase"
+},
+{
+"d": 38,
+"entrance": "staircase"
+},
+{
+"d": 40,
+"entrance": "staircase"
+},
+{
+"d": 46,
+"entrance": "staircase"
+},
+{
+"d": 60,
+"entrance": "staircase"
+}
+],
 "parking": [
 {
-"d": 162
+"d": 25,
+"parking": "street_side"
 },
 {
-"d": 179,
-"name": "Многоуровневая парковка"
+"d": 31,
+"parking": "street_side"
 },
 {
-"d": 195
-},
-{
-"d": 290,
-"fee": "no",
+"d": 37,
 "parking": "surface"
+},
+{
+"d": 41,
+"parking": "street_side"
 }
 ]
 },
@@ -27812,76 +27822,80 @@
 "building_addr": "улица Архитектора Власова, 71 к2",
 "building_entrances": [
 {
-"d": 1156,
+"d": 29,
 "entrance": "yes"
 },
 {
-"d": 1156,
+"d": 33,
 "entrance": "yes"
 },
 {
-"d": 1157,
+"d": 43,
 "entrance": "yes"
 },
 {
-"d": 1157,
+"d": 43,
 "entrance": "yes"
 },
 {
-"d": 1159,
+"d": 43,
 "entrance": "yes"
 },
 {
-"d": 1163,
+"d": 43,
 "entrance": "yes"
 },
 {
-"d": 1165,
+"d": 44,
 "entrance": "yes"
 },
 {
-"d": 1167,
-"entrance": "yes"
+"addr:flats": "1-378",
+"d": 46,
+"entrance": "staircase",
+"ref": "2"
 }
 ],
 "gates": [
 {
-"access": "no",
 "barrier": "gate",
-"d": 40
+"d": 50
 }
 ],
 "parking": [
 {
-"d": 146
+"d": 67
 },
 {
-"d": 239
+"d": 86
+},
+{
+"d": 177
+},
+{
+"access": "yes",
+"d": 224,
+"fee": "yes",
+"parking": "surface"
 }
 ]
 },
 "cafe-zdraste-volgogradsky-32": {
-"gates": [
-{
-"barrier": "gate",
-"d": 39
-}
-],
 "parking": [
 {
-"d": 123,
+"d": 152,
 "parking": "street_side"
 },
 {
-"d": 139,
+"d": 174,
 "parking": "street_side"
 },
 {
-"d": 156,
-"parking": "street_side"
+"d": 183,
+"parking": "underground"
 },
 {
-"d": 173,
+"d": 189,
 "parking": "street_side"
 }
 ]
