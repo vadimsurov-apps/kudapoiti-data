@@ -18875,20 +18875,20 @@
 "yourways-ru-contacts": {
 "url": "https://yourways.ru/contacts/",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 2
+"err": "<urlopen error [Errno 101] Network is unreachable>",
+"tries": 3
 },
 "justup-ru-contacts": {
 "url": "https://justup.ru/contacts/",
 "ok": false,
 "err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
-"tries": 2
+"tries": 3
 },
 "ogo-moscow": {
 "url": "https://ogo.moscow/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 2
+"tries": 3
 },
 "redrocket-ru": {
 "url": "https://redrocket.ru/",
@@ -18900,20 +18900,20 @@
 "1kitenok-ru-contacts": {
 "url": "https://1kitenok.ru/contacts/",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 2
+"err": "HTTP Error 403: Forbidden",
+"tries": 3
 },
 "mos-chess-ru-contacts": {
 "url": "https://mos-chess.ru/contacts/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "aquababyclub-ru-contacts": {
 "url": "https://aquababyclub.ru/contacts/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "yourways-ru-zaly": {
 "url": "https://yourways.ru/zaly/",
@@ -18968,13 +18968,13 @@
 "url": "https://mos-kino.ru/cinema/zhukovskiy/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "karofilm-ru-theatres-49": {
 "url": "https://karofilm.ru/theatres/49",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "ruchess-ru-chess-in-museums-museums-museum-tsdsh": {
 "url": "https://ruchess.ru/chess_in_museums/museums/museum_tsdsh/",
@@ -18982,5 +18982,94 @@
 "pages": 4,
 "bytes": 16000,
 "tries": 0
+},
+"s65-mossport-ru-services": {
+"url": "https://s65.mossport.ru/services/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"s65-mossport-ru-sport-center": {
+"url": "https://s65.mossport.ru/sport-center/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"s41-mossport-ru-services": {
+"url": "https://s41.mossport.ru/services/",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"s54-mossport-ru-services": {
+"url": "https://s54.mossport.ru/services/",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"s74-mossport-ru-services": {
+"url": "https://s74.mossport.ru/services/",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"s112-mossport-ru-services": {
+"url": "https://s112.mossport.ru/services/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"s101-mossport-ru-services": {
+"url": "https://s101.mossport.ru/services/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"s111-mossport-ru-services": {
+"url": "https://s111.mossport.ru/services/",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"s57-mossport-ru-services": {
+"url": "https://s57.mossport.ru/services/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"fbmoscow-ru": {
+"url": "https://fbmoscow.ru/",
+"ok": true,
+"pages": 3,
+"bytes": 3311,
+"tries": 0
+},
+"fbmoscow-ru-clubs": {
+"url": "https://fbmoscow.ru/clubs/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"championika-ru": {
+"url": "https://championika.ru/",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"moscow-championika-ru": {
+"url": "https://moscow.championika.ru/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
 }
 }
