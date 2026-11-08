@@ -4962,19 +4962,28 @@
 "building_addr": "Уральская улица, 17",
 "parking": [
 {
-"d": 34,
+"access": "yes",
+"d": 60,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"capacity": "3",
+"capacity:disabled": "3",
+"d": 95
+},
+{
+"access": "yes",
+"d": 128,
+"fee": "no",
 "parking": "surface"
 },
 {
-"d": 74,
-"parking": "surface"
-},
-{
-"d": 80,
-"parking": "surface"
-},
-{
-"d": 83
+"access": "yes",
+"d": 141,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
 }
 ],
 "poi": {
@@ -5987,16 +5996,49 @@
 "building_addr": "Нижний Кисельный переулок, 4",
 "gates": [
 {
+"access": "private",
 "barrier": "gate",
-"d": 58
+"d": 16
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 29
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 36
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 37
 }
 ],
 "parking": [
 {
-"access": "yes",
-"d": 230,
+"capacity:disabled": "3",
+"d": 35,
+"fee": "yes",
+"parking": "lane"
+},
+{
+"capacity": "7",
+"d": 58,
 "fee": "yes",
 "parking": "street_side"
+},
+{
+"capacity": "4",
+"d": 94,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"d": 129,
+"fee": "yes",
+"parking": "lane"
 }
 ]
 },
@@ -10757,30 +10799,45 @@
 },
 "cafe-ilpatio-mitinskaya": {
 "building_addr": "Митинская улица, 16",
-"parking": [
+"gates": [
 {
 "access": "yes",
-"d": 72,
-"fee": "yes",
-"parking": "street_side"
+"barrier": "lift_gate",
+"d": 0
 },
 {
 "access": "yes",
-"d": 85,
+"barrier": "lift_gate",
+"d": 8
+},
+{
+"access": "yes",
+"barrier": "lift_gate",
+"d": 14
+},
+{
+"access": "yes",
+"barrier": "gate",
+"d": 22
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 79,
 "fee": "no",
 "parking": "surface"
 },
 {
-"access": "yes",
-"d": 111,
-"fee": "no",
-"parking": "street_side"
+"d": 125
 },
 {
-"access": "yes",
-"d": 140,
-"fee": "no",
-"parking": "street_side"
+"access": "customers",
+"d": 203,
+"parking": "surface"
+},
+{
+"d": 236
 }
 ]
 },
@@ -15239,20 +15296,44 @@
 "building_addr": "Каширское шоссе, 80",
 "building_entrances": [
 {
-"d": 671,
+"d": 31,
 "entrance": "main"
 },
 {
-"d": 700,
-"entrance": "main"
-},
-{
-"d": 702,
+"d": 33,
 "entrance": "yes"
 },
 {
-"d": 714,
+"d": 42,
 "entrance": "main"
+},
+{
+"d": 44,
+"entrance": "main"
+}
+],
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 43
+}
+],
+"parking": [
+{
+"d": 39,
+"parking": "street_side"
+},
+{
+"d": 53
+},
+{
+"d": 100,
+"parking": "surface"
+},
+{
+"d": 106,
+"parking": "surface"
 }
 ]
 },
@@ -19258,16 +19339,14 @@
 "building_addr": "Симферопольский бульвар, 16 к1",
 "parking": [
 {
-"d": 71
+"d": 119,
+"parking": "street_side"
 },
 {
-"d": 84
-},
-{
-"d": 91
-},
-{
-"d": 109
+"access": "yes",
+"d": 249,
+"fee": "no",
+"parking": "surface"
 }
 ]
 },
@@ -21156,47 +21235,57 @@
 "building_addr": "Соколово-Мещерская улица, 16/114",
 "building_entrances": [
 {
-"addr:flats": "1-25",
-"d": 313,
-"entrance": "staircase",
-"ref": "1"
-},
-{
-"addr:flats": "89-138",
-"d": 317,
-"entrance": "staircase",
-"ref": "4"
-},
-{
-"addr:flats": "26-53",
-"d": 329,
-"entrance": "staircase",
-"ref": "2"
-},
-{
-"addr:flats": "139-178",
-"d": 342,
-"entrance": "staircase",
-"ref": "5"
-},
-{
 "addr:flats": "179-206",
-"d": 352,
+"d": 30,
 "entrance": "staircase",
 "ref": "6"
 },
 {
 "addr:flats": "54-88",
-"d": 353,
+"d": 32,
 "entrance": "staircase",
 "ref": "3"
+},
+{
+"addr:flats": "26-53",
+"d": 37,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "139-178",
+"d": 41,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"addr:flats": "1-25",
+"d": 49,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "89-138",
+"d": 54,
+"entrance": "staircase",
+"ref": "4"
 }
 ],
 "parking": [
 {
 "access": "yes",
-"capacity:disabled": "3",
-"d": 271,
+"d": 75,
+"fee": "no",
+"parking": "surface"
+},
+{
+"capacity": "8",
+"d": 114,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 268,
 "fee": "no",
 "parking": "street_side"
 }
@@ -21206,31 +21295,22 @@
 "building_addr": "проспект Мира, 188Б к4",
 "building_entrances": [
 {
-"d": 90,
+"d": 17,
 "entrance": "yes"
 },
 {
-"d": 108,
+"d": 26,
 "entrance": "yes"
 },
 {
-"d": 135,
+"d": 57,
 "entrance": "yes"
-}
-],
-"gates": [
-{
-"barrier": "gate",
-"d": 51
 }
 ],
 "parking": [
 {
-"d": 63,
+"d": 108,
 "parking": "sheds"
-},
-{
-"d": 290
 }
 ]
 },
@@ -22988,54 +23068,66 @@
 "building_addr": "Гжатская улица, 5 к1",
 "building_entrances": [
 {
-"addr:flats": "1-44",
-"d": 346,
-"entrance": "staircase",
-"ref": "1"
-},
-{
-"addr:flats": "45-88",
-"d": 355,
-"entrance": "staircase",
-"ref": "2"
-},
-{
 "addr:flats": "89-132",
-"d": 360,
+"d": 28,
 "entrance": "staircase",
 "ref": "3"
 },
 {
+"addr:flats": "45-88",
+"d": 32,
+"entrance": "staircase",
+"ref": "2"
+},
+{
 "addr:flats": "133-176",
-"d": 385,
+"d": 37,
 "entrance": "staircase",
 "ref": "4"
 },
 {
+"addr:flats": "1-44",
+"d": 42,
+"entrance": "staircase",
+"ref": "1"
+},
+{
 "addr:flats": "177-262",
-"d": 430,
+"d": 60,
 "entrance": "staircase",
 "ref": "5"
 },
 {
 "addr:flats": "263-348",
-"d": 453,
+"d": 69,
 "entrance": "staircase",
 "ref": "6"
 }
 ],
+"gates": [
+{
+"barrier": "gate",
+"d": 50
+}
+],
 "parking": [
 {
-"d": 35
+"access": "yes",
+"d": 72,
+"fee": "no",
+"parking": "surface"
 },
 {
-"d": 74
+"d": 115,
+"parking": "street_side"
 },
 {
-"d": 132
+"d": 116,
+"parking": "street_side"
 },
 {
-"d": 165
+"d": 120,
+"parking": "street_side"
 }
 ]
 },
