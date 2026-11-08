@@ -149,6 +149,27 @@
 }
 ]
 },
+"aivengo-crossbow-lublino": {
+"building_addr": "Краснодарская улица, 17",
+"parking": [
+{
+"d": 95,
+"parking": "surface"
+},
+{
+"d": 98,
+"parking": "street_side"
+},
+{
+"d": 99,
+"parking": "surface"
+},
+{
+"d": 118,
+"parking": "street_side"
+}
+]
+},
 "akademiya-budushchego-cheryomushki": {
 "building_addr": "Новочерёмушкинская улица, 34 к2",
 "parking": [
@@ -1381,6 +1402,29 @@
 "poi": {
 "fee": "yes"
 }
+},
+"archery-school-krylatskoe": {
+"building_addr": "Осенняя улица, 8 к1",
+"parking": [
+{
+"d": 111,
+"parking": "surface"
+},
+{
+"d": 113,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 132,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 136,
+"parking": "surface"
+}
+]
 },
 "arenaplay-skating": {
 "parking": [
@@ -24851,6 +24895,73 @@
 }
 ]
 },
+"chess-korolevstvo-belyaevo": {
+"building_addr": "Профсоюзная улица, 92",
+"building_entrances": [
+{
+"access": "private",
+"addr:flats": "1-32",
+"d": 877,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"access": "private",
+"addr:flats": "33-64",
+"d": 883,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"access": "private",
+"addr:flats": "65-96",
+"d": 891,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"access": "private",
+"addr:flats": "97-128",
+"d": 900,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"access": "private",
+"addr:flats": "129-160",
+"d": 908,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"access": "private",
+"addr:flats": "161-192",
+"d": 916,
+"entrance": "staircase",
+"ref": "6"
+}
+],
+"parking": [
+{
+"d": 55,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 115,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 166,
+"parking": "surface"
+},
+{
+"d": 169
+}
+]
+},
 "chess-korolevstvo-biryulevo": {
 "building_addr": "Лебедянская улица, 24 к2",
 "parking": [
@@ -24867,6 +24978,37 @@
 "capacity:disabled": "3",
 "d": 298,
 "fee": "no",
+"parking": "surface"
+}
+]
+},
+"chess-korolevstvo-borisovo": {
+"building_addr": "улица Борисовские Пруды, 10 к5",
+"gates": [
+{
+"barrier": "gate",
+"d": 17
+},
+{
+"access": "yes",
+"barrier": "gate",
+"d": 29
+}
+],
+"parking": [
+{
+"d": 49,
+"parking": "surface"
+},
+{
+"d": 63,
+"parking": "street_side"
+},
+{
+"d": 85
+},
+{
+"d": 86,
 "parking": "surface"
 }
 ]
@@ -24889,6 +25031,82 @@
 {
 "d": 266,
 "parking": "surface"
+}
+]
+},
+"chess-korolevstvo-donskoy": {
+"building_addr": "Загородное шоссе, 9 к1",
+"parking": [
+{
+"d": 161
+},
+{
+"access": "yes",
+"d": 210,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 212
+},
+{
+"d": 259,
+"parking": "surface"
+}
+]
+},
+"chess-korolevstvo-kolomenskaya": {
+"building_addr": "Нагатинская набережная, 20 к2",
+"building_entrances": [
+{
+"d": 675,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"access": "customers",
+"d": 143
+},
+{
+"access": "customers",
+"d": 145
+},
+{
+"d": 185,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 218,
+"parking": "underground"
+}
+]
+},
+"chess-korolevstvo-serpukhovskaya": {
+"building_addr": "3-й Павловский переулок, 14",
+"building_entrances": [
+{
+"d": 1009,
+"entrance": "yes",
+"ref": "1"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 47
+},
+{
+"barrier": "gate",
+"d": 58
+}
+],
+"parking": [
+{
+"d": 229,
+"parking": "street_side"
 }
 ]
 },
@@ -25004,6 +25222,81 @@
 {
 "d": 160,
 "name": "Библиотека имени Анны Ахматовой"
+}
+]
+},
+"chess-olimp-kozhukhovo": {
+"building_addr": "6-я Кожуховская улица, 11 к2",
+"building_entrances": [
+{
+"d": 842,
+"entrance": "staircase"
+},
+{
+"d": 868,
+"entrance": "staircase"
+},
+{
+"d": 886,
+"entrance": "staircase"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 236,
+"fee": "yes",
+"parking": "surface",
+"supervised": "yes"
+}
+],
+"poi": {
+"wheelchair": "yes"
+}
+},
+"chess-proryv-yasenevo": {
+"building_addr": "Литовский бульвар, 17 к4",
+"building_entrances": [
+{
+"d": 453,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"d": 95,
+"parking": "surface"
+},
+{
+"d": 114
+},
+{
+"d": 124,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 266
+}
+]
+},
+"chess-school-zao-ochakovo": {
+"building_addr": "Нежинская улица, 13",
+"parking": [
+{
+"d": 240
+},
+{
+"d": 268
+},
+{
+"capacity": "6",
+"d": 279,
+"parking": "street_side"
+},
+{
+"d": 288,
+"parking": "street_side"
 }
 ]
 },
@@ -32180,6 +32473,45 @@
 }
 ]
 },
+"forvard-football-poryadkovy": {
+"building_addr": "Порядковый переулок, 1",
+"gates": [
+{
+"barrier": "gate",
+"d": 22
+},
+{
+"barrier": "lift_gate",
+"d": 24
+},
+{
+"barrier": "lift_gate",
+"d": 51
+},
+{
+"barrier": "lift_gate",
+"d": 53
+}
+],
+"parking": [
+{
+"d": 85,
+"parking": "street_side"
+},
+{
+"d": 89,
+"parking": "street_side"
+},
+{
+"d": 94,
+"parking": "street_side"
+},
+{
+"d": 107,
+"parking": "street_side"
+}
+]
+},
 "foton-volley-medvedkovo": {
 "building_addr": "улица Тихомирова, 10 к1",
 "parking": [
@@ -35781,6 +36113,32 @@
 "capacity": "10",
 "d": 270,
 "parking": "lane"
+}
+]
+},
+"inmotion-fencing-nagorny": {
+"building_addr": "Болотниковская улица, 5 к3",
+"parking": [
+{
+"access": "yes",
+"d": 95,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 211
+},
+{
+"access": "yes",
+"d": 219,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 271,
+"fee": "yes",
+"parking": "surface"
 }
 ]
 },
@@ -45016,6 +45374,17 @@
 }
 ]
 },
+"mfl-brateevo-football": {
+"building_addr": "Братеевская улица, 21 к2",
+"parking": [
+{
+"access": "yes",
+"d": 159,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
 "mgfso-badminton-dvorets-detskogo-sporta": {
 "gates": [
 {
@@ -50304,6 +50673,36 @@
 "fee": "yes"
 }
 },
+"nika-volley-kuzminki": {
+"parking": [
+{
+"access": "yes",
+"capacity": "60",
+"charge": "40 RUR",
+"d": 124,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 185,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 260,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 267,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
 "niki-land": {
 "parking": [
 {
@@ -51051,6 +51450,39 @@
 {
 "d": 256,
 "fee": "yes",
+"parking": "surface"
+}
+]
+},
+"olimp-volley-udaltsova": {
+"building_addr": "улица Удальцова, 67",
+"gates": [
+{
+"barrier": "gate",
+"d": 21
+}
+],
+"parking": [
+{
+"d": 70,
+"fee": "no"
+},
+{
+"access": "customers",
+"d": 79,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 156,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 209,
+"fee": "no",
 "parking": "surface"
 }
 ]
@@ -52923,16 +53355,17 @@
 }
 },
 "petrovsky-park": {
-"parking": [
+"gates": [
 {
 "access": "customers",
-"d": 251,
-"fee": "yes",
-"parking": "surface"
-},
+"barrier": "gate",
+"d": 37
+}
+],
+"parking": [
 {
 "access": "yes",
-"d": 290,
+"d": 269,
 "parking": "surface"
 }
 ]
@@ -57808,6 +58241,26 @@
 }
 ]
 },
+"rostok-basket-strogino": {
+"building_addr": "Строгинский бульвар, 3 к1",
+"parking": [
+{
+"d": 30,
+"parking": "street_side"
+},
+{
+"d": 55,
+"parking": "street_side"
+},
+{
+"d": 57,
+"parking": "street_side"
+},
+{
+"d": 94
+}
+]
+},
 "rudno-petro-museum": {
 "parking": [
 {
@@ -58064,6 +58517,23 @@
 },
 {
 "d": 232,
+"parking": "street_side"
+}
+]
+},
+"rustt-voykovskaya": {
+"building_addr": "улица Космонавта Волкова, 10",
+"parking": [
+{
+"d": 256,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity": "8",
+"d": 285,
+"fee": "no",
 "parking": "street_side"
 }
 ]
@@ -60743,6 +61213,85 @@
 }
 ]
 },
+"shooting-academy-solntsevo": {
+"building_addr": "Производственная улица, 12 к2",
+"building_entrances": [
+{
+"access": "private",
+"addr:flats": "238-297",
+"d": 786,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"access": "private",
+"addr:flats": "298-371",
+"d": 789,
+"entrance": "staircase",
+"ref": "6"
+},
+{
+"access": "private",
+"addr:flats": "298-371",
+"d": 795,
+"entrance": "staircase",
+"ref": "6"
+},
+{
+"access": "private",
+"addr:flats": "238-297",
+"d": 799,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"access": "private",
+"addr:flats": "188-237",
+"d": 800,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"access": "private",
+"addr:flats": "188-237",
+"d": 813,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"access": "private",
+"addr:flats": "372-560",
+"d": 815,
+"entrance": "staircase",
+"ref": "7"
+},
+{
+"access": "private",
+"addr:flats": "372-560",
+"d": 821,
+"entrance": "staircase",
+"ref": "7"
+}
+],
+"parking": [
+{
+"d": 109
+},
+{
+"d": 233
+},
+{
+"capacity": "16",
+"d": 250,
+"parking": "street_side"
+},
+{
+"capacity": "15",
+"d": 255,
+"parking": "street_side"
+}
+]
+},
 "shtorm-akademicheskiy": {
 "building_addr": "Большая Академическая улица, 77А с3",
 "parking": [
@@ -61099,6 +61648,113 @@
 },
 {
 "d": 252
+}
+]
+},
+"sk-borisovo-rowing": {
+"building_addr": "улица Борисовские Пруды, вл29",
+"parking": [
+{
+"d": 105,
+"parking": "surface"
+},
+{
+"d": 145,
+"parking": "street_side"
+},
+{
+"d": 150,
+"parking": "surface"
+},
+{
+"d": 170,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
+"sk-chertanovo-806": {
+"parking": [
+{
+"access": "yes",
+"d": 43,
+"fee": "no",
+"parking": "surface"
+},
+{
+"charge": "100 RUB/hour",
+"d": 61,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 123,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 146,
+"fee": "no",
+"parking": "surface"
+}
+],
+"poi": {
+"wheelchair": "yes"
+}
+},
+"sk-frunzensky-judo": {
+"building_addr": "3-я Фрунзенская улица, 5",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 47
+}
+],
+"parking": [
+{
+"access": "customers",
+"d": 124,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 172,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 246,
+"parking": "street_side"
+}
+]
+},
+"sk-sviblovo-borba": {
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 30
+},
+{
+"barrier": "lift_gate",
+"d": 43
+}
+],
+"parking": [
+{
+"d": 71,
+"parking": "street_side"
+},
+{
+"d": 77
+},
+{
+"d": 102
+},
+{
+"d": 117
 }
 ]
 },
@@ -65960,6 +66616,51 @@
 "d": 256,
 "fee": "yes",
 "parking": "street_side"
+}
+]
+},
+"tt-integral-barklaya": {
+"building_addr": "улица Барклая, 5А",
+"parking": [
+{
+"d": 50,
+"parking": "street_side"
+},
+{
+"d": 93,
+"parking": "street_side"
+},
+{
+"d": 133,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 138,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
+"tt-khovrino-festivalnaya": {
+"parking": [
+{
+"d": 87,
+"parking": "surface"
+},
+{
+"d": 120
+},
+{
+"capacity": "300",
+"d": 153,
+"fee": "yes",
+"parking": "multi-storey",
+"supervised": "yes"
+},
+{
+"d": 165,
+"parking": "multi-storey"
 }
 ]
 },
