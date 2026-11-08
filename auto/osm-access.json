@@ -8645,29 +8645,44 @@
 "building_entrances": [
 {
 "addr:flats": "1-144",
-"d": 188,
+"d": 0,
 "entrance": "staircase",
 "ref": "1"
 }
 ],
+"gates": [
+{
+"barrier": "gate",
+"d": 9
+},
+{
+"barrier": "gate",
+"d": 20
+},
+{
+"barrier": "gate",
+"d": 32
+},
+{
+"barrier": "gate",
+"d": 45
+}
+],
 "parking": [
 {
-"access": "yes",
-"d": 11,
-"fee": "no",
-"parking": "surface"
-},
-{
-"d": 111,
+"d": 23,
 "parking": "street_side"
 },
 {
-"d": 168,
+"d": 115,
 "parking": "street_side"
 },
 {
-"d": 172,
-"parking": "surface"
+"d": 130,
+"parking": "street_side"
+},
+{
+"d": 139
 }
 ]
 },
@@ -8984,31 +8999,34 @@
 "building_addr": "Алтуфьевское шоссе, 84",
 "building_entrances": [
 {
-"d": 190,
+"d": 0,
 "entrance": "main"
 },
 {
-"d": 216,
+"d": 28,
 "entrance": "yes"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 50
 }
 ],
 "parking": [
 {
-"d": 81,
+"d": 34
+},
+{
+"d": 66
+},
+{
+"d": 101,
 "parking": "street_side"
 },
 {
-"d": 114,
+"d": 150,
 "parking": "street_side"
-},
-{
-"d": 141
-},
-{
-"access": "yes",
-"d": 161,
-"fee": "yes",
-"parking": "surface"
 }
 ]
 },
@@ -9016,71 +9034,81 @@
 "building_addr": "проспект Мира, 99",
 "building_entrances": [
 {
-"addr:flats": "186-222",
-"d": 787,
-"entrance": "staircase",
-"ref": "6"
-},
-{
-"access": "private",
-"d": 798,
-"entrance": "staircase"
-},
-{
-"addr:flats": "223-249",
-"d": 808,
-"entrance": "staircase",
-"ref": "7"
-},
-{
-"addr:flats": "148-185",
-"d": 817,
-"entrance": "staircase",
-"ref": "5"
-},
-{
-"d": 819,
-"entrance": "staircase",
-"ref": "8"
-},
-{
 "addr:flats": "110-147",
-"d": 841,
+"d": 17,
 "entrance": "staircase",
 "ref": "4"
 },
 {
-"access": "private",
-"d": 864,
-"entrance": "staircase"
+"addr:flats": "148-185",
+"d": 22,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"addr:flats": "223-249",
+"d": 32,
+"entrance": "staircase",
+"ref": "7"
 },
 {
 "addr:flats": "73-109",
-"d": 865,
+"d": 37,
 "entrance": "staircase",
 "ref": "3"
+},
+{
+"d": 40,
+"entrance": "staircase",
+"ref": "8"
+},
+{
+"access": "private",
+"d": 44,
+"entrance": "staircase"
+},
+{
+"access": "private",
+"d": 47,
+"entrance": "staircase"
+},
+{
+"addr:flats": "186-222",
+"d": 50,
+"entrance": "staircase",
+"ref": "6"
 }
 ],
 "gates": [
 {
-"barrier": "gate",
-"d": 53
+"barrier": "lift_gate",
+"d": 45
+},
+{
+"barrier": "lift_gate",
+"d": 47
+},
+{
+"barrier": "lift_gate",
+"d": 56
 }
 ],
 "parking": [
 {
-"d": 130,
+"d": 114,
 "parking": "street_side"
 },
 {
-"d": 151
+"d": 143
 },
 {
-"d": 155,
+"d": 185,
+"fee": "no",
 "parking": "surface"
 },
 {
-"d": 210
+"d": 231,
+"parking": "surface"
 }
 ]
 },
@@ -9359,22 +9387,25 @@
 "building_addr": "улица Пришвина, 9/2",
 "parking": [
 {
-"d": 115,
-"fee": "yes",
-"parking": "surface",
-"supervised": "yes"
-},
-{
 "access": "yes",
-"d": 129,
+"d": 72,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 139
+"access": "yes",
+"d": 75,
+"fee": "no",
+"parking": "surface"
 },
 {
-"d": 209
+"d": 82
+},
+{
+"access": "yes",
+"d": 127,
+"fee": "no",
+"parking": "surface"
 }
 ]
 },
@@ -10980,16 +11011,22 @@
 "building_addr": "Абрамцевская улица, 30 с1",
 "parking": [
 {
-"d": 85
+"capacity": "300",
+"d": 64,
+"parking": "multi-storey"
 },
 {
-"d": 100
+"d": 85,
+"parking": "surface"
 },
 {
-"d": 107
+"capacity": "300",
+"d": 116,
+"fee": "yes",
+"parking": "multi-storey"
 },
 {
-"d": 121
+"d": 116
 }
 ]
 },
@@ -10999,34 +11036,26 @@
 {
 "access": "private",
 "barrier": "gate",
-"d": 29
-},
-{
-"access": "private",
-"barrier": "lift_gate",
-"d": 44
+"d": 42
 }
 ],
 "parking": [
 {
-"access": "permit",
-"d": 24,
-"fee": "no",
-"parking": "surface",
-"supervised": "yes"
-},
-{
-"d": 59,
-"parking": "surface"
-},
-{
 "access": "yes",
-"d": 123,
+"d": 124,
 "fee": "no",
 "parking": "surface"
 },
 {
 "d": 142
+},
+{
+"d": 174
+},
+{
+"access": "yes",
+"d": 196,
+"parking": "multi-storey"
 }
 ]
 },
@@ -12415,30 +12444,23 @@
 },
 "cafe-khachapuri-ryazansky": {
 "building_addr": "Рязанский проспект, 34 к2",
-"gates": [
-{
-"access": "private",
-"barrier": "lift_gate",
-"d": 41
-}
-],
 "parking": [
 {
-"d": 105
+"d": 79,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"d": 107,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"d": 177
 },
 {
 "access": "permissive",
-"d": 118
-},
-{
-"d": 136,
-"parking": "surface",
-"supervised": "no"
-},
-{
-"d": 172,
-"parking": "surface",
-"supervised": "no"
+"d": 260
 }
 ]
 },
@@ -16267,50 +16289,50 @@
 "building_addr": "Окская улица, 3 к1",
 "building_entrances": [
 {
-"d": 40,
+"d": 8,
 "entrance": "yes"
 },
 {
-"d": 46,
+"d": 21,
 "entrance": "yes"
 },
 {
-"d": 55,
+"d": 36,
 "entrance": "yes"
 },
 {
-"d": 75,
+"d": 49,
 "entrance": "yes"
 },
 {
-"d": 102,
+"d": 58,
 "entrance": "yes"
 },
 {
-"d": 130,
+"d": 63,
 "entrance": "yes"
 },
 {
-"d": 157,
+"d": 66,
 "entrance": "yes"
 },
 {
-"d": 169,
+"d": 73,
 "entrance": "yes"
 }
 ],
 "parking": [
 {
-"d": 176
+"d": 152
 },
 {
-"d": 182
+"d": 234
 },
 {
-"d": 207
+"d": 251
 },
 {
-"d": 264
+"d": 275
 }
 ]
 },
@@ -19761,25 +19783,23 @@
 "building_addr": "улица Лётчика Ульянина, 5",
 "parking": [
 {
-"capacity": "6",
-"d": 36,
-"parking": "street_side"
+"d": 97,
+"parking": "multi-storey"
+},
+{
+"d": 99,
+"parking": "multi-storey"
 },
 {
 "access": "yes",
 "capacity": "10",
-"d": 68,
+"d": 120,
 "parking": "street_side"
 },
 {
 "access": "yes",
-"d": 77,
-"parking": "street_side"
-},
-{
-"access": "yes",
-"capacity": "7",
-"d": 97,
+"capacity": "9",
+"d": 126,
 "parking": "street_side"
 }
 ]
@@ -20613,78 +20633,73 @@
 {
 "access": "private",
 "addr:flats": "1117-1488",
-"d": 365,
+"d": 40,
 "entrance": "staircase",
 "ref": "4"
+},
+{
+"access": "private",
+"addr:flats": "373-744",
+"d": 42,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"access": "private",
+"addr:flats": "745-1116",
+"d": 50,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"access": "private",
+"addr:flats": "1-372",
+"d": 55,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"access": "private",
+"addr:flats": "373-744",
+"d": 61,
+"entrance": "staircase",
+"ref": "2"
 },
 {
 "access": "private",
 "addr:flats": "1117-1488",
-"d": 379,
+"d": 61,
 "entrance": "staircase",
 "ref": "4"
 },
 {
 "access": "private",
 "addr:flats": "745-1116",
-"d": 400,
-"entrance": "staircase",
-"ref": "3"
-},
-{
-"access": "private",
-"addr:flats": "745-1116",
-"d": 417,
+"d": 63,
 "entrance": "staircase",
 "ref": "3"
 },
 {
 "access": "private",
 "addr:flats": "1-372",
-"d": 428,
+"d": 70,
 "entrance": "staircase",
 "ref": "1"
-},
-{
-"access": "private",
-"addr:flats": "1-372",
-"d": 446,
-"entrance": "staircase",
-"ref": "1"
-},
-{
-"access": "private",
-"addr:flats": "373-744",
-"d": 454,
-"entrance": "staircase",
-"ref": "2"
-},
-{
-"access": "private",
-"addr:flats": "373-744",
-"d": 469,
-"entrance": "staircase",
-"ref": "2"
 }
 ],
 "parking": [
 {
-"d": 118,
+"d": 108
+},
+{
+"d": 124,
 "parking": "surface"
 },
 {
-"d": 176,
-"parking": "street_side"
+"d": 155
 },
 {
-"capacity": "40",
-"d": 183,
-"parking": "street_side"
-},
-{
-"capacity": "12",
-"d": 260,
-"parking": "street_side"
+"d": 159
 }
 ]
 },
@@ -21525,49 +21540,52 @@
 "building_addr": "улица Волхонка, 9 с1",
 "building_entrances": [
 {
-"d": 225,
+"d": 17,
 "entrance": "service"
 },
 {
-"d": 235,
+"d": 17,
 "entrance": "service"
 },
 {
-"d": 243,
+"d": 18,
 "entrance": "service"
 },
 {
-"d": 249,
+"d": 22,
 "entrance": "service"
 }
 ],
 "gates": [
 {
-"access": "permissive",
-"barrier": "gate",
-"d": 26
+"barrier": "lift_gate",
+"d": 17
 },
 {
-"access": "permissive",
+"access": "private",
+"barrier": "gate",
+"d": 24
+},
+{
+"access": "yes",
 "barrier": "gate",
 "d": 28
 },
 {
 "access": "private",
-"barrier": "lift_gate",
-"d": 31
-},
-{
 "barrier": "gate",
-"d": 34
+"d": 33
 }
 ],
 "parking": [
 {
-"d": 227
+"d": 132
 },
 {
-"d": 263
+"capacity": "2",
+"d": 138,
+"fee": "yes",
+"parking": "street_side"
 }
 ],
 "poi": {
@@ -22759,27 +22777,21 @@
 "parking": [
 {
 "access": "yes",
-"d": 88,
+"d": 54,
 "fee": "no",
 "parking": "surface"
 },
 {
+"d": 70
+},
+{
 "access": "yes",
-"d": 90,
+"d": 144,
 "fee": "no",
 "parking": "surface"
 },
 {
-"access": "yes",
-"d": 104,
-"fee": "no",
-"parking": "surface"
-},
-{
-"access": "yes",
-"d": 152,
-"fee": "no",
-"parking": "surface"
+"d": 181
 }
 ]
 },
