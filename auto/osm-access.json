@@ -21665,6 +21665,35 @@
 }
 ]
 },
+"cafe-taverna-robina-kommunarka": {
+"building_addr": "Скандинавский бульвар, 3 к2",
+"building_entrances": [
+{
+"addr:flats": "1-55",
+"d": 999,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "56-87",
+"d": 1007,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "88-127",
+"d": 1018,
+"entrance": "staircase",
+"ref": "3"
+}
+],
+"parking": [
+{
+"d": 214,
+"parking": "street_side"
+}
+]
+},
 "cafe-terrasa-dmitrov": {
 "building_addr": "Кооперативный переулок, 3А",
 "parking": [
@@ -25586,20 +25615,47 @@
 },
 "chess-champion-kolomna": {
 "building_addr": "улица Гаврилова, 4",
-"parking": [
+"building_entrances": [
+{
+"d": 0,
+"entrance": "main"
+},
+{
+"d": 28,
+"entrance": "yes"
+},
+{
+"d": 51,
+"entrance": "yes"
+}
+],
+"gates": [
 {
 "access": "yes",
-"d": 155,
-"fee": "no",
-"parking": "surface",
-"supervised": "no"
+"barrier": "lift_gate",
+"d": 59
+}
+],
+"parking": [
+{
+"access": "customers",
+"d": 70
+},
+{
+"access": "customers",
+"d": 89,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 138,
+"parking": "surface"
 },
 {
 "access": "yes",
-"d": 208,
-"fee": "no",
-"parking": "surface",
-"supervised": "no"
+"d": 138,
+"fee": "yes",
+"parking": "surface"
 }
 ]
 },
@@ -26138,23 +26194,19 @@
 "building_addr": "улица Бабушкина, 2А",
 "parking": [
 {
-"access": "yes",
-"d": 55
+"d": 68,
+"name": "ТЦ Ореховской"
 },
 {
 "access": "yes",
-"d": 59,
-"fee": "no",
-"parking": "surface"
+"d": 80
 },
 {
-"access": "yes",
-"d": 123,
-"fee": "no",
-"parking": "surface"
+"d": 159,
+"operator": "ТЦ \"Стильный город\""
 },
 {
-"d": 205
+"d": 178
 }
 ]
 },
@@ -26675,16 +26727,13 @@
 "building_addr": "улица Мира, 16",
 "parking": [
 {
-"d": 97
+"d": 193
 },
 {
-"d": 106
+"d": 273
 },
 {
-"d": 106
-},
-{
-"d": 112
+"d": 286
 }
 ]
 },
@@ -27392,28 +27441,15 @@
 },
 "chessfirst-khimki-babakina": {
 "building_addr": "улица Бабакина, 15",
-"parking": [
+"gates": [
 {
-"access": "customers",
-"d": 93,
-"parking": "surface"
+"barrier": "gate",
+"d": 55
 },
 {
-"d": 252,
-"fee": "no",
-"parking": "surface"
-},
-{
-"access": "yes",
-"capacity": "3",
-"d": 274,
-"fee": "no",
-"parking": "surface"
-},
-{
-"d": 277,
-"fee": "no",
-"parking": "surface"
+"access": "private",
+"barrier": "gate",
+"d": 56
 }
 ]
 },
@@ -30038,42 +30074,37 @@
 "building_addr": "Волоколамское шоссе, 3 с1",
 "building_entrances": [
 {
-"d": 336,
-"entrance": "yes"
-},
-{
-"d": 368,
+"d": 0,
 "entrance": "main"
 },
 {
-"d": 385,
+"d": 25,
+"entrance": "yes"
+},
+{
+"d": 33,
 "entrance": "yes"
 }
 ],
 "parking": [
 {
 "access": "yes",
-"d": 44,
+"d": 35,
 "fee": "no",
 "parking": "street_side"
 },
 {
 "access": "yes",
-"d": 125,
+"d": 41,
 "fee": "no",
-"parking": "street_side"
+"parking": "surface"
 },
 {
-"access": "yes",
-"d": 128,
-"fee": "no",
-"parking": "street_side"
+"d": 91
 },
 {
-"access": "yes",
-"d": 149,
-"fee": "no",
-"parking": "street_side"
+"d": 111,
+"parking": "underground"
 }
 ]
 },
@@ -30081,32 +30112,34 @@
 "building_addr": "Митинская улица, 40 к2",
 "building_entrances": [
 {
-"d": 319,
+"d": 0,
 "entrance": "main"
+}
+],
+"gates": [
+{
+"access": "no",
+"barrier": "gate",
+"d": 32
 }
 ],
 "parking": [
 {
-"access": "yes",
-"d": 47,
-"fee": "yes",
+"d": 79,
 "parking": "street_side"
 },
 {
 "access": "yes",
-"d": 59,
+"d": 83,
 "fee": "no",
+"parking": "lane"
+},
+{
+"d": 108,
 "parking": "surface"
 },
 {
-"access": "yes",
-"d": 147,
-"parking": "surface"
-},
-{
-"access": "yes",
-"d": 156,
-"fee": "no",
+"d": 114,
 "parking": "street_side"
 }
 ]
@@ -30134,15 +30167,31 @@
 "building_addr": "улица Кулакова, 20 с1 Г2",
 "parking": [
 {
-"capacity": "50",
-"d": 66,
-"parking": "surface"
+"access": "yes",
+"capacity:disabled": "4",
+"d": 96,
+"fee": "yes",
+"parking": "street_side"
 },
 {
-"capacity": "300",
-"d": 75,
-"fee": "no",
-"parking": "surface"
+"access": "yes",
+"capacity": "4",
+"d": 108,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"capacity": "12",
+"d": 123,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"capacity": "4",
+"d": 153,
+"fee": "yes",
+"parking": "street_side"
 }
 ]
 },
@@ -40467,11 +40516,25 @@
 "building_addr": "2-я Вольская улица, 20",
 "parking": [
 {
-"d": 89,
+"access": "yes",
+"d": 68,
+"fee": "no",
 "parking": "surface"
 },
 {
-"d": 151
+"access": "yes",
+"d": 159,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 215,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 217
 }
 ]
 },
@@ -40530,9 +40593,21 @@
 },
 "kasok-ballet-tekstilshchiki": {
 "building_addr": "8-я улица Текстильщиков, 8",
+"gates": [
+{
+"barrier": "gate",
+"d": 52
+}
+],
 "parking": [
 {
-"d": 133
+"d": 185
+},
+{
+"d": 209
+},
+{
+"d": 290
 }
 ]
 },
@@ -61548,78 +61623,59 @@
 "building_addr": "Дубнинская улица, 6 к1",
 "building_entrances": [
 {
-"addr:flats": "1-34",
-"d": 674,
-"entrance": "staircase",
-"ref": "1"
-},
-{
-"addr:flats": "35-70",
-"d": 682,
-"entrance": "staircase",
-"ref": "2"
-},
-{
-"addr:flats": "71-106",
-"d": 690,
-"entrance": "staircase",
-"ref": "3"
-},
-{
-"addr:flats": "107-141",
-"d": 699,
-"entrance": "staircase",
-"ref": "4"
-},
-{
 "addr:flats": "142-177",
-"d": 708,
+"d": 8,
 "entrance": "staircase",
 "ref": "5"
 },
 {
+"addr:flats": "107-141",
+"d": 13,
+"entrance": "staircase",
+"ref": "4"
+},
+{
 "addr:flats": "178-213",
-"d": 717,
+"d": 29,
 "entrance": "staircase",
 "ref": "6"
 },
 {
+"addr:flats": "71-106",
+"d": 33,
+"entrance": "staircase",
+"ref": "3"
+},
+{
 "addr:flats": "214-248",
-"d": 728,
+"d": 49,
 "entrance": "staircase",
 "ref": "7"
 },
 {
+"addr:flats": "35-70",
+"d": 53,
+"entrance": "staircase",
+"ref": "2"
+},
+{
 "addr:flats": "249-284",
-"d": 738,
+"d": 69,
 "entrance": "staircase",
 "ref": "8"
-}
-],
-"gates": [
+},
 {
-"barrier": "lift_gate",
-"d": 26
+"addr:flats": "1-34",
+"d": 74,
+"entrance": "staircase",
+"ref": "1"
 }
 ],
 "parking": [
 {
-"access": "yes",
-"d": 76,
-"fee": "no",
-"parking": "surface"
-},
-{
-"d": 96,
-"parking": "street_side"
-},
-{
-"d": 105,
-"parking": "street_side"
-},
-{
-"d": 121,
-"parking": "street_side"
+"capacity": "3",
+"d": 298,
+"parking": "garage"
 }
 ]
 },
@@ -61652,28 +61708,17 @@
 "building_addr": "Шенкурский проезд, 3",
 "parking": [
 {
-"access": "yes",
-"d": 115,
-"fee": "no",
-"parking": "surface"
+"d": 21
 },
 {
-"access": "yes",
-"d": 120,
-"fee": "no",
-"parking": "surface"
-},
-{
-"access": "yes",
-"d": 150,
-"fee": "no",
+"d": 118,
 "parking": "street_side"
 },
 {
-"access": "yes",
-"d": 178,
-"fee": "no",
-"parking": "street_side"
+"d": 152
+},
+{
+"d": 170
 }
 ]
 },
