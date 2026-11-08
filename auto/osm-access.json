@@ -27,14 +27,24 @@
 },
 "abramtsevo-crafts-khotkovo": {
 "building_addr": "Кооперативная улица, 23",
-"parking": [
+"gates": [
 {
-"d": 228,
-"fee": "no"
+"barrier": "gate",
+"d": 46
 },
 {
-"d": 249,
-"fee": "no"
+"access": "private",
+"barrier": "gate",
+"d": 53
+}
+],
+"parking": [
+{
+"d": 40,
+"parking": "surface"
+},
+{
+"d": 109
 }
 ]
 },
@@ -1757,6 +1767,31 @@
 }
 ]
 },
+"avangard-volley-mytishchi": {
+"building_addr": "улица Коминтерна, 5",
+"gates": [
+{
+"barrier": "gate",
+"d": 47
+}
+],
+"parking": [
+{
+"d": 105
+},
+{
+"d": 130
+},
+{
+"d": 135,
+"parking": "street_side"
+},
+{
+"d": 143,
+"parking": "surface"
+}
+]
+},
 "avto-istorii": {
 "parking": [
 {
@@ -2193,6 +2228,64 @@
 "supervised": "no"
 }
 ]
+},
+"badm-bauman-mytishchi": {
+"building_addr": "1-я Институтская улица, 1",
+"parking": [
+{
+"access": "permissive",
+"d": 116,
+"parking": "surface"
+},
+{
+"d": 150
+},
+{
+"access": "permissive",
+"d": 170
+},
+{
+"d": 194
+}
+]
+},
+"badm-khimki-salyut": {
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 34
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 35
+},
+{
+"barrier": "gate",
+"d": 51
+}
+],
+"parking": [
+{
+"d": 23,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 146,
+"parking": "street_side"
+},
+{
+"d": 157
+},
+{
+"d": 169
+}
+]
+},
+"badm-kurkino-sport-novogorsk": {
+"building_addr": "Заречная улица, 20"
 },
 "badmclub-stromynka": {
 "gates": [
@@ -2767,6 +2860,37 @@
 {
 "d": 267,
 "parking": "surface"
+}
+]
+},
+"bball-mytishchi": {
+"building_addr": "улица Белобородова, 4Е",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 33
+}
+],
+"parking": [
+{
+"access": "customers",
+"capacity": "55",
+"d": 51,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 105,
+"fee": "no"
+},
+{
+"d": 127,
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity": "53",
+"d": 139
 }
 ]
 },
@@ -24748,6 +24872,21 @@
 }
 ]
 },
+"chess-champion-krasnogorsk": {
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 28
+}
+],
+"parking": [
+{
+"d": 235,
+"parking": "surface"
+}
+]
+},
 "chess-csbw-altufyevo": {
 "building_addr": "Алтуфьевское шоссе, 97",
 "building_entrances": [
@@ -25129,6 +25268,108 @@
 }
 ]
 },
+"chess-debut-korolev": {
+"building_addr": "улица 50-летия ВЛКСМ, 5/16",
+"parking": [
+{
+"access": "yes",
+"d": 193,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 209
+}
+]
+},
+"chess-dosug-krasnogorsk": {
+"building_addr": "Лесная улица, 9",
+"building_entrances": [
+{
+"addr:flats": "1-36",
+"d": 935,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "37-76",
+"d": 955,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "77-116",
+"d": 978,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"addr:flats": "117-155",
+"d": 1001,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"addr:flats": "156-195",
+"d": 1022,
+"entrance": "staircase",
+"ref": "5"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 248,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 283,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 292,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "customers",
+"d": 300,
+"fee": "no",
+"parking": "surface"
+}
+],
+"poi": {
+"addr:floor": "1",
+"level": "0",
+"wheelchair": "no"
+}
+},
+"chess-dyussh-podolsk": {
+"building_addr": "улица Клемента Готвальда, 4",
+"parking": [
+{
+"d": 47,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 87
+},
+{
+"d": 92,
+"parking": "street_side"
+},
+{
+"d": 123,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
 "chess-first-mytishchi": {
 "building_addr": "проспект Астрахова, 7",
 "parking": [
@@ -25147,6 +25388,75 @@
 {
 "d": 120,
 "parking": "street_side"
+}
+]
+},
+"chess-grossmeister-borisovka": {
+"building_addr": "улица Борисовка, 12А",
+"parking": [
+{
+"access": "yes",
+"d": 87,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 141
+},
+{
+"capacity": "100",
+"d": 184,
+"fee": "yes",
+"maxstay": "1 hour"
+},
+{
+"d": 198,
+"fee": "yes",
+"parking": "surface"
+}
+]
+},
+"chess-impuls-mytishchi": {
+"building_addr": "улица Мира, 9",
+"parking": [
+{
+"access": "yes",
+"d": 169,
+"fee": "no",
+"name": "Площадь Мира",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 181
+},
+{
+"d": 276,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
+"chess-karpov-gymn16-mytishchi": {
+"building_addr": "улица Белобородова, 5",
+"parking": [
+{
+"access": "customers",
+"capacity": "55",
+"d": 145,
+"parking": "surface"
+},
+{
+"d": 171,
+"parking": "surface"
+},
+{
+"d": 198
+},
+{
+"access": "yes",
+"d": 198,
+"fee": "no"
 }
 ]
 },
@@ -25526,6 +25836,14 @@
 "wheelchair": "yes"
 }
 },
+"chess-olimpik-mytishchi": {
+"parking": [
+{
+"d": 122,
+"parking": "surface"
+}
+]
+},
 "chess-proryv-yasenevo": {
 "building_addr": "Литовский бульвар, 17 к4",
 "building_entrances": [
@@ -25550,6 +25868,25 @@
 }
 ]
 },
+"chess-royal-gambit-mytishchi": {
+"building_addr": "улица Мира, 39",
+"parking": [
+{
+"d": 200
+},
+{
+"d": 229
+},
+{
+"d": 264,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 281
+}
+]
+},
 "chess-school-zao-ochakovo": {
 "building_addr": "Нежинская улица, 13",
 "parking": [
@@ -25567,6 +25904,72 @@
 },
 {
 "d": 109
+}
+]
+},
+"chess-znatok-krasnogorsk": {
+"building_addr": "Дачная улица, 9",
+"building_entrances": [
+{
+"addr:flats": "1-81А",
+"d": 397,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "82-164",
+"d": 409,
+"entrance": "staircase",
+"ref": "2"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 190,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 254,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 282,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
+"chess-znatok-nakhabino": {
+"building_addr": "Красноармейская улица, 68",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 58
+}
+],
+"parking": [
+{
+"capacity:disabled": "2",
+"d": 121,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 160,
+"parking": "street_side"
+},
+{
+"d": 170,
+"parking": "street_side"
+},
+{
+"d": 173,
+"parking": "street_side"
 }
 ]
 },
@@ -32066,6 +32469,19 @@
 }
 ]
 },
+"flash-fencing-kurkino": {
+"building_addr": "Соколово-Мещерская улица, 29",
+"parking": [
+{
+"access": "yes",
+"capacity": "5",
+"capacity:disabled": "2",
+"d": 274,
+"fee": "no",
+"parking": "street_side"
+}
+]
+},
 "flash-fencing-mitino": {
 "building_addr": "Новотушинский проезд, 10",
 "gates": [
@@ -37341,6 +37757,64 @@
 "d": 109,
 "fee": "no",
 "parking": "surface"
+}
+]
+},
+"junibasket-dolgoprudny": {
+"gates": [
+{
+"barrier": "gate",
+"d": 15
+},
+{
+"barrier": "gate",
+"d": 23
+},
+{
+"barrier": "gate",
+"d": 30
+},
+{
+"barrier": "gate",
+"d": 36
+}
+],
+"parking": [
+{
+"d": 27,
+"parking": "street_side"
+},
+{
+"d": 140,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"capacity": "27",
+"capacity:disabled": "5",
+"d": 251,
+"parking": "street_side"
+},
+{
+"d": 277
+}
+]
+},
+"junibasket-lyubertsy": {
+"building_addr": "Смирновская улица, 4",
+"parking": [
+{
+"d": 136,
+"fee": "no"
+},
+{
+"d": 158
+},
+{
+"d": 259
+},
+{
+"d": 288
 }
 ]
 },
@@ -60936,6 +61410,59 @@
 }
 ]
 },
+"sdyushor-basket-mytishchi": {
+"building_addr": "Олимпийский проспект, 23",
+"parking": [
+{
+"d": 127,
+"fee": "yes",
+"parking": "multi-storey"
+},
+{
+"d": 140,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 151
+},
+{
+"d": 160,
+"fee": "yes",
+"parking": "surface"
+}
+]
+},
+"sdyushor-serpukhov-chess-volley": {
+"parking": [
+{
+"d": 171
+},
+{
+"d": 267
+}
+]
+},
+"sdyusshor-balashikha": {
+"building_addr": "Спортивная улица, 5",
+"gates": [
+{
+"barrier": "gate",
+"d": 36
+}
+],
+"parking": [
+{
+"d": 90
+},
+{
+"d": 134
+},
+{
+"d": 178
+}
+]
+},
 "serebryany-bor": {
 "poi": {
 "note": "Публично доступная часть"
@@ -61158,7 +61685,7 @@
 "severny-olen-farm": {
 "parking": [
 {
-"d": 244,
+"d": 199,
 "fee": "no"
 }
 ]
@@ -62783,6 +63310,33 @@
 }
 ]
 },
+"sparta-basket-khimki": {
+"building_addr": "улица Родионова, 3 с1",
+"parking": [
+{
+"access": "yes",
+"d": 130,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 189,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 209,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 214,
+"parking": "street_side"
+}
+]
+},
 "spartak-cityfootball-rublevo": {
 "building_addr": "улица Василия Ботылёва, 41",
 "parking": [
@@ -62856,6 +63410,39 @@
 },
 {
 "d": 265
+}
+]
+},
+"spartak-junior-lyubertsy": {
+"building_addr": "Октябрьский проспект, 348",
+"gates": [
+{
+"access": "permit",
+"barrier": "lift_gate",
+"d": 35
+},
+{
+"barrier": "lift_gate",
+"d": 35
+}
+],
+"parking": [
+{
+"access": "permit",
+"d": 35
+},
+{
+"d": 35
+},
+{
+"access": "customers",
+"d": 75,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 81,
+"fee": "yes"
 }
 ]
 },
@@ -63275,6 +63862,24 @@
 {
 "d": 215,
 "parking": "surface"
+}
+]
+},
+"sshor-spartak-basket-lyubertsy": {
+"building_addr": "Смирновская улица, 2А с1",
+"parking": [
+{
+"d": 93
+},
+{
+"d": 129
+},
+{
+"d": 164,
+"fee": "no"
+},
+{
+"d": 252
 }
 ]
 },
@@ -63735,6 +64340,26 @@
 },
 {
 "d": 258
+}
+]
+},
+"stremlenie-basket-mytishchi": {
+"building_addr": "Юбилейная улица, 27А",
+"parking": [
+{
+"d": 105
+},
+{
+"d": 180,
+"parking": "surface"
+},
+{
+"d": 199,
+"parking": "street_side"
+},
+{
+"d": 200,
+"parking": "street_side"
 }
 ]
 },
@@ -65466,6 +66091,16 @@
 }
 ]
 },
+"tn-club-mytishchi": {
+"parking": [
+{
+"d": 181
+},
+{
+"d": 298
+}
+]
+},
 "todes-baumanskaya": {
 "building_addr": "Бауманская улица, 53",
 "parking": [
@@ -67028,6 +67663,44 @@
 }
 ]
 },
+"ttleader-savelovsky": {
+"building_addr": "улица Сущёвский Вал, 5 с17",
+"building_entrances": [
+{
+"d": 407,
+"entrance": "yes"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 58
+}
+],
+"parking": [
+{
+"access": "yes",
+"capacity": "25",
+"d": 69,
+"fee": "yes",
+"maxstay": "5 minutes",
+"parking": "surface"
+},
+{
+"d": 155
+},
+{
+"access": "yes",
+"d": 174,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 184,
+"parking": "surface"
+}
+]
+},
 "tube-atlant": {
 "building_addr": "Стадионная улица, 2",
 "gates": [
@@ -67389,6 +68062,66 @@
 }
 ]
 },
+"tvoya-podacha-iyun": {
+"parking": [
+{
+"d": 129,
+"fee": "no"
+},
+{
+"access": "permissive",
+"d": 167,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"d": 188
+},
+{
+"d": 194
+}
+]
+},
+"tvoya-podacha-krasny-kit": {
+"building_addr": "Шараповский проезд, вл2 с3",
+"building_entrances": [
+{
+"d": 56,
+"entrance": "main"
+},
+{
+"d": 89,
+"entrance": "main"
+},
+{
+"d": 143,
+"entrance": "main"
+},
+{
+"d": 154,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"d": 123
+},
+{
+"d": 123,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 130
+},
+{
+"d": 149,
+"fee": "yes",
+"parking": "surface"
+}
+]
+},
 "tyagachev": {
 "parking": [
 {
@@ -67558,6 +68291,24 @@
 {
 "d": 215,
 "parking": "surface"
+}
+]
+},
+"v2-ttc-lefortovo": {
+"building_addr": "Сторожевая улица, 23 с1",
+"parking": [
+{
+"access": "yes",
+"d": 140,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 218,
+"parking": "surface"
+},
+{
+"d": 259
 }
 ]
 },
@@ -68337,6 +69088,25 @@
 "wheelchair": "yes"
 }
 },
+"volley-center-odintsovo": {
+"building_addr": "улица Маршала Жукова, 22",
+"parking": [
+{
+"d": 112
+},
+{
+"d": 220,
+"parking": "surface"
+},
+{
+"d": 221
+},
+{
+"d": 281,
+"parking": "street_side"
+}
+]
+},
 "volokolamsk-kremlin": {
 "gates": [
 {
@@ -68875,6 +69645,48 @@
 {
 "d": 221,
 "fee": "no"
+}
+]
+},
+"vzlet-basket-zhukovsky": {
+"building_addr": "улица Менделеева, 9",
+"gates": [
+{
+"barrier": "gate",
+"d": 21
+},
+{
+"barrier": "gate",
+"d": 35
+},
+{
+"barrier": "gate",
+"d": 36
+},
+{
+"barrier": "gate",
+"d": 43
+}
+],
+"parking": [
+{
+"access": "customers",
+"d": 33,
+"supervised": "yes"
+},
+{
+"access": "yes",
+"d": 104,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 111,
+"parking": "surface"
+},
+{
+"d": 187
 }
 ]
 },
@@ -71229,6 +72041,23 @@
 "poi": {
 "wheelchair": "yes"
 }
+},
+"zvezda-dyussh-serpukhov": {
+"parking": [
+{
+"d": 147
+},
+{
+"d": 179
+},
+{
+"d": 189,
+"parking": "surface"
+},
+{
+"d": 278
+}
+]
 },
 "zvezda-volley-nakhimovsky": {
 "building_addr": "Нахимовский проспект, 21",
