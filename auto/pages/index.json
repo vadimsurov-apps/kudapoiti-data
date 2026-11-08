@@ -14319,13 +14319,13 @@
 "url": "https://kudago.com/msk/place/detskij-kinoteatr-vympel/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "kudago-com-msk-place-kinoteatr-tula": {
 "url": "https://kudago.com/msk/place/kinoteatr-tula/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "moskvichmag-ru-tag-kinoteatr-sayany": {
 "url": "https://moskvichmag.ru/tag/kinoteatr-sayany/",
@@ -14365,61 +14365,61 @@
 "url": "https://360.ru/news/kultura/tsirk-piligrim/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 2
+"tries": 3
 },
 "kudago-com-msk-list-detskie-kinoteatry-moskvy": {
 "url": "https://kudago.com/msk/list/detskie-kinoteatry-moskvy/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "moskino-ru-cinemas": {
 "url": "https://moskino.ru/cinemas",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "kudago-com-msk-list-cirki-moskvy": {
 "url": "https://kudago.com/msk/list/cirki-moskvy/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "kudago-com-msk-list-kukolnye-teatry-moskvy": {
 "url": "https://kudago.com/msk/list/kukolnye-teatry-moskvy/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "kudago-com-msk-list-detskie-teatry-moskvy": {
 "url": "https://kudago.com/msk/list/detskie-teatry-moskvy/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "kudago-com-msk-list-muzei-dlya-detej": {
 "url": "https://kudago.com/msk/list/muzei-dlya-detej/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "360-ru-news-mosobl-ekostantsija-tsarskaja-ohota-otkrylas-v-balashiha-posle-rekonstruktsii": {
 "url": "https://360.ru/news/mosobl/ekostantsija-tsarskaja-ohota-otkrylas-v-balashiha-posle-rekonstruktsii/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 1
+"tries": 2
 },
 "www-culture-ru-events-6719538-master-klass-valenki-sheptuny": {
 "url": "https://www.culture.ru/events/6719538/master-klass-valenki-sheptuny",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 1
+"tries": 2
 },
 "kinopark-moskino-ru": {
 "url": "https://kinopark.moskino.ru/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 1
+"tries": 2
 },
 "okteatr-ru-kontakty": {
 "url": "https://okteatr.ru/kontakty/",
@@ -14431,8 +14431,8 @@
 "nashaepoha-ru-page-museum": {
 "url": "http://nashaepoha.ru/?page=museum",
 "ok": false,
-"err": "HTTP Error 402: Payment Required",
-"tries": 1
+"err": "HTTP Error 403: Forbidden",
+"tries": 2
 },
 "liapark-ru": {
 "url": "https://liapark.ru/",
@@ -14440,5 +14440,18 @@
 "pages": 5,
 "bytes": 16000,
 "tries": 0
+},
+"msa-mossport-ru": {
+"url": "https://msa.mossport.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"flamingocentr-ru": {
+"url": "https://flamingocentr.ru",
+"ok": false,
+"err": "<urlopen error [Errno 101] Network is unreachable>",
+"tries": 1
 }
 }
