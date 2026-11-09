@@ -48,12 +48,14 @@ def main():
                 t = f.get("properties", {})
                 rec = {"d": d, "lat": round(c[0], 6), "lon": round(c[1], 6), "osm": f'{t.get("@type")}/{t.get("@id")}',
                        **{k: t[k] for k in KEEP if k in t}}
+                if key == "buildings" and q.get("street") and q["street"].lower() not in str(t.get("addr:street", "")).lower():
+                    continue
                 if key == "pois" and q.get("name") and norm(q["name"]) and norm(q["name"]) in norm(t.get("name")):
                     rec["match"] = True
                 out[q["id"]][key].append(rec)
     for v in out.values():
         v["pois"].sort(key=lambda r: (not r.get("match"), r["d"])); v["pois"] = v["pois"][:60]
-        v["buildings"].sort(key=lambda r: r["d"]); v["buildings"] = v["buildings"][:30]
+        v["buildings"].sort(key=lambda r: r["d"]); v["buildings"] = v["buildings"][:120]
         v["entrances"].sort(key=lambda r: r["d"]); v["entrances"] = v["entrances"][:40]
     json.dump(out, open("auto/osm-answers.json", "w"), ensure_ascii=False, indent=1)
     print({k: (len(v["pois"]), len(v["buildings"]), len(v["entrances"])) for k, v in out.items()})
