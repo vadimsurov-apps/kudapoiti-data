@@ -48,6 +48,54 @@
 }
 ]
 },
+"a4-kids-city-columbus": {
+"building_addr": "Кировоградская улица, 13А",
+"building_entrances": [
+{
+"d": 144,
+"entrance": "main"
+},
+{
+"d": 197,
+"entrance": "exit"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 56
+}
+],
+"parking": [
+{
+"access": "yes",
+"capacity": "2600",
+"d": 115,
+"fee": "yes",
+"maxstay": "2 hours",
+"operator": "Columbus",
+"parking": "underground",
+"supervised": "yes"
+},
+{
+"d": 153
+},
+{
+"access": "permissive",
+"capacity": "8",
+"capacity:disabled": "8",
+"d": 155,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 203,
+"fee": "yes",
+"parking": "surface"
+}
+]
+},
 "abramtsevo": {
 "parking": [
 {
@@ -22631,17 +22679,20 @@
 ]
 },
 "cafe-muu-mukomolny": {
-"building_addr": "Мукомольный проезд, 2 с1",
+"building_addr": "Мукомольный проезд, 2",
 "gates": [
 {
 "access": "private",
 "barrier": "gate",
-"d": 56
+"d": 55
 }
 ],
 "parking": [
 {
-"d": 35
+"d": 149
+},
+{
+"d": 298
 }
 ]
 },
@@ -33172,31 +33223,13 @@
 ]
 },
 "cafe-winners-yankovskogo": {
-"gates": [
-{
-"barrier": "gate",
-"d": 8
-},
-{
-"barrier": "lift_gate",
-"d": 50
-}
-],
+"building_addr": "Шмитовский проезд, 39 к6",
 "parking": [
 {
-"d": 116
-},
-{
-"capacity": "50",
-"d": 176,
+"access": "yes",
+"d": 242,
+"fee": "no",
 "parking": "surface"
-},
-{
-"d": 181
-},
-{
-"capacity": "40",
-"d": 251
 }
 ]
 },
@@ -39156,6 +39189,66 @@
 }
 ]
 },
+"chudesa-maryino": {
+"building_addr": "улица Верхние Поля, 24",
+"building_entrances": [
+{
+"addr:flats": "27-78",
+"d": 235,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"d": 237,
+"entrance": "service"
+},
+{
+"addr:flats": "1-26",
+"d": 248,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"d": 248,
+"entrance": "yes"
+},
+{
+"d": 250,
+"entrance": "yes"
+},
+{
+"d": 254,
+"entrance": "service"
+},
+{
+"d": 259,
+"entrance": "yes"
+}
+],
+"gates": [
+{
+"access": "destination",
+"barrier": "gate",
+"d": 58
+}
+],
+"parking": [
+{
+"d": 152,
+"parking": "street_side"
+},
+{
+"d": 179,
+"parking": "surface"
+},
+{
+"d": 229
+},
+{
+"d": 239
+}
+]
+},
 "chudo-shkola-umnitsa": {
 "parking": [
 {
@@ -40777,6 +40870,28 @@
 "d": 143
 }
 ]
+},
+"clever-kids-chelyuskinskaya": {
+"building_addr": "Челюскинская улица, 9",
+"parking": [
+{
+"d": 188
+},
+{
+"d": 211
+},
+{
+"d": 256
+},
+{
+"d": 287
+}
+],
+"poi": {
+"contact:phone": "+7 903 1451773",
+"contact:website": "http://www.ok-fishing.ru",
+"opening_hours": "Mo-Su 09:00-21:00"
+}
 },
 "climb-alfa": {
 "building_addr": "Ратная улица, 10А",
@@ -56435,6 +56550,126 @@
 {
 "d": 122,
 "parking": "surface"
+}
+]
+},
+"irbis-babushkinskaya": {
+"gates": [
+{
+"access": "private",
+"barrier": "lift_gate",
+"d": 56
+}
+],
+"parking": [
+{
+"d": 76,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"access": "yes",
+"d": 115,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"access": "customers",
+"d": 171,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 180,
+"fee": "yes",
+"parking": "surface"
+}
+],
+"poi": {
+"opening_hours": "Mo-Su 08:00-21:00"
+}
+},
+"irbis-bratislavskaya": {
+"building_addr": "Братиславская улица, 21 к2",
+"parking": [
+{
+"d": 140,
+"parking": "street_side"
+},
+{
+"d": 174
+},
+{
+"d": 199,
+"parking": "street_side"
+},
+{
+"d": 203
+}
+]
+},
+"irbis-krylatskoe": {
+"building_addr": "Крылатская улица, 33 к3",
+"parking": [
+{
+"d": 90,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 94,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 118,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 136,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
+"irbis-kutuzovskaya": {
+"building_addr": "Кутузовский проспект, 36 с51",
+"building_entrances": [
+{
+"d": 341,
+"entrance": "yes",
+"ref": "1"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 29,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 57,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 61,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 64,
+"fee": "yes",
+"parking": "street_side"
 }
 ]
 },
@@ -75485,6 +75720,27 @@
 "website": "https://myhistorypark.ru/"
 }
 },
+"my-vmeste-michurinsky": {
+"building_addr": "Мичуринский проспект, 39",
+"parking": [
+{
+"access": "yes",
+"d": 93,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 133
+},
+{
+"d": 135,
+"parking": "surface"
+},
+{
+"d": 189
+}
+]
+},
 "myau-loft-tatyanin-park": {
 "building_addr": "улица Татьянин Парк, 19 к2",
 "building_entrances": [
@@ -79076,6 +79332,42 @@
 "opening_hours": "Tu-Su 10:00-18:00"
 }
 },
+"ostrov-detstva-stupino": {
+"building_addr": "Пристанционная улица, вл6",
+"gates": [
+{
+"barrier": "gate",
+"d": 19
+}
+],
+"parking": [
+{
+"d": 54,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"d": 84,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"d": 104,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"access": "yes",
+"d": 166,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+}
+]
+},
 "ostrov-diskaveri-mytishchi": {
 "building_addr": "Коммунистическая улица, 1",
 "parking": [
@@ -80506,6 +80798,40 @@
 "d": 164
 }
 ]
+},
+"palana-kommunarka": {
+"building_addr": "Бачуринская улица, 17",
+"gates": [
+{
+"barrier": "gate",
+"d": 34
+},
+{
+"barrier": "gate",
+"d": 37
+}
+],
+"parking": [
+{
+"d": 71,
+"parking": "street_side"
+},
+{
+"d": 87,
+"parking": "street_side"
+},
+{
+"d": 97,
+"parking": "street_side"
+},
+{
+"d": 108,
+"parking": "street_side"
+}
+],
+"poi": {
+"opening_hours": "24/7"
+}
 },
 "paleo": {
 "parking": [
@@ -91159,6 +91485,84 @@
 },
 {
 "d": 289
+}
+]
+},
+"sdelal-sam-kutuzovsky": {
+"building_addr": "Кутузовский проспект, 36 с4",
+"building_entrances": [
+{
+"d": 198,
+"entrance": "yes",
+"ref": "7"
+},
+{
+"d": 198,
+"entrance": "yes",
+"ref": "6"
+},
+{
+"d": 207,
+"entrance": "yes",
+"ref": "5"
+},
+{
+"d": 209,
+"entrance": "yes",
+"ref": "4"
+},
+{
+"d": 232,
+"entrance": "yes",
+"ref": "3"
+},
+{
+"d": 235,
+"entrance": "yes",
+"ref": "2"
+},
+{
+"d": 271,
+"entrance": "yes",
+"ref": "1"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 20
+},
+{
+"barrier": "lift_gate",
+"d": 24
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 27
+}
+],
+"parking": [
+{
+"d": 108
+},
+{
+"access": "yes",
+"d": 176,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 203,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 219,
+"fee": "yes",
+"parking": "street_side"
 }
 ]
 },
@@ -106161,6 +106565,34 @@
 "contact:phone": "+7 495 5310500",
 "contact:website": "https://www.zaryadyepark.ru/",
 "opening_hours": "24/7"
+}
+},
+"zavatsky-pottery-kolomna": {
+"building_addr": "Уманская улица, 3Д",
+"gates": [
+{
+"barrier": "gate",
+"d": 35
+}
+],
+"parking": [
+{
+"access": "customers",
+"d": 92,
+"fee": "no"
+},
+{
+"d": 113
+},
+{
+"d": 155
+},
+{
+"d": 163
+}
+],
+"poi": {
+"contact:website": "https://патефонка.рф/"
 }
 },
 "zaymemsya-sportom-khoroshevskoe": {
