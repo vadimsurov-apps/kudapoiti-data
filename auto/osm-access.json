@@ -12154,6 +12154,40 @@
 "contact:phone": "+7 495 6261909"
 }
 },
+"cafe-danilovsky": {
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 55
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 161,
+"fee": "yes",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"d": 168,
+"parking": "lane"
+},
+{
+"access": "yes",
+"d": 192,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"access": "yes",
+"d": 199,
+"fee": "yes",
+"parking": "surface"
+}
+]
+},
 "cafe-danonna-chistova": {
 "building_addr": "улица Чистова, 16 к3"
 },
@@ -17331,6 +17365,9 @@
 "website": "https://italoniya.ru"
 }
 },
+"cafe-ivanovskoe-konny": {
+"building_addr": "Луговая улица, 23"
+},
 "cafe-iyul": {
 "gates": [
 {
@@ -21706,6 +21743,61 @@
 }
 ]
 },
+"cafe-mimi-annino": {
+"building_addr": "Варшавское шоссе, 160",
+"building_entrances": [
+{
+"d": 227,
+"entrance": "yes"
+},
+{
+"access": "yes",
+"d": 229,
+"door": "yes",
+"entrance": "yes",
+"level": "0"
+},
+{
+"access": "yes",
+"d": 241,
+"entrance": "yes"
+},
+{
+"access": "yes",
+"d": 252,
+"entrance": "main",
+"level": "0"
+}
+],
+"parking": [
+{
+"access": "permissive",
+"capacity": "12",
+"d": 176,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity": "15",
+"d": 200,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"capacity": "60",
+"d": 203,
+"fee": "no"
+},
+{
+"access": "yes",
+"capacity": "30",
+"d": 243,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
 "cafe-mimi-dezhneva": {
 "building_addr": "проезд Дежнёва, 13",
 "parking": [
@@ -22992,6 +23084,34 @@
 },
 {
 "d": 103
+}
+]
+},
+"cafe-nebo-rooftop-korolev": {
+"building_addr": "улица Ленина, 25",
+"parking": [
+{
+"d": 75
+},
+{
+"access": "yes",
+"d": 123,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "permit",
+"capacity": "5",
+"d": 158,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "permit",
+"capacity": "5",
+"d": 168,
+"fee": "no",
+"parking": "street_side"
 }
 ]
 },
@@ -27768,6 +27888,18 @@
 "website": "https://chaihanasafo.ru/"
 }
 },
+"cafe-sahara-mkad": {
+"parking": [
+{
+"d": 276
+}
+],
+"poi": {
+"contact:phone": "+7 495 2042424",
+"contact:website": "https://cafesahara.ru",
+"opening_hours": "24/7"
+}
+},
 "cafe-sakura-kubinka": {
 "building_addr": "Наро-Фоминское шоссе, 8",
 "building_entrances": [
@@ -29290,6 +29422,9 @@
 "d": 179
 }
 ]
+},
+"cafe-sosedi-odintsovo": {
+"building_addr": "Триумфальная улица, 8"
 },
 "cafe-sovenok-korolev": {
 "building_addr": "Советская улица, 69",
@@ -32340,6 +32475,28 @@
 }
 ]
 },
+"cafe-veranda-mytishchi": {
+"parking": [
+{
+"d": 67
+},
+{
+"d": 119,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 124,
+"fee": "yes"
+},
+{
+"access": "yes",
+"d": 149,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
 "cafe-verba-kolomenskoe": {
 "building_addr": "проспект Андропова, 37",
 "gates": [
@@ -32383,6 +32540,17 @@
 "d": 132,
 "fee": "no",
 "parking": "street_side"
+}
+]
+},
+"cafe-vesna-rogozinino": {
+"building_addr": "Луговая улица, 20А с3",
+"parking": [
+{
+"d": 76
+},
+{
+"d": 122
 }
 ]
 },
@@ -103670,37 +103838,36 @@
 "building_addr": "Ленинградский проспект, 36",
 "building_entrances": [
 {
-"d": 160,
+"d": 137,
 "entrance": "main"
 },
 {
-"d": 239,
+"d": 153,
 "entrance": "main"
 }
 ],
 "parking": [
 {
+"access": "customers",
+"capacity": "500",
+"d": 163,
+"fee": "yes",
+"parking": "underground"
+},
+{
 "access": "yes",
-"d": 109,
+"d": 239,
 "fee": "yes",
 "parking": "underground",
 "supervised": "yes"
 },
 {
 "access": "customers",
-"capacity": "500",
-"d": 137,
-"fee": "yes",
-"parking": "underground"
-},
-{
-"d": 181
-},
-{
-"access": "customers",
-"d": 247,
-"fee": "no",
+"d": 258,
 "parking": "surface"
+},
+{
+"d": 299
 }
 ]
 },
