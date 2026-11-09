@@ -1,0 +1,51 @@
+name: Справка OSM по запросу (какой дом, входы, объекты рядом)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["auto/osm-queries.json"]
+concurrency:
+  group: osm-query
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  q:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -q && sudo apt-get install -y -q osmium-tool
+      - id: day
+        run: echo "d=$(date -u +%F)" >> $GITHUB_OUTPUT
+      - uses: actions/cache@v4
+        with:
+          path: mo.osm.pbf
+          key: osm-mo-${{ steps.day.outputs.d }}
+          restore-keys: osm-mo-
+      - name: Выгрузка OSM (если нет в кэше)
+        run: |
+          if [ ! -f mo.osm.pbf ]; then
+            curl -sSL -o cfd.osm.pbf https://download.geofabrik.de/russia/central-fed-district-latest.osm.pbf
+            osmium extract -b 35.1,54.2,40.3,57.0 cfd.osm.pbf -o mo.osm.pbf --overwrite
+          fi
+      - name: Вырезать районы запросов и выгрузить
+        run: |
+          python3 - <<'P'
+          import json
+          qs=json.load(open("auto/osm-queries.json"))
+          la=[q["lat"] for q in qs]; lo=[q["lon"] for q in qs]
+          open("bbox.txt","w").write(f"{min(lo)-0.01},{min(la)-0.01},{max(lo)+0.01},{max(la)+0.01}")
+          P
+          osmium extract -b $(cat bbox.txt) mo.osm.pbf -o area.osm.pbf --overwrite
+          osmium tags-filter area.osm.pbf nwr/name -o named.osm.pbf --overwrite
+          osmium tags-filter area.osm.pbf n/entrance n/barrier=gate,entrance,turnstile,lift_gate -o entr.osm.pbf --overwrite
+          osmium tags-filter area.osm.pbf w/addr:housenumber r/addr:housenumber -o bld.osm.pbf --overwrite
+          for x in named entr bld; do osmium export $x.osm.pbf -f geojsonseq -a type,id -o $x.geojsonseq --overwrite; done
+      - run: python3 pipeline/osm_query.py
+      - name: Сохранить ответ
+        run: |
+          git config user.name "kudapoiti-bot"; git config user.email "bot@users.noreply.github.com"
+          git add auto/osm-answers.json
+          git commit -m "Справка OSM по запросу" || exit 0
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
