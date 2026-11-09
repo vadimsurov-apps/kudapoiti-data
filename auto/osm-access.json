@@ -4323,16 +4323,57 @@
 "building_addr": "Кленовая улица, 1",
 "building_entrances": [
 {
-"d": 657,
+"d": 34,
 "entrance": "yes"
 },
 {
-"d": 665,
+"d": 38,
 "entrance": "yes"
 },
 {
-"d": 733,
+"d": 52,
 "entrance": "yes"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 44
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 54
+},
+{
+"barrier": "lift_gate",
+"d": 58
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 47,
+"fee": "yes",
+"operator": "Мособлпаркинг",
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 59,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 84,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 119,
+"fee": "no",
+"parking": "surface"
 }
 ]
 },
@@ -4532,34 +4573,37 @@
 "building_addr": "улица Миклухо-Маклая, 32А",
 "building_entrances": [
 {
-"d": 81,
+"d": 15,
 "entrance": "yes"
 },
 {
-"d": 127,
+"d": 82,
 "entrance": "yes"
 }
 ],
 "gates": [
 {
-"barrier": "gate",
-"d": 54
+"barrier": "lift_gate",
+"d": 57
 }
 ],
 "parking": [
 {
-"d": 129,
+"d": 15,
 "parking": "underground"
 },
 {
-"d": 160
+"d": 100,
+"parking": "street_side"
 },
 {
-"d": 215,
+"d": 101,
 "parking": "surface"
 },
 {
-"d": 223
+"access": "yes",
+"d": 107,
+"parking": "surface"
 }
 ]
 },
@@ -4808,15 +4852,21 @@
 "building_addr": "Шипиловская улица, 34 к1",
 "parking": [
 {
-"d": 177,
+"d": 100
+},
+{
+"d": 137,
 "parking": "surface"
 },
 {
-"d": 210,
-"parking": "surface"
+"capacity:disabled": "3",
+"d": 227,
+"fee": "yes",
+"parking": "street_side"
 },
 {
 "d": 231,
+"fee": "yes",
 "parking": "surface"
 }
 ]
@@ -7585,6 +7635,34 @@
 }
 ]
 },
+"cafe-avgust13-dmitrovskoe": {
+"building_addr": "Дмитровское шоссе, 13",
+"parking": [
+{
+"d": 2,
+"parking": "surface"
+},
+{
+"d": 236,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 237,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 295,
+"parking": "surface"
+}
+],
+"poi": {
+"contact:phone": "+7 985 2220364;+7 495 2220364",
+"contact:website": "https://avgust13.ru/timireazevskaya/",
+"opening_hours": "Mo-Su 10:00-22:00"
+}
+},
 "cafe-avgust13-vostok": {
 "building_addr": "Центральная улица, 31"
 },
@@ -10303,6 +10381,29 @@
 "opening_hours": "Fr-Sa 12:00-02:00;Mo-Th,Su 12:00-24:00"
 }
 },
+"cafe-chaihona1-donskogo": {
+"parking": [
+{
+"d": 107
+},
+{
+"d": 112
+},
+{
+"d": 135
+},
+{
+"d": 140,
+"fee": "no"
+}
+],
+"poi": {
+"contact:phone": "+7 495 9283333",
+"contact:website": "https://chaihona1.ru",
+"level": "2",
+"opening_hours": "Fr-Sa 12:00-02:00;Mo-Th,Su 12:00-24:00"
+}
+},
 "cafe-chaihona1-gruzinskaya": {
 "gates": [
 {
@@ -12026,6 +12127,51 @@
 }
 ]
 },
+"cafe-duduk-simonovsky": {
+"building_addr": "улица Симоновский Вал, 26 к2",
+"building_entrances": [
+{
+"addr:flats": "1-28",
+"d": 905,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "29-55",
+"d": 919,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "56-83",
+"d": 948,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"addr:flats": "84-111",
+"d": 976,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"addr:flats": "1-28",
+"d": 1005,
+"entrance": "staircase",
+"ref": "1"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 277,
+"parking": "surface"
+},
+{
+"d": 296
+}
+]
+},
 "cafe-dva-zerna-korolev": {
 "building_addr": "Пионерская улица, 30 к5",
 "building_entrances": [
@@ -12943,6 +13089,20 @@
 {
 "d": 208,
 "parking": "surface"
+}
+]
+},
+"cafe-figo-smolenskaya": {
+"building_addr": "Смоленская-Сенная площадь, 23/25",
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 23
+},
+{
+"barrier": "lift_gate",
+"d": 30
 }
 ]
 },
@@ -13914,6 +14074,17 @@
 "contact:phone": "+7 499 2459124"
 }
 },
+"cafe-georges-salaris": {
+"parking": [
+{
+"access": "yes",
+"d": 284,
+"fee": "no",
+"maxstay": "120 minutes",
+"parking": "surface"
+}
+]
+},
 "cafe-gi-gi-grill": {
 "building_addr": "1-й Лучевой просек, 1",
 "building_entrances": [
@@ -14469,6 +14640,29 @@
 {
 "d": 218,
 "parking": "multi-storey"
+}
+]
+},
+"cafe-gusi-lebedi-izmaylovo": {
+"building_addr": "Измайловское шоссе, 71 к3В",
+"parking": [
+{
+"d": 62
+},
+{
+"access": "customers",
+"d": 64,
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 79,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 96,
+"fee": "yes"
 }
 ]
 },
@@ -16248,6 +16442,27 @@
 "contact:website": "http://kaspiyka.ru"
 }
 },
+"cafe-kavkazskaya-plennitsa": {
+"building_addr": "проспект Мира, 36 с1",
+"building_entrances": [
+{
+"d": 306,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 217,
+"fee": "no",
+"parking": "surface"
+}
+],
+"poi": {
+"contact:phone": "+7 495 6805111",
+"opening_hours": "Mo-Su 12:00-24:00"
+}
+},
 "cafe-kavkazsky-dvorik": {
 "building_addr": "Мироновская улица, 33 с28",
 "gates": [
@@ -16610,6 +16825,27 @@
 {
 "d": 100,
 "parking": "street_side"
+}
+]
+},
+"cafe-kikukhana-kvartal": {
+"building_addr": "Аминьевское шоссе, 6",
+"parking": [
+{
+"access": "yes",
+"d": 142,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 159
+},
+{
+"d": 178
+},
+{
+"d": 182,
+"parking": "surface"
 }
 ]
 },
@@ -17173,6 +17409,60 @@
 "fee": "yes"
 }
 ]
+},
+"cafe-klevo-petrovka": {
+"building_addr": "улица Петровка, 27",
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 8
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 27
+},
+{
+"barrier": "lift_gate",
+"d": 31
+},
+{
+"barrier": "gate",
+"d": 34
+}
+],
+"parking": [
+{
+"access": "yes",
+"capacity": "6",
+"d": 115,
+"fee": "yes",
+"parking": "lane"
+},
+{
+"access": "yes",
+"capacity": "3",
+"d": 143,
+"fee": "yes",
+"parking": "lane"
+},
+{
+"access": "yes",
+"capacity": "3",
+"d": 173,
+"fee": "yes",
+"parking": "lane"
+}
+],
+"poi": {
+"addr:floor": "1",
+"contact:phone": "+7 495 7901596",
+"contact:website": "https://klevo.rest/",
+"level": "0",
+"opening_hours": "Mo-Su 12:00-24:00",
+"wheelchair": "yes"
+}
 },
 "cafe-klevyi-romashkovo": {
 "building_addr": "Заречная улица, 26",
@@ -19312,6 +19602,52 @@
 }
 ]
 },
+"cafe-mamina-pizza-columbus": {
+"building_addr": "Кировоградская улица, 13А",
+"building_entrances": [
+{
+"d": 0,
+"entrance": "main"
+},
+{
+"d": 83,
+"entrance": "exit"
+}
+],
+"parking": [
+{
+"access": "yes",
+"capacity": "2600",
+"d": 36,
+"fee": "yes",
+"maxstay": "2 hours",
+"operator": "Columbus",
+"parking": "underground",
+"supervised": "yes"
+},
+{
+"access": "permissive",
+"capacity": "8",
+"capacity:disabled": "8",
+"d": 65,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "permit",
+"d": 120,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"capacity": "100",
+"d": 134,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+}
+]
+},
 "cafe-mammina-kapitoliy": {
 "building_addr": "проспект Вернадского, 6",
 "building_entrances": [
@@ -19768,6 +20104,33 @@
 "access": "permit",
 "d": 191,
 "fee": "no",
+"parking": "surface"
+}
+]
+},
+"cafe-menza-vernadskogo": {
+"building_addr": "проспект Вернадского, 105 к3",
+"gates": [
+{
+"barrier": "gate",
+"d": 20
+}
+],
+"parking": [
+{
+"d": 43,
+"parking": "surface"
+},
+{
+"d": 57,
+"parking": "surface"
+},
+{
+"d": 147,
+"parking": "surface"
+},
+{
+"d": 148,
 "parking": "surface"
 }
 ]
@@ -20494,6 +20857,38 @@
 "fee": "no"
 }
 ]
+},
+"cafe-molon-lave": {
+"building_addr": "Большая Грузинская улица, 39",
+"gates": [
+{
+"barrier": "gate",
+"d": 17
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 59
+}
+],
+"parking": [
+{
+"d": 91
+},
+{
+"d": 94
+},
+{
+"d": 94
+},
+{
+"d": 96
+}
+],
+"poi": {
+"contact:phone": "+7 495 4616221",
+"opening_hours": "Mo-Su 12:00-23:30"
+}
 },
 "cafe-molto-bello-belomorskaya": {
 "building_addr": "Беломорская улица, 16А",
@@ -21238,6 +21633,38 @@
 {
 "d": 99,
 "parking": "street_side"
+}
+]
+},
+"cafe-natakhtari-shchelkovsky": {
+"building_addr": "Щёлковское шоссе, 75",
+"building_entrances": [
+{
+"d": 29,
+"entrance": "main"
+},
+{
+"d": 102,
+"entrance": "yes"
+},
+{
+"d": 155,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"d": 216
+},
+{
+"d": 220
+},
+{
+"d": 234,
+"parking": "surface"
+},
+{
+"d": 272
 }
 ]
 },
@@ -24383,6 +24810,32 @@
 "cafe-pizza-314-sverdlovsky": {
 "building_addr": "Молодёжная улица, 1"
 },
+"cafe-pizza-imperatritsa-lukhmanovskaya": {
+"building_addr": "Лухмановская улица, 17",
+"parking": [
+{
+"d": 235,
+"parking": "street_side"
+},
+{
+"d": 252,
+"parking": "street_side"
+},
+{
+"d": 252,
+"parking": "street_side"
+},
+{
+"d": 261
+}
+],
+"poi": {
+"level": "0",
+"opening_hours": "Mo-Su 11:00-23:00",
+"phone": "+7 495 10 55 343",
+"website": "https://empresspizza.ru/"
+}
+},
 "cafe-pizza-paolo-odintsovo": {
 "building_addr": "Белорусская улица, 5",
 "gates": [
@@ -25587,6 +26040,25 @@
 }
 ]
 },
+"cafe-riviera-60-oktyabrya": {
+"building_addr": "проспект 60-летия Октября, 8А",
+"building_entrances": [
+{
+"d": 371,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"d": 238
+}
+],
+"poi": {
+"contact:phone": "+7 499 7241111",
+"opening_hours": "Mo-Su 12:00-24:00",
+"wheelchair": "yes"
+}
+},
 "cafe-rodnik-mamontovka": {
 "building_addr": "улица Кузнецкий Мост, 58",
 "parking": [
@@ -25870,6 +26342,45 @@
 "opening_hours": "Mo-Su 12:00-24:00"
 }
 },
+"cafe-rybnaya-manufaktura-krasny-kit": {
+"building_addr": "Шараповский проезд, вл2 с3",
+"building_entrances": [
+{
+"d": 38,
+"entrance": "main"
+},
+{
+"d": 121,
+"entrance": "main"
+},
+{
+"d": 141,
+"entrance": "main"
+},
+{
+"d": 183,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"d": 56,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 104
+},
+{
+"d": 137,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 147
+}
+]
+},
 "cafe-ryzhiy-lis": {
 "building_addr": "Производственная улица, 10 к2",
 "building_entrances": [
@@ -26148,6 +26659,46 @@
 "d": 209
 }
 ]
+},
+"cafe-seasons-leninsky": {
+"building_addr": "Ленинский проспект, 109",
+"building_entrances": [
+{
+"d": 354,
+"entrance": "main"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 32
+},
+{
+"barrier": "lift_gate",
+"d": 51
+}
+],
+"parking": [
+{
+"d": 35
+},
+{
+"d": 89,
+"fee": "yes"
+},
+{
+"d": 107
+},
+{
+"d": 118
+}
+],
+"poi": {
+"contact:phone": "+7 499 2719707",
+"contact:website": "http://www.seasons-restaurant.ru",
+"level": "0",
+"opening_hours": "Mo-Su 12:00-24:00"
+}
 },
 "cafe-selyodochnaya-vdnh": {
 "building_addr": "2-я Останкинская улица, 3",
@@ -26434,6 +26985,55 @@
 }
 ]
 },
+"cafe-sezam-khutorskaya": {
+"building_addr": "2-я Хуторская улица, 31А с7",
+"gates": [
+{
+"access": "private",
+"barrier": "lift_gate",
+"d": 30
+},
+{
+"access": "private",
+"barrier": "lift_gate",
+"d": 37
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 43
+},
+{
+"access": "private",
+"barrier": "lift_gate",
+"d": 59
+}
+],
+"parking": [
+{
+"access": "customers",
+"d": 35,
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 72,
+"parking": "surface"
+},
+{
+"d": 74,
+"parking": "surface"
+},
+{
+"d": 86
+}
+],
+"poi": {
+"contact:phone": "+7 495 2585972",
+"contact:website": "http://chaihana-sezam.ru",
+"opening_hours": "Mo-Su 11:00-23:00"
+}
+},
 "cafe-shagal-taganka": {
 "parking": [
 {
@@ -26589,6 +27189,84 @@
 "d": 285
 }
 ]
+},
+"cafe-shikari-leninsky": {
+"building_addr": "Ленинский проспект, 68/10",
+"building_entrances": [
+{
+"addr:flats": "152-179",
+"d": 500,
+"entrance": "staircase",
+"ref": "6"
+},
+{
+"addr:flats": "121-151",
+"d": 501,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"addr:flats": "89-120",
+"d": 511,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"addr:flats": "180-207",
+"d": 520,
+"entrance": "staircase",
+"ref": "7"
+},
+{
+"addr:flats": "57-88",
+"d": 522,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"addr:flats": "208-234",
+"d": 534,
+"entrance": "staircase",
+"ref": "8"
+},
+{
+"addr:flats": "25-56",
+"d": 548,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "235-262",
+"d": 560,
+"entrance": "staircase",
+"ref": "9"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 57
+}
+],
+"parking": [
+{
+"access": "yes",
+"capacity": "30",
+"d": 178,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 272,
+"fee": "no",
+"parking": "surface"
+}
+],
+"poi": {
+"opening_hours": "Mo-Su 11:00-23:00",
+"phone": "+7 969 0132537",
+"website": "https://www.shikary.ru/"
+}
 },
 "cafe-shokoladnitsa-korolev": {
 "building_addr": "проспект Космонавтов, 12А",
@@ -28247,6 +28925,38 @@
 }
 ]
 },
+"cafe-sytaya-utka-dmitrovskoe": {
+"building_addr": "Дмитровское шоссе, 89",
+"building_entrances": [
+{
+"d": 104,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"d": 92,
+"parking": "surface"
+},
+{
+"d": 98,
+"parking": "surface"
+},
+{
+"d": 126,
+"parking": "surface"
+},
+{
+"d": 145,
+"parking": "street_side"
+}
+],
+"poi": {
+"contact:phone": "+7 495 3170199",
+"contact:website": "http://s-utka.ru",
+"opening_hours": "Mo-Su 11:00-23:00"
+}
+},
 "cafe-sytaya-utka-kurkino": {
 "building_addr": "Соколово-Мещерская улица, 16/114",
 "building_entrances": [
@@ -28372,6 +29082,41 @@
 ],
 "poi": {
 "website": "https://sitlos.ru/"
+}
+},
+"cafe-sytyy-los-shirokaya": {
+"building_addr": "Широкая улица, 12Б",
+"building_entrances": [
+{
+"d": 158,
+"entrance": "yes"
+},
+{
+"d": 161,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"capacity": "40",
+"d": 55
+},
+{
+"capacity": "30",
+"d": 106
+},
+{
+"d": 124
+},
+{
+"access": "yes",
+"d": 134,
+"fee": "yes",
+"parking": "surface"
+}
+],
+"poi": {
+"addr:floor": "3"
 }
 },
 "cafe-sytyy-los-tekstilshchiki": {
@@ -29012,6 +29757,33 @@
 },
 {
 "d": 273
+}
+]
+},
+"cafe-testo-taldom": {
+"building_addr": "улица Собцова, 6/1",
+"parking": [
+{
+"d": 68,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 138
+},
+{
+"access": "yes",
+"capacity": "6",
+"d": 140,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity": "30",
+"d": 151,
+"fee": "no",
+"parking": "surface"
 }
 ]
 },
@@ -30817,6 +31589,38 @@
 "opening_hours": "Mo-Su 08:00-19:00"
 }
 },
+"cafe-vse-len-vdnh": {
+"building_addr": "проспект Мира, 119 с528",
+"gates": [
+{
+"barrier": "gate",
+"d": 53
+}
+],
+"parking": [
+{
+"d": 13,
+"parking": "surface"
+},
+{
+"d": 31,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 135,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 147,
+"parking": "surface"
+}
+],
+"poi": {
+"contact:website": "https://vselen-vdnh.ru/"
+}
+},
 "cafe-vstrecha-odintsovo": {
 "building_addr": "Можайское шоссе, 36А"
 },
@@ -32014,6 +32818,58 @@
 }
 ]
 },
+"cafe-zagorami-bakuninskaya": {
+"building_addr": "Бакунинская улица, 14 с1",
+"building_entrances": [
+{
+"d": 169,
+"entrance": "yes"
+},
+{
+"d": 176,
+"entrance": "yes"
+}
+],
+"gates": [
+{
+"access": "no",
+"barrier": "gate",
+"d": 13
+},
+{
+"barrier": "lift_gate",
+"d": 32
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 33
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 42
+}
+],
+"parking": [
+{
+"capacity": "76",
+"d": 129,
+"parking": "underground"
+},
+{
+"d": 140
+},
+{
+"access": "customers",
+"d": 154,
+"parking": "surface"
+},
+{
+"d": 190
+}
+]
+},
 "cafe-zagorodny-dvorik-mytishchi": {
 "parking": [
 {
@@ -32599,6 +33455,42 @@
 "parking": "surface"
 }
 ]
+},
+"cafe-zizifora-zelenodolskaya": {
+"building_addr": "Зеленодольская улица, 3 к2",
+"building_entrances": [
+{
+"d": 101,
+"entrance": "yes",
+"name": "Мехмонхона"
+},
+{
+"d": 134,
+"entrance": "yes",
+"name": "Зизифора"
+}
+],
+"parking": [
+{
+"d": 61
+},
+{
+"d": 258
+},
+{
+"access": "yes",
+"capacity": "30",
+"capacity:disabled": "2",
+"d": 295,
+"parking": "surface"
+}
+],
+"poi": {
+"entrance": "yes",
+"opening_hours": "12:00-23:00",
+"phone": "+7 495 378-25-22",
+"wheelchair": "yes"
+}
 },
 "cafe-zolotoy-uley-trekhgorka": {
 "building_addr": "улица Чистяковой, 48",
@@ -53998,65 +54890,47 @@
 "building_addr": "улица Вильгельма Пика, 11",
 "building_entrances": [
 {
-"d": 106,
-"entrance": "yes",
-"ref": "4"
-},
-{
-"d": 110,
-"entrance": "yes",
-"ref": "3"
-},
-{
-"d": 118,
-"entrance": "yes",
-"ref": "5"
-},
-{
-"d": 185,
+"d": 48,
 "entrance": "yes",
 "ref": "1"
 },
 {
-"d": 217,
+"d": 71,
 "entrance": "yes",
 "ref": "2"
-}
-],
-"gates": [
-{
-"barrier": "lift_gate",
-"d": 30
 },
 {
-"barrier": "lift_gate",
-"d": 31
+"d": 82,
+"entrance": "yes",
+"ref": "3"
 },
 {
-"barrier": "lift_gate",
-"d": 41
+"d": 100,
+"entrance": "yes",
+"ref": "4"
 },
 {
-"barrier": "lift_gate",
-"d": 47
+"d": 121,
+"entrance": "yes",
+"ref": "5"
 }
 ],
 "parking": [
 {
-"d": 41
-},
-{
-"d": 47
-},
-{
 "access": "yes",
-"d": 67,
+"d": 120,
+"fee": "yes",
 "parking": "surface"
 },
 {
+"d": 202
+},
+{
+"d": 207
+},
+{
 "access": "yes",
-"d": 237,
-"fee": "yes",
+"d": 228,
 "parking": "surface"
 }
 ]
@@ -74045,24 +74919,18 @@
 },
 "padel-nok-botyleva": {
 "building_addr": "улица Василия Ботылёва, 14А",
-"gates": [
-{
-"barrier": "gate",
-"d": 48
-}
-],
 "parking": [
 {
-"d": 124
+"d": 23
 },
 {
-"d": 164
+"d": 145
 },
 {
-"d": 182
+"d": 167
 },
 {
-"d": 223
+"d": 169
 }
 ]
 },
@@ -74375,62 +75243,64 @@
 "building_addr": "7-я Кожуховская улица, 9",
 "building_entrances": [
 {
-"d": 585,
+"d": 89,
 "entrance": "emergency"
 },
 {
-"d": 589,
-"entrance": "emergency"
-},
-{
-"d": 595,
-"entrance": "emergency"
-},
-{
-"d": 605,
+"d": 115,
 "entrance": "service",
 "ref": "D-5"
 },
 {
-"d": 674,
-"entrance": "service",
-"ref": "C-19"
+"d": 129,
+"entrance": "emergency"
 },
 {
-"d": 677,
+"d": 157,
 "entrance": "service",
-"ref": "C-20"
+"ref": "C-22"
 },
 {
-"d": 694,
+"d": 160,
 "entrance": "service",
-"ref": "D-6"
+"ref": "C-21"
 },
 {
-"d": 708,
+"d": 167,
+"entrance": "emergency"
+},
+{
+"d": 168,
 "entrance": "service",
 "ref": "D-7"
+},
+{
+"d": 172,
+"entrance": "service",
+"ref": "D-6"
 }
 ],
 "parking": [
 {
-"d": 201
-},
-{
-"d": 212,
+"access": "yes",
+"d": 34,
 "fee": "no",
-"parking": "surface",
-"supervised": "no"
-},
-{
-"d": 261,
-"parking": "underground"
+"parking": "surface"
 },
 {
 "access": "yes",
-"d": 265,
-"fee": "yes",
+"d": 175,
+"fee": "no",
 "parking": "surface"
+},
+{
+"access": "yes",
+"d": 186,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 243
 }
 ]
 },
