@@ -5798,34 +5798,29 @@
 "building_addr": "Ткацкая улица, 32А",
 "building_entrances": [
 {
-"d": 642,
+"d": 0,
 "entrance": "main"
 }
 ],
 "gates": [
 {
-"access": "no",
 "barrier": "gate",
-"d": 46
+"d": 44
 }
 ],
 "parking": [
 {
-"d": 184
+"d": 72
 },
 {
-"d": 203,
-"fee": "yes",
-"parking": "street_side"
+"d": 113
 },
 {
-"d": 207,
-"fee": "yes",
-"operator": "ГКУ АМПП",
-"parking": "street_side"
+"d": 149
 },
 {
-"d": 212,
+"capacity": "20",
+"d": 177,
 "parking": "surface"
 }
 ]
@@ -9916,11 +9911,17 @@
 "building_addr": "улица Миши Балакирева, 6/24",
 "parking": [
 {
-"d": 266,
+"d": 182
+},
+{
+"d": 190,
 "fee": "no"
 },
 {
-"d": 271
+"capacity": "7",
+"d": 249,
+"fee": "no",
+"parking": "surface"
 }
 ]
 },
@@ -9929,45 +9930,37 @@
 "building_entrances": [
 {
 "addr:flats": "1-107",
-"d": 327,
+"d": 3,
 "entrance": "staircase",
 "ref": "1"
 },
 {
-"d": 336,
-"entrance": "yes"
-},
-{
-"d": 338,
+"d": 18,
 "entrance": "service"
 },
 {
-"d": 341,
+"d": 20,
 "entrance": "yes"
-}
-],
-"gates": [
+},
 {
-"barrier": "gate",
-"d": 52
+"d": 29,
+"entrance": "yes"
 }
 ],
 "parking": [
 {
+"d": 86
+},
+{
+"d": 93
+},
+{
+"d": 180
+},
+{
+"access": "yes",
 "d": 203,
-"fee": "no",
-"parking": "surface",
-"supervised": "no"
-},
-{
-"d": 208,
 "parking": "surface"
-},
-{
-"d": 224
-},
-{
-"d": 251
 }
 ],
 "poi": {
@@ -9992,32 +9985,23 @@
 "building_addr": "улица Алабяна, 8А",
 "gates": [
 {
+"access": "yes",
 "barrier": "gate",
-"d": 29
+"d": 19
 }
 ],
 "parking": [
 {
-"d": 120,
-"parking": "street_side"
-},
-{
 "access": "yes",
-"d": 148,
-"fee": "no",
-"parking": "surface"
-},
-{
-"access": "yes",
-"d": 166,
+"d": 164,
 "fee": "yes",
 "parking": "street_side"
 },
 {
 "access": "yes",
-"d": 226,
+"d": 170,
 "fee": "no",
-"parking": "street_side"
+"parking": "surface"
 }
 ]
 },
@@ -13537,31 +13521,18 @@
 },
 "cafe-iq-dolgoprudny": {
 "building_addr": "Первомайская улица, 18",
-"gates": [
-{
-"access": "private",
-"barrier": "gate",
-"d": 58
-}
-],
 "parking": [
 {
-"d": 95
+"capacity": "27",
+"capacity:disabled": "5",
+"d": 208,
+"parking": "street_side"
 },
 {
 "access": "yes",
-"d": 139,
+"d": 297,
 "fee": "no",
-"parking": "surface"
-},
-{
-"access": "yes",
-"d": 154,
-"fee": "no",
-"parking": "surface"
-},
-{
-"d": 204
+"parking": "street_side"
 }
 ]
 },
@@ -15460,70 +15431,72 @@
 "building_addr": "улица Ленина, 16",
 "building_entrances": [
 {
-"addr:flats": "315-346",
-"d": 299,
-"entrance": "staircase",
-"ref": "10"
-},
-{
-"addr:flats": "283-314",
-"d": 310,
-"entrance": "staircase",
-"ref": "9"
-},
-{
-"addr:flats": "251-282",
-"d": 323,
-"entrance": "staircase",
-"ref": "8"
-},
-{
 "addr:flats": "219-250",
-"d": 336,
+"d": 4,
 "entrance": "staircase",
 "ref": "7"
 },
 {
 "addr:flats": "187-218",
-"d": 350,
+"d": 21,
 "entrance": "staircase",
 "ref": "6"
 },
 {
+"addr:flats": "251-282",
+"d": 26,
+"entrance": "staircase",
+"ref": "8"
+},
+{
 "addr:flats": "145-186",
-"d": 367,
+"d": 33,
 "entrance": "staircase",
 "ref": "5"
 },
 {
 "addr:flats": "109-144",
-"d": 380,
+"d": 41,
 "entrance": "staircase",
 "ref": "4"
 },
 {
+"addr:flats": "283-314",
+"d": 51,
+"entrance": "staircase",
+"ref": "9"
+},
+{
 "addr:flats": "73-108",
-"d": 399,
+"d": 59,
 "entrance": "staircase",
 "ref": "3"
+},
+{
+"addr:flats": "315-346",
+"d": 76,
+"entrance": "staircase",
+"ref": "10"
 }
 ],
 "parking": [
 {
-"d": 122,
-"parking": "multi-storey"
+"capacity": "44",
+"d": 96,
+"parking": "street_side"
 },
 {
-"d": 208
-},
-{
-"access": "yes",
-"d": 219,
+"d": 172,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 232
+"d": 173
+},
+{
+"capacity": "13",
+"d": 263,
+"parking": "street_side"
 }
 ]
 },
@@ -16059,23 +16032,23 @@
 "building_addr": "Мироновская улица, 25",
 "gates": [
 {
-"barrier": "gate",
-"d": 53
+"barrier": "lift_gate",
+"d": 56
 }
 ],
 "parking": [
 {
-"d": 53
+"d": 121
 },
 {
-"d": 184
+"d": 170
 },
 {
-"d": 223
-},
-{
-"d": 260,
+"d": 190,
 "parking": "surface"
+},
+{
+"d": 196
 }
 ]
 },
@@ -18252,17 +18225,29 @@
 "building_addr": "Московский проспект, 59",
 "building_entrances": [
 {
-"d": 853,
+"d": 0,
 "entrance": "yes"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 50
 }
 ],
 "parking": [
 {
-"d": 214,
+"d": 47
+},
+{
+"d": 84
+},
+{
+"d": 86,
 "parking": "surface"
 },
 {
-"d": 232
+"d": 126
 }
 ]
 },
@@ -21205,45 +21190,51 @@
 "building_addr": "Самотёчная улица, 13",
 "building_entrances": [
 {
-"addr:flats": "1-65",
-"d": 269,
-"entrance": "staircase",
-"ref": "1"
+"d": 7,
+"entrance": "yes"
 },
 {
-"d": 296,
-"entrance": "yes"
+"addr:flats": "1-65",
+"d": 23,
+"entrance": "staircase",
+"ref": "1"
 }
 ],
 "gates": [
 {
-"barrier": "lift_gate",
-"d": 20
+"access": "private",
+"barrier": "gate",
+"d": 50
 },
 {
 "access": "private",
 "barrier": "gate",
-"d": 28
+"d": 50
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 53
 },
 {
 "barrier": "lift_gate",
-"d": 60
+"d": 57
 }
 ],
 "parking": [
 {
-"d": 128
-},
-{
-"d": 133,
-"parking": "street_side"
-},
-{
-"d": 135,
+"d": 146,
 "parking": "surface"
 },
 {
-"d": 144,
+"d": 161
+},
+{
+"d": 210,
+"parking": "street_side"
+},
+{
+"d": 214,
 "parking": "surface"
 }
 ],
@@ -22074,19 +22065,19 @@
 "building_addr": "Привольная улица, 63",
 "parking": [
 {
-"d": 129,
+"d": 212,
 "parking": "street_side"
 },
 {
-"d": 148,
+"d": 213,
 "parking": "street_side"
 },
 {
-"d": 176,
-"parking": "street_side"
+"d": 236,
+"fee": "yes"
 },
 {
-"d": 192,
+"d": 256,
 "parking": "street_side"
 }
 ]
@@ -22777,23 +22768,41 @@
 "building_addr": "Пролетарский проспект, 19 к1",
 "building_entrances": [
 {
-"d": 437,
+"d": 0,
 "entrance": "main"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 42
+},
+{
+"barrier": "gate",
+"d": 56
+},
+{
+"barrier": "gate",
+"d": 59
 }
 ],
 "parking": [
 {
 "access": "yes",
-"capacity": "6",
-"d": 222,
+"d": 147,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 272
+"access": "yes",
+"d": 193,
+"fee": "no",
+"parking": "street_side"
 },
 {
-"d": 283,
+"access": "yes",
+"d": 299,
+"fee": "no",
 "parking": "surface"
 }
 ],
@@ -24082,35 +24091,30 @@
 "building_addr": "улица Ленина, 99",
 "building_entrances": [
 {
-"d": 1209,
+"d": 33,
 "entrance": "main"
 },
 {
-"d": 1220,
+"d": 41,
 "entrance": "main"
-}
-],
-"gates": [
-{
-"barrier": "gate",
-"d": 34
 }
 ],
 "parking": [
 {
-"d": 80
-},
-{
-"d": 153
-},
-{
 "access": "yes",
-"d": 157,
+"d": 115,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 172
+"d": 188
+},
+{
+"d": 194
+},
+{
+"d": 209,
+"operator": "ТЦ \"Стильный город\""
 }
 ]
 },
@@ -24210,22 +24214,37 @@
 },
 "cafe-starik-khinkalych-dmitrov": {
 "building_addr": "Профессиональная улица, 6с1",
-"parking": [
+"building_entrances": [
 {
-"capacity": "14",
-"capacity:disabled": "4",
-"d": 104
+"d": 7,
+"entrance": "yes"
 },
 {
-"d": 109,
-"fee": "no",
+"d": 7,
+"entrance": "yes"
+},
+{
+"d": 11,
+"entrance": "yes"
+},
+{
+"d": 13,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"d": 23,
 "parking": "surface"
 },
 {
-"d": 129
+"d": 51
 },
 {
-"d": 131,
+"d": 78
+},
+{
+"d": 89,
 "parking": "surface"
 }
 ]
@@ -25135,29 +25154,50 @@
 },
 "cafe-tanuki-kashirskoe-46": {
 "building_addr": "Каширское шоссе, 46 к1",
-"gates": [
+"building_entrances": [
 {
-"barrier": "lift_gate",
-"d": 44
+"addr:flats": "43-58",
+"d": 10,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"addr:flats": "26-42",
+"d": 12,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"d": 25,
+"entrance": "yes"
+},
+{
+"d": 28,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "59-76",
+"d": 29,
+"entrance": "staircase",
+"ref": "4"
 }
 ],
 "parking": [
 {
-"d": 74
-},
-{
-"access": "yes",
-"d": 219,
-"fee": "no",
-"parking": "street_side",
-"supervised": "no"
-},
-{
-"d": 236
-},
-{
-"d": 245,
+"d": 47,
 "parking": "surface"
+},
+{
+"d": 165,
+"parking": "street_side"
+},
+{
+"d": 210,
+"parking": "surface"
+},
+{
+"d": 214
 }
 ],
 "poi": {
@@ -26659,22 +26699,31 @@
 "building_addr": "улица Гагарина, 18",
 "gates": [
 {
+"access": "private",
 "barrier": "gate",
-"d": 34
+"d": 22
 }
 ],
 "parking": [
 {
-"d": 114
+"access": "yes",
+"capacity": "7",
+"d": 25,
+"fee": "no",
+"parking": "surface"
 },
 {
-"d": 121
+"access": "yes",
+"capacity": "11",
+"d": 62,
+"fee": "no",
+"parking": "surface"
 },
 {
-"d": 126
+"d": 71
 },
 {
-"d": 140
+"d": 77
 }
 ]
 },
