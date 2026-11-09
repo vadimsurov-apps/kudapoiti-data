@@ -80,6 +80,7 @@ async function load() {
       <div class="head"><div class="icon">${icon}</div>
         <div><h1>${esc(p.name)}</h1><div class="type">${esc((p.type || [])[0] || "")}${p.metro ? " · м. " + esc(p.metro) : ""}</div></div></div>
       ${p.address ? `<div class="row">📍<div>${esc(p.address)}</div></div>` : ""}
+      ${p.phone ? `<div class="row">📞<div>${p.phone.split(", ").map(x=>`<a href="tel:${x.replace(/[^+\d]/g,"")}">${esc(x)}</a>`).join(", ")}</div></div>` : ""}
       ${p.how_to_find ? `<div class="row">🧭<div><b>Как найти:</b><br>${esc(p.how_to_find).replace(/\n/g,"<br>")}</div></div>` : ""}
       ${p.hours ? `<div class="row">🕘<div>${esc(p.hours)}</div></div>` : ""}
       ${p.plus ? `<div class="row">👍<div>${esc(p.plus)}</div></div>` : ""}
