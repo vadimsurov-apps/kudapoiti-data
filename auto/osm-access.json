@@ -17366,7 +17366,15 @@
 }
 },
 "cafe-ivanovskoe-konny": {
-"building_addr": "Луговая улица, 23"
+"building_addr": "Луговая улица, 23",
+"parking": [
+{
+"d": 100
+},
+{
+"d": 249
+}
+]
 },
 "cafe-iyul": {
 "gates": [
@@ -21747,54 +21755,57 @@
 "building_addr": "Варшавское шоссе, 160",
 "building_entrances": [
 {
-"d": 227,
-"entrance": "yes"
+"access": "yes",
+"d": 0,
+"entrance": "main",
+"level": "0"
 },
 {
 "access": "yes",
-"d": 229,
+"d": 25,
 "door": "yes",
 "entrance": "yes",
 "level": "0"
 },
 {
-"access": "yes",
-"d": 241,
+"d": 31,
 "entrance": "yes"
 },
 {
 "access": "yes",
-"d": 252,
-"entrance": "main",
-"level": "0"
+"d": 69,
+"entrance": "yes"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 25
+},
+{
+"barrier": "gate",
+"d": 44
 }
 ],
 "parking": [
 {
-"access": "permissive",
-"capacity": "12",
-"d": 176,
-"fee": "no",
-"parking": "surface"
-},
-{
-"access": "yes",
-"capacity": "15",
-"d": 200,
-"fee": "no",
-"parking": "street_side"
-},
-{
-"capacity": "60",
-"d": 203,
+"access": "customers",
+"capacity": "9",
+"d": 69,
 "fee": "no"
 },
 {
-"access": "yes",
-"capacity": "30",
-"d": 243,
-"fee": "no",
+"capacity": "60",
+"d": 82,
+"fee": "no"
+},
+{
+"access": "customers",
+"d": 102,
 "parking": "surface"
+},
+{
+"d": 135
 }
 ]
 },
@@ -23091,27 +23102,14 @@
 "building_addr": "улица Ленина, 25",
 "parking": [
 {
-"d": 75
+"d": 222,
+"parking": "street_side"
 },
 {
 "access": "yes",
-"d": 123,
+"d": 246,
 "fee": "no",
 "parking": "surface"
-},
-{
-"access": "permit",
-"capacity": "5",
-"d": 158,
-"fee": "no",
-"parking": "street_side"
-},
-{
-"access": "permit",
-"capacity": "5",
-"d": 168,
-"fee": "no",
-"parking": "street_side"
 }
 ]
 },
@@ -32545,12 +32543,23 @@
 },
 "cafe-vesna-rogozinino": {
 "building_addr": "Луговая улица, 20А с3",
-"parking": [
+"gates": [
 {
-"d": 76
+"barrier": "gate",
+"d": 35
 },
 {
-"d": 122
+"access": "no",
+"barrier": "gate",
+"d": 50
+}
+],
+"parking": [
+{
+"d": 121
+},
+{
+"d": 189
 }
 ]
 },
