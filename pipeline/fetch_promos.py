@@ -105,7 +105,14 @@ def scan(item):
             if ACCESS.search(t) and not NOISE.search(t) and not spam.hits(t) and t not in (a["t"] for a in access):
                 access.append({"t": t, "page": u})
             if len(access) >= 30: break
-    item = {**item, "access": access, "access_hash": hashlib.md5("".join(a["t"] for a in access).encode()).hexdigest()[:10]}
+    # телефоны со ссылок tel: (главная и «Контакты») — для поля «Телефон» (разбирает робот «навигатор»)
+    phones = []
+    for pg in [home] + [p for _, p in contacts]:
+        for ph in re.findall(r'href=["\']tel:([^"\']+)', pg or "", re.I):
+            ph = re.sub(r"[^\d+]", "", ph)
+            if len(re.sub(r"\D", "", ph)) >= 10 and ph not in phones:
+                phones.append(ph)
+    item = {**item, "phones": phones[:6], "access": access, "access_hash": hashlib.md5("".join(a["t"] for a in access).encode()).hexdigest()[:10]}
     h = hashlib.md5("".join(s["t"] for s in snippets).encode()).hexdigest()[:10]
     sh = hashlib.md5("".join(status).encode()).hexdigest()[:10]
     return {**item, "ok": True, "hash": h, "snippets": snippets, "status": status, "status_hash": sh}
@@ -162,8 +169,9 @@ def main():
     ac = {}
     for r in res:
         h = host_of(r["url"])
-        if h in ids_by_host and r.get("ok") and r.get("access"):
-            ac[h] = {"places": ids_by_host[h], "url": r["url"], "access": r["access"], "access_hash": r["access_hash"]}
+        if h in ids_by_host and r.get("ok") and (r.get("access") or r.get("phones")):
+            ac[h] = {"places": ids_by_host[h], "url": r["url"], "phones": r.get("phones", []),
+                     "access": r.get("access", []), "access_hash": r.get("access_hash")}
     with open("auto/access-snippets.json", "w") as f:
         json.dump({"version": datetime.datetime.utcnow().isoformat(timespec="minutes"), "sites": ac}, f, ensure_ascii=False, indent=0)
     print("как попасть: сайтов с фразами", len(ac))

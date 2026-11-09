@@ -67,6 +67,7 @@ COLUMNS = {
     "Точность координат": "coord_exact",
     "День рождения": "birthday",
     "Как найти": "how_to_find",
+    "Телефон": "phone",
 }
 
 ENERGY = {"спокойно": "calm", "средне": "medium", "активно": "active"}
@@ -286,6 +287,55 @@ def apply_precise_points(places):
         print("точные точки:", n)
 
 
+def norm_phone(s):
+    """Российские номера → +7 (XXX) XXX-XX-XX; до двух номеров через «, ». Прочее — как есть."""
+    if not s:
+        return None
+    out = []
+    for part in re.split(r"[;,]|\s{2,}", str(s)):
+        d = re.sub(r"\D", "", part)
+        if len(d) == 11 and d[0] in "78":
+            d = "7" + d[1:]
+        elif len(d) == 10 and d[0] in "3489":
+            d = "7" + d
+        else:
+            if part.strip() and len(d) >= 6:
+                out.append(part.strip())
+            continue
+        f = f"+7 ({d[1:4]}) {d[4:7]}-{d[7:9]}-{d[9:11]}"
+        if f not in out:
+            out.append(f)
+    return ", ".join(out[:2]) or None
+
+
+def apply_contacts(places, spam, spam_domains):
+    """Телефон и сайт (Вадим 09.11: «во всех карточках — рабочие телефоны и ссылки на основной сайт»).
+    Порядок: таблица → auto/contacts.json (проверено роботом «навигатор» по сайту/поиску) → объект OSM с тем же
+    названием (auto/osm-access.json, теги phone/website). Сайт из контактов ставится, только если в таблице пусто."""
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    def load(name):
+        path = os.path.join(root, "auto", name)
+        return json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {}
+    contacts, osm = load("contacts.json"), load("osm-access.json")
+    n_phone = n_url = 0
+    for p in places:
+        c = contacts.get(p["id"]) or {}
+        poi = (osm.get(p["id"]) or {}).get("poi") or {}
+        if not p.get("phone"):
+            p["phone"] = norm_phone(c.get("phone") or poi.get("phone") or poi.get("contact:phone"))
+        else:
+            p["phone"] = norm_phone(p["phone"])
+        if not p.get("url") or c.get("url_override"):
+            u = c.get("url") or poi.get("website") or poi.get("contact:website") or poi.get("url")
+            if u and not u.startswith("http"):
+                u = "https://" + u
+            if u and not spam.is_spam_url(u, spam_domains):
+                p["url"] = u
+                n_url += 1
+        n_phone += bool(p.get("phone"))
+    print(f"Телефонов: {n_phone} из {len(places)}; сайтов добавлено из контактов/OSM: {n_url}")
+
+
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     only_verified = "--only-verified" in sys.argv
@@ -335,6 +385,7 @@ def main():
     json.dump({p["id"]: [p["lat"], p["lon"]] for p in places if p.get("lat") is not None},
               open(os.path.join(root, "auto", "table-coords.json"), "w"), separators=(",", ":"))
     apply_precise_points(places)
+    apply_contacts(places, spam, spam_domains)
 
     with open(dst, "w", encoding="utf-8") as f:
         json.dump({"version": date.today().isoformat(),

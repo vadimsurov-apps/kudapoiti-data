@@ -16,7 +16,8 @@ from collections import defaultdict
 
 CELL = 0.01
 POI_KEYS = ("level", "addr:floor", "addr:unit", "addr:door", "addr:flats", "entrance", "wheelchair", "level:ref",
-            "access", "fee", "description", "note")
+            "access", "fee", "description", "note", "phone", "contact:phone", "website",
+            "contact:website", "url", "opening_hours")
 
 
 def dist(a, b, c, d):

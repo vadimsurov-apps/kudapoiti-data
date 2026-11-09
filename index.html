@@ -315,6 +315,7 @@ function openPlace(id, fly = true) {
         ${d.code ? `<div class="sm">Промокод: <span class="code">${esc(d.code)}</span></div>` : ""}
         <div class="mute sm">${d.until ? "до " + new Date(d.until).toLocaleDateString("ru-RU", { day: "numeric", month: "long" }) + " · " : ""}${d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">условия</a>` : ""}</div></div>`).join("")}
       ${p.address ? `<div class="row"><span class="e">📍</span><div>${esc(p.address)}</div></div>` : ""}
+      ${p.phone ? `<div class="row"><span class="e">📞</span><div>${p.phone.split(", ").map(x=>`<a href="tel:${x.replace(/[^+\d]/g,"")}">${esc(x)}</a>`).join(", ")}</div></div>` : ""}
       ${p.how_to_find ? `<div class="row"><span class="e">🧭</span><div><b>Как найти:</b><br>${esc(p.how_to_find).replace(/\n/g,"<br>")}</div></div>` : ""}
       ${p.hours || os ? `<div class="row"><span class="e">🕘</span><div>${os ? `<span class="${op ? "open" : "closed"}">${esc(os)}</span><br>` : ""}<span class="mute">${esc(p.hours || "")}</span></div></div>` : ""}
       ${p.plus ? `<div class="row"><span class="e">👍</span><div>${esc(p.plus)}</div></div>` : ""}
