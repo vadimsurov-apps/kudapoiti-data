@@ -44020,7 +44020,7 @@
 "url": "https://bikeprogress.ru/karting",
 "ok": false,
 "err": "HTTP Error 402: Payment Required",
-"tries": 2
+"tries": 3
 },
 "gsracing-ru": {
 "url": "https://gsracing.ru/",
@@ -44052,8 +44052,9 @@
 },
 "www-circusraduga-ru": {
 "url": "https://www.circusraduga.ru/",
-"ok": false,
-"err": "<urlopen error timed out>",
+"ok": true,
+"pages": 1,
+"bytes": 7474,
 "tries": 1
 },
 "www-ticketland-ru-teatry-teatr-illyuzii-shou-moskovskoe-shou-zverey": {
@@ -44061,6 +44062,13 @@
 "ok": true,
 "pages": 1,
 "bytes": 81,
+"tries": 0
+},
+"www-retail-ru-news-aviapark-vernul-karting": {
+"url": "https://www.retail.ru/news/aviapark-vernul-karting/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
 "tries": 0
 }
 }
