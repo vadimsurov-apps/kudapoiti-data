@@ -41,7 +41,8 @@ jobs:
           osmium tags-filter area.osm.pbf nwr/name -o named.osm.pbf --overwrite
           osmium tags-filter area.osm.pbf n/entrance n/barrier=gate,entrance,turnstile,lift_gate -o entr.osm.pbf --overwrite
           osmium tags-filter area.osm.pbf w/addr:housenumber r/addr:housenumber -o bld.osm.pbf --overwrite
-          for x in named entr bld; do osmium export $x.osm.pbf -f geojsonseq -a type,id -o $x.geojsonseq --overwrite; done
+          osmium tags-filter area.osm.pbf w/building w/highway r/building -o allbld.osm.pbf --overwrite
+          for x in named entr bld allbld; do osmium export $x.osm.pbf -f geojsonseq -a type,id -o $x.geojsonseq --overwrite; done
       - run: python3 pipeline/osm_query.py
       - name: Сохранить ответ
         run: |

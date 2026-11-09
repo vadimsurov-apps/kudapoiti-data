@@ -40,7 +40,11 @@ def main():
         for q in qs:
             d = dist(q["lat"], q["lon"], lat, lon)
             if d <= q.get("radius", 250): yield q, round(d)
-    for src, key in (("named.geojsonseq", "pois"), ("bld.geojsonseq", "buildings"), ("entr.geojsonseq", "entrances")):
+    srcs = [("named.geojsonseq", "pois"), ("bld.geojsonseq", "buildings"), ("entr.geojsonseq", "entrances")]
+    if any(q.get("geom") for q in qs):
+        srcs.append(("allbld.geojsonseq", "outlines"))
+        for v in out.values(): v["outlines"] = []
+    for src, key in srcs:
         for f in read(src):
             c = center(f.get("geometry") or {})
             if not c: continue
@@ -48,15 +52,18 @@ def main():
                 t = f.get("properties", {})
                 rec = {"d": d, "lat": round(c[0], 6), "lon": round(c[1], 6), "osm": f'{t.get("@type")}/{t.get("@id")}',
                        **{k: t[k] for k in KEEP if k in t}}
+                if q.get("geom") and (f.get("geometry") or {}).get("type") in ("Polygon", "MultiPolygon", "LineString"):
+                    rec["geom"] = f["geometry"]
                 if key == "buildings" and q.get("street") and q["street"].lower() not in str(t.get("addr:street", "")).lower():
                     continue
                 if key == "pois" and q.get("name") and norm(q["name"]) and norm(q["name"]) in norm(t.get("name")):
                     rec["match"] = True
                 out[q["id"]][key].append(rec)
     for v in out.values():
-        v["pois"].sort(key=lambda r: (not r.get("match"), r["d"])); v["pois"] = v["pois"][:60]
+        v["pois"].sort(key=lambda r: (not r.get("match"), r["d"])); v["pois"] = v["pois"][:200 if v["query"].get("geom") else 60]
         v["buildings"].sort(key=lambda r: r["d"]); v["buildings"] = v["buildings"][:120]
         v["entrances"].sort(key=lambda r: r["d"]); v["entrances"] = v["entrances"][:40]
+        if "outlines" in v: v["outlines"].sort(key=lambda r: r["d"]); v["outlines"] = v["outlines"][:300]
     json.dump(out, open("auto/osm-answers.json", "w"), ensure_ascii=False, indent=1)
     print({k: (len(v["pois"]), len(v["buildings"]), len(v["entrances"])) for k, v in out.items()})
 
