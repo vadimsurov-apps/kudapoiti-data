@@ -8254,43 +8254,49 @@
 "building_addr": "Корабельная улица, 9А",
 "building_entrances": [
 {
-"addr:flats": "106-147",
-"d": 378,
-"entrance": "staircase",
-"ref": "2"
-},
-{
-"addr:flats": "1-105",
-"d": 388,
-"entrance": "staircase",
-"ref": "1"
-},
-{
 "addr:flats": "148-194",
-"d": 389,
+"d": 34,
 "entrance": "staircase",
 "ref": "3"
 },
 {
+"addr:flats": "106-147",
+"d": 34,
+"entrance": "staircase",
+"ref": "2"
+},
+{
 "addr:flats": "195-220",
-"d": 401,
+"d": 38,
 "entrance": "staircase",
 "ref": "4"
+},
+{
+"addr:flats": "1-105",
+"d": 61,
+"entrance": "staircase",
+"ref": "1"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 56
 }
 ],
 "parking": [
 {
-"d": 44
+"d": 41
 },
 {
-"d": 151
-},
-{
-"d": 172,
+"d": 46,
 "parking": "street_side"
 },
 {
-"d": 188,
+"d": 47
+},
+{
+"d": 50,
 "parking": "street_side"
 }
 ]
@@ -12048,20 +12054,26 @@
 "building_addr": "улица Дмитрия Ульянова, 5",
 "parking": [
 {
-"d": 73
+"d": 80
 },
 {
-"d": 172,
-"fee": "yes",
+"access": "yes",
+"capacity:disabled": "1",
+"d": 151,
+"fee": "no",
 "parking": "street_side"
 },
 {
-"d": 207
+"access": "permit",
+"d": 184,
+"operator": "БЦ \"Май\"",
+"parking": "surface"
 },
 {
-"capacity:disabled": "8",
-"d": 256,
-"fee": "yes",
+"access": "yes",
+"capacity:disabled": "2",
+"d": 205,
+"fee": "no",
 "parking": "street_side"
 }
 ],
@@ -13656,25 +13668,28 @@
 "building_addr": "Певческий переулок, 6",
 "gates": [
 {
-"access": "private",
 "barrier": "gate",
-"d": 26
+"d": 21
 },
 {
 "barrier": "lift_gate",
-"d": 54
+"d": 33
 },
 {
 "access": "private",
 "barrier": "gate",
-"d": 54
+"d": 43
+},
+{
+"barrier": "gate",
+"d": 50
 }
 ],
 "parking": [
 {
 "access": "permissive",
 "capacity": "20",
-"d": 51,
+"d": 288,
 "fee": "no",
 "parking": "surface",
 "supervised": "yes"
@@ -20935,21 +20950,24 @@
 "building_addr": "Каширское шоссе, 107 с7",
 "parking": [
 {
-"d": 52
+"d": 91,
+"fee": "yes",
+"parking": "surface",
+"supervised": "yes"
 },
 {
-"d": 158
-},
-{
-"d": 162
-},
-{
-"d": 238,
+"d": 206,
 "fee": "no",
 "name": "Дом отдыха \"Ёлочки\"",
 "operator": "Дом отдыха \"Ёлочки\"",
 "parking": "surface",
 "supervised": "yes"
+},
+{
+"capacity:disabled": "no",
+"d": 216,
+"fee": "yes",
+"parking": "surface"
 }
 ]
 },
@@ -21720,18 +21738,21 @@
 "building_addr": "проспект Мира, 124 к4",
 "parking": [
 {
-"d": 78
+"d": 161,
+"parking": "street_side"
 },
 {
-"d": 121,
-"fee": "yes"
+"d": 230,
+"parking": "street_side"
 },
 {
-"d": 143,
-"fee": "yes"
+"d": 237,
+"parking": "street_side"
 },
 {
-"d": 178,
+"access": "yes",
+"d": 259,
+"fee": "no",
 "parking": "surface"
 }
 ],
@@ -22274,20 +22295,12 @@
 {
 "access": "private",
 "barrier": "gate",
-"d": 41
-},
-{
-"access": "private",
-"barrier": "gate",
-"d": 50
+"d": 56
 }
 ],
 "parking": [
 {
-"d": 131
-},
-{
-"d": 273
+"d": 35
 }
 ]
 },
@@ -27145,27 +27158,19 @@
 "building_addr": "улица Некрасова, 8",
 "parking": [
 {
-"access": "yes",
-"d": 124,
+"capacity": "44",
+"d": 136,
+"parking": "street_side"
+},
+{
+"capacity": "13",
+"d": 199,
+"parking": "street_side"
+},
+{
+"d": 224,
 "fee": "no",
 "parking": "surface"
-},
-{
-"access": "customers",
-"d": 161,
-"parking": "surface"
-},
-{
-"access": "customers",
-"capacity": "155",
-"capacity:disabled": "3",
-"d": 168,
-"fee": "yes",
-"operator": "Стройфарфор",
-"parking": "multi-storey"
-},
-{
-"d": 232
 }
 ]
 },
@@ -30967,37 +30972,38 @@
 "building_addr": "улица Миклухо-Маклая, 36А",
 "building_entrances": [
 {
-"d": 166,
-"entrance": "secondary",
-"level": "0"
-},
-{
-"d": 216,
+"d": 27,
 "entrance": "main",
 "level": "1"
+},
+{
+"d": 56,
+"entrance": "secondary",
+"level": "0"
 }
 ],
 "gates": [
 {
-"barrier": "gate",
-"d": 43
+"barrier": "lift_gate",
+"d": 32
+},
+{
+"barrier": "lift_gate",
+"d": 35
 }
 ],
 "parking": [
 {
-"d": 144,
-"parking": "street_side"
+"d": 105
 },
 {
-"d": 156,
-"parking": "street_side"
+"d": 154
 },
 {
-"d": 158
+"d": 155
 },
 {
-"d": 176,
-"parking": "underground"
+"d": 187
 }
 ],
 "poi": {
@@ -32616,23 +32622,32 @@
 "building_addr": "Ясногорская улица, 2",
 "building_entrances": [
 {
-"d": 202,
+"d": 46,
 "entrance": "yes"
+}
+],
+"gates": [
+{
+"access": "private",
+"barrier": "lift_gate",
+"d": 52
 }
 ],
 "parking": [
 {
-"d": 125
+"d": 36
 },
 {
-"d": 146
-},
-{
-"d": 187,
+"d": 55,
 "parking": "street_side"
 },
 {
-"d": 192
+"d": 55,
+"parking": "surface"
+},
+{
+"d": 67,
+"parking": "surface"
 }
 ]
 },
