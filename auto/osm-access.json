@@ -982,6 +982,26 @@
 }
 ]
 },
+"apple-family-zheleznyaka": {
+"building_addr": "бульвар Матроса Железняка, 31 к1",
+"parking": [
+{
+"d": 40,
+"fee": "yes",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"d": 43
+},
+{
+"d": 177
+},
+{
+"d": 204
+}
+]
+},
 "apple-museum": {
 "parking": [
 {
@@ -2328,6 +2348,35 @@
 }
 ]
 },
+"art-klass-mitino": {
+"building_addr": "Митинская улица, 28 к4",
+"parking": [
+{
+"access": "yes",
+"d": 113,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 132,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 154
+},
+{
+"access": "yes",
+"d": 165,
+"fee": "no",
+"parking": "surface"
+}
+],
+"poi": {
+"contact:phone": "+7 926 3760393"
+}
+},
 "art-mars-domodedovo": {
 "building_addr": "Каширское шоссе, 4 к1",
 "parking": [
@@ -2355,6 +2404,69 @@
 {
 "d": 167,
 "parking": "street_side"
+}
+]
+},
+"artist-andropova": {
+"building_addr": "проспект Андропова, 22",
+"building_entrances": [
+{
+"d": 71,
+"entrance": "yes"
+},
+{
+"d": 94,
+"entrance": "yes"
+},
+{
+"d": 142,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 51,
+"parking": "surface"
+},
+{
+"d": 62,
+"parking": "surface"
+},
+{
+"d": 133,
+"parking": "surface"
+},
+{
+"d": 222,
+"parking": "surface"
+}
+],
+"poi": {
+"wheelchair": "yes"
+}
+},
+"artkash-school": {
+"building_addr": "Шарикоподшипниковская улица, 11 с7",
+"building_entrances": [
+{
+"d": 384,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"d": 147
+},
+{
+"d": 217
+},
+{
+"d": 234,
+"name": "Ситилинк"
+},
+{
+"d": 259
 }
 ]
 },
@@ -2390,6 +2502,29 @@
 "access": "yes",
 "d": 257,
 "fee": "no"
+}
+]
+},
+"atmokids-varshavka": {
+"building_addr": "Варшавское шоссе, 33 с13",
+"parking": [
+{
+"d": 57,
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 78,
+"parking": "surface"
+},
+{
+"d": 133
+},
+{
+"access": "yes",
+"d": 226,
+"fee": "no",
+"parking": "surface"
 }
 ]
 },
@@ -5400,6 +5535,61 @@
 "phone": "+7 495 9300300",
 "website": "https://www.greatcircus.ru/"
 }
+},
+"bondiki-ovchinnikovsky": {
+"building_addr": "Большой Овчинниковский переулок, 16",
+"building_entrances": [
+{
+"d": 42,
+"entrance": "yes"
+},
+{
+"d": 49,
+"entrance": "main"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 47
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 48
+},
+{
+"barrier": "gate",
+"d": 49
+}
+],
+"parking": [
+{
+"access": "yes",
+"capacity:disabled": "0",
+"d": 80,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 133,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 168,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 176,
+"fee": "yes",
+"parking": "street_side"
+}
+]
 },
 "borisovskie-prudy": {
 "gates": [
@@ -39403,6 +39593,32 @@
 }
 ]
 },
+"ddt-taganka": {
+"building_addr": "улица Мастеркова, 1",
+"parking": [
+{
+"d": 103,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 113,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 140,
+"fee": "yes",
+"parking": "surface",
+"zone": "3219"
+},
+{
+"d": 141,
+"parking": "surface"
+}
+]
+},
 "ded-moroz": {
 "gates": [
 {
@@ -40058,6 +40274,40 @@
 ],
 "poi": {
 "description": "Центр детского плавания"
+}
+},
+"detsky-ugolok-afimall": {
+"building_addr": "Пресненская набережная, 2",
+"building_entrances": [
+{
+"d": 107,
+"entrance": "yes"
+},
+{
+"d": 114,
+"entrance": "yes"
+},
+{
+"d": 123,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 117,
+"fee": "yes",
+"operator": "Imperia Tower",
+"parking": "surface"
+},
+{
+"d": 214,
+"parking": "underground"
+}
+],
+"poi": {
+"opening_hours": "11:00-23:00",
+"website": "http://cafe-ugol.ru/"
 }
 },
 "detstvo-club-chess": {
@@ -41897,6 +42147,54 @@
 }
 ]
 },
+"dva-etyuda-tsvetnoy": {
+"building_addr": "Цветной бульвар, 28 с1",
+"building_entrances": [
+{
+"d": 214,
+"entrance": "main"
+},
+{
+"addr:flats": "1-11",
+"d": 225,
+"entrance": "staircase",
+"ref": "1"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 48
+},
+{
+"barrier": "gate",
+"d": 48
+},
+{
+"barrier": "lift_gate",
+"d": 57
+}
+],
+"parking": [
+{
+"d": 29
+},
+{
+"d": 37
+},
+{
+"capacity": "40",
+"d": 39,
+"fee": "yes",
+"operator": "ГБУ Гормост",
+"parking": "surface"
+},
+{
+"d": 53,
+"parking": "street_side"
+}
+]
+},
 "dvizhenie-vverkh-basket": {
 "parking": [
 {
@@ -42139,6 +42437,34 @@
 "fee": "yes",
 "parking": "surface",
 "supervised": "no"
+}
+]
+},
+"dzhumandzhi-yasenevo": {
+"gates": [
+{
+"barrier": "gate",
+"d": 58
+}
+],
+"parking": [
+{
+"d": 158
+},
+{
+"access": "customers",
+"d": 223,
+"fee": "yes",
+"parking": "multi-storey"
+},
+{
+"access": "customers",
+"d": 227,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 239
 }
 ]
 },
@@ -45184,6 +45510,52 @@
 "level": "1"
 }
 },
+"fort-boyard-tushinskaya": {
+"building_addr": "Тушинская улица, 17",
+"building_entrances": [
+{
+"d": 17,
+"entrance": "main",
+"level": "0"
+},
+{
+"d": 45,
+"entrance": "secondary",
+"level": "0"
+},
+{
+"d": 48,
+"entrance": "yes",
+"level": "0"
+},
+{
+"d": 55,
+"entrance": "yes",
+"level": "0"
+}
+],
+"parking": [
+{
+"d": 51,
+"parking": "surface"
+},
+{
+"d": 60
+},
+{
+"access": "yes",
+"capacity": "75",
+"capacity:disabled": "9",
+"d": 115,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 159,
+"parking": "surface"
+}
+]
+},
 "fortius-chongarsky": {
 "building_addr": "Чонгарский бульвар, 17",
 "building_entrances": [
@@ -45630,6 +46002,47 @@
 "poi": {
 "contact:website": "https://funnybell.ru/whoisfunnybell/kontakti/domik_fanni_bell-_v_sadu_im_baumana/"
 }
+},
+"funzone-riviera": {
+"building_addr": "Автозаводская улица, 18",
+"building_entrances": [
+{
+"d": 68,
+"entrance": "main"
+},
+{
+"d": 116,
+"entrance": "main"
+},
+{
+"access": "yes",
+"d": 119,
+"entrance": "main"
+},
+{
+"d": 299,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"access": "customers",
+"d": 185,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 188
+},
+{
+"d": 252,
+"parking": "surface"
+},
+{
+"d": 273,
+"parking": "street_side"
+}
+]
 },
 "gaidarovka": {
 "gates": [
@@ -46524,6 +46937,35 @@
 }
 ]
 },
+"gonchar-khudozhnik-tatyanin": {
+"building_addr": "улица Татьянин Парк, 19 к3",
+"building_entrances": [
+{
+"access": "private",
+"addr:flats": "1-176",
+"d": 115,
+"entrance": "staircase",
+"ref": "1"
+}
+],
+"parking": [
+{
+"d": 23
+},
+{
+"d": 26,
+"parking": "underground"
+},
+{
+"d": 27,
+"parking": "street_side"
+},
+{
+"d": 36,
+"parking": "street_side"
+}
+]
+},
 "goncharium-vidnoe": {
 "building_addr": "Завидная улица, 4",
 "parking": [
@@ -46532,6 +46974,63 @@
 },
 {
 "d": 225
+}
+]
+},
+"goncharnaya-sreda-panferova": {
+"building_addr": "улица Панфёрова, 4",
+"building_entrances": [
+{
+"addr:flats": "1-139",
+"d": 1070,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "140-300",
+"d": 1077,
+"entrance": "staircase",
+"ref": "2"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 17
+},
+{
+"barrier": "lift_gate",
+"d": 25
+},
+{
+"barrier": "lift_gate",
+"d": 52
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 144,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"d": 163,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 197,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"access": "yes",
+"capacity": "30",
+"d": 245,
+"parking": "surface"
 }
 ]
 },
@@ -46636,6 +47135,72 @@
 "contact:website": "http://teatrgorod.ru",
 "opening_hours": "Mo-Sa 10:00-22:00; Su 10:00-18:00"
 }
+},
+"gorodok-parovozikov-mozaika": {
+"building_addr": "7-я Кожуховская улица, 9",
+"building_entrances": [
+{
+"d": 97,
+"entrance": "emergency"
+},
+{
+"d": 104,
+"entrance": "service",
+"ref": "D-5"
+},
+{
+"d": 139,
+"entrance": "emergency"
+},
+{
+"d": 146,
+"entrance": "service",
+"ref": "C-22"
+},
+{
+"d": 149,
+"entrance": "service",
+"ref": "C-21"
+},
+{
+"d": 157,
+"entrance": "service",
+"ref": "D-7"
+},
+{
+"d": 161,
+"entrance": "service",
+"ref": "D-6"
+},
+{
+"d": 162,
+"entrance": "service",
+"ref": "C-19"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 38,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 166,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 189,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 239
+}
+]
 },
 "gradior-pokryshkina": {
 "building_addr": "улица Покрышкина, 3",
@@ -47264,6 +47829,100 @@
 }
 ]
 },
+"happy-city-kuzminki": {
+"parking": [
+{
+"access": "yes",
+"d": 216,
+"fee": "no",
+"parking": "surface"
+},
+{
+"capacity": "107",
+"d": 241,
+"parking": "underground"
+},
+{
+"access": "yes",
+"d": 266,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity": "18",
+"d": 279,
+"fee": "no",
+"parking": "surface"
+}
+],
+"poi": {
+"note": "Здание нарисовано приблизительно. Перерисовать когда появится более свежий спутниковый снимок"
+}
+},
+"happy-city-mozaika": {
+"parking": [
+{
+"access": "yes",
+"d": 28,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 190,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 192,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 257
+}
+],
+"poi": {
+"opening_hours": "10:00-22:00",
+"phone": "+7 495 2801298",
+"website": "https://mozaica.ru/",
+"wheelchair": "yes"
+}
+},
+"happy-city-solntsevo": {
+"building_addr": "улица Авиаторов, 3а",
+"building_entrances": [
+{
+"d": 356,
+"entrance": "yes"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 17
+}
+],
+"parking": [
+{
+"d": 101,
+"parking": "street_side"
+},
+{
+"d": 162,
+"parking": "surface"
+},
+{
+"d": 166,
+"parking": "surface"
+},
+{
+"d": 182
+}
+]
+},
 "happylon-vegas": {
 "parking": [
 {
@@ -47639,6 +48298,25 @@
 },
 {
 "d": 70
+}
+]
+},
+"hello-park-mega-teply-stan": {
+"parking": [
+{
+"d": 45,
+"fee": "no"
+},
+{
+"d": 192
+},
+{
+"d": 268,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 270
 }
 ]
 },
@@ -50098,6 +50776,79 @@
 "igolochka-yuzhnobutovskaya": {
 "building_addr": "Южнобутовская улица, 72"
 },
+"igrarium-park-pobedy": {
+"building_addr": "улица 1812 Года, 2",
+"building_entrances": [
+{
+"addr:flats": "1-64",
+"d": 387,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "65-131",
+"d": 400,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "132-188",
+"d": 465,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"addr:flats": "189-262",
+"d": 491,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"addr:flats": "263-337",
+"d": 530,
+"entrance": "staircase",
+"ref": "5"
+}
+],
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 33
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 39
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 43
+},
+{
+"barrier": "gate",
+"d": 51
+}
+],
+"parking": [
+{
+"d": 78
+},
+{
+"access": "yes",
+"d": 105,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 128
+},
+{
+"d": 137
+}
+]
+},
 "igrovaya-deti-vernadskogo": {
 "building_addr": "проспект Вернадского, 86В",
 "gates": [
@@ -50441,6 +51192,32 @@
 }
 ]
 },
+"in-art-krasnogorsk": {
+"building_addr": "Павшинский бульвар, 12",
+"parking": [
+{
+"d": 151,
+"fee": "yes",
+"parking": "multi-storey"
+},
+{
+"d": 178,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 248,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 295,
+"fee": "yes",
+"parking": "surface",
+"supervised": "yes"
+}
+]
+},
 "inferno-paintball": {
 "parking": [
 {
@@ -50715,6 +51492,33 @@
 }
 ]
 },
+"istok-teply-stan": {
+"building_addr": "улица Тёплый Стан, 15 к9",
+"parking": [
+{
+"d": 44,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 48,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 55,
+"fee": "no",
+"parking": "lane"
+},
+{
+"access": "yes",
+"d": 160,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
 "istra-drama-theatre": {
 "parking": [
 {
@@ -50876,6 +51680,17 @@
 "poi": {
 "description": "Бывший ЗАГС"
 }
+},
+"izopark-teply-stan": {
+"building_addr": "улица Тёплый Стан, 4",
+"parking": [
+{
+"d": 235
+},
+{
+"d": 272
+}
+]
 },
 "japanese-garden": {
 "gates": [
@@ -53841,6 +54656,69 @@
 }
 ]
 },
+"kids-castle-mitino": {
+"building_addr": "Новотушинский проезд, 10 к2",
+"building_entrances": [
+{
+"d": 186,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 37,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 42,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 47,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 48,
+"fee": "no",
+"parking": "street_side"
+}
+]
+},
+"kids-lab-loft-ostrovityanova": {
+"building_addr": "улица Островитянова, 9 к5",
+"gates": [
+{
+"barrier": "gate",
+"d": 25
+},
+{
+"barrier": "lift_gate",
+"d": 44
+}
+],
+"parking": [
+{
+"d": 16
+},
+{
+"d": 141
+},
+{
+"d": 210
+},
+{
+"d": 227,
+"parking": "surface"
+}
+]
+},
 "kidstown-saltykovskaya": {
 "building_addr": "Салтыковская улица, 49А",
 "parking": [
@@ -56788,6 +57666,27 @@
 }
 ]
 },
+"konfetka-krasnogorsk": {
+"building_addr": "улица 50 лет Октября, 12",
+"building_entrances": [
+{
+"d": 1200,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 257,
+"fee": "no",
+"parking": "surface"
+}
+],
+"poi": {
+"addr:floor": "1",
+"level": "0"
+}
+},
 "konyashin-hall-elektrostal": {
 "building_addr": "улица Чернышевского, 38",
 "gates": [
@@ -57097,6 +57996,39 @@
 "poi": {
 "website": "https://cosmikkino.ru/cgi-bin/show.pl?option=CinemaInfo&id=42"
 }
+},
+"kosmostar-solntsevo": {
+"building_addr": "улица Авиаторов, 3а",
+"building_entrances": [
+{
+"d": 391,
+"entrance": "yes"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 37
+}
+],
+"parking": [
+{
+"d": 108,
+"parking": "street_side"
+},
+{
+"d": 140,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 142
+},
+{
+"d": 156,
+"parking": "surface"
+}
+]
 },
 "kosteniuk-chess-tukhachevskogo": {
 "building_addr": "улица Маршала Тухачевского, 45 к2",
@@ -58247,6 +59179,35 @@
 }
 ]
 },
+"kvest-dlya-vsekh-mira": {
+"building_addr": "проспект Мира, 89",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 18
+},
+{
+"barrier": "lift_gate",
+"d": 53
+}
+],
+"parking": [
+{
+"d": 147,
+"parking": "surface"
+},
+{
+"d": 198
+},
+{
+"d": 228
+},
+{
+"d": 234,
+"parking": "street_side"
+}
+]
+},
 "kvest-kids-krasnoselskaya": {
 "building_addr": "Нижняя Красносельская улица, 5 с1",
 "building_entrances": [
@@ -59379,6 +60340,31 @@
 "opening_hours": "Mo-Su 10:00-22:00"
 }
 },
+"liga-mirov-reaktor": {
+"building_addr": "Ленинский проспект, 123В",
+"building_entrances": [
+{
+"access": "yes",
+"d": 597,
+"door": "yes",
+"entrance": "yes",
+"level": "0"
+},
+{
+"d": 712,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"d": 209,
+"parking": "surface"
+},
+{
+"d": 252
+}
+]
+},
 "liga-tennis-butlerova": {
 "building_addr": "улица Бутлерова, 17",
 "parking": [
@@ -59562,6 +60548,53 @@
 "website": "https://lionsland.ru"
 }
 },
+"lisich-delegatskaya": {
+"building_addr": "Делегатская улица, 11",
+"building_entrances": [
+{
+"addr:flats": "1-126",
+"d": 334,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"d": 359,
+"entrance": "yes"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 22
+},
+{
+"barrier": "lift_gate",
+"d": 42
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 51
+}
+],
+"parking": [
+{
+"d": 112
+},
+{
+"d": 129,
+"parking": "surface"
+},
+{
+"d": 144,
+"parking": "street_side"
+},
+{
+"d": 160,
+"parking": "street_side"
+}
+]
+},
 "lobnya-museum": {
 "parking": [
 {
@@ -59703,6 +60736,29 @@
 "contact:phone": "+7-967-2216623",
 "contact:website": "https://horse-yard.com/projects/losiniy-ostrov/"
 }
+},
+"lovushka-quest-shchipkovsky": {
+"parking": [
+{
+"d": 91
+},
+{
+"d": 93
+},
+{
+"d": 108,
+"fee": "yes"
+},
+{
+"access": "yes",
+"capacity": "80",
+"capacity:disabled": "yes",
+"charge": "400 RUB/hour",
+"d": 190,
+"fee": "yes",
+"parking": "surface"
+}
+]
 },
 "lt-anklav": {
 "building_addr": "Снежная улица, 27 к2",
@@ -60302,6 +61358,58 @@
 },
 {
 "d": 62
+}
+]
+},
+"lulu-pyatnitskoe": {
+"building_addr": "Пятницкое шоссе, 15 к4",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 52
+}
+],
+"parking": [
+{
+"d": 30,
+"parking": "street_side"
+},
+{
+"d": 52,
+"parking": "street_side"
+},
+{
+"d": 70,
+"parking": "street_side"
+},
+{
+"d": 95
+}
+],
+"poi": {
+"website": "https://stravinskiy.arts.mos.ru/",
+"wheelchair": "yes"
+}
+},
+"lunomosik-chertanovo": {
+"parking": [
+{
+"access": "yes",
+"d": 82,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 104
+},
+{
+"d": 195
+},
+{
+"access": "yes",
+"d": 216,
+"fee": "no",
+"parking": "surface"
 }
 ]
 },
@@ -61382,6 +62490,79 @@
 }
 ]
 },
+"martynycheva-studio": {
+"building_addr": "2-й Троицкий переулок, 6А с3",
+"building_entrances": [
+{
+"addr:flats": "37-48",
+"d": 676,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"addr:flats": "49-56",
+"d": 681,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"addr:flats": "25-36",
+"d": 682,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"addr:flats": "57-64",
+"d": 700,
+"entrance": "staircase",
+"ref": "6"
+},
+{
+"addr:flats": "12-24",
+"d": 700,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "65-72",
+"d": 718,
+"entrance": "staircase",
+"ref": "7"
+},
+{
+"addr:flats": "1-12",
+"d": 719,
+"entrance": "staircase",
+"ref": "1"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 153,
+"fee": "yes",
+"operator": "ГКУ АМПП",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 194,
+"fee": "yes",
+"operator": "ГКУ АМПП",
+"parking": "street_side"
+},
+{
+"capacity": "20",
+"d": 217,
+"fee": "yes",
+"parking": "surface"
+}
+],
+"poi": {
+"contact:phone": "+7 925 3941738",
+"contact:website": "http://martynychev.ru/"
+}
+},
 "master-panin": {
 "building_addr": "2-й Сетуньский проезд, 3",
 "parking": [
@@ -61419,6 +62600,93 @@
 "fee": "yes",
 "parking": "surface",
 "supervised": "no"
+}
+]
+},
+"masterskaya-talantov-marksistskaya": {
+"building_addr": "Марксистская улица, 9",
+"building_entrances": [
+{
+"addr:flats": "451-540",
+"d": 674,
+"entrance": "staircase",
+"ref": "8"
+},
+{
+"addr:flats": "391-450",
+"d": 684,
+"entrance": "staircase",
+"ref": "7"
+},
+{
+"addr:flats": "331-390",
+"d": 712,
+"entrance": "staircase",
+"ref": "6"
+},
+{
+"addr:flats": "271-330",
+"d": 739,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"addr:flats": "211-270",
+"d": 769,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"addr:flats": "121-210",
+"d": 791,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"addr:flats": "61-120",
+"d": 792,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "1-60",
+"d": 794,
+"entrance": "staircase",
+"ref": "1"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 52
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 64,
+"parking": "street_side"
+},
+{
+"access": "permissive",
+"d": 182,
+"parking": "surface",
+"supervised": "yes"
+},
+{
+"access": "yes",
+"d": 192,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "permissive",
+"capacity": "6",
+"d": 245,
+"fee": "yes",
+"operator": "Офисный центр «Спектр Таганский»",
+"parking": "surface",
+"supervised": "yes"
 }
 ]
 },
@@ -62359,6 +63627,50 @@
 {
 "d": 217,
 "parking": "surface"
+}
+]
+},
+"mesto-vstrechi-solntsevo": {
+"building_addr": "улица Богданова, 19",
+"parking": [
+{
+"d": 120
+},
+{
+"d": 233
+},
+{
+"capacity": "16",
+"d": 240,
+"parking": "street_side"
+},
+{
+"capacity": "15",
+"d": 245,
+"parking": "street_side"
+}
+]
+},
+"metr-s-kepkoy-teply-stan": {
+"building_addr": "улица Тёплый Стан, 11 к1",
+"parking": [
+{
+"access": "yes",
+"d": 63,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 131,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 195
+},
+{
+"d": 232
 }
 ]
 },
@@ -63367,6 +64679,55 @@
 "website": "http://www.mmdm.ru"
 }
 },
+"mnogogrannik-mitino": {
+"building_addr": "Митинская улица, 20",
+"building_entrances": [
+{
+"d": 673,
+"entrance": "yes"
+},
+{
+"d": 675,
+"entrance": "yes"
+},
+{
+"d": 696,
+"entrance": "staircase",
+"ref": "1"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 122,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 192,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 208,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 215,
+"fee": "yes",
+"parking": "street_side"
+}
+],
+"poi": {
+"contact:phone": "+7 985 2995260",
+"contact:website": "http://mnogoart.ru/",
+"opening_hours": "Mo-Su 11:00-20:00"
+}
+},
 "modern-theatre": {
 "gates": [
 {
@@ -63433,6 +64794,67 @@
 {
 "d": 256,
 "parking": "surface"
+}
+]
+},
+"monbini-likhacheva": {
+"building_addr": "проспект Лихачёва, 20",
+"building_entrances": [
+{
+"access": "private",
+"addr:flats": "226-253",
+"d": 1082,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"access": "private",
+"addr:flats": "198-225",
+"d": 1088,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"access": "private",
+"addr:flats": "170-197",
+"d": 1095,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"access": "private",
+"addr:flats": "226-253",
+"d": 1096,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"access": "private",
+"addr:flats": "254-334",
+"d": 1096,
+"entrance": "staircase",
+"ref": "6"
+},
+{
+"access": "private",
+"addr:flats": "198-225",
+"d": 1102,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"access": "private",
+"addr:flats": "254-334",
+"d": 1104,
+"entrance": "staircase",
+"ref": "6"
+},
+{
+"access": "private",
+"addr:flats": "170-197",
+"d": 1109,
+"entrance": "staircase",
+"ref": "3"
 }
 ]
 },
@@ -67267,6 +68689,51 @@
 "website": "https://myhistorypark.ru/"
 }
 },
+"myau-loft-tatyanin-park": {
+"building_addr": "улица Татьянин Парк, 19 к2",
+"building_entrances": [
+{
+"access": "private",
+"addr:flats": "1-198",
+"d": 71,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"access": "private",
+"addr:flats": "1-198",
+"d": 85,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"d": 97,
+"entrance": "shop"
+},
+{
+"d": 102,
+"entrance": "shop"
+}
+],
+"parking": [
+{
+"d": 11,
+"parking": "street_side"
+},
+{
+"d": 40,
+"parking": "street_side"
+},
+{
+"d": 43,
+"parking": "street_side"
+},
+{
+"d": 68,
+"parking": "street_side"
+}
+]
+},
 "myslitel-academy-chess": {
 "building_addr": "улица Адмирала Лазарева, 45",
 "parking": [
@@ -68168,6 +69635,72 @@
 "parking": "surface"
 }
 ]
+},
+"neon-arena-solntsevo": {
+"building_addr": "улица Авиаторов, 3а",
+"building_entrances": [
+{
+"d": 353,
+"entrance": "yes"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 31
+}
+],
+"parking": [
+{
+"d": 80,
+"parking": "street_side"
+},
+{
+"d": 140,
+"parking": "surface"
+},
+{
+"d": 163
+},
+{
+"access": "yes",
+"d": 173
+}
+]
+},
+"neotkrytye-ostrova": {
+"building_addr": "Уваровский переулок, 12",
+"parking": [
+{
+"access": "yes",
+"d": 59,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 78,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 88,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 91,
+"fee": "yes",
+"parking": "street_side"
+}
+],
+"poi": {
+"opening_hours": "Mo-Su 09:00-21:00",
+"website": "https://dtdim.mskobr.ru/",
+"wheelchair": "no"
+}
 },
 "nepo-chess-school": {
 "building_addr": "Пресненская набережная, 12",
@@ -76650,6 +78183,23 @@
 }
 ]
 },
+"radost-mikhalkovskaya": {
+"building_addr": "Михалковская улица, 22",
+"parking": [
+{
+"d": 87
+},
+{
+"d": 163
+},
+{
+"d": 208
+},
+{
+"d": 217
+}
+]
+},
 "raduga-climb-shcherbinka": {
 "building_addr": "Юбилейная улица, 3А",
 "building_entrances": [
@@ -81656,6 +83206,96 @@
 }
 ]
 },
+"sensorium-arbat": {
+"building_addr": "улица Арбат, 17",
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 9
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 18
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 23
+},
+{
+"barrier": "gate",
+"d": 35
+}
+],
+"parking": [
+{
+"d": 96
+},
+{
+"capacity": "86",
+"capacity:disabled": "11",
+"charge": "600 RUB/hour",
+"d": 221,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 260
+}
+]
+},
+"senzitivnost-voykovskaya": {
+"building_addr": "Ленинградское шоссе, 8 к3",
+"building_entrances": [
+{
+"addr:flats": "309-339",
+"d": 1095,
+"entrance": "staircase",
+"ref": "20"
+},
+{
+"addr:flats": "213-231",
+"d": 1110,
+"entrance": "staircase",
+"ref": "16"
+},
+{
+"d": 1113,
+"entrance": "staircase",
+"ref": "19"
+},
+{
+"d": 1118,
+"entrance": "staircase",
+"ref": "17"
+},
+{
+"d": 1126,
+"entrance": "staircase",
+"ref": "18"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 56
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 272,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 298,
+"parking": "street_side"
+}
+]
+},
 "serebryany-bor": {
 "poi": {
 "note": "Публично доступная часть"
@@ -83271,6 +84911,40 @@
 }
 ]
 },
+"skazochnaya-zhizn-voykovsky": {
+"building_addr": "5-й Войковский проезд, 16 к2",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 46
+},
+{
+"barrier": "gate",
+"d": 53
+},
+{
+"barrier": "gate",
+"d": 54
+}
+],
+"parking": [
+{
+"d": 141
+},
+{
+"d": 175,
+"parking": "surface"
+},
+{
+"access": "permissive",
+"d": 211
+},
+{
+"d": 230,
+"parking": "surface"
+}
+]
+},
 "skhodnenskaya-chasha": {
 "parking": [
 {
@@ -83336,6 +85010,97 @@
 {
 "d": 262,
 "parking": "surface"
+}
+]
+},
+"smart-art-lomonosovsky": {
+"building_addr": "Ломоносовский проспект, 18",
+"building_entrances": [
+{
+"addr:flats": "402-449",
+"d": 212,
+"entrance": "staircase",
+"ref": "9"
+},
+{
+"addr:flats": "349-400",
+"d": 217,
+"entrance": "staircase",
+"ref": "8"
+},
+{
+"addr:flats": "450-489",
+"d": 226,
+"entrance": "staircase",
+"ref": "10"
+},
+{
+"addr:flats": "297-348",
+"d": 228,
+"entrance": "staircase",
+"ref": "7"
+},
+{
+"addr:flats": "244-296",
+"d": 248,
+"entrance": "staircase",
+"ref": "6"
+},
+{
+"addr:flats": "490-529",
+"d": 266,
+"entrance": "staircase",
+"ref": "11"
+},
+{
+"addr:flats": "193-243",
+"d": 272,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"addr:flats": "151-192",
+"d": 285,
+"entrance": "staircase",
+"ref": "4"
+}
+],
+"parking": [
+{
+"d": 187,
+"parking": "surface"
+},
+{
+"d": 209
+},
+{
+"d": 218,
+"parking": "surface"
+},
+{
+"d": 256,
+"parking": "underground"
+}
+]
+},
+"smartikids-solntsevo": {
+"building_addr": "улица Главмосстроя, 14",
+"parking": [
+{
+"d": 47,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 63
+},
+{
+"d": 73,
+"parking": "street_side"
+},
+{
+"d": 79,
+"parking": "street_side"
 }
 ]
 },
@@ -85010,6 +86775,37 @@
 }
 ]
 },
+"starlab-metropolis": {
+"building_addr": "Ленинградское шоссе, 16А с8",
+"building_entrances": [
+{
+"d": 168,
+"entrance": "yes"
+},
+{
+"d": 174,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"d": 116
+},
+{
+"d": 122
+},
+{
+"d": 125,
+"fee": "yes",
+"parking": "multi-storey"
+},
+{
+"access": "permissive",
+"d": 126,
+"parking": "surface"
+}
+]
+},
 "stolyarkino-korolev": {
 "building_addr": "улица 50-летия ВЛКСМ, 6Е",
 "parking": [
@@ -85025,6 +86821,25 @@
 {
 "d": 260,
 "parking": "surface"
+}
+]
+},
+"stolyarkino-novoperedelkino": {
+"building_addr": "улица Юлиана Семёнова, 8 к1",
+"parking": [
+{
+"d": 216
+},
+{
+"d": 224
+},
+{
+"access": "yes",
+"d": 253,
+"parking": "surface"
+},
+{
+"d": 258
 }
 ]
 },
@@ -90393,6 +92208,28 @@
 }
 ]
 },
+"tsentr-kreativa-babyegorodsky": {
+"building_addr": "1-й Бабьегородский переулок, 5",
+"building_entrances": [
+{
+"d": 118,
+"entrance": "main"
+}
+],
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 45
+}
+],
+"parking": [
+{
+"d": 251,
+"fee": "no"
+}
+]
+},
 "tt-integral-barklaya": {
 "building_addr": "улица Барклая, 5А",
 "gates": [
@@ -90925,6 +92762,47 @@
 "access": "yes",
 "d": 101,
 "fee": "no",
+"parking": "surface"
+}
+]
+},
+"tvorchesky-miks-solntsevo": {
+"building_addr": "улица Авиаторов, 7",
+"building_entrances": [
+{
+"d": 43,
+"entrance": "main"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 37
+},
+{
+"access": "no",
+"barrier": "gate",
+"d": 54
+},
+{
+"barrier": "gate",
+"d": 57
+}
+],
+"parking": [
+{
+"d": 80
+},
+{
+"d": 83
+},
+{
+"d": 103
+},
+{
+"access": "yes",
+"capacity": "24",
+"d": 196,
 "parking": "surface"
 }
 ]
@@ -92155,6 +94033,26 @@
 }
 ]
 },
+"vitaart-garibaldi": {
+"building_addr": "улица Гарибальди, 36",
+"parking": [
+{
+"d": 180
+},
+{
+"d": 205
+},
+{
+"d": 214,
+"parking": "surface"
+},
+{
+"access": "permit",
+"d": 239,
+"parking": "surface"
+}
+]
+},
 "vkusoterriya-1905": {
 "building_addr": "улица 1905 года, 10 с1",
 "building_entrances": [
@@ -92739,6 +94637,29 @@
 "poi": {
 "website": "https://art-vostok.ru/"
 }
+},
+"vpodvale-leningradskoe": {
+"building_addr": "Ленинградское шоссе, 100",
+"parking": [
+{
+"d": 64,
+"fee": "no"
+},
+{
+"d": 83,
+"fee": "no"
+},
+{
+"d": 91,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 125,
+"fee": "no",
+"parking": "lane"
+}
+]
 },
 "vr-home": {
 "building_addr": "проспект 60-летия Октября, 11",
@@ -93556,6 +95477,28 @@
 {
 "d": 260,
 "parking": "street_side"
+}
+]
+},
+"wow-land-krasnogorsk": {
+"building_addr": "Авангардная улица, 3",
+"parking": [
+{
+"d": 199,
+"parking": "surface"
+},
+{
+"d": 216,
+"parking": "street_side"
+},
+{
+"d": 229,
+"parking": "underground"
+},
+{
+"access": "yes",
+"d": 241,
+"parking": "surface"
 }
 ]
 },
@@ -95575,6 +97518,35 @@
 },
 {
 "d": 136,
+"parking": "surface"
+}
+]
+},
+"zolotoy-klyuchik-dmitrovskoe": {
+"building_addr": "Дмитровское шоссе, 33 с5",
+"parking": [
+{
+"access": "yes",
+"d": 98,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity": "80",
+"d": 123,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"d": 135,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 160,
+"fee": "no",
 "parking": "surface"
 }
 ]
