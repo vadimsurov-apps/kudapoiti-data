@@ -7017,23 +7017,19 @@
 "building_addr": "Смольная улица, 24А",
 "building_entrances": [
 {
-"d": 22,
+"d": 0,
 "entrance": "yes"
 }
 ],
 "parking": [
 {
 "access": "yes",
-"d": 148,
+"d": 147,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 267
-},
-{
-"d": 300,
-"parking": "street_side"
+"d": 266
 }
 ]
 },
@@ -8254,6 +8250,51 @@
 "opening_hours": "Mo-Su 10:00-22:00"
 }
 },
+"cafe-anna-varenina-korabelnaya": {
+"building_addr": "Корабельная улица, 9А",
+"building_entrances": [
+{
+"addr:flats": "106-147",
+"d": 378,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "1-105",
+"d": 388,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "148-194",
+"d": 389,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"addr:flats": "195-220",
+"d": 401,
+"entrance": "staircase",
+"ref": "4"
+}
+],
+"parking": [
+{
+"d": 44
+},
+{
+"d": 151
+},
+{
+"d": 172,
+"parking": "street_side"
+},
+{
+"d": 188,
+"parking": "street_side"
+}
+]
+},
 "cafe-annenfeld-uralskaya": {
 "building_addr": "Уральская улица, 17",
 "parking": [
@@ -8610,6 +8651,22 @@
 }
 ]
 },
+"cafe-barashek-lytkarino": {
+"parking": [
+{
+"d": 207
+},
+{
+"d": 221
+},
+{
+"d": 251
+},
+{
+"d": 277
+}
+]
+},
 "cafe-barin-barash-kolomna": {
 "building_addr": "улица Лажечникова, 3",
 "gates": [
@@ -8896,6 +8953,36 @@
 "parking": "surface"
 }
 ]
+},
+"cafe-belaya-vorona-zvenigorod": {
+"parking": [
+{
+"access": "yes",
+"d": 105,
+"fee": "yes",
+"parking": "lane"
+},
+{
+"access": "yes",
+"d": 135,
+"fee": "yes",
+"parking": "lane"
+},
+{
+"d": 141,
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity:disabled": "1",
+"d": 160,
+"fee": "yes",
+"parking": "lane"
+}
+],
+"poi": {
+"contact:website": "https://belayavorona.rest/"
+}
 },
 "cafe-bella-strada-mytishchi": {
 "building_addr": "Станционная улица, 1 к1",
@@ -11957,6 +12044,31 @@
 }
 ]
 },
+"cafe-dedi-ulyanova": {
+"building_addr": "улица Дмитрия Ульянова, 5",
+"parking": [
+{
+"d": 73
+},
+{
+"d": 172,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"d": 207
+},
+{
+"capacity:disabled": "8",
+"d": 256,
+"fee": "yes",
+"parking": "street_side"
+}
+],
+"poi": {
+"opening_hours": "Mo-Su 11:00-23:00"
+}
+},
 "cafe-dellarte": {
 "building_addr": "Большой Толмачёвский переулок, 4 с1",
 "gates": [
@@ -13539,6 +13651,35 @@
 "poi": {
 "phone": "+7 495 7917080"
 }
+},
+"cafe-ekspeditsiya-pevchesky": {
+"building_addr": "Певческий переулок, 6",
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 26
+},
+{
+"barrier": "lift_gate",
+"d": 54
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 54
+}
+],
+"parking": [
+{
+"access": "permissive",
+"capacity": "20",
+"d": 51,
+"fee": "no",
+"parking": "surface",
+"supervised": "yes"
+}
+]
 },
 "cafe-el-gauchito-vremena-goda": {
 "building_addr": "Кутузовский проспект, 48",
@@ -20790,6 +20931,28 @@
 }
 ]
 },
+"cafe-med-domodedovo": {
+"building_addr": "Каширское шоссе, 107 с7",
+"parking": [
+{
+"d": 52
+},
+{
+"d": 158
+},
+{
+"d": 162
+},
+{
+"d": 238,
+"fee": "no",
+"name": "Дом отдыха \"Ёлочки\"",
+"operator": "Дом отдыха \"Ёлочки\"",
+"parking": "surface",
+"supervised": "yes"
+}
+]
+},
 "cafe-melnitsa-elektrougli": {
 "building_addr": "Школьная улица, 23",
 "gates": [
@@ -21553,6 +21716,31 @@
 "website": "www.MiraClub.ru"
 }
 },
+"cafe-miragrill-prospekt-mira": {
+"building_addr": "проспект Мира, 124 к4",
+"parking": [
+{
+"d": 78
+},
+{
+"d": 121,
+"fee": "yes"
+},
+{
+"d": 143,
+"fee": "yes"
+},
+{
+"d": 178,
+"parking": "surface"
+}
+],
+"poi": {
+"contact:phone": "+7 925 2252028",
+"contact:website": "http://miragrill.info/",
+"opening_hours": "Mo-Su 08:00-23:00"
+}
+},
 "cafe-miratorg-shcherbinka-domodedovo": {
 "parking": [
 {
@@ -22081,54 +22269,25 @@
 ]
 },
 "cafe-muu-mukomolny": {
-"building_addr": "Мукомольный проезд, 2",
-"building_entrances": [
+"building_addr": "Мукомольный проезд, 2 с1",
+"gates": [
 {
 "access": "private",
-"d": 1164,
-"entrance": "staircase",
-"ref": "1"
+"barrier": "gate",
+"d": 41
 },
 {
 "access": "private",
-"d": 1192,
-"entrance": "staircase",
-"ref": "2"
-},
-{
-"access": "private",
-"d": 1238,
-"entrance": "staircase",
-"ref": "3"
-},
-{
-"access": "private",
-"d": 1246,
-"entrance": "staircase",
-"ref": "5"
-},
-{
-"access": "private",
-"d": 1293,
-"entrance": "staircase",
-"ref": "4"
+"barrier": "gate",
+"d": 50
 }
 ],
 "parking": [
 {
-"d": 79
+"d": 131
 },
 {
-"capacity": "50",
-"d": 120,
-"parking": "surface"
-},
-{
-"d": 182
-},
-{
-"capacity": "40",
-"d": 190
+"d": 273
 }
 ]
 },
@@ -26982,6 +27141,34 @@
 }
 ]
 },
+"cafe-rukosta-lobnya": {
+"building_addr": "улица Некрасова, 8",
+"parking": [
+{
+"access": "yes",
+"d": 124,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 161,
+"parking": "surface"
+},
+{
+"access": "customers",
+"capacity": "155",
+"capacity:disabled": "3",
+"d": 168,
+"fee": "yes",
+"operator": "Стройфарфор",
+"parking": "multi-storey"
+},
+{
+"d": 232
+}
+]
+},
 "cafe-rus-naro-fominsk": {
 "parking": [
 {
@@ -30776,6 +30963,51 @@
 }
 ]
 },
+"cafe-tokio-city-miklukho": {
+"building_addr": "улица Миклухо-Маклая, 36А",
+"building_entrances": [
+{
+"d": 166,
+"entrance": "secondary",
+"level": "0"
+},
+{
+"d": 216,
+"entrance": "main",
+"level": "1"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 43
+}
+],
+"parking": [
+{
+"d": 144,
+"parking": "street_side"
+},
+{
+"d": 156,
+"parking": "street_side"
+},
+{
+"d": 158
+},
+{
+"d": 176,
+"parking": "underground"
+}
+],
+"poi": {
+"addr:floor": "2",
+"contact:phone": "+7 495 9662540",
+"contact:website": "https://www.tokyo-city.ru/",
+"level": "1",
+"opening_hours": "Fr-Sa 11:00-03:00; Mo-Th,Su 11:00-01:00"
+}
+},
 "cafe-topolino-krymsky": {
 "parking": [
 {
@@ -32377,6 +32609,30 @@
 },
 {
 "d": 227
+}
+]
+},
+"cafe-vostok1-yasnogorskaya": {
+"building_addr": "Ясногорская улица, 2",
+"building_entrances": [
+{
+"d": 202,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"d": 125
+},
+{
+"d": 146
+},
+{
+"d": 187,
+"parking": "street_side"
+},
+{
+"d": 192
 }
 ]
 },
@@ -44773,12 +45029,7 @@
 ]
 },
 "dve-raketki-setunsky": {
-"building_addr": "2-й Сетуньский проезд, 5А",
-"parking": [
-{
-"d": 214
-}
-]
+"building_addr": "2-й Сетуньский проезд, 5А"
 },
 "dvizhenie-vverkh-basket": {
 "parking": [
@@ -63365,28 +63616,46 @@
 },
 "kuprin-tennis-ostryakova": {
 "building_addr": "улица Острякова, 7",
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 36
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 37
+},
+{
+"barrier": "lift_gate",
+"d": 42
+}
+],
 "parking": [
 {
 "access": "yes",
-"d": 111,
+"d": 151,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 288,
 "fee": "yes",
-"parking": "street_side"
-},
-{
-"d": 181,
-"parking": "street_side"
+"operator": "ГКУ АМПП",
+"parking": "lane"
 },
 {
 "access": "yes",
-"d": 196,
+"d": 291,
 "fee": "no",
 "parking": "surface"
 },
 {
-"access": "yes",
-"d": 237,
-"fee": "no",
-"parking": "surface"
+"d": 295,
+"fee": "yes",
+"operator": "ГКУ АМПП",
+"parking": "lane"
 }
 ]
 },
