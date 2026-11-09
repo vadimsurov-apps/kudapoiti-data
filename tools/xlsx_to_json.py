@@ -308,6 +308,29 @@ def norm_phone(s):
     return ", ".join(out[:2]) or None
 
 
+# Служебные пометки роботов и пустые отговорки не показываем людям (Вадим 09.11: «что значит „вечером ресторан
+# взрослый“? так по-русски не говорят»; «Детская комната — по справочнику …» — это не минус, а источник).
+FILLER = re.compile(r"по справочник|по каталог|по описани|по яндекс|по 2гис|2gis|zoon|jsprav|spravk|в каталоге|"
+                    r"по отзыв|по данным|источник|уточняйте|уточнять|уточните|не описан|не подтвержд|"
+                    r"ресторан взрослый|вечером взрослый|отмечена детская", re.I)
+
+
+def clean_texts(p):
+    """Из «Плюс»/«Минус» убрать служебные пометки и отговорки; убранное — в «Источник» (для роботов, не для людей)."""
+    moved = []
+    for key in ("plus", "minus"):
+        s = p.get(key)
+        if not s:
+            continue
+        parts = [x.strip() for x in re.split(r"\s*(?:;|·|\. |, (?=[А-ЯЁа-яё]+ уточн))\s*", s) if x and x.strip()]
+        keep = [x for x in parts if not FILLER.search(x)]
+        moved += [x for x in parts if FILLER.search(x)]
+        out = "; ".join(keep).strip(" .;,")
+        p[key] = (out[0].upper() + out[1:]) if out else None
+    if moved:
+        p["source"] = "; ".join(filter(None, [p.get("source"), *moved]))
+
+
 def apply_contacts(places, spam, spam_domains):
     """Телефон и сайт (Вадим 09.11: «во всех карточках — рабочие телефоны и ссылки на основной сайт»).
     Порядок: таблица → auto/contacts.json (проверено роботом «навигатор» по сайту/поиску) → объект OSM с тем же
@@ -386,6 +409,8 @@ def main():
               open(os.path.join(root, "auto", "table-coords.json"), "w"), separators=(",", ":"))
     apply_precise_points(places)
     apply_contacts(places, spam, spam_domains)
+    for p in places:
+        clean_texts(p)
 
     with open(dst, "w", encoding="utf-8") as f:
         json.dump({"version": date.today().isoformat(),
