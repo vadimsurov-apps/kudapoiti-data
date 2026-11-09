@@ -10685,22 +10685,24 @@
 "parking": [
 {
 "capacity": "5000",
-"d": 50,
+"d": 6,
 "fee": "yes",
 "parking": "multi-storey"
 },
 {
 "access": "yes",
-"d": 59,
+"d": 90,
 "fee": "yes"
 },
 {
 "access": "yes",
-"d": 60,
+"d": 92,
 "fee": "yes"
 },
 {
-"d": 70
+"access": "yes",
+"d": 108,
+"fee": "yes"
 }
 ],
 "poi": {
@@ -10711,20 +10713,21 @@
 "cafe-bocconcino-metropolis": {
 "parking": [
 {
-"d": 161
-},
-{
-"d": 161,
+"d": 185,
 "fee": "yes",
 "parking": "multi-storey"
 },
 {
-"d": 164
+"d": 193
 },
 {
-"access": "permissive",
-"d": 172,
-"parking": "surface"
+"d": 195
+},
+{
+"access": "yes",
+"d": 203,
+"fee": "yes",
+"parking": "multi-storey"
 }
 ],
 "poi": {
@@ -21310,63 +21313,53 @@
 "building_addr": "улица Свободы, 71 к3",
 "building_entrances": [
 {
-"d": 818,
+"d": 19,
 "entrance": "yes"
 },
 {
-"d": 819,
+"d": 28,
 "entrance": "yes"
 },
 {
-"d": 845,
-"entrance": "yes"
-},
-{
-"d": 850,
+"d": 31,
 "entrance": "service"
 },
 {
-"d": 850,
+"d": 34,
 "entrance": "yes"
 },
 {
-"d": 858,
+"d": 36,
 "entrance": "yes"
-}
-],
-"gates": [
-{
-"barrier": "lift_gate",
-"d": 23
 },
 {
-"barrier": "lift_gate",
-"d": 24
-},
-{
-"barrier": "lift_gate",
-"d": 30
+"d": 37,
+"entrance": "yes"
 }
 ],
 "parking": [
 {
-"d": 130,
-"parking": "surface"
-},
-{
 "access": "yes",
-"d": 210,
+"d": 24,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 223,
+"d": 92,
 "fee": "no",
 "parking": "street_side"
 },
 {
-"d": 265,
+"access": "yes",
+"d": 94,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 125,
+"fee": "no",
 "parking": "surface"
 }
 ],
@@ -33637,7 +33630,13 @@
 "cafe-uryuk-riviera": {
 "parking": [
 {
-"d": 290
+"d": 280
+},
+{
+"access": "customers",
+"d": 293,
+"fee": "no",
+"parking": "surface"
 }
 ],
 "poi": {
@@ -35131,21 +35130,24 @@
 },
 "cafe-yakitoriya-khorosho": {
 "building_addr": "Хорошёвское шоссе, 27",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 37
+}
+],
 "parking": [
 {
-"d": 89,
-"parking": "street_side"
+"d": 149
 },
 {
-"d": 89,
-"parking": "street_side"
+"d": 201
 },
 {
-"d": 98,
-"parking": "street_side"
+"d": 263
 },
 {
-"d": 98,
+"d": 283,
 "parking": "street_side"
 }
 ]
@@ -35377,18 +35379,18 @@
 "cafe-yakitoriya-moskovsky": {
 "parking": [
 {
-"d": 37,
+"d": 31
+},
+{
+"d": 82,
+"name": "4"
+},
+{
+"d": 91,
 "name": "3"
 },
 {
-"d": 56
-},
-{
-"d": 93
-},
-{
-"d": 139,
-"name": "4"
+"d": 148
 }
 ],
 "poi": {
@@ -35627,33 +35629,33 @@
 "building_addr": "Красная улица, 22А",
 "building_entrances": [
 {
-"d": 33,
+"d": 1355,
 "entrance": "yes"
 },
 {
-"d": 74,
+"d": 1454,
 "entrance": "yes"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 35
 }
 ],
 "parking": [
 {
-"access": "yes",
-"d": 45,
-"parking": "surface"
+"access": "customers",
+"d": 57
 },
 {
-"d": 105
+"d": 82
 },
 {
-"access": "yes",
-"d": 112,
-"fee": "no",
-"parking": "surface"
+"d": 95
 },
 {
-"access": "yes",
-"d": 120,
-"parking": "surface"
+"d": 98
 }
 ],
 "poi": {
