@@ -257,7 +257,7 @@ def convert_row(raw, problems):
     return p
 
 
-def apply_precise_points(places):
+def apply_precise_points(places, manual_ids=()):
     """Точные точки из автоматических сверок (auto/osm-address.json — дом по адресу из OSM, auto/geo-yandex.json —
     организации Яндекса). Применяются, только если в таблице точку с тех пор не меняли (src совпадает) и место
     не исправляли вручную по сообщению пользователя (ручная правка важнее)."""
@@ -265,7 +265,7 @@ def apply_precise_points(places):
     def load(name):
         path = os.path.join(root, "auto", name)
         return json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {}
-    manual = set()
+    manual = set(manual_ids)          # «Точность координат = точно (вручную)» в таблице — точку не трогать никогда
     for r in (load("reports.json") or []):
         if r.get("location") or re.search(r"точк|здани|вход|подъезд|метк|не там|дом", (r.get("text") or "").lower()):
             if r.get("place_id"): manual.add(r["place_id"])
@@ -407,7 +407,8 @@ def main():
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     json.dump({p["id"]: [p["lat"], p["lon"]] for p in places if p.get("lat") is not None},
               open(os.path.join(root, "auto", "table-coords.json"), "w"), separators=(",", ":"))
-    apply_precise_points(places)
+    manual_ids = {clean(r.get("id")) for r in rows if "вручную" in str(r.get("Точность координат") or "").lower()}
+    apply_precise_points(places, manual_ids)
     apply_contacts(places, spam, spam_domains)
     for p in places:
         clean_texts(p)
