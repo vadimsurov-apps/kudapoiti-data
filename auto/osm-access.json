@@ -18735,27 +18735,27 @@
 "gates": [
 {
 "barrier": "lift_gate",
-"d": 56
+"d": 55
 }
 ],
 "parking": [
 {
 "access": "yes",
-"d": 35,
+"d": 48,
 "parking": "surface"
 },
 {
-"d": 145
+"d": 103
 },
 {
-"d": 187,
+"d": 148,
 "parking": "street_side"
 },
 {
 "access": "yes",
 "capacity": "75",
 "capacity:disabled": "9",
-"d": 209,
+"d": 174,
 "fee": "no",
 "parking": "surface"
 }
@@ -20246,48 +20246,42 @@
 "building_addr": "Первомайская улица, 42",
 "building_entrances": [
 {
-"d": 54,
+"d": 548,
+"entrance": "yes"
+},
+{
+"d": 559,
 "entrance": "main"
 },
 {
-"d": 78,
+"d": 671,
 "entrance": "yes"
 },
 {
-"d": 78,
-"entrance": "yes"
-},
-{
-"d": 81,
+"d": 673,
 "entrance": "main"
 }
 ],
 "parking": [
 {
-"access": "yes",
-"d": 41,
-"fee": "yes",
-"parking": "underground"
+"d": 62
 },
 {
-"access": "customers",
-"d": 99,
-"fee": "no",
-"parking": "surface"
+"d": 90
 },
 {
 "access": "yes",
-"capacity": "7",
-"d": 106,
+"d": 114,
 "fee": "yes",
 "operator": "ГКУ АМПП",
-"parking": "surface",
-"supervised": "no"
+"parking": "street_side"
 },
 {
-"d": 115,
+"access": "yes",
+"d": 189,
 "fee": "yes",
-"parking": "street_side"
+"parking": "surface",
+"supervised": "no"
 }
 ],
 "poi": {
@@ -20298,18 +20292,18 @@
 "cafe-khachapuri-moskovsky": {
 "parking": [
 {
-"d": 37,
+"d": 31
+},
+{
+"d": 82,
+"name": "4"
+},
+{
+"d": 91,
 "name": "3"
 },
 {
-"d": 56
-},
-{
-"d": 93
-},
-{
-"d": 139,
-"name": "4"
+"d": 148
 }
 ],
 "poi": {
@@ -21073,23 +21067,23 @@
 "parking": [
 {
 "capacity": "5000",
-"d": 41,
+"d": 6,
 "fee": "yes",
 "parking": "multi-storey"
 },
 {
 "access": "yes",
-"d": 127,
+"d": 90,
 "fee": "yes"
 },
 {
 "access": "yes",
-"d": 128,
+"d": 92,
 "fee": "yes"
 },
 {
 "access": "yes",
-"d": 130,
+"d": 108,
 "fee": "yes"
 }
 ],
@@ -22196,49 +22190,35 @@
 {
 "access": "private",
 "addr:flats": "1-64",
-"d": 191,
+"d": 28,
 "entrance": "staircase",
 "ref": "1"
-}
-],
-"gates": [
-{
-"barrier": "gate",
-"d": 33
-},
-{
-"barrier": "gate",
-"d": 39
-},
-{
-"barrier": "gate",
-"d": 56
 }
 ],
 "parking": [
 {
 "access": "yes",
-"capacity": "8",
-"d": 160,
-"fee": "no",
-"parking": "street_side"
-},
-{
-"access": "yes",
 "capacity": "4",
-"d": 175,
+"d": 25,
 "fee": "no",
 "parking": "street_side"
 },
 {
 "access": "yes",
-"d": 214,
+"d": 65,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 222,
+"capacity": "8",
+"d": 71,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 75,
 "fee": "no",
 "parking": "surface"
 }
@@ -22461,51 +22441,48 @@
 "building_entrances": [
 {
 "access": "private",
-"d": 399,
-"entrance": "staircase",
-"ref": "4"
-},
-{
-"access": "private",
-"d": 412,
+"d": 10,
 "entrance": "staircase",
 "ref": "3"
 },
 {
 "access": "private",
-"d": 426,
+"d": 11,
 "entrance": "staircase",
 "ref": "2"
 },
 {
 "access": "private",
-"d": 439,
+"d": 22,
 "entrance": "staircase",
 "ref": "1"
-}
-],
-"gates": [
+},
 {
-"barrier": "gate",
-"d": 28
+"access": "private",
+"d": 27,
+"entrance": "staircase",
+"ref": "4"
 }
 ],
 "parking": [
 {
-"d": 62,
+"d": 35,
 "parking": "street_side"
 },
 {
-"d": 64,
-"parking": "street_side"
-},
-{
-"d": 67,
+"capacity": "10",
+"d": 49,
 "parking": "surface"
 },
 {
-"d": 83,
+"capacity": "18",
+"d": 49,
 "parking": "street_side"
+},
+{
+"capacity": "9",
+"d": 76,
+"parking": "surface"
 }
 ],
 "poi": {
@@ -23420,23 +23397,44 @@
 ]
 },
 "cafe-malinovka-sokolniki": {
+"gates": [
+{
+"barrier": "gate",
+"d": 32
+},
+{
+"barrier": "gate",
+"d": 37
+},
+{
+"barrier": "gate",
+"d": 47
+},
+{
+"access": "private",
+"barrier": "lift_gate",
+"d": 47
+}
+],
 "parking": [
 {
-"d": 73
-},
-{
-"d": 74
-},
-{
 "access": "customers",
-"d": 151,
-"parking": "surface"
-},
-{
-"access": "customers",
-"d": 157,
+"d": 87,
 "fee": "no",
 "parking": "surface"
+},
+{
+"d": 100
+},
+{
+"access": "yes",
+"capacity": "55",
+"d": 115,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 126
 }
 ]
 },
@@ -24847,27 +24845,43 @@
 "building_addr": "проспект Будённого, 33",
 "gates": [
 {
+"access": "private",
 "barrier": "gate",
-"d": 19
+"d": 38
+},
+{
+"access": "yes",
+"barrier": "gate",
+"d": 39
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 54
 },
 {
 "barrier": "gate",
-"d": 34
+"d": 57
 }
 ],
 "parking": [
 {
-"d": 154,
-"fee": "no"
+"d": 98,
+"parking": "surface"
+},
+{
+"d": 219,
+"parking": "street_side"
 },
 {
 "access": "yes",
-"d": 230,
+"d": 281,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 281
+"d": 293,
+"fee": "no"
 }
 ],
 "poi": {
@@ -27852,12 +27866,12 @@
 "building_entrances": [
 {
 "access": "customers",
-"d": 19,
+"d": 48,
 "entrance": "yes"
 },
 {
 "access": "customers",
-"d": 76,
+"d": 63,
 "entrance": "yes"
 }
 ],
@@ -27865,23 +27879,24 @@
 {
 "capacity": "47",
 "capacity:disabled": "5",
-"d": 71,
+"d": 117,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 161,
+"d": 221,
 "fee": "yes",
 "parking": "surface"
 },
 {
-"d": 200,
+"capacity": "10",
+"d": 237,
 "parking": "surface"
 },
 {
-"capacity": "10",
-"d": 249,
+"capacity": "5",
+"d": 242,
 "parking": "street_side"
 }
 ]
@@ -29338,20 +29353,26 @@
 }
 },
 "cafe-pizzamento-tsaritsyno": {
+"gates": [
+{
+"barrier": "gate",
+"d": 55
+}
+],
 "parking": [
 {
-"d": 67
+"d": 55
 },
 {
-"d": 70
+"d": 64
 },
 {
-"d": 129,
+"d": 99
+},
+{
+"d": 117,
 "fee": "yes",
 "parking": "surface"
-},
-{
-"d": 136
 }
 ],
 "poi": {
@@ -33097,47 +33118,40 @@
 "building_entrances": [
 {
 "access": "yes",
-"d": 340,
+"d": 0,
 "entrance": "shop"
 }
 ],
 "gates": [
 {
-"barrier": "gate",
-"d": 40
-},
-{
 "barrier": "lift_gate",
-"d": 54
-},
-{
-"barrier": "lift_gate",
-"d": 60
+"d": 51
 }
 ],
 "parking": [
 {
-"capacity": "111",
-"capacity:disabled": "13",
-"d": 62,
-"fee": "yes",
-"parking": "surface"
-},
-{
 "access": "yes",
-"d": 165,
+"d": 89,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 215,
+"d": 189,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 216,
-"parking": "street_side"
+"access": "yes",
+"d": 248,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 253,
+"fee": "no",
+"parking": "surface"
 }
 ],
 "poi": {
@@ -34714,18 +34728,24 @@
 },
 "cafe-torsher-vasiltsovsky": {
 "building_addr": "улица Васильцовский Стан, 5 к1",
+"gates": [
+{
+"barrier": "gate",
+"d": 47
+}
+],
 "parking": [
 {
-"d": 56
+"d": 135
 },
 {
-"d": 99
+"d": 243
 },
 {
-"d": 112
+"d": 247
 },
 {
-"d": 138
+"d": 251
 }
 ],
 "poi": {
@@ -34895,19 +34915,20 @@
 "building_addr": "Небесный бульвар, 1 к1",
 "parking": [
 {
+"d": 141,
+"parking": "street_side"
+},
+{
+"d": 143,
+"parking": "street_side"
+},
+{
 "d": 147,
-"parking": "multi-storey"
+"parking": "street_side"
 },
 {
-"d": 191,
-"parking": "surface"
-},
-{
-"d": 214,
-"parking": "surface"
-},
-{
-"d": 252
+"d": 156,
+"parking": "street_side"
 }
 ]
 },
