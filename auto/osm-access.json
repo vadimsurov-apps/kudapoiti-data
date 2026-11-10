@@ -13815,7 +13815,11 @@
 {
 "access": "no",
 "barrier": "lift_gate",
-"d": 33
+"d": 22
+},
+{
+"barrier": "lift_gate",
+"d": 60
 }
 ],
 "parking": [
@@ -13824,16 +13828,15 @@
 "parking": "street_side"
 },
 {
-"d": 20,
+"d": 37,
 "parking": "street_side"
 },
 {
-"d": 53,
+"d": 38,
 "parking": "street_side"
 },
 {
-"d": 104,
-"parking": "street_side"
+"d": 99
 }
 ]
 },
@@ -29981,7 +29984,7 @@
 "building_addr": "улица Ленина, 8",
 "building_entrances": [
 {
-"d": 0,
+"d": 66,
 "entrance": "main"
 }
 ],
@@ -29989,27 +29992,21 @@
 {
 "access": "private",
 "barrier": "gate",
-"d": 30
-},
-{
-"access": "private",
-"barrier": "gate",
-"d": 34
+"d": 59
 }
 ],
 "parking": [
 {
-"d": 50
+"d": 32
 },
 {
-"d": 55
+"d": 86
 },
 {
-"access": "yes",
-"d": 167
+"d": 134
 },
 {
-"d": 174
+"d": 159
 }
 ],
 "poi": {
@@ -36795,21 +36792,20 @@
 "cafe-up-sushi-odintsovo": {
 "parking": [
 {
-"d": 41,
+"d": 35,
 "parking": "street_side"
 },
 {
-"d": 48,
+"d": 55,
 "parking": "street_side"
 },
 {
-"d": 80,
+"d": 87,
 "parking": "street_side"
 },
 {
-"access": "yes",
-"d": 104,
-"parking": "surface"
+"d": 116,
+"parking": "street_side"
 }
 ],
 "poi": {
@@ -41198,6 +41194,15 @@
 "contact:phone": "+7-499-2836381",
 "contact:website": "https://www.volosozhar.ru/"
 }
+},
+"champion-tennis-lobachevskogo": {
+"parking": [
+{
+"access": "customers",
+"d": 196,
+"fee": "yes"
+}
+]
 },
 "champion-tennis-novaya-doroga": {
 "parking": [
@@ -80608,6 +80613,34 @@
 "fee": "yes",
 "operator": "ГКУ АМПП",
 "parking": "lane"
+}
+]
+},
+"kuptsov-tennis-nemchinovka": {
+"parking": [
+{
+"access": "yes",
+"d": 105,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity": "10",
+"d": 141,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"capacity": "6",
+"d": 147,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 289,
+"parking": "street_side"
 }
 ]
 },
@@ -126515,6 +126548,23 @@
 "d": 191,
 "fee": "no",
 "parking": "lane"
+}
+]
+},
+"tennis-capital-michurinsky": {
+"building_addr": "Мичуринский проспект, 6 с15",
+"parking": [
+{
+"d": 124
+},
+{
+"d": 146
+},
+{
+"d": 154
+},
+{
+"d": 177
 }
 ]
 },
