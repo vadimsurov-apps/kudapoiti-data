@@ -217,6 +217,12 @@ def convert_row(raw, problems):
     if p.get("cats") and ({"цирк", "театр зверей"} & set(p.get("type") or []) or any(k in (p.get("name") or "").lower() for k in ("цирк", "театр кошек"))):
         p["cats"] = ["circus"] + [c for c in p["cats"] if c not in ("shows", "circus")]
 
+    # Детская комната (10.11, категория kidsroom): по типу и «Плюсу» — у кафе, ТЦ, кинотеатров и т.п.
+    kr_text = (" ".join(p.get("type") or []) + " " + (p.get("plus") or "")).lower()
+    if p.get("cats") is not None and "kidsroom" not in p["cats"] and re.search(r"детск\w* (игров\w* )?комнат|игров\w* комнат|детск\w* игров\w*(?! площадк)", kr_text) \
+            and not ({"museums", "parks", "tours"} & set(p["cats"]) and not re.search(r"игров\w* комнат|детск\w* игров", kr_text)):
+        p["cats"] = p["cats"] + ["kidsroom"]
+
     # Сезон «11-03» -> [11, 12, 1, 2, 3]; пусто -> круглый год
     p["season_months"] = None
     if p.get("season"):
