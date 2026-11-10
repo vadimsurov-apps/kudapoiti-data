@@ -12,6 +12,12 @@ if not TOKEN:
     print("нет секрета TELEGRAM_BOT_TOKEN — бот ещё не подключён"); sys.exit(0)
 API = f"https://api.telegram.org/bot{TOKEN}/"
 REP, STATE, ANS = "auto/reports.json", "auto/reports-state.json", "auto/report-answers.json"
+# Проверяющие (Вадим 10.11: помощница лично проверяет карточки): {chat_id: имя}. Их отметки «Всё верно» — в
+# auto/human-checks.json (считаются подтверждением карточки), их правки — доверенные (trusted) для робота-исправителя.
+CHECKERS, CHECKS = "auto/checkers.json", "auto/human-checks.json"
+CHECK_KB = json.dumps({"keyboard": [[{"text": "▶️ Проверять карточки"}]], "resize_keyboard": True, "is_persistent": True})
+PRIORITY = ["food", "kidsroom", "playcenters", "pools", "dance", "martial", "gymnastics", "football", "ballgames",
+            "sport", "trampolines", "quests", "masterclass", "museums", "shows", "animals", "parks"]
 MINUTES = int(sys.argv[sys.argv.index("--minutes") + 1]) if "--minutes" in sys.argv else 0
 
 SITE = "https://vadimsurov-apps.github.io/kudapoiti-data/"
@@ -40,6 +46,115 @@ def say(chat, text, kb=None):
     except Exception as e: print("send:", e)
 
 
+def call_quiet(method, **params):
+    try: return call(method, **params)
+    except Exception as e: print(method, e)
+
+
+def checkers():
+    return json.load(open(CHECKERS)) if os.path.exists(CHECKERS) else {}
+
+
+def load_checks():
+    return json.load(open(CHECKS)) if os.path.exists(CHECKS) else []
+
+
+def all_places():
+    return json.load(open("places.json"))["places"]
+
+
+def next_place(chat, state, checks):
+    """Следующая карточка: на карте, не проверена людьми за 30 дней, не пропущена этим человеком; важные категории первыми."""
+    fresh = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 30 * 86400))
+    done = {c["place_id"] for c in checks if c.get("date", "") >= fresh}
+    skipped = set(state.setdefault("skipped", {}).get(chat, []))
+    def rank(p):
+        cats = p.get("cats") or []
+        return min([PRIORITY.index(c) for c in cats if c in PRIORITY] or [len(PRIORITY)])
+    left = [p for p in all_places() if p["id"] not in done and p["id"] not in skipped]
+    left.sort(key=rank)
+    return (left[0] if left else None), len(left)
+
+
+def card_text(p, left):
+    q = lambda v: v if v not in (None, "", []) else "—"
+    food = "food" in (p.get("cats") or [])
+    if food:
+        price = f"средний чек ≈ {p['price_adult']} ₽" if p.get("price_adult") else "—"
+    else:
+        parts = []
+        if p.get("price_child") is not None: parts.append(f"детский {p['price_child']} ₽")
+        if p.get("price_adult") is not None: parts.append(f"взрослый {p['price_adult']} ₽")
+        price = ", ".join(parts) or "—"
+    lines = [f"🔎 Проверка карточки (осталось {left})", "", (p['name'] if "«" in p['name'] else f"«{p['name']}»"), f"Тип: {q(', '.join(p.get('type') or []))}",
+             f"📍 Адрес: {q(p.get('address'))}", f"🚪 Как найти: {q(p.get('how_to_find'))}",
+             f"🕒 Часы: {q(p.get('hours'))}", f"💳 Цена: {price}", f"📞 Телефон: {q(p.get('phone'))}",
+             f"🌐 Сайт: {q(p.get('url'))}", f"👶 Возраст: {q(p.get('age_min'))}–{q(p.get('age_max'))} лет"]
+    if "kidsroom" in (p.get("cats") or []): lines.append("🧸 Детская комната: есть")
+    if p.get("plus"): lines.append(f"👍 {p['plus']}")
+    if p.get("minus"): lines.append(f"⚠️ {p['minus']}")
+    lines += ["", "Сверьте с Яндекс Картами / сайтом / звонком. «Наша точка» — где стоит метка в приложении: она должна быть ровно на входе."]
+    return "\n".join(lines)
+
+
+def card_kb(p):
+    q = urllib.parse.quote
+    row1 = [{"text": "📍 Наша точка", "url": f"https://yandex.ru/maps/?pt={p['lon']},{p['lat']}&z=18&l=map"},
+            {"text": "🗺 Найти в Яндексе", "url": "https://yandex.ru/maps/?text=" + q(f"{p['name']} {p.get('address') or ''}")}]
+    rows = [row1]
+    if p.get("url"): rows.append([{"text": "🌐 Сайт места", "url": p["url"]}])
+    rows.append([{"text": "✅ Всё верно", "callback_data": f"ok:{p['id']}"[:64]},
+                 {"text": "✏️ Есть ошибка", "callback_data": f"bad:{p['id']}"[:64]}])
+    rows.append([{"text": "⏭ Пропустить", "callback_data": f"skip:{p['id']}"[:64]}])
+    return json.dumps({"inline_keyboard": rows})
+
+
+def send_card(chat, state, checks):
+    p, left = next_place(chat, state, checks)
+    if not p:
+        say(chat, "🎉 Все карточки на карте проверены за последние 30 дней. Спасибо!"); return
+    say(chat, card_text(p, left), card_kb(p))
+
+
+def handle_callback(cb, places, reports, state, checks):
+    chat = str(cb["message"]["chat"]["id"]); data = cb.get("data", "")
+    names = checkers()
+    call_quiet("answerCallbackQuery", callback_query_id=cb["id"])
+    if chat not in names or ":" not in data: return False
+    act, pid = data.split(":", 1)
+    mid = cb["message"]["message_id"]
+    if act == "ok":
+        checks.append({"place_id": pid, "by": names[chat], "chat": chat, "ok": True,
+                       "date": time.strftime("%Y-%m-%d"), "time": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())})
+        call_quiet("editMessageReplyMarkup", chat_id=chat, message_id=mid,
+                   reply_markup=json.dumps({"inline_keyboard": [[{"text": "✅ Проверено — всё верно", "callback_data": "noop:x"}]]}))
+        send_card(chat, state, checks); return True
+    if act == "bad":
+        state["chats"][chat] = pid; state.setdefault("fixing", {})[chat] = pid
+        call_quiet("editMessageReplyMarkup", chat_id=chat, message_id=mid,
+                   reply_markup=json.dumps({"inline_keyboard": [[{"text": "✏️ Пишу, что не так…", "callback_data": "noop:x"}]]}))
+        say(chat, f"✍️ «{places.get(pid, pid)}»: напишите одним сообщением, что не так и как правильно "
+                  "(часы, цена, телефон, вход, этаж…). Метка не на входе — пришлите геопозицию входа: 📎 → «Геопозиция». "
+                  "Можно фото вывески.")
+        return True
+    if act == "skip":
+        state.setdefault("skipped", {}).setdefault(chat, []).append(pid)
+        call_quiet("editMessageReplyMarkup", chat_id=chat, message_id=mid,
+                   reply_markup=json.dumps({"inline_keyboard": [[{"text": "⏭ Пропущено", "callback_data": "noop:x"}]]}))
+        send_card(chat, state, checks); return True
+    return False
+
+
+def greet_checkers(state):
+    for chat, name in checkers().items():
+        if chat not in state.setdefault("greeted", []):
+            say(chat, f"👋 {name}, вы подключены к проверке карточек «Куда пойти с детьми».\n\n"
+                      "Нажмите «▶️ Проверять карточки» внизу — бот пришлёт карточку места. Сверьте её с Яндекс Картами, "
+                      "сайтом или звонком и нажмите «✅ Всё верно» или «✏️ Есть ошибка». После ответа сразу придёт "
+                      "следующая. Ваши проверки сразу засчитываются, а исправления вносятся в приложение.", CHECK_KB)
+            state["greeted"].append(chat)
+
+
 def git(*a):
     return subprocess.run(["git", *a], capture_output=True, text=True)
 
@@ -54,7 +169,8 @@ def load():
 def save(reports, state, msg):
     json.dump(reports, open(REP, "w"), ensure_ascii=False, indent=1)
     json.dump(state, open(STATE, "w"), ensure_ascii=False, indent=1)
-    git("add", REP, STATE, "auto/report-photos")
+    json.dump(CHECKS_MEM, open(CHECKS, "w"), ensure_ascii=False, indent=0)
+    git("add", REP, STATE, CHECKS, "auto/report-photos")
     if git("diff", "--cached", "--quiet").returncode == 0: return
     git("commit", "-q", "-m", msg)
     for _ in range(5):
@@ -67,6 +183,9 @@ def handle(u, places, reports, state):
     m = u.get("message") or {}
     chat = str(m.get("chat", {}).get("id")); text = (m.get("text") or m.get("caption") or "").strip()
     if not chat or chat == "None": return False
+    names = checkers()
+    if chat in names and (text in ("▶️ Проверять карточки", "/check") or text.startswith("▶️")):
+        send_card(chat, state, CHECKS_MEM); return True
     if text.startswith("/start"):
         arg = text[6:].strip()
         pid = arg[2:] if arg.startswith("e_") else None
@@ -96,7 +215,12 @@ def handle(u, places, reports, state):
             print("photo:", e); photo_file = None
     reports.append({"id": str(u["update_id"]), "date": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(m.get("date", 0))),
                     "chat": chat, "place_id": pid, "place": places.get(pid), "text": text, "photo": photo,
-                    "photo_file": photo_file, "location": location, "status": "new"})
+                    "photo_file": photo_file, "location": location, "status": "new",
+                    **({"trusted": True, "by": names[chat]} if chat in names else {})})
+    if chat in names and state.get("fixing", {}).pop(chat, None):
+        say(chat, "Спасибо, записали: исправим и отметим. Следующая карточка 👇")
+        send_card(chat, state, CHECKS_MEM)
+        return True
     say(chat, DONE)
     return True
 
@@ -126,27 +250,37 @@ def setup():
         print("описание:", e)
 
 
+CHECKS_MEM = []
+
+
 def main():
+    global CHECKS_MEM
     setup()
+    CHECKS_MEM = load_checks()
     deadline = time.time() + MINUTES * 60
     places, reports, state = load()
+    greet_checkers(state)
     last_pull = 0
     while True:
         try:
             ups = call("getUpdates", http_timeout=70, offset=state["offset"], timeout=50 if MINUTES else 0,
-                       allowed_updates='["message"]')
+                       allowed_updates='["message","callback_query"]')
         except Exception as e:
             print("getUpdates:", e); time.sleep(5); ups = []
         new = False
         for u in ups:
             state["offset"] = u["update_id"] + 1
-            new |= handle(u, places, reports, state)
+            if u.get("callback_query"):
+                new |= handle_callback(u["callback_query"], places, reports, state, CHECKS_MEM)
+            else:
+                new |= handle(u, places, reports, state)
         if ups:
             save(reports, state, "Сообщения об ошибках")
         if time.time() - last_pull > 60 or not MINUTES:
             git("pull", "-q", "--rebase", "-X", "theirs", "origin", "main")
             # своё состояние (reports/state) держим в памяти — оно новее; после pull свежие только места и ответы робота
             places = load()[0]
+            greet_checkers(state)
             if answers(reports):
                 save(reports, state, "Ответы на сообщения об ошибках")
             last_pull = time.time()

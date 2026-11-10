@@ -25,6 +25,11 @@ def main():
     ver, contacts, acc = J("auto/verified.json"), J("auto/contacts.json"), J("auto/access-reviewed.json")
     geo, addr = J("auto/geocode-report.json"), J("auto/osm-address.json")
     pages = J("auto/pages/index.json")
+    # проверки людьми (бот, кнопка «✅ Всё верно», Вадим 10.11): карточка подтверждена целиком на 30 дней
+    human = {}
+    for c in J("auto/human-checks.json", []):
+        if c.get("ok") and c.get("date", "") >= ago(30):
+            human[c["place_id"]] = max(human.get(c["place_id"], ""), c["date"])
     ok_hosts = {urlparse(v.get("url", "")).netloc.replace("www.", "") for v in pages.values() if v.get("ok")}
     acc_txt = {}
     files = [os.path.join(ROOT, "data", "kuda-poiti-mesta.xlsx")] + [os.path.join(ROOT, "data", "parts", f) for f in sorted(os.listdir(os.path.join(ROOT, "data", "parts"))) if f.endswith(".xlsx")]
@@ -75,6 +80,8 @@ def main():
         }
         if not food or p.get("price_adult"):
             checks["цена"] = fresh(pid, "price_child", 30) or fresh(pid, "price_adult", 30)
+        if pid in human:
+            checks = {k: True for k in checks}
         for k, v in checks.items():
             per[k][1] += 1; per[k][0] += v
         n_fields += len(checks); n_ok += sum(checks.values())
@@ -87,7 +94,10 @@ def main():
                    "процент_точно_до_входа": pct(lv["вход"], total)},
          "достоверность_информации_на_карте_%": pct(n_ok, n_fields),
          "полностью_проверенных_карточек": full, "полностью_проверенных_%": pct(full, len(shown)),
-         "по_полям_%": {k: pct(a, b) for k, (a, b) in per.items()}}
+         "по_полям_%": {k: pct(a, b) for k, (a, b) in per.items()},
+         "проверено_людьми_за_30_дней": len(human),
+         "проверено_людьми_сегодня": {n: sum(1 for c in J("auto/human-checks.json", []) if c.get("date") == today.isoformat() and c.get("by") == n)
+                                      for n in sorted({c.get("by") for c in J("auto/human-checks.json", [])})}}
     json.dump(m, open(os.path.join(ROOT, "auto", "metrics.json"), "w"), ensure_ascii=False, indent=1)
     hist = J("auto/metrics-history.json")
     hist[today.isoformat()] = m
