@@ -19229,42 +19229,42 @@
 {
 "access": "private",
 "barrier": "gate",
-"d": 22
+"d": 28
+},
+{
+"barrier": "lift_gate",
+"d": 39
 },
 {
 "access": "private",
 "barrier": "gate",
-"d": 31
+"d": 42
 },
 {
-"barrier": "lift_gate",
-"d": 33
-},
-{
-"access": "private;customers",
-"barrier": "lift_gate",
-"d": 45
+"access": "no",
+"barrier": "gate",
+"d": 44
 }
 ],
 "parking": [
 {
 "access": "yes",
-"d": 25,
+"d": 13,
 "fee": "no",
 "parking": "surface"
 },
 {
+"d": 37
+},
+{
 "access": "customers",
-"d": 26,
+"d": 40,
 "name": "ЖСК Высокий-2",
 "parking": "surface"
 },
 {
-"d": 44
-},
-{
 "access": "private;customers",
-"d": 45
+"d": 49
 }
 ]
 },
@@ -19521,7 +19521,7 @@
 "parking": [
 {
 "access": "yes",
-"d": 284,
+"d": 179,
 "fee": "no",
 "maxstay": "120 minutes",
 "parking": "surface"
@@ -25260,19 +25260,25 @@
 "building_addr": "Кировоградская улица, 13А",
 "building_entrances": [
 {
-"d": 0,
+"d": 144,
 "entrance": "main"
 },
 {
-"d": 83,
+"d": 198,
 "entrance": "exit"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 57
 }
 ],
 "parking": [
 {
 "access": "yes",
 "capacity": "2600",
-"d": 36,
+"d": 115,
 "fee": "yes",
 "maxstay": "2 hours",
 "operator": "Columbus",
@@ -25280,25 +25286,21 @@
 "supervised": "yes"
 },
 {
+"d": 152
+},
+{
 "access": "permissive",
 "capacity": "8",
 "capacity:disabled": "8",
-"d": 65,
+"d": 154,
 "fee": "no",
 "parking": "surface"
 },
 {
-"access": "permit",
-"d": 120,
+"access": "customers",
+"d": 202,
 "fee": "yes",
 "parking": "surface"
-},
-{
-"capacity": "100",
-"d": 134,
-"fee": "no",
-"parking": "surface",
-"supervised": "no"
 }
 ],
 "poi": {
@@ -30592,7 +30594,16 @@
 "building_addr": "Святоозёрская улица, 18",
 "parking": [
 {
-"d": 254
+"d": 172,
+"parking": "street_side"
+},
+{
+"capacity": "7",
+"d": 234
+},
+{
+"d": 237,
+"parking": "street_side"
 }
 ]
 },
@@ -32537,22 +32548,20 @@
 "cafe-rybnaya-manufaktura-krasny-kit": {
 "parking": [
 {
-"d": 110,
+"d": 56,
 "fee": "yes",
 "parking": "surface"
 },
 {
-"d": 136,
+"d": 104
+},
+{
+"d": 137,
 "fee": "yes",
 "parking": "surface"
 },
 {
-"d": 148,
-"fee": "yes",
-"parking": "multi-storey"
-},
-{
-"d": 151
+"d": 147
 }
 ]
 },
@@ -33944,30 +33953,35 @@
 "building_addr": "Советская площадь, 2",
 "building_entrances": [
 {
-"d": 0,
+"d": 290,
 "entrance": "main"
 }
 ],
 "parking": [
 {
-"access": "customers",
-"d": 24,
+"access": "yes",
+"d": 44,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 50,
+"d": 80,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"access": "yes",
+"d": 166,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 80
-},
-{
-"capacity": "46",
-"d": 98,
-"parking": "street_side"
+"access": "yes",
+"d": 169,
+"fee": "no",
+"parking": "surface"
 }
 ],
 "poi": {
