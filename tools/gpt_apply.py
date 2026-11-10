@@ -71,6 +71,8 @@ def main():
         if not p or p.get("status") == "closed":
             continue
         d = disputes.get(pid) if not disputes.get(pid, {}).get("resolved") else None
+        if d and d.get("applied") and applied.get(pid) == c.get("file"):
+            d = None        # уже применено, остаток ждёт сверщика — не перезаписывать таблицы каждый час
         if applied.get(pid) == c.get("file") and not d:
             continue
         food = "food" in (p.get("cats") or [])
