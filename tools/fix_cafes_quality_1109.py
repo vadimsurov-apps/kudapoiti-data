@@ -96,7 +96,7 @@ def main():
             parts.append(add_src)
         parts.append(MARK)
         ws.cell(row=r, column=col["Источник"]).value = "; ".join(parts)
-        ws.cell(row=r, column=col["Проверено (дата)"]).value = "2026-11-09"
+        ws.cell(row=r, column=col["Проверено (дата)"]).value = __import__("datetime").date.today().isoformat()
         n += 1
     wb.save(SRC)
     left = sum(1 for rr in range(2, ws.max_row + 1) if MARK not in (ws.cell(row=rr, column=col["Источник"]).value or ""))
