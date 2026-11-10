@@ -1,0 +1,35 @@
+name: Приём отчёта ChatGPT из pull request
+# Если ChatGPT положил отчёт через pull request — влить его сам, когда PR от владельца и меняет только gpt/reports/*.json.
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths: ["gpt/reports/**"]
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  merge:
+    if: github.event.pull_request.user.login == 'vadimsurov-apps' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    outputs:
+      merged: ${{ steps.m.outputs.merged }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: "${{ github.event.pull_request.head.sha }}", fetch-depth: 0 }
+      - id: m
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git fetch -q origin main
+          FILES=$(git diff --name-only origin/main...HEAD)
+          echo "$FILES"
+          if echo "$FILES" | grep -qv '^gpt/reports/.*\.json$'; then
+            gh pr comment ${{ github.event.pull_request.number }} --body "В PR есть файлы не из gpt/reports — влить вручную."; exit 0
+          fi
+          for f in $FILES; do python3 -m json.tool "$f" > /dev/null || { gh pr comment ${{ github.event.pull_request.number }} --body "$f — не JSON."; exit 0; }; done
+          gh pr merge ${{ github.event.pull_request.number }} --squash --delete-branch
+          echo "merged=1" >> "$GITHUB_OUTPUT"
+  apply:
+    needs: merge
+    if: needs.merge.outputs.merged == '1'
+    uses: ./.github/workflows/gpt.yml

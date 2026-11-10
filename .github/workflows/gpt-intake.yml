@@ -1,0 +1,48 @@
+name: Приём отчёта ChatGPT из issue
+# ChatGPT (задача по расписанию в облаке) создаёт issue «Отчёт ChatGPT …» с JSON в тексте — если не может положить
+# файл в репозиторий сам. Принимаем ТОЛЬКО от владельца (подключение GitHub в ChatGPT действует от его имени):
+# репозиторий публичный, чужие issue игнорируются.
+on:
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created]
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: gpt-intake
+  cancel-in-progress: false
+jobs:
+  intake:
+    if: >-
+      startsWith(github.event.issue.title, 'Отчёт ChatGPT') &&
+      ((github.event_name == 'issues' && github.event.issue.user.login == 'vadimsurov-apps') ||
+       (github.event_name == 'issue_comment' && github.event.comment.user.login == 'vadimsurov-apps'))
+    runs-on: ubuntu-latest
+    outputs:
+      saved: ${{ steps.save.outputs.saved }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: save
+        env:
+          BODY: ${{ github.event_name == 'issue_comment' && github.event.comment.body || github.event.issue.body }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          printf '%s' "$BODY" > /tmp/body.txt
+          if python3 tools/gpt_intake.py /tmp/body.txt > /tmp/path.txt; then
+            git config user.name "kudapoiti-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add gpt/reports
+            git commit -q -m "Отчёт ChatGPT из issue #${{ github.event.issue.number }}"
+            for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q && break; sleep 10; done
+            gh issue comment ${{ github.event.issue.number }} --body "Принят: $(basename $(cat /tmp/path.txt)). Применение — автоматически."
+            gh issue close ${{ github.event.issue.number }}
+            echo "saved=1" >> "$GITHUB_OUTPUT"
+          else
+            gh issue comment ${{ github.event.issue.number }} --body "Не нашёл JSON отчёта по формату gpt/README.md."
+          fi
+  apply:
+    needs: intake
+    if: needs.intake.outputs.saved == '1'
+    uses: ./.github/workflows/gpt.yml
