@@ -109,7 +109,7 @@ def find_by(p, name, via_address=False):
 
 
 def main():
-    places = json.load(open("places.json"))["places"]
+    places = json.load(open("places-all.json" if __import__("os").path.exists("places-all.json") else "places.json"))["places"]
     path = "auto/geocode-report.json"
     old = json.load(open(path)) if os.path.exists(path) else {}
     only = set(sys.argv[1:])

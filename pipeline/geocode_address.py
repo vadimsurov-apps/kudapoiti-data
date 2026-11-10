@@ -58,7 +58,7 @@ def photon(q, lat, lon):
 
 
 def main():
-    places = json.load(open("places.json"))["places"]
+    places = json.load(open("places-all.json" if __import__("os").path.exists("places-all.json") else "places.json"))["places"]
     rep = json.load(open("auto/geocode-report.json")) if os.path.exists("auto/geocode-report.json") else {}
     path = "auto/address-geocode.json"
     old = json.load(open(path)) if os.path.exists(path) else {}

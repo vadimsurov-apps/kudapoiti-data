@@ -413,13 +413,19 @@ def main():
     for p in places:
         clean_texts(p)
 
-    with open(dst, "w", encoding="utf-8") as f:
-        json.dump({"version": date.today().isoformat(),
-                   "contact_telegram": CONTACT_TELEGRAM or None,
-                   "places": places},
-                  f, ensure_ascii=False, indent=2)
+    # Вадим 10.11: «исключительно точные и проверенные адреса, аватарки прямо на вход» — места без точной точки
+    # (приблизительные координаты, «±2 км») приложению и сайту НЕ показываем. Полный список — places-all.json
+    # (для роботов и конвейеров: дубли, сверка OSM, навигатор); место вернётся на карту, когда точку подтвердят.
+    all_path = os.path.join(os.path.dirname(os.path.abspath(dst)), "places-all.json")
+    shown = [p for p in places if p.get("coord_exact") and p.get("lat") is not None]
+    for path, lst in ((all_path, places), (dst, shown)):
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump({"version": date.today().isoformat(),
+                       "contact_telegram": CONTACT_TELEGRAM or None,
+                       "places": lst},
+                      f, ensure_ascii=False, indent=2)
 
-    print(f"Выгружено мест: {len(places)} -> {dst}")
+    print(f"Выгружено мест: {len(shown)} -> {dst} (скрыто без точной точки: {len(places) - len(shown)}; все — places-all.json)")
     if report:
         print(f"\nМест с проблемами: {len(report)}")
         for name, probs in report:

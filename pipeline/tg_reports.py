@@ -45,7 +45,7 @@ def git(*a):
 
 
 def load():
-    places = {p["id"]: p["name"] for p in json.load(open("places.json"))["places"]}
+    places = {p["id"]: p["name"] for p in json.load(open("places-all.json" if __import__("os").path.exists("places-all.json") else "places.json"))["places"]}
     reports = json.load(open(REP)) if os.path.exists(REP) else []
     state = json.load(open(STATE)) if os.path.exists(STATE) else {"offset": 0, "chats": {}}
     return places, reports, state

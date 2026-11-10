@@ -264,7 +264,7 @@ ALLD = list(DISH)
 
 
 def plan():
-    places = [p for p in json.load(open(os.path.join(ROOT, "places.json")))["places"] if "food" in p["cats"]]
+    places = [p for p in json.load(open(os.path.join(ROOT, "places-all.json")))["places"] if "food" in p["cats"]]
     bundled = set(json.load(open(os.path.join(ROOT, "tools", "bundled_icons.json"))))
     rnd = random.Random(11)
     used, sn, dn, todo = set(), {}, {}, []

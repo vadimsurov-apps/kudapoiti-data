@@ -30,7 +30,7 @@ def overpass(q):
 
 
 def main():
-    places = {p["id"]: p for p in json.load(open("places.json"))["places"]}
+    places = {p["id"]: p for p in json.load(open("places-all.json" if __import__("os").path.exists("places-all.json") else "places.json"))["places"]}
     rep = json.load(open("auto/geocode-report.json"))
     out = {}
     for pid, r in rep.items():

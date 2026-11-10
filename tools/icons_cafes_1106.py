@@ -184,7 +184,7 @@ KEEP = re.compile(r"крендел|печенье с предсказ|тако|�
 
 
 def plan():
-    places = [p for p in json.load(open(os.path.join(ROOT, "places.json")))["places"] if "food" in p["cats"]]
+    places = [p for p in json.load(open(os.path.join(ROOT, "places-all.json")))["places"] if "food" in p["cats"]]
     subj = {}
     for l in open(os.path.join(OUT, "subjects.txt")):
         if " — " in l: k, v = l.rstrip("\n").split(" — ", 1); subj[k] = v

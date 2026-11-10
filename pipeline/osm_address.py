@@ -145,7 +145,7 @@ def main():
         lon, lat = g["coordinates"]
         eg[(int(lat / CELL), int(lon / CELL))].append((lat, lon, t))
 
-    places = json.load(open("places.json"))["places"]
+    places = json.load(open("places-all.json" if __import__("os").path.exists("places-all.json") else "places.json"))["places"]
     tc_path = "auto/table-coords.json" if not globals().get("ROOT") else os.path.join(ROOT, "auto", "table-coords.json")
     if os.path.exists(tc_path):                      # точки из таблиц, без уже применённых уточнений
         tc = json.load(open(tc_path))

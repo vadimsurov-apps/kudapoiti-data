@@ -69,7 +69,7 @@ def dist(a, b, c, d):
 
 def main():
     raw = fetch()
-    curated = json.load(open("places.json"))["places"]
+    curated = json.load(open("places-all.json" if __import__("os").path.exists("places-all.json") else "places.json"))["places"]
     out = []
     for el in raw["elements"]:
         t = el.get("tags", {})

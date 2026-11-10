@@ -149,7 +149,7 @@ if __name__ == "__main__":
     ws = wb["Места"]
     hdr = [c.value for c in ws[1]]
     existing = {ws.cell(row=r, column=1).value for r in range(2, ws.max_row + 1)}
-    allp = json.load(open(os.path.join(ROOT, "places.json")))["places"]
+    allp = json.load(open(os.path.join(ROOT, "places-all.json")))["places"]
     allids = {x["id"] for x in allp}
     ids = [r["id"] for r in ROWS]
     assert len(ids) == len(set(ids)), "повтор id"

@@ -307,7 +307,7 @@ KEEP = ("murena-",)  # мурены уже понятные и смешные
 
 
 def plan():
-    places = [p for p in json.load(open(os.path.join(ROOT, "places.json")))["places"] if "pools" in p["cats"]]
+    places = [p for p in json.load(open(os.path.join(ROOT, "places-all.json")))["places"] if "pools" in p["cats"]]
     bundled = set(json.load(open(os.path.join(ROOT, "tools", "bundled_icons.json"))))
     todo, used, i_cyc, i_mama, i_baby = [], set(), 0, 0, 0
     for p in places:

@@ -66,7 +66,7 @@ if __name__ == "__main__":
     import glob, json, sys
     os.chdir(ROOT)
     D = load_domains(); bad = 0
-    for p in json.load(open("places.json"))["places"]:
+    for p in json.load(open("places-all.json" if __import__("os").path.exists("places-all.json") else "places.json"))["places"]:
         txt = " ".join(str(v) for v in p.values() if isinstance(v, str))
         if is_spam_url(p.get("url"), D) or is_spam_text(txt):
             bad += 1; print("МЕСТО", p["id"], p.get("url"), hits(txt)[:3])

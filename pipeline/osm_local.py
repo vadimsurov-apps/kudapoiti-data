@@ -59,7 +59,7 @@ def main():
         grid.setdefault((int(c[0] / CELL), int(c[1] / CELL)), []).append(o)
     print("объектов OSM с названием:", len(objs), flush=True)
 
-    places = json.load(open("places.json"))["places"]
+    places = json.load(open("places-all.json" if __import__("os").path.exists("places-all.json") else "places.json"))["places"]
     if os.path.exists("auto/table-coords.json"):     # сверяем от точек из таблиц, без уже применённых уточнений
         tc = json.load(open("auto/table-coords.json"))
         for p in places:

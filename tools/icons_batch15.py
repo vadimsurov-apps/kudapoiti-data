@@ -159,7 +159,7 @@ add("safari-park-mozhaysk", "orange",
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__))
-    places = json.load(open(os.path.join(here, "..", "places.json")))["places"]
+    places = json.load(open(os.path.join(here, "..", "places-all.json")))["places"]
     ids = [p["id"] for p in places[721:]]
     assert set(ids) == set(R), (set(ids) - set(R), set(R) - set(ids))
     for pid in ids:

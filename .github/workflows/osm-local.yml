@@ -52,7 +52,7 @@ jobs:
         run: |
           git config user.name "kudapoiti-bot"
           git config user.email "bot@users.noreply.github.com"
-          git checkout -- places.json auto/table-coords.json 2>/dev/null || true
+          git checkout -- places.json places-all.json auto/table-coords.json 2>/dev/null || true
           git add auto/geocode-report.json auto/entrances.json auto/osm-address.json auto/osm-access.json
           git diff --cached --quiet || (git commit -m "Координаты и входы: сверка с выгрузкой OSM" && git pull --rebase -X theirs && git push)
       - name: Пересобрать places.json с новыми точками

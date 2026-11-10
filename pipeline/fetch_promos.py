@@ -120,7 +120,7 @@ def scan(item):
 
 def main():
     items = []
-    for p in json.load(open("places.json"))["places"]:
+    for p in json.load(open("places-all.json" if __import__("os").path.exists("places-all.json") else "places.json"))["places"]:
         if p.get("url"): items.append({"ref": p["id"], "name": p["name"], "url": p["url"].split(" ")[0].strip(";, ")})
     if os.path.exists("auto/candidates.json"):
         for c in json.load(open("auto/candidates.json"))["candidates"]:

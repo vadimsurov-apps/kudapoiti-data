@@ -65,7 +65,7 @@ def around(grid, lat, lon):
 
 
 def main():
-    places = [p for p in json.load(open("places.json"))["places"] if p.get("lat") is not None]
+    places = [p for p in json.load(open("places-all.json" if __import__("os").path.exists("places-all.json") else "places.json"))["places"] if p.get("lat") is not None]
     poi = json.load(open("auto/geocode-report.json")) if os.path.exists("auto/geocode-report.json") else {}
     addr = json.load(open("auto/osm-address.json")) if os.path.exists("auto/osm-address.json") else {}
 

@@ -491,7 +491,7 @@ PREF = {"kitenok": ("whale", None), "kashalot": ("whale", "fountain"), "chaika":
 
 
 def plan():
-    places = [p for p in json.load(open(os.path.join(ROOT, "places.json")))["places"] if "pools" in p["cats"]]
+    places = [p for p in json.load(open(os.path.join(ROOT, "places-all.json")))["places"] if "pools" in p["cats"]]
     bundled = set(json.load(open(os.path.join(ROOT, "tools", "bundled_icons.json"))))
     used_pair, scene_n, hero_n, todo = set(), {}, {}, []
     rnd = random.Random(7)

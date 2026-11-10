@@ -49,7 +49,7 @@ def vectors(ids):
 
 
 def main():
-    places = [p["id"] for p in json.load(open(os.path.join(ROOT, "places.json")))["places"]]
+    places = [p["id"] for p in json.load(open(os.path.join(ROOT, "places-all.json")))["places"]]
     check = sys.argv[1:] or places
     heroes, scenes, old = registry()
     bad = set()

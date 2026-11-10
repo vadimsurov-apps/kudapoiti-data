@@ -182,7 +182,7 @@ add("another-world-odintsovo", "night",
 
 if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__))
-    places = json.load(open(os.path.join(here, "..", "places.json")))["places"]
+    places = json.load(open(os.path.join(here, "..", "places-all.json")))["places"]
     ids = [p["id"] for p in places[691:]]
     assert set(ids) == set(R), (set(ids) - set(R), set(R) - set(ids))
     os.makedirs(os.path.join(here, "svg14"), exist_ok=True)

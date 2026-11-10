@@ -9,7 +9,7 @@ from add_batch14 import metro
 from batch_helpers import P, SRC
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-PLACES = {p["id"]: p for p in json.load(open(os.path.join(ROOT, "places.json")))["places"]}
+PLACES = {p["id"]: p for p in json.load(open(os.path.join(ROOT, "places-all.json")))["places"]}
 DAY = "2026-11-09"
 A1 = "приблизительно, ±1 км (по адресу, уточнить)"
 A2 = "приблизительно, ±2 км (по адресу, уточнить)"

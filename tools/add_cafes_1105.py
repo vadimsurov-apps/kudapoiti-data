@@ -13,7 +13,7 @@ from batch_helpers import P
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 CAND = {x["osm"]: x for x in json.load(open(os.path.join(ROOT, "auto", "candidates.json")))["candidates"]}
-PLACES = {p["id"]: p for p in json.load(open(os.path.join(ROOT, "places.json")))["places"]}
+PLACES = {p["id"]: p for p in json.load(open(os.path.join(ROOT, "places-all.json")))["places"]}
 DAY = "2026-11-05"
 
 

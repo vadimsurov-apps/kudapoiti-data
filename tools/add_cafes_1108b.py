@@ -9,7 +9,7 @@ from batch_helpers import P, SRC
 from cafes_1108b_data import DATA
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-PLACES = {p["id"]: p for p in json.load(open(os.path.join(ROOT, "places.json")))["places"]}
+PLACES = {p["id"]: p for p in json.load(open(os.path.join(ROOT, "places-all.json")))["places"]}
 DAY = "2026-11-08"
 
 

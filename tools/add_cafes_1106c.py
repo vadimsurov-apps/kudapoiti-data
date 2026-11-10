@@ -10,7 +10,7 @@ from add_batch14 import metro, MET
 from batch_helpers import P, SRC
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-PLACES = {p["id"]: p for p in json.load(open(os.path.join(ROOT, "places.json")))["places"]}
+PLACES = {p["id"]: p for p in json.load(open(os.path.join(ROOT, "places-all.json")))["places"]}
 DATA = json.load(open(os.path.join(ROOT, "tools", "cafes_1106c_data.json")))
 STN = {n.lower().replace("ё", "е"): (a, b) for n, a, b in MET}
 DAY = "2026-11-06"
