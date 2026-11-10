@@ -233,7 +233,7 @@ def handle(u, places, reports, state):
     return True
 
 
-def answers(reports):
+def answers(reports, state=None):
     a = json.load(open(ANS)) if os.path.exists(ANS) else {}
     changed = False
     for r in reports:
@@ -243,6 +243,14 @@ def answers(reports):
         if r.get("status") in ("fixed", "rejected") and not r.get("notified"):
             head = "✅ Исправили, спасибо! " if r["status"] == "fixed" else "🔎 Проверили. "
             say(r["chat"], head + (r.get("answer") or "")); r["notified"] = True; changed = True
+        # 10.11 (Вадим): правку не подтвердили по источникам — спрашиваем, где это видно; ответ пойдёт к тому же месту
+        if r.get("status") == "need_source" and not r.get("notified"):
+            say(r["chat"], "🔎 Пока не нашли подтверждения: " + (r.get("answer") or "") +
+                "\n\nПодскажите, пожалуйста, где это видно — ссылку на сайт/страницу места, скриншот или фото. "
+                "Ответьте следующим сообщением — оно прикрепится к этому месту.")
+            if state is not None and r.get("place_id"):
+                state.setdefault("chats", {})[r["chat"]] = r["place_id"]
+            r["notified"] = True; changed = True
     return changed
 
 
@@ -289,7 +297,7 @@ def main():
             # своё состояние (reports/state) держим в памяти — оно новее; после pull свежие только места и ответы робота
             places = load()[0]
             greet_checkers(state)
-            if answers(reports):
+            if answers(reports, state):
                 save(reports, state, "Ответы на сообщения об ошибках")
             last_pull = time.time()
         if not MINUTES or time.time() > deadline:
