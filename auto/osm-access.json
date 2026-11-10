@@ -32296,22 +32296,28 @@
 ]
 },
 "cafe-riviera-60-oktyabrya": {
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 50
+}
+],
 "parking": [
 {
-"d": 57,
+"d": 71,
+"parking": "surface"
+},
+{
+"d": 74,
 "fee": "yes",
 "parking": "street_side"
 },
 {
-"d": 88,
-"parking": "surface"
-},
-{
-"d": 115
+"d": 102
 },
 {
 "capacity:disabled": "8",
-"d": 125,
+"d": 131,
 "fee": "yes",
 "parking": "street_side"
 }
@@ -60812,6 +60818,249 @@
 "fsa-yuzhnoportovaya": {
 "building_addr": "Южнопортовая улица, 5 с6"
 },
+"fun-altair-vernadskogo": {
+"building_addr": "проспект Вернадского, 86 с2",
+"building_entrances": [
+{
+"d": 22,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"d": 98,
+"parking": "surface"
+},
+{
+"d": 188,
+"parking": "surface"
+},
+{
+"d": 275,
+"parking": "surface"
+},
+{
+"d": 284,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
+"fun-artkids-shelepiha": {
+"parking": [
+{
+"d": 48,
+"parking": "street_side"
+},
+{
+"d": 74,
+"parking": "street_side"
+},
+{
+"d": 284,
+"parking": "street_side"
+}
+]
+},
+"fun-dzhelsomino-shelepiha": {
+"parking": [
+{
+"d": 252
+},
+{
+"d": 260
+}
+]
+},
+"fun-krylataya-dolina-lobachevskogo": {
+"building_addr": "улица Лобачевского, 52 к1",
+"parking": [
+{
+"d": 167
+},
+{
+"d": 224
+},
+{
+"d": 232
+},
+{
+"access": "customers",
+"d": 251,
+"parking": "surface"
+}
+]
+},
+"fun-lepka-shipilovskaya": {
+"building_addr": "Шипиловская улица, 58 к1",
+"gates": [
+{
+"barrier": "gate",
+"d": 45
+}
+],
+"parking": [
+{
+"d": 121,
+"parking": "surface"
+},
+{
+"d": 240,
+"parking": "surface"
+}
+]
+},
+"fun-liga-robotov-yuzhnaya": {
+"building_addr": "Днепропетровская улица, 3 к5А",
+"parking": [
+{
+"d": 17
+},
+{
+"d": 36
+},
+{
+"d": 72
+},
+{
+"access": "customers",
+"d": 89,
+"parking": "surface"
+}
+]
+},
+"fun-nupogodika-zaraysk": {
+"parking": [
+{
+"d": 34
+},
+{
+"d": 185
+},
+{
+"d": 199
+},
+{
+"d": 236
+}
+]
+},
+"fun-otrazhenie-kirovogradskaya": {
+"building_addr": "Кировоградская улица, 11 к1",
+"building_entrances": [
+{
+"d": 28,
+"entrance": "yes"
+},
+{
+"d": 45,
+"entrance": "yes"
+},
+{
+"d": 48,
+"entrance": "yes"
+},
+{
+"d": 56,
+"entrance": "yes"
+},
+{
+"d": 65,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"capacity": "186",
+"d": 72,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 83,
+"parking": "surface"
+},
+{
+"capacity": "100",
+"d": 133,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"d": 181,
+"parking": "surface"
+}
+]
+},
+"fun-pervoe-hobbi-yasenevo": {
+"building_addr": "Новоясеневский проспект, 24 к4",
+"parking": [
+{
+"d": 238
+},
+{
+"d": 275
+}
+]
+},
+"fun-quest-hunter-semenovskaya": {
+"building_addr": "Большая Семёновская улица, 11 с5",
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 52
+}
+],
+"parking": [
+{
+"access": "yes",
+"capacity": "2",
+"capacity:disabled": "2",
+"d": 95,
+"parking": "street_side"
+},
+{
+"d": 110,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"capacity": "3",
+"capacity:disabled": "0",
+"d": 122,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"d": 147
+}
+]
+},
+"fun-tesla-beskudnikovsky": {
+"parking": [
+{
+"d": 54,
+"fee": "no"
+},
+{
+"d": 77,
+"fee": "no"
+},
+{
+"d": 109,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 147,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
 "fungrad": {
 "parking": [
 {
@@ -78682,23 +78931,23 @@
 "parking": [
 {
 "access": "yes",
-"d": 16,
+"d": 22,
 "fee": "no",
 "parking": "street_side"
 },
 {
 "access": "yes",
-"d": 26,
+"d": 45,
 "fee": "no",
 "parking": "street_side"
 },
 {
-"d": 49,
+"d": 66,
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 78,
+"d": 97,
 "fee": "no",
 "parking": "street_side"
 }
