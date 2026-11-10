@@ -53,7 +53,7 @@ def site(key, url):
             pass
         time.sleep(0.5)
     body = "\n\n".join(parts)[:MAX]
-    if spam.is_spam_text("\n".join(parts)):
+    if not spam.trusted(spam.domain(url)) and spam.is_spam_text("\n".join(parts)):
         # сайт взломан: текст не сохраняем, чтобы роботы его не читали
         return key, {"url": url, "ok": False, "spam": True, "tries": 99}, "СПАМ: сайт взломан (казино/букмекеры). Не использовать.\n"
     return key, {"url": url, "ok": True, "pages": done, "bytes": len(body)}, body

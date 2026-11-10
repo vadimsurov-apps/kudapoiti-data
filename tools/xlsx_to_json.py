@@ -169,7 +169,8 @@ def parse_hours(text):
         h1, m1, h2, m2 = map(int, TIME_RANGE.match(m.group(2)).groups())
         open_, close = h1 * 60 + m1, h2 * 60 + m2
         if close <= open_:
-            raise ValueError(part)
+            # работает за полночь («11:30-00:30», «10:00-00:00»): для приложения считаем до конца суток
+            close = 24 * 60
         for d in days:
             week[d] = [open_, close]
     return "hours", week

@@ -38,6 +38,16 @@ def is_spam_text(text):
     return bool(BRANDS.search(t)) or len(GENERIC.findall(t)) >= 2
 
 
+# Карты, справочники и госсайты — не «взломанные сайты». На страницах поиска Яндекса бывает реклама БК, из-за чего
+# yandex.* попадал в спам и Яндекс Карты перестали скачиваться (Вадим 10.11: убрать). Эти домены спамом не считаются никогда.
+NEVER = ("yandex.", "yango.com", "2gis.", "mos.ru", "mossport.ru", "kassir.ru", "sports.ru")
+
+
+def trusted(d):
+    d = (d or "").lower()
+    return any(d.startswith(n) or ("." + n) in "." + d if n.endswith(".") else d == n or d.endswith("." + n) for n in NEVER)
+
+
 def domain(url):
     if not url: return ""
     u = str(url).split()[0].strip(";, ")
@@ -46,12 +56,12 @@ def domain(url):
 
 def load_domains():
     if not os.path.exists(DOMAINS_FILE): return set()
-    return {l.split("#")[0].strip().lower() for l in open(DOMAINS_FILE) if l.split("#")[0].strip()}
+    return {d for d in (l.split("#")[0].strip().lower() for l in open(DOMAINS_FILE)) if d and not trusted(d)}
 
 
 def add_domains(new):
     have = load_domains()
-    new = sorted({d for d in new if d and d not in have})
+    new = sorted({d for d in new if d and d not in have and not trusted(d)})
     if new:
         with open(DOMAINS_FILE, "a") as f:
             for d in new: f.write(d + "\n")

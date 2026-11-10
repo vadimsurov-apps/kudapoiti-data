@@ -23,7 +23,8 @@ import openpyxl
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 COLS = {"address": "Адрес", "hours": "Часы работы", "price_child": "Детский билет, ₽", "price_adult": "Взрослый билет, ₽",
-        "free_note": "Бесплатно до (лет / см)", "type": "Тип", "how": "Как найти", "parking": "Парковка", "booking": "Запись"}
+        "free_note": "Бесплатно до (лет / см)", "type": "Тип", "how": "Как найти", "parking": "Парковка", "booking": "Запись",
+        "age_min": "Возраст от", "age_max": "Возраст до"}
 CORE = ("point", "address", "hours", "phone", "url")
 
 

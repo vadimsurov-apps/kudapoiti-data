@@ -1,0 +1,45 @@
+name: Отчёты ChatGPT — разбор и автоприменение
+# Вадим 10.11: находки GPT со ссылкой-источником применяются сразу, без людей.
+# Запускается, когда GPT (Codex) кладёт отчёт в gpt/reports/, и раз в час — добрать места, чьи таблицы были под замком.
+on:
+  push:
+    branches: [main]
+    paths: ["gpt/reports/**"]
+  schedule:
+    - cron: "40 * * * *"
+  workflow_dispatch:
+concurrency:
+  group: gpt-apply
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - run: pip install -q openpyxl cairosvg pillow
+      - name: Разобрать, применить, собрать, запушить
+        run: |
+          git config user.name "kudapoiti-bot"
+          git config user.email "bot@users.noreply.github.com"
+          for i in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 tools/gpt_import.py
+            python3 tools/gpt_apply.py
+            if git diff --quiet -- data auto/verified.json auto/contacts.json; then
+              git add auto/gpt-checks.json auto/gpt-disputes.json auto/gpt-applied.json 2>/dev/null || true
+            else
+              python3 tools/build_all.py || exit 1
+              git add data auto/verified.json auto/contacts.json auto/gpt-checks.json auto/gpt-disputes.json \
+                auto/gpt-applied.json places.json places-all.json auto/metrics.json auto/metrics-history.json \
+                gpt/queue.json p icons icons-catalog auto/table-coords.json deals.json
+            fi
+            git diff --cached --quiet && exit 0
+            git commit -q -m "ChatGPT: находки применены автоматически"
+            git push -q origin HEAD:main && exit 0
+            sleep 20
+          done
+          exit 1

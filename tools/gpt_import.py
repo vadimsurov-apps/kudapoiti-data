@@ -35,12 +35,15 @@ def main():
                     ok.append(k)
                 elif v.get("verdict") == "wrong":
                     wrong[k] = {"value": v.get("value"), "source": v.get("source")}
+            sources = sorted({v.get("source") for v in (pl.get("fields") or {}).values()
+                              if isinstance(v, dict) and v.get("source")} | set(pl.get("sources") or []))
             checks[pid] = {"date": rep.get("date"), "by": rep.get("checker", "GPT"), "ok": ok, "wrong": wrong,
+                           "sources": sources,
                            "status": pl.get("status"), "note": pl.get("note"), "file": name}
             n_ok += len(ok); n_wrong += len(wrong)
             if wrong or pl.get("status") in ("closed", "moved", "not_found"):
                 disputes[pid] = {"date": rep.get("date"), "status": pl.get("status"), "wrong": wrong,
-                                 "note": pl.get("note"), "resolved": False}
+                                 "note": pl.get("note"), "sources": sources, "resolved": False}
     json.dump(checks, open(P("auto", "gpt-checks.json"), "w"), ensure_ascii=False, indent=0, sort_keys=True)
     json.dump(disputes, open(P("auto", "gpt-disputes.json"), "w"), ensure_ascii=False, indent=0, sort_keys=True)
     print(f"отчётов разобрано {n_files}; совпадений {n_ok}; расхождений {n_wrong}; "
