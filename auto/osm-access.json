@@ -10231,7 +10231,12 @@
 "d": 291,
 "parking": "street_side"
 }
-]
+],
+"poi": {
+"opening_hours": "Mo-Su 09:00-20:00",
+"phone": "+7 916 8501568;+7 901 5125857;+7 977 2803327;+7 968 3375753",
+"website": "https://mebel-massiv.pro"
+}
 },
 "cafe-alex-express-sergiev-posad": {
 "gates": [
@@ -11790,7 +11795,9 @@
 "cafe-biblioteka-novoperedelkino": {
 "building_addr": "Новоорловская улица, 9",
 "poi": {
-"website": "https://kafe-biblioteka.ru/"
+"opening_hours": "Tu-Fr 12:00-22:00; Sa-Su 12:00-20:00",
+"phone": "+7 495 7335467",
+"website": "https://bibliozao.ru/biblio/novo-peredelkino/biblioteka-%E2%84%96-223-3.html"
 }
 },
 "cafe-biskvit-dmitrov": {
@@ -14366,9 +14373,9 @@
 }
 ],
 "poi": {
-"contact:phone": "+7 495 1355046;+7 495 1355500",
-"contact:website": "https://ch1ef.ru/restaurant/ocean",
-"opening_hours": "Mo-Su 11:00-00:00"
+"contact:phone": "+7 495 7835433",
+"contact:website": "http://oceania.ru",
+"opening_hours": "Mo-Th,Su 10:00-22:00; Fr-Sa 10:00-23:00"
 }
 },
 "cafe-chaykhana-sezam": {
@@ -18085,6 +18092,47 @@
 "d": 133
 }
 ]
+},
+"cafe-govyadina-columbus": {
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 56
+}
+],
+"parking": [
+{
+"access": "yes",
+"capacity": "2600",
+"d": 115,
+"fee": "yes",
+"maxstay": "2 hours",
+"operator": "Columbus",
+"parking": "underground",
+"supervised": "yes"
+},
+{
+"d": 153
+},
+{
+"access": "permissive",
+"capacity": "8",
+"capacity:disabled": "8",
+"d": 155,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 203,
+"fee": "yes",
+"parking": "surface"
+}
+],
+"poi": {
+"contact:website": "http://www.trc-columbus.ru",
+"opening_hours": "Mo-Su 10:00-22:00"
+}
 },
 "cafe-grad-yuzhny-krasnogorsk": {
 "building_addr": "Заводская улица, 27",
@@ -28909,7 +28957,12 @@
 "fee": "yes",
 "parking": "surface"
 }
-]
+],
+"poi": {
+"contact:phone": "+7 495 2877534",
+"contact:website": "http://www.modaseason.ru",
+"opening_hours": "Mo-Su 10:00-22:00"
+}
 },
 "cafe-piachere-pushkino": {
 "building_addr": "Московский проспект, 9/2",
@@ -35400,27 +35453,6 @@
 ]
 },
 "cafe-uryuk-metropolis": {
-"building_addr": "Ленинградское шоссе, 16А с4",
-"building_entrances": [
-{
-"d": 84,
-"entrance": "yes"
-},
-{
-"d": 136,
-"entrance": "yes"
-},
-{
-"access": "yes",
-"d": 146,
-"entrance": "yes"
-},
-{
-"access": "yes",
-"d": 177,
-"entrance": "main"
-}
-],
 "parking": [
 {
 "d": 161
@@ -35440,7 +35472,10 @@
 }
 ],
 "poi": {
-"opening_hours": "Mo-Su 09:00-21:00"
+"contact:phone": "+7 495 6608888",
+"contact:website": "http://metropolis.moscow/",
+"opening_hours": "10:00-23:00",
+"wheelchair": "yes"
 }
 },
 "cafe-uryuk-mytishchi": {
@@ -55933,21 +55968,27 @@
 },
 "fok-gelios-badminton": {
 "building_addr": "Лухмановская улица, 10А",
+"gates": [
+{
+"barrier": "gate",
+"d": 37
+}
+],
 "parking": [
 {
-"d": 235,
-"parking": "street_side"
+"d": 33
 },
 {
-"d": 252,
-"parking": "street_side"
+"access": "yes",
+"d": 112,
+"fee": "no",
+"parking": "surface"
 },
 {
-"d": 252,
-"parking": "street_side"
+"d": 162
 },
 {
-"d": 261
+"d": 200
 }
 ]
 },
@@ -79076,21 +79117,35 @@
 },
 "magic-ball-tennis-tallinskaya": {
 "building_addr": "Таллинская улица, 20 к4",
+"gates": [
+{
+"barrier": "gate",
+"d": 0
+}
+],
 "parking": [
 {
-"d": 30,
+"access": "customers",
+"d": 117,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 163,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 216,
 "parking": "street_side"
 },
 {
-"d": 55,
+"capacity": "8",
+"capacity:disabled": "2",
+"d": 232,
+"fee": "no",
 "parking": "street_side"
-},
-{
-"d": 57,
-"parking": "street_side"
-},
-{
-"d": 94
 }
 ]
 },
@@ -79679,25 +79734,26 @@
 },
 "malyshkovy-tennis-mira-81": {
 "building_addr": "проспект Мира, 81",
+"gates": [
+{
+"access": "private",
+"barrier": "lift_gate",
+"d": 52
+}
+],
 "parking": [
 {
-"d": 214,
-"fee": "no",
+"d": 148
+},
+{
+"d": 155,
 "parking": "surface"
 },
 {
-"d": 256,
-"parking": "street_side"
+"d": 159
 },
 {
-"access": "yes",
-"d": 263,
-"fee": "no",
-"parking": "lane",
-"supervised": "no"
-},
-{
-"d": 293
+"d": 179
 }
 ]
 },
@@ -81618,24 +81674,29 @@
 },
 "megasport-tennis-samory-mashela": {
 "building_addr": "улица Саморы Машела, 5",
+"gates": [
+{
+"barrier": "gate",
+"d": 50
+},
+{
+"barrier": "gate",
+"d": 54
+}
+],
 "parking": [
 {
-"access": "yes",
-"d": 84,
+"d": 157,
 "parking": "surface"
 },
 {
-"access": "yes",
-"d": 104,
-"fee": "yes",
-"parking": "surface"
+"d": 200
 },
 {
-"d": 158,
-"parking": "surface"
+"d": 202
 },
 {
-"d": 176,
+"d": 208,
 "parking": "surface"
 }
 ]
@@ -86841,30 +86902,40 @@
 },
 "mssuor3-tennis-tkatskaya": {
 "building_addr": "Ткацкая улица, 27",
+"building_entrances": [
+{
+"d": 0,
+"entrance": "main"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 4
+},
+{
+"barrier": "gate",
+"d": 9
+}
+],
 "parking": [
 {
-"access": "yes",
-"capacity": "32",
-"d": 49,
-"fee": "no",
-"parking": "surface"
+"d": 136
 },
 {
-"access": "yes",
-"d": 67,
+"d": 235
+},
+{
+"d": 236,
 "fee": "yes",
-"parking": "surface"
+"operator": "ГКУ АМПП",
+"parking": "street_side"
 },
 {
-"d": 112,
-"parking": "multi-storey"
-},
-{
-"access": "yes",
-"capacity": "20",
-"d": 120,
-"fee": "no",
-"parking": "surface"
+"capacity": "2",
+"capacity:disabled": "2",
+"d": 243,
+"parking": "street_side"
 }
 ]
 },
@@ -91182,34 +91253,21 @@
 },
 "olimpiets-tennis-udaltsova": {
 "building_addr": "улица Удальцова, 54",
-"gates": [
-{
-"barrier": "gate",
-"d": 21
-}
-],
 "parking": [
 {
-"d": 70,
-"fee": "no"
+"d": 47,
+"parking": "street_side"
 },
 {
-"access": "customers",
-"d": 79,
-"fee": "no",
-"parking": "surface"
-},
-{
-"access": "yes",
-"d": 156,
-"fee": "no",
-"parking": "surface"
+"d": 231,
+"parking": "multi-storey"
 },
 {
 "access": "yes",
-"d": 209,
-"fee": "no",
-"parking": "surface"
+"d": 277
+},
+{
+"d": 288
 }
 ]
 },
@@ -100648,27 +100706,45 @@
 },
 "racketball-strelbishchensky": {
 "building_addr": "Стрельбищенский переулок, 21",
+"building_entrances": [
+{
+"d": 6,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"d": 14,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"d": 25,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "61-80",
+"d": 33,
+"entrance": "staircase",
+"ref": "4"
+}
+],
 "parking": [
 {
-"access": "yes",
-"d": 232,
-"fee": "yes",
+"d": 203,
+"parking": "underground"
+},
+{
+"d": 220,
 "parking": "street_side"
 },
 {
-"access": "yes",
-"d": 238,
-"fee": "yes",
+"d": 223,
 "parking": "street_side"
 },
 {
-"access": "yes",
-"d": 281,
-"fee": "yes",
+"d": 263,
 "parking": "street_side"
-},
-{
-"d": 282
 }
 ]
 },
@@ -103893,63 +103969,76 @@
 "building_addr": "Ленинский проспект, 81/2",
 "building_entrances": [
 {
-"addr:flats": "201-228",
-"d": 1254,
-"entrance": "staircase",
-"ref": "8"
-},
-{
-"d": 1260,
-"ref": "2"
-},
-{
-"addr:flats": "173-200",
-"d": 1264,
-"entrance": "staircase",
-"ref": "7"
-},
-{
-"addr:flats": "229-258",
-"d": 1266,
-"entrance": "staircase",
-"ref": "9"
-},
-{
-"addr:flats": "143-172",
-"d": 1275,
-"entrance": "staircase",
-"ref": "6"
-},
-{
 "addr:flats": "114-142",
-"d": 1290,
+"d": 11,
 "entrance": "staircase",
 "ref": "5"
 },
 {
+"addr:flats": "143-172",
+"d": 28,
+"entrance": "staircase",
+"ref": "6"
+},
+{
 "addr:flats": "85-113",
-"d": 1308,
+"d": 36,
 "entrance": "staircase",
 "ref": "4"
 },
 {
+"d": 39,
+"ref": "2"
+},
+{
+"addr:flats": "173-200",
+"d": 48,
+"entrance": "staircase",
+"ref": "7"
+},
+{
 "addr:flats": "57-84",
-"d": 1318,
+"d": 54,
 "entrance": "staircase",
 "ref": "3"
+},
+{
+"addr:flats": "201-228",
+"d": 66,
+"entrance": "staircase",
+"ref": "8"
+},
+{
+"addr:flats": "29-56",
+"d": 76,
+"entrance": "staircase",
+"ref": "2"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 39
 }
 ],
 "parking": [
 {
-"d": 138,
+"d": 90
+},
+{
+"capacity": "4",
+"d": 124
+},
+{
+"capacity": "20",
+"d": 170,
 "parking": "surface"
 },
 {
-"d": 203
-},
-{
-"d": 257,
-"parking": "underground"
+"access": "yes",
+"d": 202,
+"fee": "no",
+"parking": "surface"
 }
 ]
 },
@@ -115865,20 +115954,8 @@
 "building_addr": "Лиственничная аллея, 8А",
 "parking": [
 {
-"d": 119,
+"d": 233,
 "parking": "surface"
-},
-{
-"d": 123,
-"parking": "surface"
-},
-{
-"d": 169,
-"fee": "yes",
-"parking": "street_side"
-},
-{
-"d": 199
 }
 ]
 },
@@ -116526,25 +116603,34 @@
 },
 "tennisyonok-petrovsko-razumovsky": {
 "building_addr": "Петровско-Разумовский проезд, 29",
-"parking": [
+"gates": [
 {
-"d": 114,
-"parking": "street_side"
+"access": "permissive",
+"barrier": "gate",
+"d": 40
 },
 {
-"access": "yes",
-"d": 119,
-"fee": "no",
+"barrier": "gate",
+"d": 54
+},
+{
+"barrier": "gate",
+"d": 58
+}
+],
+"parking": [
+{
+"d": 30,
 "parking": "surface"
 },
 {
-"d": 147,
-"parking": "street_side"
+"d": 54
 },
 {
-"access": "yes",
-"d": 158,
-"fee": "no",
+"d": 58
+},
+{
+"d": 76,
 "parking": "surface"
 }
 ]
@@ -116801,22 +116887,10 @@
 },
 "tfl-tennis-lyublinskaya": {
 "building_addr": "Люблинская улица, 88",
-"parking": [
+"gates": [
 {
-"d": 169,
-"parking": "street_side"
-},
-{
-"d": 208,
-"parking": "street_side"
-},
-{
-"d": 211,
-"parking": "street_side"
-},
-{
-"d": 212,
-"parking": "surface"
+"barrier": "gate",
+"d": 55
 }
 ]
 },
@@ -120192,7 +120266,13 @@
 }
 },
 "tursunov-tennis-profsoyuznaya": {
-"building_addr": "Профсоюзная улица, 27 к3"
+"building_addr": "Профсоюзная улица, 27 к3",
+"parking": [
+{
+"d": 240,
+"parking": "street_side"
+}
+]
 },
 "tusa-dzhusa-filion": {
 "building_addr": "Багратионовский проезд, 5",
