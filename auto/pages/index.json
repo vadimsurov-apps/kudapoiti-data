@@ -62326,7 +62326,7 @@
 "url": "https://gagawa.ru/restaurant/mega-himki/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 2
+"tries": 3
 },
 "gulianirest-ru": {
 "url": "https://gulianirest.ru/",
@@ -62346,7 +62346,7 @@
 "url": "https://korolev.yaposha.com/restaurants/oktyabrskiy-bulvar/",
 "ok": false,
 "err": "<urlopen error [Errno 101] Network is unreachable>",
-"tries": 2
+"tries": 3
 },
 "niyama-ru-restaurants-lyubertsy": {
 "url": "https://niyama.ru/restaurants/lyubertsy/",
@@ -62359,7 +62359,7 @@
 "url": "https://oceania.ru/catalog/chaihana-the-way/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "pushkincafe-ru": {
 "url": "https://pushkincafe.ru/",
@@ -62386,7 +62386,7 @@
 "url": "https://sweetstore.ru/nashi-konditerskie/menu/na-kudrinskoy/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-"tries": 2
+"tries": 3
 },
 "uryukmsk-ru-aminievskoe": {
 "url": "https://uryukmsk.ru/aminievskoe",
@@ -62406,25 +62406,25 @@
 "url": "https://www.oceania.ru/catalog/parkovka/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "www-restoclub-ru-msk-place-marani-2": {
 "url": "https://www.restoclub.ru/msk/place/marani-2",
 "ok": false,
 "err": "HTTP Error 503: Service Temporarily Unavailable",
-"tries": 1
+"tries": 2
 },
 "www-restoclub-ru-msk-place-casa-di-nonna-1": {
 "url": "https://www.restoclub.ru/msk/place/casa-di-nonna-1",
 "ok": false,
 "err": "HTTP Error 503: Service Temporarily Unavailable",
-"tries": 1
+"tries": 2
 },
 "www-restoclub-ru-msk-place-da-pino": {
 "url": "https://www.restoclub.ru/msk/place/da-pino",
 "ok": false,
 "err": "HTTP Error 503: Service Temporarily Unavailable",
-"tries": 1
+"tries": 2
 },
 "2gis-ru-firm-2674540564035073": {
 "url": "https://2gis.ru/firm/2674540564035073",
@@ -62436,7 +62436,40 @@
 "marani-rest-ru-restaurants": {
 "url": "https://marani-rest.ru/restaurants",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
+"err": "<urlopen error [Errno 101] Network is unreachable>",
+"tries": 2
+},
+"mos-chess-ru-chess": {
+"url": "https://mos-chess.ru/chess/",
+"ok": true,
+"pages": 1,
+"bytes": 13777,
+"tries": 0
+},
+"moscow-djigit-ru-filialy": {
+"url": "https://moscow-djigit.ru/filialy/",
+"ok": false,
+"err": "<urlopen error [Errno 101] Network is unreachable>",
+"tries": 1
+},
+"school-todes-ru-schools-studios-moscow": {
+"url": "https://school.todes.ru/schools/studios/MOSCOW",
+"ok": true,
+"pages": 2,
+"bytes": 4538,
+"tries": 0
+},
+"schoolball-ru-clubs": {
+"url": "https://schoolball.ru/clubs/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"sweetstore-ru-nashi-konditerskie": {
+"url": "https://sweetstore.ru/nashi-konditerskie/",
+"ok": false,
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "tries": 1
 }
 }
