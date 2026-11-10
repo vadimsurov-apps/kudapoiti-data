@@ -61701,7 +61701,7 @@
 "url": "https://vesnanovayariga.ru/contacts/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "syr-rest": {
 "url": "https://syr.rest/",
@@ -61714,13 +61714,13 @@
 "url": "https://grillhousemsk.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -5] No address associated with hostname>",
-"tries": 1
+"tries": 2
 },
 "www-imereti-org": {
 "url": "https://www.imereti.org/",
 "ok": false,
 "err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
-"tries": 1
+"tries": 2
 },
 "semplice-su": {
 "url": "http://semplice.su/",
@@ -61733,7 +61733,7 @@
 "url": "https://la-riva.ru/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 1
+"tries": 2
 },
 "www-tiflis-ru": {
 "url": "http://www.tiflis.ru/",
@@ -61753,6 +61753,77 @@
 "url": "https://shagal-restaurant.com/",
 "ok": false,
 "err": "<urlopen error [Errno 101] Network is unreachable>",
+"tries": 2
+},
+"joki-joya-ru-parks": {
+"url": "https://joki-joya.ru/parks/",
+"ok": false,
+"err": "HTTP Error 404: Server Error",
+"tries": 1
+},
+"joki-joya-ru-prices": {
+"url": "https://joki-joya.ru/prices/",
+"ok": true,
+"pages": 5,
+"bytes": 4916,
+"tries": 0
+},
+"zamania-ru": {
+"url": "https://zamania.ru/",
+"ok": false,
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
+"tries": 1
+},
+"zamania-ru-contacts": {
+"url": "https://zamania.ru/contacts/",
+"ok": false,
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
+"tries": 1
+},
+"www-aviapark-com-shops": {
+"url": "https://www.aviapark.com/shops/",
+"ok": true,
+"pages": 1,
+"bytes": 44,
+"tries": 0
+},
+"chaihona-ru-restaurants": {
+"url": "https://chaihona.ru/restaurants/",
+"ok": true,
+"pages": 2,
+"bytes": 5839,
+"tries": 0
+},
+"sambo-svao-ru": {
+"url": "https://sambo-svao.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 5589,
+"tries": 0
+},
+"www-sweetstore-ru": {
+"url": "https://www.sweetstore.ru/",
+"ok": false,
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
+"tries": 1
+},
+"www-academiya-ru": {
+"url": "https://www.academiya.ru/",
+"ok": true,
+"pages": 2,
+"bytes": 1678,
+"tries": 0
+},
+"www-sh-crocus-ru": {
+"url": "https://www.sh-crocus.ru/",
+"ok": false,
+"err": "<urlopen error [Errno -2] Name or service not known>",
+"tries": 1
+},
+"winnerscoffee-ru-coffee-shops": {
+"url": "https://winnerscoffee.ru/coffee-shops/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
 "tries": 1
 }
 }
