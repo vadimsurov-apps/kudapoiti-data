@@ -61688,7 +61688,7 @@
 "url": "https://belkapark.ru",
 "ok": false,
 "err": "<urlopen error [Errno 111] Connection refused>",
-"tries": 2
+"tries": 3
 },
 "mykazbek-ru-contacts": {
 "url": "https://mykazbek.ru/contacts/",
@@ -61701,6 +61701,58 @@
 "url": "https://vesnanovayariga.ru/contacts/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
+"tries": 2
+},
+"syr-rest": {
+"url": "https://syr.rest/",
+"ok": true,
+"pages": 4,
+"bytes": 6470,
+"tries": 0
+},
+"grillhousemsk-ru": {
+"url": "https://grillhousemsk.ru/",
+"ok": false,
+"err": "<urlopen error [Errno -5] No address associated with hostname>",
+"tries": 1
+},
+"www-imereti-org": {
+"url": "https://www.imereti.org/",
+"ok": false,
+"err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
+"tries": 1
+},
+"semplice-su": {
+"url": "http://semplice.su/",
+"ok": true,
+"pages": 1,
+"bytes": 124,
+"tries": 0
+},
+"la-riva-ru": {
+"url": "https://la-riva.ru/",
+"ok": false,
+"err": "<urlopen error timed out>",
+"tries": 1
+},
+"www-tiflis-ru": {
+"url": "http://www.tiflis.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 1274,
+"tries": 0
+},
+"kvartalgreen-ru": {
+"url": "https://kvartalgreen.ru/",
+"ok": true,
+"pages": 3,
+"bytes": 4887,
+"tries": 0
+},
+"shagal-restaurant-com": {
+"url": "https://shagal-restaurant.com/",
+"ok": false,
+"err": "<urlopen error [Errno 101] Network is unreachable>",
 "tries": 1
 }
 }
