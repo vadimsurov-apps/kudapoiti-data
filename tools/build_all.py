@@ -47,3 +47,6 @@ no_icon = sorted(p for p in ids if p not in bundled and not os.path.exists(f"ico
 print(f"мест: {old} → {len(places)}; иконок отрисовано: {len(todo)}; мест без иконки: {len(no_icon)}", no_icon[:20])
 # точность данных для отчётов Вадиму (10.11) — auto/metrics.json, auto/metrics-history.json
 subprocess.run([sys.executable, "tools/metrics.py"], check=False, stdout=subprocess.DEVNULL)
+# независимый проверяющий (ChatGPT, 10.11): разобрать его отчёты и обновить для него очередь
+subprocess.run([sys.executable, "tools/gpt_import.py"], check=False, stdout=subprocess.DEVNULL)
+subprocess.run([sys.executable, "tools/gpt_queue.py"], check=False, stdout=subprocess.DEVNULL)

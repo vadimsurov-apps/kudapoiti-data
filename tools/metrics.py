@@ -96,6 +96,8 @@ def main():
          "полностью_проверенных_карточек": full, "полностью_проверенных_%": pct(full, len(shown)),
          "по_полям_%": {k: pct(a, b) for k, (a, b) in per.items()},
          "проверено_людьми_за_30_дней": len(human),
+         "вторая_проверка_GPT_мест": len(J("auto/gpt-checks.json", {})),
+         "споры_GPT_открыто": sum(1 for d in J("auto/gpt-disputes.json", {}).values() if not d.get("resolved")),
          "проверено_людьми_сегодня": {n: sum(1 for c in J("auto/human-checks.json", []) if c.get("date") == today.isoformat() and c.get("by") == n)
                                       for n in sorted({c.get("by") for c in J("auto/human-checks.json", [])})}}
     json.dump(m, open(os.path.join(ROOT, "auto", "metrics.json"), "w"), ensure_ascii=False, indent=1)

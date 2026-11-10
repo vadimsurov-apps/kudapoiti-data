@@ -2,7 +2,7 @@ name: Сборка places.json, иконок и страниц
 on:
   push:
     branches: [main]
-    paths: ["data/**", "icons-src/**", "tools/xlsx_to_json.py", "tools/build_all.py", "auto/osm-access.json", "deals.json", "auto/spam-domains.txt", "auto/osm-address.json", "auto/contacts.json", "auto/verified.json", "auto/human-checks.json", "tools/point_level.py", "tools/metrics.py", "auto/geo-yandex.json", "pipeline/spam.py"]
+    paths: ["data/**", "icons-src/**", "tools/xlsx_to_json.py", "tools/build_all.py", "auto/osm-access.json", "deals.json", "auto/spam-domains.txt", "auto/osm-address.json", "auto/contacts.json", "auto/verified.json", "auto/human-checks.json", "gpt/reports/**", "tools/point_level.py", "tools/metrics.py", "auto/geo-yandex.json", "pipeline/spam.py"]
   workflow_dispatch:
 concurrency:
   group: build
@@ -29,7 +29,7 @@ jobs:
       - run: |
           git config user.name "kudapoiti-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add places.json places-all.json auto/metrics.json auto/metrics-history.json deals.json icons p icons-catalog auto/table-coords.json
+          git add places.json places-all.json auto/metrics.json auto/metrics-history.json gpt/queue.json auto/gpt-checks.json auto/gpt-disputes.json deals.json icons p icons-catalog auto/table-coords.json
           git diff --cached --quiet && exit 0
           git commit -q -m "Сборка: places.json, иконки, страницы"
           for i in 1 2 3 4 5; do git pull -q --rebase -X theirs origin main && git push -q && exit 0; sleep 10; done
