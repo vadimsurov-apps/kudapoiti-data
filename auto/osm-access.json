@@ -12083,34 +12083,8 @@
 "building_addr": "проспект Андропова, 1",
 "building_entrances": [
 {
-"d": 0,
+"d": 289,
 "entrance": "yes"
-}
-],
-"parking": [
-{
-"access": "yes",
-"d": 145,
-"fee": "yes",
-"parking": "surface"
-},
-{
-"access": "yes",
-"d": 149,
-"fee": "yes",
-"parking": "surface"
-},
-{
-"access": "yes",
-"d": 200,
-"fee": "yes",
-"parking": "underground"
-},
-{
-"access": "yes",
-"d": 257,
-"fee": "yes",
-"parking": "surface"
 }
 ],
 "poi": {
@@ -12315,7 +12289,32 @@
 ]
 },
 "cafe-bereg-strogino": {
-"building_addr": "Улица Исаковского, 37к2с1"
+"building_addr": "Улица Исаковского, 37к2с1",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 50
+}
+],
+"parking": [
+{
+"d": 58,
+"parking": "surface"
+},
+{
+"d": 174
+},
+{
+"d": 179,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 258,
+"fee": "yes",
+"parking": "surface"
+}
+]
 },
 "cafe-bez-sahara-domodedovo": {
 "building_addr": "Советская улица, 50",
@@ -21907,11 +21906,11 @@
 "building_addr": "Усачёва улица, 26",
 "building_entrances": [
 {
-"d": 72,
+"d": 19,
 "entrance": "main"
 },
 {
-"d": 112,
+"d": 25,
 "entrance": "main"
 }
 ],
@@ -21919,34 +21918,24 @@
 {
 "access": "private",
 "barrier": "gate",
-"d": 10
+"d": 54
 },
 {
 "access": "private",
 "barrier": "lift_gate",
-"d": 35
-},
-{
-"access": "private",
-"barrier": "gate",
-"d": 38
-},
-{
-"access": "private",
-"barrier": "lift_gate",
-"d": 57
+"d": 56
 }
 ],
 "parking": [
 {
 "access": "customers",
-"d": 143,
+"d": 59,
 "fee": "yes",
 "parking": "surface"
 },
 {
 "access": "customers",
-"d": 250,
+"d": 244,
 "fee": "yes",
 "parking": "surface"
 }
@@ -26217,26 +26206,25 @@
 "cafe-mumu-semenovskaya": {
 "parking": [
 {
-"d": 61,
+"d": 55,
 "parking": "multi-storey"
 },
 {
 "access": "yes",
 "capacity": "32",
-"d": 78,
+"d": 86,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"capacity": "20",
-"d": 104,
-"fee": "no",
+"d": 112,
+"fee": "yes",
 "parking": "surface"
 },
 {
 "capacity": "200",
-"d": 115,
+"d": 113,
 "fee": "yes"
 }
 ],
@@ -33045,19 +33033,13 @@
 "cafe-shvili-riviera": {
 "parking": [
 {
-"d": 274
+"d": 280
 },
 {
 "access": "customers",
-"d": 292,
+"d": 293,
 "fee": "no",
 "parking": "surface"
-},
-{
-"access": "yes",
-"d": 293,
-"fee": "yes",
-"parking": "street_side"
 }
 ],
 "poi": {
@@ -53524,22 +53506,15 @@
 "building_addr": "Трёхгорная улица, 6",
 "parking": [
 {
-"d": 107
-},
-{
-"d": 117
-},
-{
-"d": 121,
+"d": 100,
 "parking": "surface"
 },
 {
-"access": "permissive",
-"capacity": "6",
-"d": 154,
-"fee": "no",
-"parking": "surface",
-"supervised": "no"
+"d": 125
+},
+{
+"d": 288,
+"fee": "no"
 }
 ]
 },
@@ -67778,27 +67753,24 @@
 },
 "itc-mytishchi": {
 "building_addr": "Силикатная улица, 20Б",
-"gates": [
-{
-"barrier": "gate",
-"d": 19
-}
-],
 "parking": [
 {
-"d": 16
-},
-{
-"d": 16
-},
-{
-"d": 69
-},
-{
 "access": "yes",
-"d": 104,
+"d": 80,
+"fee": "no",
+"parking": "lane"
+},
+{
+"access": "customers",
+"d": 133,
 "fee": "no",
 "parking": "surface"
+},
+{
+"d": 138
+},
+{
+"d": 171
 }
 ]
 },
@@ -79689,11 +79661,18 @@
 },
 "liga-tennis-dubrovka": {
 "building_addr": "1-я улица Машиностроения, 3",
-"gates": [
+"parking": [
 {
-"access": "no",
-"barrier": "gate",
-"d": 52
+"d": 207,
+"parking": "surface"
+},
+{
+"d": 269
+},
+{
+"d": 276,
+"fee": "no",
+"parking": "surface"
 }
 ],
 "poi": {
@@ -79706,43 +79685,45 @@
 "building_addr": "улица Заморёнова, 29",
 "building_entrances": [
 {
-"d": 333,
+"d": 0,
 "entrance": "main"
 }
 ],
 "gates": [
 {
-"barrier": "lift_gate",
-"d": 21
-},
-{
-"barrier": "lift_gate",
-"d": 39
+"access": "private",
+"barrier": "gate",
+"d": 14
 },
 {
 "access": "private",
 "barrier": "gate",
-"d": 48
-},
-{
-"barrier": "lift_gate",
-"d": 52
+"d": 53
 }
 ],
 "parking": [
 {
-"d": 180
-},
-{
-"d": 275,
+"access": "yes",
+"d": 94,
+"fee": "yes",
 "parking": "street_side"
 },
 {
-"d": 283,
-"parking": "street_side"
+"access": "yes",
+"d": 126,
+"fee": "no",
+"parking": "surface"
 },
 {
-"d": 290
+"capacity": "30",
+"d": 167
+},
+{
+"access": "yes",
+"charge": "450 RUB/hour",
+"d": 296,
+"fee": "yes",
+"parking": "surface"
 }
 ],
 "poi": {
@@ -83079,22 +83060,28 @@
 },
 "maxpro-tennis-voykovskaya": {
 "building_addr": "Ленинградское шоссе, 25А с3",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 21
+}
+],
 "parking": [
 {
 "access": "yes",
-"d": 172,
+"d": 52,
 "fee": "no",
 "parking": "street_side"
 },
 {
 "access": "yes",
-"d": 238,
+"d": 73,
 "fee": "no",
 "parking": "street_side"
 },
 {
 "access": "yes",
-"d": 283,
+"d": 102,
 "fee": "no",
 "parking": "surface"
 }
@@ -84430,42 +84417,31 @@
 ]
 },
 "meteor-tennis-ermolova": {
-"gates": [
-{
-"access": "customers",
-"barrier": "gate",
-"d": 41
-},
-{
-"access": "private",
-"barrier": "gate",
-"d": 57
-}
-],
 "parking": [
 {
-"d": 126,
-"fee": "no",
-"parking": "surface"
+"capacity": "16",
+"charge": "380 RUB",
+"d": 93,
+"fee": "yes",
+"operator": "ГКУ Администратор Московского парковочного пространства",
+"parking": "street_side"
 },
 {
 "capacity": "3",
-"d": 128,
+"d": 102,
 "fee": "no",
 "operator": "Детская стоматологическая поликлиника №28",
 "parking": "street_side"
 },
 {
-"d": 132,
+"d": 122,
 "fee": "no",
 "parking": "surface"
 },
 {
-"capacity": "16",
-"charge": "380 RUB",
-"d": 134,
-"fee": "yes",
-"operator": "ГКУ Администратор Московского парковочного пространства",
+"capacity": "10",
+"d": 135,
+"fee": "no",
 "parking": "street_side"
 }
 ]
@@ -85989,42 +85965,35 @@
 "building_entrances": [
 {
 "access": "private",
-"addr:flats": "1-54",
-"d": 114,
+"addr:flats": "55-111",
+"d": 10,
 "entrance": "staircase",
-"ref": "1"
+"ref": "2"
 },
 {
 "access": "private",
-"addr:flats": "55-111",
-"d": 114,
+"addr:flats": "1-54",
+"d": 16,
 "entrance": "staircase",
-"ref": "2"
-}
-],
-"gates": [
-{
-"access": "private",
-"barrier": "gate",
-"d": 37
+"ref": "1"
 }
 ],
 "parking": [
 {
-"d": 61,
-"parking": "multi-storey"
-},
-{
-"d": 85,
+"d": 27,
 "parking": "street_side"
 },
 {
-"d": 93,
-"parking": "underground"
+"d": 34,
+"parking": "street_side"
 },
 {
-"d": 93,
-"parking": "underground"
+"d": 36,
+"parking": "street_side"
+},
+{
+"d": 41,
+"parking": "street_side"
 }
 ]
 },
@@ -91200,29 +91169,27 @@
 "building_addr": "улица Кулакова, 20 к1",
 "parking": [
 {
-"access": "yes",
-"capacity:disabled": "4",
-"d": 83,
-"fee": "yes",
-"parking": "street_side"
-},
-{
-"access": "yes",
-"capacity": "4",
-"d": 87,
-"fee": "yes",
-"parking": "street_side"
-},
-{
-"access": "yes",
-"capacity": "4",
-"d": 126,
+"capacity": "8",
+"d": 114,
 "fee": "yes",
 "parking": "street_side"
 },
 {
 "capacity": "12",
-"d": 135,
+"d": 124,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"capacity:disabled": "4",
+"d": 191,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"capacity": "3",
+"d": 216,
 "fee": "yes",
 "parking": "street_side"
 }
@@ -91405,16 +91372,26 @@
 "building_addr": "Енисейская улица, 36 с1",
 "parking": [
 {
-"d": 10
+"d": 233,
+"parking": "surface"
 },
 {
-"d": 29
+"d": 262,
+"parking": "street_side"
 },
 {
-"d": 75
+"access": "yes",
+"d": 275,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
 },
 {
-"d": 187
+"access": "customers",
+"d": 290,
+"fee": "no",
+"parking": "underground",
+"supervised": "yes"
 }
 ]
 },
@@ -98588,28 +98565,22 @@
 "gates": [
 {
 "barrier": "gate",
-"d": 11
+"d": 41
 },
 {
 "barrier": "lift_gate",
-"d": 18
+"d": 42
+},
+{
+"barrier": "lift_gate",
+"d": 50
 },
 {
 "barrier": "gate",
-"d": 20
+"d": 51
 }
 ],
 "parking": [
-{
-"access": "yes",
-"d": 41,
-"fee": "no",
-"parking": "surface"
-},
-{
-"d": 58,
-"parking": "surface"
-},
 {
 "access": "yes",
 "d": 60,
@@ -98618,8 +98589,18 @@
 },
 {
 "access": "yes",
-"d": 93,
+"d": 120,
 "fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 196,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 208,
 "parking": "surface"
 }
 ]
@@ -99572,16 +99553,19 @@
 "building_addr": "Сиреневый бульвар, 4 с12",
 "parking": [
 {
-"d": 214
+"d": 146
 },
 {
-"d": 230
+"d": 171
 },
 {
-"d": 233
+"d": 200,
+"parking": "street_side"
 },
 {
-"d": 256
+"access": "yes",
+"d": 205,
+"fee": "no"
 }
 ]
 },
@@ -111541,19 +111525,27 @@
 "gates": [
 {
 "barrier": "gate",
-"d": 7
+"d": 28
+},
+{
+"barrier": "gate",
+"d": 55
+},
+{
+"barrier": "gate",
+"d": 59
 }
 ],
 "parking": [
 {
-"d": 215
+"d": 196
 },
 {
 "capacity": "132",
-"d": 222
+"d": 202
 },
 {
-"d": 250,
+"d": 220,
 "parking": "surface"
 }
 ]
@@ -120318,16 +120310,19 @@
 "building_addr": "Сиреневый бульвар, 4 с12",
 "parking": [
 {
-"d": 144
+"d": 146
 },
 {
-"d": 152
+"d": 171
 },
 {
-"d": 164
+"d": 200,
+"parking": "street_side"
 },
 {
-"d": 186
+"access": "yes",
+"d": 205,
+"fee": "no"
 }
 ]
 },
@@ -120729,21 +120724,19 @@
 "building_addr": "проспект Вернадского, 86",
 "parking": [
 {
-"d": 115,
-"fee": "no",
+"d": 144,
 "parking": "surface"
 },
 {
-"d": 153
-},
-{
-"access": "yes",
-"d": 240,
+"d": 161,
 "parking": "surface"
 },
 {
-"capacity": "14",
-"d": 269
+"d": 203,
+"parking": "surface"
+},
+{
+"d": 234
 }
 ]
 },
