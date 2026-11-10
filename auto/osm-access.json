@@ -7526,30 +7526,34 @@
 "building_addr": "улица Тевосяна, 25",
 "building_entrances": [
 {
-"d": 306,
+"d": 0,
 "entrance": "yes"
 }
 ],
 "gates": [
 {
+"access": "private",
 "barrier": "lift_gate",
-"d": 58
+"d": 18
+},
+{
+"barrier": "gate",
+"d": 20
 }
 ],
 "parking": [
 {
-"d": 149
+"d": 8
 },
 {
 "access": "customers",
-"d": 206
+"d": 119
 },
 {
-"access": "permit",
-"d": 273
+"d": 149
 },
 {
-"d": 295
+"d": 194
 }
 ]
 },
@@ -12619,7 +12623,13 @@
 {
 "d": 84
 }
-]
+],
+"poi": {
+"contact:phone": "+7 495 4651013",
+"contact:website": "http://www.casadifamiglia.ru/",
+"opening_hours": "Mo-Su 10:00-24:00",
+"wheelchair": "yes"
+}
 },
 "cafe-casa-la-famiglia": {
 "parking": [
@@ -14084,6 +14094,33 @@
 }
 ]
 },
+"cafe-chakapuli-okeania": {
+"parking": [
+{
+"access": "yes",
+"d": 168,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 179
+},
+{
+"d": 185
+},
+{
+"access": "yes",
+"d": 220,
+"fee": "no",
+"parking": "surface"
+}
+],
+"poi": {
+"contact:phone": "+7 495 7835433",
+"contact:website": "http://oceania.ru",
+"opening_hours": "Mo-Th,Su 10:00-22:00; Fr-Sa 10:00-23:00"
+}
+},
 "cafe-chashka-kashira": {
 "building_addr": "Клубная улица, 4А"
 },
@@ -14278,6 +14315,46 @@
 "website": "https://cafe4komnaty.ru/",
 "wheelchair": "yes"
 }
+},
+"cafe-chetyre-syra-dnepropetrovskaya": {
+"building_addr": "Днепропетровская улица, 2",
+"building_entrances": [
+{
+"d": 0,
+"entrance": "yes",
+"name": "Офисный-Центр"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 48
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 58
+}
+],
+"parking": [
+{
+"d": 111,
+"fee": "yes",
+"maxstay": "3 hours",
+"parking": "underground"
+},
+{
+"d": 163
+},
+{
+"d": 170
+},
+{
+"access": "customers",
+"d": 176,
+"parking": "surface"
+}
+]
 },
 "cafe-chichiko": {
 "parking": [
@@ -18653,6 +18730,37 @@
 "contact:website": "http://hinkaligali.ru"
 }
 },
+"cafe-hinkali-gali-vishnevaya": {
+"building_addr": "улица Вишневая, 5",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 56
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 35,
+"parking": "surface"
+},
+{
+"d": 145
+},
+{
+"d": 187,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"capacity": "75",
+"capacity:disabled": "9",
+"d": 209,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
 "cafe-huan-he-sokol": {
 "building_addr": "1-й Балтийский переулок, 3/25",
 "building_entrances": [
@@ -20181,31 +20289,13 @@
 "fee": "yes",
 "parking": "street_side"
 }
-]
+],
+"poi": {
+"phone": "+7 499 3672109",
+"website": "https://gym1508.mskobr.ru/"
+}
 },
 "cafe-khachapuri-moskovsky": {
-"building_addr": "улица Хабарова, 2",
-"building_entrances": [
-{
-"d": 37,
-"entrance": "main",
-"name": "3"
-},
-{
-"d": 99,
-"entrance": "yes"
-},
-{
-"d": 139,
-"entrance": "main",
-"name": "4"
-},
-{
-"d": 260,
-"entrance": "yes",
-"name": "5"
-}
-],
 "parking": [
 {
 "d": 37,
@@ -20221,7 +20311,11 @@
 "d": 139,
 "name": "4"
 }
-]
+],
+"poi": {
+"phone": "+7 495 2405556",
+"website": "http://nwmos.ru"
+}
 },
 "cafe-khachapuri-ryazansky": {
 "building_addr": "Рязанский проспект, 34 к2",
@@ -20540,7 +20634,11 @@
 "fee": "yes",
 "parking": "surface"
 }
-]
+],
+"poi": {
+"opening_hours": "10:00-22:00",
+"website": "https://kapitoliy.ru/ru/malls/vernadskogo"
+}
 },
 "cafe-kitchen-alia": {
 "building_addr": "Лётная улица, 95Б к2",
@@ -20972,46 +21070,6 @@
 ]
 },
 "cafe-klevo-aviapark": {
-"building_addr": "Ходынский бульвар, 4",
-"building_entrances": [
-{
-"d": 115,
-"entrance": "main"
-},
-{
-"access": "private",
-"d": 120,
-"entrance": "service"
-},
-{
-"access": "private",
-"d": 122,
-"entrance": "service"
-},
-{
-"d": 138,
-"entrance": "service"
-},
-{
-"d": 142,
-"entrance": "service",
-"ref": "2А"
-},
-{
-"d": 146,
-"entrance": "service",
-"ref": "2А"
-},
-{
-"d": 148,
-"entrance": "service"
-},
-{
-"access": "private",
-"d": 153,
-"entrance": "service"
-}
-],
 "parking": [
 {
 "capacity": "5000",
@@ -21034,7 +21092,11 @@
 "d": 130,
 "fee": "yes"
 }
-]
+],
+"poi": {
+"contact:website": "http://aviapark.com",
+"opening_hours": "Su-Th 10:00-22:00; Fr,Sa 10:00-23:00"
+}
 },
 "cafe-klevo-petrovka": {
 "building_addr": "улица Петровка, 27",
@@ -22128,6 +22190,66 @@
 }
 ]
 },
+"cafe-kusochki-shabolovka": {
+"building_addr": "улица Шаболовка, 63 к1",
+"building_entrances": [
+{
+"access": "private",
+"addr:flats": "1-64",
+"d": 191,
+"entrance": "staircase",
+"ref": "1"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 33
+},
+{
+"barrier": "gate",
+"d": 39
+},
+{
+"barrier": "gate",
+"d": 56
+}
+],
+"parking": [
+{
+"access": "yes",
+"capacity": "8",
+"d": 160,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"capacity": "4",
+"d": 175,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 214,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 222,
+"fee": "no",
+"parking": "surface"
+}
+],
+"poi": {
+"contact:phone": "+7 495 1145525",
+"contact:website": "http://www.kusochki-cafe.ru",
+"opening_hours": "Mo-Su 13:00-23:00",
+"wheelchair": "no"
+}
+},
 "cafe-kuvshin": {
 "building_addr": "улица Академика Анохина, 58",
 "parking": [
@@ -22333,6 +22455,64 @@
 "parking": "surface"
 }
 ]
+},
+"cafe-labasilico-vnukovo": {
+"building_addr": "улица Анны Ахматовой, 10",
+"building_entrances": [
+{
+"access": "private",
+"d": 399,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"access": "private",
+"d": 412,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"access": "private",
+"d": 426,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"access": "private",
+"d": 439,
+"entrance": "staircase",
+"ref": "1"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 28
+}
+],
+"parking": [
+{
+"d": 62,
+"parking": "street_side"
+},
+{
+"d": 64,
+"parking": "street_side"
+},
+{
+"d": 67,
+"parking": "surface"
+},
+{
+"d": 83,
+"parking": "street_side"
+}
+],
+"poi": {
+"opening_hours": "Mo-Su 10:00-23:00",
+"phone": "+7 495 7908389",
+"website": "https://labasilico.ru"
+}
 },
 "cafe-laksa-wok-istra": {
 "gates": [
@@ -22947,7 +23127,10 @@
 "fee": "yes",
 "parking": "surface"
 }
-]
+],
+"poi": {
+"contact:website": "https://oms.msk.ru/"
+}
 },
 "cafe-macadamia-pilyugina": {
 "building_addr": "улица Академика Пилюгина, 4",
@@ -23233,6 +23416,27 @@
 },
 {
 "d": 219
+}
+]
+},
+"cafe-malinovka-sokolniki": {
+"parking": [
+{
+"d": 73
+},
+{
+"d": 74
+},
+{
+"access": "customers",
+"d": 151,
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 157,
+"fee": "no",
+"parking": "surface"
 }
 ]
 },
@@ -24639,6 +24843,39 @@
 "website": "www.MiraClub.ru"
 }
 },
+"cafe-miradj-budennogo": {
+"building_addr": "проспект Будённого, 33",
+"gates": [
+{
+"barrier": "gate",
+"d": 19
+},
+{
+"barrier": "gate",
+"d": 34
+}
+],
+"parking": [
+{
+"d": 154,
+"fee": "no"
+},
+{
+"access": "yes",
+"d": 230,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 281
+}
+],
+"poi": {
+"contact:phone": "+7 499 3223592",
+"contact:website": "https://miradj.ru",
+"opening_hours": "Mo-Fr 10:00-21:00; Sa,Su 11:00-21:00"
+}
+},
 "cafe-miragrill-prospekt-mira": {
 "building_addr": "проспект Мира, 124 к4",
 "parking": [
@@ -25780,7 +26017,10 @@
 "barrier": "gate",
 "d": 54
 }
-]
+],
+"poi": {
+"contact:website": "https://www.gastrobarnekrasov.ru/"
+}
 },
 "cafe-neskuchny": {
 "gates": [
@@ -27607,6 +27847,45 @@
 }
 ]
 },
+"cafe-osteria-vnukovo-chukovskogo": {
+"building_addr": "улица Корнея Чуковского, 2",
+"building_entrances": [
+{
+"access": "customers",
+"d": 19,
+"entrance": "yes"
+},
+{
+"access": "customers",
+"d": 76,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"capacity": "47",
+"capacity:disabled": "5",
+"d": 71,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 161,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 200,
+"parking": "surface"
+},
+{
+"capacity": "10",
+"d": 249,
+"parking": "street_side"
+}
+]
+},
 "cafe-otdykh-podolsk": {
 "parking": [
 {
@@ -29056,6 +29335,29 @@
 "contact:phone": "+7 800 5500600",
 "contact:website": "https://pizzafabrika.ru/",
 "opening_hours": "Mo-Su 10:00-23:00"
+}
+},
+"cafe-pizzamento-tsaritsyno": {
+"parking": [
+{
+"d": 67
+},
+{
+"d": 70
+},
+{
+"d": 129,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 136
+}
+],
+"poi": {
+"contact:phone": "+7 985 4504545",
+"contact:website": "https://pizzamento.ru",
+"opening_hours": "Mo-Su 12:00-24:00"
 }
 },
 "cafe-pizzamore-mytishchi": {
@@ -32790,6 +33092,60 @@
 }
 ]
 },
+"cafe-strogino-gavan": {
+"building_addr": "Строгинский бульвар, 21",
+"building_entrances": [
+{
+"access": "yes",
+"d": 340,
+"entrance": "shop"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 40
+},
+{
+"barrier": "lift_gate",
+"d": 54
+},
+{
+"barrier": "lift_gate",
+"d": 60
+}
+],
+"parking": [
+{
+"capacity": "111",
+"capacity:disabled": "13",
+"d": 62,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 165,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 215,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 216,
+"parking": "street_side"
+}
+],
+"poi": {
+"opening_hours": "Mo-Su 11:00-02:00",
+"phone": "+7 495 7579038",
+"website": "http://strogino-gavan.ru"
+}
+},
 "cafe-supremo-vernadskogo": {
 "building_addr": "проспект Вернадского, 37 к1",
 "building_entrances": [
@@ -34356,6 +34712,28 @@
 }
 ]
 },
+"cafe-torsher-vasiltsovsky": {
+"building_addr": "улица Васильцовский Стан, 5 к1",
+"parking": [
+{
+"d": 56
+},
+{
+"d": 99
+},
+{
+"d": 112
+},
+{
+"d": 138
+}
+],
+"poi": {
+"contact:phone": "+7 925 3567261",
+"contact:website": "http://cafe-torsher.ru/",
+"opening_hours": "Mo-Su 11:00-23:00"
+}
+},
 "cafe-tramplin-ambassadori": {
 "building_addr": "улица Косыгина, 28",
 "building_entrances": [
@@ -34512,6 +34890,26 @@
 },
 "cafe-turka-tarasovka": {
 "building_addr": "Большая Тарасовская улица, 102"
+},
+"cafe-turki-diner-nebesny": {
+"building_addr": "Небесный бульвар, 1 к1",
+"parking": [
+{
+"d": 147,
+"parking": "multi-storey"
+},
+{
+"d": 191,
+"parking": "surface"
+},
+{
+"d": 214,
+"parking": "surface"
+},
+{
+"d": 252
+}
+]
 },
 "cafe-tutta-la-vita": {
 "gates": [
@@ -106548,8 +106946,14 @@
 "building_addr": "улица Адмирала Руднева, 8",
 "parking": [
 {
-"d": 166,
+"d": 126,
 "parking": "multi-storey"
+},
+{
+"access": "yes",
+"d": 298,
+"fee": "no",
+"parking": "street_side"
 }
 ]
 },
@@ -106583,24 +106987,18 @@
 "building_addr": "улица Лескова, 17",
 "parking": [
 {
+"d": 130
+},
+{
+"d": 133,
+"fee": "yes",
+"parking": "multi-storey"
+},
+{
 "access": "yes",
-"d": 77,
+"d": 282,
 "fee": "no",
 "parking": "surface"
-},
-{
-"d": 186,
-"parking": "street_side"
-},
-{
-"d": 248,
-"parking": "street_side"
-},
-{
-"access": "yes",
-"d": 248,
-"fee": "no",
-"parking": "street_side"
 }
 ]
 },
@@ -106628,24 +107026,52 @@
 },
 "skate-khachaturyana-13": {
 "building_addr": "улица Хачатуряна, 13",
+"gates": [
+{
+"barrier": "gate",
+"d": 38
+}
+],
 "parking": [
 {
 "access": "yes",
-"d": 140
+"d": 87
 },
 {
-"access": "yes",
-"d": 234,
-"fee": "no",
-"parking": "surface"
-},
-{
-"d": 236,
+"d": 175,
 "name": "FORT Отрадное"
 },
 {
 "access": "yes",
-"d": 244
+"d": 177,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 191
+}
+]
+},
+"skate-khodynskoe-pole": {
+"parking": [
+{
+"capacity": "5000",
+"d": 199,
+"fee": "yes",
+"parking": "multi-storey"
+},
+{
+"access": "yes",
+"d": 276,
+"fee": "yes"
+},
+{
+"access": "yes",
+"d": 277,
+"fee": "yes"
+},
+{
+"d": 280
 }
 ]
 },
@@ -106754,74 +107180,65 @@
 "building_addr": "Митинская улица, 31",
 "building_entrances": [
 {
-"addr:flats": "1-52",
-"d": 22,
-"entrance": "staircase",
-"ref": "1"
-},
-{
-"addr:flats": "53-104",
-"d": 67,
-"entrance": "staircase",
-"ref": "2"
-},
-{
-"addr:flats": "105-156",
-"d": 80,
-"entrance": "staircase",
-"ref": "3"
-},
-{
-"addr:flats": "157-196",
-"d": 96,
-"entrance": "staircase",
-"ref": "4"
-},
-{
-"d": 105,
+"d": 0,
 "entrance": "main"
 },
 {
 "addr:flats": "197-236",
-"d": 117,
+"d": 42,
 "entrance": "staircase",
 "ref": "5"
 },
 {
+"addr:flats": "157-196",
+"d": 48,
+"entrance": "staircase",
+"ref": "4"
+},
+{
 "addr:flats": "237-276",
-"d": 139,
+"d": 49,
 "entrance": "staircase",
 "ref": "6"
-}
-],
-"gates": [
+},
 {
-"barrier": "lift_gate",
-"d": 44
+"addr:flats": "105-156",
+"d": 67,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"addr:flats": "53-104",
+"d": 82,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "1-52",
+"d": 90,
+"entrance": "staircase",
+"ref": "1"
 }
 ],
 "parking": [
 {
 "access": "yes",
-"d": 144,
+"d": 54,
 "fee": "yes",
 "maxstay": "15 minutes",
 "parking": "surface"
 },
 {
-"access": "yes",
-"d": 145,
-"fee": "no",
-"parking": "surface"
+"d": 75
+},
+{
+"d": 81
 },
 {
 "access": "yes",
-"d": 161,
+"d": 144,
 "fee": "no",
 "parking": "surface"
-},
-{
-"d": 173
 }
 ]
 },
@@ -106925,20 +107342,20 @@
 "building_addr": "Профсоюзная улица, 41",
 "parking": [
 {
-"d": 113
+"d": 221
 },
 {
-"d": 116
-},
-{
-"d": 122
-},
-{
-"access": "yes",
-"capacity": "50",
-"d": 160,
-"fee": "no",
+"d": 227,
 "parking": "surface"
+},
+{
+"access": "customers",
+"d": 236,
+"fee": "no",
+"parking": "multi-storey"
+},
+{
+"d": 272
 }
 ]
 },
@@ -106977,21 +107394,20 @@
 "skate-red-deck-rechnoy": {
 "parking": [
 {
-"d": 89
-},
-{
-"d": 96,
+"d": 94,
 "parking": "underground"
 },
 {
-"d": 116,
-"parking": "surface"
+"d": 102
 },
 {
 "access": "yes",
-"d": 128,
+"d": 117,
 "fee": "no",
 "parking": "surface"
+},
+{
+"d": 130
 }
 ]
 },
@@ -107154,21 +107570,35 @@
 },
 "skate-svyatoozerskaya-1": {
 "building_addr": "Святоозёрская улица, 1",
+"gates": [
+{
+"barrier": "gate",
+"d": 22
+},
+{
+"barrier": "gate",
+"d": 51
+},
+{
+"barrier": "gate",
+"d": 56
+}
+],
 "parking": [
 {
-"access": "yes",
-"d": 82,
-"fee": "no",
-"parking": "surface"
+"d": 123,
+"parking": "street_side"
 },
 {
-"d": 90
+"d": 137,
+"parking": "street_side"
 },
 {
-"d": 195
+"d": 140,
+"parking": "street_side"
 },
 {
-"d": 249,
+"d": 156,
 "parking": "street_side"
 }
 ]
