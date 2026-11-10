@@ -210,7 +210,7 @@ def convert_row(raw, problems):
             if isinstance(v, (datetime, date)):
                 v = v.strftime("%Y-%m-%d")
         elif key == "status":
-            v = "verified" if v == "проверено" else "draft"
+            v = "verified" if v == "проверено" else ("closed" if str(v or "").strip().lower() == "closed" else "draft")
         p[key] = v
 
     # Цирки — отдельная категория circus (не shows): по типу «цирк»/«театр зверей» или слову «цирк» в названии
@@ -417,7 +417,13 @@ def main():
     # (приблизительные координаты, «±2 км») приложению и сайту НЕ показываем. Полный список — places-all.json
     # (для роботов и конвейеров: дубли, сверка OSM, навигатор); место вернётся на карту, когда точку подтвердят.
     all_path = os.path.join(os.path.dirname(os.path.abspath(dst)), "places-all.json")
-    shown = [p for p in places if p.get("coord_exact") and p.get("lat") is not None]
+    # 10.11: на карту — только точка до входа/объекта места; «дом по адресу» и «примерно» — скрыты до подтверждения
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import point_level
+    acc_txt = {clean(r.get("id")): r.get("Точность координат") for r in rows}
+    for p in places:
+        p["point_level"] = point_level.level(p["id"], acc_txt.get(p["id"]), p.get("coord_exact"))
+    shown = [p for p in places if p["point_level"] == "вход" and p.get("lat") is not None and p.get("status") != "closed"]
     for path, lst in ((all_path, places), (dst, shown)):
         with open(path, "w", encoding="utf-8") as f:
             json.dump({"version": date.today().isoformat(),
@@ -425,7 +431,7 @@ def main():
                        "places": lst},
                       f, ensure_ascii=False, indent=2)
 
-    print(f"Выгружено мест: {len(shown)} -> {dst} (скрыто без точной точки: {len(places) - len(shown)}; все — places-all.json)")
+    print(f"Выгружено мест: {len(shown)} -> {dst} (скрыто без точки до входа: {len(places) - len(shown)}; все — places-all.json)")
     if report:
         print(f"\nМест с проблемами: {len(report)}")
         for name, probs in report:

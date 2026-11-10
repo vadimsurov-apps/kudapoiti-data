@@ -45,3 +45,5 @@ subprocess.run([sys.executable, "tools/make_share_pages.py"], check=True)
 subprocess.run([sys.executable, "tools/make_catalog.py"], check=True)
 no_icon = sorted(p for p in ids if p not in bundled and not os.path.exists(f"icons/{p}.png"))
 print(f"мест: {old} → {len(places)}; иконок отрисовано: {len(todo)}; мест без иконки: {len(no_icon)}", no_icon[:20])
+# точность данных для отчётов Вадиму (10.11) — auto/metrics.json, auto/metrics-history.json
+subprocess.run([sys.executable, "tools/metrics.py"], check=False, stdout=subprocess.DEVNULL)
