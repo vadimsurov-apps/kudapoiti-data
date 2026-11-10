@@ -62219,7 +62219,7 @@
 "url": "https://restoran.cafe/moskva/popular-semeinye-restorany-i-kafe-u-metro-alma-atinskaia",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "restoran-cafe-moskva-popular-semeinye-restorany-i-kafe-u-metro-altufevo": {
 "url": "https://restoran.cafe/moskva/popular-semeinye-restorany-i-kafe-u-metro-altufevo",
@@ -62232,13 +62232,13 @@
 "url": "https://restoran.cafe/moskva/popular-semeinye-restorany-i-kafe-u-metro-annino",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "restoran-cafe-moskva-popular-semeinye-restorany-i-kafe-u-metro-babushkinskaia": {
 "url": "https://restoran.cafe/moskva/popular-semeinye-restorany-i-kafe-u-metro-babushkinskaia",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "restoran-cafe-moskva-popular-semeinye-restorany-i-kafe-u-metro-bibirevo": {
 "url": "https://restoran.cafe/moskva/popular-semeinye-restorany-i-kafe-u-metro-bibirevo",
@@ -62258,13 +62258,13 @@
 "url": "https://restoran.cafe/moskva/popular-semeinye-restorany-i-kafe-u-metro-bratislavskaia",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "restoran-cafe-moskva-popular-semeinye-restorany-i-kafe-u-metro-bulvar-dmitriia-donskogo": {
 "url": "https://restoran.cafe/moskva/popular-semeinye-restorany-i-kafe-u-metro-bulvar-dmitriia-donskogo",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "restoran-cafe-moskva-popular-semeinye-restorany-i-kafe-u-metro-buninskaia-alleia": {
 "url": "https://restoran.cafe/moskva/popular-semeinye-restorany-i-kafe-u-metro-buninskaia-alleia",
@@ -62326,7 +62326,7 @@
 "url": "https://gagawa.ru/restaurant/mega-himki/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 1
+"tries": 2
 },
 "gulianirest-ru": {
 "url": "https://gulianirest.ru/",
@@ -62346,7 +62346,7 @@
 "url": "https://korolev.yaposha.com/restaurants/oktyabrskiy-bulvar/",
 "ok": false,
 "err": "<urlopen error [Errno 101] Network is unreachable>",
-"tries": 1
+"tries": 2
 },
 "niyama-ru-restaurants-lyubertsy": {
 "url": "https://niyama.ru/restaurants/lyubertsy/",
@@ -62359,18 +62359,20 @@
 "url": "https://oceania.ru/catalog/chaihana-the-way/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 1
+"tries": 2
 },
 "pushkincafe-ru": {
 "url": "https://pushkincafe.ru/",
-"ok": false,
-"err": "<urlopen error timed out>",
+"ok": true,
+"pages": 4,
+"bytes": 5384,
 "tries": 1
 },
 "pushkincafe-ru-about": {
 "url": "https://pushkincafe.ru/about/",
-"ok": false,
-"err": "<urlopen error timed out>",
+"ok": true,
+"pages": 3,
+"bytes": 4791,
 "tries": 1
 },
 "shore-house-ru-contacts": {
@@ -62384,7 +62386,7 @@
 "url": "https://sweetstore.ru/nashi-konditerskie/menu/na-kudrinskoy/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-"tries": 1
+"tries": 2
 },
 "uryukmsk-ru-aminievskoe": {
 "url": "https://uryukmsk.ru/aminievskoe",
@@ -62404,6 +62406,37 @@
 "url": "https://www.oceania.ru/catalog/parkovka/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
+"tries": 2
+},
+"www-restoclub-ru-msk-place-marani-2": {
+"url": "https://www.restoclub.ru/msk/place/marani-2",
+"ok": false,
+"err": "HTTP Error 503: Service Temporarily Unavailable",
+"tries": 1
+},
+"www-restoclub-ru-msk-place-casa-di-nonna-1": {
+"url": "https://www.restoclub.ru/msk/place/casa-di-nonna-1",
+"ok": false,
+"err": "HTTP Error 503: Service Temporarily Unavailable",
+"tries": 1
+},
+"www-restoclub-ru-msk-place-da-pino": {
+"url": "https://www.restoclub.ru/msk/place/da-pino",
+"ok": false,
+"err": "HTTP Error 503: Service Temporarily Unavailable",
+"tries": 1
+},
+"2gis-ru-firm-2674540564035073": {
+"url": "https://2gis.ru/firm/2674540564035073",
+"ok": true,
+"pages": 1,
+"bytes": 222,
+"tries": 0
+},
+"marani-rest-ru-restaurants": {
+"url": "https://marani-rest.ru/restaurants",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
 "tries": 1
 }
 }
