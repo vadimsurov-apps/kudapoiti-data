@@ -355,7 +355,9 @@ def apply_contacts(places, spam, spam_domains):
             p["phone"] = norm_phone(c.get("phone") or poi.get("phone") or poi.get("contact:phone"))
         else:
             p["phone"] = norm_phone(p["phone"])
-        if not p.get("url") or c.get("url_override"):
+        if c.get("url_override") and c.get("url") == "":
+            p["url"] = None  # сверщик: сайт в OSM/таблице чужой (объект OSM не того места) — не подставлять
+        elif not p.get("url") or c.get("url_override"):
             u = c.get("url") or poi.get("website") or poi.get("contact:website") or poi.get("url")
             if u and not u.startswith("http"):
                 u = "https://" + u
