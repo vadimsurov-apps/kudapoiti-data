@@ -106,6 +106,8 @@ def card_kb(p):
     if p.get("url"): rows.append([{"text": "🌐 Сайт места", "url": p["url"]}])
     rows.append([{"text": "✅ Всё верно", "callback_data": f"ok:{p['id']}"[:64]},
                  {"text": "✏️ Есть ошибка", "callback_data": f"bad:{p['id']}"[:64]}])
+    # 10.11 (Виктория через Вадима): отдельная кнопка — место больше не работает, карточку убрать с карты
+    rows.append([{"text": "🚫 Закрылось — удалить карточку", "callback_data": f"close:{p['id']}"[:64]}])
     rows.append([{"text": "⏭ Пропустить", "callback_data": f"skip:{p['id']}"[:64]}])
     return json.dumps({"inline_keyboard": rows})
 
@@ -140,6 +142,22 @@ def handle_callback(cb, places, reports, state, checks):
         say(chat, f"✍️ «{places.get(pid, pid)}»: напишите, что не так и как правильно (часы, цена, телефон, вход, этаж…). "
                   "Можно несколькими сообщениями. Метка не на входе — пришлите геопозицию входа: 📎 → «Геопозиция» "
                   "(или координаты текстом). Можно фото вывески.\n\nКогда закончите — «▶️ Следующая карточка».", NEXT_KB)
+        return True
+    if act == "close":
+        # заявка на удаление: робот-исправитель сверит (её скриншот «Больше не работает» в Яндексе — уже источник)
+        # и поставит closed — место пропадёт с карты и сайта, а в places-all останется, чтобы роботы не добавили его снова
+        state["chats"][chat] = pid; state.setdefault("fixing", {})[chat] = pid
+        checks.append({"place_id": pid, "by": names[chat], "chat": chat, "ok": False,
+                       "date": time.strftime("%Y-%m-%d"), "time": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())})
+        reports.append({"id": f"close-{cb['id']}", "date": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                        "chat": chat, "place_id": pid, "place": places.get(pid), "action": "close",
+                        "text": "Место больше не работает — удалить карточку", "photo": None, "photo_file": None,
+                        "location": None, "status": "new", "trusted": True, "by": names[chat]})
+        call_quiet("editMessageReplyMarkup", chat_id=chat, message_id=mid,
+                   reply_markup=json.dumps({"inline_keyboard": [[{"text": "🚫 Отмечено: закрылось", "callback_data": "noop:x"}]]}))
+        say(chat, f"🚫 «{places.get(pid, pid)}» — приняли: удалить с карты. Чтобы убрали сразу, пришлите скриншот, где видно "
+                  "«Больше не работает» (Яндекс Карты, 2ГИС) или объявление о закрытии, либо ссылку. Скриншот прикрепится "
+                  "к этому месту.\n\nДальше — «▶️ Следующая карточка».", NEXT_KB)
         return True
     if act == "next":
         state.get("fixing", {}).pop(chat, None)
