@@ -16,6 +16,7 @@ REP, STATE, ANS = "auto/reports.json", "auto/reports-state.json", "auto/report-a
 # auto/human-checks.json (считаются подтверждением карточки), их правки — доверенные (trusted) для робота-исправителя.
 CHECKERS, CHECKS = "auto/checkers.json", "auto/human-checks.json"
 CHECK_KB = json.dumps({"keyboard": [[{"text": "▶️ Проверять карточки"}]], "resize_keyboard": True, "is_persistent": True})
+NEXT_KB = json.dumps({"inline_keyboard": [[{"text": "▶️ Следующая карточка", "callback_data": "next:x"}]]})
 PRIORITY = ["food", "kidsroom", "playcenters", "pools", "dance", "martial", "gymnastics", "football", "ballgames",
             "sport", "trampolines", "quests", "masterclass", "museums", "shows", "animals", "parks"]
 MINUTES = int(sys.argv[sys.argv.index("--minutes") + 1]) if "--minutes" in sys.argv else 0
@@ -131,12 +132,19 @@ def handle_callback(cb, places, reports, state, checks):
         send_card(chat, state, checks); return True
     if act == "bad":
         state["chats"][chat] = pid; state.setdefault("fixing", {})[chat] = pid
+        # карточку с ошибкой больше не подсовываем (10.11: бот присылал её снова и снова)
+        checks.append({"place_id": pid, "by": names[chat], "chat": chat, "ok": False,
+                       "date": time.strftime("%Y-%m-%d"), "time": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())})
         call_quiet("editMessageReplyMarkup", chat_id=chat, message_id=mid,
                    reply_markup=json.dumps({"inline_keyboard": [[{"text": "✏️ Пишу, что не так…", "callback_data": "noop:x"}]]}))
-        say(chat, f"✍️ «{places.get(pid, pid)}»: напишите одним сообщением, что не так и как правильно "
-                  "(часы, цена, телефон, вход, этаж…). Метка не на входе — пришлите геопозицию входа: 📎 → «Геопозиция». "
-                  "Можно фото вывески.")
+        say(chat, f"✍️ «{places.get(pid, pid)}»: напишите, что не так и как правильно (часы, цена, телефон, вход, этаж…). "
+                  "Можно несколькими сообщениями. Метка не на входе — пришлите геопозицию входа: 📎 → «Геопозиция» "
+                  "(или координаты текстом). Можно фото вывески.\n\nКогда закончите — «▶️ Следующая карточка».", NEXT_KB)
         return True
+    if act == "next":
+        state.get("fixing", {}).pop(chat, None)
+        call_quiet("editMessageReplyMarkup", chat_id=chat, message_id=mid, reply_markup=json.dumps({"inline_keyboard": []}))
+        send_card(chat, state, checks); return True
     if act == "skip":
         state.setdefault("skipped", {}).setdefault(chat, []).append(pid)
         call_quiet("editMessageReplyMarkup", chat_id=chat, message_id=mid,
@@ -185,6 +193,7 @@ def handle(u, places, reports, state):
     if not chat or chat == "None": return False
     names = checkers()
     if chat in names and (text in ("▶️ Проверять карточки", "/check") or text.startswith("▶️")):
+        state.get("fixing", {}).pop(chat, None)
         send_card(chat, state, CHECKS_MEM); return True
     if text.startswith("/start"):
         arg = text[6:].strip()
@@ -217,9 +226,8 @@ def handle(u, places, reports, state):
                     "chat": chat, "place_id": pid, "place": places.get(pid), "text": text, "photo": photo,
                     "photo_file": photo_file, "location": location, "status": "new",
                     **({"trusted": True, "by": names[chat]} if chat in names else {})})
-    if chat in names and state.get("fixing", {}).pop(chat, None):
-        say(chat, "Спасибо, записали: исправим и отметим. Следующая карточка 👇")
-        send_card(chat, state, CHECKS_MEM)
+    if chat in names and state.get("fixing", {}).get(chat):
+        say(chat, f"📝 Записали к «{places.get(pid, pid)}». Можно дописать ещё или нажать «▶️ Следующая карточка».", NEXT_KB)
         return True
     say(chat, DONE)
     return True
