@@ -42,10 +42,27 @@ def tokens(name):
     return toks or [t for t in norm(name).split() if len(t) > 2][:2]
 
 
+_VOW = "аеиоуыэюяйь"
+_END = re.compile(r"[аеиоуыэюяйь]{0,3}|[аеиоуыэюя]?(х|м|в|го|му|ми)[аеиоуыэюя]?")
+
+
+def _tok_ok(t, x):
+    """Слово x из названия OSM — то же слово, что t (с учётом падежа/числа). Сверщик 11.11: старое правило
+    «первые 4 буквы» склеивало «Рубин» с «Рубим бургер», «Мёд» с «Медико-…», «каратэ» с «Караваевых» — точка,
+    телефон и сайт брались от чужого объекта (кулинария, стоматология, банк)."""
+    if x == t:
+        return True
+    stem = re.sub(r"(ами|ями|ов|ев|ам|ям|ах|ях|ой|ей|ий|ый|ом|ем|ых|их)$", "", t).rstrip(_VOW)
+    if len(stem) < 3 or not x.startswith(stem):
+        return False
+    return _END.fullmatch(x[len(stem):]) is not None
+
+
 def sim(a, b):
-    ta, tb = set(tokens(a)), set(norm(b).split())
+    ta, words = set(tokens(a)), norm(b).split()
     if not ta: return 0
-    hit = sum(1 for t in ta if any(x.startswith(t[:max(4, len(t) - 2)]) for x in tb))
+    tb, glued = set(words), "".join(words)
+    hit = sum(1 for t in ta if any(_tok_ok(t, x) for x in tb) or (len(t) >= 5 and t in glued))
     return hit / len(ta)
 
 
