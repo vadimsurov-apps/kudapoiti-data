@@ -61949,6 +61949,35 @@
 }
 ]
 },
+"fun-art-smart-michurinsky": {
+"building_addr": "Мичуринский проспект, 9 к2",
+"gates": [
+{
+"barrier": "gate",
+"d": 54
+}
+],
+"parking": [
+{
+"d": 29,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 60,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 108,
+"parking": "street_side"
+},
+{
+"d": 119,
+"parking": "street_side"
+}
+]
+},
 "fun-art-zona-vnukovo": {
 "building_addr": "улица Лётчика Грицевца, 14А",
 "building_entrances": [
@@ -62114,6 +62143,52 @@
 }
 ]
 },
+"fun-deti-pri-dele-podolsk": {
+"building_addr": "улица 50 лет ВЛКСМ, 2",
+"building_entrances": [
+{
+"d": 9,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 17,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 83,
+"parking": "surface"
+},
+{
+"d": 135
+},
+{
+"d": 178
+}
+]
+},
+"fun-drugie-miry-korolev": {
+"building_addr": "проспект Космонавтов, 15",
+"parking": [
+{
+"d": 101,
+"parking": "street_side"
+},
+{
+"d": 150
+},
+{
+"d": 169
+},
+{
+"d": 172,
+"parking": "street_side"
+}
+]
+},
 "fun-dzhelsomino-shelepiha": {
 "parking": [
 {
@@ -62182,6 +62257,61 @@
 }
 ]
 },
+"fun-glinka-60-oktyabrya": {
+"building_addr": "проспект 60-летия Октября, 16 к1",
+"building_entrances": [
+{
+"addr:flats": "24-43",
+"d": 6,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "44-63",
+"d": 13,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"addr:flats": "1-23",
+"d": 23,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "64-83",
+"d": 31,
+"entrance": "staircase",
+"ref": "4"
+}
+],
+"parking": [
+{
+"access": "yes",
+"charge": "40 RUB/hour",
+"d": 104,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 236,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "permissive",
+"capacity": "5",
+"d": 255,
+"parking": "surface"
+}
+],
+"poi": {
+"contact:phone": "+7 909 9263800",
+"contact:website": "https://глина.online",
+"opening_hours": "Mo-Su 12:00-20:00"
+}
+},
 "fun-holly-polly-kupavna": {
 "building_addr": "улица Горького, 1А",
 "parking": [
@@ -62199,6 +62329,82 @@
 }
 ]
 },
+"fun-igrovaya-deti-podolsk": {
+"building_addr": "Комсомольская улица, 3",
+"building_entrances": [
+{
+"d": 19,
+"entrance": "yes"
+},
+{
+"d": 28,
+"entrance": "yes"
+},
+{
+"d": 48,
+"entrance": "yes"
+},
+{
+"d": 51,
+"entrance": "yes"
+},
+{
+"d": 58,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 54,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 64,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 72,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity:disabled": "2",
+"charge": "50 RUB",
+"d": 101,
+"fee": "yes",
+"operator": "Московский паркинг",
+"parking": "street_side"
+}
+]
+},
+"fun-inzhinirium-korolev": {
+"building_addr": "улица Калинина, 14",
+"parking": [
+{
+"d": 36,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 248,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"d": 257
+},
+{
+"d": 269
+}
+]
+},
 "fun-keramika-tis-aprelevka": {
 "building_addr": "Августовская улица, 1",
 "parking": [
@@ -62207,6 +62413,36 @@
 "d": 236,
 "fee": "no",
 "parking": "surface"
+}
+]
+},
+"fun-kinderika-korolev": {
+"building_addr": "проспект Космонавтов, 34Б",
+"building_entrances": [
+{
+"d": 18,
+"entrance": "yes"
+},
+{
+"d": 37,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"d": 17,
+"parking": "surface"
+},
+{
+"d": 137,
+"parking": "street_side"
+},
+{
+"d": 145
+},
+{
+"d": 147,
+"parking": "underground"
 }
 ]
 },
@@ -62279,6 +62515,27 @@
 }
 ]
 },
+"fun-levandovskikh-odintsovo": {
+"building_addr": "Молодёжная улица, 46 с1",
+"parking": [
+{
+"access": "yes",
+"d": 71,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 139
+},
+{
+"d": 256
+},
+{
+"d": 286,
+"parking": "street_side"
+}
+]
+},
 "fun-liga-robotov-yuzhnaya": {
 "building_addr": "Днепропетровская улица, 3 к5А",
 "parking": [
@@ -62295,6 +62552,58 @@
 "access": "customers",
 "d": 89,
 "parking": "surface"
+}
+]
+},
+"fun-masterim-podolsk": {
+"building_addr": "Февральская улица, 59",
+"parking": [
+{
+"d": 58,
+"fee": "no"
+},
+{
+"capacity": "4",
+"d": 98,
+"fee": "no"
+},
+{
+"access": "yes",
+"charge": "50 RUB",
+"d": 103,
+"fee": "yes",
+"operator": "Московский паркинг",
+"parking": "surface"
+},
+{
+"access": "yes",
+"charge": "50 RUB",
+"d": 120,
+"fee": "yes",
+"operator": "Московский паркинг",
+"parking": "surface"
+}
+]
+},
+"fun-mega-pesochnitsa-mytishchi": {
+"parking": [
+{
+"d": 110,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 136,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 148,
+"fee": "yes",
+"parking": "multi-storey"
+},
+{
+"d": 151
 }
 ]
 },
@@ -62373,6 +62682,30 @@
 }
 ]
 },
+"fun-portal-vr-lyubertsy": {
+"building_addr": "Озёрная улица, 2",
+"parking": [
+{
+"d": 52
+},
+{
+"d": 59,
+"parking": "street_side"
+},
+{
+"d": 79,
+"parking": "street_side"
+},
+{
+"d": 101,
+"parking": "street_side"
+}
+],
+"poi": {
+"phone": "+7 495 9888234",
+"website": "https://lubdoy16.edumsko.ru/"
+}
+},
 "fun-propryatki-klimovsk": {
 "parking": [
 {
@@ -62417,6 +62750,47 @@
 }
 ]
 },
+"fun-robocentr-poligon-altufyevo": {
+"building_addr": "Алтуфьевское шоссе, 102Б",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 44
+}
+],
+"parking": [
+{
+"d": 107
+},
+{
+"d": 155
+},
+{
+"capacity": "20",
+"d": 173,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 185
+}
+]
+},
+"fun-stem-lab-vidnoe": {
+"building_addr": "Берёзовая улица, 9",
+"parking": [
+{
+"d": 108,
+"parking": "underground"
+},
+{
+"d": 121
+},
+{
+"d": 253
+}
+]
+},
 "fun-tesla-beskudnikovsky": {
 "parking": [
 {
@@ -62435,6 +62809,55 @@
 "access": "yes",
 "d": 147,
 "fee": "no",
+"parking": "surface"
+}
+]
+},
+"fun-tk-school-vidnoe": {
+"building_addr": "Завидная улица, 6",
+"parking": [
+{
+"d": 284
+},
+{
+"d": 291,
+"parking": "underground"
+},
+{
+"d": 295
+}
+]
+},
+"fun-tuki-tuki-reutov": {
+"parking": [
+{
+"d": 72
+},
+{
+"access": "yes",
+"d": 121,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 151
+},
+{
+"d": 173
+}
+]
+},
+"fun-yunyy-master-podolsk": {
+"building_addr": "улица Ульяновых, 1",
+"parking": [
+{
+"d": 155,
+"fee": "yes",
+"operator": "Московский паркинг",
+"parking": "street_side"
+},
+{
+"d": 240,
 "parking": "surface"
 }
 ]
