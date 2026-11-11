@@ -2095,38 +2095,37 @@
 "building_addr": "Скандинавский бульвар, 2 к8",
 "building_entrances": [
 {
+"d": 0,
+"entrance": "main"
+},
+{
 "addr:flats": "1-115",
-"d": 22,
+"d": 27,
 "entrance": "staircase",
 "ref": "1"
 },
 {
-"d": 24,
-"entrance": "main"
-},
-{
 "addr:flats": "116-230",
-"d": 36,
+"d": 60,
 "entrance": "staircase",
 "ref": "2"
 }
 ],
 "parking": [
 {
-"d": 82,
+"d": 60,
 "parking": "street_side"
 },
 {
-"d": 233,
+"d": 241,
 "parking": "street_side"
 },
 {
-"d": 243,
+"d": 251,
 "parking": "street_side"
 },
 {
-"d": 257,
-"parking": "surface"
+"d": 263
 }
 ]
 },
@@ -19490,22 +19489,22 @@
 ]
 },
 "cafe-egomania-reutov": {
-"building_addr": "Южная улица, 3В",
 "parking": [
 {
-"d": 84,
-"fee": "yes"
+"d": 93
 },
 {
-"d": 101
+"d": 109,
+"fee": "yes"
 },
 {
 "capacity": "73",
-"d": 102,
+"d": 122,
 "fee": "yes"
 },
 {
-"d": 114
+"d": 128,
+"fee": "yes"
 }
 ],
 "poi": {
@@ -24483,49 +24482,30 @@
 ]
 },
 "cafe-korchma-dikanka-zelenograd": {
-"building_addr": "Савёлкинский проезд, 12",
-"building_entrances": [
-{
-"d": 11,
-"entrance": "yes"
-},
-{
-"d": 15,
-"entrance": "yes"
-},
-{
-"d": 18,
-"entrance": "yes"
-},
-{
-"d": 18,
-"entrance": "yes"
-}
-],
 "parking": [
 {
 "access": "yes",
 "capacity:disabled": "4",
-"d": 42,
+"d": 52,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 101,
+"d": 115,
 "fee": "yes",
 "parking": "surface",
 "supervised": "no"
 },
 {
 "access": "yes",
-"d": 140,
+"d": 128,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 147,
+"d": 137,
 "fee": "no",
 "parking": "surface"
 }
@@ -31404,21 +31384,18 @@
 ]
 },
 "cafe-pekin-pavlovsky-posad": {
-"building_addr": "улица 1 Мая, 95А",
 "parking": [
 {
-"d": 144
+"d": 199
 },
 {
-"access": "yes",
-"d": 155,
-"fee": "no"
+"d": 219
 },
 {
-"d": 205
+"d": 223
 },
 {
-"d": 272
+"d": 267
 }
 ]
 },
@@ -40231,41 +40208,27 @@
 }
 },
 "cafe-yakitoriya-solnechnogorsk": {
-"building_addr": "Красная улица, 22А",
-"building_entrances": [
-{
-"d": 33,
-"entrance": "yes"
-},
-{
-"d": 74,
-"entrance": "yes"
-}
-],
 "parking": [
 {
 "access": "yes",
-"d": 45,
+"d": 77,
 "parking": "surface"
 },
 {
-"d": 105
+"access": "yes",
+"d": 91,
+"parking": "surface"
+},
+{
+"d": 134
 },
 {
 "access": "yes",
-"d": 112,
+"d": 136,
 "fee": "no",
 "parking": "surface"
-},
-{
-"access": "yes",
-"d": 120,
-"parking": "surface"
 }
-],
-"poi": {
-"opening_hours": "Mo-Su 09:00-21:00"
-}
+]
 },
 "cafe-yakitoriya-troitsk": {
 "poi": {
@@ -52118,13 +52081,13 @@
 "d": 56
 },
 {
-"d": 66
+"d": 67
 },
 {
 "d": 178
 },
 {
-"d": 179
+"d": 181
 }
 ]
 },
@@ -78114,6 +78077,42 @@
 }
 ]
 },
+"karting-drift-king-kolomna": {
+"building_addr": "улица Октябрьской Революции, 362",
+"building_entrances": [
+{
+"d": 0,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 66,
+"fee": "yes",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"access": "yes",
+"d": 181,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 192,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 195,
+"fee": "yes",
+"parking": "surface",
+"supervised": "no"
+}
+]
+},
 "karting-drift-krokus": {
 "building_addr": "Международная улица, 12",
 "building_entrances": [
@@ -78371,6 +78370,9 @@
 "d": 281
 }
 ]
+},
+"karting-gs-racing-lesnoy": {
+"building_addr": "улица Пушкина, 2А с4"
 },
 "karting-kartracing": {
 "building_addr": "улица Заречье, 3",
@@ -122583,17 +122585,17 @@
 "building_addr": "бульвар Дмитрия Донского, 18/4",
 "parking": [
 {
-"d": 135,
+"d": 134,
 "fee": "yes"
 },
 {
-"d": 173
+"d": 175
 },
 {
-"d": 180
+"d": 182
 },
 {
-"d": 236,
+"d": 235,
 "fee": "yes"
 }
 ]
@@ -124860,6 +124862,44 @@
 "d": 282,
 "fee": "no",
 "parking": "surface"
+}
+]
+},
+"skate-boroda-kashirskoe": {
+"building_addr": "Каширское шоссе, 22 к3 с2",
+"parking": [
+{
+"access": "yes",
+"d": 161,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 282,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 294,
+"fee": "no",
+"parking": "street_side"
+}
+]
+},
+"skate-dvij-ramenskoe": {
+"parking": [
+{
+"d": 39
+},
+{
+"d": 108
+},
+{
+"d": 111
+},
+{
+"d": 112
 }
 ]
 },
