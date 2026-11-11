@@ -1,15 +1,16 @@
 name: Приём отчёта ChatGPT из pull request
-# Если ChatGPT положил отчёт через pull request — влить его сам, когда PR от владельца и меняет только gpt/reports/*.json.
+# Если ChatGPT/Codex положил отчёт через pull request — влить его сам, когда PR от владельца (или от Codex) и меняет только
+# gpt/reports/*.json и gpt/slices/*.json (пачки gpt-codex.yml).
 on:
   pull_request:
     types: [opened, synchronize, reopened]
-    paths: ["gpt/reports/**"]
+    paths: ["gpt/reports/**", "gpt/slices/**"]
 permissions:
   contents: write
   pull-requests: write
 jobs:
   merge:
-    if: github.event.pull_request.user.login == 'vadimsurov-apps' && github.event.pull_request.head.repo.full_name == github.repository
+    if: (github.event.pull_request.user.login == 'vadimsurov-apps' || github.event.pull_request.user.login == 'chatgpt-codex-connector[bot]') && github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     outputs:
       merged: ${{ steps.m.outputs.merged }}
@@ -23,7 +24,8 @@ jobs:
           git fetch -q origin main
           FILES=$(git diff --name-only origin/main...HEAD)
           echo "$FILES"
-          if echo "$FILES" | grep -qv '^gpt/reports/.*\.json$'; then
+          echo "$FILES" | grep -q '^gpt/reports/.*\.json$' || { echo "отчёта ещё нет"; exit 0; }
+          if echo "$FILES" | grep -qvE '^gpt/(reports|slices)/.*\.json$'; then
             gh pr comment ${{ github.event.pull_request.number }} --body "В PR есть файлы не из gpt/reports — влить вручную."; exit 0
           fi
           for f in $FILES; do python3 -m json.tool "$f" > /dev/null || { gh pr comment ${{ github.event.pull_request.number }} --body "$f — не JSON."; exit 0; }; done

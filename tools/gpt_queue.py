@@ -14,7 +14,7 @@ def last(pid):
     return max(d) if d else ""
 pri = {"food": 0, "kidsroom": 0, "playcenters": 1, "pools": 1, "dance": 2}
 places.sort(key=lambda p: (bool(gpt.get(p["id"])), last(p["id"]), min([pri.get(c, 5) for c in p.get("cats") or []] or [5])))
-q = [{"id": p["id"], **{k: p.get(k) for k in FIELDS}} for p in places[:300]]
+q = [{"id": p["id"], **{k: p.get(k) for k in FIELDS}} for p in places[:800]]
 os.makedirs(os.path.join(ROOT, "gpt", "reports"), exist_ok=True)
 json.dump({"date": datetime.date.today().isoformat(), "places": q}, open(os.path.join(ROOT, "gpt", "queue.json"), "w"),
           ensure_ascii=False, indent=1)

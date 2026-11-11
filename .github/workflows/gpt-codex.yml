@@ -1,0 +1,68 @@
+name: Codex-проверяющий (по подписке ChatGPT, без оплаты API)
+# Вадим 11.11: проверка карточек силами ChatGPT/Codex по его подписке. Робот создаёт pull request с пачкой мест
+# (gpt/slices/<имя>.json) и пишет в нём «@codex …» от имени Вадима (секрет CODEX_PAT). Codex в облаке читает AGENTS.md
+# и наши правила (gpt/RULES.md), проверяет места и коммитит отчёт gpt/reports/<имя>.json в ту же ветку →
+# gpt-pr.yml вливает → gpt.yml применяет. Настройки (Settings → Secrets and variables → Actions → Variables):
+# CODEX_SLICES — сколько пачек держать в работе одновременно (по умолчанию 3), CODEX_N — мест в пачке (25).
+on:
+  schedule:
+    - cron: "15 * * * *"
+  workflow_dispatch:
+    inputs:
+      slices: { description: "пачек в работе", default: "" }
+      n: { description: "мест в пачке", default: "" }
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: gpt-codex
+  cancel-in-progress: false
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Есть ли ключ
+        id: k
+        env: { PAT: "${{ secrets.CODEX_PAT }}" }
+        run: 'if [ -n "$PAT" ]; then echo ok=1 >> "$GITHUB_OUTPUT"; else echo "нет секрета CODEX_PAT — пропуск"; fi'
+      - uses: actions/checkout@v4
+        if: steps.k.outputs.ok == '1'
+        with: { token: "${{ secrets.CODEX_PAT }}", fetch-depth: 0 }
+      - name: Пачки — создать и позвать Codex
+        if: steps.k.outputs.ok == '1'
+        env:
+          GH_TOKEN: ${{ secrets.CODEX_PAT }}
+          SLICES: ${{ github.event.inputs.slices || vars.CODEX_SLICES || '3' }}
+          N: ${{ github.event.inputs.n || vars.CODEX_N || '25' }}
+        run: |
+          set -e
+          git config user.name "kudapoiti-bot"; git config user.email "bot@users.noreply.github.com"
+          # 1) зависшие (Codex не ответил за 10 ч) — закрыть, места вернутся в очередь
+          gh pr list --state open --limit 100 --json number,createdAt,headRefName \
+            --jq '.[] | select(.headRefName|startswith("codex/check-")) | select((now - (.createdAt|fromdateiso8601)) > 36000) | .number' |
+            while read n; do gh pr close "$n" --delete-branch --comment "Codex не ответил за 10 часов — места вернутся в очередь." || true; done
+          # 2) сколько пачек уже в работе
+          BR=$(gh pr list --state open --limit 100 --json headRefName --jq '.[].headRefName | select(startswith("codex/check-"))')
+          OPEN=$(echo "$BR" | grep -c . || true)
+          WANT=$(( SLICES - OPEN )); echo "в работе $OPEN, нужно ещё $WANT"
+          [ "$WANT" -gt 0 ] || exit 0
+          BUSY=$(mktemp -d); OUT=$(mktemp -d)
+          for b in $BR; do git show "origin/$b:gpt/slices/${b#codex/check-}.json" > "$BUSY/${b#codex/check-}.json" 2>/dev/null || true; done
+          NAMES=$(python3 tools/codex_slices.py "$WANT" "$N" "$OUT" "$BUSY")
+          # 3) чистка старых пачек в main (старше 3 суток удалил codex_slices.py)
+          if ! git diff --quiet -- gpt/slices; then
+            git add -A gpt/slices && git commit -q -m "Codex: убрать старые пачки" && git push -q origin HEAD:main || true
+          fi
+          # 4) по пачке — ветка, PR, вызов @codex
+          for name in $NAMES; do
+            git checkout -q -B "codex/check-$name" origin/main
+            mkdir -p gpt/slices && cp "$OUT/$name.json" gpt/slices/
+            git add "gpt/slices/$name.json" && git commit -q -m "Пачка для Codex: $name"
+            git push -q origin "codex/check-$name"
+            COUNT=$(python3 -c "import json;print(len(json.load(open('gpt/slices/$name.json'))['places']))")
+            URL=$(gh pr create --base main --head "codex/check-$name" --title "Проверка карточек Codex: $name ($COUNT мест)" \
+              --body "Пачка gpt/slices/$name.json. Задача — в AGENTS.md («Проверка карточек»). Отчёт: gpt/reports/$name.json в эту ветку.")
+            gh pr comment "$URL" --body "@codex Выполни задачу «Проверка карточек» из AGENTS.md. Пачка: gpt/slices/$name.json ($COUNT мест). Сначала прочитай gpt/RULES.md и gpt/README.md — это наши договорённости, работай строго по ним. Отчёт — gpt/reports/$name.json, закоммить только его в эту же ветку."
+            echo "создана пачка $name: $URL"
+          done
