@@ -256,6 +256,24 @@
 ],
 "status": "moved"
 },
+"act-place-polyarnaya": {
+"addr": "Полярная улица, 27 к3",
+"building": "relation/10782264",
+"src": [
+55.882302,
+37.635166
+],
+"status": "ok"
+},
+"action-krasny-oktyabr": {
+"addr": "Берсеневский переулок, 5 с2",
+"building": "relation/9904151",
+"src": [
+55.741408,
+37.609949
+],
+"status": "ok"
+},
 "action-lasertag-ramenskoe": {
 "addr": "Северное шоссе, 16А",
 "building": "way/850222426",
@@ -714,6 +732,9 @@
 37.74528
 ],
 "status": "moved"
+},
+"akademiya-krutogo-myasnitskaya": {
+"status": "poi"
 },
 "akademiya-pleshcheeva": {
 "addr": "улица Плещеева, 12А",
@@ -1283,8 +1304,8 @@
 "addr": "Кутузовский проспект, 57",
 "building": "relation/7377894",
 "src": [
-55.728,
-37.4762
+55.727784,
+37.474215
 ],
 "status": "ok"
 },
@@ -1983,6 +2004,20 @@
 ],
 "status": "moved"
 },
+"arbatclass-sivtsev": {
+"addr": "переулок Сивцев Вражек, 20",
+"building": "way/35810601",
+"entrances": 0,
+"lat": 55.747952,
+"lon": 37.593974,
+"method": "osm-building",
+"moved_m": 0,
+"src": [
+55.747952,
+37.593974
+],
+"status": "moved"
+},
 "arcade-museum": {
 "key": "рождественка улица | 12",
 "status": "not-found"
@@ -2241,6 +2276,15 @@
 ],
 "status": "ok"
 },
+"art-insight-avtozavodskaya": {
+"addr": "Автозаводская улица, 18",
+"building": "way/244392185",
+"src": [
+55.705161,
+37.639915
+],
+"status": "ok"
+},
 "art-kaleidoskop-balashikha": {
 "addr": "Московский бульвар, 1А",
 "building": "way/31992008",
@@ -2319,6 +2363,15 @@
 37.645
 ],
 "status": "moved"
+},
+"art-pokolenie-krasnoarmeyskaya": {
+"addr": "Красноармейская улица, 23",
+"building": "way/27744817",
+"src": [
+55.802302,
+37.536539
+],
+"status": "ok"
 },
 "art-sloboda-nagatinskaya": {
 "addr": "Нагатинская улица, 16 с9",
@@ -2923,6 +2976,15 @@
 37.272
 ],
 "status": "moved"
+},
+"azart-supruna": {
+"addr": "улица Степана Супруна, 12 к3",
+"building": "way/204269990",
+"src": [
+55.797486,
+37.545522
+],
+"status": "ok"
 },
 "azbuka-baleta-domodedovskaya": {
 "addr": "Ореховый бульвар, 22А",
@@ -5067,6 +5129,20 @@
 ],
 "status": "moved"
 },
+"buff-fadeeva": {
+"addr": "улица Фадеева, 4А",
+"building": "relation/3756497",
+"entrances": 0,
+"lat": 55.774998,
+"lon": 37.601306,
+"method": "osm-building",
+"moved_m": 0,
+"src": [
+55.774998,
+37.601306
+],
+"status": "moved"
+},
 "bukhta-barakhta-shchelkovo": {
 "addr": "улица Шмидта, 5",
 "building": "way/93524627",
@@ -5440,18 +5516,7 @@
 "status": "ok"
 },
 "cafe-anderson-taganskaya": {
-"addr": "Таганская улица, 36 с1",
-"building": "way/292478609",
-"entrance": null,
-"lat": 55.739195,
-"lon": 37.666508,
-"method": "osm-entrance",
-"moved_m": 93,
-"src": [
-55.738401,
-37.666043
-],
-"status": "moved"
+"status": "poi"
 },
 "cafe-anderson-tsaritsyno": {
 "status": "poi"
@@ -6840,18 +6905,7 @@
 "status": "poi"
 },
 "cafe-dodo-shchelkovo-lenina": {
-"addr": "площадь Ленина, 2А",
-"building": "relation/1763313",
-"entrance": "main",
-"lat": 55.921193,
-"lon": 37.992126,
-"method": "osm-entrance",
-"moved_m": 64,
-"src": [
-55.9215,
-37.993
-],
-"status": "moved"
+"status": "poi"
 },
 "cafe-dodo-stupino": {
 "status": "poi"
@@ -7462,18 +7516,7 @@
 "status": "poi"
 },
 "cafe-galaktika-2-korolyova": {
-"addr": "улица Академика Королёва, 8А",
-"building": "relation/18081217",
-"entrances": 0,
-"lat": 55.822379,
-"lon": 37.623167,
-"method": "osm-building",
-"moved_m": 158,
-"src": [
-55.8238,
-37.623
-],
-"status": "moved"
+"status": "poi"
 },
 "cafe-galereya-kuzminki": {
 "key": "кузьминки парк | 1",
@@ -7855,10 +7898,10 @@
 "lat": 55.828563,
 "lon": 37.4445,
 "method": "osm-building",
-"moved_m": 58,
+"moved_m": 89,
 "src": [
-55.829,
-37.444
+55.828546,
+37.445924
 ],
 "status": "moved"
 },
@@ -8532,16 +8575,11 @@
 "cafe-klevo-usacheva": {
 "addr": "Усачёва улица, 26",
 "building": "way/45099463",
-"entrances": 2,
-"lat": 55.72752,
-"lon": 37.567682,
-"method": "osm-building",
-"moved_m": 90,
 "src": [
-55.7283,
-37.5673
+55.727663,
+37.567516
 ],
-"status": "moved"
+"status": "ok"
 },
 "cafe-klevoe-bistro-cheremushkinsky": {
 "key": "вавилова улица | 64/1с1",
@@ -8902,13 +8940,7 @@
 "status": "poi"
 },
 "cafe-lama-dzhoni-dolgoprudny": {
-"addr": "Парковая улица, 46 к1",
-"building": "relation/17902100",
-"src": [
-55.949828,
-37.484774
-],
-"status": "ok"
+"status": "poi"
 },
 "cafe-landrin-sushchevskaya": {
 "status": "poi"
@@ -11331,16 +11363,11 @@
 "cafe-ris-cafe-skandinaviya": {
 "addr": "улица Эдварда Грига, 16 к1",
 "building": "relation/17652962",
-"entrances": 54,
-"lat": 55.554962,
-"lon": 37.504415,
-"method": "osm-building",
-"moved_m": 1413,
 "src": [
-55.5468,
-37.4872
+55.555188,
+37.505098
 ],
-"status": "moved"
+"status": "ok"
 },
 "cafe-river-club-moscow": {
 "key": "авиационная улица | 79к1с2",
@@ -12801,17 +12828,12 @@
 },
 "cafe-turki-diner-nebesny": {
 "addr": "Небесный бульвар, 1 к1",
-"building": "way/1414027169",
-"entrances": 0,
-"lat": 55.819161,
-"lon": 37.425873,
-"method": "osm-building",
-"moved_m": 585,
+"building": "way/1414014927",
 "src": [
-55.818,
-37.435
+55.819392,
+37.423201
 ],
-"status": "moved"
+"status": "ok"
 },
 "cafe-tutta-la-vita": {
 "status": "poi"
@@ -13584,8 +13606,7 @@
 "status": "poi"
 },
 "cafe-yakitoriya-vidnoe": {
-"key": "проспект советский | 4",
-"status": "not-found"
+"status": "poi"
 },
 "cafe-yakitoriya-volgogradsky": {
 "addr": "Волгоградский проспект, 15",
@@ -14054,6 +14075,15 @@
 "src": [
 54.830368,
 38.168349
+],
+"status": "ok"
+},
+"cbs-sivtsev-45": {
+"addr": "переулок Сивцев Вражек, 45 с2",
+"building": "way/176299930",
+"src": [
+55.746121,
+37.58643
 ],
 "status": "ok"
 },
@@ -16942,16 +16972,11 @@
 "colorumba-dekabristov": {
 "addr": "улица Декабристов, 12",
 "building": "way/24507052",
-"entrances": 3,
-"lat": 55.863301,
-"lon": 37.602009,
-"method": "osm-building",
-"moved_m": 227,
 "src": [
-55.865,
-37.6
+55.863645,
+37.602508
 ],
-"status": "moved"
+"status": "ok"
 },
 "cooknrun-odintsovo": {
 "addr": "улица Чикина, 1А",
@@ -18003,6 +18028,15 @@
 ],
 "status": "moved"
 },
+"detal-ceramics-shukhova": {
+"addr": "улица Шухова, 18",
+"building": "way/46094876",
+"src": [
+55.716956,
+37.610407
+],
+"status": "ok"
+},
 "deti-budushchego-nagatinskaya": {
 "addr": "Нагатинская улица, 16",
 "building": "way/50344783",
@@ -18702,8 +18736,26 @@
 "domodedovo-yolochki": {
 "status": "territory"
 },
+"donner-ballet-krasnokazarmennaya": {
+"addr": "Красноказарменная улица, 14А с3",
+"building": "relation/11186468",
+"src": [
+55.752523,
+37.708957
+],
+"status": "ok"
+},
 "doroga-pamyati": {
 "status": "poi"
+},
+"dosimi-novopeschanaya": {
+"addr": "Новопесчаная улица, 13 к2",
+"building": "way/682131778",
+"src": [
+55.799285,
+37.515928
+],
+"status": "ok"
 },
 "dostizhenie-varshavskoe-160": {
 "addr": "Варшавское шоссе, 160 к1",
@@ -19059,6 +19111,15 @@
 ],
 "status": "moved"
 },
+"dykhanie-zvuka-mytishchinskaya": {
+"addr": "3-я Мытищинская улица, 3 с1",
+"building": "way/345037458",
+"src": [
+55.805342,
+37.641938
+],
+"status": "ok"
+},
 "dynamo-boxing-arena": {
 "status": "poi"
 },
@@ -19400,7 +19461,7 @@
 55.777671,
 37.501573
 ],
-"status": "far-unsure"
+"status": "moved"
 },
 "effee-pups-pilyugina": {
 "addr": "улица Академика Пилюгина, 12 к1",
@@ -19577,18 +19638,7 @@
 "status": "ok"
 },
 "egoryevsk-berezhki": {
-"addr": "Касимовское шоссе, 45А",
-"building": "way/188172894",
-"entrances": 0,
-"lat": 55.364531,
-"lon": 39.0836,
-"method": "osm-building",
-"moved_m": 1053,
-"src": [
-55.37,
-39.07
-],
-"status": "moved"
+"status": "poi"
 },
 "egoryevsk-dk-konina": {
 "addr": "Советская улица, 174",
@@ -21412,6 +21462,10 @@
 37.4845
 ],
 "status": "moved"
+},
+"flying-dreams-kabelny": {
+"key": "2-й кабельный проспект | 1",
+"status": "not-found"
 },
 "flytour-kolomna": {
 "addr": "улица Зайцева, 14",
@@ -23663,8 +23717,8 @@
 "addr": "7-я Кожуховская улица, 9",
 "building": "way/100159425",
 "src": [
-55.7104,
-37.6745
+55.71007,
+37.675346
 ],
 "status": "ok"
 },
@@ -23983,6 +24037,24 @@
 },
 "gubernsky-theatre": {
 "status": "poi"
+},
+"guitar-school-1-krasnokazarmennaya": {
+"addr": "Красноказарменная улица, 14А к2",
+"building": "relation/12997769",
+"entrances": 0,
+"lat": 55.752988,
+"lon": 37.707676,
+"method": "osm-building",
+"moved_m": 0,
+"src": [
+55.752988,
+37.707676
+],
+"status": "moved"
+},
+"guitar-school-1-starovatutinsky": {
+"key": "проспект староватутинский | 17",
+"status": "not-found"
 },
 "gumbeat-dance-kedrova": {
 "addr": "улица Кедрова, 14 к1",
@@ -26210,6 +26282,15 @@
 "src": [
 55.8033,
 37.6188
+],
+"status": "ok"
+},
+"invibe-vnukovo": {
+"addr": "Большая Внуковская улица, 6",
+"building": "way/131318080",
+"src": [
+55.613419,
+37.294938
 ],
 "status": "ok"
 },
@@ -28554,6 +28635,15 @@
 ],
 "status": "moved"
 },
+"kidsvoks-matveevskaya": {
+"addr": "Матвеевская улица, 34 к1",
+"building": "way/27787569",
+"src": [
+55.704059,
+37.461277
+],
+"status": "ok"
+},
 "kidswim-kashirskoe": {
 "addr": "Каширское шоссе, 55А",
 "building": "way/54830067",
@@ -30465,6 +30555,15 @@
 ],
 "status": "moved"
 },
+"kupina-ivovaya": {
+"addr": "Ивовая улица, 6 с2",
+"building": "way/48676908",
+"src": [
+55.859342,
+37.644629
+],
+"status": "ok"
+},
 "kuprin-tennis-ostryakova": {
 "addr": "улица Острякова, 7",
 "building": "way/35024640",
@@ -31693,6 +31792,15 @@
 ],
 "status": "moved"
 },
+"lisse-arbat": {
+"addr": "улица Арбат, 35",
+"building": "relation/4027706",
+"src": [
+55.749072,
+37.591551
+],
+"status": "ok"
+},
 "lisya-nora-kozhukhovskaya": {
 "addr": "6-я Кожуховская улица, 15",
 "building": "way/642976173",
@@ -32582,8 +32690,7 @@
 "status": "ok"
 },
 "mamin-sadik-karetny": {
-"key": "каретный ряд улица | 3с8",
-"status": "not-found"
+"status": "poi"
 },
 "mamm-ostozhenka": {
 "addr": "улица Остоженка, 16",
@@ -35424,6 +35531,15 @@
 "key": "большая марфинская улица | 1",
 "status": "not-found"
 },
+"muz-dorozhka-altufyevskoe": {
+"addr": "Алтуфьевское шоссе, 102Б",
+"building": "way/43081157",
+"src": [
+55.904055,
+37.591385
+],
+"status": "ok"
+},
 "muza-kids-balashikha": {
 "addr": "проспект Ленина, 76",
 "building": "relation/5152490",
@@ -35616,8 +35732,8 @@
 "addr": "улица Ленина, 2",
 "building": "way/249861617",
 "src": [
-55.8197,
-37.3208
+55.819678,
+37.320842
 ],
 "status": "ok"
 },
@@ -35704,6 +35820,20 @@
 37.581956
 ],
 "status": "ok"
+},
+"nat-profsoyuznaya": {
+"addr": "Профсоюзная улица, 11/11",
+"building": "way/30350537",
+"entrances": 0,
+"lat": 55.681549,
+"lon": 37.568144,
+"method": "osm-building",
+"moved_m": 6,
+"src": [
+55.681591,
+37.568203
+],
+"status": "moved"
 },
 "natator-marfino": {
 "addr": "Большая Марфинская улица, 7А",
@@ -36476,6 +36606,15 @@
 },
 "nikola-lenivets": {
 "status": "territory"
+},
+"nikolaev-choreo-arbat": {
+"addr": "улица Арбат, 24",
+"building": "way/302740950",
+"src": [
+55.750162,
+37.591964
+],
+"status": "ok"
 },
 "nikolaeva-karate-ferganskaya": {
 "key": "улица ферганская | 8а",
@@ -37451,8 +37590,8 @@
 "addr": "Алтуфьевское шоссе, 70 к1",
 "building": "relation/6950146",
 "src": [
-55.888437,
-37.588825
+55.887921,
+37.588129
 ],
 "status": "ok"
 },
@@ -38129,6 +38268,15 @@
 "src": [
 55.601846,
 37.536048
+],
+"status": "ok"
+},
+"paint-school-vnukovo": {
+"addr": "улица Лётчика Грицевца, 6",
+"building": "way/230348703",
+"src": [
+55.622806,
+37.304739
 ],
 "status": "ok"
 },
@@ -41784,6 +41932,20 @@
 ],
 "status": "ok"
 },
+"ritm-mosfilmovskaya": {
+"addr": "Мосфильмовская улица, 53",
+"building": "way/345999743",
+"entrances": 0,
+"lat": 55.704572,
+"lon": 37.497783,
+"method": "osm-building",
+"moved_m": 0,
+"src": [
+55.704572,
+37.497783
+],
+"status": "moved"
+},
 "ritm-x-dubninskaya": {
 "key": "дубнинская улица | 75с1а",
 "status": "not-found"
@@ -41832,6 +41994,18 @@
 37.65822
 ],
 "status": "moved"
+},
+"rnbsh-gnezdnikovsky": {
+"status": "poi"
+},
+"rnbsh-maryinskaya": {
+"addr": "Большая Марьинская улица, 15 к2 с2",
+"building": "way/38026672",
+"src": [
+55.808072,
+37.63329
+],
+"status": "ok"
 },
 "robbo-turistskaya": {
 "addr": "Туристская улица, 16 к4",
@@ -42271,6 +42445,15 @@
 },
 "russkaya-pesnya-theatre": {
 "status": "poi"
+},
+"russkaya-rech-vlasova": {
+"addr": "улица Архитектора Власова, 6",
+"building": "relation/18572197",
+"src": [
+55.679797,
+37.550148
+],
+"status": "ok"
 },
 "russky-balet-dubninskaya": {
 "addr": "Дубнинская улица, 6 к1",
@@ -43889,6 +44072,15 @@
 ],
 "status": "ok"
 },
+"shum-gazoprovod": {
+"addr": "улица Газопровод, 9А",
+"building": "way/145182826",
+"src": [
+55.590989,
+37.606911
+],
+"status": "ok"
+},
 "sibirsky-bars-lyublinskaya": {
 "addr": "Люблинская улица, 153",
 "building": "way/27811815",
@@ -44666,6 +44858,15 @@
 37.553451
 ],
 "status": "moved"
+},
+"soul-dance-entuziastov": {
+"addr": "шоссе Энтузиастов, 54",
+"building": "way/49677893",
+"src": [
+55.75949,
+37.761594
+],
+"status": "ok"
 },
 "sova-dance-fabriciusa": {
 "addr": "улица Фабрициуса, 22",
@@ -45666,6 +45867,15 @@
 "src": [
 55.505817,
 37.557807
+],
+"status": "ok"
+},
+"start-brateevskaya": {
+"addr": "Братеевская улица, 16 к3",
+"building": "way/160195720",
+"src": [
+55.633416,
+37.766834
 ],
 "status": "ok"
 },
@@ -46765,6 +46975,15 @@
 ],
 "status": "ok"
 },
+"teatr-mira-mytishchinskaya": {
+"addr": "3-я Мытищинская улица, 3 с1",
+"building": "way/345037458",
+"src": [
+55.805342,
+37.641938
+],
+"status": "ok"
+},
 "teatr-myuzikla": {
 "status": "poi"
 },
@@ -47719,6 +47938,20 @@
 ],
 "status": "moved"
 },
+"tertsiya-lenskaya": {
+"addr": "Ленская улица, 2/21",
+"building": "way/42236554",
+"entrances": 4,
+"lat": 55.866054,
+"lon": 37.674335,
+"method": "osm-building",
+"moved_m": 0,
+"src": [
+55.866054,
+37.674335
+],
+"status": "moved"
+},
 "tesla-odintsovo-makovskogo": {
 "addr": "улица Маковского, 16",
 "building": "way/39248714",
@@ -48345,8 +48578,8 @@
 "addr": "Тишинская площадь, 1 с1",
 "building": "relation/6076352",
 "src": [
-55.7696,
-37.5841
+55.769603,
+37.58409
 ],
 "status": "ok"
 },
@@ -48361,6 +48594,20 @@
 },
 "tretyakovka-kids": {
 "status": "poi"
+},
+"tri-chetverti-vnukovo": {
+"addr": "улица Самуила Маршака, 24",
+"building": "relation/14684290",
+"entrances": 0,
+"lat": 55.635675,
+"lon": 37.319633,
+"method": "osm-building",
+"moved_m": 0,
+"src": [
+55.635675,
+37.319633
+],
+"status": "moved"
 },
 "tri-medvedya-elektrozavodskaya": {
 "addr": "Электрозаводская улица, 58",
@@ -48687,6 +48934,15 @@
 ],
 "status": "far-unsure"
 },
+"triumf-varshavskoe": {
+"addr": "Варшавское шоссе, 141А к6",
+"building": "relation/10523483",
+"src": [
+55.584324,
+37.603273
+],
+"status": "ok"
+},
 "triumf-yunost": {
 "addr": "улица Академика Бакулева, 5",
 "building": "way/40951796",
@@ -49006,8 +49262,8 @@
 "addr": "Багратионовский проезд, 5",
 "building": "way/77761990",
 "src": [
-55.74345,
-37.50747
+55.743995,
+37.507207
 ],
 "status": "ok"
 },
@@ -49841,6 +50097,9 @@
 "viktoriya-elektrougli": {
 "status": "poi"
 },
+"viktoriya-khor-annino": {
+"status": "poi"
+},
 "virtuoz-16-parkovaya": {
 "addr": "16-я Парковая улица, 20",
 "building": "way/46035759",
@@ -50097,6 +50356,15 @@
 ],
 "status": "moved"
 },
+"volna-ceramics-oktyabrsky": {
+"addr": "Октябрьский переулок, 23",
+"building": "way/445081150",
+"src": [
+55.787744,
+37.610957
+],
+"status": "ok"
+},
 "volokolamsk-kremlin": {
 "key": "горвал улица | 1",
 "status": "not-found"
@@ -50130,6 +50398,15 @@
 },
 "vorobyovy-ski": {
 "status": "no-address"
+},
+"vorontsova-ballet-mira": {
+"addr": "проспект Мира, 101В с3",
+"building": "way/178703130",
+"src": [
+55.813106,
+37.633081
+],
+"status": "ok"
 },
 "vorontsovsky": {
 "status": "territory"
@@ -50233,6 +50510,15 @@
 37.81358
 ],
 "status": "moved"
+},
+"vozdukh-muranovskaya": {
+"addr": "Мурановская улица, 15А",
+"building": "way/42476208",
+"src": [
+55.893589,
+37.600609
+],
+"status": "ok"
 },
 "vozrozhdenie-eletskaya": {
 "addr": "Елецкая улица, 16 к1",
@@ -50973,6 +51259,15 @@
 37.49779
 ],
 "status": "moved"
+},
+"yaro-mira-150": {
+"addr": "проспект Мира, 150",
+"building": "relation/7006911",
+"src": [
+55.822258,
+37.646303
+],
+"status": "ok"
 },
 "yaropolets-goncharov-estate": {
 "status": "territory"
