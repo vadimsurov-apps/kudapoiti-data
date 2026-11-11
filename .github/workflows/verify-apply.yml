@@ -1,0 +1,40 @@
+name: Применить пачки проверок сверщиков
+# Вадим 11.11: «проверить все точки за 2–4 дня» — несколько сверщиков работают параллельно и кладут пачки
+# в auto/verify-batches/; здесь они по очереди записываются в таблицы (без конфликтов xlsx), затем сборка.
+on:
+  push:
+    branches: [main]
+    paths: ["auto/verify-batches/**"]
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+concurrency:
+  group: verify-apply
+  cancel-in-progress: false
+permissions:
+  contents: write
+  actions: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q openpyxl
+      - name: Применить и запушить (при гонке — заново с чистой копии)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "kudapoiti-bot"
+          git config user.email "bot@users.noreply.github.com"
+          for i in 1 2 3 4 5 6; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            ls auto/verify-batches/*.json >/dev/null 2>&1 || { echo "пачек нет"; exit 0; }
+            python3 tools/apply_batches.py
+            git add -A data auto/verified.json auto/contacts.json auto/confirm-tried.json auto/verify-batches
+            git diff --cached --quiet && exit 0
+            git commit -q -m "Сверка: пачки параллельных сверщиков записаны"
+            if git push -q origin HEAD:main; then gh workflow run build.yml --ref main; exit 0; fi
+            sleep $((RANDOM % 20 + 10))
+          done
+          exit 1

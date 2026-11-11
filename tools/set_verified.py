@@ -41,8 +41,8 @@ def locked(part):
         return True
 
 
-def main():
-    batch = json.load(open(sys.argv[1], encoding="utf-8"))
+def apply(batch):
+    """Записать пачку; вернуть (записанные, отложенные из-за замка, не найденные)."""
     today = datetime.date.today().isoformat()
     vpath = os.path.join(ROOT, "auto", "verified.json")
     ver = json.load(open(vpath)) if os.path.exists(vpath) else {}
@@ -95,7 +95,13 @@ def main():
             wb.save(path)
     json.dump(ver, open(vpath, "w"), ensure_ascii=False, indent=0, sort_keys=True)
     json.dump(contacts, open(cpath, "w"), ensure_ascii=False, indent=0, sort_keys=True)
-    print(f"записано {len(done)}, отложено (замок) {len(skipped)}, не найдено {len(set(batch) - done - skipped)}")
+    missing = set(batch) - done - skipped
+    print(f"записано {len(done)}, отложено (замок) {len(skipped)}, не найдено {len(missing)}")
+    return done, skipped, missing
+
+
+def main():
+    apply(json.load(open(sys.argv[1], encoding="utf-8")))
 
 
 if __name__ == "__main__":
