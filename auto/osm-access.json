@@ -17451,25 +17451,31 @@
 }
 },
 "cafe-dodo-golovinskoe-1a": {
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 49
+}
+],
 "parking": [
 {
 "access": "yes",
-"d": 150,
+"d": 141,
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 194,
+"d": 205,
 "fee": "yes",
 "parking": "surface"
 },
 {
-"d": 231,
-"parking": "street_side"
+"d": 233,
+"parking": "surface"
 },
 {
-"d": 241,
-"parking": "surface"
+"d": 247,
+"parking": "street_side"
 }
 ],
 "poi": {
@@ -17664,75 +17670,80 @@
 "building_addr": "Советская площадь, 7",
 "building_entrances": [
 {
+"addr:flats": "353-384",
+"d": 22,
+"entrance": "yes",
+"ref": "12"
+},
+{
+"addr:flats": "321-352",
+"d": 41,
+"entrance": "yes",
+"ref": "11"
+},
+{
+"addr:flats": "289-320",
+"d": 62,
+"entrance": "yes",
+"ref": "10"
+},
+{
+"addr:flats": "257-288",
+"d": 83,
+"entrance": "yes",
+"ref": "9"
+},
+{
+"addr:flats": "225-256",
+"d": 105,
+"entrance": "yes",
+"ref": "8"
+},
+{
 "addr:flats": "193-224",
-"d": 10,
+"d": 126,
 "entrance": "yes",
 "ref": "7"
 },
 {
 "addr:flats": "161-192",
-"d": 22,
+"d": 156,
 "entrance": "yes",
 "ref": "6"
 },
 {
-"addr:flats": "225-256",
-"d": 30,
-"entrance": "yes",
-"ref": "8"
-},
-{
 "addr:flats": "129-160",
-"d": 43,
+"d": 177,
 "entrance": "yes",
 "ref": "5"
-},
+}
+],
+"gates": [
 {
-"addr:flats": "257-288",
-"d": 52,
-"entrance": "yes",
-"ref": "9"
-},
-{
-"addr:flats": "97-128",
-"d": 65,
-"entrance": "yes",
-"ref": "4"
-},
-{
-"addr:flats": "289-320",
-"d": 74,
-"entrance": "yes",
-"ref": "10"
-},
-{
-"addr:flats": "65-96",
-"d": 87,
-"entrance": "yes",
-"ref": "3"
+"barrier": "gate",
+"d": 18
 }
 ],
 "parking": [
 {
 "access": "yes",
-"d": 95,
+"d": 25,
 "fee": "no",
-"parking": "surface"
-},
-{
-"d": 127
+"parking": "surface",
+"supervised": "no"
 },
 {
 "access": "yes",
-"d": 127,
+"d": 80,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 144,
-"fee": "no",
-"parking": "surface"
+"d": 130
+},
+{
+"d": 134
 }
 ],
 "poi": {
@@ -17847,25 +17858,21 @@
 {
 "barrier": "gate",
 "d": 57
-},
-{
-"barrier": "gate",
-"d": 60
 }
 ],
 "parking": [
 {
-"d": 34,
+"d": 56,
 "name": "Лето"
 },
 {
-"d": 156
+"d": 135
 },
 {
-"d": 291
+"d": 269
 },
 {
-"d": 292
+"d": 276
 }
 ],
 "poi": {
@@ -17986,20 +17993,20 @@
 "cafe-dodo-timiryazevskaya-11": {
 "parking": [
 {
-"d": 48,
+"d": 35,
 "parking": "surface"
 },
 {
-"d": 164,
+"d": 178,
 "parking": "surface"
 },
 {
-"d": 167,
+"d": 184,
 "fee": "no",
 "parking": "street_side"
 },
 {
-"d": 179,
+"d": 193,
 "fee": "no",
 "parking": "street_side"
 }
@@ -21810,23 +21817,23 @@
 "cafe-ilpatio-serpukhov": {
 "parking": [
 {
-"d": 121,
+"d": 127,
 "parking": "surface"
 },
 {
-"d": 130
-},
-{
-"d": 171,
-"parking": "street_side"
+"d": 138
 },
 {
 "access": "yes",
 "capacity": "60",
 "capacity:disabled": "yes",
-"d": 177,
+"d": 172,
 "parking": "surface",
 "supervised": "no"
+},
+{
+"d": 185,
+"parking": "street_side"
 }
 ],
 "poi": {
@@ -32222,20 +32229,32 @@
 ]
 },
 "cafe-ptitsa-otradnoe": {
+"gates": [
+{
+"access": "private",
+"barrier": "lift_gate",
+"d": 48
+},
+{
+"access": "no",
+"barrier": "gate",
+"d": 48
+}
+],
 "parking": [
 {
-"d": 195,
+"d": 179,
 "parking": "street_side"
 },
 {
-"d": 238,
+"d": 222,
 "parking": "street_side"
 },
 {
-"d": 242
+"d": 250
 },
 {
-"d": 299,
+"d": 282,
 "parking": "street_side"
 }
 ],
@@ -51411,13 +51430,6 @@
 }
 },
 "delosport-boxing": {
-"building_addr": "Большая Филёвская улица, 20",
-"building_entrances": [
-{
-"d": 232,
-"entrance": "main"
-}
-],
 "parking": [
 {
 "d": 143,
@@ -65985,7 +65997,6 @@
 }
 },
 "hamovniki-hockey": {
-"building_addr": "улица Плющиха, 57",
 "gates": [
 {
 "access": "private",
@@ -92093,6 +92104,7 @@
 ]
 },
 "mitsuden-pereyaslavskaya": {
+"building_addr": "Большая Переяславская улица, 8А",
 "gates": [
 {
 "barrier": "gate",
