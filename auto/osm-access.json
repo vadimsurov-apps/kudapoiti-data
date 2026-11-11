@@ -511,10 +511,10 @@
 "building_addr": "Строительная улица, 3",
 "parking": [
 {
-"d": 214
+"d": 213
 },
 {
-"d": 246
+"d": 247
 },
 {
 "d": 257
@@ -12505,44 +12505,35 @@
 ]
 },
 "cafe-317-glubokiy": {
-"building_addr": "Глубокий переулок, 1/2",
-"building_entrances": [
-{
-"d": 10,
-"entrance": "staircase",
-"ref": "9"
-},
-{
-"d": 24,
-"entrance": "staircase",
-"ref": "10"
-}
-],
 "gates": [
 {
 "barrier": "lift_gate",
-"d": 33
+"d": 45
+},
+{
+"barrier": "lift_gate",
+"d": 53
 }
 ],
 "parking": [
 {
 "access": "yes",
-"d": 122,
+"d": 135,
 "fee": "yes",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 134,
+"d": 147,
 "fee": "yes",
 "parking": "surface"
 },
 {
-"d": 161,
+"d": 168,
 "parking": "surface"
 },
 {
-"d": 234,
+"d": 241,
 "parking": "surface"
 }
 ],
@@ -20759,36 +20750,30 @@
 }
 },
 "cafe-grad-yuzhny-krasnogorsk": {
-"building_addr": "Заводская улица, 27",
 "gates": [
 {
-"barrier": "gate",
-"d": 44
-},
-{
-"barrier": "gate",
-"d": 51
+"access": "private",
+"barrier": "lift_gate",
+"d": 56
 }
 ],
 "parking": [
 {
-"d": 72,
+"d": 44,
 "parking": "street_side"
 },
 {
-"access": "yes",
-"d": 81,
-"fee": "no",
+"d": 99,
+"fee": "yes",
+"parking": "surface",
+"supervised": "yes"
+},
+{
+"d": 105,
 "parking": "street_side"
 },
 {
 "d": 106,
-"parking": "street_side"
-},
-{
-"access": "yes",
-"d": 128,
-"fee": "no",
 "parking": "street_side"
 }
 ],
@@ -21086,22 +21071,21 @@
 ]
 },
 "cafe-happyterria-ramenskoe": {
-"building_addr": "Красноармейская улица, 17А",
 "gates": [
 {
 "access": "private",
 "barrier": "gate",
-"d": 39
+"d": 27
 },
 {
 "access": "private",
 "barrier": "gate",
-"d": 54
+"d": 38
 }
 ],
 "parking": [
 {
-"d": 18
+"d": 24
 },
 {
 "d": 54
@@ -21110,7 +21094,7 @@
 "d": 76
 },
 {
-"d": 101
+"d": 86
 }
 ]
 },
@@ -22779,7 +22763,6 @@
 }
 },
 "cafe-kayfyn-olgino": {
-"building_addr": "улица Жилгородок, 43А",
 "parking": [
 {
 "capacity": "6",
@@ -24553,10 +24536,26 @@
 ]
 },
 "cafe-kovcheg-odintsovo": {
-"building_addr": "улица Говорова, 40А",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 46
+}
+],
 "parking": [
 {
-"d": 117
+"d": 22
+},
+{
+"access": "yes",
+"d": 142,
+"parking": "surface"
+},
+{
+"d": 169
+},
+{
+"d": 199
 }
 ],
 "poi": {
@@ -25091,41 +25090,32 @@
 }
 },
 "cafe-landrin-sushchevskaya": {
-"building_addr": "Сущёвская улица, 9 с4",
 "gates": [
 {
 "barrier": "gate",
-"d": 20
+"d": 14
 },
 {
 "barrier": "gate",
-"d": 23
-},
-{
-"barrier": "gate",
-"d": 51
-},
-{
-"barrier": "gate",
-"d": 55
+"d": 14
 }
 ],
 "parking": [
 {
-"d": 94,
+"d": 104,
 "fee": "yes",
 "parking": "surface"
 },
 {
-"d": 241,
+"d": 254,
 "parking": "street_side"
 },
 {
-"d": 244,
-"parking": "street_side"
+"d": 256,
+"parking": "lane"
 },
 {
-"d": 251,
+"d": 257,
 "parking": "street_side"
 }
 ],
@@ -26661,24 +26651,26 @@
 ]
 },
 "cafe-meluna-pushkino": {
-"building_addr": "улица 50 лет Комсомола, 41",
+"gates": [
+{
+"barrier": "gate",
+"d": 44
+}
+],
 "parking": [
 {
 "access": "yes",
-"d": 147,
+"d": 100,
 "parking": "surface"
 },
 {
-"d": 163
+"d": 126
 },
 {
-"d": 179
+"d": 146
 },
 {
-"access": "permit",
-"d": 191,
-"fee": "no",
-"parking": "surface"
+"d": 183
 }
 ]
 },
@@ -26952,43 +26944,25 @@
 }
 },
 "cafe-milana-zheleznodorozhny": {
-"building_addr": "проспект Героев, 5",
-"building_entrances": [
-{
-"d": 8,
-"entrance": "staircase",
-"ref": "2"
-},
-{
-"d": 20,
-"entrance": "staircase",
-"ref": "1"
-},
-{
-"d": 28,
-"entrance": "staircase",
-"ref": "3"
-}
-],
 "gates": [
 {
 "barrier": "gate",
-"d": 46
+"d": 45
 }
 ],
 "parking": [
 {
-"d": 90
+"d": 94
 },
 {
-"d": 135,
+"d": 132,
 "parking": "lane"
 },
 {
-"d": 152
+"d": 161
 },
 {
-"d": 234,
+"d": 244,
 "parking": "street_side"
 }
 ],
@@ -33066,10 +33040,9 @@
 }
 },
 "cafe-rodnik-mamontovka": {
-"building_addr": "улица Кузнецкий Мост, 58",
 "parking": [
 {
-"d": 259
+"d": 257
 }
 ]
 },
@@ -33257,22 +33230,34 @@
 ]
 },
 "cafe-russkie-traditsii-reutov": {
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 15
+},
+{
+"barrier": "lift_gate",
+"d": 22
+},
+{
+"barrier": "lift_gate",
+"d": 22
+}
+],
 "parking": [
 {
-"d": 128
-},
-{
-"d": 133
-},
-{
-"access": "yes",
-"d": 213,
-"fee": "no",
-"parking": "lane"
-},
-{
-"d": 228,
+"d": 99,
 "parking": "surface"
+},
+{
+"d": 134,
+"parking": "surface"
+},
+{
+"d": 188
+},
+{
+"d": 219
 }
 ],
 "poi": {
@@ -33858,22 +33843,6 @@
 }
 },
 "cafe-seneshal-solnechnogorsk": {
-"parking": [
-{
-"d": 79
-},
-{
-"d": 131
-},
-{
-"d": 170,
-"fee": "yes",
-"parking": "surface"
-},
-{
-"d": 179
-}
-],
 "poi": {
 "phone": "+7 495 1391280",
 "website": "https://seneshal.com/"
@@ -34654,21 +34623,44 @@
 }
 },
 "cafe-sikvaruli-otradnoe": {
-"building_addr": "Кленовая улица, 6",
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 45
+}
+],
 "parking": [
 {
-"d": 165,
-"parking": "carports"
-},
-{
-"d": 262,
+"access": "yes",
+"d": 23,
+"fee": "no",
 "parking": "street_side"
 },
 {
-"d": 268,
+"access": "yes",
+"d": 45,
+"fee": "no",
 "parking": "surface"
+},
+{
+"access": "yes",
+"d": 57,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 60,
+"fee": "no",
+"parking": "street_side"
 }
-]
+],
+"poi": {
+"contact:phone": "+7 926 4092765",
+"contact:website": "https://sikvaruli-mikrogorod-v-lesu.ru/",
+"opening_hours": "Mo-Th 10:00-22:00; Fr-Su 10:00-23:00"
+}
 },
 "cafe-sinergiya-vnukovo": {
 "building_addr": "улица Анны Ахматовой, 11 к3",
@@ -36433,28 +36425,24 @@
 }
 },
 "cafe-tanuki-lyubertsy": {
-"building_addr": "Октябрьский проспект, 411А",
 "parking": [
 {
-"d": 77
+"d": 38
 },
 {
-"d": 126,
-"parking": "surface"
+"d": 138
 },
 {
-"d": 202,
-"fee": "no",
-"parking": "surface"
+"d": 205
 },
 {
-"d": 214
+"d": 212
 }
 ],
 "poi": {
 "contact:phone": "+7 499 6492223",
 "contact:website": "https://tanukifamily.ru/tanuki/",
-"opening_hours": "Mo-Su 11:30-24:00"
+"opening_hours": "Fr-Sa 11:30-24:00;Mo-Th,Su 11:30-23:00"
 }
 },
 "cafe-tanuki-mitinskaya-50": {
@@ -67828,19 +67816,19 @@
 "hockey-center-dmitrov": {
 "parking": [
 {
-"d": 89,
+"d": 65
+},
+{
+"d": 120,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 106
-},
-{
-"d": 286,
+"d": 157,
 "parking": "surface"
 },
 {
-"d": 298,
+"d": 176,
 "parking": "surface"
 }
 ]
@@ -81920,28 +81908,20 @@
 },
 "kosmos-football-dolgoprudny": {
 "building_addr": "Парковая улица, 35",
-"gates": [
-{
-"access": "permissive",
-"barrier": "gate",
-"d": 50
-}
-],
 "parking": [
 {
-"d": 79,
+"d": 58
+},
+{
+"d": 112,
 "parking": "street_side"
 },
 {
-"d": 111,
-"parking": "street_side"
-},
-{
-"d": 143
+"d": 134
 },
 {
 "access": "yes",
-"d": 159,
+"d": 135,
 "fee": "no",
 "parking": "surface"
 }
@@ -115741,6 +115721,18 @@
 }
 ]
 },
+"ropes-liana-park-serpukhov": {
+"parking": [
+{
+"access": "permissive",
+"d": 130,
+"operator": "Park-hotel \"Vozdvizhenskoye\""
+},
+{
+"d": 139
+}
+]
+},
 "ropes-noginsk": {
 "parking": [
 {
@@ -133201,6 +133193,31 @@
 "phone": "+7 916 9550147",
 "website": "http://trammuseum.ru"
 }
+},
+"trampoline-linguagym-dolgoprudny": {
+"building_addr": "Старое Дмитровское шоссе, 2 с1",
+"parking": [
+{
+"access": "customers",
+"d": 47,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 288,
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 298,
+"fee": "yes"
+},
+{
+"access": "yes",
+"d": 298,
+"parking": "street_side"
+}
+]
 },
 "transport": {
 "parking": [
