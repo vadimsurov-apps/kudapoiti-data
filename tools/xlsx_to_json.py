@@ -410,6 +410,25 @@ def apply_contacts(places, spam, spam_domains):
     print(f"Телефонов: {n_phone} из {len(places)}; сайтов добавлено из контактов/OSM: {n_url}")
 
 
+def apply_cat_ages(places):
+    """Возраст по направлениям (Вадим 11.11: робототехника с 5 лет не должна предлагаться трёхлетке, хотя мини-сад
+    того же центра с 2,5). auto/cat-ages.json {id: {cat: [от, до], "src": …}} → поле cat_ages у места; age_min/age_max
+    места остаются общими (минимум/максимум по всем направлениям)."""
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "auto", "cat-ages.json")
+    if not os.path.exists(path):
+        return
+    data = json.load(open(path, encoding="utf-8"))
+    n = 0
+    for p in places:
+        d = data.get(p["id"])
+        if not isinstance(d, dict):
+            continue
+        ages = {c: v for c, v in d.items() if c in (p.get("cats") or []) and isinstance(v, list) and len(v) == 2}
+        if ages:
+            p["cat_ages"] = ages; n += 1
+    print(f"Возраст по направлениям: {n}")
+
+
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     only_verified = "--only-verified" in sys.argv
@@ -462,6 +481,7 @@ def main():
     apply_precise_points(places, manual_ids)
     apply_contacts(places, spam, spam_domains)
     apply_changing(places)
+    apply_cat_ages(places)
     for p in places:
         clean_texts(p)
 
