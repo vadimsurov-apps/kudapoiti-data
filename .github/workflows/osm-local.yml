@@ -42,18 +42,21 @@ jobs:
           osmium export bld.osm.pbf -f geojsonseq -a type,id --geometry-types=polygon -o bld.geojsonseq --overwrite
           osmium tags-filter mo.osm.pbf nwr/amenity=parking -o park.osm.pbf --overwrite
           osmium export park.osm.pbf -f geojsonseq -a type,id --geometry-types=point,polygon -o park.geojsonseq --overwrite
-          wc -l named.geojsonseq entr.geojsonseq bld.geojsonseq park.geojsonseq
+          osmium tags-filter mo.osm.pbf nwr/changing_table nwr/shop=mall -o ch.osm.pbf --overwrite
+          osmium export ch.osm.pbf -f geojsonseq -a type,id --geometry-types=point,polygon -o ch.geojsonseq --overwrite
+          wc -l named.geojsonseq entr.geojsonseq bld.geojsonseq park.geojsonseq ch.geojsonseq
       - name: Свежий список мест из таблиц (новые места роботов)
         run: pip install -q openpyxl && python3 tools/xlsx_to_json.py data/kuda-poiti-mesta.xlsx places.json > /dev/null
       - run: python3 pipeline/osm_local.py
       - run: python3 pipeline/osm_address.py
       - run: python3 pipeline/osm_access.py
+      - run: python3 pipeline/osm_changing.py ch.geojsonseq
       - if: always()
         run: |
           git config user.name "kudapoiti-bot"
           git config user.email "bot@users.noreply.github.com"
           git checkout -- places.json places-all.json auto/table-coords.json 2>/dev/null || true
-          git add auto/geocode-report.json auto/entrances.json auto/osm-address.json auto/osm-access.json
+          git add auto/geocode-report.json auto/entrances.json auto/osm-address.json auto/osm-access.json auto/osm-changing.json
           git diff --cached --quiet || (git commit -m "Координаты и входы: сверка с выгрузкой OSM" && git pull --rebase -X theirs && git push)
       - name: Пересобрать places.json с новыми точками
         if: success()

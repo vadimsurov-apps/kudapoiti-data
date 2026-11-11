@@ -357,6 +357,20 @@ def clean_texts(p):
         p["source"] = "; ".join(filter(None, [p.get("source"), *moved]))
 
 
+def apply_changing(places):
+    """Пеленальный стол по OSM (Вадим 11.11, карапузы до года): объект OSM этого места отмечен changing_table=yes —
+    «Пеленальный стол = да», если в таблице пусто (auto/osm-changing.json, pipeline/osm_changing.py)."""
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "auto", "osm-changing.json")
+    if not os.path.exists(path):
+        return
+    ids = (json.load(open(path, encoding="utf-8")).get("places") or {})
+    n = 0
+    for p in places:
+        if p["id"] in ids and not p.get("changing_table"):
+            p["changing_table"] = "yes"; n += 1
+    print(f"Пеленальный стол по OSM: {n}")
+
+
 def apply_contacts(places, spam, spam_domains):
     """Телефон и сайт (Вадим 09.11: «во всех карточках — рабочие телефоны и ссылки на основной сайт»).
     Порядок: таблица → auto/contacts.json (проверено роботом «навигатор» по сайту/поиску) → объект OSM с тем же
@@ -438,6 +452,7 @@ def main():
     manual_ids = {clean(r.get("id")) for r in rows if "вручную" in str(r.get("Точность координат") or "").lower()}
     apply_precise_points(places, manual_ids)
     apply_contacts(places, spam, spam_domains)
+    apply_changing(places)
     for p in places:
         clean_texts(p)
 

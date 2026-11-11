@@ -125,7 +125,7 @@ if (inTG) { tg.ready(); tg.expand(); try { tg.setHeaderColor("bg_color"); } catc
   document.documentElement.dataset.theme = tg.colorScheme === "dark" ? "dark" : "light"; }
 
 const CATS = [
- ["Активный отдых", [["playcenters","Игровые центры"],["kidsroom","Детская комната"],["trampolines","Батуты"],["parks","Площадки и парки"],["amusement","Аттракционы"],["quests","Квесты и лазертаг"],["ropes","Верёвочные парки"],["climbing","Скалодромы"],["karting","Картинг"],["skate","Скейт-парки"]]],
+ ["Активный отдых", [["playcenters","Игровые центры"],["kidsroom","Детская комната"],["changing","Пеленальные комнаты"],["trampolines","Батуты"],["parks","Площадки и парки"],["amusement","Аттракционы"],["quests","Квесты и лазертаг"],["ropes","Верёвочные парки"],["climbing","Скалодромы"],["karting","Картинг"],["skate","Скейт-парки"]]],
  ["Секции и занятия", [["dance","Танцы и балет"],["pools","Бассейны"],["martial","Единоборства"],["football","Футбол"],["padel","Падел"],["racket","Теннис"],["badminton","Бадминтон"],["gymnastics","Гимнастика"],["ballgames","Баскетбол и волейбол"],["hockey","Хоккей и фигурное"],["chess","Шахматы"],["sport","Другие секции"]]],
  ["Культура и познание", [["museums","Музеи"],["science","Научные музеи"],["shows","Театры"],["circus","Цирк"],["cinema","Кино"],["masterclass","Мастер-классы"],["tours","Прогулки и экскурсии"]]],
  ["Природа, сезон, поездки", [["animals","Животные"],["water","Аквапарки и пляжи"],["winter","Зима"],["transport","Поезда и машины"],["trips","Подмосковье"]]],
@@ -185,6 +185,7 @@ function outside(p) { const R = 6371, t = x => x * Math.PI / 180, la = 55.7558, 
 function inCat(p, c) {
   if (c === "trips") return p.lat != null && outside(p);
   if (c === "birthday") return p.birthday === true || (p.cats || []).includes("birthday");
+  if (c === "changing") return (p.cats || []).includes("changing") || p.changing_table === "yes" || (p.type || []).includes("пеленальная комната");
   return (p.cats || []).includes(c);
 }
 function mskNow() { const d = new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Moscow" })); return d; }
