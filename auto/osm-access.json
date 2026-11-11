@@ -41504,26 +41504,21 @@
 "gates": [
 {
 "barrier": "lift_gate",
-"d": 13
+"d": 0
 },
 {
 "barrier": "lift_gate",
-"d": 50
+"d": 44
 },
 {
 "barrier": "lift_gate",
-"d": 56
-},
-{
-"access": "private",
-"barrier": "gate",
-"d": 60
+"d": 53
 }
 ],
 "parking": [
 {
 "access": "customers",
-"d": 81,
+"d": 86,
 "parking": "surface"
 },
 {
@@ -41532,12 +41527,12 @@
 "parking": "underground"
 },
 {
-"d": 140,
+"d": 144,
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 159,
+"d": 170,
 "parking": "surface"
 }
 ]
@@ -49905,6 +49900,27 @@
 {
 "access": "customers",
 "d": 192
+}
+]
+},
+"circus-chimp-champ-vatutinki": {
+"building_addr": "6-я Нововатутинская улица, 2",
+"parking": [
+{
+"d": 69,
+"parking": "street_side"
+},
+{
+"d": 104,
+"parking": "street_side"
+},
+{
+"d": 112,
+"parking": "street_side"
+},
+{
+"d": 117,
+"parking": "street_side"
 }
 ]
 },
@@ -58856,53 +58872,36 @@
 "building_addr": "Широкая улица, 30",
 "building_entrances": [
 {
-"d": 17,
+"d": 129,
 "entrance": "yes"
 },
 {
-"d": 37,
+"d": 164,
 "entrance": "yes"
 },
 {
-"d": 38,
+"d": 198,
 "entrance": "yes"
-}
-],
-"gates": [
-{
-"barrier": "gate",
-"d": 44
-},
-{
-"barrier": "gate",
-"d": 45
-},
-{
-"barrier": "gate",
-"d": 53
-},
-{
-"barrier": "gate",
-"d": 54
 }
 ],
 "parking": [
 {
-"d": 77,
+"access": "yes",
+"d": 78,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 112,
 "parking": "multi-storey"
 },
 {
-"d": 100
-},
-{
-"d": 123,
+"d": 119,
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 159,
-"fee": "no",
-"parking": "surface"
+"d": 164
 }
 ]
 },
@@ -68326,38 +68325,37 @@
 "building_addr": "Скандинавский бульвар, 2 к8",
 "building_entrances": [
 {
+"d": 0,
+"entrance": "main"
+},
+{
 "addr:flats": "1-115",
-"d": 22,
+"d": 27,
 "entrance": "staircase",
 "ref": "1"
 },
 {
-"d": 24,
-"entrance": "main"
-},
-{
 "addr:flats": "116-230",
-"d": 36,
+"d": 60,
 "entrance": "staircase",
 "ref": "2"
 }
 ],
 "parking": [
 {
-"d": 82,
+"d": 60,
 "parking": "street_side"
 },
 {
-"d": 233,
+"d": 241,
 "parking": "street_side"
 },
 {
-"d": 243,
+"d": 251,
 "parking": "street_side"
 },
 {
-"d": 257,
-"parking": "surface"
+"d": 263
 }
 ]
 },
