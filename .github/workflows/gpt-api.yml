@@ -1,0 +1,42 @@
+name: ChatGPT-проверяющий через API (автоматически)
+# Вадим 11.11: GPT постоянно проверяет карточки по нашим правилам (gpt/RULES.md). Нужен секрет OPENAI_API_KEY —
+# без него запуск сразу заканчивается. Смены делят очередь gpt/queue.json; отчёты применяет gpt.yml.
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+    inputs:
+      n: { description: "мест на смену", default: "25" }
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: gpt-api
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      max-parallel: 4
+      matrix:
+        shard: [0, 1, 2, 3]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Проверить свою долю очереди
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          SHARD: ${{ matrix.shard }}
+          SHARDS: "4"
+          N: ${{ github.event.inputs.n || '25' }}
+        run: python3 tools/gpt_api.py
+      - name: Отчёт — в репозиторий
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ls gpt/reports/*-api-${{ matrix.shard }}.json >/dev/null 2>&1 || exit 0
+          git config user.name "kudapoiti-bot"; git config user.email "bot@users.noreply.github.com"
+          git add gpt/reports && git commit -q -m "Отчёт GPT API, смена ${{ matrix.shard }}"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep $((RANDOM%15+5)); done
+          gh workflow run gpt.yml --ref main || true
