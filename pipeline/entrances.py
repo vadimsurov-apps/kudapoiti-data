@@ -36,7 +36,7 @@ def main():
     for pid, r in rep.items():
         p = places.get(pid)
         if not p or r.get("status") not in ("high", "medium") or r.get("kind") not in ("way", "relation"): continue
-        if p["type"][0] not in BIG and not re.search(r"ТЦ|ТРЦ|ТРК", p.get("address") or ""): continue
+        if (p.get("type") or [""])[0] not in BIG and not re.search(r"ТЦ|ТРЦ|ТРК", p.get("address") or ""): continue
         t, i = r["osm"].split("/")
         sel = f"{t}({i})" if t == "way" else f"relation({i});way(r)"
         q = (f'[out:json][timeout:90];{sel}->.a;(node(w.a)["entrance"];node(w.a)["barrier"~"gate|entrance|turnstile"];'

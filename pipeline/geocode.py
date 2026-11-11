@@ -98,18 +98,18 @@ def find_by(p, name, via_address=False):
     toks = tokens(name)
     if not toks or p.get("lat") is None: return {"status": "no-name"}
     rx = "|".join(re.escape(t[:max(4, len(t) - 2)]) for t in toks)
-    R = 4000 if p["type"][0] not in ("прогулка",) else 2500
+    R = 4000 if (p.get("type") or [""])[0] not in ("прогулка",) else 2500
     q = (f'[out:json][timeout:60];(nwr(around:{R},{p["lat"]},{p["lon"]})["name"~"{rx}",i];'
          f'nwr(around:{R},{p["lat"]},{p["lon"]})["name:ru"~"{rx}",i];'
          f'nwr(around:{R},{p["lat"]},{p["lon"]})["alt_name"~"{rx}",i];);out center tags;')
     els = overpass(q)
     if els is None: return {"status": "error"}
-    want = TYPE_TAGS.get(p["type"][0], [])
+    want = TYPE_TAGS.get((p.get("type") or [""])[0], [])
     best = None
     for e in els:
         t = e.get("tags", {})
         if t.get("railway") or t.get("highway"): continue
-        if t.get("public_transport") == "station" and p["type"][0] != "прогулка": continue
+        if t.get("public_transport") == "station" and (p.get("type") or [""])[0] != "прогулка": continue
         lat = e.get("lat") or e.get("center", {}).get("lat"); lon = e.get("lon") or e.get("center", {}).get("lon")
         if lat is None: continue
         names = " ".join(t.get(k, "") for k in ("name", "name:ru", "alt_name", "official_name"))
@@ -136,7 +136,7 @@ def main():
         if not only and p["id"] in old and old[p["id"]].get("status") not in ("error",) and \
                 old[p["id"]].get("src") == [p.get("lat"), p.get("lon")]:
             out[p["id"]] = old[p["id"]]; continue
-        r = find(p); r["src"] = [p.get("lat"), p.get("lon")]; r["name"] = p["name"]; r["type"] = p["type"][0]
+        r = find(p); r["src"] = [p.get("lat"), p.get("lon")]; r["name"] = p["name"]; r["type"] = (p.get("type") or [""])[0]
         out[p["id"]] = r
         print(i, p["id"], r["status"], r.get("moved_m"), r.get("osm_name"), flush=True)
         if len(out) % 20 == 0:   # сохраняем по ходу: если прогон прервётся по времени, результаты не пропадут

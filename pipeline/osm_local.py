@@ -68,7 +68,7 @@ def main():
     for p in places:
         if p.get("lat") is None: continue
         best = None
-        R = 4000 if p["type"][0] != "прогулка" else 2500
+        R = 4000 if (p.get("type") or [""])[0] != "прогулка" else 2500
         cands = []
         gi, gj = int(p["lat"] / CELL), int(p["lon"] / CELL)
         for di in range(-2, 3):
@@ -80,11 +80,11 @@ def main():
         for name, via_addr in names_to_try:
             toks = tokens(name)
             if not toks: continue
-            want = TYPE_TAGS.get(p["type"][0], [])
+            want = TYPE_TAGS.get((p.get("type") or [""])[0], [])
             for o in cands:
                 d = dist(o["lat"], o["lon"], p["lat"], p["lon"])
                 if d > R: continue
-                if o["tags"].get("public_transport") == "station" and p["type"][0] != "прогулка": continue
+                if o["tags"].get("public_transport") == "station" and (p.get("type") or [""])[0] != "прогулка": continue
                 s = sim(name, o["names"])
                 if s < 0.5: continue
                 tg = o["tags"]
@@ -97,14 +97,14 @@ def main():
                             "via": ("адрес: " + name) if via_addr else None}
             if best and best["sim"] >= 0.99: break
         if not best:
-            out[p["id"]] = {"status": "not-found", "src": [p["lat"], p["lon"]], "name": p["name"], "type": p["type"][0]}
+            out[p["id"]] = {"status": "not-found", "src": [p["lat"], p["lon"]], "name": p["name"], "type": (p.get("type") or [""])[0]}
             continue
         st = "high" if best["sim"] >= 0.99 and best["tag_ok"] is not False else ("medium" if best["sim"] >= 0.66 else "low")
         if best["via"] and st == "high": st = "medium"
         best["status"] = st
         o = best.pop("_o")
-        best.update({"src": [p["lat"], p["lon"]], "name": p["name"], "type": p["type"][0]})
-        if o["geom"] and (p["type"][0] in BIG or re.search(r"ТЦ|ТРЦ|ТРК", p.get("address") or "")):
+        best.update({"src": [p["lat"], p["lon"]], "name": p["name"], "type": (p.get("type") or [""])[0]})
+        if o["geom"] and ((p.get("type") or [""])[0] in BIG or re.search(r"ТЦ|ТРЦ|ТРК", p.get("address") or "")):
             best["_ring"] = rings(o["geom"])
         out[p["id"]] = best
 
