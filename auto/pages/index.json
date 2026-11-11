@@ -125140,19 +125140,19 @@
 "url": "https://4daily-mall.ru",
 "ok": false,
 "err": "<urlopen error [Errno 111] Connection refused>",
-"tries": 2
+"tries": 3
 },
 "aquarium-homecafe-ru-contacts": {
 "url": "https://aquarium-homecafe.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "kommunarka-eda-ru-contacts": {
 "url": "https://kommunarka-eda.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "msk-ramenki-warpoint-ru": {
 "url": "https://msk-ramenki.warpoint.ru/",
@@ -125200,7 +125200,7 @@
 "url": "https://cdm-moscow.ru/entertainments/pogruzhenie",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
-"tries": 1
+"tries": 2
 },
 "hello-park-com-riviera-park": {
 "url": "https://hello-park.com/riviera/park",
@@ -125220,7 +125220,7 @@
 "url": "https://zamania.ru/parks",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
-"tries": 1
+"tries": 2
 },
 "crazycart-zelenopark-orgs-biz": {
 "url": "https://crazycart-zelenopark.orgs.biz/",
@@ -125240,7 +125240,7 @@
 "url": "https://karlocafe.ru/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-"tries": 1
+"tries": 2
 },
 "tavaduri-ru": {
 "url": "https://tavaduri.ru/",
@@ -125267,13 +125267,47 @@
 "url": "https://ekspeditsiya-severnaya-kuhnya.obiz.ru/",
 "ok": false,
 "err": "HTTP Error 103: Early Hints",
-"tries": 1
+"tries": 2
 },
 "easyfood-rest": {
 "url": "https://easyfood.rest/",
 "ok": true,
 "pages": 1,
 "bytes": 3731,
+"tries": 0
+},
+"xn-80aaayicbn6bs3a-xn-p1ai": {
+"url": "https://xn--80aaayicbn6bs3a.xn--p1ai/",
+"ok": false,
+"err": "<urlopen error [Errno -2] Name or service not known>",
+"tries": 1
+},
+"petrovka-klevo-rest": {
+"url": "https://petrovka.klevo.rest/",
+"ok": true,
+"pages": 3,
+"bytes": 8547,
+"tries": 0
+},
+"yanprimus-ru-restaurants": {
+"url": "https://yanprimus.ru/restaurants/",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"meat-and-fish-ru-restaurants": {
+"url": "https://meat-and-fish.ru/restaurants/",
+"ok": true,
+"pages": 5,
+"bytes": 11240,
+"tries": 0
+},
+"korchma-ru-restaurants": {
+"url": "https://korchma.ru/restaurants/",
+"ok": true,
+"pages": 5,
+"bytes": 9185,
 "tries": 0
 }
 }
