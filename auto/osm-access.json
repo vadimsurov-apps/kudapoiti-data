@@ -14080,27 +14080,30 @@
 }
 },
 "cafe-bella-strada-mytishchi": {
-"building_addr": "Станционная улица, 1 к1",
 "parking": [
 {
-"d": 188
+"d": 239
 },
 {
-"d": 193
-},
-{
-"access": "yes",
-"d": 201,
-"fee": "no",
-"parking": "surface"
+"d": 248
 },
 {
 "access": "yes",
 "d": 251,
 "fee": "no",
 "parking": "surface"
+},
+{
+"access": "yes",
+"d": 294,
+"fee": "no",
+"parking": "surface"
 }
-]
+],
+"poi": {
+"contact:phone": "+74956606909,+79688802402",
+"contact:website": "https://lastrada-cafe.ru"
+}
 },
 "cafe-belle-famille-khimki": {
 "parking": [
@@ -16340,73 +16343,42 @@
 }
 },
 "cafe-chaihona1-polyanka": {
-"building_addr": "улица Большая Полянка, 1/3",
-"building_entrances": [
-{
-"addr:flats": "31-48",
-"d": 5,
-"entrance": "staircase",
-"ref": "3"
-},
-{
-"addr:flats": "49-66",
-"d": 13,
-"entrance": "staircase",
-"ref": "4"
-},
-{
-"addr:flats": "13-30",
-"d": 21,
-"entrance": "staircase",
-"ref": "2"
-},
-{
-"addr:flats": "67-78",
-"d": 30,
-"entrance": "staircase",
-"ref": "5"
-},
-{
-"addr:flats": "1-12",
-"d": 41,
-"entrance": "staircase",
-"ref": "1"
-}
-],
 "gates": [
 {
-"barrier": "gate",
-"d": 21
-},
-{
-"barrier": "gate",
-"d": 40
-},
-{
 "barrier": "lift_gate",
-"d": 43
+"d": 26
 },
 {
 "access": "yes",
 "barrier": "lift_gate",
-"d": 57
+"d": 32
+},
+{
+"access": "yes",
+"barrier": "lift_gate",
+"d": 33
+},
+{
+"barrier": "gate",
+"d": 48
 }
 ],
 "parking": [
 {
-"d": 49,
+"d": 23,
 "fee": "yes",
 "parking": "surface"
 },
 {
-"d": 59
-},
-{
 "access": "yes",
-"d": 61
+"d": 33
 },
 {
-"d": 88,
+"d": 34
+},
+{
+"d": 87,
+"fee": "yes",
 "parking": "street_side"
 }
 ],
@@ -25824,21 +25796,28 @@
 },
 "cafe-mano-a-mano-khimki": {
 "building_addr": "Молодёжная улица, 59",
+"gates": [
+{
+"access": "permit",
+"barrier": "gate",
+"d": 45
+}
+],
 "parking": [
 {
-"d": 91,
+"d": 86,
 "parking": "surface"
 },
 {
-"d": 125,
+"d": 113,
 "parking": "street_side"
 },
 {
-"d": 143,
+"d": 119,
 "parking": "street_side"
 },
 {
-"d": 220,
+"d": 196,
 "parking": "street_side"
 }
 ]
@@ -26587,32 +26566,20 @@
 {
 "access": "private",
 "barrier": "lift_gate",
-"d": 8
-},
-{
-"access": "private",
-"barrier": "gate",
-"d": 56
+"d": 23
 }
 ],
 "parking": [
 {
 "charge": "50 RUB",
-"d": 21,
+"d": 9,
 "fee": "yes",
 "operator": "Московский паркинг",
 "parking": "street_side"
 },
 {
 "charge": "50 RUB",
-"d": 27,
-"fee": "yes",
-"operator": "Московский паркинг",
-"parking": "street_side"
-},
-{
-"charge": "50 RUB",
-"d": 30,
+"d": 20,
 "fee": "yes",
 "operator": "Московский паркинг",
 "parking": "street_side"
@@ -26620,10 +26587,17 @@
 {
 "access": "yes",
 "charge": "50 RUB",
-"d": 31,
+"d": 21,
 "fee": "yes",
 "operator": "Московский паркинг",
 "parking": "surface"
+},
+{
+"charge": "50 RUB",
+"d": 24,
+"fee": "yes",
+"operator": "Московский паркинг",
+"parking": "street_side"
 }
 ]
 },
@@ -31404,29 +31378,24 @@
 }
 },
 "cafe-pizzamore-mytishchi": {
-"building_addr": "улица Мира, 45",
-"gates": [
-{
-"barrier": "lift_gate",
-"d": 59
-}
-],
 "parking": [
 {
-"d": 33,
+"d": 31,
 "parking": "street_side"
 },
 {
-"d": 34,
+"capacity": "5",
+"d": 40,
 "parking": "street_side"
 },
 {
-"d": 41,
+"capacity": "5",
+"d": 40,
 "parking": "street_side"
 },
 {
 "access": "yes",
-"d": 47,
+"d": 43,
 "fee": "yes",
 "parking": "surface"
 }
@@ -31501,25 +31470,23 @@
 }
 },
 "cafe-planeta-sushi-korolev": {
-"building_addr": "Лесная улица, 12",
 "parking": [
 {
-"d": 31,
+"d": 39,
 "parking": "surface"
 },
 {
 "access": "customers",
 "capacity": "30",
-"d": 45
+"d": 69
 },
 {
-"access": "customers",
-"capacity": "20",
-"d": 84
+"d": 87,
+"parking": "surface"
 },
 {
 "access": "yes",
-"d": 102,
+"d": 100,
 "fee": "no",
 "parking": "surface"
 }
@@ -31560,7 +31527,7 @@
 "building_addr": "2-я Институтская улица, 24",
 "parking": [
 {
-"d": 105
+"d": 76
 }
 ]
 },
@@ -32018,33 +31985,22 @@
 ]
 },
 "cafe-punta-prima-khimki": {
-"building_addr": "улица 9 Мая, 21 к3",
-"building_entrances": [
-{
-"d": 20,
-"entrance": "staircase"
-},
-{
-"d": 21,
-"entrance": "staircase"
-}
-],
 "parking": [
 {
-"d": 55,
+"d": 29,
 "parking": "surface"
 },
 {
-"d": 57,
+"d": 65,
 "parking": "surface"
 },
 {
-"d": 61,
-"parking": "surface"
-},
-{
-"d": 88,
+"d": 65,
 "fee": "no",
+"parking": "surface"
+},
+{
+"d": 73,
 "parking": "surface"
 }
 ],
@@ -34098,74 +34054,63 @@
 }
 },
 "cafe-shvili-krasny-kit": {
-"building_addr": "Шараповский проезд, 2",
-"building_entrances": [
-{
-"d": 37,
-"entrance": "main"
-},
-{
-"d": 46,
-"entrance": "main"
-},
-{
-"d": 72,
-"entrance": "main"
-}
-],
 "parking": [
 {
-"d": 56,
+"d": 88,
 "fee": "yes",
 "parking": "surface"
 },
 {
-"d": 104
-},
-{
-"d": 137,
+"d": 106,
 "fee": "yes",
 "parking": "surface"
 },
 {
-"d": 147
+"d": 134
+},
+{
+"d": 159
 }
 ],
 "poi": {
-"website": "http://ap.redkit.ru/"
+"description": "торгово-развлекательный комплекс",
+"website": "http://www.redkit.ru/"
 }
 },
 "cafe-shvili-kuntsevo": {
 "building_addr": "Ярцевская улица, 19",
 "building_entrances": [
 {
-"d": 63,
-"entrance": "yes"
-},
-{
-"d": 74,
+"d": 0,
 "door": "revolving",
 "entrance": "main"
 },
 {
-"d": 88,
+"d": 20,
+"entrance": "yes"
+},
+{
+"d": 125,
 "entrance": "main"
 },
 {
-"d": 89,
+"d": 138,
 "entrance": "main"
 },
 {
-"d": 114,
+"d": 182,
 "entrance": "main"
 }
 ],
 "parking": [
 {
-"d": 215
+"d": 141
 },
 {
-"d": 255
+"access": "yes",
+"d": 241,
+"fee": "no",
+"parking": "surface"
 }
 ]
 },
@@ -35916,22 +35861,21 @@
 }
 },
 "cafe-tanuki-koshtoyantsa": {
-"building_addr": "улица Коштоянца, 1А",
 "parking": [
 {
-"d": 61,
+"d": 57,
 "parking": "street_side"
 },
 {
-"d": 103,
+"d": 99,
 "parking": "street_side"
 },
 {
-"d": 130,
+"d": 125,
 "parking": "street_side"
 },
 {
-"d": 148
+"d": 144
 }
 ],
 "poi": {
@@ -37954,44 +37898,35 @@
 "gates": [
 {
 "barrier": "gate",
-"d": 37
+"d": 28
 },
 {
 "barrier": "gate",
-"d": 55
-},
-{
-"access": "private",
-"barrier": "gate",
-"d": 56
-},
-{
-"barrier": "lift_gate",
-"d": 59
+"d": 46
 }
 ],
 "parking": [
 {
 "access": "yes",
-"d": 19,
+"d": 18,
 "fee": "yes",
 "parking": "street_side"
 },
 {
 "access": "yes",
-"d": 83,
+"d": 92,
 "fee": "yes",
 "parking": "street_side"
 },
 {
 "access": "yes",
-"d": 151,
+"d": 161,
 "fee": "yes",
 "parking": "street_side"
 },
 {
 "access": "yes",
-"d": 191,
+"d": 180,
 "fee": "yes",
 "parking": "street_side"
 }
@@ -38834,22 +38769,21 @@
 ]
 },
 "cafe-yakitoriya-korolev": {
-"building_addr": "проспект Космонавтов, 27Б",
 "parking": [
 {
-"d": 21,
+"d": 24,
 "parking": "surface"
 },
 {
 "access": "customers",
-"d": 82
+"d": 86
 },
 {
 "access": "customers",
-"d": 104
+"d": 103
 },
 {
-"d": 127
+"d": 126
 }
 ]
 },
