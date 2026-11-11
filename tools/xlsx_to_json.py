@@ -16,6 +16,8 @@ import json, os
 import re
 import sys
 from datetime import date, datetime
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import cat_split
 
 try:
     import openpyxl
@@ -232,6 +234,10 @@ def convert_row(raw, problems):
                         ("school", r"подготовк\w* к школе|ментальн\w* арифметик"), ("languages", r"языков\w* (школ|центр)|английск\w* для детей")):
             if cat not in p["cats"] and re.search(rx, nt):
                 p["cats"] = p["cats"] + [cat]
+
+    # Раздельные категории (11.11): хоккей/фигурное катание, теннис/сквош/настольный, борьба/самбо/дзюдо/бокс…, балет,
+    # вокал, музыка, театральная студия, рисование, керамика — tools/cat_split.py
+    cat_split.split(p)
 
     # Сезон «11-03» -> [11, 12, 1, 2, 3]; пусто -> круглый год
     p["season_months"] = None

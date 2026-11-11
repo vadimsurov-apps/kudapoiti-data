@@ -18,6 +18,7 @@ def main():
     shown = {p["id"] for p in J("places.json", {"places": []})["places"]}
     ver, tried = J("auto/verified.json", {}), J("auto/confirm-tried.json", {})
     old = (datetime.date.today() - datetime.timedelta(days=14)).isoformat()
+    fresh = (datetime.date.today() - datetime.timedelta(days=10)).isoformat()
     pend = set()
     for f in os.listdir(os.path.join(ROOT, "auto", "verify-batches")) if os.path.isdir(os.path.join(ROOT, "auto", "verify-batches")) else []:
         if f.endswith(".json"):
@@ -37,6 +38,10 @@ def main():
         rec = ver.get(pid, {})
         dates = [rec[k]["date"] for k in CORE if isinstance(rec.get(k), dict) and rec[k].get("date")]
         last = min(dates) if dates and len(dates) >= 5 else ""
+        # 11.11: место на карте, у которого все основные поля подтверждены за последние 10 дней, — не в очереди
+        # (полный круг сделан — смена карты заканчивает быстро и не тратит лимит зря)
+        if mode == "map" and last and last >= fresh:
+            continue
         prio = 0 if any(c in PRIO for c in (p.get("cats") or [])) else 1
         out.append((last, prio, pid, p))
     out.sort(key=lambda x: (x[0], x[1]))
