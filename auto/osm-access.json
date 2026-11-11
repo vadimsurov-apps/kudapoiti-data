@@ -14982,19 +14982,26 @@
 ]
 },
 "cafe-brusnika-ukrainsky-6": {
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 48
+}
+],
 "parking": [
 {
-"d": 150,
+"d": 127,
 "parking": "surface"
 },
 {
-"d": 164
+"d": 139
 },
 {
-"d": 222
+"d": 199
 },
 {
-"d": 243
+"d": 270
 }
 ],
 "poi": {
@@ -21477,14 +21484,14 @@
 "cafe-hinkali-gali-rechnikov-32": {
 "parking": [
 {
-"d": 239,
+"d": 223,
 "fee": "no"
 },
 {
-"d": 261
+"d": 272
 },
 {
-"d": 285,
+"d": 299,
 "parking": "street_side"
 }
 ]
@@ -36839,25 +36846,19 @@
 }
 },
 "cafe-tanuki-privolnaya-65": {
-"gates": [
-{
-"barrier": "lift_gate",
-"d": 45
-}
-],
 "parking": [
 {
-"d": 194
-},
-{
-"d": 199
-},
-{
-"d": 203,
+"d": 169,
 "fee": "yes"
 },
 {
-"d": 221
+"d": 171
+},
+{
+"d": 183
+},
+{
+"d": 192
 }
 ],
 "poi": {
@@ -36870,13 +36871,13 @@
 "gates": [
 {
 "barrier": "lift_gate",
-"d": 51
+"d": 24
 }
 ],
 "parking": [
 {
 "access": "yes",
-"d": 34,
+"d": 59,
 "fee": "no",
 "parking": "surface"
 },
@@ -62482,6 +62483,28 @@
 "fsa-yuzhnoportovaya": {
 "building_addr": "Южнопортовая улица, 5 с6"
 },
+"fun-5-klyuchey-forta-podolsk": {
+"parking": [
+{
+"d": 75,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 96,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 120
+},
+{
+"d": 123
+}
+]
+},
 "fun-altair-vernadskogo": {
 "building_addr": "проспект Вернадского, 86 с2",
 "building_entrances": [
@@ -62544,6 +62567,46 @@
 {
 "d": 29,
 "fee": "no",
+"parking": "surface"
+}
+]
+},
+"fun-art-fabrika-taganka": {
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 17
+},
+{
+"barrier": "gate",
+"d": 19
+},
+{
+"barrier": "lift_gate",
+"d": 27
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 30
+}
+],
+"parking": [
+{
+"d": 30,
+"parking": "street_side"
+},
+{
+"d": 65,
+"parking": "street_side"
+},
+{
+"d": 116,
+"parking": "surface"
+},
+{
+"d": 265,
 "parking": "surface"
 }
 ]
@@ -62713,6 +62776,33 @@
 }
 ]
 },
+"fun-bion-borisovo": {
+"building_addr": "улица Борисовские Пруды, 8 к2",
+"gates": [
+{
+"barrier": "gate",
+"d": 38
+}
+],
+"parking": [
+{
+"d": 31,
+"parking": "street_side"
+},
+{
+"d": 39,
+"parking": "street_side"
+},
+{
+"d": 40,
+"parking": "street_side"
+},
+{
+"d": 46,
+"parking": "street_side"
+}
+]
+},
 "fun-coddy-nakhabino": {
 "building_addr": "Школьная улица, 2",
 "parking": [
@@ -62816,6 +62906,21 @@
 }
 ]
 },
+"fun-ekocentr-krasnaya-sosna": {
+"parking": [
+{
+"d": 202
+},
+{
+"d": 240
+}
+],
+"poi": {
+"contact:phone": "+7 925 5699706",
+"contact:website": "http://elkisland.ru/tourism_and_recreation/picnic/dets_krasnaya_sosna/",
+"opening_hours": "Mo-Su 10:00-21:00"
+}
+},
 "fun-el-quest-nikolaeva": {
 "building_addr": "улица Николаева, 17А",
 "gates": [
@@ -62853,6 +62958,35 @@
 },
 {
 "d": 223
+}
+]
+},
+"fun-exotag-arena-leninsky": {
+"building_addr": "Ленинский проспект, 109",
+"building_entrances": [
+{
+"d": 57,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 186,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 200,
+"parking": "street_side"
+},
+{
+"d": 203,
+"parking": "street_side"
+},
+{
+"d": 211,
+"parking": "street_side"
 }
 ]
 },
@@ -62910,6 +63044,50 @@
 "contact:website": "https://глина.online",
 "opening_hours": "Mo-Su 12:00-20:00"
 }
+},
+"fun-gusi-lepyat-yuzhnobutovskaya": {
+"building_addr": "Южнобутовская улица, 36",
+"parking": [
+{
+"d": 117,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 183,
+"fee": "yes",
+"operator": "ГУП «Московский метрополитен»",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 195,
+"parking": "lane"
+},
+{
+"d": 216,
+"parking": "surface"
+}
+]
+},
+"fun-hobbi-klever-otradnoe": {
+"building_addr": "улица Декабристов, 27",
+"parking": [
+{
+"d": 54
+},
+{
+"d": 60,
+"parking": "surface"
+},
+{
+"d": 107
+},
+{
+"d": 118
+}
+]
 },
 "fun-holly-polly-kupavna": {
 "building_addr": "улица Горького, 1А",
@@ -63154,6 +63332,30 @@
 }
 ]
 },
+"fun-listok-galereya-lazareva": {
+"building_addr": "улица Адмирала Лазарева, 61",
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 41
+}
+],
+"parking": [
+{
+"capacity": "20",
+"d": 58,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 227,
+"fee": "yes",
+"parking": "surface"
+}
+]
+},
 "fun-masterim-podolsk": {
 "building_addr": "Февральская улица, 59",
 "parking": [
@@ -63276,6 +63478,50 @@
 }
 ]
 },
+"fun-play-day-seligerskaya": {
+"building_addr": "Коровинское шоссе, 2",
+"parking": [
+{
+"d": 117,
+"parking": "surface"
+},
+{
+"d": 148,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 170,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 177,
+"parking": "street_side"
+}
+]
+},
+"fun-playport-annino": {
+"parking": [
+{
+"d": 225
+},
+{
+"capacity": "4",
+"d": 254,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"access": "customers",
+"d": 286,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+}
+]
+},
 "fun-portal-vr-lyubertsy": {
 "building_addr": "Озёрная улица, 2",
 "parking": [
@@ -63344,6 +63590,50 @@
 }
 ]
 },
+"fun-rebotica-novodmitrovskaya": {
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 47
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 57
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 60
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 26,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 70,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 109,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 138,
+"fee": "no",
+"parking": "street_side"
+}
+]
+},
 "fun-robocentr-poligon-altufyevo": {
 "building_addr": "Алтуфьевское шоссе, 102Б",
 "gates": [
@@ -63367,6 +63657,145 @@
 },
 {
 "d": 185
+}
+]
+},
+"fun-sad-babochek-arbat": {
+"building_addr": "улица Арбат, 30/3 с1",
+"building_entrances": [
+{
+"access": "private",
+"addr:flats": "52-59",
+"d": 1,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"access": "private",
+"addr:flats": "60-67",
+"d": 10,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"access": "private",
+"d": 12,
+"entrance": "yes",
+"ref": "1"
+},
+{
+"d": 16,
+"entrance": "yes"
+}
+],
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 16
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 53
+},
+{
+"barrier": "lift_gate",
+"d": 59
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 239,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 240,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 247,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 250,
+"fee": "yes",
+"parking": "street_side"
+}
+]
+},
+"fun-shkola-banya-leninsky": {
+"building_addr": "Ленинский проспект, 82/2",
+"building_entrances": [
+{
+"addr:flats": "162-191",
+"d": 58,
+"entrance": "staircase",
+"ref": "6"
+},
+{
+"addr:flats": "132-161",
+"d": 58,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"addr:flats": "281-309",
+"d": 58,
+"entrance": "staircase",
+"ref": "10"
+},
+{
+"addr:flats": "310-339",
+"d": 60,
+"entrance": "staircase",
+"ref": "11"
+},
+{
+"addr:flats": "249-280",
+"d": 66,
+"entrance": "staircase",
+"ref": "9"
+},
+{
+"addr:flats": "465-496",
+"d": 68,
+"entrance": "staircase",
+"ref": "16"
+},
+{
+"addr:flats": "192-220",
+"d": 69,
+"entrance": "staircase",
+"ref": "7"
+},
+{
+"addr:flats": "103-131",
+"d": 72,
+"entrance": "staircase",
+"ref": "4"
+}
+],
+"parking": [
+{
+"d": 129,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"capacity": "50",
+"d": 142,
+"parking": "surface"
+},
+{
+"d": 283
 }
 ]
 },
@@ -63422,6 +63851,85 @@
 }
 ]
 },
+"fun-traektoriya-vzleta-mai": {
+"parking": [
+{
+"access": "yes",
+"d": 113,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 118,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "customers",
+"d": 175,
+"parking": "surface"
+},
+{
+"d": 240,
+"parking": "street_side"
+}
+],
+"poi": {
+"contact:phone": "+7 901 713-03-31",
+"contact:website": "https://traektoria.education/",
+"description": "Детский технопарк МАИ. Курсы для детей от 6 до 17 лет: IT-разработка, 3D-моделирование, робототехника, беспилотники, авиация и космос.",
+"opening_hours": "Mo-Sa 09:00-19:00; Su 10:00-18:00",
+"wheelchair": "no"
+}
+},
+"fun-trikvestr-voykovskaya": {
+"parking": [
+{
+"access": "permissive",
+"d": 63,
+"parking": "surface"
+},
+{
+"d": 69
+},
+{
+"d": 109,
+"parking": "surface"
+},
+{
+"d": 119
+}
+]
+},
+"fun-tuki-tuki-kulikovskaya": {
+"building_addr": "Куликовская улица, 9",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 41
+},
+{
+"barrier": "lift_gate",
+"d": 54
+}
+],
+"parking": [
+{
+"d": 25,
+"parking": "surface"
+},
+{
+"d": 167,
+"parking": "surface"
+},
+{
+"d": 214
+},
+{
+"d": 214
+}
+]
+},
 "fun-tuki-tuki-reutov": {
 "parking": [
 {
@@ -63438,6 +63946,77 @@
 },
 {
 "d": 173
+}
+]
+},
+"fun-uchenyy-kot-otradnoe": {
+"building_addr": "улица Пестеля, 6",
+"building_entrances": [
+{
+"d": 6,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"d": 17,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"d": 28,
+"entrance": "staircase",
+"ref": "1"
+}
+],
+"parking": [
+{
+"d": 32,
+"parking": "street_side"
+},
+{
+"d": 59,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 127,
+"fee": "no",
+"parking": "lane"
+},
+{
+"d": 250
+}
+]
+},
+"fun-vremya-risovat-filevsky": {
+"building_addr": "Кастанаевская улица, 18",
+"building_entrances": [
+{
+"d": 15,
+"entrance": "staircase",
+"ref": "1"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 56
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 141,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "permissive",
+"d": 297,
+"fee": "no",
+"operator": "Финансовый университет",
+"parking": "surface",
+"supervised": "yes"
 }
 ]
 },
