@@ -23432,28 +23432,29 @@
 "gates": [
 {
 "barrier": "lift_gate",
-"d": 29
-},
-{
-"barrier": "gate",
-"d": 30
+"d": 55
 }
 ],
 "parking": [
 {
-"d": 15
+"access": "yes",
+"d": 48,
+"parking": "surface"
 },
 {
-"d": 59,
+"d": 103
+},
+{
+"d": 148,
 "parking": "street_side"
 },
 {
 "access": "yes",
-"d": 99,
+"capacity": "75",
+"capacity:disabled": "9",
+"d": 174,
+"fee": "no",
 "parking": "surface"
-},
-{
-"d": 222
 }
 ],
 "poi": {
@@ -35232,57 +35233,61 @@
 "building_addr": "улица Эдварда Грига, 16 к1",
 "building_entrances": [
 {
-"d": 4,
+"d": 99,
 "entrance": "yes"
 },
 {
-"d": 7,
+"d": 101,
 "entrance": "yes"
 },
 {
-"d": 7,
+"d": 103,
 "entrance": "yes"
 },
 {
-"d": 13,
-"entrance": "staircase",
-"ref": "6"
-},
-{
-"d": 17,
+"d": 107,
 "entrance": "yes"
 },
 {
-"d": 18,
+"d": 109,
+"entrance": "yes"
+},
+{
+"d": 113,
+"entrance": "yes"
+},
+{
+"d": 114,
 "entrance": "staircase"
 },
 {
-"d": 19,
+"d": 116,
 "entrance": "yes"
-},
+}
+],
+"gates": [
 {
-"d": 20,
-"entrance": "staircase",
-"ref": "5"
+"barrier": "gate",
+"d": 46
 }
 ],
 "parking": [
 {
-"d": 65,
-"fee": "yes",
+"capacity": "7",
+"capacity:disabled": "1",
+"d": 80,
 "parking": "street_side"
 },
 {
-"d": 116,
-"fee": "yes",
+"d": 95,
 "parking": "street_side"
 },
 {
-"d": 135,
+"d": 114,
 "parking": "street_side"
 },
 {
-"d": 167,
+"d": 121,
 "parking": "street_side"
 }
 ]
@@ -60584,24 +60589,49 @@
 },
 "edupeople-robotics-zhukova": {
 "building_addr": "проспект Маршала Жукова, 51",
-"gates": [
+"building_entrances": [
 {
-"access": "private",
-"barrier": "gate",
-"d": 49
+"d": 15,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"d": 17,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"d": 42,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"d": 45,
+"entrance": "staircase",
+"ref": "4"
 }
 ],
 "parking": [
 {
-"d": 73
+"access": "yes",
+"d": 29,
+"fee": "no",
+"parking": "surface"
 },
 {
-"capacity": "46",
-"capacity:disabled": "6",
-"charge": "50 RUB/hour",
-"d": 281,
-"fee": "yes",
+"access": "yes",
+"d": 33,
+"fee": "no",
 "parking": "surface"
+},
+{
+"d": 37
+},
+{
+"access": "yes",
+"d": 40,
+"fee": "no",
+"parking": "street_side"
 }
 ]
 },
@@ -74104,6 +74134,27 @@
 }
 ]
 },
+"happy-dolphin-pika": {
+"building_addr": "улица Вильгельма Пика, 4 с12",
+"parking": [
+{
+"d": 231,
+"parking": "surface"
+},
+{
+"d": 243
+},
+{
+"d": 262,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 264,
+"parking": "surface"
+}
+]
+},
 "happy-football-cheryomushki": {
 "building_addr": "Новочерёмушкинская улица, 49",
 "parking": [
@@ -78790,6 +78841,52 @@
 }
 ]
 },
+"imperia-dodze-profsoyuznaya": {
+"building_addr": "Профсоюзная улица, 83Б",
+"building_entrances": [
+{
+"d": 20,
+"entrance": "main"
+}
+],
+"gates": [
+{
+"access": "destination",
+"barrier": "lift_gate",
+"d": 27
+},
+{
+"barrier": "gate",
+"d": 48
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 56,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 90,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 93,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 137,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
 "imperial-dance-davydova": {
 "building_addr": "улица Дениса Давыдова, 7",
 "building_entrances": [
@@ -83347,6 +83444,61 @@
 }
 ]
 },
+"karate-champion-shebashevsky": {
+"building_addr": "Шебашёвский проезд, 5",
+"building_entrances": [
+{
+"addr:flats": "21-40",
+"d": 3,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "1-20",
+"d": 17,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "41-59",
+"d": 20,
+"entrance": "staircase",
+"ref": "3"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 13
+},
+{
+"barrier": "gate",
+"d": 16
+},
+{
+"access": "no",
+"barrier": "gate",
+"d": 48
+}
+],
+"parking": [
+{
+"d": 65
+},
+{
+"d": 69,
+"parking": "surface"
+},
+{
+"d": 69,
+"parking": "surface"
+},
+{
+"d": 117,
+"parking": "surface"
+}
+]
+},
 "karate-club1-arbat": {
 "building_addr": "улица Арбат, 24",
 "gates": [
@@ -83520,6 +83672,37 @@
 "phone": "+7 495 5095093",
 "website": "https://okinawakarate.ru/"
 }
+},
+"karate1-golubinskaya": {
+"building_addr": "Голубинская улица, 23 к3",
+"building_entrances": [
+{
+"d": 22,
+"entrance": "main"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 52
+}
+],
+"parking": [
+{
+"d": 102,
+"parking": "street_side"
+},
+{
+"d": 110,
+"parking": "street_side"
+},
+{
+"d": 113
+},
+{
+"d": 141
+}
+]
 },
 "karate1-ramenki": {
 "building_addr": "Мосфильмовская улица, 53",
@@ -89847,6 +90030,37 @@
 },
 {
 "d": 177
+}
+]
+},
+"komanda-e-elektrozavodskaya": {
+"building_addr": "Электрозаводская улица, 58",
+"gates": [
+{
+"barrier": "gate",
+"d": 41
+},
+{
+"barrier": "gate",
+"d": 43
+}
+],
+"parking": [
+{
+"d": 136,
+"parking": "surface"
+},
+{
+"d": 148,
+"parking": "surface"
+},
+{
+"capacity": "8",
+"d": 151,
+"parking": "street_side"
+},
+{
+"d": 161
 }
 ]
 },
@@ -100932,6 +101146,31 @@
 "opening_hours": "Mo-Su 10:00-22:00"
 }
 },
+"mcbi-varshavskoe": {
+"parking": [
+{
+"d": 209
+},
+{
+"d": 261,
+"fee": "yes",
+"parking": "surface",
+"supervised": "yes"
+},
+{
+"d": 263,
+"fee": "yes",
+"parking": "surface",
+"supervised": "yes"
+},
+{
+"d": 275,
+"fee": "yes",
+"parking": "surface",
+"supervised": "yes"
+}
+]
+},
 "mds-dance-sergiev-posad": {
 "parking": [
 {
@@ -109285,6 +109524,40 @@
 }
 ]
 },
+"nasledie-otkrytoe": {
+"building_addr": "Открытое шоссе, 4 с1",
+"building_entrances": [
+{
+"d": 32,
+"door": "revolving",
+"entrance": "main"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 223,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 249,
+"fee": "no",
+"parking": "street_side",
+"supervised": "no"
+},
+{
+"access": "yes",
+"d": 261,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 264
+}
+]
+},
 "nastavnik-yankovskogo": {
 "building_addr": "улица Янковского, 1 к3",
 "building_entrances": [
@@ -109374,17 +109647,17 @@
 "building_addr": "Профсоюзная улица, 11/11",
 "parking": [
 {
-"d": 185
+"d": 180
 },
 {
-"d": 218
+"d": 212
 },
 {
-"d": 249,
+"d": 243,
 "parking": "surface"
 },
 {
-"d": 273
+"d": 277
 }
 ]
 },
@@ -124751,6 +125024,53 @@
 "website": "https://castle.moscow/"
 }
 },
+"raviga-altufyevskoe": {
+"building_addr": "Алтуфьевское шоссе, 70 к1",
+"building_entrances": [
+{
+"d": 28,
+"entrance": "yes"
+},
+{
+"d": 50,
+"entrance": "main"
+},
+{
+"d": 56,
+"entrance": "yes"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 49
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 46,
+"parking": "multi-storey"
+},
+{
+"access": "yes",
+"d": 67,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 159,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 165,
+"fee": "no"
+}
+]
+},
 "raviga-bolshaya-filevskaya": {
 "building_addr": "Большая Филёвская улица, 3 к2",
 "building_entrances": [
@@ -126270,6 +126590,41 @@
 {
 "access": "customers",
 "d": 221,
+"parking": "surface"
+}
+]
+},
+"rgc1-borisovskie-prudy": {
+"building_addr": "улица Борисовские Пруды, 20 к3А",
+"gates": [
+{
+"barrier": "gate",
+"d": 58
+}
+],
+"parking": [
+{
+"access": "yes",
+"capacity": "60",
+"charge": "5000 ₽",
+"d": 85,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 127,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 162,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 177,
 "parking": "surface"
 }
 ]
@@ -133641,6 +133996,23 @@
 }
 ]
 },
+"shtorm-guu": {
+"parking": [
+{
+"d": 65,
+"parking": "surface"
+},
+{
+"d": 115
+},
+{
+"d": 143
+},
+{
+"d": 164
+}
+]
+},
 "shtorm-kachalovskiy": {
 "parking": [
 {
@@ -133712,6 +134084,123 @@
 },
 {
 "d": 145
+}
+]
+},
+"shtorm-krylatskie": {
+"building_addr": "улица Крылатские Холмы, 15 к2",
+"parking": [
+{
+"d": 80,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 110,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 115,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 165,
+"parking": "surface"
+}
+]
+},
+"shtorm-luzhniki": {
+"building_addr": "Новолужнецкий проезд, 13",
+"parking": [
+{
+"d": 148,
+"parking": "street_side"
+},
+{
+"d": 152,
+"fee": "yes",
+"parking": "surface"
+},
+{
+"d": 175,
+"parking": "street_side"
+},
+{
+"d": 201
+}
+]
+},
+"shtorm-mgtu": {
+"building_addr": "Госпитальная набережная, 4 с1",
+"building_entrances": [
+{
+"d": 41,
+"entrance": "yes"
+}
+],
+"parking": [
+{
+"capacity": "254",
+"d": 155,
+"parking": "underground"
+},
+{
+"d": 263
+},
+{
+"d": 297
+},
+{
+"d": 297
+}
+]
+},
+"shtorm-misis": {
+"building_addr": "Профсоюзная улица, 83Б",
+"building_entrances": [
+{
+"d": 20,
+"entrance": "main"
+}
+],
+"gates": [
+{
+"access": "destination",
+"barrier": "lift_gate",
+"d": 27
+},
+{
+"barrier": "gate",
+"d": 48
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 56,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 90,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 93,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 137,
+"fee": "no",
+"parking": "surface"
 }
 ]
 },
@@ -133861,6 +134350,65 @@
 },
 {
 "d": 276
+}
+]
+},
+"shturm-miklukho-maklaya": {
+"building_addr": "улица Миклухо-Маклая, 18 к3",
+"building_entrances": [
+{
+"d": 14,
+"entrance": "main"
+}
+],
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 43
+},
+{
+"access": "yes",
+"barrier": "lift_gate",
+"d": 57
+}
+],
+"parking": [
+{
+"d": 62,
+"parking": "surface"
+},
+{
+"d": 79
+},
+{
+"d": 117
+},
+{
+"capacity": "40",
+"d": 134,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+}
+]
+},
+"shturm-profsoyuznaya-112": {
+"building_addr": "Профсоюзная улица, 112",
+"parking": [
+{
+"d": 44
+},
+{
+"d": 49,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 82
+},
+{
+"d": 126,
+"parking": "surface"
 }
 ]
 },
@@ -141064,6 +141612,30 @@
 "parking": [
 {
 "d": 193,
+"parking": "surface"
+}
+]
+},
+"taibov-shchelkovskoe": {
+"building_addr": "Щёлковское шоссе, 27А",
+"parking": [
+{
+"access": "yes",
+"d": 33,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 270
+},
+{
+"access": "yes",
+"d": 289,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 299,
 "parking": "surface"
 }
 ]
@@ -153700,6 +154272,56 @@
 },
 {
 "d": 260,
+"parking": "street_side"
+}
+]
+},
+"wma-litvina-sedogo": {
+"building_addr": "улица Литвина-Седого, 3А",
+"building_entrances": [
+{
+"access": "private",
+"d": 3,
+"door": "hinged",
+"entrance": "main"
+}
+],
+"gates": [
+{
+"access": "yes",
+"barrier": "gate",
+"d": 17
+},
+{
+"barrier": "lift_gate",
+"d": 32
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 36
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 45
+}
+],
+"parking": [
+{
+"d": 217,
+"parking": "underground"
+},
+{
+"d": 241,
+"parking": "street_side"
+},
+{
+"d": 256,
+"parking": "street_side"
+},
+{
+"d": 277,
 "parking": "street_side"
 }
 ]
