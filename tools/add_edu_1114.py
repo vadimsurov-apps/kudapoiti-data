@@ -6,7 +6,11 @@
 Точка — справка OSM (auto/osm-answers.json, edu14-*), tools/edu_1114_pick.py: объект OSM места или здание строго по адресу.
 Отброшены: дубли (по адресу и названию в places-all.json и data/parts), клиники, карточки без возраста групп,
 карточки, где Яндекс вернул не организацию, а адрес.
-Запуск: KP_PART=edu python3 tools/add_edu_1114.py [--dry]"""
+Запуск: KP_PART=edu python3 tools/add_edu_1114.py [--dry]
+11.11 21:00: добавлено 28 мест; ещё 22 (второй круг и 5 мест первого) ждут справку OSM (запросы edu14-* в auto/osm-queries.json).
+Следующий запуск edu: python3 tools/edu_1114_pick.py → KP_PART=edu python3 tools/add_edu_1114.py (добавит только новые) →
+python3 tools/edu_1114_verify.py > b.json → set_verified.py b.json → edu_1114_deals.py, edu_1114_catages.py →
+python3 tools/icons_edu_1114.py <новые id> (иконки уже нарисованы и проверены, check_unique = 0)."""
 import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import openpyxl
@@ -60,7 +64,7 @@ if __name__ == "__main__":
     border = Border(left=thin, right=thin, top=thin, bottom=thin)
     ids = [r["id"] for r in ROWS]
     assert len(ids) == len(set(ids)), "повтор id"
-    assert not [i for i in ids if i in existing or i in PL], [i for i in ids if i in existing or i in PL]
+    ROWS = [r for r in ROWS if r["id"] not in existing and r["id"] not in PL]   # повторный запуск: только новые
     if "--dry" in sys.argv:
         print(len(ROWS)); sys.exit()
     r0 = 2 if ws.max_row == 1 or ws.cell(row=2, column=1).value is None else ws.max_row + 1
