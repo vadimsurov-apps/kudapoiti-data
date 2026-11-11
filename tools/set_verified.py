@@ -7,7 +7,8 @@ batch.json: {"<id>": {
         "address": "…", "hours": "…", "price_child": 750, "price_adult": 1250, "free_note": "…", "type": "…",
         "how": "Вход: …\\nЭтаж: …", "parking": "да"|"нет", "booking": "обязательна"|…,
         "point": {"lat": 55.1, "lon": 37.1, "level": "вход"|"объект"|"дом", "how": "OSM node/… / вручную / сайт"},
-        "phone": "+7 …", "url": "https://…"
+        "phone": "+7 …", "url": "https://…",
+        "cats": "sambo,judo"         # точные категории места (список CLAUDE.md «Категории фильтра»), заменяют прежние
     },
     "empty": ["hours", …],           # источник проверен, данных НЕТ — поле очистить (не выдумывать)
     "src": "сайт alpacainfo.ru; OSM node/…; 2ГИС-сниппет",   # обязательно
@@ -24,7 +25,9 @@ import openpyxl
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 COLS = {"address": "Адрес", "hours": "Часы работы", "price_child": "Детский билет, ₽", "price_adult": "Взрослый билет, ₽",
         "free_note": "Бесплатно до (лет / см)", "type": "Тип", "how": "Как найти", "parking": "Парковка", "booking": "Запись",
-        "age_min": "Возраст от", "age_max": "Возраст до"}
+        "age_min": "Возраст от", "age_max": "Возраст до",
+        # 11.11: точные раздельные категории через запятую (хоккей ≠ фигурное, самбо ≠ дзюдо, танцы ≠ балет)
+        "cats": "Категории"}
 CORE = ("point", "address", "hours", "phone", "url")
 
 
@@ -76,13 +79,15 @@ def apply(batch):
                     row[head.index("Широта")].value, row[head.index("Долгота")].value = v["lat"], v["lon"]
                     row[head.index("Точность координат")].value = f"точно ({v.get('level', 'объект')}: {v.get('how', b['src'])}, проверено {today})"
                 elif k in col:
-                    row[col[k]].value = v
+                    row[col[k]].value = ", ".join(v) if isinstance(v, list) else v
                 elif k in ("phone", "url"):
                     e = contacts.setdefault(pid, {}); e[k] = v
                     if k == "url": e["url_override"] = True
                     e.update(src=b["src"], checked=today)
                 rec[k] = {"date": today, "src": b["src"], **({"level": v.get("level")} if k == "point" else {})}
             for k in b.get("empty", []):
+                if k == "cats":
+                    continue
                 if k in col:
                     row[col[k]].value = None
                 rec[k] = {"date": today, "src": b["src"], "empty": True}
