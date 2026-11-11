@@ -11458,7 +11458,7 @@
       "changing_table": null,
       "cloakroom": null,
       "stroller": "partial",
-      "parking": null,
+      "parking": "yes",
       "adult_interest": 1,
       "plus": "Строим из кубиков-конструктора",
       "minus": null,
@@ -58685,7 +58685,7 @@
       "price_adult": 2500,
       "free_note": null,
       "booking": null,
-      "hours": null,
+      "hours": "ежедневно 10:00–22:00",
       "indoor": "yes",
       "food": "yes",
       "changing_table": null,
@@ -58708,8 +58708,37 @@
       "how_to_find": "Этаж: 4",
       "phone": "+7 (916) 213-47-13",
       "season_months": null,
-      "open_mode": "unknown",
-      "open_week": null,
+      "open_mode": "hours",
+      "open_week": [
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ]
+      ],
       "point_level": "вход"
     },
     {
@@ -58788,11 +58817,11 @@
         "sport",
         "music"
       ],
-      "price_child": null,
+      "price_child": 2500,
       "price_adult": null,
-      "free_note": null,
+      "free_note": "Пробная тренировка — бесплатно; разовое занятие 2 500 ₽, в абонементе 1 040–1 500 ₽ за тренировку",
       "booking": "required",
-      "hours": null,
+      "hours": "ср 15:00–16:30; сб 14:00–17:00; вс 11:30–13:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -58814,8 +58843,25 @@
       "how_to_find": null,
       "phone": "+7 (909) 512-24-31",
       "season_months": null,
-      "open_mode": "unknown",
-      "open_week": null,
+      "open_mode": "hours",
+      "open_week": [
+        null,
+        null,
+        [
+          900,
+          990
+        ],
+        null,
+        null,
+        [
+          840,
+          1020
+        ],
+        [
+          690,
+          780
+        ]
+      ],
       "point_level": "вход"
     },
     {
@@ -60224,7 +60270,7 @@
       "adult_interest": 1,
       "plus": "Современная и классическая хореография для детей 3–6 лет",
       "minus": null,
-      "url": null,
+      "url": "https://школатанца.рф",
       "source": "Яндекс Карты: карточка организации (рубрика, адрес, этаж/вход, телефон, сайт, услуги, возраст групп), выдача «балетная школа для детей метро Арбатская», 11.11.2026; сайт — (возраст групп)",
       "verified_at": "2026-11-11",
       "status": "draft",
@@ -60818,6 +60864,447 @@
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
+      "point_level": "вход"
+    },
+    {
+      "id": "adm-miklukho-maklaya",
+      "name": "Академия детского мюзикла (Беляево)",
+      "type": [
+        "студия мюзикла"
+      ],
+      "metro": "Беляево",
+      "address": "ул. Миклухо-Маклая, 18, корп. 1",
+      "lat": 55.645563,
+      "lon": 37.517944,
+      "age_min": 4,
+      "age_max": 16,
+      "duration_min": 45,
+      "duration_max": 90,
+      "energy": "calm",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "partial",
+      "tags": [
+        "theatre",
+        "creativity"
+      ],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": null,
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Программа для детей 4–16 лет: вокал, хореография и актёрское мастерство вместе — ставят настоящий мюзикл и выходят на большую сцену",
+      "minus": null,
+      "url": "https://www.musicalacademy.ru",
+      "source": "Яндекс Карты: выдача «вокал для детей метро Беляево» и карточка организации (адрес, этаж, телефон, сайт, услуги), 11.11.2026; возраст — сайт musicalacademy.ru («для детей от 4 до 16 лет»)",
+      "verified_at": "2026-11-11",
+      "status": "draft",
+      "cats": [
+        "theaterstudio",
+        "singing",
+        "dance"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": "Этаж: 3",
+      "phone": "+7 (495) 624-88-88",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход"
+    },
+    {
+      "id": "guitar-school-1-miklukho",
+      "name": "Гитарная школа № 1 (Беляево)",
+      "type": [
+        "гитарная школа"
+      ],
+      "metro": "Беляево",
+      "address": "ул. Миклухо-Маклая, 22",
+      "lat": 55.64315,
+      "lon": 37.521537,
+      "age_min": 8,
+      "age_max": 16,
+      "duration_min": 45,
+      "duration_max": 90,
+      "energy": "calm",
+      "loud": "partial",
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "partial",
+      "tags": [
+        "music"
+      ],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": null,
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Гитара и укулеле для детей 8–16 лет, раз в неделю в небольших группах; инструмент дают на занятие; пробный урок укулеле — 990 ₽",
+      "minus": null,
+      "url": "https://guitar-studio.ru",
+      "source": "Яндекс Карты: выдача «музыкальная школа метро Беляево» и карточка организации (адрес, этаж, телефон, сайт, услуги), 11.11.2026; возраст — сайт guitar-studio.ru («для детей 8–16 лет»), цена пробного — карточка Яндекс Карт",
+      "verified_at": "2026-11-11",
+      "status": "draft",
+      "cats": [
+        "music"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (931) 521-44-63",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход"
+    },
+    {
+      "id": "buff-kastanaevskaya",
+      "name": "Театральная студия «Буфф» (Пионерская)",
+      "type": [
+        "театральная студия"
+      ],
+      "metro": "Пионерская",
+      "address": "Кастанаевская ул., 52, стр. 2",
+      "lat": 55.734357,
+      "lon": 37.46958,
+      "age_min": 4,
+      "age_max": 16,
+      "duration_min": 45,
+      "duration_max": 90,
+      "energy": "calm",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "partial",
+      "tags": [
+        "theatre",
+        "creativity"
+      ],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": null,
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Группы 4–8 лет («Театр и школа»), 7–12 и 12–16 лет, до 12 детей в группе; абонемент на 8 занятий для 4–8 лет — 8 600 ₽",
+      "minus": null,
+      "url": "https://ctbuff.ru",
+      "source": "Яндекс Карты: выдача «театральная студия для детей метро Багратионовская» и карточка организации (адрес, этаж, телефон, сайт, услуги), 11.11.2026; возраст — сайт ctbuff.ru (4–16 лет, филиал на Пионерской), цена — карточка Яндекс Карт",
+      "verified_at": "2026-11-11",
+      "status": "draft",
+      "cats": [
+        "theaterstudio"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (964) 575-63-36",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход"
+    },
+    {
+      "id": "krb-yamskogo-polya",
+      "name": "Академия талантов KRB (Белорусская)",
+      "type": [
+        "детская творческая академия"
+      ],
+      "metro": "Белорусская",
+      "address": "3-я ул. Ямского Поля, 9",
+      "lat": 55.780813,
+      "lon": 37.579506,
+      "age_min": 8,
+      "age_max": 17,
+      "duration_min": 45,
+      "duration_max": 90,
+      "energy": "calm",
+      "loud": "partial",
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "partial",
+      "tags": [
+        "music"
+      ],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": null,
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Творческий комплекс для 8–17 лет: вокал, хор, хореография, актёрское мастерство и сольфеджио; есть «Медиа» — школа юных теле- и радиоведущих",
+      "minus": null,
+      "url": "https://academykrb.ru",
+      "source": "Яндекс Карты: выдача «вокал для детей метро Белорусская» и карточка организации (адрес, этаж, телефон, сайт, услуги), 11.11.2026; возраст — карточка Яндекс Карт, «Товары и услуги» (программы «от 8 до 17 лет»)",
+      "verified_at": "2026-11-11",
+      "status": "draft",
+      "cats": [
+        "singing",
+        "theaterstudio"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (968) 510-80-86",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход"
+    },
+    {
+      "id": "bcballet-baumanskaya",
+      "name": "Балетная студия «Балет в большом городе» (Бауманская)",
+      "type": [
+        "балетная студия"
+      ],
+      "metro": "Бауманская",
+      "address": "Бауманская ул., 53/2",
+      "lat": 55.7724,
+      "lon": 37.67904,
+      "age_min": 5,
+      "age_max": 15,
+      "duration_min": 45,
+      "duration_max": 90,
+      "energy": "active",
+      "loud": "partial",
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "no",
+      "tags": [
+        "sport",
+        "music"
+      ],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": null,
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Балет для детей 5–15 лет любого уровня; два раза в год выступают на большой сцене",
+      "minus": null,
+      "url": "https://bcballet.ru",
+      "source": "Яндекс Карты: выдача «балетная школа для детей метро Бауманская» и карточка организации (адрес, этаж, телефон, сайт, услуги), 11.11.2026; возраст — карточка Яндекс Карт («Занятия балетом для детей от 5 до 15 лет»)",
+      "verified_at": "2026-11-11",
+      "status": "draft",
+      "cats": [
+        "ballet"
+      ],
+      "coord_exact": null,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (903) 571-73-31",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход"
+    },
+    {
+      "id": "le-petit-ballerine-yamskogo",
+      "name": "Школа балета «Ле Пти балерин» (Белорусская)",
+      "type": [
+        "школа балета"
+      ],
+      "metro": "Белорусская",
+      "address": "3-я ул. Ямского Поля, 24",
+      "lat": 55.783,
+      "lon": 37.579976,
+      "age_min": 3,
+      "age_max": 17,
+      "duration_min": 45,
+      "duration_max": 90,
+      "energy": "active",
+      "loud": "partial",
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "no",
+      "tags": [
+        "sport",
+        "music"
+      ],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": null,
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Балет для малышей с 3 лет и для детей постарше; разовое занятие — 875 ₽",
+      "minus": null,
+      "url": null,
+      "source": "Яндекс Карты: выдача «балетная школа для детей метро Белорусская» и карточка организации (адрес, этаж, телефон, сайт, услуги), 11.11.2026; возраст — карточка Яндекс Карт («для малышей от 3 лет», «балет для детей»)",
+      "verified_at": "2026-11-11",
+      "status": "draft",
+      "cats": [
+        "ballet"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (985) 056-27-05",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход"
+    },
+    {
+      "id": "risovanie-novoperedelkinskaya",
+      "name": "Студия «Рисование» (Новопеределкино)",
+      "type": [
+        "студия рисования"
+      ],
+      "metro": "Боровское шоссе",
+      "address": "Новопеределкинская ул., 16, корп. 1",
+      "lat": 55.643127,
+      "lon": 37.365125,
+      "age_min": 3,
+      "age_max": 17,
+      "duration_min": 45,
+      "duration_max": 90,
+      "energy": "calm",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "partial",
+      "tags": [
+        "creativity"
+      ],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": null,
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Рисование и лепка для детей с 3 лет, отдельные группы для школьников и ИЗО для старшеклассников",
+      "minus": null,
+      "url": "https://newppaint.ru",
+      "source": "Яндекс Карты: выдача «рисование для детей метро Баррикадная» и карточка организации (адрес, этаж, телефон, сайт, услуги), 11.11.2026; возраст — карточка Яндекс Карт (услуги «для детей от 3 лет», «для учеников старшей школы»)",
+      "verified_at": "2026-11-11",
+      "status": "draft",
+      "cats": [
+        "drawing"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (965) 230-07-27",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход"
+    },
+    {
+      "id": "vdokhnovenie-litovsky",
+      "name": "Центр творчества «Вдохновение» (Ясенево)",
+      "type": [
+        "школа искусств"
+      ],
+      "metro": "Ясенево",
+      "address": "Литовский бул., 7",
+      "lat": 55.613754,
+      "lon": 37.538935,
+      "age_min": 4,
+      "age_max": 17,
+      "duration_min": 45,
+      "duration_max": 90,
+      "energy": "active",
+      "loud": "partial",
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "no",
+      "tags": [
+        "sport",
+        "music"
+      ],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": null,
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Балет, хип-хоп, брейк и бальные танцы — с 4 лет; рисунок, живопись и керамика — с 6 лет; пробное занятие в любой студии — 500 ₽",
+      "minus": null,
+      "url": "https://v-v-v.ru",
+      "source": "Яндекс Карты: выдача «вокал для детей метро Битцевский Парк» и карточка организации (адрес, этаж, телефон, сайт, услуги), 11.11.2026; возраст — карточка Яндекс Карт (возраст по направлениям: танцы с 4 лет, хип-хоп 7–18, брейк 5–16, ИЗО и керамика с 6 лет)",
+      "verified_at": "2026-11-11",
+      "status": "draft",
+      "cats": [
+        "dance",
+        "drawing",
+        "ceramics",
+        "ballet"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (495) 197-71-70",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "cat_ages": {
+        "dance": [
+          4,
+          17
+        ],
+        "drawing": [
+          6,
+          17
+        ],
+        "ceramics": [
+          6,
+          17
+        ]
+      },
       "point_level": "вход"
     },
     {
@@ -81404,11 +81891,11 @@
       "tags": [
         "sport"
       ],
-      "price_child": null,
-      "price_adult": null,
-      "free_note": null,
+      "price_child": 1290,
+      "price_adult": 0,
+      "free_note": "Платят только за ребёнка: родители и малыши до года — бесплатно; многодетным — скидка 20% по документам",
       "booking": "none",
-      "hours": "ежедневно, часы ТЦ",
+      "hours": "ежедневно 10:00–22:00",
       "indoor": "yes",
       "food": "partial",
       "changing_table": null,
@@ -81418,10 +81905,10 @@
       "adult_interest": 2,
       "plus": "Батуты, скалодром, тарзанка, горки и катание на ватрушке прямо в помещении",
       "minus": "В выходные людно",
-      "url": null,
-      "source": "https://travelto.ru/blog/kuda-shodit-s-detmi-v-elektrostali/; цены — на месте/в соцсетях",
-      "verified_at": "2026-11-06",
-      "status": "draft",
+      "url": "https://chudo-park.ru/ceny-elgrad",
+      "source": "https://travelto.ru/blog/kuda-shodit-s-detmi-v-elektrostali/",
+      "verified_at": "2026-11-11",
+      "status": "verified",
       "cats": [
         "playcenters",
         "trampolines"
@@ -81429,10 +81916,39 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": null,
+      "phone": "+7 (966) 137-13-77",
       "season_months": null,
-      "open_mode": "unknown",
-      "open_week": null,
+      "open_mode": "hours",
+      "open_week": [
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ]
+      ],
       "point_level": "вход"
     },
     {
@@ -81467,7 +81983,7 @@
       "changing_table": null,
       "cloakroom": null,
       "stroller": "partial",
-      "parking": null,
+      "parking": "yes",
       "adult_interest": 2,
       "plus": "Командные активные игры и лазертаг",
       "minus": null,
@@ -81481,7 +81997,7 @@
       ],
       "coord_exact": null,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Парковка: рядом (~150 м)",
       "phone": "+7 (926) 777-79-06",
       "season_months": null,
       "open_mode": "unknown",
@@ -81534,7 +82050,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Этаж: 1\nШлагбаум: есть ворота в ~30 м\nПарковка: рядом (~20 м); рядом (~95 м)",
+      "how_to_find": "Парковка: рядом (~20 м)",
       "phone": "+7 (916) 826-61-61",
       "season_months": null,
       "open_mode": "unknown",
@@ -82166,7 +82682,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Парковка: рядом (~98 м)",
+      "how_to_find": "Парковка: бесплатная, на территории комплекса «Бережки»",
       "phone": "+7 (925) 845-62-52",
       "season_months": null,
       "open_mode": "unknown",
@@ -91572,7 +92088,7 @@
       "price_adult": null,
       "free_note": null,
       "booking": "recommended",
-      "hours": "уточняйте",
+      "hours": null,
       "indoor": "yes",
       "food": "partial",
       "changing_table": null,
@@ -91631,7 +92147,7 @@
       "changing_table": null,
       "cloakroom": null,
       "stroller": "yes",
-      "parking": null,
+      "parking": "yes",
       "adult_interest": 1,
       "plus": "Игровая комната у метро Выхино, проводят детские праздники",
       "minus": "Для дошкольников и младших школьников",
@@ -91645,7 +92161,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Этаж: 4",
+      "how_to_find": "Этаж: 4\nПарковка: бесплатная (~20 м)",
       "phone": "+7 (965) 321-74-05",
       "season_months": null,
       "open_mode": "unknown",
@@ -93004,7 +93520,7 @@
       "changing_table": null,
       "cloakroom": null,
       "stroller": "yes",
-      "parking": null,
+      "parking": "yes",
       "adult_interest": 1,
       "plus": "Игровая комната для малышей в ТРЦ «Облака» у метро Домодедовская",
       "minus": "Небольшая",
@@ -93018,7 +93534,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Этаж: 3, ТРЦ «Облака»\nПарковка: бесплатная (~40 м)",
+      "how_to_find": "Вход: через ТРЦ «Облака»\nЭтаж: 3\nПарковка: бесплатная подземная ТРЦ «Облака» (~40 м)",
       "phone": "+7 (977) 371-42-16",
       "season_months": null,
       "open_mode": "unknown",
@@ -94217,7 +94733,7 @@
       "changing_table": null,
       "cloakroom": null,
       "stroller": "yes",
-      "parking": null,
+      "parking": "yes",
       "adult_interest": 1,
       "plus": "Крытая детская площадка Trend Toys на 2 этаже ТЦ «Тишинка»; рейтинг 5,0 при 270+ оценках",
       "minus": null,
@@ -94231,7 +94747,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Вход: через ТЦ «Тишинка»\nЭтаж: 2",
+      "how_to_find": "Вход: через ТЦ «Тишинка»\nЭтаж: 2\nПарковка: рядом (~30 м)",
       "phone": "+7 (800) 555-23-90",
       "season_months": null,
       "open_mode": "unknown",
@@ -94424,7 +94940,7 @@
       "changing_table": null,
       "cloakroom": null,
       "stroller": "yes",
-      "parking": null,
+      "parking": "yes",
       "adult_interest": 1,
       "plus": "Детская игровая комната и праздники рядом с метро «Отрадное»",
       "minus": null,
@@ -94438,7 +94954,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Вход: через ТЦ «FORT Отрадное»\nЭтаж: 2",
+      "how_to_find": "Вход: через ТЦ «FORT Отрадное»\nЭтаж: 2\nПарковка: платная (~40 м), парковка ТЦ «FORT Отрадное» (~50 м)",
       "phone": "+7 (903) 722-82-14",
       "season_months": null,
       "open_mode": "unknown",
@@ -94629,7 +95145,7 @@
       "price_adult": 0,
       "free_note": null,
       "booking": "recommended",
-      "hours": null,
+      "hours": "пн–пт 09:00–22:00; сб, вс 10:00–22:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -94652,8 +95168,37 @@
       "how_to_find": "Этаж: 3, ТРЦ «Щёлковский»",
       "phone": "+7 (495) 788-00-00",
       "season_months": null,
-      "open_mode": "unknown",
-      "open_week": null,
+      "open_mode": "hours",
+      "open_week": [
+        [
+          540,
+          1320
+        ],
+        [
+          540,
+          1320
+        ],
+        [
+          540,
+          1320
+        ],
+        [
+          540,
+          1320
+        ],
+        [
+          540,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ]
+      ],
       "point_level": "вход"
     },
     {
@@ -100654,7 +101199,7 @@
         "пеленальная комната"
       ],
       "metro": "Котельники",
-      "address": "Котельники, Outlet Village Белая Дача",
+      "address": "Котельники, Новорязанское ш., 8, стр. 2, Outlet Village Белая Дача",
       "lat": 55.6613405,
       "lon": 37.8819338,
       "age_min": 0,
@@ -101027,7 +101572,7 @@
       "changing_table": "yes",
       "cloakroom": null,
       "stroller": "yes",
-      "parking": null,
+      "parking": "yes",
       "adult_interest": 1,
       "plus": "Пеленальный столик в отдельной комнате при туалете",
       "minus": null,
@@ -101040,7 +101585,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Ориентир: рядом с детской площадкой «Воздушный змей»",
+      "how_to_find": "Ориентир: рядом с детской площадкой «Воздушный змей»\nПарковка: рядом (~110 м)",
       "phone": "+7 (985) 040-23-42",
       "season_months": null,
       "open_mode": "unknown",
@@ -101277,7 +101822,7 @@
       "changing_table": "yes",
       "cloakroom": null,
       "stroller": "yes",
-      "parking": null,
+      "parking": "yes",
       "adult_interest": 1,
       "plus": "Отдельная комната для пеленания на территории заповедника",
       "minus": null,
@@ -101290,7 +101835,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Ориентир: у 1-й улицы Дьяково-Городище",
+      "how_to_find": "Ориентир: у 1-й улицы Дьяково-Городище\nПарковка: платная «Стрела» (~85 м, до 4 часов), бесплатная (~140 м)",
       "phone": null,
       "season_months": null,
       "open_mode": "unknown",
@@ -101367,8 +101912,8 @@
       "crowded": "no",
       "sit_still": "partial",
       "tags": [],
-      "price_child": null,
-      "price_adult": null,
+      "price_child": 0,
+      "price_adult": 0,
       "free_note": null,
       "booking": "none",
       "hours": null,
@@ -101417,9 +101962,9 @@
       "crowded": "no",
       "sit_still": "partial",
       "tags": [],
-      "price_child": null,
-      "price_adult": null,
-      "free_note": null,
+      "price_child": 0,
+      "price_adult": 0,
+      "free_note": "бесплатно",
       "booking": "none",
       "hours": null,
       "indoor": "yes",
@@ -101577,7 +102122,7 @@
       "changing_table": "yes",
       "cloakroom": null,
       "stroller": "yes",
-      "parking": null,
+      "parking": "yes",
       "adult_interest": 1,
       "plus": "Пеленальный столик в бесплатном туалете парка",
       "minus": null,
@@ -101590,8 +102135,8 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Ориентир: у дома ул. Свободы, 56, недалеко от детского автодрома",
-      "phone": null,
+      "how_to_find": "Ориентир: у дома ул. Свободы, 56, недалеко от детского автодрома\nПарковка: бесплатная (~55 м)",
+      "phone": "+7 (499) 493-00-00",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
@@ -101627,7 +102172,7 @@
       "changing_table": "yes",
       "cloakroom": null,
       "stroller": "yes",
-      "parking": null,
+      "parking": "yes",
       "adult_interest": 1,
       "plus": "Пеленальный столик в бесплатном туалете парка",
       "minus": null,
@@ -101640,7 +102185,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Ориентир: парк на Северодвинской улице, у дома 11, недалеко от ресторана «Хинкали-Gали!»",
+      "how_to_find": "Ориентир: Северодвинская ул., у дома 11\nПарковка: рядом (~130 м), бесплатная у дороги (~150 м)",
       "phone": null,
       "season_months": null,
       "open_mode": "unknown",
@@ -101667,8 +102212,8 @@
       "crowded": "no",
       "sit_still": "partial",
       "tags": [],
-      "price_child": null,
-      "price_adult": null,
+      "price_child": 0,
+      "price_adult": 0,
       "free_note": null,
       "booking": "none",
       "hours": null,
@@ -101717,9 +102262,9 @@
       "crowded": "no",
       "sit_still": "partial",
       "tags": [],
-      "price_child": null,
-      "price_adult": null,
-      "free_note": null,
+      "price_child": 0,
+      "price_adult": 0,
+      "free_note": "бесплатно",
       "booking": "none",
       "hours": null,
       "indoor": "yes",
@@ -101856,7 +102401,7 @@
       "changing_table": "yes",
       "cloakroom": null,
       "stroller": "yes",
-      "parking": null,
+      "parking": "yes",
       "adult_interest": 1,
       "plus": "Пеленальный столик в туалете у станции — пригодится перед электричкой",
       "minus": null,
@@ -101869,7 +102414,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Ориентир: у здания станции и пригородных касс",
+      "how_to_find": "Ориентир: у здания станции и пригородных касс\nПарковка: рядом (~90 м), бесплатная (~130 м), платная «Московский паркинг» у дороги (~180 м)",
       "phone": null,
       "season_months": null,
       "open_mode": "unknown",
@@ -101906,7 +102451,7 @@
       "changing_table": "yes",
       "cloakroom": null,
       "stroller": "yes",
-      "parking": null,
+      "parking": "yes",
       "adult_interest": 1,
       "plus": "Пеленальный столик в бесплатном туалете станции",
       "minus": null,
@@ -101919,7 +102464,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Этаж: 2",
+      "how_to_find": "Парковка: рядом (~145 м)",
       "phone": null,
       "season_months": null,
       "open_mode": "unknown",
@@ -101933,7 +102478,7 @@
         "пеленальная комната"
       ],
       "metro": "Коптево",
-      "address": "Москва, станция МЦК Коптево",
+      "address": "Москва, пр. Черепановых, 24, соор. 1, станция МЦК Коптево",
       "lat": 55.8403113,
       "lon": 37.5214953,
       "age_min": 0,
@@ -102198,7 +102743,7 @@
       "tags": [],
       "price_child": null,
       "price_adult": null,
-      "free_note": null,
+      "free_note": "бесплатно",
       "booking": "none",
       "hours": null,
       "indoor": "yes",
@@ -102256,7 +102801,7 @@
       "changing_table": "yes",
       "cloakroom": null,
       "stroller": "yes",
-      "parking": null,
+      "parking": "yes",
       "adult_interest": 1,
       "plus": "Пеленальный столик в туалете на территории парка",
       "minus": null,
@@ -102269,7 +102814,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Ориентир: туалет на территории парка «Царицыно»",
+      "how_to_find": "Ориентир: туалет на территории парка «Царицыно»\nПарковка: рядом (~100 м), платная (~160 м)",
       "phone": null,
       "season_months": null,
       "open_mode": "unknown",
@@ -102348,7 +102893,7 @@
       "tags": [],
       "price_child": null,
       "price_adult": null,
-      "free_note": null,
+      "free_note": "бесплатно",
       "booking": "none",
       "hours": null,
       "indoor": "yes",
@@ -102712,7 +103257,7 @@
         "пеленальная комната"
       ],
       "metro": "Киевская",
-      "address": "Москва, площадь Киевского Вокзала, 2, ТРК «Европейский»",
+      "address": "пл. Киевского Вокзала, 2, ТРК «Европейский»",
       "lat": 55.744394,
       "lon": 37.565566,
       "age_min": 0,
@@ -102729,7 +103274,7 @@
       "price_adult": null,
       "free_note": null,
       "booking": "none",
-      "hours": null,
+      "hours": "Пн–Чт и Вс 10:00–22:00, Пт–Сб 10:00–23:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": "yes",
@@ -102742,13 +103287,13 @@
       "url": "https://europe-tc.ru/",
       "source": "сайт europe-tc.ru (каталог «Все для детей» → «Комната матери и ребенка»); Яндекс Карты, карточка «Комната матери и ребёнка» (поиск 11.11.2026)",
       "verified_at": "2026-11-11",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "changing"
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Парковка: платная, 200 ₽/ч (паркинг ТРЦ «Европейский»)",
       "phone": "+7 (495) 921-34-44",
       "season_months": null,
       "open_mode": "unknown",
@@ -102779,13 +103324,13 @@
       "price_adult": null,
       "free_note": null,
       "booking": "none",
-      "hours": null,
+      "hours": "ежедневно 10:00–22:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": "yes",
       "cloakroom": null,
       "stroller": "yes",
-      "parking": null,
+      "parking": "yes",
       "adult_interest": 1,
       "plus": "Комната матери и ребёнка, гардероб и браслеты-«непотеряшки» для детей",
       "minus": null,
@@ -102798,11 +103343,40 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Парковка: у ТРК, круглосуточно; первые 3 часа бесплатно, далее 100 ₽/час",
       "phone": null,
       "season_months": null,
-      "open_mode": "unknown",
-      "open_week": null,
+      "open_mode": "hours",
+      "open_week": [
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ]
+      ],
       "point_level": "вход"
     },
     {
@@ -106121,7 +106695,7 @@
         "детский бассейн"
       ],
       "metro": "Юго-Западная",
-      "address": "Академика Анохина ул., 24",
+      "address": "ул. Академика Анохина, 24",
       "lat": 55.662571,
       "lon": 37.468901,
       "age_min": 0,
@@ -106972,7 +107546,7 @@
       "plus": "Оздоровительное плавание для детей 0–10 лет; скидка 50% на первое посещение, 10% на второго ребёнка",
       "minus": "Индивидуальные занятия по записи, цены абонементов не опубликованы",
       "url": "https://1kitenok.ru/",
-      "source": "сайт места (проверено 2026-11-05); цену абонемента — у администратора",
+      "source": "сайт места (проверено 2026-11-05)",
       "verified_at": "2026-11-05",
       "status": "draft",
       "cats": [
@@ -107546,7 +108120,7 @@
       "plus": "Оздоровительное плавание для детей 0–10 лет; скидка 50% на первое посещение, 10% на второго ребёнка",
       "minus": "Индивидуальные занятия по записи, цены абонементов не опубликованы",
       "url": "https://1kitenok.ru/",
-      "source": "сайт места (проверено 2026-11-05); цену абонемента — у администратора",
+      "source": "сайт места (проверено 2026-11-05)",
       "verified_at": "2026-11-05",
       "status": "draft",
       "cats": [
@@ -108194,7 +108768,7 @@
       "hours": "ежедневно 9:00–21:00",
       "indoor": "yes",
       "food": "no",
-      "changing_table": null,
+      "changing_table": "yes",
       "cloakroom": null,
       "stroller": "partial",
       "parking": "yes",
@@ -108276,7 +108850,7 @@
       "hours": "ежедневно 9:00–21:00",
       "indoor": "yes",
       "food": "no",
-      "changing_table": null,
+      "changing_table": "yes",
       "cloakroom": null,
       "stroller": "partial",
       "parking": "yes",
@@ -109140,7 +109714,7 @@
       "price_adult": 1400,
       "free_note": "разовое 1400 ₽, абонемент на месяц 5000–6900 ₽",
       "booking": "required",
-      "hours": "сб, вс 11:00–14:00",
+      "hours": "сб, вс 11:00–14:00 (дети 4–7 лет 11:00–12:00, 8–16 лет 12:00–13:00)",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -109159,25 +109733,11 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Вход: в ЦДКЖ (Центральный дом культуры железнодорожников)\nШлагбаум: есть ворота в ~42 м (въезд не для всех)\nПарковка: наземная (~39 м); наземная (~43 м)",
+      "how_to_find": "Вход: через ТЦ «Универмаг Московский», вход под вывеской «Пятёрочка»\nЭтаж: 4, напротив «Чайхоны» коридор, дверь с вывеской «Латинский квартал»\nПарковка: наземная (~39 м)\nОриентир: м. Комсомольская, выход №3, 3 минуты пешком",
       "phone": "+7 (499) 283-83-57",
       "season_months": null,
-      "open_mode": "hours",
-      "open_week": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        [
-          660,
-          840
-        ],
-        [
-          660,
-          840
-        ]
-      ],
+      "open_mode": "unknown",
+      "open_week": null,
       "point_level": "вход"
     },
     {
@@ -109910,7 +110470,7 @@
         "танцевальная студия"
       ],
       "metro": "Медведково",
-      "address": "Москва, Полярная ул., 33, стр. 3",
+      "address": "Полярная ул., 33, стр. 3, 4 этаж",
       "lat": 55.888628,
       "lon": 37.644314,
       "age_min": 4,
@@ -109930,7 +110490,7 @@
       "price_adult": 1400,
       "free_note": "разовое 1400 ₽, абонемент на месяц 5000–6900 ₽",
       "booking": "required",
-      "hours": null,
+      "hours": "пн, ср 18:00–21:00 (дети 4–7 лет 18:00–19:00, 8–16 лет 19:00–20:00)",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -109949,7 +110509,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Этаж: 4\nОриентир: м. Медведково, выход 1",
       "phone": "+7 (499) 283-83-57",
       "season_months": null,
       "open_mode": "unknown",
@@ -110998,7 +111558,7 @@
       "price_adult": 975,
       "free_note": "975 ₽ за тренировку в абонементе; пробная — бесплатно",
       "booking": "required",
-      "hours": null,
+      "hours": "ежедневно 10:00–20:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -111020,8 +111580,37 @@
       "how_to_find": "Парковка: бесплатная наземная для посетителей (~36 м); бесплатная наземная (~193 м)",
       "phone": "+7 (495) 120-60-06",
       "season_months": null,
-      "open_mode": "unknown",
-      "open_week": null,
+      "open_mode": "hours",
+      "open_week": [
+        [
+          600,
+          1200
+        ],
+        [
+          600,
+          1200
+        ],
+        [
+          600,
+          1200
+        ],
+        [
+          600,
+          1200
+        ],
+        [
+          600,
+          1200
+        ],
+        [
+          600,
+          1200
+        ],
+        [
+          600,
+          1200
+        ]
+      ],
       "point_level": "вход"
     },
     {
@@ -112642,7 +113231,7 @@
         "ледовая арена — секция"
       ],
       "metro": "Лианозово",
-      "address": "Лобненская ул., 13А",
+      "address": "Лобненская ул., 13А, стр. 1",
       "lat": 55.888126,
       "lon": 37.534298,
       "age_min": 3,
@@ -116466,7 +117055,7 @@
       ],
       "price_child": 500,
       "price_adult": 500,
-      "free_note": "занятия — от 500 ₽",
+      "free_note": "занятия — от 500 ₽; пробное занятие 600 ₽, разовое 1 400 ₽",
       "booking": "required",
       "hours": null,
       "indoor": "yes",
@@ -116487,7 +117076,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Внутри ТЦ «Тбилиси»\nЭтаж: 3\nПарковка: рядом (~32 м); рядом (~85 м)",
+      "how_to_find": "Внутри ТЦ «Тбилиси»\nЭтаж: 3",
       "phone": "+7 (495) 664-67-65",
       "season_months": null,
       "open_mode": "unknown",
@@ -116519,7 +117108,7 @@
       ],
       "price_child": 500,
       "price_adult": 500,
-      "free_note": "занятия — от 500 ₽",
+      "free_note": "занятия — от 500 ₽; пробное занятие 600 ₽, разовое 1 400 ₽",
       "booking": "required",
       "hours": null,
       "indoor": "yes",
@@ -116540,7 +117129,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Внутри ТЦ «Щука»\nЭтаж: 4\nПарковка: рядом, вдоль улицы (~56 м); рядом, вдоль улицы (~71 м)",
+      "how_to_find": "Внутри ТЦ «Щука»\nЭтаж: 4",
       "phone": "+7 (495) 664-67-65",
       "season_months": null,
       "open_mode": "unknown",
@@ -123655,7 +124244,7 @@
       "address": "ул. Арсюкова, 11",
       "lat": 55.936708,
       "lon": 37.555875,
-      "age_min": 4,
+      "age_min": 5,
       "age_max": 17,
       "duration_min": 45,
       "duration_max": 90,
@@ -125188,7 +125777,7 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": "Шлагбаум: есть в ~47 м от точки места (OSM)\nПарковка: рядом (~218 м); бесплатная наземная (~219 м)",
-      "phone": null,
+      "phone": "+7 (495) 109-59-60",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
@@ -126313,9 +126902,9 @@
       ],
       "price_child": 4500,
       "price_adult": null,
-      "free_note": "абонемент 4500 ₽/мес",
+      "free_note": "абонемент 4 500 ₽/мес",
       "booking": "required",
-      "hours": null,
+      "hours": "Занятия: вт 18:00–19:50, чт 19:00–20:50, сб, вс 12:00–13:50",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -129420,7 +130009,7 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": null,
+      "phone": "+7 (499) 444-14-78",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
@@ -129506,7 +130095,7 @@
       "price_adult": null,
       "free_note": "сеансы и группы — mso.mossport.ru",
       "booking": "required",
-      "hours": "ежедневно 07:00-23:00",
+      "hours": "ежедневно 07:00–23:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -131130,6 +131719,59 @@
       "point_level": "вход"
     },
     {
+      "id": "aqua-class-koroleva",
+      "name": "«Аквакласс» (ВДНХ, ул. Академика Королёва)",
+      "type": [
+        "детский бассейн"
+      ],
+      "metro": "ВДНХ",
+      "address": "ул. Академика Королёва, 10",
+      "lat": 55.822842,
+      "lon": 37.620473,
+      "age_min": 0,
+      "age_max": 7,
+      "duration_min": 30,
+      "duration_max": 45,
+      "energy": "active",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "partial",
+      "sit_still": "no",
+      "tags": [
+        "water",
+        "sport"
+      ],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": "индивидуальные занятия",
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": "yes",
+      "adult_interest": 1,
+      "plus": "Студия раннего плавания: занятия с тренером для малышей от 2 месяцев до 7 лет",
+      "minus": "Только индивидуальные занятия по записи",
+      "url": "https://aqua-class.com/msk",
+      "source": "aqua-class.com — адреса студий (проверено 2026-11-08); цены — в разделе «Услуги и цены» на сайте",
+      "verified_at": "2026-11-08",
+      "status": "draft",
+      "cats": [
+        "pools"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": "Парковка: рядом, вдоль улицы (~101 м); рядом (~134 м)",
+      "phone": "+7 (499) 288-21-89",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход"
+    },
+    {
       "id": "chess1-aprelevka-melodiya",
       "name": "Шахматная школа №1 (Апрелевка, ФОК «Мелодия»)",
       "type": [
@@ -132436,6 +133078,59 @@
       "birthday": null,
       "how_to_find": null,
       "phone": "+7 (495) 120-51-20",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход"
+    },
+    {
+      "id": "aqua-schastye-belyaevo",
+      "name": "Детский бассейн «Аква счастье»",
+      "type": [
+        "детский бассейн"
+      ],
+      "metro": "Беляево",
+      "address": "ул. Миклухо-Маклая, 42Б",
+      "lat": 55.637702,
+      "lon": 37.541586,
+      "age_min": 0,
+      "age_max": 9,
+      "duration_min": 30,
+      "duration_max": 45,
+      "energy": "active",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "partial",
+      "sit_still": "no",
+      "tags": [
+        "water",
+        "sport"
+      ],
+      "price_child": 1200,
+      "price_adult": 1200,
+      "free_note": "посещение 1200–2900 ₽",
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Уютный клуб детского плавания (до 9 лет): индивидуальные занятия с тренером и соляная пещера",
+      "minus": "Только для детей до 9 лет",
+      "url": "https://aquahappy.ru/",
+      "source": "выдача Яндекс Карт (auto/pages): «детский бассейн метро Беляево»; отзывы родителей в карточке (проверено 2026-11-08)",
+      "verified_at": "2026-11-08",
+      "status": "draft",
+      "cats": [
+        "pools"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (929) 532-12-43",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
@@ -134200,6 +134895,89 @@
       "point_level": "вход"
     },
     {
+      "id": "bolero-krasnoselskaya",
+      "name": "Студия танца «Болеро»",
+      "type": [
+        "танцевальная студия"
+      ],
+      "metro": "Красносельская",
+      "address": "Верхняя Красносельская ул., 16Б, стр. 2, этаж 2",
+      "lat": 55.782476,
+      "lon": 37.660607,
+      "age_min": 5,
+      "age_max": 14,
+      "duration_min": 45,
+      "duration_max": 60,
+      "energy": "active",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "partial",
+      "sit_still": "no",
+      "tags": [
+        "music",
+        "sport"
+      ],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": "детский абонемент на 8 занятий",
+      "booking": "required",
+      "hours": "ежедневно 10:00-22:00",
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Фламенко, балет и хореография: детские абонементы и набор в субботнюю группу",
+      "minus": "Детская группа одна — по субботам",
+      "url": "https://www.bolero.su/",
+      "source": "карточка в выдаче Яндекс Карт (auto/pages): «Абонемент детский на 8 занятий», «Идёт набор в группу субботнего дня» (проверено 2026-11-09)",
+      "verified_at": "2026-11-11",
+      "status": "verified",
+      "cats": [
+        "dance",
+        "ballet"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": "Этаж: 2",
+      "phone": "+7 (910) 485-93-60, +7 (916) 687-69-64",
+      "season_months": null,
+      "open_mode": "hours",
+      "open_week": [
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ]
+      ],
+      "point_level": "вход"
+    },
+    {
       "id": "oro-dance-sharik",
       "name": "Oro Dance Studio — бальные танцы для детей",
       "type": [
@@ -134620,6 +135398,59 @@
       "birthday": null,
       "how_to_find": null,
       "phone": null,
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход"
+    },
+    {
+      "id": "sport-dance-sosensky",
+      "name": "Центр спорта и танца (Коммунарка)",
+      "type": [
+        "секция гимнастики"
+      ],
+      "metro": "Коммунарка",
+      "address": "ул. Сосенский Стан, 12, этаж 3",
+      "lat": 55.564864,
+      "lon": 37.471725,
+      "age_min": 3,
+      "age_max": 14,
+      "duration_min": 45,
+      "duration_max": 60,
+      "energy": "active",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "partial",
+      "sit_still": "no",
+      "tags": [
+        "sport"
+      ],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": null,
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": "yes",
+      "adult_interest": 1,
+      "plus": "Художественная гимнастика для детей 3–6 лет, танцы и единоборства в Коммунарке",
+      "minus": "Зал на 3-м этаже",
+      "url": "https://sport-dance-kmk.ru/",
+      "source": "карточка в выдаче Яндекс Карт (auto/pages): «На занятиях художественной гимнастики дети…», «3–6 лет» (проверено 2026-11-09); цены и пробное — у клуба",
+      "verified_at": "2026-11-09",
+      "status": "draft",
+      "cats": [
+        "gymnastics",
+        "rhythmic"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": "Этаж: 3\nПарковка: около здания",
+      "phone": "+7 (915) 055-77-55",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
@@ -135129,6 +135960,112 @@
       "point_level": "вход"
     },
     {
+      "id": "ss1-akvamarin",
+      "name": "Школа плавания №1 (бассейн «Аквамарин»)",
+      "type": [
+        "школа плавания"
+      ],
+      "metro": "Митино",
+      "address": "ул. Рословка, 5",
+      "lat": 55.831545,
+      "lon": 37.366183,
+      "age_min": 7,
+      "age_max": 13,
+      "duration_min": 45,
+      "duration_max": 45,
+      "energy": "active",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "partial",
+      "sit_still": "no",
+      "tags": [
+        "water",
+        "sport"
+      ],
+      "price_child": 9000,
+      "price_adult": 9000,
+      "free_note": "детская группа — 9000 ₽ в месяц (8 занятий)",
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Бассейн в Митине с группами для школьников, утренние, дневные и вечерние занятия",
+      "minus": "Детей берут с 7 лет",
+      "url": "https://swim-school-1.ru/basseyni",
+      "source": "swim-school-1.ru/basseyni: «Бассейн: Аквамарин», «Возраст: дети от 7 лет», «В месяц 9000» (проверено 2026-11-09)",
+      "verified_at": "2026-11-09",
+      "status": "draft",
+      "cats": [
+        "pools"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (495) 794-89-83",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход"
+    },
+    {
+      "id": "ss1-balans",
+      "name": "Школа плавания №1 (бассейн «Баланс»)",
+      "type": [
+        "школа плавания"
+      ],
+      "metro": "Алтуфьево",
+      "address": "Алтуфьевское ш., 104",
+      "lat": 55.905302,
+      "lon": 37.588758,
+      "age_min": 3,
+      "age_max": 16,
+      "duration_min": 45,
+      "duration_max": 45,
+      "energy": "active",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "partial",
+      "sit_still": "no",
+      "tags": [
+        "water",
+        "sport"
+      ],
+      "price_child": 9000,
+      "price_adult": 9000,
+      "free_note": "детская группа — 9000 ₽ в месяц (8 занятий)",
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": "yes",
+      "adult_interest": 1,
+      "plus": "Группы с трёх лет — можно начать до школы, есть и взрослые группы",
+      "minus": null,
+      "url": "https://swim-school-1.ru/basseyni",
+      "source": "swim-school-1.ru/basseyni: «Бассейн: Баланс», «Возраст: дети от 3 лет», «В месяц 9000» (проверено 2026-11-09)",
+      "verified_at": "2026-11-09",
+      "status": "draft",
+      "cats": [
+        "pools"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": "Парковка: рядом (~133 м); бесплатная наземная (~214 м)",
+      "phone": "+7 (499) 455-58-51",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход"
+    },
+    {
       "id": "ss1-guu",
       "name": "Школа плавания №1 (бассейн «Университет ГУУ»)",
       "type": [
@@ -135232,6 +136169,88 @@
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
+      "point_level": "вход"
+    },
+    {
+      "id": "aquapups-pleshcheeva",
+      "name": "Детский бассейн «Аквапупс» (Бибирево)",
+      "type": [
+        "детский бассейн"
+      ],
+      "metro": "Бибирево",
+      "address": "ул. Плещеева, 11",
+      "lat": 55.888734,
+      "lon": 37.61448,
+      "age_min": 0,
+      "age_max": 9,
+      "duration_min": 30,
+      "duration_max": 30,
+      "energy": "active",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "partial",
+      "sit_still": "no",
+      "tags": [
+        "water",
+        "sport"
+      ],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": null,
+      "booking": "required",
+      "hours": "ежедневно 08:00-21:00",
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Индивидуальные занятия плаванием для малышей с 1,5 месяцев до 9 лет, для мамы — пеленальный столик и манеж",
+      "minus": "Только индивидуальные занятия, групп нет",
+      "url": "https://aquapups.ru/",
+      "source": "aquapups.ru/babushkinskaya: «Индивидуальные занятия … к детям с 1,5 месяцев до 9 лет», список студий (проверено 2026-11-09); цены — на сайте студии",
+      "verified_at": "2026-11-11",
+      "status": "verified",
+      "cats": [
+        "pools"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (495) 445-07-96",
+      "season_months": null,
+      "open_mode": "hours",
+      "open_week": [
+        [
+          480,
+          1260
+        ],
+        [
+          480,
+          1260
+        ],
+        [
+          480,
+          1260
+        ],
+        [
+          480,
+          1260
+        ],
+        [
+          480,
+          1260
+        ],
+        [
+          480,
+          1260
+        ],
+        [
+          480,
+          1260
+        ]
+      ],
       "point_level": "вход"
     },
     {
