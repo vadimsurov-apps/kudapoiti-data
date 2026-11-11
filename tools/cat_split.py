@@ -38,10 +38,30 @@ CREATIVE = [
 PLUS_OK = {"dance", "masterclass", "early", "school", "sport", "montessori", "languages", "gymnastics", "shows", "playcenters"}
 
 
+# Вадим 11.11: «Подмосковье и зима надо расформировать. И сделать отдельно всё, что туда входило».
+# winter → rinks (катки), sledding (горки и тюбинг), ski (горнолыжные склоны и школы); «Подмосковье» (trips) было
+# вычисляемым (дальше 25 км) — убрано из фильтра; усадьбы, кремли и монастыри — своя категория estates.
+WINTER = [("rinks", r"каток|катк|ледов\w* (дворец|арен)|массов\w* катан"),
+          ("sledding", r"горк|тюбинг|ватрушк|санк"),
+          ("ski", r"горнолыж|лыжн|сноуборд|\bski\b")]
+ESTATE = r"усадьб|(?<!кремлёвская )кремл(?!ёвск)|монастыр|лавр[аы]\b|музей-заповедник"
+
+
 def split(p):
     cats = p.get("cats")
-    if cats is None or "food" in cats:
+    if cats is None:
         return
+    if "winter" in cats:
+        nt = ((p.get("name") or "") + " " + " ".join(p.get("type") or [])).lower()
+        hits = [c for c, rx in WINTER if re.search(rx, nt)]
+        cats = [c for c in cats if c != "winter"] + [c for c in hits if c not in cats]
+        p["cats"] = cats
+    if "food" in cats:
+        return
+    if "estates" not in cats and ({"museums", "parks", "tours", "shows"} & set(cats) or not cats) and \
+            re.search(ESTATE, ((p.get("name") or "") + " " + " ".join(p.get("type") or [])).lower()):
+        cats = cats + ["estates"]
+        p["cats"] = cats
     name_type = ((p.get("name") or "") + " " + " ".join(p.get("type") or [])).lower()
     full = (name_type + " " + (p.get("plus") or "")).lower()
     out = list(cats)

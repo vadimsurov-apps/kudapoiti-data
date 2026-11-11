@@ -132,8 +132,9 @@ const CATS = [
  ["Развитие и учёба", [["montessori","Монтессори"],["early","Раннее развитие"],["school","Подготовка к школе"],["languages","Иностранные языки"],["robotics","Робототехника и IT"]]],
  ["Специалисты", [["speech","Логопед и дефектолог"],["lfk","ЛФК и массаж"],["psych","Психолог и нейропсихолог"]]],
  ["Для малышей", [["changing","Пеленальные комнаты"]]],
- ["Культура и познание", [["museums","Музеи"],["science","Научные музеи"],["shows","Театры"],["circus","Цирк"],["animaltheater","Театры зверей"],["cinema","Кино"],["masterclass","Мастер-классы"],["tours","Прогулки и экскурсии"]]],
- ["Природа, сезон, поездки", [["animals","Животные"],["water","Аквапарки и пляжи"],["winter","Зима"],["transport","Поезда и машины"],["trips","Подмосковье"]]],
+ ["Культура и познание", [["museums","Музеи"],["science","Научные музеи"],["shows","Театры"],["estates","Усадьбы и кремли"],["circus","Цирк"],["animaltheater","Театры зверей"],["cinema","Кино"],["masterclass","Мастер-классы"],["tours","Прогулки и экскурсии"]]],
+ ["Зимой", [["rinks","Катки"],["sledding","Горки и тюбинг"],["ski","Горнолыжные склоны"]]],
+ ["Природа и транспорт", [["animals","Животные"],["water","Аквапарки и пляжи"],["transport","Поезда и машины"]]],
  ["Еда и праздники", [["food","Кафе с детской"],["birthday","День рождения"]]],
 ];
 const CATNAME = Object.fromEntries(CATS.flatMap(g => g[1]));
@@ -188,7 +189,6 @@ function outside(p) { const R = 6371, t = x => x * Math.PI / 180, la = 55.7558, 
   const a = Math.sin(t(p.lat - la) / 2) ** 2 + Math.cos(t(la)) * Math.cos(t(p.lat)) * Math.sin(t(p.lon - lo) / 2) ** 2;
   return 2 * R * Math.asin(Math.sqrt(a)) > 25; }
 function inCat(p, c) {
-  if (c === "trips") return p.lat != null && outside(p);
   if (c === "birthday") return p.birthday === true || (p.cats || []).includes("birthday");
   if (c === "changing") return (p.cats || []).includes("changing") || p.changing_table === "yes" || (p.type || []).includes("пеленальная комната");
   return (p.cats || []).includes(c);
