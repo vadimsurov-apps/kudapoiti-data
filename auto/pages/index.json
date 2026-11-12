@@ -189044,7 +189044,7 @@
 "url": "https://www.me-english.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "www-me-english-ru": {
 "url": "https://www.me-english.ru",
@@ -189078,7 +189078,7 @@
 "url": "https://esk.msk.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "lt-arena-ru": {
 "url": "https://lt-arena.ru/",
@@ -189103,15 +189103,16 @@
 },
 "www-av-park-ru": {
 "url": "https://www.av-park.ru/",
-"ok": false,
-"err": "<urlopen error timed out>",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
 "tries": 2
 },
 "www-av-park-ru-contacts": {
 "url": "https://www.av-park.ru/contacts",
 "ok": false,
-"err": "<urlopen error timed out>",
-"tries": 2
+"err": "HTTP Error 404: Not Found",
+"tries": 3
 },
 "claustrophobia-com-moscow": {
 "url": "https://claustrophobia.com/moscow",
@@ -189136,21 +189137,22 @@
 },
 "pandapark-org-parks-zelenopark": {
 "url": "https://pandapark.org/parks/zelenopark",
-"ok": false,
-"err": "<urlopen error timed out>",
+"ok": true,
+"pages": 1,
+"bytes": 43,
 "tries": 2
 },
 "motdik-ru": {
 "url": "https://motdik.ru/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "motdik-ru-contacts": {
 "url": "https://motdik.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "dkmir-dubna-ru": {
 "url": "https://dkmir-dubna.ru",
@@ -189170,25 +189172,25 @@
 "url": "https://www.odin-teatr.com",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 2
+"tries": 3
 },
 "www-odin-teatr-com-contacts": {
 "url": "https://www.odin-teatr.com/contacts",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 2
+"tries": 3
 },
 "park-pehorka-ru": {
 "url": "https://park-pehorka.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
-"tries": 2
+"tries": 3
 },
 "park-pehorka-ru-contacts": {
 "url": "https://park-pehorka.ru/contacts",
 "ok": false,
 "err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
-"tries": 2
+"tries": 3
 },
 "tengus-ru": {
 "url": "https://tengus.ru",
@@ -189481,7 +189483,7 @@
 "url": "https://ladushky.com/raspisanie",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "www-letsdanceschool-ru-price": {
 "url": "https://www.letsdanceschool.ru/price",
@@ -189494,19 +189496,19 @@
 "url": "https://murenaswim.ru/severnyy",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "1kitenok-ru-reutov": {
 "url": "https://1kitenok.ru/reutov/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "1kitenok-ru-meshcherskiy-les": {
 "url": "https://1kitenok.ru/meshcherskiy-les/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "bayder-ru-zaly-i-instruktory-moskva-yasenevo": {
 "url": "https://bayder.ru/zaly-i-instruktory/moskva/yasenevo",
@@ -189519,6 +189521,471 @@
 "url": "https://www.msdance.ru/deti",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
+"tries": 2
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-cafe-signora-leningradskoe-51-text-d": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-cafe-signora-leningradskoe-51&text=%D0%A1%D0%B8%D0%BD%D1%8C%D0%BE%D1%80%D0%B0%20%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%2051%20%D1%81%D1%82%D1%80%205",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-cafe-osteria-vegas-kashirskoe-text-o": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-cafe-osteria-vegas-kashirskoe&text=Osteria%20Mario%20Vegas%20%D0%9C%D0%9A%D0%90%D0%94%2024%20%D0%BA%D0%BC",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-cafe-dodo-altufevskoe-70-text-d0-94": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-cafe-dodo-altufevskoe-70&text=%D0%94%D0%BE%D0%B4%D0%BE%20%D0%9F%D0%B8%D1%86%D1%86%D0%B0%20%D0%90%D0%BB%D1%82%D1%83%D1%84%D1%8C%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%2070%20%D0%BA1",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-oblastnoy-kukol-text-d0-9c-d0-be-d1": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-oblastnoy-kukol&text=%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%BD%D0%BE%D0%B9%20%D1%82%D0%B5%D0%B0%D1%82%D1%80%20%D0%BA%D1%83%D0%BA%D0%BE%D0%BB",
+"ok": true,
+"pages": 2,
+"bytes": 8910,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-rink-cosmic-text-d0-9a-d0-b0-d1-82-d": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-rink-cosmic&text=%D0%9A%D0%B0%D1%82%D0%BE%D0%BA%20%D0%9A%D0%BE%D1%81%D0%BC%D0%B8%D0%BA%20%D0%A2%D0%A6%20%D0%95%D0%B2%D1%80%D0%BE%D0%BF%D0%B5%D0%B9%D1%81%D0%BA%D0%B8%D0%B9",
+"ok": true,
+"pages": 1,
+"bytes": 1224,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-rink-vegas-city-text-d0-ba-d0-b0-d1": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-rink-vegas-city&text=%D0%BA%D0%B0%D1%82%D0%BE%D0%BA%20Vegas%20%D0%9A%D1%80%D0%BE%D0%BA%D1%83%D1%81%20%D0%A1%D0%B8%D1%82%D0%B8",
+"ok": true,
+"pages": 2,
+"bytes": 1755,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-drift-cdm-text-d0-b4-d1-80-d0-b8-d1": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-drift-cdm&text=%D0%B4%D1%80%D0%B8%D1%84%D1%82%20%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B3%20%D0%A6%D0%94%D0%9C%20%D0%A2%D0%B5%D0%B0%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%B7%D0%B4%205/1",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-cdm-observation-text-d1-81-d0-bc-d0": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-cdm-observation&text=%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%A6%D0%94%D0%9C%20%D0%A2%D0%B5%D0%B0%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%B7%D0%B4%205/1",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-tsaritsyno-kids-museum-text-d0-b4-d0": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-tsaritsyno-kids-museum&text=%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BC%D1%83%D0%B7%D0%B5%D0%B9%20%D0%A6%D0%B0%D1%80%D0%B8%D1%86%D1%8B%D0%BD%D0%BE",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-exponarium-text-d0-ad-d0-ba-d1-81-d0": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-exponarium&text=%D0%AD%D0%BA%D1%81%D0%BF%D0%BE%D0%BD%D0%B0%D1%80%D0%B8%D1%83%D0%BC%20%D0%98%D1%81%D1%82%D1%80%D0%B0",
+"ok": true,
+"pages": 4,
+"bytes": 10671,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-panda-fili-text-d0-9f-d0-b0-d0-bd-d0": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-panda-fili&text=%D0%9F%D0%B0%D0%BD%D0%B4%D0%B0%D0%9F%D0%B0%D1%80%D0%BA%20%D0%A4%D0%B8%D0%BB%D0%B8",
+"ok": true,
+"pages": 2,
+"bytes": 3389,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-gorky-green-school-text-d0-97-d0-b5": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-gorky-green-school&text=%D0%97%D0%B5%D0%BB%D1%91%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%9F%D0%B0%D1%80%D0%BA%20%D0%93%D0%BE%D1%80%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-lt-paintland-text-d0-9f-d0-b5-d0-b9": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-lt-paintland&text=%D0%9F%D0%B5%D0%B9%D0%BD%D1%82%D0%BB%D0%B5%D0%BD%D0%B4%20%D0%BB%D0%B0%D0%B7%D0%B5%D1%80%D1%82%D0%B0%D0%B3%20%D0%9A%D1%83%D0%B7%D1%8C%D0%BC%D0%B8%D0%BD%D0%BA%D0%B8",
+"ok": true,
+"pages": 3,
+"bytes": 6689,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-skate-kuzminki-text-d1-81-d0-ba-d0-b": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-skate-kuzminki&text=%D1%81%D0%BA%D0%B5%D0%B9%D1%82-%D0%BF%D0%B0%D1%80%D0%BA%20%D0%9A%D1%83%D0%B7%D1%8C%D0%BC%D0%B8%D0%BD%D0%BA%D0%B8",
+"ok": true,
+"pages": 2,
+"bytes": 2321,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-ecocenter-vankovo-text-d0-92-d0-b0-d": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-ecocenter-vankovo&text=%D0%92%D0%B0%D0%BD%D1%8C%D0%BA%D0%BE%D0%B2%D0%BE%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%20%D1%8D%D0%BA%D0%BE%D1%82%D1%83%D1%80%D0%B8%D0%B7%D0%BC%D0%B0%20%D0%A0%D1%83%D0%B7%D0%B0",
+"ok": true,
+"pages": 1,
+"bytes": 2816,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-berendeevo-tsarstvo-text-d0-91-d0-b5": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-berendeevo-tsarstvo&text=%D0%91%D0%B5%D1%80%D0%B5%D0%BD%D0%B4%D0%B5%D0%B5%D0%B2%D0%BE%20%D1%86%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE%20%D0%A0%D1%83%D0%B4%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE",
+"ok": true,
+"pages": 2,
+"bytes": 2757,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-warpoint-davydkovo-text-warpoint-20": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-warpoint-davydkovo&text=Warpoint%20%D0%94%D0%B0%D0%B2%D1%8B%D0%B4%D0%BA%D0%BE%D0%B2%D0%BE",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-aqua-tsargrad-text-d0-b0-d0-ba-d0-b2": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-aqua-tsargrad&text=%D0%B0%D0%BA%D0%B2%D0%B0%D0%BF%D0%B0%D1%80%D0%BA%20%D0%A6%D0%B0%D1%80%D1%8C%D0%B3%D1%80%D0%B0%D0%B4%20%D0%A1%D0%BF%D0%B0%D1%81-%D0%A2%D0%B5%D1%88%D0%B8%D0%BB%D0%BE%D0%B2%D0%BE",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-aqua-ilyinka-text-d0-b0-d0-ba-d0-b2": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-aqua-ilyinka&text=%D0%B0%D0%BA%D0%B2%D0%B0%D0%BF%D0%B0%D1%80%D0%BA%20%D0%98%D0%BB%D1%8C%D0%B8%D0%BD%D0%BA%D0%B0%20%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%BE-%D0%94%D0%B0%D0%BB%D1%8C%D0%BD%D0%B5%D0%B5",
+"ok": true,
+"pages": 3,
+"bytes": 4959,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-impressions-museum-sp-text-d0-9c-d1": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-impressions-museum-sp&text=%D0%9C%D1%83%D0%B7%D0%B5%D0%B9%20%D0%B2%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9%20%D0%A1%D0%B5%D1%80%D0%B3%D0%B8%D0%B5%D0%B2%20%D0%9F%D0%BE%D1%81%D0%B0%D0%B4",
+"ok": true,
+"pages": 1,
+"bytes": 1302,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-polenovo-text-d0-bc-d1-83-d0-b7-d0-b": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-polenovo&text=%D0%BC%D1%83%D0%B7%D0%B5%D0%B9-%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA%20%D0%9F%D0%BE%D0%BB%D0%B5%D0%BD%D0%BE%D0%B2%D0%BE",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-tube-mozhaisk-text-d0-b3-d0-be-d1-80": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-tube-mozhaisk&text=%D0%B3%D0%BE%D1%80%D0%BA%D0%B0%20%D1%82%D1%8E%D0%B1%D0%B8%D0%BD%D0%B3%20%D0%9C%D0%BE%D0%B6%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BA%D1%80%D0%B5%D0%BC%D0%BB%D1%8C",
+"ok": true,
+"pages": 2,
+"bytes": 1436,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-zotov-center-text-d0-a6-d0-b5-d0-bd": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-zotov-center&text=%D0%A6%D0%B5%D0%BD%D1%82%D1%80%20%D0%97%D0%BE%D1%82%D0%BE%D0%B2%20%D0%A5%D0%BE%D0%B4%D1%8B%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%202%20%D1%81%D1%82%D1%80%201",
+"ok": true,
+"pages": 4,
+"bytes": 15076,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-cin-mega-khimki-text-d0-a1-d0-b8-d0": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-cin-mega-khimki&text=%D0%A1%D0%B8%D0%BD%D0%B5%D0%BC%D0%B0%20%D0%9F%D0%B0%D1%80%D0%BA%20%D0%9C%D0%95%D0%93%D0%90%20%D0%A5%D0%B8%D0%BC%D0%BA%D0%B8",
+"ok": true,
+"pages": 5,
+"bytes": 8205,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-boat-kievsky-electric-text-d0-bf-d1": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-boat-kievsky-electric&text=%D0%BF%D1%80%D0%B8%D1%87%D0%B0%D0%BB%20%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D1%81%D1%83%D0%B4%D0%B0",
+"ok": true,
+"pages": 2,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-tour-rot-front-text-d0-a0-d0-be-d1-8": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-tour-rot-front&text=%D0%A0%D0%BE%D1%82%20%D0%A4%D1%80%D0%BE%D0%BD%D1%82%20%D1%8D%D0%BA%D1%81%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F%20%D0%BD%D0%B0%20%D1%84%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D1%83%202-%D0%B9%20%D0%9D%D0%BE%D0%B2%D0%BE%D0%BA%D1%83%D0%B7%D0%BD%D0%B5%D1%86%D0%BA%D0%B8%D0%B9%2013/15",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-tour-brandice-text-brandice-20-d1-84": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-tour-brandice&text=BrandIce%20%D1%84%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%9E%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%B7%D0%B4%2020",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-tour-fedoskino-text-d0-a4-d0-b5-d0-b": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-tour-fedoskino&text=%D0%A4%D0%B5%D0%B4%D0%BE%D1%81%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%84%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%20%D0%BB%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%BC%D0%B8%D0%BD%D0%B8%D0%B0%D1%82%D1%8E%D1%80%D1%8B",
+"ok": true,
+"pages": 2,
+"bytes": 4062,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-questkinder-among-us-text-questkinde": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-questkinder-among-us&text=QuestKinder%20%E2%80%94%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BA%D0%B2%D0%B5%D1%81%D1%82%D1%8B%20%D0%B8%20%D1%88%D0%BE%D1%83%2C%20%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B8%D1%87%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%206%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%202",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-zaika-i-pantera-olonetsky-text-d0-94": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-zaika-i-pantera-olonetsky&text=%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BA%D0%BB%D1%83%D0%B1%20%C2%AB%D0%97%D0%B0%D0%B9%D0%BA%D0%B0%20%D0%B8%20%D0%BF%D0%B0%D0%BD%D1%82%D0%B5%D1%80%D0%B0%C2%BB%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9E%D0%BB%D0%BE%D0%BD%D0%B5%D1%86%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80.%2C%204%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%202",
+"ok": true,
+"pages": 4,
+"bytes": 7579,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-neirospektr-shirokaya-text-d0-a6-d0": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-neirospektr-shirokaya&text=%D0%A6%D0%B5%D0%BD%D1%82%D1%80%20%C2%AB%D0%9D%D0%B5%D0%B9%D1%80%D0%BE%D0%A1%D0%BF%D0%B5%D0%BA%D1%82%D1%80%C2%BB%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A8%D0%B8%D1%80%D0%BE%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%203%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%203",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-ufirst-krasnobogatyrskaya-text-d0-af": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-ufirst-krasnobogatyrskaya&text=%D0%AF%D0%B7%D1%8B%D0%BA%D0%BE%D0%B2%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20UFirst%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B1%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2090%2C%20%D1%81%D1%82%D1%80.%201",
+"ok": true,
+"pages": 4,
+"bytes": 6933,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-cpm-robotics-bolshaya-spasskaya-text": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-cpm-robotics-bolshaya-spasskaya&text=%D0%9A%D1%83%D1%80%D1%81%D1%8B%20%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%A6%D0%9F%D0%9C%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%A1%D0%BF%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2015%2C%20%D1%81%D1%82%D1%80.%201",
+"ok": true,
+"pages": 3,
+"bytes": 5408,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-logopedy-moskovsko-kazansky-text-d0": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-logopedy-moskovsko-kazansky&text=%D0%9B%D0%BE%D0%B3%D0%BE%D0%BF%D0%B5%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%20%D1%83%20%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE-%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80.%2C%2011-15",
+"ok": true,
+"pages": 3,
+"bytes": 3837,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-moscow-montessori-school-starovolyns": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-moscow-montessori-school-starovolynskaya&text=%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9C%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%B8%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D1%82%D0%B0%D1%80%D0%BE%D0%B2%D0%BE%D0%BB%D1%8B%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2012%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%203",
+"ok": true,
+"pages": 5,
+"bytes": 7408,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-pchelka-khoroshevsky-text-d0-a6-d0-b": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-pchelka-khoroshevsky&text=%D0%A6%D0%B5%D0%BD%D1%82%D1%80%20%C2%AB%D0%9F%D1%87%D1%91%D0%BB%D0%BA%D0%B0%C2%BB%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%202-%D0%B9%20%D0%A5%D0%BE%D1%80%D0%BE%D1%88%D1%91%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80.%2C%209%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%201",
+"ok": true,
+"pages": 4,
+"bytes": 6407,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-lisenok-osipenko-text-d0-94-d0-b5-d1": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-lisenok-osipenko&text=%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BA%D0%BB%D1%83%D0%B1%20%C2%AB%D0%9B%D0%B8%D1%81%D1%91%D0%BD%D0%BE%D0%BA%C2%BB%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9F%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B%20%D0%9E%D1%81%D0%B8%D0%BF%D0%B5%D0%BD%D0%BA%D0%BE%2C%2010%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%201",
+"ok": true,
+"pages": 5,
+"bytes": 9413,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-budu-govorit-veskovsky-text-d0-9b-d0": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-budu-govorit-veskovsky&text=%D0%9B%D0%BE%D0%B3%D0%BE%D0%BF%D0%B5%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%20%C2%AB%D0%91%D1%83%D0%B4%D1%83%20%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%D1%82%D1%8C%C2%BB%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%92%D0%B5%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80.%2C%207",
+"ok": true,
+"pages": 3,
+"bytes": 3820,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-domik-montessori-budennogo-text-d0-9": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-domik-montessori-budennogo&text=%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%20%C2%AB%D0%94%D0%BE%D0%BC%D0%B8%D0%BA%20%D0%9C%D0%BE%D0%BD%D1%82%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%B8%C2%BB%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF.%20%D0%91%D1%83%D0%B4%D1%91%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%2C%2051%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%206",
+"ok": true,
+"pages": 4,
+"bytes": 5126,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c0-confirm0-zhirafa-sukromka-text-d0-94-d0-b5-d1": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0=confirm0-zhirafa-sukromka&text=%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%81%D0%B0%D0%B4%20%C2%AB%D0%96%D0%B8%D1%80%D0%B0%D1%84%D0%B0%C2%BB%2C%20%D0%9C%D1%8B%D1%82%D0%B8%D1%89%D0%B8%2C%20%D1%83%D0%BB.%20%D0%A1%D1%83%D0%BA%D1%80%D0%BE%D0%BC%D0%BA%D0%B0%2C%2024",
+"ok": true,
+"pages": 5,
+"bytes": 8674,
+"tries": 0
+},
+"signora-restaurant-ru": {
+"url": "https://signora-restaurant.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 4741,
+"tries": 0
+},
+"signora-restaurant-ru-contacts": {
+"url": "https://signora-restaurant.ru/contacts/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
 "tries": 1
+},
+"osteriamario-ru-restaurants-vegas": {
+"url": "https://osteriamario.ru/restaurants/vegas/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"www-rotfront-ru-excursions": {
+"url": "http://www.rotfront.ru/excursions/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"moyzaika-ru": {
+"url": "https://moyzaika.ru/",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"moyzaika-ru-contacts": {
+"url": "https://moyzaika.ru/contacts/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"neurospectrum-ru": {
+"url": "https://neurospectrum.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"neurospectrum-ru-contacts": {
+"url": "https://neurospectrum.ru/contacts/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"ufirst-ru-contacts": {
+"url": "https://ufirst.ru/contacts/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"mosmontessori-ru": {
+"url": "https://mosmontessori.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"mosmontessori-ru-contacts": {
+"url": "https://mosmontessori.ru/contacts/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"pchelkacentre-ru": {
+"url": "https://pchelkacentre.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 1017,
+"tries": 0
+},
+"pchelkacentre-ru-contacts": {
+"url": "https://pchelkacentre.ru/contacts/",
+"ok": true,
+"pages": 1,
+"bytes": 657,
+"tries": 0
+},
+"lisenok-moscow-ru": {
+"url": "https://lisenok-moscow.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 8811,
+"tries": 0
+},
+"lisenok-moscow-ru-contacts": {
+"url": "https://lisenok-moscow.ru/contacts/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"budugovorit-ru": {
+"url": "https://budugovorit.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"budugovorit-ru-contacts": {
+"url": "https://budugovorit.ru/contacts/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"montessori-dom-ru": {
+"url": "https://montessori-dom.ru/",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"montessori-dom-ru-contacts": {
+"url": "https://montessori-dom.ru/contacts/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"www-zhirafasad-ru": {
+"url": "https://www.zhirafasad.ru/",
+"ok": true,
+"pages": 2,
+"bytes": 16000,
+"tries": 0
+},
+"www-zhirafasad-ru-contacts": {
+"url": "https://www.zhirafasad.ru/contacts/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"questkinder-events-contacts": {
+"url": "https://questkinder.events/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"pandapark-org-parks-fili": {
+"url": "https://pandapark.org/parks/fili/",
+"ok": true,
+"pages": 1,
+"bytes": 38,
+"tries": 0
+},
+"polenovo-ru": {
+"url": "https://polenovo.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"www-exponarium-ru": {
+"url": "https://www.exponarium.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 8290,
+"tries": 0
+},
+"berendeevo-carstvo-ru": {
+"url": "https://berendeevo-carstvo.ru/",
+"ok": false,
+"err": "<urlopen error [Errno -2] Name or service not known>",
+"tries": 1
+},
+"zotov-moscow": {
+"url": "https://zotov.moscow/",
+"ok": false,
+"err": "<urlopen error [Errno -2] Name or service not known>",
+"tries": 1
+},
+"tsaritsyno-museum-ru": {
+"url": "https://tsaritsyno-museum.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
 }
 }
