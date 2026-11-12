@@ -255060,7 +255060,7 @@
 "aquapingvi-ru-price": {
 "url": "https://aquapingvi.ru/price",
 "ok": false,
-"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
+"err": "HTTP Error 404: Not Found",
 "tries": 3
 },
 "planetatvo-ru-contacts": {
@@ -255546,6 +255546,25 @@
 },
 "aquaclubmore-ru-price": {
 "url": "https://aquaclubmore.ru/price",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"kinzamsk-ru": {
+"url": "https://kinzamsk.ru/",
+"ok": true,
+"pages": 2,
+"bytes": 3548,
+"tries": 0
+},
+"kinzamsk-ru-contacts": {
+"url": "https://kinzamsk.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"kinzamsk-ru-restaurants": {
+"url": "https://kinzamsk.ru/restaurants",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
 "tries": 1
