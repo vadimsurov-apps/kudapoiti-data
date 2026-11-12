@@ -2,7 +2,7 @@ name: Сборка places.json, иконок и страниц
 on:
   push:
     branches: [main]
-    paths: ["data/**", "icons-src/**", "tools/xlsx_to_json.py", "tools/build_all.py", "auto/osm-access.json", "auto/osm-changing.json", "deals.json", "auto/spam-domains.txt", "auto/osm-address.json", "auto/contacts.json", "auto/access-needs.json", "auto/cat-ages.json", "auto/verified.json", "auto/human-checks.json", "gpt/reports/**", "tools/point_level.py", "tools/metrics.py", "auto/geo-yandex.json", "pipeline/spam.py"]
+    paths: ["data/**", "icons-src/**", "tools/xlsx_to_json.py", "tools/build_all.py", "auto/osm-access.json", "auto/osm-changing.json", "deals.json", "auto/spam-domains.txt", "auto/osm-address.json", "auto/contacts.json", "auto/access-needs.json", "auto/cat-ages.json", "auto/verified.json", "auto/human-checks.json", "gpt/reports/**", "tools/point_level.py", "tools/metrics.py", "auto/geo-yandex.json", "auto/yandex-entrances.json", "pipeline/spam.py"]
   workflow_dispatch:
 concurrency:
   group: build

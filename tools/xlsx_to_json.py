@@ -535,6 +535,30 @@ def main():
         p["point_level"] = point_level.level(p["id"], acc_txt.get(p["id"]), p.get("coord_exact"))
         if p["point_level"] == "вход":
             p["point_door"] = point_level.door(p["id"], acc_txt.get(p["id"]))
+    # Вадим 12.11: «аватарка — прямо на входе в нужный подъезд… точки должны находить боты: вход в заведение, расположение
+    # внутри больших ТЦ». auto/yandex-entrances.json (pipeline/yandex_entrances.py) — та же организация в Яндекс Картах:
+    # один вход → точка на этот вход (point_door «вход_яндекс»); входов нет или несколько (ТЦ) → точка организации внутри
+    # здания («точка_яндекс»), этаж — в «Как найти». Метку человека («дверь») не трогаем; сдвиг больше 200 м не применяем.
+    ya_path = os.path.join(os.path.dirname(os.path.abspath(dst)), "auto", "yandex-entrances.json")
+    ya = json.load(open(ya_path, encoding="utf-8")) if os.path.exists(ya_path) else {}
+
+    def _m(a, b, c, d):
+        import math
+        return math.hypot((a - c) * 111200, (b - d) * 111200 * math.cos(math.radians(a)))
+    for p in places:
+        r = ya.get(p["id"]) or {}
+        if "lat" not in r or p.get("point_level") != "вход" or p.get("point_door") == "дверь" or p.get("lat") is None:
+            continue
+        if r.get("status") not in (None, "open"):
+            continue
+        ent = r.get("entrances") or []
+        if len(ent) == 1 and _m(p["lat"], p["lon"], ent[0][0], ent[0][1]) <= 200:
+            p["lat"], p["lon"], p["point_door"] = ent[0][0], ent[0][1], "вход_яндекс"
+        elif p.get("point_door") == "объект" and _m(p["lat"], p["lon"], r["lat"], r["lon"]) <= 200:
+            p["lat"], p["lon"], p["point_door"] = r["lat"], r["lon"], "точка_яндекс"
+        fl = re.search(r"-?\d+", str(r.get("floor") or ""))
+        if fl and p.get("point_door") in ("вход_яндекс", "точка_яндекс") and "этаж" not in (p.get("how_to_find") or "").lower():
+            p["how_to_find"] = ((p.get("how_to_find") or "") + "\nЭтаж: " + fl.group(0)).strip()
     shown = [p for p in places if p["point_level"] == "вход" and p.get("lat") is not None and p.get("status") != "closed"]
     for path, lst in ((all_path, places), (dst, shown)):
         with open(path, "w", encoding="utf-8") as f:

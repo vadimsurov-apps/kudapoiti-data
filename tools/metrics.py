@@ -94,6 +94,8 @@ def main():
                    "процент_точно_до_входа": pct(lv["вход"], total),
                    # 12.11 Вадим: «прямо на входе в нужный подъезд, точность до метра» — честное деление точек на карте
                    "на_карте_дверь_подтверждена_человеком": sum(1 for p in J("places.json")["places"] if p.get("point_door") == "дверь"),
+                   "на_карте_вход_организации_по_Яндексу": sum(1 for p in J("places.json")["places"] if p.get("point_door") == "вход_яндекс"),
+                   "на_карте_точка_организации_по_Яндексу": sum(1 for p in J("places.json")["places"] if p.get("point_door") == "точка_яндекс"),
                    "на_карте_вход_здания_из_OSM": sum(1 for p in J("places.json")["places"] if p.get("point_door") == "вход_здания"),
                    "на_карте_объект_OSM_не_дверь": sum(1 for p in J("places.json")["places"] if p.get("point_door") == "объект"),
                    "процент_на_карте_дверь_подтверждена": pct(sum(1 for p in J("places.json")["places"] if p.get("point_door") == "дверь"), len(shown))},

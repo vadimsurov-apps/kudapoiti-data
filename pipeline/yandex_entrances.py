@@ -58,9 +58,20 @@ def dist(a, b, c, d):
     return math.hypot((a - c) * 111200, (b - d) * 111200 * math.cos(math.radians(a)))
 
 
+TR = dict(zip("абвгдезийклмнопрстуфхцыэ", "abvgdeziyklmnoprstufhcye"))
+TR.update({"ж": "zh", "ч": "ch", "ш": "sh", "щ": "sch", "ю": "yu", "я": "ya", "ь": "", "ъ": "", "ё": "e"})
+
+
 def toks(s):
+    """Слова названия без уточнения в скобках (там обычно район/ТЦ), латиницей — «Ла Рива» = «La Riva»."""
     s = re.sub(r"\(.*?\)", " ", (s or "").lower().replace("ё", "е"))
-    return {t for t in re.findall(r"[a-zа-я0-9]{3,}", s) if t not in STOP}
+    out = set()
+    for t in re.findall(r"[a-zа-я0-9]{3,}", s):
+        if t in STOP:
+            continue
+        t = "".join(TR.get(ch, ch) for ch in t).replace("ck", "k").replace("c", "k").replace("y", "i").replace("w", "v")
+        out.add(t)
+    return out
 
 
 def pick(place, found):
@@ -68,10 +79,14 @@ def pick(place, found):
     want = toks(place["name"]); best = None
     for o in found:
         d = dist(place["lat"], place["lon"], o["lat"], o["lon"])
-        common = want & toks(o["title"])
+        have = toks(o["title"]); common = want & have
         if d > 300 or not common:
             continue
-        score = (len(common) / max(1, len(want)), -d)
+        # доля совпавших слов — от нашего названия и от названия в Яндексе; хватает 60% с одной из сторон
+        share = max(len(common) / max(1, len(want)), len(common) / max(1, len(have)))
+        if share < 0.6:
+            continue
+        score = (share, len(common), -d)
         if not best or score > best[0]:
             best = (score, o, d, sorted(common))
     if not best:
