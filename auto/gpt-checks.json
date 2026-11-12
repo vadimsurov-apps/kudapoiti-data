@@ -33,13 +33,10 @@
 "arkhangelskoe": {
 "by": "Codex",
 "date": "2026-11-12",
-"file": "20261112-1920-1.json",
-"note": "Указаны часы парка по зимнему графику; музейные павильоны работают по отдельному расписанию.",
-"ok": [
-"address"
-],
+"file": "20261112-1943-1.json",
+"note": "Парк работает ежедневно по зимнему графику; дворец закрыт на реставрацию.",
+"ok": [],
 "sources": [
-"https://arhangelskoe.su/",
 "https://arhangelskoe.su/for_visitor/working_hours/?special_version=Y"
 ],
 "status": "works",
@@ -49,10 +46,24 @@
 "value": "ежедневно 10:00-20:00"
 },
 "url": {
-"source": "https://arhangelskoe.su/",
+"source": "https://arhangelskoe.su/for_visitor/working_hours/?special_version=Y",
 "value": "https://arhangelskoe.su/"
 }
 }
+},
+"babushkinsky": {
+"by": "Codex",
+"date": "2026-11-12",
+"file": "20261112-1943-1.json",
+"note": "Открытых первоисточников недостаточно для надёжной проверки полей.",
+"ok": [
+"url"
+],
+"sources": [
+"http://bapark.ru/"
+],
+"status": "works",
+"wrong": {}
 },
 "bank-museum": {
 "by": "Codex",
@@ -87,6 +98,16 @@
 "value": "https://museum.cbr.ru/"
 }
 }
+},
+"borisovskie-prudy": {
+"by": "Codex",
+"date": "2026-11-12",
+"file": "20261112-1943-1.json",
+"note": "Открытых первоисточников недостаточно для надёжной проверки полей.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "cafe-akademiya-sokol": {
 "by": "ChatGPT",
@@ -844,32 +865,35 @@
 "climb-lab": {
 "by": "Codex",
 "date": "2026-11-12",
-"file": "20261112-1920-1.json",
-"note": "Официальный сайт подтверждает филиал на Аминьевской в ТЦ «ОМА».",
-"ok": [],
+"file": "20261112-1943-1.json",
+"note": "Официальная страница филиала подтверждает этаж, вход, парковку, часы и контакты.",
+"ok": [
+"age"
+],
 "sources": [
-"https://climb-lab.ru/prices/"
+"https://climb-lab.ru/filials/aminevskaya/",
+"https://climb-lab.ru/registration/aminevskaya/"
 ],
 "status": "works",
 "wrong": {
 "address": {
-"source": "https://climb-lab.ru/prices/",
-"value": "Москва, Очаковское ш., 3А, ТЦ «ОМА», 3 этаж"
+"source": "https://climb-lab.ru/filials/aminevskaya/",
+"value": "Очаковское ш., 3А, ТЦ «ОМА», 3 этаж"
 },
 "hours": {
-"source": "https://climb-lab.ru/prices/",
+"source": "https://climb-lab.ru/filials/aminevskaya/",
 "value": "ежедневно 07:00-00:00"
 },
 "how": {
-"source": "https://climb-lab.ru/prices/",
+"source": "https://climb-lab.ru/filials/aminevskaya/",
 "value": "Вход: со стороны метро Аминьевская\nЭтаж: 3\nПарковка: платная парковка ТЦ «ОМА»"
 },
 "phone": {
-"source": "https://climb-lab.ru/prices/",
+"source": "https://climb-lab.ru/filials/aminevskaya/",
 "value": "+7 (495) 023-39-93"
 },
 "url": {
-"source": "https://climb-lab.ru/prices/",
+"source": "https://climb-lab.ru/filials/aminevskaya/",
 "value": "https://climb-lab.ru/"
 }
 }
@@ -877,8 +901,8 @@
 "climb-rockzona": {
 "by": "Codex",
 "date": "2026-11-12",
-"file": "20261112-1920-1.json",
-"note": "Официальная страница контактов подтверждает работу скалодрома по этому адресу.",
+"file": "20261112-1943-1.json",
+"note": "Официальная страница контактов подтверждает работу скалодрома.",
 "ok": [
 "address"
 ],
@@ -889,7 +913,7 @@
 "wrong": {
 "hours": {
 "source": "https://rzclimbing.ru/o-skalodrome/contact/",
-"value": "пн, ср-пт 09:00-23:00; вт 15:00-23:00; сб-вс 09:00-22:00"
+"value": "пн 09:00-23:00; вт 15:00-23:00; ср-пт 09:00-23:00; сб-вс 09:00-22:00"
 },
 "phone": {
 "source": "https://rzclimbing.ru/o-skalodrome/contact/",
@@ -904,22 +928,43 @@
 "climb-skala-city": {
 "by": "Codex",
 "date": "2026-11-12",
-"file": "20261112-1920-1.json",
-"note": "На официальном сайте в реквизитах указан другой актуальный телефон.",
+"file": "20261112-1943-1.json",
+"note": "Официальные контакты расходятся с карточкой по выходным и телефону.",
 "ok": [
-"address",
 "url"
 ],
 "sources": [
-"https://www.skala-city.ru/"
+"https://skala-city.ru/contact"
 ],
 "status": "works",
 "wrong": {
+"address": {
+"source": "https://skala-city.ru/contact",
+"value": "Кутузовский пр-т, 36, стр. 13/14"
+},
+"hours": {
+"source": "https://skala-city.ru/contact",
+"value": "пн-пт 15:00-23:00; сб-вс 11:00-22:00"
+},
 "phone": {
-"source": "https://www.skala-city.ru/",
+"source": "https://skala-city.ru/contact",
 "value": "+7 (966) 112-93-77"
 }
 }
+},
+"dubki": {
+"by": "Codex",
+"date": "2026-11-12",
+"file": "20261112-1943-1.json",
+"note": "Открытых первоисточников недостаточно для надёжной проверки полей.",
+"ok": [
+"url"
+],
+"sources": [
+"http://liapark.ru/"
+],
+"status": "works",
+"wrong": {}
 },
 "frog-museum": {
 "by": "Codex",
@@ -951,74 +996,99 @@
 "karting-lonato": {
 "by": "Codex",
 "date": "2026-11-12",
-"file": "20261112-1920-1.json",
-"note": "Официальный сайт подтверждает адрес, телефон и ежедневный режим.",
+"file": "20261112-1943-1.json",
+"note": "Цена 1400 ₽ действует только в счастливые часы по будням; в остальное время дороже.",
 "ok": [
 "address",
 "phone",
-"url"
+"url",
+"price"
 ],
 "sources": [
-"https://lonato.ru/"
+"https://lonato.ru/contacts/",
+"https://lonato.ru/price/"
 ],
 "status": "works",
 "wrong": {
 "hours": {
-"source": "https://lonato.ru/",
-"value": "ежедневно 10:00-00:00"
+"source": "https://lonato.ru/contacts/",
+"value": "пн-пт 10:00-00:00; сб-вс 12:30-00:00"
 }
 }
 },
 "karting-timati": {
 "by": "Codex",
 "date": "2026-11-12",
-"file": "20261112-1920-1.json",
-"note": "Сайт ТРЦ подтверждает действующий электрический картинг и часы работы.",
-"ok": [
-"address",
-"how"
-],
+"file": "20261112-1943-1.json",
+"note": "Официальная страница филиала подтверждает этаж, часы и телефон.",
+"ok": [],
 "sources": [
-"https://riviera.su/shop/timati-karting"
+"https://rvr.timatikarting.ru/prices.html"
 ],
 "status": "works",
 "wrong": {
+"address": {
+"source": "https://rvr.timatikarting.ru/prices.html",
+"value": "ул. Автозаводская, 18, ТРЦ «Ривьера», 2 этаж"
+},
 "hours": {
-"source": "https://riviera.su/shop/timati-karting",
-"value": "ежедневно 10:00-02:00"
+"source": "https://rvr.timatikarting.ru/prices.html",
+"value": "ежедневно 10:00-00:00"
+},
+"how": {
+"source": "https://rvr.timatikarting.ru/prices.html",
+"value": "Вход: через ТРЦ «Ривьера»\nЭтаж: 2"
+},
+"phone": {
+"source": "https://rvr.timatikarting.ru/prices.html",
+"value": "+7 (495) 120-43-13"
 },
 "url": {
-"source": "https://riviera.su/shop/timati-karting",
-"value": "https://riviera.su/shop/timati-karting"
+"source": "https://rvr.timatikarting.ru/prices.html",
+"value": "https://rvr.timatikarting.ru/"
 }
 }
 },
 "karting-xti": {
 "by": "Codex",
 "date": "2026-11-12",
-"file": "20261112-1920-1.json",
-"note": "В выходные и праздничные дни бронирование заездов обязательно.",
+"file": "20261112-1943-1.json",
+"note": "Официальный сайт подтверждает действующий картинг; в выходные и праздники бронь обязательна.",
 "ok": [
 "address"
 ],
 "sources": [
-"https://x-tipilot.ru/"
+"https://x-tipilot.ru/store"
 ],
 "status": "works",
 "wrong": {
 "hours": {
-"source": "https://x-tipilot.ru/",
+"source": "https://x-tipilot.ru/store",
 "value": "ежедневно 11:00-23:00"
 },
 "phone": {
-"source": "https://x-tipilot.ru/",
+"source": "https://x-tipilot.ru/store",
 "value": "+7 (495) 136-68-16"
 },
 "url": {
-"source": "https://x-tipilot.ru/",
+"source": "https://x-tipilot.ru/store",
 "value": "https://x-tipilot.ru/"
 }
 }
+},
+"khodynka": {
+"by": "Codex",
+"date": "2026-11-12",
+"file": "20261112-1943-1.json",
+"note": "Открытых первоисточников недостаточно для надёжной проверки полей.",
+"ok": [
+"url"
+],
+"sources": [
+"https://parkhodynka.ru/"
+],
+"status": "works",
+"wrong": {}
 },
 "khotkovo-adventure": {
 "by": "Codex",
@@ -1103,24 +1173,47 @@
 "kolomna-pastila": {
 "by": "Codex",
 "date": "2026-11-12",
-"file": "20261112-1920-1.json",
-"note": "Официальный сайт сообщает, что посещение возможно только по предварительной записи.",
+"file": "20261112-1943-1.json",
+"note": "Официальная страница подтверждает адрес, режим и телефон; цена и возраст не подтверждены.",
 "ok": [
 "address",
+"hours",
 "phone",
 "url"
 ],
 "sources": [
-"https://kolomnapastila.ru/",
 "https://kolomnapastila.ru/contacts/"
 ],
 "status": "works",
-"wrong": {
-"hours": {
-"source": "https://kolomnapastila.ru/contacts/",
-"value": "ежедневно 10:00-20:00"
-}
-}
+"wrong": {}
+},
+"kuskovo": {
+"by": "Codex",
+"date": "2026-11-12",
+"file": "20261112-1943-1.json",
+"note": "Открытых первоисточников недостаточно для надёжной проверки полей.",
+"ok": [
+"url"
+],
+"sources": [
+"https://kuskovo.ru/"
+],
+"status": "works",
+"wrong": {}
+},
+"lianozovsky": {
+"by": "Codex",
+"date": "2026-11-12",
+"file": "20261112-1943-1.json",
+"note": "Открытых первоисточников недостаточно для надёжной проверки полей.",
+"ok": [
+"url"
+],
+"sources": [
+"http://liapark.ru/"
+],
+"status": "works",
+"wrong": {}
 },
 "luzhniki-aqua": {
 "by": "Codex",
@@ -1205,11 +1298,25 @@
 "neskuchny": {
 "by": "Codex",
 "date": "2026-11-12",
-"file": "20261112-1920-1.json",
-"note": "Не удалось независимо подтвердить поля карточки на доступной официальной странице.",
+"file": "20261112-1943-1.json",
+"note": "Открытых первоисточников недостаточно для надёжной проверки полей.",
+"ok": [
+"hours"
+],
+"sources": [
+"https://www.mos.ru/upload/documents/oiv/moskva_detishkam.pdf"
+],
+"status": "works",
+"wrong": {}
+},
+"olimpiyskaya-derevnya": {
+"by": "Codex",
+"date": "2026-11-12",
+"file": "20261112-1943-1.json",
+"note": "Открытых первоисточников недостаточно для надёжной проверки полей.",
 "ok": [],
 "sources": [],
-"status": "works",
+"status": "not_found",
 "wrong": {}
 },
 "ostrov-mechty": {
@@ -1240,29 +1347,39 @@
 }
 }
 },
+"park-850": {
+"by": "Codex",
+"date": "2026-11-12",
+"file": "20261112-1943-1.json",
+"note": "Открытых первоисточников недостаточно для надёжной проверки полей.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
 "park-skazka": {
 "by": "Codex",
 "date": "2026-11-12",
-"file": "20261112-1920-1.json",
-"note": "Парк временно закрыт 2–26 ноября 2026 года; билет «Стандарт» в будни на сайте стоит 3300 ₽ и имеет единую цену для взрослых и детей.",
+"file": "20261112-1943-1.json",
+"note": "Официальный сайт доступен; временное закрытие и остальные поля надёжно не подтверждены.",
 "ok": [
-"phone",
 "url"
 ],
 "sources": [
-"https://parkskazka.ru/"
+"https://www.parkskazka.com/"
 ],
 "status": "works",
-"wrong": {
-"address": {
-"source": "https://parkskazka.ru/",
-"value": "Москва, ул. Крылатская, 18"
+"wrong": {}
 },
-"price": {
-"source": "https://parkskazka.ru/",
-"value": 3300
-}
-}
+"perovsky": {
+"by": "Codex",
+"date": "2026-11-12",
+"file": "20261112-1943-1.json",
+"note": "Открытых первоисточников недостаточно для надёжной проверки полей.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "pryanik-museum": {
 "by": "Codex",
@@ -1294,27 +1411,12 @@
 "rink-luzhniki": {
 "by": "Codex",
 "date": "2026-11-12",
-"file": "20261112-1920-1.json",
-"note": "Официальная страница сообщает об открытии в декабре; актуальное расписание сезона пока не опубликовано.",
+"file": "20261112-1943-1.json",
+"note": "Открытых первоисточников недостаточно для надёжной проверки полей.",
 "ok": [],
-"sources": [
-"https://www.luzhniki.ru/sport/zima-v-luzhnikah/eng-katok/"
-],
-"status": "works",
-"wrong": {
-"address": {
-"source": "https://www.luzhniki.ru/sport/zima-v-luzhnikah/eng-katok/",
-"value": "Москва, ул. Лужники, 24, стр. 4Б"
-},
-"how": {
-"source": "https://www.luzhniki.ru/sport/zima-v-luzhnikah/eng-katok/",
-"value": "Ориентир: 3 минуты пешком от метро «Воробьёвы горы»\nПарковка: рядом с катком"
-},
-"url": {
-"source": "https://www.luzhniki.ru/sport/zima-v-luzhnikah/eng-katok/",
-"value": "https://katok.luzhniki.ru/"
-}
-}
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "salyut-playground": {
 "by": "Codex",
@@ -1329,23 +1431,24 @@
 "sergiev-toy-museum": {
 "by": "Codex",
 "date": "2026-11-12",
-"file": "20261112-1920-1.json",
-"note": "В карточке отсутствует номер дома; муниципальный справочник указывает дом 123.",
+"file": "20261112-1943-1.json",
+"note": "В карточке неполный адрес; официальный сайт подтверждает дом 123.",
 "ok": [
-"phone"
+"phone",
+"url"
 ],
 "sources": [
-"https://www.sergiev-posad.ru/reference/leisure/exhibitions/"
+"http://museumot.info/"
 ],
 "status": "works",
 "wrong": {
 "address": {
-"source": "https://www.sergiev-posad.ru/reference/leisure/exhibitions/",
+"source": "http://museumot.info/",
 "value": "Сергиев Посад, пр-т Красной Армии, 123"
 },
 "hours": {
-"source": "https://www.sergiev-posad.ru/reference/leisure/exhibitions/",
-"value": "пн-вт выходной; ср-вс 10:00-17:00"
+"source": "http://museumot.info/",
+"value": "ср-вс 10:00-17:00"
 }
 }
 },
@@ -1386,6 +1489,16 @@
 "ok": [],
 "sources": [],
 "status": "works",
+"wrong": {}
+},
+"timiryazevsky": {
+"by": "Codex",
+"date": "2026-11-12",
+"file": "20261112-1943-1.json",
+"note": "Открытых первоисточников недостаточно для надёжной проверки полей.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "toy-museum": {
@@ -1481,6 +1594,35 @@
 }
 }
 },
+"vorobyovy-gory": {
+"by": "Codex",
+"date": "2026-11-12",
+"file": "20261112-1943-1.json",
+"note": "Открытых первоисточников недостаточно для надёжной проверки полей.",
+"ok": [
+"address",
+"hours"
+],
+"sources": [
+"https://60seconds.sport.mos.ru/map/"
+],
+"status": "works",
+"wrong": {}
+},
+"vorontsovsky": {
+"by": "Codex",
+"date": "2026-11-12",
+"file": "20261112-1943-1.json",
+"note": "Открытых первоисточников недостаточно для надёжной проверки полей.",
+"ok": [
+"url"
+],
+"sources": [
+"https://usadba-vorontsovo.ru/"
+],
+"status": "works",
+"wrong": {}
+},
 "vzhukh-dance-yushunskaya": {
 "by": "Codex",
 "date": "2026-11-12",
@@ -1489,6 +1631,20 @@
 "ok": [],
 "sources": [],
 "status": "not_found",
+"wrong": {}
+},
+"yauza-park": {
+"by": "Codex",
+"date": "2026-11-12",
+"file": "20261112-1943-1.json",
+"note": "Открытых первоисточников недостаточно для надёжной проверки полей.",
+"ok": [
+"url"
+],
+"sources": [
+"https://park-yauza.info/"
+],
+"status": "works",
 "wrong": {}
 }
 }
