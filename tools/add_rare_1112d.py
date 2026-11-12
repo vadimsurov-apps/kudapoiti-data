@@ -218,6 +218,10 @@ add("rink-start-arena-opalikha", "Ледовый дворец «Старт Ар�
 
 ROWS = B.R
 
+if os.environ.get("KP_ONLY"):   # дозапись отдельных мест: KP_ONLY="id1 id2"
+    B.R[:] = [r for r in B.R if r["id"] in os.environ["KP_ONLY"].split()]
+    ROWS = B.R
+
 if __name__ == "__main__":
     print("нет точки:", SKIP)
     B.ROWS = ROWS
