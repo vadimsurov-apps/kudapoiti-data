@@ -178425,7 +178425,7 @@
 "url": "https://xn----ytbdbehdbhf8hta.xn--p1ai/close",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)>",
-"tries": 2
+"tries": 3
 },
 "fencingclubliderrus-ru-contacts": {
 "url": "https://fencingclubliderrus.ru/contacts",
@@ -178438,13 +178438,13 @@
 "url": "https://fencingclubliderrus.ru/kontakty",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "new-norwaypark-ru": {
 "url": "https://new.norwaypark.ru/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 1
+"tries": 2
 },
 "park-razdolye-ru": {
 "url": "https://park-razdolye.ru/",
@@ -178457,25 +178457,25 @@
 "url": "https://park-razdolye.ru/contacts/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "www-velotrek1-ru": {
 "url": "https://www.velotrek1.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 1
+"tries": 2
 },
 "pandapark-org-pandapark-meshherskij": {
 "url": "https://pandapark.org/pandapark-meshherskij/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 1
+"tries": 2
 },
 "smilepark-ru": {
 "url": "https://smilepark.ru/",
 "ok": false,
-"err": "<urlopen error timed out>",
-"tries": 1
+"err": "<urlopen error [Errno 111] Connection refused>",
+"tries": 2
 },
 "robostation-ru": {
 "url": "https://robostation.ru/",
@@ -178487,26 +178487,26 @@
 "polyany-ru": {
 "url": "https://polyany.ru/",
 "ok": false,
-"err": "<urlopen error timed out>",
-"tries": 1
+"err": "<urlopen error [Errno 111] Connection refused>",
+"tries": 2
 },
 "www-savvastor-ru": {
 "url": "https://www.savvastor.ru/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-"tries": 1
+"tries": 2
 },
 "tchaikovsky-house-museum-ru": {
 "url": "https://tchaikovsky-house-museum.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
-"tries": 1
+"tries": 2
 },
 "usadba-marfino-ru": {
 "url": "https://usadba-marfino.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 1
+"tries": 2
 },
 "yandex-ru-maps-1-moscow-and-moscow-oblast-fuz00-1112b-text-d0-b4-d0-b5-d1-82-d1-81-d0-ba-d": {
 "url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?fuz00=1112b&text=%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D0%B0%D0%B7%D0%B2%D0%BB%D0%B5%D0%BA%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%20%D0%BC%D0%B5%D1%82%D1%80%D0%BE%20%D0%9E%D0%B7%D1%91%D1%80%D0%BD%D0%B0%D1%8F",
@@ -178927,5 +178927,30 @@
 "pages": 5,
 "bytes": 16000,
 "tries": 0
+},
+"ladushky-com-contacts": {
+"url": "https://ladushky.com/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"nrg-arena-ru-elektrostal": {
+"url": "https://nrg-arena.ru/elektrostal",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"skod80-mossport-ru-sports-plavanie": {
+"url": "https://skod80.mossport.ru/sports/plavanie",
+"ok": true,
+"pages": 5,
+"bytes": 12490,
+"tries": 0
+},
+"aquababyclub-ru-moskva": {
+"url": "https://aquababyclub.ru/moskva/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
 }
 }
