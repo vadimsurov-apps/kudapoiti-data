@@ -74,8 +74,11 @@ def main():
         v["buildings"].sort(key=lambda r: r["d"]); v["buildings"] = v["buildings"][:120]
         v["entrances"].sort(key=lambda r: r["d"]); v["entrances"] = v["entrances"][:40]
         if "outlines" in v: v["outlines"].sort(key=lambda r: r["d"]); v["outlines"] = v["outlines"][:300]
-    # 12.11 (rare): без отступов — с indent=1 ответ на 700+ запросов перевалил за 100 МБ и GitHub отклонял пуш (GH001)
-    json.dump(out, open("auto/osm-answers.json", "w"), ensure_ascii=False, separators=(",", ":"))
+    # 12.11 (rare): с indent=1 ответ на 700+ запросов перевалил за 100 МБ и GitHub отклонял пуш (GH001), а одной строкой
+    # любые два параллельных прогона конфликтуют при git pull --rebase. Поэтому: один запрос — одна компактная строка.
+    with open("auto/osm-answers.json", "w") as fo:
+        fo.write("{\n" + ",\n".join(json.dumps(k, ensure_ascii=False) + ":" + json.dumps(v, ensure_ascii=False, separators=(",", ":"))
+                                     for k, v in out.items()) + "\n}\n")
     print({k: (len(v["pois"]), len(v["buildings"]), len(v["entrances"])) for k, v in out.items()})
 
 if __name__ == "__main__":
