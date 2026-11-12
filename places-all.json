@@ -255464,9 +255464,9 @@
         "water",
         "sport"
       ],
-      "price_child": 1700,
-      "price_adult": 1700,
-      "free_note": "пробное занятие — 1700 ₽ или бесплатно при покупке абонемента; занятие индивидуальное, 30 минут",
+      "price_child": 3000,
+      "price_adult": null,
+      "free_note": "пробное занятие — 1700 ₽ или бесплатно при покупке абонемента; разовое — 3000 ₽; абонемент на 4 занятия — 9700 ₽ (2425 ₽ за занятие); занятия индивидуальные, 30 минут",
       "booking": "required",
       "hours": "ежедневно 9:00–21:00",
       "indoor": "yes",
@@ -257203,8 +257203,8 @@
       ],
       "metro": "Сокольники",
       "address": "ул. Короленко, 1А",
-      "lat": 55.799324,
-      "lon": 37.687905,
+      "lat": 55.799446,
+      "lon": 37.687932,
       "age_min": 3,
       "age_max": 14,
       "duration_min": 60,
@@ -271577,7 +271577,7 @@
       "tags": [],
       "price_child": 900,
       "price_adult": null,
-      "free_note": "пробное 900 ₽ (засчитывается в абонемент); группа от 4800 ₽/мес за 4 занятия",
+      "free_note": "пробное 900 ₽ (засчитывается в абонемент); группа от 4800 ₽/мес",
       "booking": "required",
       "hours": null,
       "indoor": "yes",
@@ -272874,7 +272874,11 @@
       "status": "draft",
       "cats": [
         "sambo",
-        "taekwondo"
+        "taekwondo",
+        "rhythmic",
+        "acrobatics",
+        "football",
+        "racket"
       ],
       "coord_exact": true,
       "birthday": null,
@@ -272883,7 +272887,7 @@
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
-      "point_level": "дом"
+      "point_level": "вход"
     },
     {
       "id": "raviga-khimki-skhodnya",
@@ -273330,7 +273334,7 @@
       ],
       "price_child": 16000,
       "price_adult": null,
-      "free_note": "детская группа 2 раза в неделю 16 000 ₽/мес",
+      "free_note": "детская группа 2 раза в неделю — 16 000 ₽/мес; первая пробная тренировка — бесплатно",
       "booking": "required",
       "hours": null,
       "indoor": "yes",
@@ -273338,11 +273342,11 @@
       "changing_table": null,
       "cloakroom": null,
       "stroller": "partial",
-      "parking": null,
+      "parking": "yes",
       "adult_interest": 1,
       "plus": "Детские группы с 4 лет, программа по возрастам до 17 лет",
       "minus": "Детская группа 2 раза в неделю 16 000 ₽/мес",
-      "url": "https://bolshoitennis.ru/moscow",
+      "url": "https://bolshoitennis.ru/moscow/dolgoprudny",
       "source": "bolshoitennis.ru (проверено 2026-11-06)",
       "verified_at": "2026-11-06",
       "status": "draft",
@@ -273351,8 +273355,8 @@
       ],
       "coord_exact": null,
       "birthday": null,
-      "how_to_find": null,
-      "phone": null,
+      "how_to_find": "Вход: заезд со стороны ул. Коммунальной\nПарковка: бесплатная, на территории клуба",
+      "phone": "+7 (904) 242-47-14",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
@@ -273682,7 +273686,7 @@
       "address": "Косинская ул., 12Б",
       "lat": 55.724794,
       "lon": 37.833585,
-      "age_min": 4,
+      "age_min": 7,
       "age_max": 17,
       "duration_min": 45,
       "duration_max": 60,
@@ -274159,7 +274163,7 @@
       "address": "ул. Борисовские Пруды, 20, корп. 3Б",
       "lat": 55.636223,
       "lon": 37.753944,
-      "age_min": 4,
+      "age_min": 7,
       "age_max": 17,
       "duration_min": 45,
       "duration_max": 60,
@@ -275227,7 +275231,7 @@
       "price_adult": null,
       "free_note": "детский балет: пробное бесплатно, абонемент на месяц от 7 900 ₽ (от 6 400 ₽/мес при оплате за год)",
       "booking": "required",
-      "hours": null,
+      "hours": "ежедневно 10:00–21:30",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -275239,8 +275243,8 @@
       "minus": "Студии в торговых центрах — по выходным там людно; цена конкретного филиала уточняется у администратора",
       "url": "https://azbukabaleta.ru/moscow/",
       "source": "azbukabaleta.ru/moscow (адреса, возраст, цены), zoon.ru (проверено 2026-11-06)",
-      "verified_at": "2026-11-06",
-      "status": "draft",
+      "verified_at": "2026-11-12",
+      "status": "verified",
       "cats": [
         "ballet"
       ],
@@ -275249,9 +275253,38 @@
       "how_to_find": "Шлагбаум: есть ворота в ~55 м\nПарковка: рядом (~77 м); вдоль улицы (~95 м)",
       "phone": "+7 (915) 217-35-23",
       "season_months": null,
-      "open_mode": "unknown",
-      "open_week": null,
-      "point_level": "дом"
+      "open_mode": "hours",
+      "open_week": [
+        [
+          600,
+          1290
+        ],
+        [
+          600,
+          1290
+        ],
+        [
+          600,
+          1290
+        ],
+        [
+          600,
+          1290
+        ],
+        [
+          600,
+          1290
+        ],
+        [
+          600,
+          1290
+        ],
+        [
+          600,
+          1290
+        ]
+      ],
+      "point_level": "вход"
     },
     {
       "id": "azbuka-baleta-khimki",
@@ -275443,8 +275476,8 @@
       ],
       "metro": "Фили",
       "address": "Багратионовский пр-д, 5, ТЦ «Филион», 3 этаж",
-      "lat": 55.743996,
-      "lon": 37.507784,
+      "lat": 55.743995,
+      "lon": 37.507207,
       "age_min": 4,
       "age_max": 14,
       "duration_min": 60,
@@ -275478,12 +275511,12 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Вход: главный вход ТРЦ «Филион»\nЭтаж: 3",
       "phone": "+7 (915) 370-02-02",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
-      "point_level": "дом"
+      "point_level": "вход"
     },
     {
       "id": "chesslab-bagrationovskaya",
@@ -277008,7 +277041,7 @@
       "adult_interest": 1,
       "plus": "Детский баскетбол с 5 лет рядом с домом: группы по возрасту, своя лига и турниры",
       "minus": "Цена «от» — для длинного абонемента",
-      "url": "https://husbasket.ru/",
+      "url": "https://husbasket.ru/filialy/",
       "source": "trenera.ru/kluby/basketbol/dlya-detej, inring.ru (возраст 5–15, цена «от») (проверено 2026-11-07); цена «от» за занятие в абонементе; пробное — по записи; уточняйте расписание зала",
       "verified_at": "2026-11-07",
       "status": "draft",
@@ -277063,7 +277096,7 @@
       "url": "https://husbasket.ru/",
       "source": "trenera.ru/kluby/basketbol/dlya-detej, inring.ru (возраст 5–15, цена «от») (проверено 2026-11-07); цена «от» за занятие в абонементе; пробное — по записи; уточняйте расписание зала",
       "verified_at": "2026-11-07",
-      "status": "draft",
+      "status": "closed",
       "cats": [
         "ballgames"
       ],
@@ -277216,7 +277249,7 @@
       "adult_interest": 1,
       "plus": "Детский баскетбол с 5 лет рядом с домом: группы по возрасту, своя лига и турниры",
       "minus": "Цена «от» — для длинного абонемента",
-      "url": "https://husbasket.ru/",
+      "url": "https://husbasket.ru/filialy/",
       "source": "trenera.ru/kluby/basketbol/dlya-detej, inring.ru (возраст 5–15, цена «от») (проверено 2026-11-07); цена «от» за занятие в абонементе; пробное — по записи; уточняйте расписание зала",
       "verified_at": "2026-11-07",
       "status": "draft",
@@ -277230,7 +277263,7 @@
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
-      "point_level": "дом"
+      "point_level": "вход"
     },
     {
       "id": "husky-basket-khimki-mashkinskoe",
@@ -277271,7 +277304,7 @@
       "url": "https://husbasket.ru/",
       "source": "trenera.ru/kluby/basketbol/dlya-detej, inring.ru (возраст 5–15, цена «от») (проверено 2026-11-07); цена «от» за занятие в абонементе; пробное — по записи; уточняйте расписание зала",
       "verified_at": "2026-11-07",
-      "status": "draft",
+      "status": "closed",
       "cats": [
         "ballgames"
       ],
@@ -277427,7 +277460,7 @@
       "url": "https://husbasket.ru/",
       "source": "trenera.ru/kluby/basketbol/dlya-detej, inring.ru (возраст 5–15, цена «от») (проверено 2026-11-07); цена «от» за занятие в абонементе; пробное — по записи; уточняйте расписание зала",
       "verified_at": "2026-11-07",
-      "status": "draft",
+      "status": "closed",
       "cats": [
         "ballgames"
       ],
@@ -278350,8 +278383,8 @@
       ],
       "metro": "Красные ворота",
       "address": "Большой Харитоньевский пер., 22/1",
-      "lat": 55.765366,
-      "lon": 37.648421,
+      "lat": 55.765333,
+      "lon": 37.648393,
       "age_min": 7,
       "age_max": 17,
       "duration_min": 60,
@@ -278378,7 +278411,7 @@
       "adult_interest": 1,
       "plus": "Спортшкола олимпийского резерва по волейболу: два оборудованных зала, группы с 7 лет",
       "minus": "Набор по просмотру; места в группах ограничены",
-      "url": null,
+      "url": "https://s21.mossport.ru/",
       "source": "sportschools.ru/gorod-Moscow/region-CAO/sport-Volleyball (проверено 2026-11-07)",
       "verified_at": "2026-11-07",
       "status": "draft",
@@ -278388,11 +278421,11 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": null,
+      "phone": "+7 (495) 625-31-48",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
-      "point_level": "дом"
+      "point_level": "вход"
     },
     {
       "id": "iskra-novogireevo-volley",
@@ -278808,7 +278841,7 @@
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
-      "point_level": "дом"
+      "point_level": "вход"
     },
     {
       "id": "stantsiya-talantov-chess",
@@ -283887,11 +283920,11 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": null,
+      "phone": "+7 (915) 260-23-19",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
-      "point_level": "дом"
+      "point_level": "вход"
     },
     {
       "id": "pbk-cska-avtozavodskaya",
@@ -283939,7 +283972,7 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": null,
+      "phone": "+7 (927) 836-42-89",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
@@ -284043,7 +284076,7 @@
       "coord_exact": null,
       "birthday": null,
       "how_to_find": null,
-      "phone": null,
+      "phone": "+7 (977) 755-84-19",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
@@ -284095,7 +284128,7 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": null,
+      "phone": "+7 (991) 691-23-23",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
@@ -284350,7 +284383,7 @@
       "plus": "Шахматы для детей 3–14 лет в небольших группах: малыши учатся в игровой форме, старшие — турниры и разряды; Первое занятие бесплатно",
       "minus": null,
       "url": "http://champion-chesskids.ru/adres",
-      "source": "champion-chesskids.ru — адреса филиалов (проверено 2026-11-07); абонемент — у администратора; Занятия проходят в помещениях школ и центров — точный вход уточняйте у администратора",
+      "source": "champion-chesskids.ru — адреса филиалов (проверено 2026-11-07); Занятия проходят в помещениях школ и центров — точный вход уточняйте у администратора",
       "verified_at": "2026-11-07",
       "status": "draft",
       "cats": [
@@ -284359,7 +284392,7 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": null,
+      "phone": "+7 (916) 307-89-10",
       "trial_free": true,
       "season_months": null,
       "open_mode": "unknown",
@@ -284480,8 +284513,8 @@
       ],
       "metro": "Новокосино",
       "address": "Реутов, ул. Котовского, 13",
-      "lat": 55.7478,
-      "lon": 37.869,
+      "lat": 55.747601,
+      "lon": 37.869434,
       "age_min": 3,
       "age_max": 14,
       "duration_min": 45,
@@ -284509,21 +284542,21 @@
       "plus": "Шахматы для детей 3–14 лет в небольших группах: малыши учатся в игровой форме, старшие — турниры и разряды; Первое занятие бесплатно",
       "minus": null,
       "url": "http://champion-chesskids.ru/adres",
-      "source": "champion-chesskids.ru — адреса филиалов (проверено 2026-11-07); абонемент — у администратора; Занятия проходят в помещениях школ и центров — точный вход уточняйте у администратора",
+      "source": "champion-chesskids.ru — адреса филиалов (проверено 2026-11-07); Занятия проходят в помещениях школ и центров — точный вход уточняйте у администратора",
       "verified_at": "2026-11-07",
       "status": "draft",
       "cats": [
         "chess"
       ],
-      "coord_exact": null,
+      "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": null,
+      "phone": "+7 (916) 307-89-10",
       "trial_free": true,
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
-      "point_level": "примерно"
+      "point_level": "вход"
     },
     {
       "id": "champions-chess-yuzhnaya",
@@ -284668,7 +284701,7 @@
       "plus": "Шахматы для детей 3–14 лет в небольших группах: малыши учатся в игровой форме, старшие — турниры и разряды; Первое занятие бесплатно",
       "minus": null,
       "url": "http://champion-chesskids.ru/adres",
-      "source": "champion-chesskids.ru — адреса филиалов (проверено 2026-11-07); абонемент — у администратора; Занятия проходят в помещениях школ и центров — точный вход уточняйте у администратора",
+      "source": "champion-chesskids.ru — адреса филиалов (проверено 2026-11-07); Занятия проходят в помещениях школ и центров — точный вход уточняйте у администратора",
       "verified_at": "2026-11-07",
       "status": "draft",
       "cats": [
@@ -284677,12 +284710,12 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": null,
+      "phone": "+7 (916) 307-89-10",
       "trial_free": true,
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
-      "point_level": "дом"
+      "point_level": "вход"
     },
     {
       "id": "moskva98-volley-udaltsova",
