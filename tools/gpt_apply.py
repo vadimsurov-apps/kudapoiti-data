@@ -124,7 +124,13 @@ def main():
                     if h: fields["how"] = h
                     else: left[k] = w
                 elif k == "age" and isinstance(v, list) and len(v) == 2:
-                    fields["age_min"], fields["age_max"] = int(v[0]), int(v[1])
+                    # 12.11: сужение возраста само не применяем — прячет место в «Кто идёт». Первый же отчёт Codex дал
+                    # музею транспорта «7–18» со страницы льгот: это возраст детского билета, а не «с какого пускают».
+                    lo, hi = int(v[0]), int(v[1])
+                    if p.get("age_min") is not None and p.get("age_max") is not None and (lo > p["age_min"] or hi < p["age_max"]):
+                        left[k] = {**w, "why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"}
+                    else:
+                        fields["age_min"], fields["age_max"] = lo, hi
                 else:
                     left[k] = w        # kidsroom и прочее — смотрит сверщик
         srcs |= set(c.get("sources") or [])
