@@ -2315,6 +2315,37 @@
 }
 ]
 },
+"akademiya-gimnastiki-ryazansky": {
+"building_addr": "Рязанский проспект, 6 к2",
+"gates": [
+{
+"barrier": "gate",
+"d": 38
+},
+{
+"barrier": "gate",
+"d": 44
+}
+],
+"parking": [
+{
+"d": 99,
+"name": "Парковка №43",
+"operator": "Гормост"
+},
+{
+"d": 110,
+"name": "Парковка №42",
+"operator": "Гормост"
+},
+{
+"d": 116
+},
+{
+"d": 117
+}
+]
+},
 "akademiya-gimnastiki-yasenevaya": {
 "building_addr": "Ясеневая улица, 26",
 "building_entrances": [
@@ -2756,6 +2787,67 @@
 "d": 217,
 "fee": "no",
 "parking": "surface"
+}
+]
+},
+"akro-miks-nizhegorodskaya": {
+"building_addr": "Нижегородская улица, 70 к1",
+"building_entrances": [
+{
+"addr:flats": "67-110",
+"d": 15,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"addr:flats": "111-154",
+"d": 20,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"addr:flats": "23-66",
+"d": 47,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"addr:flats": "155-198",
+"d": 52,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"addr:flats": "1-22",
+"d": 70,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "199-220",
+"d": 75,
+"entrance": "staircase",
+"ref": "6"
+}
+],
+"parking": [
+{
+"d": 134
+},
+{
+"d": 233,
+"parking": "street_side"
+}
+]
+},
+"akro-miks-volgogradsky": {
+"building_addr": "Волгоградский проспект, 46/15",
+"parking": [
+{
+"d": 253
+},
+{
+"d": 254
 }
 ]
 },
@@ -8731,6 +8823,27 @@
 }
 ]
 },
+"attitude-mosfilmovskaya": {
+"building_addr": "Мосфильмовская улица, 53",
+"parking": [
+{
+"d": 44,
+"parking": "street_side"
+},
+{
+"d": 46,
+"parking": "street_side"
+},
+{
+"d": 63,
+"parking": "street_side"
+},
+{
+"d": 76,
+"parking": "street_side"
+}
+]
+},
 "attitude-volskaya": {
 "building_addr": "2-я Вольская улица, 11 к4",
 "parking": [
@@ -13353,26 +13466,16 @@
 },
 "belaya-studio-komsomolsky": {
 "building_addr": "Комсомольский проспект, 24 с2",
-"gates": [
-{
-"barrier": "lift_gate",
-"d": 42
-},
-{
-"barrier": "gate",
-"d": 58
-}
-],
 "parking": [
 {
 "access": "customers",
-"d": 213,
+"d": 233,
 "fee": "yes",
 "parking": "surface"
 },
 {
 "access": "customers",
-"d": 246,
+"d": 270,
 "fee": "yes",
 "parking": "surface"
 }
@@ -29854,25 +29957,25 @@
 "parking": [
 {
 "access": "yes",
-"d": 61,
+"d": 55,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 78,
+"d": 84,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 112,
+"d": 113,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 124,
+"d": 119,
 "fee": "no",
 "parking": "surface"
 }
@@ -54292,24 +54395,24 @@
 "parking": [
 {
 "access": "customers",
-"d": 29,
-"fee": "no",
-"parking": "surface"
-},
-{
-"access": "customers",
-"d": 205,
+"d": 81,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 207,
+"d": 170,
 "parking": "street_side"
 },
 {
 "access": "customers",
-"d": 234,
+"d": 221,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 223,
 "fee": "no",
 "parking": "surface"
 }
@@ -54408,21 +54511,22 @@
 "gates": [
 {
 "barrier": "lift_gate",
-"d": 36
+"d": 49
 }
 ],
 "parking": [
 {
-"d": 55
+"d": 77
 },
 {
-"d": 108
+"d": 141
 },
 {
-"d": 117
+"d": 206
 },
 {
-"d": 198
+"d": 208,
+"fee": "yes"
 }
 ],
 "poi": {
@@ -66133,49 +66237,24 @@
 },
 "edupeople-robotics-zhukova": {
 "building_addr": "проспект Маршала Жукова, 51",
-"building_entrances": [
+"gates": [
 {
-"d": 15,
-"entrance": "staircase",
-"ref": "2"
-},
-{
-"d": 17,
-"entrance": "staircase",
-"ref": "3"
-},
-{
-"d": 42,
-"entrance": "staircase",
-"ref": "1"
-},
-{
-"d": 45,
-"entrance": "staircase",
-"ref": "4"
+"access": "private",
+"barrier": "gate",
+"d": 49
 }
 ],
 "parking": [
 {
-"access": "yes",
-"d": 29,
-"fee": "no",
+"d": 73
+},
+{
+"capacity": "46",
+"capacity:disabled": "6",
+"charge": "50 RUB/hour",
+"d": 281,
+"fee": "yes",
 "parking": "surface"
-},
-{
-"access": "yes",
-"d": 33,
-"fee": "no",
-"parking": "surface"
-},
-{
-"d": 37
-},
-{
-"access": "yes",
-"d": 40,
-"fee": "no",
-"parking": "street_side"
 }
 ]
 },
@@ -79483,6 +79562,33 @@
 }
 ]
 },
+"gloria-gym-kolomenskaya-nab": {
+"building_addr": "Коломенская набережная, 8",
+"parking": [
+{
+"d": 92,
+"parking": "surface"
+},
+{
+"d": 211,
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 281,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"access": "yes",
+"d": 287,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+}
+]
+},
 "gloria-gym-nagatinskaya-nab": {
 "building_addr": "Нагатинская набережная, 12 к1",
 "gates": [
@@ -80707,6 +80813,38 @@
 },
 {
 "d": 69,
+"parking": "street_side"
+}
+]
+},
+"grace-gym-grayvoronovsky": {
+"parking": [
+{
+"access": "yes",
+"capacity": "4",
+"capacity:disabled": "2",
+"d": 76,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"capacity": "8",
+"d": 84,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"capacity": "8",
+"d": 121,
+"fee": "yes",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"capacity": "10",
+"d": 128,
 "parking": "street_side"
 }
 ]
@@ -90437,6 +90575,29 @@
 "d": 180,
 "fee": "no",
 "parking": "street_side"
+}
+]
+},
+"isamashi-leninsky-92": {
+"building_addr": "Ленинский проспект, 92 к1",
+"parking": [
+{
+"d": 197,
+"parking": "surface"
+},
+{
+"capacity": "10",
+"d": 227,
+"parking": "surface"
+},
+{
+"d": 261,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 291,
+"parking": "surface"
 }
 ]
 },
@@ -102139,6 +102300,32 @@
 {
 "capacity": "52",
 "d": 133,
+"parking": "surface"
+}
+]
+},
+"kumite-dojo-krasnogorsk": {
+"parking": [
+{
+"access": "yes",
+"d": 54,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 78,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 83,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 111,
 "parking": "surface"
 }
 ]
@@ -124465,28 +124652,36 @@
 "building_addr": "Днепропетровская улица, 25А",
 "building_entrances": [
 {
-"d": 528,
+"d": 0,
 "entrance": "main"
+}
+],
+"gates": [
+{
+"barrier": "gate",
+"d": 44
+},
+{
+"barrier": "gate",
+"d": 47
 }
 ],
 "parking": [
 {
-"d": 23,
-"parking": "surface"
+"d": 111
 },
 {
-"d": 99,
-"name": "ГСК-25",
-"parking": "multi-storey"
+"d": 117
+},
+{
+"d": 123,
+"parking": "street_side"
 },
 {
 "access": "yes",
-"d": 186,
+"d": 203,
 "fee": "no",
 "parking": "surface"
-},
-{
-"d": 218
 }
 ]
 },
@@ -124778,31 +124973,24 @@
 "building_addr": "Береговой проезд, 5А к1",
 "building_entrances": [
 {
-"d": 134,
+"d": 0,
 "entrance": "main",
 "name": "Торговый Центр"
 }
 ],
-"gates": [
-{
-"barrier": "lift_gate",
-"d": 40
-}
-],
 "parking": [
 {
-"d": 157,
-"parking": "underground"
+"d": 74
 },
 {
-"d": 159,
-"parking": "street_side"
+"d": 89
 },
 {
-"d": 161
+"d": 139
 },
 {
-"d": 199
+"access": "yes",
+"d": 146
 }
 ]
 },
@@ -148775,6 +148963,34 @@
 "d": 204,
 "fee": "no",
 "parking": "street_side"
+}
+]
+},
+"sibirsky-bars-klenovy": {
+"building_addr": "Кленовый бульвар, 23",
+"building_entrances": [
+{
+"d": 12,
+"entrance": "yes"
+}
+],
+"gates": [
+{
+"access": "private",
+"barrier": "lift_gate",
+"d": 50
+}
+],
+"parking": [
+{
+"d": 227,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 257,
+"fee": "no",
+"parking": "surface"
 }
 ]
 },
@@ -172945,8 +173161,23 @@
 "building_addr": "Варшавское шоссе, 125 к3",
 "parking": [
 {
-"d": 288,
-"fee": "yes"
+"access": "yes",
+"d": 79,
+"fee": "no",
+"name": "перехватывающая парковка метро ул.Академика Янгеля",
+"parking": "surface"
+},
+{
+"access": "customers",
+"capacity": "25",
+"d": 172,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 271,
+"parking": "underground"
 }
 ]
 },
