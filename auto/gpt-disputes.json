@@ -1,4 +1,60 @@
 {
+"akademiya-ritma-yaroslavskoe": {
+"date": "2026-11-12",
+"note": "Первоисточник именно этого филиала не найден.",
+"resolved": false,
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
+"albatros": {
+"date": "2026-11-12",
+"note": "Официальный сайт подтверждает работу театра и телефоны бронирования; актуальные адрес, цены и возраст по конкретным спектаклям не подтверждены.",
+"resolved": false,
+"sources": [
+"https://tk-albatros.ru/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://tk-albatros.ru/",
+"value": "+7 (495) 517-22-23; +7 (499) 367-53-72"
+},
+"url": {
+"source": "https://tk-albatros.ru/",
+"value": "https://tk-albatros.ru/"
+}
+}
+},
+"bank-museum": {
+"date": "2026-11-12",
+"note": "Карточка смешивает площадку на Неглинной и детскую экскурсию «Дом рубля» на другой площадке; возраст не подтвержден.",
+"resolved": false,
+"sources": [
+"https://cbr.ru/static/museum/",
+"https://museum.cbr.ru/about/glavnoe-zdanie-banka-rossii/",
+"https://museum.cbr.ru/excursions/dom-rublya/"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://cbr.ru/static/museum/",
+"value": "пн-пт 10:00-16:00"
+},
+"how": {
+"source": "https://museum.cbr.ru/about/glavnoe-zdanie-banka-rossii/",
+"value": "Вход: экспозиция «Страницы истории Банка России» — корпус Д со стороны Кузнецкого Моста; посещение только по предварительной записи"
+},
+"phone": {
+"source": "https://cbr.ru/static/museum/",
+"value": "+7 (495) 771-42-86"
+},
+"url": {
+"source": "https://cbr.ru/static/museum/",
+"value": "https://museum.cbr.ru/"
+}
+}
+},
 "cafe-akademiya-sokol": {
 "date": "2026-11-10",
 "note": "Официальный список публикует один из двух телефонов очереди. Наличие детского меню подтверждается, актуальная работа отдельной игровой не установлена.",
@@ -665,5 +721,274 @@
 "value": "Ресторан на 1-м этаже ТЦ «София». Условия проезда через шлагбаум и тариф парковки не подтверждены."
 }
 }
+},
+"city-economy-museum": {
+"date": "2026-11-12",
+"note": "ВДНХ подтверждает бесплатный вход; точный общий режим на проверенной странице не установлен.",
+"resolved": false,
+"sources": [
+"https://vdnh.ru/news/31904/",
+"https://vdnh.ru/places/pavilon-5-muzey-gorodskogo-hozyaystva-moskvy/",
+"https://vdnh.ru/places/pavilon-5-muzey-gorodskogo-khozyaystva-moskvy/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://vdnh.ru/places/pavilon-5-muzey-gorodskogo-khozyaystva-moskvy/",
+"value": "+7 (495) 609-20-25"
+},
+"url": {
+"source": "https://vdnh.ru/places/pavilon-5-muzey-gorodskogo-khozyaystva-moskvy/",
+"value": "https://kghmuseum.ru/"
+}
+}
+},
+"kolomenskoe": {
+"date": "2026-11-12",
+"note": "Парк не круглосуточный; музейные выставки работают по отдельному расписанию.",
+"resolved": false,
+"sources": [
+"https://www.mgomz.ru/ru/pages/contacts_kolomenskoe"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://www.mgomz.ru/ru/pages/contacts_kolomenskoe",
+"value": "ежедневно 05:30-23:00"
+},
+"phone": {
+"source": "https://www.mgomz.ru/ru/pages/contacts_kolomenskoe",
+"value": "+7 (499) 614-88-80"
+},
+"url": {
+"source": "https://www.mgomz.ru/ru/pages/contacts_kolomenskoe",
+"value": "https://www.mgomz.ru/ru/kolomenskoe"
+}
+}
+},
+"luzhniki-aqua": {
+"date": "2026-11-12",
+"note": "В аквапарк можно с любого возраста; до 16 лет — только со взрослым.",
+"resolved": false,
+"sources": [
+"https://aqua.luzhniki.ru/contacts/",
+"https://aqua.luzhniki.ru/tarify/",
+"https://aqua.luzhniki.ru/voprosi/"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://aqua.luzhniki.ru/voprosi/",
+"value": [
+0,
+15
+]
+},
+"how": {
+"source": "https://aqua.luzhniki.ru/contacts/",
+"value": "Парковка: въезд на территорию Олимпийского комплекса «Лужники» платный"
+},
+"phone": {
+"source": "https://aqua.luzhniki.ru/contacts/",
+"value": "+7 (495) 106-88-88"
+}
+}
+},
+"mosfilm": {
+"date": "2026-11-12",
+"note": "Рекомендованный возраст 12+; текущая цена сборной экскурсии значительно ниже указанной.",
+"resolved": false,
+"sources": [
+"https://www.mosfilm.ru/contacts/",
+"https://www.mosfilm.ru/excursions/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://www.mosfilm.ru/contacts/",
+"value": "Мосфильмовская ул., 1"
+},
+"age": {
+"source": "https://www.mosfilm.ru/excursions/",
+"value": [
+12,
+17
+]
+},
+"hours": {
+"source": "https://www.mosfilm.ru/excursions/",
+"value": "ежедневно 10:00-18:30"
+},
+"how": {
+"source": "https://www.mosfilm.ru/excursions/",
+"value": "Вход: через проходную, сотрудник музея встречает сборную группу; посещение только по предварительной записи\nПарковка: для частных автомобилей на территории нет; бесплатные карманы вдоль забора"
+},
+"price": {
+"source": "https://www.mosfilm.ru/excursions/",
+"value": {
+"adult": 960,
+"child": 780
+}
+},
+"url": {
+"source": "https://www.mosfilm.ru/excursions/",
+"value": "https://www.mosfilm.ru/excursions/"
+}
+}
+},
+"ostrov-mechty": {
+"date": "2026-11-12",
+"note": "В карточке ошибочно указан неофициальный Taplink и другой телефон.",
+"resolved": false,
+"sources": [
+"https://dreamisland.moscow/contacts/",
+"https://dreamisland.ru/about/location"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://dreamisland.ru/about/location",
+"value": "Вход: со стороны станции метро «Технопарк»\nПарковка: въезд 1 закрыт; использовать въезды 2 и 3"
+},
+"phone": {
+"source": "https://dreamisland.moscow/contacts/",
+"value": "+7 (495) 221-00-00"
+},
+"url": {
+"source": "https://dreamisland.ru/about/location",
+"value": "https://dreamisland.ru/"
+}
+}
+},
+"pryanik-museum": {
+"date": "2026-11-12",
+"note": "Официальный сайт подтверждает адрес и этаж; единые часы, возраст и сопоставимые цены не найдены.",
+"resolved": false,
+"sources": [
+"https://gingerbread-msk.ru/"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://gingerbread-msk.ru/",
+"value": "Этаж: 3"
+},
+"phone": {
+"source": "https://gingerbread-msk.ru/",
+"value": "+7 (985) 043-49-69"
+},
+"url": {
+"source": "https://gingerbread-msk.ru/",
+"value": "https://gingerbread-msk.ru/"
+}
+}
+},
+"sobranie-museum": {
+"date": "2026-11-12",
+"note": "Посещение детей младше 6 лет не рекомендовано; вход только по записи.",
+"resolved": false,
+"sources": [
+"https://mus-col.com/contacts/"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://mus-col.com/contacts/",
+"value": "пн выходной; вт-вс 12:00-18:00"
+},
+"how": {
+"source": "https://mus-col.com/contacts/",
+"value": "Вход: только по предварительной записи в составе группы с экскурсоводом"
+},
+"phone": {
+"source": "https://mus-col.com/contacts/",
+"value": "+7 (495) 234-06-30"
+}
+}
+},
+"toy-museum": {
+"date": "2026-11-12",
+"note": "Экспозиция перенесена на 3-й этаж Дворца Русской Трапезы.",
+"resolved": false,
+"sources": [
+"https://www.kremlin-izmailovo.com/grafik-raboty-muzeev-i-masterskikh",
+"https://www.kremlin-izmailovo.com/muzei/muzey-teatr-russkoy-igrushki"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://www.kremlin-izmailovo.com/muzei/muzey-teatr-russkoy-igrushki",
+"value": "Этаж: 3, зал «Хохлома» Дворца Русской Трапезы"
+},
+"phone": {
+"source": "https://www.kremlin-izmailovo.com/grafik-raboty-muzeev-i-masterskikh",
+"value": "+7 (495) 215-54-37"
+},
+"url": {
+"source": "https://www.kremlin-izmailovo.com/muzei/muzey-teatr-russkoy-igrushki",
+"value": "https://www.kremlin-izmailovo.com/muzei/muzey-teatr-russkoy-igrushki"
+}
+}
+},
+"transport": {
+"date": "2026-11-12",
+"note": "Детский тариф указан для школьников 7–18 лет; возраст всей экспозиции не установлен.",
+"resolved": false,
+"sources": [
+"https://new.mtmuseum.ru/",
+"https://new.mtmuseum.ru/benefits"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://new.mtmuseum.ru/benefits",
+"value": [
+7,
+18
+]
+},
+"how": {
+"source": "https://new.mtmuseum.ru/",
+"value": "Вход: в соседнем треугольном павильоне сразу за зданием-подковой со стороны метро «Комсомольская»"
+},
+"price": {
+"source": "https://new.mtmuseum.ru/benefits",
+"value": {
+"adult": 700,
+"child": 450
+}
+},
+"url": {
+"source": "https://new.mtmuseum.ru/",
+"value": "https://new.mtmuseum.ru/"
+}
+}
+},
+"tsaritsyno": {
+"date": "2026-11-12",
+"note": "Проверены режим парка и основные контакты.",
+"resolved": false,
+"sources": [
+"https://tsaritsyno-museum.ru/park/sport/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://tsaritsyno-museum.ru/park/sport/",
+"value": "+7 (495) 322-44-33"
+},
+"url": {
+"source": "https://tsaritsyno-museum.ru/park/sport/",
+"value": "https://tsaritsyno-museum.ru/"
+}
+}
+},
+"vzhukh-dance-yushunskaya": {
+"date": "2026-11-12",
+"note": "Первоисточник именно этого филиала не найден.",
+"resolved": false,
+"sources": [],
+"status": "not_found",
+"wrong": {}
 }
 }
