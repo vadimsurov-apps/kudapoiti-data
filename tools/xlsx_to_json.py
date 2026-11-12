@@ -386,6 +386,27 @@ def apply_changing(places):
     print(f"Пеленальный стол по OSM: {n}")
 
 
+def apply_access(places):
+    """Доступная среда (Вадим 12.11: «места для людей с ограниченными возможностями — один из самых важных разделов»).
+    auto/access-needs.json {id: {wheelchair, toilet, lift, parking, sensory, hearing, vision, programs, free, note, src}}
+    — только подтверждённое источником (пишут сверщики через set_verified, поле access). Плюс тег OSM wheelchair
+    у объекта этого места (auto/osm-access.json), если своего значения нет. Поле access у места в places.json."""
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    def load(name):
+        path = os.path.join(root, "auto", name)
+        return json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {}
+    needs, osm = load("access-needs.json"), load("osm-access.json")
+    n = 0
+    for p in places:
+        a = {k: v for k, v in (needs.get(p["id"]) or {}).items() if k not in ("src", "checked") and v}
+        w = ((osm.get(p["id"]) or {}).get("poi") or {}).get("wheelchair") if isinstance(osm.get(p["id"]), dict) else None
+        if w in ("yes", "limited", "no") and "wheelchair" not in a:
+            a["wheelchair"] = w
+        if a:
+            p["access"] = a; n += 1
+    print(f"Доступная среда: {n}")
+
+
 def apply_contacts(places, spam, spam_domains):
     """Телефон и сайт (Вадим 09.11: «во всех карточках — рабочие телефоны и ссылки на основной сайт»).
     Порядок: таблица → auto/contacts.json (проверено роботом «навигатор» по сайту/поиску) → объект OSM с тем же
@@ -488,6 +509,7 @@ def main():
     apply_contacts(places, spam, spam_domains)
     apply_changing(places)
     apply_cat_ages(places)
+    apply_access(places)
     for p in places:
         clean_texts(p)
 

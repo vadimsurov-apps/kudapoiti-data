@@ -31,7 +31,7 @@ jobs:
             git fetch -q origin main && git reset -q --hard origin/main
             ls auto/verify-batches/*.json >/dev/null 2>&1 || { echo "пачек нет"; exit 0; }
             python3 tools/apply_batches.py
-            git add -A data auto/verified.json auto/contacts.json auto/confirm-tried.json auto/verify-batches
+            git add -A data auto/verified.json auto/contacts.json auto/access-needs.json auto/confirm-tried.json auto/verify-batches
             git diff --cached --quiet && exit 0
             git commit -q -m "Сверка: пачки параллельных сверщиков записаны"
             if git push -q origin HEAD:main; then gh workflow run build.yml --ref main; exit 0; fi

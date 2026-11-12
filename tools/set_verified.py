@@ -15,6 +15,12 @@ batch.json: {"<id>": {
     "closed": false                  # true — место закрыто навсегда/переехало без нового адреса: статус closed, с карты убрать
 }}
 - Пишет в таблицу места (основная или data/parts/<робот>.xlsx; таблицы роботов с замком моложе 75 мин — пропускает).
+- access — доступная среда (урок 10 CLAUDE.md), словарь только из подтверждённого источником:
+  {"wheelchair": "yes|limited|no", "toilet": "yes|no", "lift": "yes|no", "parking": "yes|no",
+   "sensory": "…факт: тихие часы, сенсорная комната…", "hearing": "…сурдоперевод, индукционная петля, субтитры…",
+   "vision": "…тактильные экспонаты, тифлокомментарий, аудиогид…", "programs": "…инклюзивные группы/занятия для детей с ОВЗ…",
+   "free": "…бесплатный/льготный вход детям-инвалидам и сопровождающему…", "note": "…что ещё важно знать…"}
+  — пишется в auto/access-needs.json (применяет сборка).
 - phone/url — в auto/contacts.json (их применяет сборка), как set_access.py.
 - Реестр auto/verified.json: {id: {поле: {"date", "src"}}} — по нему сборка считает точность (auto/metrics.json).
 - Если подтверждены ВСЕ основные поля (point, address, hours, phone, url + цена/чек где применимо) — «Статус данных» =
@@ -46,6 +52,9 @@ def locked(part):
         return True
 
 
+ACCESS_KEYS = {"wheelchair", "toilet", "lift", "parking", "sensory", "hearing", "vision", "programs", "free", "note"}
+
+
 def apply(batch):
     """Записать пачку; вернуть (записанные, отложенные из-за замка, не найденные)."""
     today = datetime.date.today().isoformat()
@@ -53,6 +62,8 @@ def apply(batch):
     ver = json.load(open(vpath)) if os.path.exists(vpath) else {}
     cpath = os.path.join(ROOT, "auto", "contacts.json")
     contacts = json.load(open(cpath)) if os.path.exists(cpath) else {}
+    apath = os.path.join(ROOT, "auto", "access-needs.json")
+    access = json.load(open(apath)) if os.path.exists(apath) else {}
     tables = [("main", os.path.join(ROOT, "data", "kuda-poiti-mesta.xlsx"))]
     pd = os.path.join(ROOT, "data", "parts")
     tables += [(f[:-5], os.path.join(pd, f)) for f in sorted(os.listdir(pd)) if f.endswith(".xlsx")]
@@ -82,6 +93,11 @@ def apply(batch):
                     row[head.index("Точность координат")].value = f"точно ({v.get('level', 'объект')}: {v.get('how', b['src'])}, проверено {today})"
                 elif k in col:
                     row[col[k]].value = ", ".join(v) if isinstance(v, list) else v
+                elif k == "access":
+                    # Доступная среда (Вадим 12.11, урок 10) — auto/access-needs.json, применяет сборка
+                    e = access.setdefault(pid, {})
+                    e.update({a: x for a, x in v.items() if a in ACCESS_KEYS and x not in (None, "")})
+                    e.update(src=b["src"], checked=today)
                 elif k in ("phone", "url"):
                     e = contacts.setdefault(pid, {}); e[k] = v
                     if k == "url": e["url_override"] = True
@@ -102,6 +118,7 @@ def apply(batch):
             wb.save(path)
     json.dump(ver, open(vpath, "w"), ensure_ascii=False, indent=0, sort_keys=True)
     json.dump(contacts, open(cpath, "w"), ensure_ascii=False, indent=0, sort_keys=True)
+    json.dump(access, open(apath, "w"), ensure_ascii=False, indent=0, sort_keys=True)
     missing = set(batch) - done - skipped
     print(f"записано {len(done)}, отложено (замок) {len(skipped)}, не найдено {len(missing)}")
     return done, skipped, missing

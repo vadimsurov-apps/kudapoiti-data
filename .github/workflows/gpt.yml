@@ -34,7 +34,7 @@ jobs:
               git add auto/gpt-checks.json auto/gpt-disputes.json auto/gpt-applied.json 2>/dev/null || true
             else
               python3 tools/build_all.py || exit 1
-              git add data auto/verified.json auto/contacts.json auto/gpt-checks.json auto/gpt-disputes.json \
+              git add data auto/verified.json auto/contacts.json auto/access-needs.json auto/gpt-checks.json auto/gpt-disputes.json \
                 auto/gpt-applied.json places.json places-all.json auto/metrics.json auto/metrics-history.json \
                 gpt/queue.json p icons icons-catalog auto/table-coords.json deals.json
             fi
