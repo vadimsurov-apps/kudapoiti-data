@@ -214674,13 +214674,13 @@
 "metrsk-ru": {
 "url": "https://metrsk.ru/",
 "ok": false,
-"err": "<urlopen error [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1000)>",
+"err": "<urlopen error timed out>",
 "tries": 1
 },
 "metrsk-ru-contacts": {
 "url": "https://metrsk.ru/contacts",
 "ok": false,
-"err": "<urlopen error [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1000)>",
+"err": "<urlopen error timed out>",
 "tries": 1
 },
 "www-smishlenok-club-ru": {
@@ -214722,5 +214722,33 @@
 "ok": false,
 "err": "HTTP Error 404: Not Found",
 "tries": 1
+},
+"msk-warpoint-ru-action": {
+"url": "https://msk.warpoint.ru/action",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"vacuumfly-ru-akcii-aerotruba": {
+"url": "https://vacuumfly.ru/akcii-aerotruba/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"monkeypark-ru-blog-skidka-20-na-rannee-bronirovan": {
+"url": "https://monkeypark.ru/blog/skidka-20-na-rannee-bronirovan/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"mega-ice-ru-akcii-i-novosti": {
+"url": "https://mega-ice.ru/akcii-i-novosti/",
+"ok": true,
+"pages": 4,
+"bytes": 15775,
+"tries": 0
 }
 }
