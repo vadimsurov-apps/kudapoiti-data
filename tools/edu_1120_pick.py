@@ -16,7 +16,7 @@ try:
 except Exception as e: print("q20", e)
 A = {pid: {"addr": addr_how(v[0])[0], "qid": "edu" + v[0].replace(":", "-"), "name": QN.get("edu" + v[0].replace(":", "-"), "")} for pid, v in SEL.items()}
 ANS = json.load(open(os.path.join(ROOT, "auto", "osm-answers.json")))
-FIX = {}
+FIX = {"chernyak-perovskaya": "edu20c-90", "baranova-english-mnevniki": "edu20b-22", "ostrovok-detstva-mnevniki": "edu20b-18", "smartykids-zelenograd": "edu20b-209"}
 
 
 def norm(s):
