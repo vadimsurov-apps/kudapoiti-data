@@ -533,6 +533,8 @@ def main():
     acc_txt = {clean(r.get("id")): r.get("Точность координат") for r in rows}
     for p in places:
         p["point_level"] = point_level.level(p["id"], acc_txt.get(p["id"]), p.get("coord_exact"))
+        if p["point_level"] == "вход":
+            p["point_door"] = point_level.door(p["id"], acc_txt.get(p["id"]))
     shown = [p for p in places if p["point_level"] == "вход" and p.get("lat") is not None and p.get("status") != "closed"]
     for path, lst in ((all_path, places), (dst, shown)):
         with open(path, "w", encoding="utf-8") as f:
