@@ -18,10 +18,10 @@ try:
 except Exception as e: print("q21", e)
 def qid(k):
     a, b = k.split(":")
-    return f"edu21d-{b}" if a == "20" else f"edu21-{b}"
+    return {"20": f"edu21d-{b}", "21": f"edu21-{b}", "21y": f"edu21y-{b}"}[a]
 A = {pid: {"addr": addr_how(v[0])[0], "qid": qid(v[0]), "name": QN.get(qid(v[0]), "")} for pid, v in SEL.items()}
 ANS = json.load(open(os.path.join(ROOT, "auto", "osm-answers.json")))
-FIX = {"kosmos-novokosinskaya": "edu21x-111", "yarkie-deti-nagatinskaya": "edu21x-58"}
+FIX = {"kosmos-novokosinskaya": "edu21x-111", "yarkie-deti-nagatinskaya": "edu21x-58", "svoi-centr-nagatinskaya": "edu21x-90", "pixel-ozernaya": "edu21x-112", "academkids-novokhoroshevsky": "edu21x-142", "inzhinirium-pokryshkina": "edu21x-113"}
 
 
 def norm(s):

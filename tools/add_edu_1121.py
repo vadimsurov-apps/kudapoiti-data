@@ -6,28 +6,34 @@ import openpyxl
 from openpyxl.styles import Font, Alignment, Border, Side
 from add_batch14 import metro
 from batch_helpers import P, SRC
-from edu_1121_sel import SEL
+from edu_1121_sel import SEL, TAKE
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 HERE = os.path.dirname(os.path.abspath(__file__))
 DT = "2026-11-12"
 E = {**{"20:" + k: v for k, v in json.load(open(os.path.join(HERE, "edu_1120_ext.json"))).items()},
-     **{"21:" + k: v for k, v in (json.load(open(os.path.join(HERE, "edu_1121_ext.json"))).items() if os.path.exists(os.path.join(HERE, "edu_1121_ext.json")) else [])}}
+     **{"21:" + k: v for k, v in json.load(open(os.path.join(HERE, "edu_1121_ext.json"))).items()},
+     **{"21y:" + k: v for k, v in json.load(open(os.path.join(HERE, "edu_1121_ext2.json"))).items()}}
 _pp = os.path.join(HERE, "edu_1121_points.json")
 PTS = json.load(open(_pp)) if os.path.exists(_pp) else {}
 YA = "Яндекс Карты: карточка организации (рубрика, адрес, этаж/вход, телефон, сайт, услуги, цены и возраст групп, доступность), выдача «{q}», 12.11.2026"
-SITE_SRC = {"akademiya-razvitiya-makarovoy": "сайт akademia-razvitiya.ru (группа для детей с ЗРР, ЗПРР, РАС; группы 3–4 лет и старшего школьного возраста)",
+SITE_SRC = {"altera-vita-bolotnikovskaya": "сайт altera-vita.ru (коррекция детей от 2 до 16 лет)",
+            "neirocentr-snezhnaya": "сайт neirocentr.ru (зал сенсорной интеграции; занятия от 2 до 12 лет, группы 7–16 лет)",
+            "twoneiro-khimki": "сайт twoneiro.ru (нейродиагностика детей 5–15 лет, диагностика раннего развития 2–5 лет и детей с различными синдромами)",
+            "knyazkov-novye-ostrovcy": "сайт doctorknyazkov.ru","akademiya-razvitiya-makarovoy": "сайт akademia-razvitiya.ru (группа для детей с ЗРР, ЗПРР, РАС; группы 3–4 лет и старшего школьного возраста)",
             "shag-za-shagom-ukhtomskogo": "сайт abashagzashagom.ru (центр развития для детей с ОВЗ, дети с 1,5 до 13 лет)",
             "svoi-centr-nagatinskaya": "сайт svoineurocenter.ru (подходит для детей 1–18 лет)",
             "brainkid-simferopolsky": "сайт brainkid.ru (трудности развития, в т.ч. РАС, СДВГ, ЗПР; от самого раннего до подросткового возраста)",
             "ostrov-druzhby-ramenki": "сайт ostrovdruzhby.ru (дети с РАС, ЗПР, СДВГ от 3 до 18 лет)",
             "nash-solnechny-mir": "сайт solnechnymir.ru (помощь детям с РАС с 1991 года, АФК, музыкальные и танцедвигательные занятия)"}
-HOW_FIX = {}
-TOWNS = ("Москва", "Солнечногорск", "Фрязино", "Лыткарино", "Реутов", "Истра", "Дубна", "Воскресенск", "Ступино", "Красногорск", "Люберцы", "Химки", "Мытищи", "Видное", "Зеленоград")
+HOW_FIX = {"coddy-pilyugina": "Ориентир: в помещении библиотеки № 174",
+           "neirocentr-snezhnaya": "Вход: с торца здания\nЭтаж: 1\nШлагбаум: проезд через шлагбаум, есть парковка для клиентов"}
+TOWNS = ("Москва", "Солнечногорск", "Фрязино", "Лыткарино", "Реутов", "Истра", "Дубна", "Воскресенск", "Ступино", "Красногорск", "Люберцы", "Химки", "Мытищи", "Видное", "Зеленоград", "Химки", "д. Островцы")
 
 
 def page(n):
-    f = glob.glob(os.path.join(ROOT, f"auto/pages/*-ev{n.split(':')[1]}-11{n.split(':')[0]}e-*.txt"))[0]
+    a, b = n.split(":")
+    f = glob.glob(os.path.join(ROOT, f"auto/pages/*-{'ey' if a.endswith('y') else 'ev'}{b}-11{a[:2]}e-*.txt"))[0]
     secs = open(f).read().split("\n### ")
     return [l.strip() for l in "\n".join([secs[0]] + [s for s in secs[1:] if s.startswith("https://yandex.ru/maps/org/")]).splitlines() if l.strip()]
 
@@ -125,7 +131,7 @@ def row(pid):
     return r
 
 
-ROWS = [row(p) for p in SEL if p in PTS]
+ROWS = [row(p) for p in SEL if p in PTS and p in TAKE]
 
 if __name__ == "__main__":
     pa = json.load(open(os.path.join(ROOT, "places-all.json")))
