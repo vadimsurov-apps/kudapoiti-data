@@ -219121,25 +219121,25 @@
 "url": "https://lyapkin-hockey.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "skyhockey-ru-contacts": {
 "url": "https://skyhockey.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "kc-hockey-ru-contacts": {
 "url": "https://kc-hockey.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "csbw-ru-contacts": {
 "url": "https://csbw.ru/contacts",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 2
+"err": "HTTP Error 502: Bad Gateway",
+"tries": 3
 },
 "chesslabyrinth-ru-filialy-krylatskoe": {
 "url": "https://chesslabyrinth.ru/filialy/krylatskoe",
@@ -219166,7 +219166,7 @@
 "url": "https://major-tennis.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "i-basket-ru-molodezhnaya": {
 "url": "https://i-basket.ru/molodezhnaya",
@@ -219557,7 +219557,7 @@
 "url": "https://xn----gtbnhqgdou4c.xn--p1ai/contacts",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-"tries": 1
+"tries": 2
 },
 "olimp-serp-ru-price": {
 "url": "https://olimp-serp.ru/price",
@@ -219570,12 +219570,135 @@
 "url": "https://olimp-serp.ru/basseyn",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "special-worldclass-ru-clubs": {
 "url": "https://special.worldclass.ru/clubs",
 "ok": false,
-"err": "Remote end closed connection without response",
+"err": "HTTP Error 403: Forbidden",
+"tries": 2
+},
+"padeltimeslava-ru": {
+"url": "https://padeltimeslava.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 8447,
+"tries": 0
+},
+"padeltimeslava-ru-contacts": {
+"url": "https://padeltimeslava.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
 "tries": 1
+},
+"www-hippo-land-ru-vniissok": {
+"url": "https://www.hippo-land.ru/vniissok",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"crazy-cart-ru-contacts": {
+"url": "https://crazy-cart.ru/contacts",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"kurchatovec-ru": {
+"url": "https://kurchatovec.ru/",
+"ok": true,
+"pages": 2,
+"bytes": 10915,
+"tries": 0
+},
+"kurchatovec-ru-contacts": {
+"url": "https://kurchatovec.ru/contacts",
+"ok": false,
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)>",
+"tries": 1
+},
+"arenabauma-ru": {
+"url": "https://arenabauma.ru/",
+"ok": true,
+"pages": 2,
+"bytes": 8156,
+"tries": 0
+},
+"arenabauma-ru-contacts": {
+"url": "https://arenabauma.ru/contacts",
+"ok": false,
+"err": "HTTP Error 502: Bad Gateway",
+"tries": 1
+},
+"www-arenaiceberg-ru": {
+"url": "http://www.arenaiceberg.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 3143,
+"tries": 0
+},
+"hcvolki-ru-contacts": {
+"url": "https://hcvolki.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"www-jemchujina-moscow-contacts": {
+"url": "https://www.jemchujina.moscow/contacts",
+"ok": false,
+"err": "HTTP Error 502: Bad Gateway",
+"tries": 1
+},
+"www-climbersclub-ru-contacts": {
+"url": "https://www.climbersclub.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"a-padel-ru-contacts": {
+"url": "https://a-padel.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"chempionov-ru": {
+"url": "https://chempionov.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"chempionov-ru-contacts": {
+"url": "https://chempionov.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"arenaplay-ru-contacts": {
+"url": "https://arenaplay.ru/contacts",
+"ok": true,
+"pages": 2,
+"bytes": 2940,
+"tries": 0
+},
+"xn-80aaacv0ahdw0c3c-xn-p1ai": {
+"url": "https://xn--80aaacv0ahdw0c3c.xn--p1ai/",
+"ok": true,
+"pages": 3,
+"bytes": 11381,
+"tries": 0
+},
+"xn-80aaacv0ahdw0c3c-xn-p1ai-contacts": {
+"url": "https://xn--80aaacv0ahdw0c3c.xn--p1ai/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"xbadm-ru-contacts": {
+"url": "https://xbadm.ru/contacts",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
 }
 }
