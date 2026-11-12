@@ -225580,19 +225580,20 @@
 "url": "https://losinka-tennis.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "alfclimb-ru": {
 "url": "https://alfclimb.ru/",
-"ok": false,
-"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
+"ok": true,
+"pages": 3,
+"bytes": 13976,
 "tries": 1
 },
 "alfclimb-ru-contacts": {
 "url": "https://alfclimb.ru/contacts",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 1
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
+"tries": 2
 },
 "madextremepark-ru": {
 "url": "https://madextremepark.ru/",
@@ -225605,7 +225606,7 @@
 "url": "https://madextremepark.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "sputniktennis-ru": {
 "url": "https://sputniktennis.ru/",
@@ -225618,13 +225619,13 @@
 "url": "https://sputniktennis.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "airarena-ru-contacts": {
 "url": "https://airarena.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "race-place-ru-contacts": {
 "url": "https://race-place.ru/contacts",
@@ -225637,18 +225638,93 @@
 "url": "https://masterskok.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "www-dds-mossport-ru": {
 "url": "https://www.dds-mossport.ru/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 1
+"tries": 2
 },
 "stolicakart-ru-contacts": {
 "url": "https://stolicakart.ru/contacts",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>",
+"tries": 2
+},
+"komornikovswim-ru": {
+"url": "https://komornikovswim.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 5030,
+"tries": 0
+},
+"rgflamingo-club-ru": {
+"url": "https://rgflamingo-club.ru/",
+"ok": true,
+"pages": 2,
+"bytes": 16000,
+"tries": 0
+},
+"elaq-ru": {
+"url": "https://elaq.ru/",
+"ok": true,
+"pages": 2,
+"bytes": 16000,
+"tries": 0
+},
+"www-swimaquarel-ru": {
+"url": "https://www.swimaquarel.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 4383,
+"tries": 0
+},
+"iwillswim-ru": {
+"url": "https://iwillswim.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"sambo70-mossport-ru": {
+"url": "https://sambo70.mossport.ru/",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"sambo-zao-ru": {
+"url": "https://sambo-zao.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 13865,
+"tries": 0
+},
+"sambojudo-ru": {
+"url": "https://sambojudo.ru/",
+"ok": false,
+"err": "The read operation timed out",
 "tries": 1
+},
+"stepinbox-ru": {
+"url": "https://stepinbox.ru/",
+"ok": false,
+"err": "<urlopen error [Errno -5] No address associated with hostname>",
+"tries": 1
+},
+"oknapresne-ru": {
+"url": "https://oknapresne.ru/",
+"ok": true,
+"pages": 2,
+"bytes": 3865,
+"tries": 0
+},
+"dajmond-11-ja-ulitsa-tekstilschikov-clients-site": {
+"url": "https://dajmond-11-ja-ulitsa-tekstilschikov.clients.site/",
+"ok": true,
+"pages": 1,
+"bytes": 1748,
+"tries": 0
 }
 }
