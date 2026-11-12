@@ -214583,7 +214583,7 @@
 "url": "https://redrace.ru/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
-"tries": 2
+"tries": 3
 },
 "yandex-ru-maps-1-moscow-and-moscow-oblast-c0h38-1112h-text-d0-9a-d1-80-d1-8b-d1-82-d1-8b-d": {
 "url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c0h38=1112h&text=%D0%9A%D1%80%D1%8B%D1%82%D1%8B%D0%B9%20%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B3%20Liberty%20Karting%2C%20%D0%9A%D0%B0%D0%BB%D1%83%D0%B6%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88.%2C%2021-%D0%B9%20%D0%BA%D0%BC%2C%20%D1%81%D1%82%D1%80.%201%2C%20%D0%BF%D0%BE%D0%B4%D0%B7%D0%B5%D0%BC%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%B0%D1%80%D0%BA%D0%BE%D0%B2%D0%BA%D0%B0%20%28%D0%9C%D0%95%D0%93%D0%90%20%D0%A2%D1%91%D0%BF%D0%BB%D1%8B%D0%B9%20%D0%A1%D1%82%D0%B0%D0%BD%29",
@@ -214638,18 +214638,89 @@
 "url": "https://restoclub.ru/msk/chain/tanuki-1",
 "ok": false,
 "err": "HTTP Error 503: Service Temporarily Unavailable",
-"tries": 1
+"tries": 2
 },
 "restoclub-ru-msk-chain-zdraste": {
 "url": "https://restoclub.ru/msk/chain/zdraste",
 "ok": false,
 "err": "HTTP Error 503: Service Temporarily Unavailable",
-"tries": 1
+"tries": 2
 },
 "columbus-moscow": {
 "url": "https://columbus.moscow/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
+"tries": 2
+},
+"king-quest-ru": {
+"url": "https://king-quest.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"king-quest-ru-contacts": {
+"url": "https://king-quest.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"kolomna-cvr-edumsko-ru": {
+"url": "https://kolomna-cvr.edumsko.ru/",
+"ok": false,
+"err": "<urlopen error timed out>",
+"tries": 1
+},
+"metrsk-ru": {
+"url": "https://metrsk.ru/",
+"ok": false,
+"err": "<urlopen error [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1000)>",
+"tries": 1
+},
+"metrsk-ru-contacts": {
+"url": "https://metrsk.ru/contacts",
+"ok": false,
+"err": "<urlopen error [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1000)>",
+"tries": 1
+},
+"www-smishlenok-club-ru": {
+"url": "http://www.smishlenok-club.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 16000,
+"tries": 0
+},
+"detskaya-studio-otragenie-ru": {
+"url": "https://detskaya.studio-otragenie.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 16000,
+"tries": 0
+},
+"quest-hunter-ru": {
+"url": "https://quest-hunter.ru/",
+"ok": true,
+"pages": 2,
+"bytes": 9574,
+"tries": 0
+},
+"quest-hunter-ru-contacts": {
+"url": "https://quest-hunter.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"ligamirov-ru-contacts": {
+"url": "https://ligamirov.ru/contacts",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"www-chudo-shkola-ru-contacts": {
+"url": "https://www.chudo-shkola.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
 "tries": 1
 }
 }
