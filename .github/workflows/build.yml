@@ -14,6 +14,8 @@ permissions:
   contents: write
 jobs:
   build:
+    # после других роботов — только если тот отработал успешно (пропущенные запуски сборку не тянут)
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
