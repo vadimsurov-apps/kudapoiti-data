@@ -18,17 +18,36 @@ NAME = {95: "адаптивн", 99: "АВС", 180: "АВС", 81: "Маяк", 149
 KW = r"(ул\.|улица|пр-т|просп\.|проспект|ш\.|шоссе|пер\.|бул\.|бульвар|наб\.|пр\.|проезд)"
 def core(st):
     return re.sub(r"\s*\b(ул\.|улица|пр-т|просп\.|проспект|ш\.|шоссе|пер\.|бул\.|бульвар|наб\.|пр\.|проезд)\s*", " ", st).strip().replace("ё", "е")
+def near_station(n):
+    """ближайшая станция и расстояние из блока «Как добраться» карточки (12.11: ответ OSM перевалил 100 МБ — радиус минимальный)"""
+    import glob
+    f = glob.glob(os.path.join(ROOT, f"auto/pages/*-ev{n}-1117e-*.txt"))[0]
+    L = [l.strip() for l in open(f).read().splitlines() if l.strip()]
+    i = L.index("Как добраться")
+    st, d = L[i + 1], L[i + 2]
+    m = float(d.split()[0].replace(",", ".")) * (1000 if "км" in d else 1)
+    return st, m
+
+
+from edu_1117_sel import SEL
+USE = {v[0] for v in SEL.values()}
 Q = []
 for n, nm in NAME.items():
+    if n not in USE:
+        continue
     o = E[str(n)]; a = o["addr"][0]
     st = next((p.strip() for p in a.split(",") if re.search(KW, p)), None)
     area = o["q"].split(" метро ")[-1] if " метро " in o["q"] else next(t for t in TOWN if o["q"].endswith(t))
-    lat, lon = TOWN[area] if area in TOWN else D[NEAR.get(n, area)]
-    q = {"id": f"edu17-{n}", "lat": lat, "lon": lon, "radius": 9000, "name": nm}
+    st, dist = near_station(n)
+    if area in TOWN:
+        (lat, lon), rad = TOWN[area], 4000
+    else:
+        (lat, lon), rad = D[st], int(dist) + 700
+    q = {"id": f"edu17-{n}", "lat": lat, "lon": lon, "radius": rad, "name": nm}
     if st: q["street"] = core(st).split(" ")[-1] if core(st).startswith(("1-", "2-", "4-", "Большая", "Старая")) else core(st)
     Q.append(q)
 if __name__ == "__main__":
     p = os.path.join(ROOT, "auto/osm-queries.json")
-    old = [x for x in json.load(open(p)) if not x["id"].startswith("edu17-")]
+    old = [x for x in json.load(open(p)) if not x["id"].startswith(("edu17-", "edu16-"))]   # edu16 уже разобраны (6-й запуск)
     json.dump(old + Q, open(p, "w"), ensure_ascii=False, indent=1)
     for q in Q: print(q["id"], q["name"], q.get("street"))
