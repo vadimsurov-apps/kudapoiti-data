@@ -305,12 +305,16 @@ def apply_precise_points(places, manual_ids=()):
     sources = [("geocode-report.json", lambda e: e.get("status") == "high" and 15 < e.get("moved_m", 0) <= 300),
                ("osm-address.json", lambda e: e.get("status") == "moved"),
                ("geo-yandex.json", lambda e: e.get("method") in ("yandex-org", "yandex-addr"))]
+    verified_pt = load("verified.json")
     n = {}
     for name, ok in sources:
         data = load(name)
         for p in places:
             e = data.get(p["id"])
             if not e or not ok(e) or p["id"] in manual or p.get("lat") is None: continue
+            # 12.11 (бассейн OctoSkills в «Фили Граде»): точку, подтверждённую на объекте/входе САМОГО места (реестр
+            # проверок), нельзя переносить на «главный вход дома по адресу» — это вход ТЦ в 134 м, а не вход студии
+            if name == "osm-address.json" and verified_pt.get(p["id"], {}).get("point", {}).get("level") in ("объект", "вход"): continue
             src = e.get("src") or [e.get("src_lat"), e.get("src_lon")]
             if src[0] is None or abs(src[0] - p["lat"]) > 1e-6 or abs(src[1] - p["lon"]) > 1e-6: continue
             p["lat"], p["lon"], p["coord_exact"] = e["lat"], e["lon"], True
