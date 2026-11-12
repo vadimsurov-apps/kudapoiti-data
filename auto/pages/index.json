@@ -255560,7 +255560,7 @@
 "kinzamsk-ru-contacts": {
 "url": "https://kinzamsk.ru/contacts",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
+"err": "HTTP Error 403: Forbidden",
 "tries": 3
 },
 "kinzamsk-ru-restaurants": {
@@ -255635,7 +255635,7 @@
 "villamio-ru-contacts": {
 "url": "https://villamio.ru/contacts",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
 "tries": 1
 },
 "villamio-ru": {
@@ -255650,5 +255650,19 @@
 "ok": false,
 "err": "HTTP Error 404: Not Found",
 "tries": 1
+},
+"yandex-ru-maps-org-uryuk-124113974512": {
+"url": "https://yandex.ru/maps/org/uryuk/124113974512/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-org-tanuki-1176436147": {
+"url": "https://yandex.ru/maps/org/tanuki/1176436147/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
 }
 }
