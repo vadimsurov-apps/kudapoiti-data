@@ -1,10 +1,10 @@
 """Выжимка карточек организаций (ev<n>-1123e): название, адрес, телефон, сайт, строки с возрастом и ценами → tools/edu_1123_cards2.json"""
 import json, os, re, glob
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-K = {c["n"]: c for c in json.load(open(os.path.join(ROOT, "tools/edu_1123_keep.json")))}
+K = {c["n"]: c for c in json.load(open(os.path.join(ROOT, "tools/edu_1123_keep2.json")))}
 out = {}
-for f in glob.glob(os.path.join(ROOT, "auto/pages/*-ey*-1123e-*.txt")):
-    n = int(re.search(r"-ey(\d+)-1123e", f).group(1))
+for f in glob.glob(os.path.join(ROOT, "auto/pages/*-ex*-1123e-*.txt")):
+    n = int(re.search(r"-ex(\d+)-1123e", f).group(1))
     t = open(f).read()
     parts = t.split("\n### ")
     main = "\n".join([parts[0]] + [s for s in parts[1:] if s.startswith("https://yandex.ru/maps/org/")])

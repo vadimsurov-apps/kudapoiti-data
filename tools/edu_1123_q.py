@@ -1,4 +1,4 @@
-"""Робот edu, 12.11 (тринадцатый запуск): запросы OSM edu23-<N> по карточкам новых кандидатов (ключи ev<N>-1123e / ey<N>-1123e)."""
+"""Робот edu, 12.11 (тринадцатый запуск): запросы OSM edu23-<N> по карточкам новых кандидатов (ключи ev<N>-1123e / ex<N>-1123e)."""
 import json, os, re, sys, glob, io, contextlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from add_batch14 import MET
@@ -13,7 +13,7 @@ D = {n.lower().replace("ё", "е"): (a, b) for n, a, b in MET}
 TOWN = {"Королёв": (55.9160, 37.8550), "Химки": (55.8890, 37.4450), "Одинцово": (55.6780, 37.2770), "Щёлково": (55.9200, 37.9970), "Домодедово": (55.4370, 37.7660), "Подольск": (55.4310, 37.5450), "Дмитров": (56.3440, 37.5200), "Мытищи": (55.9116, 37.7300), "Балашиха": (55.7800, 37.9500), "Подольск": (55.4310, 37.5450)}
 def near_station(key):
     a, n = key.split(":")
-    f = glob.glob(os.path.join(ROOT, f"auto/pages/*-{'ey' if a.endswith('y') else 'ev'}{n}-1123e-*.txt"))[0]
+    f = glob.glob(os.path.join(ROOT, f"auto/pages/*-{'ex' if a.endswith('y') else 'ev'}{n}-1123e-*.txt"))[0]
     L = [l.strip() for l in open(f).read().splitlines() if l.strip()]
     if "Как добраться" not in L: return None, None
     i = L.index("Как добраться")
