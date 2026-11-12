@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>«Кубик» (ул. Маршала Соколовского) — Куда пойти с детьми</title>
+<meta property="og:title" content="«Кубик» (ул. Маршала Соколовского)">
+<meta property="og:description" content="Москва, ул. Маршала Соколовского, 3 · м. Октябрьское поле · Scratch Junior 5–7 лет, Kodu Game Lab 6–7 лет, игры в Scratch, Minecraft и Roblox для 1–7 классов, LEGO-робототехника с 4 лет, 3D-моделирование в Blender для 5–9 классов, нейросети">
+<meta property="og:image" content="https://vadimsurov-apps.github.io/kudapoiti-data/p/img/kubik-sokolovskogo.png">
+<meta property="og:url" content="https://vadimsurov-apps.github.io/kudapoiti-data/p/kubik-sokolovskogo/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#F2905F">
+<style>
+:root{--bg:#FFF7F1;--card:#fff;--ink:#2B2320;--mute:#7A6E68;--accent:#F2905F;--blue:#2F7BEA;--red:#E5484D;--line:#F0E4DB}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1C1816;--card:#26201D;--ink:#F5EEE9;--mute:#B4A79F;--line:#3A312C}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:520px;margin:0 auto;padding:20px 16px 40px}
+.brand{display:flex;align-items:center;gap:8px;color:var(--mute);font-size:14px;margin-bottom:14px}
+.card{background:var(--card);border-radius:22px;padding:20px;box-shadow:0 2px 14px rgba(0,0,0,.06)}
+.head{display:flex;gap:14px;align-items:center}
+.icon{width:72px;height:72px;border-radius:50%;background:#FDE7DA;display:grid;place-items:center;font-size:36px;flex:none;overflow:hidden}
+.icon img{width:100%;height:100%}
+h1{font-size:22px;line-height:1.2;margin:0}
+.type{color:var(--mute);margin-top:4px}
+.row{display:flex;gap:10px;margin-top:14px;align-items:flex-start}
+.row b{font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chip{background:var(--line);border-radius:999px;padding:4px 12px;font-size:14px}
+.deal{margin-top:14px;border:2px solid var(--red);border-radius:16px;padding:10px 14px}
+.deal b{color:var(--red)}
+.btn{display:block;text-align:center;text-decoration:none;font-weight:600;border-radius:16px;padding:14px;margin-top:12px}
+.primary{background:var(--accent);color:#fff}
+.second{background:var(--line);color:var(--ink)}
+.note{color:var(--mute);font-size:13px;margin-top:16px;text-align:center}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">🎈 Куда пойти с детьми · Москва и Подмосковье</div>
+  <div class="card" id="card"><p>Загружаем место…</p></div>
+  <a class="btn primary" id="open" href="#">Открыть в приложении</a>
+  <a class="btn second" id="store" href="#">Скачать приложение</a>
+  <p class="note">Карта детских мест: часы работы, время в пути, скидки и бесплатные пробные занятия.</p>
+</main>
+<script>
+const APP_STORE_URL = ""; // появится после публикации в App Store
+const BASE = "https://raw.githubusercontent.com/vadimsurov-apps/kudapoiti-data/main/";
+const id = "kubik-sokolovskogo";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+document.getElementById("open").href = "kudapoiti://place/" + encodeURIComponent(id);
+const store = document.getElementById("store");
+if (APP_STORE_URL) store.href = APP_STORE_URL;
+else { // пока приложения нет в App Store — главная кнопка ведёт на карту-сайт
+  const op = document.getElementById("open");
+  op.textContent = "Открыть на карте"; op.href = "https://vadimsurov-apps.github.io/kudapoiti-data/?id=" + encodeURIComponent(id);
+  store.textContent = "Карта в Telegram"; store.href = "https://t.me/kudapoiti_deti_bot?start=map"; }
+
+async function load() {
+  const card = document.getElementById("card");
+  try {
+    const [pl, dl, ic] = await Promise.all([
+      fetch(BASE + "places.json").then(r => r.json()),
+      fetch(BASE + "deals.json").then(r => r.json()).catch(() => ({})),
+      fetch(BASE + "icons/index.json").then(r => r.json()).catch(() => [])]);
+    const p = (pl.places || []).find(x => x.id === id);
+    if (!p) { card.innerHTML = "<p>Место не найдено. Возможно, оно закрылось.</p>"; return; }
+    document.title = p.name + " — Куда пойти с детьми";
+    const icons = Array.isArray(ic) ? ic : (ic.icons || Object.keys(ic));
+    const icon = icons.includes(p.id) ? `<img src="${BASE}icons/${encodeURIComponent(p.id)}.png" alt="">` : "🎈";
+    const today = new Date().toISOString().slice(0, 10);
+    const deals = (Array.isArray(dl) ? dl : (dl.deals || []))
+      .filter(d => d.place_id === p.id && (!d.until || d.until >= today));
+    const price = p.price_child === 0 ? "Бесплатно" : (p.price_child ? `Детский билет ${p.price_child} ₽` : null);
+    const chips = [p.age_min != null && p.age_max != null ? `${p.age_min}–${p.age_max} лет` : null,
+                   p.indoor === "yes" ? "Под крышей" : null, price].filter(Boolean);
+    const yamap = p.lat ? `https://yandex.ru/maps/?pt=${p.lon},${p.lat}&z=17&l=map` : null;
+    const route = p.lat ? `https://yandex.ru/maps/?rtext=~${p.lat},${p.lon}&rtt=auto` : null;
+    card.innerHTML = `
+      <div class="head"><div class="icon">${icon}</div>
+        <div><h1>${esc(p.name)}</h1><div class="type">${esc((p.type || [])[0] || "")}${p.metro ? " · м. " + esc(p.metro) : ""}</div></div></div>
+      ${p.address ? `<div class="row">📍<div>${esc(p.address)}</div></div>` : ""}
+      ${p.phone ? `<div class="row">📞<div>${p.phone.split(", ").map(x=>`<a href="tel:${x.replace(/[^+\d]/g,"")}">${esc(x)}</a>`).join(", ")}</div></div>` : ""}
+      ${p.how_to_find ? `<div class="row">🧭<div><b>Как найти:</b><br>${esc(p.how_to_find).replace(/\n/g,"<br>")}</div></div>` : ""}
+      ${p.hours ? `<div class="row">🕘<div>${esc(p.hours)}</div></div>` : ""}
+      ${p.plus ? `<div class="row">👍<div>${esc(p.plus)}</div></div>` : ""}
+      ${chips.length ? `<div class="chips">${chips.map(c => `<span class="chip">${esc(c)}</span>`).join("")}</div>` : ""}
+      ${deals.map(d => `<div class="deal"><b>% ${esc(d.title)}</b>${d.details ? "<br>" + esc(d.details) : ""}${d.until ? `<br><small>до ${esc(d.until)}</small>` : ""}</div>`).join("")}
+      ${yamap ? `<a class="btn second" href="${yamap}">Показать на карте</a><a class="btn second" href="${route}">Построить маршрут</a>` : ""}`;
+  } catch (e) {
+    card.innerHTML = "<p>Не удалось загрузить место. Проверьте интернет и обновите страницу.</p>";
+  }
+}
+load();
+</script>
+</body>
+</html>
