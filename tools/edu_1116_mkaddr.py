@@ -49,7 +49,7 @@ for pid, v in SEL.items():
     street = v.get("street")
     A[pid] = {"n": int(n), "addr": addr, "addr2": a2, "how": how(a2) if a2 else None, "phone": d["phone"], "site": site,
               "q": q, "page": d["page"], "org": d["org"], "qid": f"edu16-{n}", "street": street, "name": v["osmname"]}
-    Q.append({"id": f"edu16-{n}", "lat": lat, "lon": lon, "radius": 5500, "name": v["osmname"], "street": street})
+    Q.append({"id": f"edu16-{n}", "lat": lat, "lon": lon, "radius": 5400, "name": v["osmname"], "street": street})
 A["baby-club-izmaylovsky-5a"]["how"] = "Этаж: 1"
 A["tropinki-4-parkovaya"]["how"] = None
 json.dump(A, open(os.path.join(ROOT, "tools/edu_1116_addr.json"), "w"), ensure_ascii=False, indent=1)
