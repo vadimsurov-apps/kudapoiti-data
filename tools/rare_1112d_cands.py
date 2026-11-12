@@ -32,7 +32,29 @@ C = [
  ("rink-kommunarka", "Каток в Коммунарке", "Москва, Коммунарка", "", "Коммунарка", 3000, "Каток", "rinks"),
  ("hockey-dikie-tigry", "Дикие Тигры хоккей", "Москва", "", "Крылатское", 3000, "Тигр", "hockey"),
 ]
+C2 = [
+ ("rink-led-mosfilmovskaya", "Лёд на Мосфильмовской", "Москва, Мосфильмовская ул., 41, корп. 2", "Мосфильмовская", "Минская", 2500, "Лёд", "rinks"),
+ ("hockey-khishchniki-mosfilmovskaya", "Хищники хоккей", "Москва, Мосфильмовская ул., 41, корп. 2", "Мосфильмовская", "Минская", 2500, "", "hockey"),
+ ("volley-rusvolley-aviamotornaya", "Rusvolley", "Москва, Авиамоторная ул., 1", "Авиамоторная", "Авиамоторная", 2500, "", "volleyball"),
+ ("volley-rusvolley-polbina", "Rusvolley", "Москва, ул. Полбина, 68, стр. 1", "Полбина", "Печатники", 2500, "", "volleyball"),
+ ("volley-rusvolley-tsimlyanskaya", "Rusvolley", "Москва, Цимлянская ул., 4", "Цимлянская", "Люблино", 2500, "", "volleyball"),
+ ("fk-mozerteam-luzhniki", "Mozerteam", "Москва, ул. Лужники, 24, стр. 14", "Лужники", "Спортивная", 2500, "Кристалл", "figureskating"),
+ ("fk-polar-team-luzhniki", "Polar Team", "Москва, ул. Лужники, 24, стр. 14", "Лужники", "Спортивная", 2500, "Кристалл", "figureskating"),
+ ("fk-vyshe-vsekh-egoryevsky", "Выше всех", "Москва, Егорьевский пр., 3Ж, стр. 6", "Егорьевский", "Люблино", 2500, "", "figureskating"),
+ ("hockey-azbuka-morozovo", "Азбука Хоккея", "Москва, Новоостаповская ул., 5, стр. 2", "Новоостаповская", "Дубровка", 2500, "", "hockey"),
+ ("hockey-ledovaya-druzhba-morozovo", "Ледовая дружба", "Москва, Новоостаповская ул., 5, стр. 2", "Новоостаповская", "Дубровка", 2500, "", "hockey"),
+ ("hockey-star-talalikhina", "Hockey-star.ru", "Москва, ул. Талалихина, 28, стр. 1", "Талалихина", "Пролетарская", 2500, "", "hockey"),
+ ("fk-ice-pro-starostina", "Айс Про", "Москва, ул. Николая Старостина, 8", "Старостина", "Новокосино", 3000, "", "figureskating"),
+ ("rink-arena-balashikha", "Ледовый дворец Арена Балашиха имени Ю.Е. Ляпкина", "Балашиха, Парковая ул., 2", "Парковая", (55.8030, 37.9390), 4000, "Арена", "rinks"),
+ ("fk-bobrova-balashikha", "Школа Екатерины Бобровой", "Балашиха, Парковая ул., 2А", "Парковая", (55.8030, 37.9390), 4000, "", "figureskating"),
+ ("fk-led-korolev", "Лёд спортивный клуб", "Королёв, Октябрьский бул., 10, стр. 1", "Октябрьский", (55.9162, 37.8545), 4000, "", "figureskating"),
+ ("rink-krasnogorsk-arena", "Красногорск Арена", "Красногорск, Лесная ул., 1А", "Лесная", (55.8250, 37.3300), 5000, "Арена", "rinks"),
+ ("rink-start-arena-opalikha", "Ледовый дворец Старт арена", "Красногорск, микрорайон Опалиха, ул. Ахматовой, 26", "Ахматовой", (55.8230, 37.2550), 5000, "Старт", "rinks"),
+ ("volley-plotik-putilkovo", "Школа волейбола Плотик", "п. г. т. Путилково, 53", "", (55.8700, 37.3950), 3000, "", "volleyball"),
+]
 if __name__ == "__main__":
+    import sys
+    if "2" in sys.argv: C = C2
     sw = open(os.path.join(ROOT, "tools", "MetroStations.swift")).read()
     def st(n):
         m = re.search(r'"' + re.escape(n.lower()) + r'"\s*:\s*\("[^"]*",\s*([\d.]+),\s*([\d.]+)\)', sw)
@@ -46,7 +68,7 @@ if __name__ == "__main__":
         q = {"id": "rare12d-" + c[0], "lat": lat, "lon": lon, "radius": c[5], "name": c[6]}
         if c[3]: q["street"] = c[3]
         if q["id"] not in have: qs.append(q)
-        fq.append(f"https://yandex.ru/maps/1/moscow-and-moscow-oblast/?r12z{i}=1112d&text=" + u.quote(f"{c[1]}, {c[2]}"))
+        fq.append(f"https://yandex.ru/maps/1/moscow-and-moscow-oblast/?r12{'v' if C is C2 else 'z'}{i}=1112d&text=" + u.quote(f"{c[1]}, {c[2]}"))
     json.dump(qs, open(qp, "w"), ensure_ascii=False, indent=1)
     open("/tmp/r/fq2.txt", "w").write("\n".join(fq) + "\n")
     print(len(C))
