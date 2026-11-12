@@ -26,21 +26,18 @@ jobs:
         run: |
           git config user.name "kudapoiti-bot"
           git config user.email "bot@users.noreply.github.com"
-          for i in 1 2 3 4 5; do
+          # 12.11: сборку здесь больше не делаем — пока она шла (минуты), другие роботы успевали запушить, и push отклонялся
+          # три раза подряд (находки Codex не применились). Теперь пушим только исходные данные (секунды), а карту
+          # собирает build.yml — он запускается после этого робота (workflow_run).
+          for i in 1 2 3 4 5 6 7 8; do
             git fetch -q origin main && git reset -q --hard origin/main
             python3 tools/gpt_import.py
             python3 tools/gpt_apply.py
-            if git diff --quiet -- data auto/verified.json auto/contacts.json; then
-              git add auto/gpt-checks.json auto/gpt-disputes.json auto/gpt-applied.json 2>/dev/null || true
-            else
-              python3 tools/build_all.py || exit 1
-              git add data auto/verified.json auto/contacts.json auto/access-needs.json auto/gpt-checks.json auto/gpt-disputes.json \
-                auto/gpt-applied.json places.json places-all.json auto/metrics.json auto/metrics-history.json \
-                gpt/queue.json p icons icons-catalog auto/table-coords.json deals.json
-            fi
+            git add data auto/verified.json auto/contacts.json auto/access-needs.json auto/gpt-checks.json \
+              auto/gpt-disputes.json auto/gpt-applied.json 2>/dev/null || true
             git diff --cached --quiet && exit 0
             git commit -q -m "ChatGPT: находки применены автоматически"
             git push -q origin HEAD:main && exit 0
-            sleep 20
+            sleep $((RANDOM % 15 + 5))
           done
           exit 1

@@ -5,7 +5,7 @@ on:
     paths: ["data/**", "icons-src/**", "tools/xlsx_to_json.py", "tools/build_all.py", "auto/osm-access.json", "auto/osm-changing.json", "deals.json", "auto/spam-domains.txt", "auto/osm-address.json", "auto/contacts.json", "auto/access-needs.json", "auto/cat-ages.json", "auto/verified.json", "auto/human-checks.json", "gpt/reports/**", "tools/point_level.py", "tools/metrics.py", "auto/geo-yandex.json", "auto/yandex-entrances.json", "pipeline/spam.py"]
   workflow_dispatch:
   workflow_run:   # коммиты роботов GitHub сами сборку не запускают — запускаем после поиска входов
-    workflows: ["Входы организаций из Яндекс Карт (точка на дверь, этаж в ТЦ)"]
+    workflows: ["Входы организаций из Яндекс Карт (точка на дверь, этаж в ТЦ)", "Отчёты ChatGPT — разбор и автоприменение", "Приём отчёта Codex из его ответа в pull request", "Приём отчёта ChatGPT из issue", "Приём отчёта ChatGPT из pull request"]
     types: [completed]
 concurrency:
   group: build
