@@ -21,7 +21,7 @@ def qid(k):
     return f"edu21d-{b}" if a == "20" else f"edu21-{b}"
 A = {pid: {"addr": addr_how(v[0])[0], "qid": qid(v[0]), "name": QN.get(qid(v[0]), "")} for pid, v in SEL.items()}
 ANS = json.load(open(os.path.join(ROOT, "auto", "osm-answers.json")))
-FIX = {}
+FIX = {"kosmos-novokosinskaya": "edu21x-111", "yarkie-deti-nagatinskaya": "edu21x-58"}
 
 
 def norm(s):
