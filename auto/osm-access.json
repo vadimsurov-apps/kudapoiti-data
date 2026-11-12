@@ -27549,33 +27549,33 @@
 {
 "access": "private",
 "barrier": "gate",
-"d": 10
+"d": 26
 },
 {
 "access": "private",
 "barrier": "gate",
-"d": 50
+"d": 39
 }
 ],
 "parking": [
 {
 "access": "yes",
-"d": 24,
+"d": 14,
 "fee": "yes",
 "parking": "street_side"
 },
 {
-"d": 140,
+"d": 125,
 "parking": "street_side"
 },
 {
 "access": "yes",
-"d": 154,
+"d": 151,
 "fee": "yes",
 "parking": "street_side"
 },
 {
-"d": 171,
+"d": 155,
 "parking": "lane"
 }
 ],
@@ -36047,27 +36047,24 @@
 "parking": [
 {
 "access": "yes",
-"d": 43,
+"d": 52,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 61,
+"d": 94,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 101,
+"d": 108,
 "fee": "no",
 "parking": "surface"
 },
 {
-"access": "yes",
-"d": 142,
-"fee": "no",
-"parking": "surface"
+"d": 118
 }
 ],
 "poi": {
@@ -38020,10 +38017,19 @@
 "cafe-solnechny-moskovsky": {
 "parking": [
 {
-"d": 36
+"d": 197
 },
 {
-"d": 206
+"access": "customers",
+"d": 202
+},
+{
+"d": 224,
+"parking": "street_side"
+},
+{
+"d": 224,
+"parking": "street_side"
 }
 ]
 },
@@ -40467,19 +40473,19 @@
 "building_addr": "Юбилейный проспект, 40",
 "parking": [
 {
-"d": 30
+"d": 35
+},
+{
+"d": 125
 },
 {
 "access": "yes",
-"d": 112,
+"d": 132,
 "fee": "no",
 "parking": "lane"
 },
 {
-"d": 118
-},
-{
-"d": 155,
+"d": 147,
 "parking": "surface"
 }
 ]
@@ -55434,6 +55440,7 @@
 ]
 },
 "dancetime-nansena": {
+"building_addr": "проезд Нансена, 1",
 "gates": [
 {
 "barrier": "lift_gate",
@@ -57110,7 +57117,7 @@
 "building_entrances": [
 {
 "addr:flats": "129-162",
-"d": 15,
+"d": 11,
 "entrance": "staircase",
 "ref": "3"
 },
@@ -57119,36 +57126,36 @@
 "entrance": "staircase"
 },
 {
-"d": 24,
+"d": 27,
 "entrance": "staircase"
 },
 {
 "addr:flats": "193-256",
-"d": 33,
+"d": 31,
 "entrance": "staircase",
 "ref": "4"
 },
 {
-"d": 41,
+"d": 45,
 "entrance": "staircase"
 }
 ],
 "parking": [
 {
-"d": 28,
+"d": 29,
 "parking": "street_side"
 },
 {
-"d": 41,
+"d": 44,
 "parking": "street_side"
 },
 {
-"d": 94,
+"d": 97,
 "parking": "street_side"
 },
 {
-"d": 130,
-"parking": "surface"
+"d": 128,
+"parking": "street_side"
 }
 ]
 },
@@ -61532,24 +61539,49 @@
 },
 "edupeople-robotics-zhukova": {
 "building_addr": "проспект Маршала Жукова, 51",
-"gates": [
+"building_entrances": [
 {
-"access": "private",
-"barrier": "gate",
-"d": 49
+"d": 15,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"d": 17,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"d": 42,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"d": 45,
+"entrance": "staircase",
+"ref": "4"
 }
 ],
 "parking": [
 {
-"d": 73
+"access": "yes",
+"d": 29,
+"fee": "no",
+"parking": "surface"
 },
 {
-"capacity": "46",
-"capacity:disabled": "6",
-"charge": "50 RUB/hour",
-"d": 281,
-"fee": "yes",
+"access": "yes",
+"d": 33,
+"fee": "no",
 "parking": "surface"
+},
+{
+"d": 37
+},
+{
+"access": "yes",
+"d": 40,
+"fee": "no",
+"parking": "street_side"
 }
 ]
 },
@@ -82951,34 +82983,34 @@
 "building_addr": "улица Серпуховский Вал, 24 к2",
 "building_entrances": [
 {
-"d": 6,
+"d": 0,
 "entrance": "yes"
 },
 {
 "access": "private",
-"addr:flats": "10-22",
-"d": 7,
-"entrance": "staircase",
-"ref": "2"
-},
-{
-"access": "private",
 "addr:flats": "23-35",
-"d": 8,
+"d": 4,
 "entrance": "staircase",
 "ref": "3"
 },
 {
 "access": "private",
+"addr:flats": "10-22",
+"d": 5,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"access": "private",
 "addr:flats": "1-9",
-"d": 33,
+"d": 37,
 "entrance": "staircase",
 "ref": "1"
 },
 {
 "access": "private",
 "addr:flats": "36-47",
-"d": 37,
+"d": 38,
 "entrance": "staircase",
 "ref": "4"
 }
@@ -82986,29 +83018,28 @@
 "parking": [
 {
 "access": "yes",
-"capacity": "4",
-"d": 33,
+"d": 32,
 "fee": "no",
-"parking": "street_side"
+"parking": "surface"
 },
 {
 "access": "yes",
-"capacity": "7",
-"d": 33,
-"fee": "no",
-"parking": "street_side"
-},
-{
-"access": "yes",
-"capacity": "4",
+"capacity": "3",
 "d": 35,
 "fee": "no",
 "parking": "street_side"
 },
 {
 "access": "yes",
+"capacity": "4",
+"d": 39,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
 "capacity": "7",
-"d": 36,
+"d": 39,
 "fee": "no",
 "parking": "street_side"
 }
@@ -109394,20 +109425,17 @@
 "parking": [
 {
 "access": "yes",
-"d": 165,
+"d": 145,
 "fee": "no",
 "parking": "surface",
 "supervised": "no"
 },
 {
 "access": "yes",
-"d": 210,
+"d": 167,
 "fee": "no",
 "parking": "surface",
 "supervised": "no"
-},
-{
-"d": 295
 }
 ],
 "poi": {
@@ -115560,7 +115588,7 @@
 ]
 },
 "olimpia-start-basmanny": {
-"building_addr": "1-й Басманный переулок, 3 с2",
+"building_addr": "1-й Басманный переулок, 3 с1",
 "gates": [
 {
 "barrier": "gate",
@@ -116474,45 +116502,7 @@
 }
 },
 "osminozhka-parkovaya": {
-"building_addr": "16-я Парковая улица, 51",
-"building_entrances": [
-{
-"access": "private",
-"addr:flats": "1-92",
-"d": 15,
-"entrance": "staircase",
-"ref": "1"
-},
-{
-"access": "customers",
-"d": 16,
-"entrance": "main"
-},
-{
-"access": "customers",
-"d": 33,
-"entrance": "main"
-},
-{
-"access": "delivery",
-"d": 34,
-"entrance": "service"
-}
-],
 "parking": [
-{
-"access": "yes",
-"d": 23,
-"fee": "no",
-"parking": "surface"
-},
-{
-"access": "yes",
-"capacity": "10",
-"d": 25,
-"fee": "no",
-"parking": "surface"
-},
 {
 "access": "yes",
 "d": 38,
@@ -116521,7 +116511,21 @@
 },
 {
 "access": "yes",
-"d": 52,
+"d": 40,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity": "10",
+"d": 44,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity": "2",
+"d": 49,
 "fee": "no",
 "parking": "surface"
 }
@@ -120925,26 +120929,37 @@
 "building_addr": "проспект Мира, 180",
 "building_entrances": [
 {
-"d": 58,
+"d": 0,
 "entrance": "main"
+}
+],
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 56
+},
+{
+"barrier": "lift_gate",
+"d": 60
 }
 ],
 "parking": [
 {
-"d": 148,
+"d": 160,
 "parking": "surface"
 },
 {
-"d": 243,
+"d": 233,
 "parking": "street_side"
 },
 {
-"d": 275,
+"d": 235,
 "fee": "no",
 "parking": "street_side"
 },
 {
-"d": 289,
+"d": 238,
 "parking": "surface"
 }
 ]
@@ -121297,7 +121312,7 @@
 },
 {
 "addr:flats": "131-163",
-"d": 14,
+"d": 15,
 "entrance": "staircase",
 "ref": "4"
 },
@@ -121309,7 +121324,7 @@
 },
 {
 "addr:flats": "164-181",
-"d": 27,
+"d": 28,
 "entrance": "staircase",
 "ref": "5"
 },
@@ -121321,16 +121336,16 @@
 },
 {
 "addr:flats": "1-52",
-"d": 32,
+"d": 31,
 "entrance": "staircase",
 "ref": "1"
 },
 {
-"d": 41,
+"d": 42,
 "entrance": "shop"
 },
 {
-"d": 41,
+"d": 42,
 "entrance": "shop"
 }
 ],
@@ -154308,7 +154323,7 @@
 "parking": "street_side"
 },
 {
-"d": 240
+"d": 241
 }
 ]
 },
@@ -159587,7 +159602,7 @@
 "building_addr": "Советская улица, 17А",
 "parking": [
 {
-"d": 225,
+"d": 226,
 "parking": "surface"
 },
 {
