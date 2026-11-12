@@ -34,7 +34,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.CODEX_PAT }}
           SLICES: ${{ github.event.inputs.slices || vars.CODEX_SLICES || '3' }}
-          N: ${{ github.event.inputs.n || vars.CODEX_N || '25' }}
+          N: ${{ github.event.inputs.n || vars.CODEX_N || '15' }}
         run: |
           set -e
           git config user.name "kudapoiti-bot"; git config user.email "bot@users.noreply.github.com"
@@ -66,6 +66,6 @@ jobs:
             COUNT=$(python3 -c "import json;print(len(json.load(open('gpt/slices/$name.json'))['places']))")
             URL=$(gh pr create --base main --head "codex/check-$name" --title "Проверка карточек Codex: $name ($COUNT мест)" \
               --body "Пачка gpt/slices/$name.json. Задача — в AGENTS.md («Проверка карточек»). Отчёт: gpt/reports/$name.json в эту ветку.")
-            gh pr comment "$URL" --body "@codex Выполни задачу «Проверка карточек» из AGENTS.md. Пачка: gpt/slices/$name.json ($COUNT мест). Сначала прочитай gpt/RULES.md и gpt/README.md — это наши договорённости, работай строго по ним. Отчёт — gpt/reports/$name.json, закоммить только его в эту же ветку."
+            gh pr comment "$URL" --body "@codex Выполни задачу «Проверка карточек» из AGENTS.md. Пачка: gpt/slices/$name.json ($COUNT мест). Сначала прочитай gpt/RULES.md и gpt/README.md — это наши договорённости, работай строго по ним. ВАЖНО: твой коммит в эту ветку не попадает, поэтому в ИТОГОВОМ СООБЩЕНИИ обязательно приведи ПОЛНЫЙ JSON отчёта (формат README, checker Codex) одним блоком \`\`\`json … \`\`\` в одну строку без отступов — автоматика заберёт отчёт именно оттуда. Кроме этого блока — не больше двух строк текста."
             echo "создана пачка $name: $URL"
           done

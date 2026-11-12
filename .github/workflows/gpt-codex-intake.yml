@@ -1,0 +1,63 @@
+name: Приём отчёта Codex из его ответа в pull request
+# 12.11: Codex, вызванный через «@codex» в PR, пишет отчёт у себя в задаче и в ветку его НЕ кладёт — в PR приходит только
+# итоговое сообщение. Поэтому просим его привести полный JSON отчёта в этом сообщении и забираем оттуда.
+# Принимаем только ответ самого Codex (chatgpt-codex-connector[bot]) в PR «Проверка карточек Codex: <имя>».
+on:
+  issue_comment:
+    types: [created]
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+concurrency:
+  group: gpt-codex-intake
+  cancel-in-progress: false
+jobs:
+  intake:
+    if: >-
+      github.event.issue.pull_request && github.event.comment.user.login == 'chatgpt-codex-connector[bot]' &&
+      startsWith(github.event.issue.title, 'Проверка карточек Codex: ')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      saved: ${{ steps.save.outputs.saved }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { sparse-checkout: "tools", sparse-checkout-cone-mode: true }
+      - id: save
+        env:
+          BODY: ${{ github.event.comment.body }}
+          TITLE: ${{ github.event.issue.title }}
+          NUM: ${{ github.event.issue.number }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          printf '%s' "$BODY" > /tmp/body.txt
+          NAME=$(printf '%s' "$TITLE" | sed -E 's/^Проверка карточек Codex: ([0-9A-Za-z-]+).*/\1/')
+          python3 - "$NAME" <<'P' || { echo "в ответе Codex нет JSON отчёта"; exit 0; }
+          import base64, json, re, sys
+          text = open("/tmp/body.txt", encoding="utf-8").read()
+          cands = re.findall(r"```(?:json)?\s*(\{.*?\})\s*```", text, re.S)
+          rep = None
+          for c in cands:
+              try:
+                  j = json.loads(c)
+              except Exception:
+                  continue
+              if isinstance(j, dict) and isinstance(j.get("places"), list) and j["places"]:
+                  rep = j; break
+          if not rep:
+              sys.exit(1)
+          rep["checker"] = "Codex"
+          body = json.dumps(rep, ensure_ascii=False, indent=1).encode()
+          json.dump({"message": "Отчёт Codex: " + sys.argv[1], "branch": "main",
+                     "content": base64.b64encode(body).decode()}, open("/tmp/put.json", "w"))
+          print("мест в отчёте:", len(rep["places"]))
+          P
+          gh api -X PUT "repos/$GITHUB_REPOSITORY/contents/gpt/reports/$NAME.json" --input /tmp/put.json > /dev/null
+          gh pr comment "$NUM" --body "Отчёт принят: gpt/reports/$NAME.json. Применение — автоматически."
+          gh pr close "$NUM" --delete-branch || gh pr close "$NUM" || true
+          echo "saved=1" >> "$GITHUB_OUTPUT"
+  apply:
+    needs: intake
+    if: needs.intake.outputs.saved == '1'
+    uses: ./.github/workflows/gpt.yml
