@@ -248953,7 +248953,7 @@
 "zoon-ru-msk-street-volokolamskoe-shosse-bld-69": {
 "url": "https://zoon.ru/msk/street/volokolamskoe_shosse/bld/69/",
 "ok": false,
-"err": "HTTP Error 103: Early Hints",
+"err": "HTTP Error 429: Too Many Requests",
 "tries": 3
 },
 "zoon-ru-msk-street-bolshaya-cheryomushkinskaya-ulitsa-bld-1": {
@@ -249354,7 +249354,7 @@
 "universe-dance-ru-contacts": {
 "url": "https://universe-dance.ru/contacts",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
+"err": "HTTP Error 403: Forbidden",
 "tries": 1
 },
 "angdancestudio-ru": {
@@ -249399,15 +249399,14 @@
 },
 "kto-kruche-ru": {
 "url": "https://kto-kruche.ru",
-"ok": true,
-"pages": 5,
-"bytes": 4747,
-"tries": 0
+"ok": false,
+"err": "<urlopen error timed out>",
+"tries": 1
 },
 "kto-kruche-ru-contacts": {
 "url": "https://kto-kruche.ru/contacts",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
+"err": "<urlopen error timed out>",
 "tries": 1
 },
 "teamvolkrus-tilda-ws": {
@@ -249422,5 +249421,26 @@
 "ok": false,
 "err": "<urlopen error timed out>",
 "tries": 1
+},
+"yandex-ru-maps-org-suluguni-172910990033": {
+"url": "https://yandex.ru/maps/org/suluguni/172910990033/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-org-suluguni-244764173669": {
+"url": "https://yandex.ru/maps/org/suluguni/244764173669/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-org-grano-1227527824": {
+"url": "https://yandex.ru/maps/org/grano/1227527824/",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
 }
 }
