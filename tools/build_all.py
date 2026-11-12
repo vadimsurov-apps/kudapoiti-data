@@ -50,4 +50,5 @@ subprocess.run([sys.executable, "tools/metrics.py"], check=False, stdout=subproc
 # независимый проверяющий (ChatGPT, 10.11): разобрать его отчёты и обновить для него очередь
 subprocess.run([sys.executable, "tools/gpt_import.py"], check=False, stdout=subprocess.DEVNULL)
 subprocess.run([sys.executable, "tools/gpt_queue.py"], check=False, stdout=subprocess.DEVNULL)
+subprocess.run([sys.executable, "tools/call_queue.py"], check=False, stdout=subprocess.DEVNULL)   # обзвон для помощницы
 subprocess.run([sys.executable, "tools/gpt_rules.py"], check=False, stdout=subprocess.DEVNULL)   # свод правил для GPT (Вадим 11.11)

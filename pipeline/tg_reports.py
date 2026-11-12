@@ -15,7 +15,16 @@ REP, STATE, ANS = "auto/reports.json", "auto/reports-state.json", "auto/report-a
 # Проверяющие (Вадим 10.11: помощница лично проверяет карточки): {chat_id: имя}. Их отметки «Всё верно» — в
 # auto/human-checks.json (считаются подтверждением карточки), их правки — доверенные (trusted) для робота-исправителя.
 CHECKERS, CHECKS = "auto/checkers.json", "auto/human-checks.json"
-CHECK_KB = json.dumps({"keyboard": [[{"text": "▶️ Проверять карточки"}]], "resize_keyboard": True, "is_persistent": True})
+CHECK_KB = json.dumps({"keyboard": [[{"text": "▶️ Проверять карточки"}, {"text": "📞 Обзвон"}]],
+                       "resize_keyboard": True, "is_persistent": True})
+# Обзвон (Вадим 12.11: «помощнице давать места, где нужно именно звонить… чтобы звонила прямо по ссылке, чтобы было
+# понятно, что она правда звонила»). Очередь — auto/call-queue.json (tools/call_queue.py). Номер бот показывает только
+# по кнопке «📞 Позвонить» (время нажатия записывается), после каждых PROOF_EVERY звонков просит скриншот журнала
+# вызовов — робот-исправитель сверяет номера и длительность и только тогда применяет ответы.
+CALLQ = "auto/call-queue.json"
+PROOF_EVERY = 5
+NEXTCALL_KB = json.dumps({"inline_keyboard": [[{"text": "📞 Следующий звонок", "callback_data": "cnext:x"}],
+                                              [{"text": "🏁 Закончить обзвон", "callback_data": "cend:x"}]]})
 NEXT_KB = json.dumps({"inline_keyboard": [[{"text": "▶️ Следующая карточка", "callback_data": "next:x"}]]})
 PRIORITY = ["food", "kidsroom", "playcenters", "pools", "dance", "martial", "gymnastics", "football", "ballgames",
             "sport", "trampolines", "quests", "masterclass", "museums", "shows", "animals", "parks"]
@@ -119,6 +128,95 @@ def send_card(chat, state, checks):
     say(chat, card_text(p, left), card_kb(p))
 
 
+def now_iso():
+    return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+
+
+def call_item(pid):
+    q = json.load(open(CALLQ))["places"] if os.path.exists(CALLQ) else []
+    return next((x for x in q if x["id"] == pid or x["id"][:59] == pid), None)
+
+
+def send_call(chat, state):
+    """Следующее место для звонка: из очереди, кому не звонили 14 дней и кого этот человек не пропускал."""
+    q = json.load(open(CALLQ))["places"] if os.path.exists(CALLQ) else []
+    since = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(time.time() - 14 * 86400))
+    called = {c["place_id"] for c in state.setdefault("calls", []) if c.get("pressed", "") >= since}
+    skipped = set(state.setdefault("call_skipped", {}).get(chat, []))
+    left = [x for x in q if x["id"] not in called and x["id"] not in skipped]
+    if not left:
+        say(chat, "🎉 Обзвон на сегодня закончен — мест, куда нужно позвонить, не осталось. Спасибо!"); return
+    x = left[0]
+    lines = [f"📞 Нужно позвонить (осталось {len(left)})", "", x["name"], f"Тип: {x.get('type') or '—'}",
+             f"📍 {x.get('address') or '—'}", "", "Что спросить:"]
+    lines += [f"{i}. {t['q']}" for i, t in enumerate(x["questions"], 1)]
+    lines += ["", "Нажмите «📞 Позвонить» — бот пришлёт номер, по нему можно нажать и сразу позвонить."]
+    kb = {"inline_keyboard": [[{"text": "📞 Позвонить", "callback_data": f"dial:{x['id']}"[:64]}],
+                              [{"text": "⏭ Пропустить", "callback_data": f"cskip:{x['id']}"[:64]}]]}
+    say(chat, "\n".join(lines), json.dumps(kb))
+
+
+def ask_proof(chat, state):
+    """Раз в PROOF_EVERY звонков — скриншот журнала вызовов. Возвращает True, если попросили."""
+    todo = [c for c in state.get("calls", []) if c.get("chat") == chat and c.get("pressed") and not c.get("proof")
+            and c.get("result") in ("ok", "noanswer")]
+    if not todo:
+        return False
+    state.setdefault("proof_wait", {})[chat] = [c["place_id"] for c in todo]
+    nums = "\n".join(f"• {c['phone']} — {c['name']}" for c in todo)
+    say(chat, "📸 Чтобы звонки засчитались, пришлите скриншот журнала вызовов: приложение «Телефон» → «Недавние» — "
+              f"чтобы были видны эти номера и время звонков:\n{nums}\n\nОдин скриншот на все (или два, если не помещаются).")
+    return True
+
+
+def handle_call_callback(act, pid, chat, mid, names, places, state):
+    calls = state.setdefault("calls", [])
+    x = call_item(pid)
+    full = x["id"] if x else pid
+    if act == "dial":
+        if not x:
+            say(chat, "Этого места уже нет в очереди обзвона."); send_call(chat, state); return True
+        calls.append({"place_id": full, "name": x["name"], "phone": x["phone"], "chat": chat, "by": names[chat],
+                      "pressed": now_iso(), "questions": [t["key"] for t in x["questions"]]})
+        call_quiet("editMessageReplyMarkup", chat_id=chat, message_id=mid,
+                   reply_markup=json.dumps({"inline_keyboard": [[{"text": "📞 Звоню…", "callback_data": "noop:x"}]]}))
+        kb = {"inline_keyboard": [[{"text": "✅ Дозвонилась — напишу ответы", "callback_data": f"cok:{full}"[:64]}],
+                                  [{"text": "📵 Не дозвонилась", "callback_data": f"cno:{full}"[:64]}]]}
+        say(chat, f"📞 {x['phone']}\n\n👆 Нажмите на номер — начнётся звонок.\n«{x['name']}»\n\nСпросите:\n"
+                  + "\n".join(f"{i}. {t['q']}" for i, t in enumerate(x["questions"], 1))
+                  + "\n\nПосле звонка нажмите кнопку ниже.", json.dumps(kb))
+        return True
+    last = next((c for c in reversed(calls) if c["place_id"] == full and c.get("chat") == chat and not c.get("result")), None)
+    if act == "cok":
+        if last: last.update(result="ok", answered=now_iso())
+        state["chats"][chat] = full; state.setdefault("calling", {})[chat] = full
+        call_quiet("editMessageReplyMarkup", chat_id=chat, message_id=mid, reply_markup=json.dumps({"inline_keyboard": []}))
+        say(chat, f"✍️ «{places.get(full, full)}»: напишите ответы по пунктам (1, 2, 3…) — как вам сказали по телефону. "
+                  "Можно несколькими сообщениями. Чего не знают — так и напишите.\n\nКогда закончите — «📞 Следующий звонок».",
+            NEXTCALL_KB)
+        return True
+    if act == "cno":
+        if last: last.update(result="noanswer", answered=now_iso())
+        call_quiet("editMessageReplyMarkup", chat_id=chat, message_id=mid, reply_markup=json.dumps({"inline_keyboard": []}))
+        say(chat, "📵 Записали: не дозвонились. Предложим это место ещё раз через две недели.")
+        send_call(chat, state); return True
+    if act == "cskip":
+        state.setdefault("call_skipped", {}).setdefault(chat, []).append(full)
+        call_quiet("editMessageReplyMarkup", chat_id=chat, message_id=mid,
+                   reply_markup=json.dumps({"inline_keyboard": [[{"text": "⏭ Пропущено", "callback_data": "noop:x"}]]}))
+        send_call(chat, state); return True
+    if act in ("cnext", "cend"):
+        state.get("calling", {}).pop(chat, None); state.get("fixing", {}).pop(chat, None); state["chats"][chat] = None
+        call_quiet("editMessageReplyMarkup", chat_id=chat, message_id=mid, reply_markup=json.dumps({"inline_keyboard": []}))
+        unproved = [c for c in calls if c.get("chat") == chat and c.get("result") and not c.get("proof")]
+        if act == "cend" or len(unproved) >= PROOF_EVERY:
+            if ask_proof(chat, state): return True
+        if act == "cend":
+            say(chat, "Спасибо! Обзвон на паузе — вернуться можно кнопкой «📞 Обзвон»."); return True
+        send_call(chat, state); return True
+    return False
+
+
 def handle_callback(cb, places, reports, state, checks):
     chat = str(cb["message"]["chat"]["id"]); data = cb.get("data", "")
     names = checkers()
@@ -126,6 +224,8 @@ def handle_callback(cb, places, reports, state, checks):
     if chat not in names or ":" not in data: return False
     act, pid = data.split(":", 1)
     mid = cb["message"]["message_id"]
+    if act in ("dial", "cok", "cno", "cskip", "cnext", "cend"):
+        return handle_call_callback(act, pid, chat, mid, names, places, state)
     if act == "ok":
         checks.append({"place_id": pid, "by": names[chat], "chat": chat, "ok": True,
                        "date": time.strftime("%Y-%m-%d"), "time": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())})
@@ -179,6 +279,13 @@ def greet_checkers(state):
                       "сайтом или звонком и нажмите «✅ Всё верно» или «✏️ Есть ошибка». После ответа сразу придёт "
                       "следующая. Ваши проверки сразу засчитываются, а исправления вносятся в приложение.", CHECK_KB)
             state["greeted"].append(chat)
+        if chat not in state.setdefault("greeted_call", []):
+            say(chat, f"📞 {name}, появился новый режим — «Обзвон» (кнопка внизу). Бот даёт место, куда нужно именно "
+                      "позвонить, и вопросы: часы, цены, с какого возраста, можно ли на инвалидной коляске. Нажимаете "
+                      "«📞 Позвонить» — бот присылает номер, по нему можно нажать. После разговора пишете ответы по пунктам. "
+                      f"Раз в {PROOF_EVERY} звонков бот попросит скриншот журнала вызовов («Телефон» → «Недавние») — "
+                      "так звонки засчитываются.", CHECK_KB)
+            state["greeted_call"].append(chat)
 
 
 def git(*a):
@@ -213,6 +320,9 @@ def handle(u, places, reports, state):
     if chat in names and (text in ("▶️ Проверять карточки", "/check") or text.startswith("▶️")):
         state.get("fixing", {}).pop(chat, None)
         send_card(chat, state, CHECKS_MEM); return True
+    if chat in names and (text.startswith("📞") or text == "/call"):
+        state.get("fixing", {}).pop(chat, None); state.get("calling", {}).pop(chat, None)
+        send_call(chat, state); return True
     if text.startswith("/start"):
         arg = text[6:].strip()
         pid = arg[2:] if arg.startswith("e_") else None
@@ -244,6 +354,21 @@ def handle(u, places, reports, state):
                     "chat": chat, "place_id": pid, "place": places.get(pid), "text": text, "photo": photo,
                     "photo_file": photo_file, "location": location, "status": "new",
                     **({"trusted": True, "by": names[chat]} if chat in names else {})})
+    if chat in names and photo and state.get("proof_wait", {}).get(chat):
+        # скриншот журнала вызовов — подтверждение звонков (робот-исправитель сверит номера и время)
+        ids = state["proof_wait"].pop(chat)
+        reports[-1].update(place_id=None, place=None, call_proof=True, covers=ids,
+                           calls=[c for c in state.get("calls", []) if c.get("chat") == chat and c["place_id"] in ids and not c.get("proof")])
+        for c in state.get("calls", []):
+            if c.get("chat") == chat and c["place_id"] in ids and not c.get("proof"): c["proof"] = reports[-1]["id"]
+        say(chat, "📸 Спасибо, скриншот получен — звонки засчитаем после сверки.")
+        send_call(chat, state); return True
+    if chat in names and state.get("calling", {}).get(chat) == pid and pid:
+        # ответы после звонка: доверенный источник только вместе со скриншотом журнала вызовов (см. CLAUDE.md)
+        c = next((c for c in reversed(state.get("calls", [])) if c["place_id"] == pid and c.get("chat") == chat), {})
+        reports[-1].update(call=True, phone=c.get("phone"), pressed=c.get("pressed"), questions=c.get("questions"))
+        say(chat, f"📝 Записали к «{places.get(pid, pid)}». Можно дописать ещё или нажать «📞 Следующий звонок».", NEXTCALL_KB)
+        return True
     if chat in names and state.get("fixing", {}).get(chat):
         say(chat, f"📝 Записали к «{places.get(pid, pid)}». Можно дописать ещё или нажать «▶️ Следующая карточка».", NEXT_KB)
         return True
