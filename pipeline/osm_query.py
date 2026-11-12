@@ -70,10 +70,12 @@ def main():
                     rec["match"] = True
                 out[q["id"]][key].append(rec)
     for v in out.values():
-        v["pois"].sort(key=lambda r: (not r.get("match"), r["d"])); v["pois"] = v["pois"][:200 if v["query"].get("geom") else 60]
+        v["pois"].sort(key=lambda r: (not r.get("match"), r["d"])); v["pois"] = v["pois"][:100 if v["query"].get("geom") else 60]
         v["buildings"].sort(key=lambda r: r["d"]); v["buildings"] = v["buildings"][:120]
         v["entrances"].sort(key=lambda r: r["d"]); v["entrances"] = v["entrances"][:40]
-        if "outlines" in v: v["outlines"].sort(key=lambda r: r["d"]); v["outlines"] = v["outlines"][:300]
+        if "outlines" in v: v["outlines"].sort(key=lambda r: r["d"]); v["outlines"] = v["outlines"][:100]
+    # 12.11 16 UTC (rare): ответ снова перевалил за 100 МБ (outlines 55 МБ) — пуш молча отклонялся с 15:56; outlines 300→100,
+    # pois у geom-запросов 200→100 (ближайшие объекты сохраняются).
     # 12.11 (rare): с indent=1 ответ на 700+ запросов перевалил за 100 МБ и GitHub отклонял пуш (GH001), а одной строкой
     # любые два параллельных прогона конфликтуют при git pull --rebase. Поэтому: один запрос — одна компактная строка.
     with open("auto/osm-answers.json", "w") as fo:
