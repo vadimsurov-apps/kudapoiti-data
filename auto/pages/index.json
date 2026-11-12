@@ -201705,7 +201705,7 @@
 "url": "https://www.logprof.ru/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-"tries": 1
+"tries": 2
 },
 "cns-neiro-ru": {
 "url": "https://cns-neiro.ru/",
@@ -201772,20 +201772,23 @@
 },
 "englium-ru": {
 "url": "https://englium.ru/",
-"ok": false,
-"err": "<urlopen error timed out>",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
 "tries": 1
 },
 "www-kew-school": {
 "url": "https://www.kew.school/",
-"ok": false,
-"err": "HTTP Error 403: Forbidden",
+"ok": true,
+"pages": 1,
+"bytes": 10361,
 "tries": 1
 },
 "robotoshkola-ru": {
 "url": "https://robotoshkola.ru/",
-"ok": false,
-"err": "<urlopen error [Errno 101] Network is unreachable>",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
 "tries": 1
 },
 "sandpro-ru": {
@@ -201806,7 +201809,7 @@
 "url": "https://neuroland-center.ru/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
-"tries": 1
+"tries": 2
 },
 "logoped-markusha-ru": {
 "url": "https://logoped-markusha.ru/",
@@ -201831,8 +201834,9 @@
 },
 "centrazvitiya-ru": {
 "url": "https://centrazvitiya.ru/",
-"ok": false,
-"err": "HTTP Error 403: Forbidden",
+"ok": true,
+"pages": 1,
+"bytes": 266,
 "tries": 1
 },
 "1vitie-ru": {
@@ -201853,7 +201857,7 @@
 "url": "https://5утят.рф/",
 "ok": false,
 "err": "'latin-1' codec can't encode characters in position 1-4: ordinal not in range(256)",
-"tries": 1
+"tries": 2
 },
 "vteme-camp-ru": {
 "url": "https://vteme-camp.ru/",
@@ -201892,8 +201896,9 @@
 },
 "english-in-com": {
 "url": "https://english-in.com/",
-"ok": false,
-"err": "HTTP Error 403: Forbidden",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
 "tries": 1
 },
 "strana-detstwa-ru": {
@@ -201914,19 +201919,20 @@
 "url": "https://dpgaidar.mskobr.ru/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 1
+"tries": 2
 },
 "domdt-ru": {
 "url": "https://domdt.ru/",
-"ok": false,
-"err": "<urlopen error [Errno 101] Network is unreachable>",
+"ok": true,
+"pages": 2,
+"bytes": 7270,
 "tries": 1
 },
 "moskvorechie-mskobr-ru": {
 "url": "https://moskvorechie.mskobr.ru/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 1
+"tries": 2
 },
 "neuroart-psy-ru": {
 "url": "https://neuroart-psy.ru/",
@@ -202217,14 +202223,16 @@
 },
 "teakam-ru-contacts": {
 "url": "https://teakam.ru/contacts/",
-"ok": false,
-"err": "<urlopen error [Errno 101] Network is unreachable>",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
 "tries": 1
 },
 "pandapark-org-parks-sokolniki": {
 "url": "https://pandapark.org/parks/sokolniki/",
-"ok": false,
-"err": "<urlopen error timed out>",
+"ok": true,
+"pages": 1,
+"bytes": 43,
 "tries": 1
 },
 "www-zenit-kmz-com-museum": {
@@ -202239,289 +202247,6 @@
 "ok": true,
 "pages": 5,
 "bytes": 13775,
-"tries": 0
-},
-"zr-kotelniki-ru": {
-"url": "https://zr-kotelniki.ru/",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"aba-na-ponyatnom-ru": {
-"url": "https://aba-na-ponyatnom.ru/",
-"ok": true,
-"pages": 1,
-"bytes": 7328,
-"tries": 0
-},
-"aba-center-ru": {
-"url": "https://aba-center.ru/",
-"ok": true,
-"pages": 3,
-"bytes": 16000,
-"tries": 0
-},
-"maliysharium-ru": {
-"url": "https://maliysharium.ru/",
-"ok": false,
-"err": "HTTP Error 403: Forbidden",
-"tries": 1
-},
-"dvigaizhizn-ru": {
-"url": "https://dvigaizhizn.ru/",
-"ok": true,
-"pages": 1,
-"bytes": 10733,
-"tries": 0
-},
-"logopedyegoryevsk-ru": {
-"url": "https://logopedyegoryevsk.ru/",
-"ok": true,
-"pages": 3,
-"bytes": 3047,
-"tries": 0
-},
-"tauber-school-ru": {
-"url": "https://tauber-school.ru/",
-"ok": true,
-"pages": 2,
-"bytes": 16000,
-"tries": 0
-},
-"www-logprof-ru": {
-"url": "https://www.logprof.ru/",
-"ok": false,
-"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-"tries": 1
-},
-"cns-neiro-ru": {
-"url": "https://cns-neiro.ru/",
-"ok": true,
-"pages": 3,
-"bytes": 10996,
-"tries": 0
-},
-"neuro-logo-motion-ru": {
-"url": "https://neuro-logo-motion.ru/",
-"ok": true,
-"pages": 2,
-"bytes": 16000,
-"tries": 0
-},
-"upgraders-ru": {
-"url": "https://upgraders.ru/",
-"ok": true,
-"pages": 5,
-"bytes": 11503,
-"tries": 0
-},
-"fun-english-club": {
-"url": "https://fun-english.club/",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"discoveryschool-ru": {
-"url": "https://discoveryschool.ru/",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"kulibinpro-ru": {
-"url": "https://kulibinpro.ru/",
-"ok": true,
-"pages": 1,
-"bytes": 8350,
-"tries": 0
-},
-"nauchimitochka-ru": {
-"url": "https://nauchimitochka.ru/",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"detski-centr-apelsin-ru": {
-"url": "https://detski-centr-apelsin.ru/",
-"ok": true,
-"pages": 1,
-"bytes": 15419,
-"tries": 0
-},
-"imenapro-ru": {
-"url": "https://imenapro.ru/",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"englium-ru": {
-"url": "https://englium.ru/",
-"ok": false,
-"err": "<urlopen error timed out>",
-"tries": 1
-},
-"www-kew-school": {
-"url": "https://www.kew.school/",
-"ok": false,
-"err": "HTTP Error 403: Forbidden",
-"tries": 1
-},
-"robotoshkola-ru": {
-"url": "https://robotoshkola.ru/",
-"ok": false,
-"err": "<urlopen error [Errno 101] Network is unreachable>",
-"tries": 1
-},
-"sandpro-ru": {
-"url": "https://sandpro.ru/",
-"ok": true,
-"pages": 1,
-"bytes": 55,
-"tries": 0
-},
-"limonadstudio-ru": {
-"url": "https://limonadstudio.ru/",
-"ok": true,
-"pages": 1,
-"bytes": 115,
-"tries": 0
-},
-"neuroland-center-ru": {
-"url": "https://neuroland-center.ru/",
-"ok": false,
-"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
-"tries": 1
-},
-"logoped-markusha-ru": {
-"url": "https://logoped-markusha.ru/",
-"ok": true,
-"pages": 1,
-"bytes": 3933,
-"tries": 0
-},
-"schooliq007-ru": {
-"url": "https://schooliq007.ru/",
-"ok": true,
-"pages": 1,
-"bytes": 16000,
-"tries": 0
-},
-"sovenok-dc-ru": {
-"url": "https://sovenok-dc.ru/",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"centrazvitiya-ru": {
-"url": "https://centrazvitiya.ru/",
-"ok": false,
-"err": "HTTP Error 403: Forbidden",
-"tries": 1
-},
-"1vitie-ru": {
-"url": "https://1vitie.ru/",
-"ok": true,
-"pages": 5,
-"bytes": 14667,
-"tries": 0
-},
-"chinatutor-ru": {
-"url": "https://chinatutor.ru/",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"5": {
-"url": "https://5утят.рф/",
-"ok": false,
-"err": "'latin-1' codec can't encode characters in position 1-4: ordinal not in range(256)",
-"tries": 1
-},
-"vteme-camp-ru": {
-"url": "https://vteme-camp.ru/",
-"ok": true,
-"pages": 1,
-"bytes": 2376,
-"tries": 0
-},
-"sunrise-lm-ru": {
-"url": "https://sunrise-lm.ru/",
-"ok": true,
-"pages": 3,
-"bytes": 15186,
-"tries": 0
-},
-"reginaskorochtenie-com": {
-"url": "https://reginaskorochtenie.com/",
-"ok": true,
-"pages": 1,
-"bytes": 16000,
-"tries": 0
-},
-"melkids-ru": {
-"url": "https://melkids.ru/",
-"ok": true,
-"pages": 1,
-"bytes": 16000,
-"tries": 0
-},
-"www-in-yaz-center-ru": {
-"url": "https://www.in-yaz-center.ru/",
-"ok": true,
-"pages": 1,
-"bytes": 16000,
-"tries": 0
-},
-"english-in-com": {
-"url": "https://english-in.com/",
-"ok": true,
-"pages": 2,
-"bytes": 10022,
-"tries": 0
-},
-"strana-detstwa-ru": {
-"url": "https://strana-detstwa.ru/",
-"ok": true,
-"pages": 3,
-"bytes": 5531,
-"tries": 0
-},
-"sunrobbo-ru": {
-"url": "https://sunrobbo.ru/",
-"ok": true,
-"pages": 1,
-"bytes": 11712,
-"tries": 0
-},
-"dpgaidar-mskobr-ru": {
-"url": "https://dpgaidar.mskobr.ru/",
-"ok": false,
-"err": "<urlopen error timed out>",
-"tries": 1
-},
-"domdt-ru": {
-"url": "https://domdt.ru/",
-"ok": false,
-"err": "<urlopen error [Errno 101] Network is unreachable>",
-"tries": 1
-},
-"moskvorechie-mskobr-ru": {
-"url": "https://moskvorechie.mskobr.ru/",
-"ok": false,
-"err": "<urlopen error timed out>",
-"tries": 1
-},
-"neuroart-psy-ru": {
-"url": "https://neuroart-psy.ru/",
-"ok": true,
-"pages": 5,
-"bytes": 11910,
 "tries": 0
 },
 "yandex-ru-maps-1-moscow-and-moscow-oblast-kcn0-1112h-text-d0-90-d1-80-d0-b0-d1-80-d0-b0-d1": {
@@ -203619,7 +203344,7 @@
 "yandex-ru-maps-213-moscow-kcn78-1112h-text-shibainu-20fusion-20cafe-2c-20-d0-9c-d0-be-d1-8": {
 "url": "https://yandex.ru/maps/213/moscow/?kcn78=1112h&text=Shibainu%20fusion%20cafe%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF.%2C%2029%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%204",
 "ok": true,
-"pages": 4,
+"pages": 5,
 "bytes": 16000,
 "tries": 0
 },
@@ -203927,7 +203652,7 @@
 "yandex-ru-maps-213-moscow-kcn100-1112h-text-d0-a8-d0-be-d0-ba-d0-be-d0-bb-d0-b0-d0-b4-d0-b": {
 "url": "https://yandex.ru/maps/213/moscow/?kcn100=1112h&text=%D0%A8%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%B4%D0%BD%D0%B8%D1%86%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%92%D0%B0%D1%80%D1%88%D0%B0%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88.%2C%20160",
 "ok": true,
-"pages": 5,
+"pages": 4,
 "bytes": 16000,
 "tries": 0
 },
@@ -204006,6 +203731,353 @@
 "ok": true,
 "pages": 5,
 "bytes": 16000,
+"tries": 0
+},
+"xn-80aaynbb8k-xn-p1acf": {
+"url": "https://xn--80aaynbb8k.xn--p1acf/",
+"ok": true,
+"pages": 5,
+"bytes": 15758,
+"tries": 0
+},
+"dance-rh-ru-contacts": {
+"url": "https://dance-rh.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"station-club-price": {
+"url": "https://station.club/price",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"butovo-mall-ru": {
+"url": "https://butovo-mall.ru/",
+"ok": false,
+"err": "<urlopen error [Errno -2] Name or service not known>",
+"tries": 1
+},
+"yandex-ru-maps-213-moscow-text-bonbon-20-d0-94-d1-83-d0-b1-d0-bd-d0-b0-20-d0-9e-d1-80-d0-b": {
+"url": "https://yandex.ru/maps/213/moscow/?text=Bonbon%20%D0%94%D1%83%D0%B1%D0%BD%D0%B0%20%D0%9E%D1%80%D0%B4%D0%B6%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8%D0%B4%D0%B7%D0%B5%2013%D0%90",
+"ok": true,
+"pages": 2,
+"bytes": 3333,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-92-d0-be-d1-81-d1-82-d0-be-d0-ba-20-e2-84-961-20-d0-af-d": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%92%D0%BE%D1%81%D1%82%D0%BE%D0%BA%20%E2%84%961%20%D0%AF%D1%81%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%202",
+"ok": true,
+"pages": 4,
+"bytes": 6338,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-a1-d0-b5-d0-bc-d0-b5-d0-b9-d0-bd-d1-8b-d0-b5-20-d1-82-d1": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%A1%D0%B5%D0%BC%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%B8%20%D0%92%D0%B8%D0%B4%D0%BD%D0%BE%D0%B5%2C%20%D0%A8%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2079%D0%90",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-9c-d0-b0-d0-bc-d0-b0-20-d0-9c-d0-b8-d1-8f-20-d0-95-d0-b3": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%9C%D0%B0%D0%BC%D0%B0%20%D0%9C%D0%B8%D1%8F%20%D0%95%D0%B3%D0%BE%D1%80%D1%8C%D0%B5%D0%B2%D1%81%D0%BA%2C%20%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%20176%D0%90",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-97-d0-b4-d1-80-d0-b0-d1-81-d1-82-d0-b5-20-d0-90-d0-bb-d0": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B5%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D1%8B%20%D0%9C%D0%BE%D0%BD%D0%B0%D1%85%D0%BE%D0%B2%D0%BE%D0%B9%2087%20%D0%BA5",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-happy-20city-20-d0-9a-d1-83-d0-b7-d1-8c-d0-bc-d0-b8-d0-bd-d": {
+"url": "https://yandex.ru/maps/213/moscow/?text=Happy%20City%20%D0%9A%D1%83%D0%B7%D1%8C%D0%BC%D0%B8%D0%BD%D0%BA%D0%B8%20%D0%9C%D0%BE%D0%BB%D0%BB",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-9d-d0-b5-d1-81-d0-ba-d1-83-d1-87-d0-b0-d0-b9-d0-ba-d0-b0": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%9D%D0%B5%D1%81%D0%BA%D1%83%D1%87%D0%B0%D0%B9-%D0%BA%D0%B0%20%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE%20%D0%9C%D0%BE%D0%BB%D0%BB",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-a1-d0-b5-d0-bc-d0-b5-d0-b9-d0-bd-d1-8b-d0-b9-20-d0-be-d1": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%A1%D0%B5%D0%BC%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9%20%D0%BE%D1%87%D0%B0%D0%B3%20%D0%A8%D0%BE%D1%81%D1%81%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%2013",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-il-20-d0-9f-d0-b0-d1-82-d0-b8-d0-be-20-d0-93-d0-be-d1-80-d0": {
+"url": "https://yandex.ru/maps/213/moscow/?text=IL%20%D0%9F%D0%B0%D1%82%D0%B8%D0%BE%20%D0%93%D0%BE%D1%80%D0%BE%D0%B4%20%D0%9B%D0%B5%D1%84%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D0%BE",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-georges-20-d0-a1-d0-b0-d0-bb-d0-b0-d1-80-d0-b8-d1-81": {
+"url": "https://yandex.ru/maps/213/moscow/?text=GEORGES%20%D0%A1%D0%B0%D0%BB%D0%B0%D1%80%D0%B8%D1%81",
+"ok": true,
+"pages": 2,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-9c-d1-8f-d1-81-d0-be-20-d0-b8-20-d0-a0-d1-8b-d0-b1-d0-b0": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%9C%D1%8F%D1%81%D0%BE%20%D0%B8%20%D0%A0%D1%8B%D0%B1%D0%B0%20%D0%A0%D1%83%D0%BC%D1%8F%D0%BD%D1%86%D0%B5%D0%B2%D0%BE",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-93-d1-80-d0-b0-d0-bd-d0-b4-20-d0-a3-d1-80-d1-8e-d0-ba-20": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%93%D1%80%D0%B0%D0%BD%D0%B4%20%D0%A3%D1%80%D1%8E%D0%BA%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80-%D1%82%2C%2037/6%2C%20%D0%96%D0%9A%20%C2%AB%D0%9F%D1%80%D0%B0%D0%B9%D0%BC%20%D0%9F%D0%B0%D1%80%D0%BA%C2%BB",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-sportstation-20-20-20-d1-81-d0-ba-d0-b0-d0-bb-d0-be-d0-b4-d": {
+"url": "https://yandex.ru/maps/213/moscow/?text=Sportstation%20%20%20%D1%81%D0%BA%D0%B0%D0%BB%D0%BE%D0%B4%D1%80%D0%BE%D0%BC%20%D0%B8%20%D0%B2%D0%B5%D0%B9%D0%BA%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9D%D0%BE%D0%B2%D0%BE%D0%BE%D1%81%D1%82%D0%B0%D0%BF%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%205%2C%20%D1%81%D1%82%D1%80.%202",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-bonbon-20-d0-94-d1-83-d0-b1-d0-bd-d0-b0-2c-20-d1-83-d0-bb-2": {
+"url": "https://yandex.ru/maps/213/moscow/?text=Bonbon%20%D0%94%D1%83%D0%B1%D0%BD%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9E%D1%80%D0%B4%D0%B6%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8%D0%B4%D0%B7%D0%B5%2C%2013%D0%90",
+"ok": true,
+"pages": 2,
+"bytes": 3362,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-georges-20-d0-9c-d0-be-d1-81-d0-ba-d0-b2-d0-b0-2c-20-d0-9a": {
+"url": "https://yandex.ru/maps/213/moscow/?text=GEORGES%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88.%2C%2023-%D0%B9%20%D0%BA%D0%BC%2C%201%2C%20%D0%A2%D0%A0%D0%A6%20%C2%AB%D0%A1%D0%B0%D0%BB%D0%B0%D1%80%D0%B8%D1%81%C2%BB%2C%202%20%D1%8D%D1%82%D0%B0%D0%B6",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-92-d0-be-d1-81-d1-82-d0-be-d0-ba-20-e2-84-96-201-20-d0-9": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%92%D0%BE%D1%81%D1%82%D0%BE%D0%BA%20%E2%84%96%201%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%AF%D1%81%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%202",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-9c-d1-8f-d1-81-d0-be-20-26-20-d0-a0-d1-8b-d0-b1-d0-b0-20": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%9C%D1%8F%D1%81%D0%BE%20%26%20%D0%A0%D1%8B%D0%B1%D0%B0%20%D0%BF%D0%BE%D1%81.%20%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%2C%20%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88.%2C%2022-%D0%B9%20%D0%BA%D0%BC%2C%204%2C%20%D1%81%D1%82%D1%80.%201%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%20%D0%90%2C%20%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D0%BF%D0%B0%D1%80%D0%BA%20%C2%AB%D0%A0%D1%83%D0%BC%D1%8F%D0%BD%D1%86%D0%B5%D0%B2%D0%BE%C2%BB%2C%201%20%D1%8D%D1%82%D0%B0%D0%B6",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-97-d0-b4-d1-80-d0-b0-d1-81-d1-82-d0-b5-20-d0-9a-d0-be-d0": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%97%D0%B4%D1%80%D0%B0%D1%81%D1%82%D0%B5%20%D0%9A%D0%BE%D0%BC%D0%BC%D1%83%D0%BD%D0%B0%D1%80%D0%BA%D0%B0%2C%20%D1%83%D0%BB.%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D1%8B%20%D0%9C%D0%BE%D0%BD%D0%B0%D1%85%D0%BE%D0%B2%D0%BE%D0%B9%2C%2087%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%205",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-a1-d0-b5-d0-bc-d0-b5-d0-b9-d0-bd-d1-8b-d0-b9-20-d0-9e-d1": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%A1%D0%B5%D0%BC%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9%20%D0%9E%D1%87%D0%B0%D0%B3%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A8%D0%BE%D1%81%D1%81%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2013",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-il-20-d0-9f-d0-b0-d1-82-d0-b8-d0-be-20-d0-9c-d0-be-d1-81-d0": {
+"url": "https://yandex.ru/maps/213/moscow/?text=IL%20%D0%9F%D0%B0%D1%82%D0%B8%D0%BE%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%88.%20%D0%AD%D0%BD%D1%82%D1%83%D0%B7%D0%B8%D0%B0%D1%81%D1%82%D0%BE%D0%B2%2C%2012%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%202%2C%20%D0%A2%D0%A0%D0%9A%20%C2%AB%D0%93%D0%BE%D1%80%D0%BE%D0%B4%C2%BB%2C%203%20%D1%8D%D1%82%D0%B0%D0%B6",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-a2-d0-b5-d0-b0-d1-82-d1-80-20-d1-81-d0-b2-d0-be-d0-b1-d0": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%A2%D0%B5%D0%B0%D1%82%D1%80%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%B0%D0%BD%D1%86%D0%B0%20SDT%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D0%BA%D0%B0%20%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D1%91%D0%B2%D0%B0%2C%2013%2C%20%D1%81%D1%82%D1%80.%204",
+"ok": true,
+"pages": 2,
+"bytes": 4323,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-a3-d1-81-d0-b0-d0-b4-d1-8c-d0-b1-d0-b0-20-d0-a2-d0-b8-d0": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%A3%D1%81%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0%20%D0%A2%D0%B8%D0%BC%D0%BE%D1%85%D0%BE%D0%B2%D0%BE-%D0%A1%D0%B0%D0%BB%D0%B0%D0%B7%D0%BA%D0%B8%D0%BD%D0%BE%20%D0%92%D0%B8%D0%B4%D0%BD%D0%BE%D0%B5%2C%20%D0%A8%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2079%D0%90",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-happy-20city-20-d0-9c-d0-be-d1-81-d0-ba-d0-b2-d0-b0-2c-207": {
+"url": "https://yandex.ru/maps/213/moscow/?text=Happy%20City%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%207-%D1%8F%20%D0%9A%D0%BE%D0%B6%D1%83%D1%85%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%209%2C%20%D0%A2%D0%A0%D0%A6%20%C2%AB%D0%9C%D0%BE%D0%B7%D0%B0%D0%B8%D0%BA%D0%B0%C2%BB%2C%203%20%D1%8D%D1%82%D0%B0%D0%B6",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-happy-20city-20-d0-9c-d0-be-d1-81-d0-ba-d0-b2-d0-b0-2c-20-d": {
+"url": "https://yandex.ru/maps/213/moscow/?text=Happy%20City%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D0%BE%D0%B4%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2042%2C%20%D0%A2%D0%A0%D0%A6%20%C2%AB%D0%9A%D1%83%D0%B7%D1%8C%D0%BC%D0%B8%D0%BD%D0%BA%D0%B8%20%D0%9C%D0%BE%D0%BB%D0%BB%C2%BB%2C%203%20%D1%8D%D1%82%D0%B0%D0%B6",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-a1-d0-9a-20-c2-ab-d0-9c-d0-be-d0-bb-d0-bd-d0-b8-d1-8f-c2": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%A1%D0%9A%20%C2%AB%D0%9C%D0%BE%D0%BB%D0%BD%D0%B8%D1%8F%C2%BB%20%20%20%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%BD%D0%BE%D0%B5%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D0%B1%D0%B0%D1%81%D1%81%D0%B5%D0%B9%D0%BD%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9B%D0%BE%D0%B1%D0%BD%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2013%D0%90%2C%20%D1%81%D1%82%D1%80.%201",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-a1-d1-82-d0-b0-d0-b4-d0-b8-d0-be-d0-bd-20-c2-ab-d0-90-d1": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%A1%D1%82%D0%B0%D0%B4%D0%B8%D0%BE%D0%BD%20%C2%AB%D0%90%D1%80%D0%B5%D0%BD%D0%B0-%D0%A1%D0%BE%D0%BA%D0%BE%D0%BB%C2%BB%20%20%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%80%D1%8F%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2029%D0%90%2C%20%D1%81%D1%82%D1%80.%201",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-a1-d1-82-d0-b0-d0-b4-d0-b8-d0-be-d0-bd-20-c2-ab-d0-9a-d0": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%A1%D1%82%D0%B0%D0%B4%D0%B8%D0%BE%D0%BD%20%C2%AB%D0%9A%D0%BE%D1%81%D0%B8%D0%BD%D0%BE%C2%BB%20%20%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B0%D0%BB%D1%82%D1%8B%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%201%D0%92%2C%20%D1%81%D1%82%D1%80.%201",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-91-d0-b0-d1-81-d1-81-d0-b5-d0-b9-d0-bd-20-c2-ab-d0-a8-d0": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%91%D0%B0%D1%81%D1%81%D0%B5%D0%B9%D0%BD%20%C2%AB%D0%A8%D0%B8%D0%BF%D0%B8%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A8%D0%B8%D0%BF%D0%B8%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%2059%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%204",
+"ok": true,
+"pages": 3,
+"bytes": 4364,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-aqua-20baby-20club-20-20-20-d0-bf-d0-bb-d0-b0-d0-b2-d0-b0-d": {
+"url": "https://yandex.ru/maps/213/moscow/?text=Aqua%20Baby%20Club%20%20%20%D0%BF%D0%BB%D0%B0%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B0%D0%BB%D1%8B%D1%88%D0%B5%D0%B9%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9F%D1%80%D0%BE%D1%84%D1%81%D0%BE%D1%8E%D0%B7%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2076",
+"ok": true,
+"pages": 5,
+"bytes": 10386,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-90-d0-ba-d0-b2-d0-b0-d0-ba-d0-bb-d1-83-d0-b1-20-c2-ab-d0": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%90%D0%BA%D0%B2%D0%B0%D0%BA%D0%BB%D1%83%D0%B1%20%C2%AB%D0%9D%D0%B5%D0%BC%D0%BE%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%98%D0%B2%D0%BE%D0%B2%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%206%2C%20%D1%81%D1%82%D1%80.%202",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-spartak-20city-20football-20-d0-9c-d0-be-d1-81-d0-ba-d0-b2": {
+"url": "https://yandex.ru/maps/213/moscow/?text=Spartak%20City%20Football%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D0%B5%D0%BD%D0%BA%D0%BE%2C%201%D0%90",
+"ok": true,
+"pages": 5,
+"bytes": 9067,
+"tries": 0
+},
+"yandex-com-maps-org-mama-mia-55424402383": {
+"url": "https://yandex.com/maps/org/mama_mia/55424402383/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-com-maps-org-bonbon-176143499901": {
+"url": "https://yandex.com/maps/org/bonbon/176143499901/",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-com-maps-org-bonbon-230880046739": {
+"url": "https://yandex.com/maps/org/bonbon/230880046739/",
+"ok": true,
+"pages": 2,
+"bytes": 5904,
+"tries": 0
+},
+"yandex-com-maps-org-semejnyj-ochag-197993175538": {
+"url": "https://yandex.com/maps/org/semejnyj_ochag/197993175538/",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-com-maps-org-happy-city-38862118610": {
+"url": "https://yandex.com/maps/org/happy_city/38862118610/",
+"ok": true,
+"pages": 4,
+"bytes": 8146,
+"tries": 0
+},
+"yandex-ee-navi-org-semeynyye-traditsii-162338126168": {
+"url": "https://yandex.ee/navi/org/semeynyye_traditsii/162338126168",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-com-maps-org-zdraste-176505532079": {
+"url": "https://yandex.com/maps/org/zdraste/176505532079/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-com-maps-org-zdraste-210162505648": {
+"url": "https://yandex.com/maps/org/zdraste/210162505648/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-com-maps-org-zdraste-60795932342": {
+"url": "https://yandex.com/maps/org/zdraste/60795932342/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-a2-d0-a0-d0-a6-20-d0-93-d0-b0-d0-bb-d0-b5-d0-be-d0-bd-20": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%A2%D0%A0%D0%A6%20%D0%93%D0%B0%D0%BB%D0%B5%D0%BE%D0%BD%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20123%D0%92%20%D1%87%D0%B0%D1%81%D1%8B%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-a2-d0-a0-d0-a6-20-d0-9a-d1-83-d0-b7-d1-8c-d0-bc-d0-b8-d0": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%A2%D0%A0%D0%A6%20%D0%9A%D1%83%D0%B7%D1%8C%D0%BC%D0%B8%D0%BD%D0%BA%D0%B8%20%D0%9C%D0%BE%D0%BB%D0%BB%20%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D0%BE%D0%B4%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F%2042",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-a2-d0-a0-d0-a6-20-d0-91-d1-83-d1-82-d0-be-d0-b2-d0-be-20": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%A2%D0%A0%D0%A6%20%D0%91%D1%83%D1%82%D0%BE%D0%B2%D0%BE%20%D0%9C%D0%BE%D0%BB%D0%BB%20%D0%A7%D0%B5%D1%87%D1%91%D1%80%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%B7%D0%B4%2051",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-a2-d0-a0-d0-a6-20-d0-9c-d0-be-d0-b7-d0-b0-d0-b8-d0-ba-d0": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%A2%D0%A0%D0%A6%20%D0%9C%D0%BE%D0%B7%D0%B0%D0%B8%D0%BA%D0%B0%207-%D1%8F%20%D0%9A%D0%BE%D0%B6%D1%83%D1%85%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%209",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-outlet-20village-20-d0-91-d0-b5-d0-bb-d0-b0-d1-8f-20-d0-94": {
+"url": "https://yandex.ru/maps/213/moscow/?text=Outlet%20Village%20%D0%91%D0%B5%D0%BB%D0%B0%D1%8F%20%D0%94%D0%B0%D1%87%D0%B0%20%D0%9A%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B8",
+"ok": true,
+"pages": 4,
+"bytes": 9829,
+"tries": 0
+},
+"yandex-ru-maps-213-moscow-text-d0-9c-d0-95-d0-93-d0-90-20-d0-a5-d0-b8-d0-bc-d0-ba-d0-b8": {
+"url": "https://yandex.ru/maps/213/moscow/?text=%D0%9C%D0%95%D0%93%D0%90%20%D0%A5%D0%B8%D0%BC%D0%BA%D0%B8",
+"ok": true,
+"pages": 5,
+"bytes": 9554,
 "tries": 0
 }
 }
