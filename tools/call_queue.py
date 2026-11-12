@@ -11,7 +11,7 @@ ACCESS_CATS = {"museums", "science", "shows", "circus", "animaltheater", "cinema
 SECTION_CATS = {"sport", "martial", "boxing", "wrestling", "sambo", "judo", "karate", "taekwondo", "football", "ballgames",
                 "volleyball", "hockey", "figureskating", "gymnastics", "rhythmic", "acrobatics", "racket", "tabletennis",
                 "squash", "padel", "badminton", "chess", "dance", "ballet", "singing", "music", "theaterstudio", "drawing",
-                "ceramics", "school", "languages", "robotics", "early", "montessori", "speech", "lfk", "psych", "inclusive"}
+                "ceramics", "school", "languages", "robotics", "coding", "lego", "kindergarten", "reading", "math", "mentalmath", "early", "montessori", "speech", "lfk", "psych", "inclusive"}
 
 
 def main():

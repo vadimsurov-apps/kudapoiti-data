@@ -35,6 +35,18 @@ CREATIVE = [
     ("drawing", r"рисован|\bизо\b|изостуди|художествен\w* (школ|студи)|живопис|\bдхш\b|арт.?студи|art.?studio|скетч"),
     ("ceramics", r"керамик|гончарн|\bлепк|\bглин[аеуы]\b"),
 ]
+# Вадим 12.11: «Давай ещё добавим развивашек других тоже» — узкие направления «Развития и учёбы». Ставятся местам,
+# которые уже в этом разделе (по названию/типу/«Плюсу»); детский сад — только по названию/типу.
+EDU_SET = {"montessori", "early", "school", "languages", "robotics", "coding", "lego", "kindergarten", "reading", "math", "mentalmath"}
+EDU = [
+    ("coding", r"программир|кодинг|python|scratch|\bit\b|айти|компьютерн\w* (курс|школ|грамот|академ)|кибершкол|web-?разработ|создани\w* игр"),
+    ("lego", r"лего|lego|конструирован"),
+    ("mentalmath", r"ментальн\w* арифм|ментальн\w* математ|соробан|абакус|abacus"),
+    ("reading", r"скорочтен|каллиграф|обучени\w* чтени|учим\w* читать|техник\w* чтени|постановк\w* почерк"),
+    ("math", r"(?<!ментальная )(?<!ментальной )математик|математическ|олимпиадн"),
+]
+KINDERGARTEN = r"детск\w* сад|мини-?сад|частн\w* сад|детсад|ясли\b|билингвальн\w* сад"
+ROBOT_KEEP = r"робот|robot|электроник|ардуино|arduino|инженер|кванториум|техническ\w* творч|3d|дрон|мехатрон"
 PLUS_OK = {"dance", "masterclass", "early", "school", "sport", "montessori", "languages", "gymnastics", "shows", "playcenters"}
 
 
@@ -94,6 +106,15 @@ def split(p):
         text = full if PLUS_OK & set(out) else name_type
         if c not in out and re.search(rx, text):
             out.append(c)
+    if EDU_SET & set(out):
+        for c, rx in EDU:
+            if c not in out and re.search(rx, full):
+                out.append(c)
+        if "kindergarten" not in out and re.search(KINDERGARTEN, name_type):
+            out.append("kindergarten")
+        # школа программирования без роботов — не в «Робототехнике»
+        if "robotics" in out and "coding" in out and not re.search(ROBOT_KEEP, full):
+            out.remove("robotics")
     # «Балет»-школа без других танцев — не в общей «Танцы»
     if "ballet" in out and "dance" in out and not re.search(SPLITS["dance"]["keep"], full):
         out.remove("dance")
