@@ -14,4 +14,4 @@ for n in sys.argv[1:]:
             out.append(l + (" = " + nxt if nxt else ""))
     out = list(dict.fromkeys(out))
     h = [L[i + 1] for i, l in enumerate(L) if l == "График" and i + 1 < len(L)][:1]
-    print(f"== {n}: " + " ¦ ".join(x[:92] for x in out[:11]))
+    print(f"== {n}: " + " ¦ ".join(x[:75] for x in out[:22]))
