@@ -216457,7 +216457,7 @@
 "artkidscommunity-com-prices": {
 "url": "https://artkidscommunity.com/prices",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
+"err": "HTTP Error 502: Bad Gateway",
 "tries": 3
 },
 "artkidscommunity-com-price": {
@@ -216483,7 +216483,7 @@
 "xn-7sbbank2cgdcbchuk0a3g8g-xn-p1ai-kontakty": {
 "url": "https://xn----7sbbank2cgdcbchuk0a3g8g.xn--p1ai/kontakty",
 "ok": false,
-"err": "HTTP Error 502: Bad Gateway",
+"err": "HTTP Error 404: Not Found",
 "tries": 3
 },
 "xn-7sbbank2cgdcbchuk0a3g8g-xn-p1ai-prices": {
@@ -216632,7 +216632,7 @@
 "kondrashinaschool-ru-contacts": {
 "url": "https://kondrashinaschool.ru/contacts",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
+"err": "HTTP Error 502: Bad Gateway",
 "tries": 3
 },
 "kondrashinaschool-ru-kontakty": {
@@ -216644,13 +216644,13 @@
 "kondrashinaschool-ru-prices": {
 "url": "https://kondrashinaschool.ru/prices",
 "ok": false,
-"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)>",
+"err": "HTTP Error 404: Not Found",
 "tries": 3
 },
 "kondrashinaschool-ru-price": {
 "url": "https://kondrashinaschool.ru/price",
 "ok": false,
-"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)>",
+"err": "HTTP Error 404: Not Found",
 "tries": 3
 },
 "irbis-studio-ru-prices": {
@@ -216677,7 +216677,7 @@
 "sculpt-art-kids-ru-kontakty": {
 "url": "https://sculpt-art-kids.ru/kontakty",
 "ok": false,
-"err": "HTTP Error 502: Bad Gateway",
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)>",
 "tries": 3
 },
 "sculpt-art-kids-ru-prices": {
@@ -216772,7 +216772,7 @@
 "goroda-robboclub-ru-kontakty": {
 "url": "https://goroda.robboclub.ru/kontakty",
 "ok": false,
-"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)>",
+"err": "HTTP Error 502: Bad Gateway",
 "tries": 3
 },
 "goroda-robboclub-ru-prices": {
@@ -216852,10 +216852,9 @@
 },
 "www-polyanastudio-ru": {
 "url": "https://www.polyanastudio.ru",
-"ok": true,
-"pages": 2,
-"bytes": 10150,
-"tries": 2
+"ok": false,
+"err": "HTTP Error 502: Bad Gateway",
+"tries": 3
 },
 "www-polyanastudio-ru-contacts": {
 "url": "https://www.polyanastudio.ru/contacts",
@@ -216944,13 +216943,13 @@
 "stemlab-vidnoe-ru-kontakty": {
 "url": "https://stemlab-vidnoe.ru/kontakty",
 "ok": false,
-"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)>",
+"err": "HTTP Error 404: Not Found",
 "tries": 3
 },
 "stemlab-vidnoe-ru-prices": {
 "url": "https://stemlab-vidnoe.ru/prices",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)>",
 "tries": 3
 },
 "stemlab-vidnoe-ru-price": {
@@ -216975,7 +216974,7 @@
 "eroshka-studio-ru-price": {
 "url": "https://eroshka-studio.ru/price",
 "ok": false,
-"err": "HTTP Error 502: Bad Gateway",
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)>",
 "tries": 3
 },
 "chaletstudio-ru": {
@@ -217033,13 +217032,13 @@
 "gonchar-co-ru-prices": {
 "url": "https://gonchar-co.ru/prices",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
+"err": "HTTP Error 502: Bad Gateway",
 "tries": 3
 },
 "gonchar-co-ru-price": {
 "url": "https://gonchar-co.ru/price",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
+"err": "HTTP Error 502: Bad Gateway",
 "tries": 3
 },
 "namalevich-com": {
@@ -217058,7 +217057,7 @@
 "namalevich-com-kontakty": {
 "url": "https://namalevich.com/kontakty",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)>",
 "tries": 3
 },
 "namalevich-com-prices": {
@@ -217070,7 +217069,7 @@
 "namalevich-com-price": {
 "url": "https://namalevich.com/price",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
+"err": "HTTP Error 502: Bad Gateway",
 "tries": 3
 },
 "artstudiohb-ru": {
@@ -217083,7 +217082,7 @@
 "artstudiohb-ru-contacts": {
 "url": "https://artstudiohb.ru/contacts",
 "ok": false,
-"err": "HTTP Error 502: Bad Gateway",
+"err": "HTTP Error 404: Not Found",
 "tries": 3
 },
 "artstudiohb-ru-kontakty": {
@@ -218514,8 +218513,8 @@
 "ilikeice-ru-contact": {
 "url": "https://ilikeice.ru/contact",
 "ok": false,
-"err": "HTTP Error 502: Bad Gateway",
-"tries": 2
+"err": "HTTP Error 404: Not Found",
+"tries": 3
 },
 "yandex-ru-maps-1-moscow-and-moscow-oblast-kcz0-1112n-text-d0-ba-d0-b0-d1-84-d0-b5-20-d1-81": {
 "url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?kcz0=1112n&text=%D0%BA%D0%B0%D1%84%D0%B5%20%D1%81%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%BE%D0%B9%20%D0%A0%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B7%D0%BE%D0%B2%D0%BA%D0%B0",
@@ -218675,7 +218674,7 @@
 "url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?kcz22=1112n&text=%D0%BA%D0%B0%D1%84%D0%B5%20%D1%81%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%BE%D0%B9%20%D0%A1%D0%BE%D0%BB%D0%BD%D1%86%D0%B5%D0%B2%D0%BE",
 "ok": true,
 "pages": 2,
-"bytes": 3093,
+"bytes": 3069,
 "tries": 0
 },
 "yandex-ru-maps-1-moscow-and-moscow-oblast-kcz23-1112n-text-d1-80-d0-b5-d1-81-d1-82-d0-be-d": {
@@ -218759,7 +218758,436 @@
 "url": "https://aqua-nemo.ru/sviblovo/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
+"tries": 3
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-ev301-1119e-text-d0-90-d1-85-d0-b8-d0-bb-d0-bb-d": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev301=1119e&text=%D0%90%D1%85%D0%B8%D0%BB%D0%BB%D0%B5%D1%81%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%201-%D1%8F%20%D0%9E%D1%81%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%207%D0%90%2C%20%D1%81%D1%82%D1%80.%2038",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-ev302-1119e-text-d0-9a-d0-a1-d0-9a-20-d0-92-d0-b": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev302=1119e&text=%D0%9A%D0%A1%D0%9A%20%D0%92%D0%BE%D0%BB%D1%88%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BB%D0%B5%D1%81%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9B%D0%BE%D1%81%D0%B8%D0%BD%D0%BE%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%20%D0%B2%D0%BB50",
+"ok": true,
+"pages": 2,
+"bytes": 3179,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-ev310-1119e-text-d0-94-d0-b5-d1-82-d0-b8-20-d1-8": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev310=1119e&text=%D0%94%D0%B5%D1%82%D0%B8%20%D1%80%D0%B0%D0%B9%D0%BA%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9F%D0%BE%D1%80%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2010",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-ev313-1119e-text-d0-a1-d0-bf-d0-be-d1-80-d1-82-d": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev313=1119e&text=%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D0%BE-%D0%B0%D0%B4%D0%B0%D0%BF%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9A%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%D1%87%D1%83%D0%BA%D0%B0%2C%2028",
+"ok": true,
+"pages": 3,
+"bytes": 8614,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-ev316-1119e-text-d0-a8-d0-ba-d0-be-d0-bb-d0-b0-2": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev316=1119e&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%93%D0%B5%D1%80%D0%BE%D0%B5%D0%B2%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B5%D0%B2%D0%B0%D1%81%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF.%2C%2011%D0%95",
+"ok": true,
+"pages": 3,
+"bytes": 4480,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-ev321-1119e-text-d0-9c-d0-b8-d1-80-2c-202-d0-b9": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev321=1119e&text=%D0%9C%D0%B8%D1%80%2C%202-%D0%B9%20%D0%9C%D0%B8%D1%87%D1%83%D1%80%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%82%D1%83%D0%BF%D0%B8%D0%BA%2C%201%2C%20%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%20%D0%A1%D1%85%D0%BE%D0%B4%D0%BD%D1%8F%2C%20%D0%A5%D0%B8%D0%BC%D0%BA%D0%B8%2C%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B0%D1%8F%20%D0%B1%D0%B0%D1%88%D0%BD%D1%8F",
+"ok": true,
+"pages": 5,
+"bytes": 14142,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-ev328-1119e-text-handmadeclub-2c-20-d0-94-d0-be": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev328=1119e&text=HandMadeClub%2C%20%D0%94%D0%BE%D0%BB%D0%B3%D0%BE%D0%BF%D1%80%D1%83%D0%B4%D0%BD%D1%8B%D0%B9%2C%20%D0%9B%D0%B8%D1%85%D0%B0%D1%87%D1%91%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88.%2C%2013%D0%90",
+"ok": true,
+"pages": 3,
+"bytes": 4767,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-ev336-1119e-text-d0-94-d0-be-d0-bc-20-d0-b4-d0-b": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev336=1119e&text=%D0%94%D0%BE%D0%BC%20%D0%B4%D0%BB%D1%8F%20%D0%B4%D0%B5%D1%82%D0%B5%D0%B9%20%D1%81%20%D0%A0%D0%B0%D1%81%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9C%D0%B0%D1%80%D1%88%D0%B0%D0%BB%D0%B0%20%D0%A0%D1%8B%D0%B1%D0%B0%D0%BB%D0%BA%D0%BE%2C%202",
+"ok": true,
+"pages": 4,
+"bytes": 9414,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-ev337-1119e-text-1000-20-d0-a8-d0-b0-d0-b3-d0-be": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev337=1119e&text=1000%20%D0%A8%D0%B0%D0%B3%D0%BE%D0%B2%2C%20%D0%A5%D0%B8%D0%BC%D0%BA%D0%B8%2C%20%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D1%91%D0%B6%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2060",
+"ok": true,
+"pages": 3,
+"bytes": 3289,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-ev338-1119e-text-d0-91-d0-b5-d0-bb-d0-b0-d1-8f-2": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev338=1119e&text=%D0%91%D0%B5%D0%BB%D0%B0%D1%8F%20%D0%B2%D0%BE%D1%80%D0%BE%D0%BD%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF.%20%D0%9C%D0%B8%D1%80%D0%B0%2C%2016%2C%20%D1%81%D1%82%D1%80.%202",
+"ok": true,
+"pages": 2,
+"bytes": 3023,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-ev340-1119e-text-d0-9a-d0-b0-d1-80-d0-ba-d1-83-d": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev340=1119e&text=%D0%9A%D0%B0%D1%80%D0%BA%D1%83%D1%88%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D1%86%D0%BE%D0%B2%D0%B0%2C%2021%2C%20%D0%BF.%20%D0%B3.%20%D1%82.%20%D0%9A%D1%80%D0%B0%D1%82%D0%BE%D0%B2%D0%BE",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tennis10is-krasnogorsk-text-d0-a8-d": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tennis10is-krasnogorsk&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20%C2%AB10%20is%C2%BB%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA%2C%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2016",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-monster-tennis-khoroshevskaya-text": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-monster-tennis-khoroshevskaya&text=%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%20Monster%20Tennis%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%203-%D1%8F%20%D0%A5%D0%BE%D1%80%D0%BE%D1%88%D1%91%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2021%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%205",
+"ok": true,
+"pages": 2,
+"bytes": 3150,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tfl-tennis-vernadskogo-text-d0-95-d": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tfl-tennis-vernadskogo&text=%D0%95%D0%B2%D1%80%D0%BE%D0%BF%D0%B5%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20TFL%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%BF%D1%80-%D1%82%20%D0%92%D0%B5%D1%80%D0%BD%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%2086",
+"ok": true,
+"pages": 1,
+"bytes": 601,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-abctennis-rabochaya-text-d0-a2-d0-b": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-abctennis-rabochaya&text=%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D1%83%D0%B1%20Abctennis%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2053%2C%20%D1%81%D1%82%D1%80.%201",
+"ok": true,
+"pages": 4,
+"bytes": 5431,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-belokamennaya-samokatnaya-text-d0-9": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-belokamennaya-samokatnaya&text=%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%91%D0%B5%D0%BB%D0%BE%D0%BA%D0%B0%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%BA%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%20%D0%B2%D0%BB.%202%2C%201%20%D1%8D%D1%82%D0%B0%D0%B6",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tochka-udara-letovskaya-text-d0-a8": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tochka-udara-letovskaya&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20%C2%AB%D0%A2%D0%BE%D1%87%D0%BA%D0%B0%20%D0%A3%D0%B4%D0%B0%D1%80%D0%B0%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9C%D0%B0%D0%BB%D0%B0%D1%8F%20%D0%9B%D0%B5%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%206",
+"ok": true,
+"pages": 2,
+"bytes": 5283,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tennis-klass-verkhoyanskaya-text-d0": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tennis-klass-verkhoyanskaya&text=%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D1%83%D0%B1%20%C2%AB%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%20%D0%9A%D0%BB%D0%B0%D1%81%D1%81%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%92%D0%B5%D1%80%D1%85%D0%BE%D1%8F%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%209",
+"ok": true,
+"pages": 2,
+"bytes": 3344,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-lyapkin-hockey-novokosino-text-d0-a": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-lyapkin-hockey-novokosino&text=%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20%D0%AE%D1%80%D0%B8%D1%8F%20%D0%9B%D1%8F%D0%BF%D0%BA%D0%B8%D0%BD%D0%B0%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B0%D0%BB%D1%82%D1%8B%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%201%2C%20%D1%81%D1%82%D1%80.%201%20%28%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%B0%D1%80%D0%B5%D0%BD%D0%B0%20%C2%AB%D0%90%D0%B9%D1%81%20%D0%90%D1%82%D0%BB%D0%B5%D1%82%D0%B8%D0%BA%D1%81%C2%BB%29",
+"ok": true,
+"pages": 2,
+"bytes": 3667,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-lyapkin-hockey-lytkarino-text-d0-a5": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-lyapkin-hockey-lytkarino&text=%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20%D0%AE%D1%80%D0%B8%D1%8F%20%D0%9B%D1%8F%D0%BF%D0%BA%D0%B8%D0%BD%D0%B0%20%D0%9B%D1%8B%D1%82%D0%BA%D0%B0%D1%80%D0%B8%D0%BD%D0%BE%2C%20%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%209%D0%90",
+"ok": true,
+"pages": 2,
+"bytes": 3289,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-skyhockey-maryina-roshcha-text-d0-a": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-skyhockey-maryina-roshcha&text=%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%A1%D0%BA%D0%B0%D0%B9%20%D1%85%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%201-%D0%B9%20%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D0%B5%D1%86%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80.%2C%2014%2C%20%D1%8D%D1%82%D0%B0%D0%B6%201",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-krylya-stolitsy-hockey-dinamo-text": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-krylya-stolitsy-hockey-dinamo&text=%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%9A%D1%80%D1%8B%D0%BB%D1%8C%D1%8F%20%D0%A1%D1%82%D0%BE%D0%BB%D0%B8%D1%86%D1%8B%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%AE%D1%80%D0%B8%D1%8F%20%D0%9D%D0%B8%D0%BA%D1%83%D0%BB%D0%B8%D0%BD%D0%B0%2C%203",
+"ok": true,
+"pages": 3,
+"bytes": 7602,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-ski-snegiri-dzerzhinsky-text-d0-93": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-ski-snegiri-dzerzhinsky&text=%D0%93%D0%BE%D1%80%D0%BD%D0%BE%D0%BB%D1%8B%D0%B6%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%A1%D0%BD%D0%B5%D0%B3%D0%B8%D1%80%D0%B8%C2%BB%20%D0%94%D0%B7%D0%B5%D1%80%D0%B6%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%2C%20%D0%A3%D0%B3%D1%80%D0%B5%D1%88%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2019",
+"ok": true,
+"pages": 3,
+"bytes": 7876,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tennis-borodina-degunino-text-d0-a8": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tennis-borodina-degunino&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20%D0%91%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D0%BD%D0%BE%D0%B9%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%94%D0%B5%D0%B3%D1%83%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%202%20%28%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%E2%84%96%202100%29",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-chess-csbw-tsvetnoy-text-d0-a8-d0-b": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-chess-csbw-tsvetnoy&text=%D0%A8%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%A7%D1%91%D1%80%D0%BD%D0%BE%D0%B5%20%D0%B8%20%D0%91%D0%B5%D0%BB%D0%BE%D0%B5%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%202-%D0%B9%20%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80.%2C%206%D0%90%2C%20%D1%81%D1%82%D1%80.%203",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-chess-csbw-khimki-levy-bereg-text-d": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-chess-csbw-khimki-levy-bereg&text=%D0%A8%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%A7%D1%91%D1%80%D0%BD%D0%BE%D0%B5%20%D0%B8%20%D0%91%D0%B5%D0%BB%D0%BE%D0%B5%C2%BB%20%D0%A5%D0%B8%D0%BC%D0%BA%D0%B8%2C%20%D1%83%D0%BB.%20%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%2014",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-chess-labyrinth-krylatskoe-text-d0": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-chess-labyrinth-krylatskoe&text=%D0%A8%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%9B%D0%B0%D0%B1%D0%B8%D1%80%D0%B8%D0%BD%D1%82%D1%8B%20%D1%88%D0%B0%D1%85%D0%BC%D0%B0%D1%82%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9A%D1%80%D1%8B%D0%BB%D0%B0%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A5%D0%BE%D0%BB%D0%BC%D1%8B%2C%2034%20%28%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0%20%D0%B8%D0%BC.%20%D0%90%D1%85%D0%BC%D0%B0%D1%82%D0%BE%D0%B2%D0%BE%D0%B9%29",
+"ok": true,
+"pages": 5,
+"bytes": 6787,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-gymbalance-khachaturyana-text-gymba": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-gymbalance-khachaturyana&text=GymBalance%20%E2%80%94%20%D0%B3%D0%B8%D0%BC%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B0%D0%BB%D1%8B%D1%88%D0%B5%D0%B9%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%A5%D0%B0%D1%87%D0%B0%D1%82%D1%83%D1%80%D1%8F%D0%BD%D0%B0%2C%2010%2C%20%D1%81%D1%82%D1%80.%201",
+"ok": true,
+"pages": 5,
+"bytes": 12120,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-rusvolley-novodmitrovskaya-text-rus": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-rusvolley-novodmitrovskaya&text=RusVolley%20%E2%80%94%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B2%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9D%D0%BE%D0%B2%D0%BE%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%205%D0%90%2C%20%D1%81%D1%82%D1%80.%202",
+"ok": true,
+"pages": 4,
+"bytes": 10778,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-idanko-ballet-starokirochny-text-d0": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-idanko-ballet-starokirochny&text=%D0%A1%D1%82%D1%83%D0%B4%D0%B8%D1%8F%20%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%B0%20%C2%AB%D0%98%D0%B4%D0%B0%D0%BD%D0%BA%D0%BE%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D1%82%D0%B0%D1%80%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D1%87%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%B5%D1%80.%2C%202",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-idanko-ballet-baltiyskaya-text-d0-a": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-idanko-ballet-baltiyskaya&text=%D0%A1%D1%82%D1%83%D0%B4%D0%B8%D1%8F%20%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%B0%20%C2%AB%D0%98%D0%B4%D0%B0%D0%BD%D0%BA%D0%BE%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%91%D0%B0%D0%BB%D1%82%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%209",
+"ok": true,
+"pages": 2,
+"bytes": 1035,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-sport-katok-kosino-text-d0-a8-d0-ba": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-sport-katok-kosino&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BD%D0%B8%D1%8F%20%C2%AB%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%83%D1%85%D1%82%D0%BE%D0%BC%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88.%2C%202%D0%90%20%28%D0%BA%D0%B0%D1%82%D0%BE%D0%BA%20%D0%B2%20%D0%A2%D0%A6%20%C2%AB%D0%93%D0%BE%D1%80%D0%BE%D0%B4%20%D0%9A%D0%BE%D1%81%D0%B8%D0%BD%D0%BE%C2%BB%29",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-sport-katok-krylatskoe-text-d0-a8-d": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-sport-katok-krylatskoe&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BD%D0%B8%D1%8F%20%C2%AB%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9A%D1%80%D1%8B%D0%BB%D0%B0%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%20%D0%B2%D0%BB.%202%2C%20%D1%81%D1%82%D1%80.%205%20%28%D0%BA%D0%B0%D1%82%D0%BE%D0%BA%20%C2%AB%D0%A1%D0%BF%D0%BE%D1%80%D1%82%20%D1%81%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D1%8F%C2%BB%29",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-ibasket-molodezhnaya-text-d0-91-d0": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-ibasket-molodezhnaya&text=%D0%91%D0%B0%D1%81%D0%BA%D0%B5%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20IBASKET%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%95%D0%BB%D1%8C%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2024%20%28%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%E2%84%96%20887%29",
+"ok": true,
+"pages": 4,
+"bytes": 5237,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-ibasket-novokosino-text-d0-91-d0-b0": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-ibasket-novokosino&text=%D0%91%D0%B0%D1%81%D0%BA%D0%B5%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20IBASKET%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B0%D0%BB%D1%82%D1%8B%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2013%D0%90%20%28%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%E2%84%96%202127%29",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tennis-capital-kashirskaya-text-d0": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tennis-capital-kashirskaya&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20Tennis%20Capital%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9A%D0%B0%D1%88%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88.%2C%2024%2C%20%D1%81%D1%82%D1%80.%201",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tri-medvedya-troitsk-text-d0-a8-d0": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tri-medvedya-troitsk&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%81%D0%B0%D0%BC%D0%B1%D0%BE%20%D0%B8%20%D0%B4%D0%B7%D1%8E%D0%B4%D0%BE%20%C2%AB%D0%A2%D1%80%D0%B8%20%D0%9C%D0%B5%D0%B4%D0%B2%D0%B5%D0%B4%D1%8F%C2%BB%20%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%BA%2C%20%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2011",
+"ok": true,
+"pages": 5,
+"bytes": 8052,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-padel-vnukovo-sport-text-vnukovo-20": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-padel-vnukovo-sport&text=Vnukovo%20Sport%20Club%20%E2%80%94%20%D0%BF%D0%B0%D0%B4%D0%B5%D0%BB%20%D0%B4.%20%D0%A0%D0%BE%D0%B3%D0%BE%D0%B7%D0%B8%D0%BD%D0%B8%D0%BD%D0%BE%2C%20%D1%83%D0%BB.%20%D0%9B%D1%83%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%2C%2020%D0%B0%2C%20%D1%81%D1%82%D1%80.%202",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-padel-zhukovka-text-padel-20club-20": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-padel-zhukovka&text=Padel%20Club%20Zhukovka%20%D0%9E%D0%B4%D0%B8%D0%BD%D1%86%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B3.%20%D0%BE.%2C%20%D0%B4.%20%D0%96%D1%83%D0%BA%D0%BE%D0%B2%D0%BA%D0%B0%2C%20%D0%98%D0%BB%D1%8C%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%BE%D0%B4%D1%8A%D0%B5%D0%B7%D0%B4%2C%20%D1%811",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-padel-cooltennis-malevich-text-cool": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-padel-cooltennis-malevich&text=CoolTennis%20%E2%80%94%20%D0%BF%D0%B0%D0%B4%D0%B5%D0%BB%20%D0%9E%D0%B4%D0%B8%D0%BD%D1%86%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B3.%20%D0%BE.%2C%20%D0%BF%D0%B0%D1%80%D0%BA%20%D0%B8%D0%BC.%20%D0%9C%D0%B0%D0%BB%D0%B5%D0%B2%D0%B8%D1%87%D0%B0",
+"ok": true,
+"pages": 4,
+"bytes": 6851,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-spartak-hockey-sokolniki-text-d0-a5": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-spartak-hockey-sokolniki&text=%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20%C2%AB%D0%A1%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%A2%D0%B8%D1%85%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%202",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-major-tennis-nagornaya-text-d0-a2-d": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-major-tennis-nagornaya&text=%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D1%83%D0%B1%20%C2%AB%D0%9C%D0%B5%D0%B9%D0%B4%D0%B6%D0%BE%D1%80%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BB%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%203%2C%20%D1%81%D1%82%D1%80.%202%2C%204%20%D1%8D%D1%82%D0%B0%D0%B6",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-champion-olonetsky-tennis-text-d0-a": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-champion-olonetsky-tennis&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20%D0%A1%D0%9A%20%C2%AB%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9E%D0%BB%D0%BE%D0%BD%D0%B5%D1%86%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%205/1%D0%90",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-mf41-tennis-text-d0-a2-d0-b5-d0-bd": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-mf41-tennis&text=%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%BD%D1%8B%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%20Mf41%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2041%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%202",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-polekort-tennis-text-c2-ab-d0-9f-d0": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-polekort-tennis&text=%C2%AB%D0%9F%D0%BE%D0%BB%D0%B5%D0%BA%D0%BE%D1%80%D1%82%C2%BB%20%E2%80%94%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%20%D0%B4%D0%BB%D1%8F%20%D0%B4%D0%B5%D1%82%D0%B5%D0%B9%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%91%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%205%D0%90%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%203",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-khimki-badminton-dinamo-text-khimki": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-khimki-badminton-dinamo&text=Khimki%20Badminton%20Club%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9B%D0%B0%D0%B2%D0%BE%D1%87%D0%BA%D0%B8%D0%BD%D0%B0%2C%2032%20%28%D0%94%D0%A1%20%C2%AB%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%BE%C2%BB%29",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-nevsky-bears-likhobory-text-d0-92-d": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-nevsky-bears-likhobory&text=%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20Nevsky%20Bears%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2077%D0%90%2C%20%D1%81%D1%82%D1%80.%201",
+"ok": true,
+"pages": 5,
+"bytes": 9411,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-nevsky-bears-reutov-text-d0-92-d0-b": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-nevsky-bears-reutov&text=%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20Nevsky%20Bears%20%D0%A0%D0%B5%D1%83%D1%82%D0%BE%D0%B2%2C%20%D0%AE%D0%B1%D0%B8%D0%BB%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80-%D1%82%2C%2062",
+"ok": true,
+"pages": 5,
+"bytes": 12459,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-nevsky-bears-streshnevo-text-d0-92": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-nevsky-bears-streshnevo&text=%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20Nevsky%20Bears%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B2%D0%B5%D1%82%D0%BB%D1%8B%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%202%D0%90",
+"ok": true,
+"pages": 2,
+"bytes": 2328,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-nevsky-bears-nagornaya-text-d0-92-d": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-nevsky-bears-nagornaya&text=%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20Nevsky%20Bears%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BB%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%203%2C%20%D1%81%D1%82%D1%80.%202",
+"ok": true,
+"pages": 4,
+"bytes": 4023,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-foton-volley-medvedkovo-text-d0-92": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-foton-volley-medvedkovo&text=%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D1%83%D0%B1%20%C2%AB%D0%A4%D0%BE%D1%82%D0%BE%D0%BD%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%A2%D0%B8%D1%85%D0%BE%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%2C%2010%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%201",
+"ok": true,
+"pages": 4,
+"bytes": 5014,
+"tries": 0
+},
+"lyapkin-hockey-ru-contacts": {
+"url": "https://lyapkin-hockey.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
 "tries": 2
+},
+"skyhockey-ru-contacts": {
+"url": "https://skyhockey.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 2
+},
+"kc-hockey-ru-contacts": {
+"url": "https://kc-hockey.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 2
+},
+"csbw-ru-contacts": {
+"url": "https://csbw.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 2
+},
+"chesslabyrinth-ru-filialy-krylatskoe": {
+"url": "https://chesslabyrinth.ru/filialy/krylatskoe",
+"ok": true,
+"pages": 1,
+"bytes": 2718,
+"tries": 0
+},
+"mf41-ru": {
+"url": "https://mf41.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 3700,
+"tries": 0
+},
+"arenachampion-ru-shkola-tennisa": {
+"url": "https://arenachampion.ru/shkola-tennisa",
+"ok": true,
+"pages": 2,
+"bytes": 14957,
+"tries": 0
+},
+"major-tennis-ru-contacts": {
+"url": "https://major-tennis.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 2
+},
+"i-basket-ru-molodezhnaya": {
+"url": "https://i-basket.ru/molodezhnaya",
+"ok": true,
+"pages": 2,
+"bytes": 16000,
+"tries": 0
+},
+"i-basket-ru-novokosino": {
+"url": "https://i-basket.ru/novokosino",
+"ok": true,
+"pages": 2,
+"bytes": 16000,
+"tries": 0
+},
+"sambo-msk-ru-nashi-zaly": {
+"url": "https://sambo.msk.ru/nashi-zaly/",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
 },
 "yandex-ru-maps-1-moscow-and-moscow-oblast-kcn0-1112n-text-local-20kids-2c-20-d0-9c-d0-be-d": {
 "url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?kcn0=1112n&text=Local%20Kids%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9D%D0%BE%D0%B2%D0%BE%D0%BC%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9%20%D0%BE%D0%BA%D1%80%D1%83%D0%B3%2C%20%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%20%D0%92%D0%BD%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%2C%20%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80%20%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D1%8F%20%D0%A2%D0%B0%D1%80%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%209",
@@ -219125,796 +219553,29 @@
 "bytes": 16000,
 "tries": 0
 },
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev301-1119e-text-d0-90-d1-85-d0-b8-d0-bb-d0-bb-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev301=1119e&text=%D0%90%D1%85%D0%B8%D0%BB%D0%BB%D0%B5%D1%81%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%201-%D1%8F%20%D0%9E%D1%81%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%207%D0%90%2C%20%D1%81%D1%82%D1%80.%2038",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev302-1119e-text-d0-9a-d0-a1-d0-9a-20-d0-92-d0-b": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev302=1119e&text=%D0%9A%D0%A1%D0%9A%20%D0%92%D0%BE%D0%BB%D1%88%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BB%D0%B5%D1%81%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9B%D0%BE%D1%81%D0%B8%D0%BD%D0%BE%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%20%D0%B2%D0%BB50",
-"ok": true,
-"pages": 2,
-"bytes": 3176,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev310-1119e-text-d0-94-d0-b5-d1-82-d0-b8-20-d1-8": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev310=1119e&text=%D0%94%D0%B5%D1%82%D0%B8%20%D1%80%D0%B0%D0%B9%D0%BA%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9F%D0%BE%D1%80%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2010",
-"ok": true,
-"pages": 4,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev313-1119e-text-d0-a1-d0-bf-d0-be-d1-80-d1-82-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev313=1119e&text=%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D0%BE-%D0%B0%D0%B4%D0%B0%D0%BF%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9A%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%D1%87%D1%83%D0%BA%D0%B0%2C%2028",
-"ok": true,
-"pages": 3,
-"bytes": 8614,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev316-1119e-text-d0-a8-d0-ba-d0-be-d0-bb-d0-b0-2": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev316=1119e&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%93%D0%B5%D1%80%D0%BE%D0%B5%D0%B2%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B5%D0%B2%D0%B0%D1%81%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF.%2C%2011%D0%95",
-"ok": true,
-"pages": 3,
-"bytes": 4480,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev321-1119e-text-d0-9c-d0-b8-d1-80-2c-202-d0-b9": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev321=1119e&text=%D0%9C%D0%B8%D1%80%2C%202-%D0%B9%20%D0%9C%D0%B8%D1%87%D1%83%D1%80%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%82%D1%83%D0%BF%D0%B8%D0%BA%2C%201%2C%20%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%20%D0%A1%D1%85%D0%BE%D0%B4%D0%BD%D1%8F%2C%20%D0%A5%D0%B8%D0%BC%D0%BA%D0%B8%2C%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B0%D1%8F%20%D0%B1%D0%B0%D1%88%D0%BD%D1%8F",
-"ok": true,
-"pages": 5,
-"bytes": 14200,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev328-1119e-text-handmadeclub-2c-20-d0-94-d0-be": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev328=1119e&text=HandMadeClub%2C%20%D0%94%D0%BE%D0%BB%D0%B3%D0%BE%D0%BF%D1%80%D1%83%D0%B4%D0%BD%D1%8B%D0%B9%2C%20%D0%9B%D0%B8%D1%85%D0%B0%D1%87%D1%91%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88.%2C%2013%D0%90",
-"ok": true,
-"pages": 3,
-"bytes": 4925,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev336-1119e-text-d0-94-d0-be-d0-bc-20-d0-b4-d0-b": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev336=1119e&text=%D0%94%D0%BE%D0%BC%20%D0%B4%D0%BB%D1%8F%20%D0%B4%D0%B5%D1%82%D0%B5%D0%B9%20%D1%81%20%D0%A0%D0%B0%D1%81%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9C%D0%B0%D1%80%D1%88%D0%B0%D0%BB%D0%B0%20%D0%A0%D1%8B%D0%B1%D0%B0%D0%BB%D0%BA%D0%BE%2C%202",
-"ok": true,
-"pages": 4,
-"bytes": 9484,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev337-1119e-text-1000-20-d0-a8-d0-b0-d0-b3-d0-be": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev337=1119e&text=1000%20%D0%A8%D0%B0%D0%B3%D0%BE%D0%B2%2C%20%D0%A5%D0%B8%D0%BC%D0%BA%D0%B8%2C%20%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D1%91%D0%B6%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2060",
-"ok": true,
-"pages": 3,
-"bytes": 3226,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev338-1119e-text-d0-91-d0-b5-d0-bb-d0-b0-d1-8f-2": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev338=1119e&text=%D0%91%D0%B5%D0%BB%D0%B0%D1%8F%20%D0%B2%D0%BE%D1%80%D0%BE%D0%BD%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF.%20%D0%9C%D0%B8%D1%80%D0%B0%2C%2016%2C%20%D1%81%D1%82%D1%80.%202",
-"ok": true,
-"pages": 2,
-"bytes": 3023,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev340-1119e-text-d0-9a-d0-b0-d1-80-d0-ba-d1-83-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev340=1119e&text=%D0%9A%D0%B0%D1%80%D0%BA%D1%83%D1%88%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D1%86%D0%BE%D0%B2%D0%B0%2C%2021%2C%20%D0%BF.%20%D0%B3.%20%D1%82.%20%D0%9A%D1%80%D0%B0%D1%82%D0%BE%D0%B2%D0%BE",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tennis10is-krasnogorsk-text-d0-a8-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tennis10is-krasnogorsk&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20%C2%AB10%20is%C2%BB%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA%2C%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2016",
-"ok": true,
-"pages": 4,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-monster-tennis-khoroshevskaya-text": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-monster-tennis-khoroshevskaya&text=%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%20Monster%20Tennis%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%203-%D1%8F%20%D0%A5%D0%BE%D1%80%D0%BE%D1%88%D1%91%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2021%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%205",
-"ok": true,
-"pages": 2,
-"bytes": 3069,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tfl-tennis-vernadskogo-text-d0-95-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tfl-tennis-vernadskogo&text=%D0%95%D0%B2%D1%80%D0%BE%D0%BF%D0%B5%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20TFL%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%BF%D1%80-%D1%82%20%D0%92%D0%B5%D1%80%D0%BD%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%2086",
-"ok": true,
-"pages": 1,
-"bytes": 601,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-abctennis-rabochaya-text-d0-a2-d0-b": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-abctennis-rabochaya&text=%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D1%83%D0%B1%20Abctennis%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2053%2C%20%D1%81%D1%82%D1%80.%201",
-"ok": true,
-"pages": 4,
-"bytes": 5432,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-belokamennaya-samokatnaya-text-d0-9": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-belokamennaya-samokatnaya&text=%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%91%D0%B5%D0%BB%D0%BE%D0%BA%D0%B0%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%BA%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%20%D0%B2%D0%BB.%202%2C%201%20%D1%8D%D1%82%D0%B0%D0%B6",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tochka-udara-letovskaya-text-d0-a8": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tochka-udara-letovskaya&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20%C2%AB%D0%A2%D0%BE%D1%87%D0%BA%D0%B0%20%D0%A3%D0%B4%D0%B0%D1%80%D0%B0%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9C%D0%B0%D0%BB%D0%B0%D1%8F%20%D0%9B%D0%B5%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%206",
-"ok": true,
-"pages": 2,
-"bytes": 5283,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tennis-klass-verkhoyanskaya-text-d0": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tennis-klass-verkhoyanskaya&text=%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D1%83%D0%B1%20%C2%AB%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%20%D0%9A%D0%BB%D0%B0%D1%81%D1%81%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%92%D0%B5%D1%80%D1%85%D0%BE%D1%8F%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%209",
-"ok": true,
-"pages": 2,
-"bytes": 3344,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-lyapkin-hockey-novokosino-text-d0-a": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-lyapkin-hockey-novokosino&text=%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20%D0%AE%D1%80%D0%B8%D1%8F%20%D0%9B%D1%8F%D0%BF%D0%BA%D0%B8%D0%BD%D0%B0%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B0%D0%BB%D1%82%D1%8B%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%201%2C%20%D1%81%D1%82%D1%80.%201%20%28%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%B0%D1%80%D0%B5%D0%BD%D0%B0%20%C2%AB%D0%90%D0%B9%D1%81%20%D0%90%D1%82%D0%BB%D0%B5%D1%82%D0%B8%D0%BA%D1%81%C2%BB%29",
-"ok": true,
-"pages": 2,
-"bytes": 3740,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-lyapkin-hockey-lytkarino-text-d0-a5": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-lyapkin-hockey-lytkarino&text=%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20%D0%AE%D1%80%D0%B8%D1%8F%20%D0%9B%D1%8F%D0%BF%D0%BA%D0%B8%D0%BD%D0%B0%20%D0%9B%D1%8B%D1%82%D0%BA%D0%B0%D1%80%D0%B8%D0%BD%D0%BE%2C%20%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%209%D0%90",
-"ok": true,
-"pages": 2,
-"bytes": 3262,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-skyhockey-maryina-roshcha-text-d0-a": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-skyhockey-maryina-roshcha&text=%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%A1%D0%BA%D0%B0%D0%B9%20%D1%85%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%201-%D0%B9%20%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D0%B5%D1%86%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80.%2C%2014%2C%20%D1%8D%D1%82%D0%B0%D0%B6%201",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-krylya-stolitsy-hockey-dinamo-text": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-krylya-stolitsy-hockey-dinamo&text=%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%9A%D1%80%D1%8B%D0%BB%D1%8C%D1%8F%20%D0%A1%D1%82%D0%BE%D0%BB%D0%B8%D1%86%D1%8B%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%AE%D1%80%D0%B8%D1%8F%20%D0%9D%D0%B8%D0%BA%D1%83%D0%BB%D0%B8%D0%BD%D0%B0%2C%203",
-"ok": true,
-"pages": 3,
-"bytes": 7381,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-ski-snegiri-dzerzhinsky-text-d0-93": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-ski-snegiri-dzerzhinsky&text=%D0%93%D0%BE%D1%80%D0%BD%D0%BE%D0%BB%D1%8B%D0%B6%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%A1%D0%BD%D0%B5%D0%B3%D0%B8%D1%80%D0%B8%C2%BB%20%D0%94%D0%B7%D0%B5%D1%80%D0%B6%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%2C%20%D0%A3%D0%B3%D1%80%D0%B5%D1%88%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2019",
-"ok": true,
-"pages": 3,
-"bytes": 7790,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tennis-borodina-degunino-text-d0-a8": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tennis-borodina-degunino&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20%D0%91%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D0%BD%D0%BE%D0%B9%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%94%D0%B5%D0%B3%D1%83%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%202%20%28%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%E2%84%96%202100%29",
-"ok": true,
-"pages": 4,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-chess-csbw-tsvetnoy-text-d0-a8-d0-b": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-chess-csbw-tsvetnoy&text=%D0%A8%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%A7%D1%91%D1%80%D0%BD%D0%BE%D0%B5%20%D0%B8%20%D0%91%D0%B5%D0%BB%D0%BE%D0%B5%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%202-%D0%B9%20%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80.%2C%206%D0%90%2C%20%D1%81%D1%82%D1%80.%203",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-chess-csbw-khimki-levy-bereg-text-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-chess-csbw-khimki-levy-bereg&text=%D0%A8%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%A7%D1%91%D1%80%D0%BD%D0%BE%D0%B5%20%D0%B8%20%D0%91%D0%B5%D0%BB%D0%BE%D0%B5%C2%BB%20%D0%A5%D0%B8%D0%BC%D0%BA%D0%B8%2C%20%D1%83%D0%BB.%20%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%2014",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-chess-labyrinth-krylatskoe-text-d0": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-chess-labyrinth-krylatskoe&text=%D0%A8%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%9B%D0%B0%D0%B1%D0%B8%D1%80%D0%B8%D0%BD%D1%82%D1%8B%20%D1%88%D0%B0%D1%85%D0%BC%D0%B0%D1%82%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9A%D1%80%D1%8B%D0%BB%D0%B0%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A5%D0%BE%D0%BB%D0%BC%D1%8B%2C%2034%20%28%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0%20%D0%B8%D0%BC.%20%D0%90%D1%85%D0%BC%D0%B0%D1%82%D0%BE%D0%B2%D0%BE%D0%B9%29",
-"ok": true,
-"pages": 5,
-"bytes": 6951,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-gymbalance-khachaturyana-text-gymba": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-gymbalance-khachaturyana&text=GymBalance%20%E2%80%94%20%D0%B3%D0%B8%D0%BC%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B0%D0%BB%D1%8B%D1%88%D0%B5%D0%B9%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%A5%D0%B0%D1%87%D0%B0%D1%82%D1%83%D1%80%D1%8F%D0%BD%D0%B0%2C%2010%2C%20%D1%81%D1%82%D1%80.%201",
-"ok": true,
-"pages": 5,
-"bytes": 12350,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-rusvolley-novodmitrovskaya-text-rus": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-rusvolley-novodmitrovskaya&text=RusVolley%20%E2%80%94%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B2%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9D%D0%BE%D0%B2%D0%BE%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%205%D0%90%2C%20%D1%81%D1%82%D1%80.%202",
-"ok": true,
-"pages": 4,
-"bytes": 10688,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-idanko-ballet-starokirochny-text-d0": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-idanko-ballet-starokirochny&text=%D0%A1%D1%82%D1%83%D0%B4%D0%B8%D1%8F%20%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%B0%20%C2%AB%D0%98%D0%B4%D0%B0%D0%BD%D0%BA%D0%BE%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D1%82%D0%B0%D1%80%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D1%87%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%B5%D1%80.%2C%202",
-"ok": true,
-"pages": 2,
-"bytes": 1390,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-idanko-ballet-baltiyskaya-text-d0-a": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-idanko-ballet-baltiyskaya&text=%D0%A1%D1%82%D1%83%D0%B4%D0%B8%D1%8F%20%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%B0%20%C2%AB%D0%98%D0%B4%D0%B0%D0%BD%D0%BA%D0%BE%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%91%D0%B0%D0%BB%D1%82%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%209",
-"ok": true,
-"pages": 2,
-"bytes": 1035,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-sport-katok-kosino-text-d0-a8-d0-ba": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-sport-katok-kosino&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BD%D0%B8%D1%8F%20%C2%AB%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%83%D1%85%D1%82%D0%BE%D0%BC%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88.%2C%202%D0%90%20%28%D0%BA%D0%B0%D1%82%D0%BE%D0%BA%20%D0%B2%20%D0%A2%D0%A6%20%C2%AB%D0%93%D0%BE%D1%80%D0%BE%D0%B4%20%D0%9A%D0%BE%D1%81%D0%B8%D0%BD%D0%BE%C2%BB%29",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-sport-katok-krylatskoe-text-d0-a8-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-sport-katok-krylatskoe&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BD%D0%B8%D1%8F%20%C2%AB%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9A%D1%80%D1%8B%D0%BB%D0%B0%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%20%D0%B2%D0%BB.%202%2C%20%D1%81%D1%82%D1%80.%205%20%28%D0%BA%D0%B0%D1%82%D0%BE%D0%BA%20%C2%AB%D0%A1%D0%BF%D0%BE%D1%80%D1%82%20%D1%81%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D1%8F%C2%BB%29",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-ibasket-molodezhnaya-text-d0-91-d0": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-ibasket-molodezhnaya&text=%D0%91%D0%B0%D1%81%D0%BA%D0%B5%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20IBASKET%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%95%D0%BB%D1%8C%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2024%20%28%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%E2%84%96%20887%29",
-"ok": true,
-"pages": 4,
-"bytes": 5136,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-ibasket-novokosino-text-d0-91-d0-b0": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-ibasket-novokosino&text=%D0%91%D0%B0%D1%81%D0%BA%D0%B5%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20IBASKET%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B0%D0%BB%D1%82%D1%8B%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2013%D0%90%20%28%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%E2%84%96%202127%29",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tennis-capital-kashirskaya-text-d0": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tennis-capital-kashirskaya&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20Tennis%20Capital%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9A%D0%B0%D1%88%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88.%2C%2024%2C%20%D1%81%D1%82%D1%80.%201",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tri-medvedya-troitsk-text-d0-a8-d0": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tri-medvedya-troitsk&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%81%D0%B0%D0%BC%D0%B1%D0%BE%20%D0%B8%20%D0%B4%D0%B7%D1%8E%D0%B4%D0%BE%20%C2%AB%D0%A2%D1%80%D0%B8%20%D0%9C%D0%B5%D0%B4%D0%B2%D0%B5%D0%B4%D1%8F%C2%BB%20%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%BA%2C%20%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2011",
-"ok": true,
-"pages": 5,
-"bytes": 7742,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-padel-vnukovo-sport-text-vnukovo-20": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-padel-vnukovo-sport&text=Vnukovo%20Sport%20Club%20%E2%80%94%20%D0%BF%D0%B0%D0%B4%D0%B5%D0%BB%20%D0%B4.%20%D0%A0%D0%BE%D0%B3%D0%BE%D0%B7%D0%B8%D0%BD%D0%B8%D0%BD%D0%BE%2C%20%D1%83%D0%BB.%20%D0%9B%D1%83%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%2C%2020%D0%B0%2C%20%D1%81%D1%82%D1%80.%202",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-padel-zhukovka-text-padel-20club-20": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-padel-zhukovka&text=Padel%20Club%20Zhukovka%20%D0%9E%D0%B4%D0%B8%D0%BD%D1%86%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B3.%20%D0%BE.%2C%20%D0%B4.%20%D0%96%D1%83%D0%BA%D0%BE%D0%B2%D0%BA%D0%B0%2C%20%D0%98%D0%BB%D1%8C%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%BE%D0%B4%D1%8A%D0%B5%D0%B7%D0%B4%2C%20%D1%811",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-padel-cooltennis-malevich-text-cool": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-padel-cooltennis-malevich&text=CoolTennis%20%E2%80%94%20%D0%BF%D0%B0%D0%B4%D0%B5%D0%BB%20%D0%9E%D0%B4%D0%B8%D0%BD%D1%86%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B3.%20%D0%BE.%2C%20%D0%BF%D0%B0%D1%80%D0%BA%20%D0%B8%D0%BC.%20%D0%9C%D0%B0%D0%BB%D0%B5%D0%B2%D0%B8%D1%87%D0%B0",
-"ok": true,
-"pages": 4,
-"bytes": 6854,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-spartak-hockey-sokolniki-text-d0-a5": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-spartak-hockey-sokolniki&text=%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20%C2%AB%D0%A1%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%A2%D0%B8%D1%85%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%202",
-"ok": true,
-"pages": 3,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-major-tennis-nagornaya-text-d0-a2-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-major-tennis-nagornaya&text=%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D1%83%D0%B1%20%C2%AB%D0%9C%D0%B5%D0%B9%D0%B4%D0%B6%D0%BE%D1%80%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BB%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%203%2C%20%D1%81%D1%82%D1%80.%202%2C%204%20%D1%8D%D1%82%D0%B0%D0%B6",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-champion-olonetsky-tennis-text-d0-a": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-champion-olonetsky-tennis&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20%D0%A1%D0%9A%20%C2%AB%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9E%D0%BB%D0%BE%D0%BD%D0%B5%D1%86%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%205/1%D0%90",
-"ok": true,
-"pages": 3,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-mf41-tennis-text-d0-a2-d0-b5-d0-bd": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-mf41-tennis&text=%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%BD%D1%8B%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%20Mf41%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2041%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%202",
-"ok": true,
-"pages": 4,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-polekort-tennis-text-c2-ab-d0-9f-d0": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-polekort-tennis&text=%C2%AB%D0%9F%D0%BE%D0%BB%D0%B5%D0%BA%D0%BE%D1%80%D1%82%C2%BB%20%E2%80%94%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%20%D0%B4%D0%BB%D1%8F%20%D0%B4%D0%B5%D1%82%D0%B5%D0%B9%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%91%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%205%D0%90%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%203",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-khimki-badminton-dinamo-text-khimki": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-khimki-badminton-dinamo&text=Khimki%20Badminton%20Club%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9B%D0%B0%D0%B2%D0%BE%D1%87%D0%BA%D0%B8%D0%BD%D0%B0%2C%2032%20%28%D0%94%D0%A1%20%C2%AB%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%BE%C2%BB%29",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-nevsky-bears-likhobory-text-d0-92-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-nevsky-bears-likhobory&text=%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20Nevsky%20Bears%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2077%D0%90%2C%20%D1%81%D1%82%D1%80.%201",
-"ok": true,
-"pages": 5,
-"bytes": 9353,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-nevsky-bears-reutov-text-d0-92-d0-b": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-nevsky-bears-reutov&text=%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20Nevsky%20Bears%20%D0%A0%D0%B5%D1%83%D1%82%D0%BE%D0%B2%2C%20%D0%AE%D0%B1%D0%B8%D0%BB%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80-%D1%82%2C%2062",
-"ok": true,
-"pages": 5,
-"bytes": 12604,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-nevsky-bears-streshnevo-text-d0-92": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-nevsky-bears-streshnevo&text=%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20Nevsky%20Bears%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B2%D0%B5%D1%82%D0%BB%D1%8B%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%202%D0%90",
-"ok": true,
-"pages": 2,
-"bytes": 2386,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-nevsky-bears-nagornaya-text-d0-92-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-nevsky-bears-nagornaya&text=%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20Nevsky%20Bears%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BB%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%203%2C%20%D1%81%D1%82%D1%80.%202",
-"ok": true,
-"pages": 4,
-"bytes": 3928,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-foton-volley-medvedkovo-text-d0-92": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-foton-volley-medvedkovo&text=%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D1%83%D0%B1%20%C2%AB%D0%A4%D0%BE%D1%82%D0%BE%D0%BD%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%A2%D0%B8%D1%85%D0%BE%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%2C%2010%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%201",
-"ok": true,
-"pages": 4,
-"bytes": 4969,
-"tries": 0
-},
-"lyapkin-hockey-ru-contacts": {
-"url": "https://lyapkin-hockey.ru/contacts",
+"xn-gtbnhqgdou4c-xn-p1ai-contacts": {
+"url": "https://xn----gtbnhqgdou4c.xn--p1ai/contacts",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 2
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
+"tries": 1
 },
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev301-1119e-text-d0-90-d1-85-d0-b8-d0-bb-d0-bb-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev301=1119e&text=%D0%90%D1%85%D0%B8%D0%BB%D0%BB%D0%B5%D1%81%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%201-%D1%8F%20%D0%9E%D1%81%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%207%D0%90%2C%20%D1%81%D1%82%D1%80.%2038",
+"olimp-serp-ru-price": {
+"url": "https://olimp-serp.ru/price",
 "ok": true,
 "pages": 5,
-"bytes": 16000,
+"bytes": 8823,
 "tries": 0
 },
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev302-1119e-text-d0-9a-d0-a1-d0-9a-20-d0-92-d0-b": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev302=1119e&text=%D0%9A%D0%A1%D0%9A%20%D0%92%D0%BE%D0%BB%D1%88%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BB%D0%B5%D1%81%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9B%D0%BE%D1%81%D0%B8%D0%BD%D0%BE%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%20%D0%B2%D0%BB50",
-"ok": true,
-"pages": 2,
-"bytes": 3179,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev310-1119e-text-d0-94-d0-b5-d1-82-d0-b8-20-d1-8": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev310=1119e&text=%D0%94%D0%B5%D1%82%D0%B8%20%D1%80%D0%B0%D0%B9%D0%BA%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9F%D0%BE%D1%80%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2010",
-"ok": true,
-"pages": 4,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev313-1119e-text-d0-a1-d0-bf-d0-be-d1-80-d1-82-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev313=1119e&text=%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D0%BE-%D0%B0%D0%B4%D0%B0%D0%BF%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9A%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%D1%87%D1%83%D0%BA%D0%B0%2C%2028",
-"ok": true,
-"pages": 3,
-"bytes": 8614,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev316-1119e-text-d0-a8-d0-ba-d0-be-d0-bb-d0-b0-2": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev316=1119e&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%93%D0%B5%D1%80%D0%BE%D0%B5%D0%B2%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B5%D0%B2%D0%B0%D1%81%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF.%2C%2011%D0%95",
-"ok": true,
-"pages": 3,
-"bytes": 4480,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev321-1119e-text-d0-9c-d0-b8-d1-80-2c-202-d0-b9": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev321=1119e&text=%D0%9C%D0%B8%D1%80%2C%202-%D0%B9%20%D0%9C%D0%B8%D1%87%D1%83%D1%80%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%82%D1%83%D0%BF%D0%B8%D0%BA%2C%201%2C%20%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%20%D0%A1%D1%85%D0%BE%D0%B4%D0%BD%D1%8F%2C%20%D0%A5%D0%B8%D0%BC%D0%BA%D0%B8%2C%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B0%D1%8F%20%D0%B1%D0%B0%D1%88%D0%BD%D1%8F",
-"ok": true,
-"pages": 5,
-"bytes": 14142,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev328-1119e-text-handmadeclub-2c-20-d0-94-d0-be": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev328=1119e&text=HandMadeClub%2C%20%D0%94%D0%BE%D0%BB%D0%B3%D0%BE%D0%BF%D1%80%D1%83%D0%B4%D0%BD%D1%8B%D0%B9%2C%20%D0%9B%D0%B8%D1%85%D0%B0%D1%87%D1%91%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88.%2C%2013%D0%90",
-"ok": true,
-"pages": 3,
-"bytes": 4767,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev336-1119e-text-d0-94-d0-be-d0-bc-20-d0-b4-d0-b": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev336=1119e&text=%D0%94%D0%BE%D0%BC%20%D0%B4%D0%BB%D1%8F%20%D0%B4%D0%B5%D1%82%D0%B5%D0%B9%20%D1%81%20%D0%A0%D0%B0%D1%81%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9C%D0%B0%D1%80%D1%88%D0%B0%D0%BB%D0%B0%20%D0%A0%D1%8B%D0%B1%D0%B0%D0%BB%D0%BA%D0%BE%2C%202",
-"ok": true,
-"pages": 4,
-"bytes": 9414,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev337-1119e-text-1000-20-d0-a8-d0-b0-d0-b3-d0-be": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev337=1119e&text=1000%20%D0%A8%D0%B0%D0%B3%D0%BE%D0%B2%2C%20%D0%A5%D0%B8%D0%BC%D0%BA%D0%B8%2C%20%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D1%91%D0%B6%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2060",
-"ok": true,
-"pages": 3,
-"bytes": 3289,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev338-1119e-text-d0-91-d0-b5-d0-bb-d0-b0-d1-8f-2": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev338=1119e&text=%D0%91%D0%B5%D0%BB%D0%B0%D1%8F%20%D0%B2%D0%BE%D1%80%D0%BE%D0%BD%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF.%20%D0%9C%D0%B8%D1%80%D0%B0%2C%2016%2C%20%D1%81%D1%82%D1%80.%202",
-"ok": true,
-"pages": 2,
-"bytes": 3023,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-ev340-1119e-text-d0-9a-d0-b0-d1-80-d0-ba-d1-83-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?ev340=1119e&text=%D0%9A%D0%B0%D1%80%D0%BA%D1%83%D1%88%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D1%86%D0%BE%D0%B2%D0%B0%2C%2021%2C%20%D0%BF.%20%D0%B3.%20%D1%82.%20%D0%9A%D1%80%D0%B0%D1%82%D0%BE%D0%B2%D0%BE",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tennis10is-krasnogorsk-text-d0-a8-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tennis10is-krasnogorsk&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20%C2%AB10%20is%C2%BB%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA%2C%20%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2016",
-"ok": true,
-"pages": 4,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-monster-tennis-khoroshevskaya-text": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-monster-tennis-khoroshevskaya&text=%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%20Monster%20Tennis%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%203-%D1%8F%20%D0%A5%D0%BE%D1%80%D0%BE%D1%88%D1%91%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2021%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%205",
-"ok": true,
-"pages": 2,
-"bytes": 3150,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tfl-tennis-vernadskogo-text-d0-95-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tfl-tennis-vernadskogo&text=%D0%95%D0%B2%D1%80%D0%BE%D0%BF%D0%B5%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20TFL%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%BF%D1%80-%D1%82%20%D0%92%D0%B5%D1%80%D0%BD%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%2086",
-"ok": true,
-"pages": 1,
-"bytes": 601,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-abctennis-rabochaya-text-d0-a2-d0-b": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-abctennis-rabochaya&text=%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D1%83%D0%B1%20Abctennis%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2053%2C%20%D1%81%D1%82%D1%80.%201",
-"ok": true,
-"pages": 4,
-"bytes": 5431,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-belokamennaya-samokatnaya-text-d0-9": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-belokamennaya-samokatnaya&text=%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%91%D0%B5%D0%BB%D0%BE%D0%BA%D0%B0%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%BA%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%20%D0%B2%D0%BB.%202%2C%201%20%D1%8D%D1%82%D0%B0%D0%B6",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tochka-udara-letovskaya-text-d0-a8": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tochka-udara-letovskaya&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20%C2%AB%D0%A2%D0%BE%D1%87%D0%BA%D0%B0%20%D0%A3%D0%B4%D0%B0%D1%80%D0%B0%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9C%D0%B0%D0%BB%D0%B0%D1%8F%20%D0%9B%D0%B5%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%206",
-"ok": true,
-"pages": 2,
-"bytes": 5283,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tennis-klass-verkhoyanskaya-text-d0": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tennis-klass-verkhoyanskaya&text=%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D1%83%D0%B1%20%C2%AB%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%20%D0%9A%D0%BB%D0%B0%D1%81%D1%81%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%92%D0%B5%D1%80%D1%85%D0%BE%D1%8F%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%209",
-"ok": true,
-"pages": 2,
-"bytes": 3344,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-lyapkin-hockey-novokosino-text-d0-a": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-lyapkin-hockey-novokosino&text=%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20%D0%AE%D1%80%D0%B8%D1%8F%20%D0%9B%D1%8F%D0%BF%D0%BA%D0%B8%D0%BD%D0%B0%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B0%D0%BB%D1%82%D1%8B%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%201%2C%20%D1%81%D1%82%D1%80.%201%20%28%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%B0%D1%80%D0%B5%D0%BD%D0%B0%20%C2%AB%D0%90%D0%B9%D1%81%20%D0%90%D1%82%D0%BB%D0%B5%D1%82%D0%B8%D0%BA%D1%81%C2%BB%29",
-"ok": true,
-"pages": 2,
-"bytes": 3667,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-lyapkin-hockey-lytkarino-text-d0-a5": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-lyapkin-hockey-lytkarino&text=%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20%D0%AE%D1%80%D0%B8%D1%8F%20%D0%9B%D1%8F%D0%BF%D0%BA%D0%B8%D0%BD%D0%B0%20%D0%9B%D1%8B%D1%82%D0%BA%D0%B0%D1%80%D0%B8%D0%BD%D0%BE%2C%20%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%209%D0%90",
-"ok": true,
-"pages": 2,
-"bytes": 3289,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-skyhockey-maryina-roshcha-text-d0-a": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-skyhockey-maryina-roshcha&text=%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%A1%D0%BA%D0%B0%D0%B9%20%D1%85%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%201-%D0%B9%20%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D0%B5%D1%86%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80.%2C%2014%2C%20%D1%8D%D1%82%D0%B0%D0%B6%201",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-krylya-stolitsy-hockey-dinamo-text": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-krylya-stolitsy-hockey-dinamo&text=%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%9A%D1%80%D1%8B%D0%BB%D1%8C%D1%8F%20%D0%A1%D1%82%D0%BE%D0%BB%D0%B8%D1%86%D1%8B%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%AE%D1%80%D0%B8%D1%8F%20%D0%9D%D0%B8%D0%BA%D1%83%D0%BB%D0%B8%D0%BD%D0%B0%2C%203",
-"ok": true,
-"pages": 3,
-"bytes": 7602,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-ski-snegiri-dzerzhinsky-text-d0-93": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-ski-snegiri-dzerzhinsky&text=%D0%93%D0%BE%D1%80%D0%BD%D0%BE%D0%BB%D1%8B%D0%B6%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%A1%D0%BD%D0%B5%D0%B3%D0%B8%D1%80%D0%B8%C2%BB%20%D0%94%D0%B7%D0%B5%D1%80%D0%B6%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%2C%20%D0%A3%D0%B3%D1%80%D0%B5%D1%88%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2019",
-"ok": true,
-"pages": 3,
-"bytes": 7876,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tennis-borodina-degunino-text-d0-a8": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tennis-borodina-degunino&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20%D0%91%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D0%BD%D0%BE%D0%B9%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%94%D0%B5%D0%B3%D1%83%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%202%20%28%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%E2%84%96%202100%29",
-"ok": true,
-"pages": 4,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-chess-csbw-tsvetnoy-text-d0-a8-d0-b": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-chess-csbw-tsvetnoy&text=%D0%A8%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%A7%D1%91%D1%80%D0%BD%D0%BE%D0%B5%20%D0%B8%20%D0%91%D0%B5%D0%BB%D0%BE%D0%B5%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%202-%D0%B9%20%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80.%2C%206%D0%90%2C%20%D1%81%D1%82%D1%80.%203",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-chess-csbw-khimki-levy-bereg-text-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-chess-csbw-khimki-levy-bereg&text=%D0%A8%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%A7%D1%91%D1%80%D0%BD%D0%BE%D0%B5%20%D0%B8%20%D0%91%D0%B5%D0%BB%D0%BE%D0%B5%C2%BB%20%D0%A5%D0%B8%D0%BC%D0%BA%D0%B8%2C%20%D1%83%D0%BB.%20%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%2014",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-chess-labyrinth-krylatskoe-text-d0": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-chess-labyrinth-krylatskoe&text=%D0%A8%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%9B%D0%B0%D0%B1%D0%B8%D1%80%D0%B8%D0%BD%D1%82%D1%8B%20%D1%88%D0%B0%D1%85%D0%BC%D0%B0%D1%82%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9A%D1%80%D1%8B%D0%BB%D0%B0%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A5%D0%BE%D0%BB%D0%BC%D1%8B%2C%2034%20%28%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0%20%D0%B8%D0%BC.%20%D0%90%D1%85%D0%BC%D0%B0%D1%82%D0%BE%D0%B2%D0%BE%D0%B9%29",
-"ok": true,
-"pages": 5,
-"bytes": 6787,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-gymbalance-khachaturyana-text-gymba": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-gymbalance-khachaturyana&text=GymBalance%20%E2%80%94%20%D0%B3%D0%B8%D0%BC%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B0%D0%BB%D1%8B%D1%88%D0%B5%D0%B9%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%A5%D0%B0%D1%87%D0%B0%D1%82%D1%83%D1%80%D1%8F%D0%BD%D0%B0%2C%2010%2C%20%D1%81%D1%82%D1%80.%201",
-"ok": true,
-"pages": 5,
-"bytes": 12120,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-rusvolley-novodmitrovskaya-text-rus": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-rusvolley-novodmitrovskaya&text=RusVolley%20%E2%80%94%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B2%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9D%D0%BE%D0%B2%D0%BE%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%205%D0%90%2C%20%D1%81%D1%82%D1%80.%202",
-"ok": true,
-"pages": 4,
-"bytes": 10778,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-idanko-ballet-starokirochny-text-d0": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-idanko-ballet-starokirochny&text=%D0%A1%D1%82%D1%83%D0%B4%D0%B8%D1%8F%20%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%B0%20%C2%AB%D0%98%D0%B4%D0%B0%D0%BD%D0%BA%D0%BE%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D1%82%D0%B0%D1%80%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D1%87%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%B5%D1%80.%2C%202",
-"ok": true,
-"pages": 3,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-idanko-ballet-baltiyskaya-text-d0-a": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-idanko-ballet-baltiyskaya&text=%D0%A1%D1%82%D1%83%D0%B4%D0%B8%D1%8F%20%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%B0%20%C2%AB%D0%98%D0%B4%D0%B0%D0%BD%D0%BA%D0%BE%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%91%D0%B0%D0%BB%D1%82%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%209",
-"ok": true,
-"pages": 2,
-"bytes": 1035,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-sport-katok-kosino-text-d0-a8-d0-ba": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-sport-katok-kosino&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BD%D0%B8%D1%8F%20%C2%AB%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%83%D1%85%D1%82%D0%BE%D0%BC%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88.%2C%202%D0%90%20%28%D0%BA%D0%B0%D1%82%D0%BE%D0%BA%20%D0%B2%20%D0%A2%D0%A6%20%C2%AB%D0%93%D0%BE%D1%80%D0%BE%D0%B4%20%D0%9A%D0%BE%D1%81%D0%B8%D0%BD%D0%BE%C2%BB%29",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-sport-katok-krylatskoe-text-d0-a8-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-sport-katok-krylatskoe&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BD%D0%B8%D1%8F%20%C2%AB%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9A%D1%80%D1%8B%D0%BB%D0%B0%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%20%D0%B2%D0%BB.%202%2C%20%D1%81%D1%82%D1%80.%205%20%28%D0%BA%D0%B0%D1%82%D0%BE%D0%BA%20%C2%AB%D0%A1%D0%BF%D0%BE%D1%80%D1%82%20%D1%81%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D1%8F%C2%BB%29",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-ibasket-molodezhnaya-text-d0-91-d0": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-ibasket-molodezhnaya&text=%D0%91%D0%B0%D1%81%D0%BA%D0%B5%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20IBASKET%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%95%D0%BB%D1%8C%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2024%20%28%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%E2%84%96%20887%29",
-"ok": true,
-"pages": 4,
-"bytes": 5237,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-ibasket-novokosino-text-d0-91-d0-b0": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-ibasket-novokosino&text=%D0%91%D0%B0%D1%81%D0%BA%D0%B5%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20IBASKET%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B0%D0%BB%D1%82%D1%8B%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2013%D0%90%20%28%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%E2%84%96%202127%29",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tennis-capital-kashirskaya-text-d0": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tennis-capital-kashirskaya&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20Tennis%20Capital%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9A%D0%B0%D1%88%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88.%2C%2024%2C%20%D1%81%D1%82%D1%80.%201",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-tri-medvedya-troitsk-text-d0-a8-d0": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-tri-medvedya-troitsk&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%81%D0%B0%D0%BC%D0%B1%D0%BE%20%D0%B8%20%D0%B4%D0%B7%D1%8E%D0%B4%D0%BE%20%C2%AB%D0%A2%D1%80%D0%B8%20%D0%9C%D0%B5%D0%B4%D0%B2%D0%B5%D0%B4%D1%8F%C2%BB%20%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%BA%2C%20%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2011",
-"ok": true,
-"pages": 5,
-"bytes": 8052,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-padel-vnukovo-sport-text-vnukovo-20": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-padel-vnukovo-sport&text=Vnukovo%20Sport%20Club%20%E2%80%94%20%D0%BF%D0%B0%D0%B4%D0%B5%D0%BB%20%D0%B4.%20%D0%A0%D0%BE%D0%B3%D0%BE%D0%B7%D0%B8%D0%BD%D0%B8%D0%BD%D0%BE%2C%20%D1%83%D0%BB.%20%D0%9B%D1%83%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%2C%2020%D0%B0%2C%20%D1%81%D1%82%D1%80.%202",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-padel-zhukovka-text-padel-20club-20": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-padel-zhukovka&text=Padel%20Club%20Zhukovka%20%D0%9E%D0%B4%D0%B8%D0%BD%D1%86%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B3.%20%D0%BE.%2C%20%D0%B4.%20%D0%96%D1%83%D0%BA%D0%BE%D0%B2%D0%BA%D0%B0%2C%20%D0%98%D0%BB%D1%8C%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%BE%D0%B4%D1%8A%D0%B5%D0%B7%D0%B4%2C%20%D1%811",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-padel-cooltennis-malevich-text-cool": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-padel-cooltennis-malevich&text=CoolTennis%20%E2%80%94%20%D0%BF%D0%B0%D0%B4%D0%B5%D0%BB%20%D0%9E%D0%B4%D0%B8%D0%BD%D1%86%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B3.%20%D0%BE.%2C%20%D0%BF%D0%B0%D1%80%D0%BA%20%D0%B8%D0%BC.%20%D0%9C%D0%B0%D0%BB%D0%B5%D0%B2%D0%B8%D1%87%D0%B0",
-"ok": true,
-"pages": 4,
-"bytes": 6851,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-spartak-hockey-sokolniki-text-d0-a5": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-spartak-hockey-sokolniki&text=%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%C2%AB%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%20%C2%AB%D0%A1%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%A2%D0%B8%D1%85%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C%202",
-"ok": true,
-"pages": 3,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-major-tennis-nagornaya-text-d0-a2-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-major-tennis-nagornaya&text=%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D1%83%D0%B1%20%C2%AB%D0%9C%D0%B5%D0%B9%D0%B4%D0%B6%D0%BE%D1%80%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BB%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%203%2C%20%D1%81%D1%82%D1%80.%202%2C%204%20%D1%8D%D1%82%D0%B0%D0%B6",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-champion-olonetsky-tennis-text-d0-a": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-champion-olonetsky-tennis&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%B0%20%D0%A1%D0%9A%20%C2%AB%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9E%D0%BB%D0%BE%D0%BD%D0%B5%D1%86%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%205/1%D0%90",
-"ok": true,
-"pages": 3,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-mf41-tennis-text-d0-a2-d0-b5-d0-bd": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-mf41-tennis&text=%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%D0%BD%D1%8B%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%20Mf41%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2041%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%202",
-"ok": true,
-"pages": 4,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-polekort-tennis-text-c2-ab-d0-9f-d0": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-polekort-tennis&text=%C2%AB%D0%9F%D0%BE%D0%BB%D0%B5%D0%BA%D0%BE%D1%80%D1%82%C2%BB%20%E2%80%94%20%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81%20%D0%B4%D0%BB%D1%8F%20%D0%B4%D0%B5%D1%82%D0%B5%D0%B9%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%91%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%205%D0%90%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%203",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-khimki-badminton-dinamo-text-khimki": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-khimki-badminton-dinamo&text=Khimki%20Badminton%20Club%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9B%D0%B0%D0%B2%D0%BE%D1%87%D0%BA%D0%B8%D0%BD%D0%B0%2C%2032%20%28%D0%94%D0%A1%20%C2%AB%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%BE%C2%BB%29",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-nevsky-bears-likhobory-text-d0-92-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-nevsky-bears-likhobory&text=%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20Nevsky%20Bears%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2077%D0%90%2C%20%D1%81%D1%82%D1%80.%201",
-"ok": true,
-"pages": 5,
-"bytes": 9411,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-nevsky-bears-reutov-text-d0-92-d0-b": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-nevsky-bears-reutov&text=%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20Nevsky%20Bears%20%D0%A0%D0%B5%D1%83%D1%82%D0%BE%D0%B2%2C%20%D0%AE%D0%B1%D0%B8%D0%BB%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80-%D1%82%2C%2062",
-"ok": true,
-"pages": 5,
-"bytes": 12459,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-nevsky-bears-streshnevo-text-d0-92": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-nevsky-bears-streshnevo&text=%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20Nevsky%20Bears%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%B2%D0%B5%D1%82%D0%BB%D1%8B%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%202%D0%90",
-"ok": true,
-"pages": 2,
-"bytes": 2328,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-nevsky-bears-nagornaya-text-d0-92-d": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-nevsky-bears-nagornaya&text=%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20Nevsky%20Bears%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BB%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80-%D0%B4%2C%203%2C%20%D1%81%D1%82%D1%80.%202",
-"ok": true,
-"pages": 4,
-"bytes": 4023,
-"tries": 0
-},
-"yandex-ru-maps-1-moscow-and-moscow-oblast-c3q-confirm3-foton-volley-medvedkovo-text-d0-92": {
-"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c3q=confirm3-foton-volley-medvedkovo&text=%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D1%83%D0%B1%20%C2%AB%D0%A4%D0%BE%D1%82%D0%BE%D0%BD%C2%BB%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%A2%D0%B8%D1%85%D0%BE%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%2C%2010%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%201",
-"ok": true,
-"pages": 4,
-"bytes": 5014,
-"tries": 0
-},
-"lyapkin-hockey-ru-contacts": {
-"url": "https://lyapkin-hockey.ru/contacts",
+"olimp-serp-ru-basseyn": {
+"url": "https://olimp-serp.ru/basseyn",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
 "tries": 1
 },
-"skyhockey-ru-contacts": {
-"url": "https://skyhockey.ru/contacts",
+"special-worldclass-ru-clubs": {
+"url": "https://special.worldclass.ru/clubs",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
+"err": "Remote end closed connection without response",
 "tries": 1
-},
-"kc-hockey-ru-contacts": {
-"url": "https://kc-hockey.ru/contacts",
-"ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 1
-},
-"csbw-ru-contacts": {
-"url": "https://csbw.ru/contacts",
-"ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 1
-},
-"chesslabyrinth-ru-filialy-krylatskoe": {
-"url": "https://chesslabyrinth.ru/filialy/krylatskoe",
-"ok": true,
-"pages": 1,
-"bytes": 2718,
-"tries": 0
-},
-"mf41-ru": {
-"url": "https://mf41.ru/",
-"ok": true,
-"pages": 1,
-"bytes": 3700,
-"tries": 0
-},
-"arenachampion-ru-shkola-tennisa": {
-"url": "https://arenachampion.ru/shkola-tennisa",
-"ok": true,
-"pages": 2,
-"bytes": 14957,
-"tries": 0
-},
-"major-tennis-ru-contacts": {
-"url": "https://major-tennis.ru/contacts",
-"ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 1
-},
-"i-basket-ru-molodezhnaya": {
-"url": "https://i-basket.ru/molodezhnaya",
-"ok": true,
-"pages": 2,
-"bytes": 16000,
-"tries": 0
-},
-"i-basket-ru-novokosino": {
-"url": "https://i-basket.ru/novokosino",
-"ok": true,
-"pages": 2,
-"bytes": 16000,
-"tries": 0
-},
-"sambo-msk-ru-nashi-zaly": {
-"url": "https://sambo.msk.ru/nashi-zaly/",
-"ok": true,
-"pages": 3,
-"bytes": 16000,
-"tries": 0
 }
 }
