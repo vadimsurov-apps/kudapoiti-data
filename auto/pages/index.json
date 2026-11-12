@@ -225580,7 +225580,7 @@
 "url": "https://losinka-tennis.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "alfclimb-ru": {
 "url": "https://alfclimb.ru/",
@@ -225592,8 +225592,8 @@
 "alfclimb-ru-contacts": {
 "url": "https://alfclimb.ru/contacts",
 "ok": false,
-"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
-"tries": 2
+"err": "HTTP Error 404: Not Found",
+"tries": 3
 },
 "madextremepark-ru": {
 "url": "https://madextremepark.ru/",
@@ -225606,7 +225606,7 @@
 "url": "https://madextremepark.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "sputniktennis-ru": {
 "url": "https://sputniktennis.ru/",
@@ -225619,13 +225619,13 @@
 "url": "https://sputniktennis.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "airarena-ru-contacts": {
 "url": "https://airarena.ru/contacts",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 2
+"err": "HTTP Error 403: Forbidden",
+"tries": 3
 },
 "race-place-ru-contacts": {
 "url": "https://race-place.ru/contacts",
@@ -225638,19 +225638,19 @@
 "url": "https://masterskok.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "www-dds-mossport-ru": {
 "url": "https://www.dds-mossport.ru/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "stolicakart-ru-contacts": {
 "url": "https://stolicakart.ru/contacts",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>",
-"tries": 2
+"tries": 3
 },
 "komornikovswim-ru": {
 "url": "https://komornikovswim.ru/",
@@ -225704,14 +225704,14 @@
 "sambojudo-ru": {
 "url": "https://sambojudo.ru/",
 "ok": false,
-"err": "The read operation timed out",
-"tries": 1
+"err": "<urlopen error timed out>",
+"tries": 2
 },
 "stepinbox-ru": {
 "url": "https://stepinbox.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -5] No address associated with hostname>",
-"tries": 1
+"tries": 2
 },
 "oknapresne-ru": {
 "url": "https://oknapresne.ru/",
@@ -225726,5 +225726,18 @@
 "pages": 1,
 "bytes": 1748,
 "tries": 0
+},
+"palmira-garden-com": {
+"url": "https://palmira-garden.com/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"muu-rest-ru": {
+"url": "https://muu-rest.ru/",
+"ok": false,
+"err": "HTTP Error 403: Forbidden",
+"tries": 1
 }
 }
