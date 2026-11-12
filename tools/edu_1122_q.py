@@ -21,7 +21,7 @@ def near_station(key):
     try: m = float(d.split()[0].replace(",", ".")) * (1000 if "км" in d else 1)
     except ValueError: return None, None
     return st.lower().replace("ё", "е"), m
-NAME = {"dom-dlya-detey-s-ras-rybalko": "РАС", "semeyny-centr-orientir-pervomayskaya": "семейный", "minakova-kosmodemyanskikh": "Минаков"}
+NAME = {"dom-dlya-detey-s-ras-rybalko": "РАС", "semeyny-centr-orientir-pervomayskaya": "семейный", "minakova-kosmodemyanskikh": "Минаков", "podsolnukh-balashikha": "Подсолнух", "kosmos-montessori-novorogozhskaya": "Космос", "uh-ty-kub-mikhaylova": "Куб"}
 SKIPW = {"центр", "детский", "детская", "школа", "студия", "клуб", "развития", "сад", "мой", "семейный", "логоцентр", "дом", "для", "детей"}
 def qid(key):
     a, n = key.split(":"); return f"edu22{'y' if a.endswith('y') else ''}-{n}"
