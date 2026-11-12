@@ -24,6 +24,10 @@ Q = {
  "olimp-boevye-reutov": ("Реутов", "Октября", "52", "Олимп"),
  "tkd-centr-vostok-saltykovskaya": ("Новокосино", "Салтыковская", "13Г", "Тхэквондо"),
  "zarinyan-karate-suzdalskaya": ("Новокосино", "Суздальская", "25", "карате"),
+ "kaivan-dojo-nagatinskaya": ("Нагатинская", "Нагатинская", "16", "Мантач"),
+ "splash-swim-obraztsova": ("Марьина Роща", "Образцова", "11", "Splash"),
+ "lotos-swim-reutov": ("Реутов", "Котовского", "13А", "Лотос"),
+ "m98-baby-swim-udaltsova": ("Проспект Вернадского", "Удальцова", "40", "М98"),
 }
 if __name__ == "__main__":
     out = []
