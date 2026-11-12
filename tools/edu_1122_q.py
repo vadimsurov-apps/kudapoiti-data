@@ -36,6 +36,7 @@ for pid, v in SEL.items():
         (lat, lon), rad = TOWN[t], 5000
     else:
         stn, dist = near_station(v[0])
+        if stn == "бульвар генерала карбышева": stn = "октябрьское поле"
         if stn not in D: print("нет станции", pid, stn); continue
         (lat, lon), rad = D[stn], int(min(dist or 1500, 3000)) + 700
     ws = [w for w in re.findall(r"[A-Za-zА-Яа-яЁё0-9\-]{3,}", o["name"]) if w.lower() not in SKIPW]
