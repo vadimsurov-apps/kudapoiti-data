@@ -171902,13 +171902,13 @@
 "url": "https://www.fsbdance.ru/contacts",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-"tries": 2
+"tries": 3
 },
 "laprovincia-moscow-deti": {
 "url": "https://laprovincia.moscow/deti",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "yandex-ru-maps-1-moscow-and-moscow-oblast-v2w-red-hat-dance-kutuzovsky-text-d0-a2-d0-b0-d0": {
 "url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?v2w=red-hat-dance-kutuzovsky&text=%D0%A2%D0%B0%D0%BD%D1%86%D0%B5%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%20RED%20HAT%20%D0%9A%D1%83%D1%82%D1%83%D0%B7%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80-%D1%82%2C%2036%2C%20%D1%81%D1%82%D1%80.%204",
@@ -172196,5 +172196,30 @@
 "pages": 5,
 "bytes": 16000,
 "tries": 0
+},
+"ersh-su": {
+"url": "https://ersh.su/",
+"ok": false,
+"err": "HTTP Error 401: Unauthorized",
+"tries": 1
+},
+"aviapark-com-kids": {
+"url": "https://aviapark.com/kids",
+"ok": true,
+"pages": 1,
+"bytes": 38,
+"tries": 0
+},
+"joki-joya-ru-parks-evropeyskiy": {
+"url": "https://joki-joya.ru/parks/evropeyskiy",
+"ok": false,
+"err": "HTTP Error 404: Page not found: /parks/evropeyskiy/",
+"tries": 1
+},
+"derwaltz-ru-contacts": {
+"url": "https://derwaltz.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
 }
 }
