@@ -36,8 +36,18 @@ def norm(s): return re.sub(r"[^a-zа-я0-9]", "", (s or "").lower().replace("ё"
 def main():
     qs = json.load(open("auto/osm-queries.json"))
     out = {q["id"]: {"query": q, "pois": [], "buildings": [], "entrances": []} for q in qs}
+    # 12.11: сетка вместо перебора всех запросов на каждый объект (700+ запросов → прогон не укладывался в 40 мин)
+    CELL = 0.02
+    grid = {}
+    for q in qs:
+        r = q.get("radius", 250)
+        dla = r / 111000 + 0.001
+        dlo = r / (111000 * max(0.2, math.cos(math.radians(q["lat"])))) + 0.001
+        for i in range(math.floor((q["lat"] - dla) / CELL), math.floor((q["lat"] + dla) / CELL) + 1):
+            for j in range(math.floor((q["lon"] - dlo) / CELL), math.floor((q["lon"] + dlo) / CELL) + 1):
+                grid.setdefault((i, j), []).append(q)
     def near(lat, lon):
-        for q in qs:
+        for q in grid.get((math.floor(lat / CELL), math.floor(lon / CELL)), ()):
             d = dist(q["lat"], q["lon"], lat, lon)
             if d <= q.get("radius", 250): yield q, round(d)
     srcs = [("named.geojsonseq", "pois"), ("bld.geojsonseq", "buildings"), ("entr.geojsonseq", "entrances")]
