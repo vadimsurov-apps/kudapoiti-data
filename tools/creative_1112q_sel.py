@@ -3,7 +3,7 @@ import json, os
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 SEL = {14: "musicclasses-lipchanskogo", 50: "active-style-zeleny", 54: "zhete-novokosino-gorodetskaya",
        56: "first-dance-academy-reutov", 57: "viartfam-suzdalskaya", 61: "raduga-hor-reutov", 63: "ramos-vocal-reutov",
-       70: "canvas-tolmachevsky", 85: "testa-dance-pavlovsky", 49: "dshi-rimsky-korsakov-novogireevo",
+       85: "testa-dance-pavlovsky", 49: "dshi-rimsky-korsakov-novogireevo",
        103: "istok-art-lukinskaya", 116: "planeta-vocal-melnikova", 139: "x-temp-saltykovskaya",
        142: "impulse-dance-korolev", 150: "sinergiya-music-balashikha", 156: "dom-khudozhnikov-khimki",
        164: "bely-slon-khimki", 173: "starlight-podolsk"}
