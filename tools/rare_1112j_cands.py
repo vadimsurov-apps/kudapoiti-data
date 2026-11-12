@@ -53,7 +53,8 @@ C = [
  ("badminton-new-league-turchaninov", "New League Badminton Club", "Москва, Турчанинов пер., 3, стр. 1", "Турчанинов", (55.7350, 37.5950), 2000, "", "badminton"),
  ("karting-dozari-reutov", "Дозари картинг", "Реутов, МКАД, 2-й километр, 1", "", (55.7700, 37.8400), 3000, "Дозари", "karting"),
 ]
-if __name__ == "__main__":
+qp = os.path.join(ROOT, "auto", "osm-queries.json")
+if __name__ == "__main__" and "2" not in __import__("sys").argv:
     qp = os.path.join(ROOT, "auto", "osm-queries.json")
     qs = json.load(open(qp)); have = {q["id"] for q in qs}
     fq = []
@@ -65,3 +66,23 @@ if __name__ == "__main__":
     json.dump(qs, open(qp, "w"), ensure_ascii=False, indent=1)
     open(os.path.join(ROOT, "auto", "fetch-queue.txt"), "a").write("\n".join(fq) + "\n")
     print(len(C), len(fq))
+# второй заход — массовое катание в ледовых дворцах районов (карточки r14e*)
+C2 = [
+ ("rink-cska-arena", "ЦСКА Арена массовое катание", "Москва, квартал Парк Легенд", "", (55.7050, 37.6600), 2500, "ЦСКА Арена", "rinks"),
+ ("rink-legenda77-danilovskaya", "Легенда 77 каток", "Москва, Даниловская наб., 8А", "Даниловская", (55.7070, 37.6500), 2500, "Легенда", "rinks"),
+ ("rink-montreal-butovo", "Монтреал ледовый комплекс массовое катание", "Москва, Остафьевская ул., 21/1", "Остафьевская", (55.5450, 37.5250), 3000, "Монтреал", "rinks"),
+ ("rink-spartak-tikhonovskaya", "Хоккейный комплекс академия Спартак массовое катание", "Москва, Большая Тихоновская ул., 2", "Большая Тихоновская", (55.7950, 37.6850), 2500, "Спартак", "rinks"),
+ ("rink-alyaska-nizhnelikhoborsky", "Ледовая арена Аляска массовое катание", "Москва, 3-й Нижнелихоборский пр., 1, стр. 6", "Нижнелихоборский", (55.8550, 37.5550), 2500, "Аляска", "rinks"),
+ ("rink-vershina-tsaritsyno", "Вершина спорткомплекс каток", "Москва, Шипиловский проезд, парк Царицыно", "Шипиловский", (55.6150, 37.6950), 3000, "Вершина", "rinks"),
+ ("rink-snegir-arena", "Снегирь Арена массовое катание", "Москва, д. Марушкино, 2", "", (55.6100, 37.2700), 4000, "Снегирь", "rinks"),
+]
+if __name__ == "__main__" and "2" in __import__("sys").argv:
+    qs = json.load(open(qp)); have = {q["id"] for q in qs}; fq = []
+    for i, c in enumerate(C2):
+        q = {"id": "rare12k-" + c[0], "lat": c[4][0], "lon": c[4][1], "radius": c[5], "name": c[6]}
+        if c[3]: q["street"] = c[3]
+        if q["id"] not in have: qs.append(q)
+        fq.append(f"https://yandex.ru/maps/1/moscow-and-moscow-oblast/?r14e{i:02d}=1112j&text=" + u.quote(f"{c[1]}, {c[2].split(', ')[1] if c[2].count(',') else c[2]}"))
+    json.dump(qs, open(qp, "w"), ensure_ascii=False, indent=1)
+    open(os.path.join(ROOT, "auto", "fetch-queue.txt"), "a").write("\n".join(fq) + "\n")
+    print(len(fq))
