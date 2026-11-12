@@ -81,12 +81,20 @@ HOW_FIX = {}
 # (Кубики, КДЦ, Черняк, Детская академия речи, нейрокоррекция Подольск, «Сделай шаг»), поэтому остальных — не больше 12:
 # из отложенных — новые направления (программирование, лего, сады, чтение, ментальная арифметика).
 # Остальные ключи SEL и отложенные (с иконками в tools/icons_edu_1123.py и точками) — на следующий запуск.
+# Добавлено 12.11: 5 особых (без «Детской академии речи» — справка OSM edu23z-1123 не успела) + 10 отложенных.
+# На следующий запуск готовы (точка + иконка): akademiya-rechi (после edu23z-1123), poslushayka-elektrolitny, andreev-kolobovsky,
+# zdorovy-rebenok-skandinavsky, uspeh-korolyov-gorkogo, sonechka-khimki-sovkhoznaya, twinkle-kids-luzhniki, sozvezdie-garibaldi,
+# coddy-timura-frunze, ida-school-leninsky, pixel-khodynsky, kiberone-shelikhova, mamiki-kids-ermolaevsky, smile-khodynsky
+# и остальные отложенные из DEFERRED. Нет точки в OSM: cns-neiro (10с1), my-sadik (адрес 10с1к4/2), discovery, tekhnokub,
+# algoritmika-usacheva (11Б), cyberclass (5с1) — нужен вход/объект другим способом.
+# Уже есть у нас: smelost-mechtat-pudovkina; fok-sash-korneychuka (= Спортивно-адаптивная школа, нужна категория inclusive).
 INCL = {"kubiki-geroev-panfilovtsev", "kdc-podkolokolny", "chernyak-rossoshanskaya", "akademiya-rechi-novocheryomushkinskaya",
         "neirokorrektsiya-podolsk-profsoyuznaya", "sdelay-shag-domodedovo"}
 TAKE_DEF = ["kubik-sokolovskogo", "kiberone-nekrasovka", "kiberone-novatorov", "bukvaryonok-novocheryomushkinskaya", "luchik-sokol",
-            "mamin-chasik-shipilovskaya", "ladushki-kuchino", "talantika-mytishchi", "iq007-grizodubovoy", "bambino-erudito-korabelnaya",
-            "poslushayka-elektrolitny"]
-TAKE = INCL | {"andreev-kolobovsky"}
+            "mamin-chasik-shipilovskaya", "ladushki-kuchino", "talantika-mytishchi", "iq007-grizodubovoy", "bambino-erudito-korabelnaya"]
+# с «Детской академией речи» (если справка OSM успеет) — ещё «ПослушАЙка» и школа Андреева
+TAKE_DEF_IF6 = ["poslushayka-elektrolitny"]
+TAKE = set(INCL)
 # «Особым детям»: что продумано (поле access.programs) — фактами из карточки/сайта
 PROG = {
  "chernyak-rossoshanskaya": "адаптивная физкультура, АВА-терапия, запуск речи неговорящих детей",
