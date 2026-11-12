@@ -77,7 +77,16 @@ SITE_SRC = {
  "uspeh-korolyov-gorkogo": "сайт uspeh-dc.ru (подготовка к школе детей от 3 до 7 лет)",
 }
 HOW_FIX = {}
-TAKE = set(SEL)
+# Правило запуска: «Особым детям» — не меньше трети мест. Нашлось 6 особых мест с точкой и возрастом по источнику
+# (Кубики, КДЦ, Черняк, Детская академия речи, нейрокоррекция Подольск, «Сделай шаг»), поэтому остальных — не больше 12:
+# из отложенных — новые направления (программирование, лего, сады, чтение, ментальная арифметика).
+# Остальные ключи SEL и отложенные (с иконками в tools/icons_edu_1123.py и точками) — на следующий запуск.
+INCL = {"kubiki-geroev-panfilovtsev", "kdc-podkolokolny", "chernyak-rossoshanskaya", "akademiya-rechi-novocheryomushkinskaya",
+        "neirokorrektsiya-podolsk-profsoyuznaya", "sdelay-shag-domodedovo"}
+TAKE_DEF = ["kubik-sokolovskogo", "kiberone-nekrasovka", "kiberone-novatorov", "bukvaryonok-novocheryomushkinskaya", "luchik-sokol",
+            "mamin-chasik-shipilovskaya", "ladushki-kuchino", "talantika-mytishchi", "iq007-grizodubovoy", "bambino-erudito-korabelnaya",
+            "poslushayka-elektrolitny"]
+TAKE = INCL | {"andreev-kolobovsky"}
 # «Особым детям»: что продумано (поле access.programs) — фактами из карточки/сайта
 PROG = {
  "chernyak-rossoshanskaya": "адаптивная физкультура, АВА-терапия, запуск речи неговорящих детей",

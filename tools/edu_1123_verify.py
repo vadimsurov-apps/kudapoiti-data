@@ -12,7 +12,7 @@ PROG = {**PROG22, **PROG23}
 out = {}
 for r in A23.ROWS:
     pid = r["id"]; v = A.SEL[pid]; o = A.E[v[0]]
-    day = "13.11.2026" if v[0].startswith("23") else "12.11.2026"
+    day = "12.11.2026"
     src = f"Яндекс Карты, карточка организации и выдача «{o['q']}» ({day})" + (f"; {A.SITE_SRC[pid]}" if pid in A.SITE_SRC else "")
     f = {"address": r["Адрес"], "type": r["Тип"], "cats": r["Категории"], "age_min": v[4], "age_max": v[5]}
     if o.get("phone"):

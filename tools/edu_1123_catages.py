@@ -28,7 +28,7 @@ n = 0
 for pid, v in {**{k: v for k, v in CAT21.items() if v}, **NEW, **NEW23}.items():
     if pid in ids:
         ages, txt = v
-        data[pid] = {**ages, "src": (txt if txt.startswith("сайт") else Y + txt) + ("; 13.11.2026" if pid in NEW23 else "; 12.11.2026")}
+        data[pid] = {**ages, "src": (txt if txt.startswith("сайт") else Y + txt) + "; 12.11.2026"}
         n += 1
 json.dump(data, open(p, "w"), ensure_ascii=False, indent=1)
 print("cat_ages:", n)

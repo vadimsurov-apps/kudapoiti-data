@@ -21,7 +21,7 @@ def qid(k):
     return {"23": f"edu23-{b}", "23y": f"edu23y-{b}"}[a]
 A = {pid: {"addr": addr_how(v[0])[0], "qid": qid(v[0]), "name": QN.get(qid(v[0]), "")} for pid, v in SEL.items()}
 ANS = json.load(open(os.path.join(ROOT, "auto", "osm-answers.json")))
-FIX = {"tekhnokub-selskokhozyaystvennaya": "edu23z-132"}  # повторный запрос с меньшим радиусом (у первого ответа — лимит 120 зданий)
+FIX = {"tekhnokub-selskokhozyaystvennaya": "edu23z-132", "akademiya-rechi-novocheryomushkinskaya": "edu23z-1123"}  # повторный запрос с меньшим радиусом (у первого ответа — лимит 120 зданий)
 
 
 def norm(s):
