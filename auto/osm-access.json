@@ -2856,15 +2856,12 @@
 "parking": [
 {
 "access": "yes",
-"d": 145,
+"d": 132,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 251
-},
-{
-"d": 299
+"d": 265
 }
 ]
 },
@@ -13107,7 +13104,6 @@
 ]
 },
 "bayder-aikido-vyatskaya": {
-"building_addr": "Вятская улица, 27 с12",
 "parking": [
 {
 "access": "customers",
@@ -15623,49 +15619,32 @@
 ]
 },
 "brays-skating-sokolniki": {
-"building_addr": "улица Сокольнический Вал, 1Б",
-"building_entrances": [
-{
-"d": 27,
-"entrance": "yes"
-},
-{
-"d": 34,
-"entrance": "yes",
-"name": "Сектор Б"
-},
-{
-"d": 51,
-"entrance": "yes",
-"name": "Сектор А"
-}
-],
 "gates": [
 {
 "access": "yes",
 "barrier": "gate",
-"d": 42
+"d": 49
 }
 ],
 "parking": [
 {
 "access": "yes",
-"d": 66,
+"d": 57,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 90
+"d": 84
 },
 {
 "capacity": "50",
-"d": 90,
+"d": 95,
 "parking": "street_side"
 },
 {
 "access": "customers",
-"d": 173,
+"d": 166,
 "parking": "surface"
 }
 ],
@@ -51622,7 +51601,6 @@
 }
 },
 "chess-dyussh-podolsk": {
-"building_addr": "улица Клемента Готвальда, 4",
 "gates": [
 {
 "access": "private",
@@ -53377,20 +53355,20 @@
 "parking": [
 {
 "access": "yes",
-"d": 145,
+"d": 136,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 219
+"d": 218
 },
 {
-"d": 235,
+"d": 230,
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 293,
+"d": 287,
 "fee": "no",
 "parking": "surface"
 }
@@ -66237,24 +66215,49 @@
 },
 "edupeople-robotics-zhukova": {
 "building_addr": "проспект Маршала Жукова, 51",
-"gates": [
+"building_entrances": [
 {
-"access": "private",
-"barrier": "gate",
-"d": 49
+"d": 15,
+"entrance": "staircase",
+"ref": "2"
+},
+{
+"d": 17,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"d": 42,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"d": 45,
+"entrance": "staircase",
+"ref": "4"
 }
 ],
 "parking": [
 {
-"d": 73
+"access": "yes",
+"d": 29,
+"fee": "no",
+"parking": "surface"
 },
 {
-"capacity": "46",
-"capacity:disabled": "6",
-"charge": "50 RUB/hour",
-"d": 281,
-"fee": "yes",
+"access": "yes",
+"d": 33,
+"fee": "no",
 "parking": "surface"
+},
+{
+"d": 37
+},
+{
+"access": "yes",
+"d": 40,
+"fee": "no",
+"parking": "street_side"
 }
 ]
 },
@@ -71404,6 +71407,39 @@
 }
 ]
 },
+"fk-klub-lider-lefortovo": {
+"building_addr": "шоссе Энтузиастов, 12 к2",
+"building_entrances": [
+{
+"d": 0,
+"entrance": "main"
+}
+],
+"parking": [
+{
+"access": "customers",
+"d": 144
+},
+{
+"d": 150,
+"parking": "surface"
+},
+{
+"d": 165,
+"parking": "surface"
+},
+{
+"capacity": "231",
+"d": 239,
+"parking": "underground"
+}
+],
+"poi": {
+"opening_hours": "Mo-Su 09:00-21:00",
+"phone": "+7 495 5086770",
+"website": "https://www.5086770.ru/"
+}
+},
 "fk-kvadrat-odintsovo": {
 "building_addr": "Подушкинское шоссе, 16Б",
 "parking": [
@@ -71444,6 +71480,28 @@
 "opening_hours": "Mo-Tu 08:45-21:15; We-Sa 08:30-22:30; Su 08:45-21:15"
 }
 },
+"fk-led-balashikha": {
+"building_addr": "Парковая улица, 2",
+"parking": [
+{
+"d": 122
+},
+{
+"d": 159,
+"parking": "street_side"
+},
+{
+"access": "customers",
+"d": 167,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"d": 279
+}
+]
+},
 "fk-led-korolev": {
 "building_addr": "Октябрьский бульвар, 10 с1",
 "parking": [
@@ -71466,6 +71524,30 @@
 "d": 197,
 "fee": "no",
 "parking": "street_side"
+}
+]
+},
+"fk-led-mytishchi": {
+"building_addr": "Лётная улица, 17",
+"parking": [
+{
+"access": "customers",
+"capacity": "55",
+"d": 79,
+"parking": "surface"
+},
+{
+"d": 85,
+"parking": "surface"
+},
+{
+"d": 95,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 101,
+"fee": "no"
 }
 ]
 },
@@ -71504,6 +71586,30 @@
 "poi": {
 "opening_hours": "Mo-Sa 10:00-22:00; Su 11:00-21:00"
 }
+},
+"fk-ledovaya-feeriya-mytishchi": {
+"building_addr": "Лётная улица, 17",
+"parking": [
+{
+"access": "customers",
+"capacity": "55",
+"d": 79,
+"parking": "surface"
+},
+{
+"d": 85,
+"parking": "surface"
+},
+{
+"d": 95,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 101,
+"fee": "no"
+}
+]
 },
 "fk-ledyanye-krylya-ostafyevskaya": {
 "building_addr": "Остафьевская улица, 21/1"
@@ -71565,6 +71671,14 @@
 "contact:phone": "+7 495 4443333",
 "contact:website": "https://ld-crystal.ru/"
 }
+},
+"fk-v-ritme-sporta": {
+"building_addr": "улица Талалихина, 28 с4",
+"parking": [
+{
+"d": 238
+}
+]
 },
 "fk-yastreb-kommunarka": {
 "building_addr": "улица Александры Монаховой, 94А",
@@ -83863,6 +83977,15 @@
 "opening_hours": "Mo-Sa 12:00-20:00"
 }
 },
+"hockey-red-machine-junior-opalikha": {
+"building_addr": "улица Ахматовой, 26",
+"gates": [
+{
+"barrier": "gate",
+"d": 48
+}
+]
+},
 "hockey-rus-mha-zyablikovo": {
 "building_addr": "Воронежская улица, 13",
 "gates": [
@@ -83976,6 +84099,37 @@
 },
 {
 "d": 286
+}
+]
+},
+"hockey-star-entuziastov": {
+"building_addr": "шоссе Энтузиастов, 33",
+"parking": [
+{
+"access": "customers",
+"d": 130,
+"operator": "Фитнес-клуб \"Физика\"",
+"parking": "surface"
+},
+{
+"access": "yes",
+"capacity": "5",
+"capacity:disabled": "5",
+"d": 152,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 166,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 179,
+"fee": "no",
+"parking": "street_side"
 }
 ]
 },
@@ -84196,6 +84350,15 @@
 "d": 101,
 "fee": "yes",
 "parking": "surface"
+}
+]
+},
+"hockeychance-magistralnaya": {
+"building_addr": "2-я Магистральная улица, 10 с2",
+"parking": [
+{
+"d": 239,
+"parking": "street_side"
 }
 ]
 },
@@ -85469,27 +85632,24 @@
 "gates": [
 {
 "barrier": "gate",
-"d": 50
-},
-{
-"barrier": "gate",
-"d": 59
+"d": 55
 }
 ],
 "parking": [
 {
-"d": 136,
+"d": 138,
 "parking": "surface"
 },
 {
-"d": 163,
+"d": 173,
 "parking": "surface"
 },
 {
-"d": 223
+"d": 228
 },
 {
-"d": 236
+"d": 232,
+"parking": "multi-storey"
 }
 ]
 },
@@ -85755,19 +85915,25 @@
 },
 "ibasket-nemchinova": {
 "building_addr": "улица Немчинова, 8",
+"gates": [
+{
+"barrier": "gate",
+"d": 55
+}
+],
 "parking": [
 {
-"d": 106
+"d": 105
 },
 {
-"d": 137
+"d": 145
 },
 {
 "access": "customers",
-"d": 167
+"d": 170
 },
 {
-"d": 168
+"d": 173
 }
 ]
 },
@@ -102691,20 +102857,20 @@
 "building_addr": "Павшинский бульвар, 40",
 "parking": [
 {
-"d": 217,
+"d": 179,
 "parking": "underground"
 },
 {
-"d": 232,
+"d": 193,
 "parking": "multi-storey"
 },
 {
-"d": 264,
-"parking": "surface"
+"d": 232,
+"parking": "underground"
 },
 {
-"d": 272,
-"parking": "underground"
+"d": 238,
+"parking": "surface"
 }
 ]
 },
@@ -102810,32 +102976,32 @@
 "building_addr": "Сходненская улица, 6 к1",
 "building_entrances": [
 {
-"addr:flats": "104-167",
-"d": 3,
-"entrance": "staircase",
-"ref": "3"
-},
-{
 "addr:flats": "40-103",
-"d": 15,
+"d": 12,
 "entrance": "staircase",
 "ref": "2"
 },
 {
-"addr:flats": "168-231",
-"d": 23,
+"addr:flats": "104-167",
+"d": 17,
 "entrance": "staircase",
-"ref": "4"
+"ref": "3"
 },
 {
 "addr:flats": "1-39",
-"d": 32,
+"d": 28,
 "entrance": "staircase",
 "ref": "1"
 },
 {
+"addr:flats": "168-231",
+"d": 34,
+"entrance": "staircase",
+"ref": "4"
+},
+{
 "addr:flats": "232-270",
-"d": 38,
+"d": 49,
 "entrance": "staircase",
 "ref": "5"
 }
@@ -102843,19 +103009,19 @@
 "parking": [
 {
 "access": "yes",
-"d": 92,
+"d": 96,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 137
+"d": 122
 },
 {
-"d": 232
+"d": 219
 },
 {
 "access": "yes",
-"d": 251,
+"d": 254,
 "fee": "no",
 "parking": "surface"
 }
@@ -123776,14 +123942,6 @@
 }
 },
 "nhc-leningradsky": {
-"building_addr": "Ленинградский проспект, 80 к2",
-"building_entrances": [
-{
-"d": 22,
-"entrance": "yes",
-"ref": "3"
-}
-],
 "gates": [
 {
 "barrier": "gate",
@@ -130662,7 +130820,7 @@
 "perevoznikov-gym-yurlovsky": {
 "parking": [
 {
-"d": 202,
+"d": 187,
 "parking": "surface"
 }
 ]
@@ -131296,45 +131454,44 @@
 ]
 },
 "pirouette-chistoprudny": {
-"building_addr": "Чистопрудный бульвар, 14 с4",
 "gates": [
-{
-"barrier": "lift_gate",
-"d": 32
-},
 {
 "access": "private",
 "barrier": "gate",
-"d": 36
+"d": 31
+},
+{
+"barrier": "lift_gate",
+"d": 31
 },
 {
 "barrier": "gate",
-"d": 52
+"d": 46
 },
 {
 "barrier": "gate",
-"d": 57
+"d": 51
 }
 ],
 "parking": [
 {
-"d": 23,
+"d": 29,
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 107,
+"d": 109,
 "fee": "yes",
 "parking": "street_side"
 },
 {
 "capacity": "10",
-"d": 158,
+"d": 157,
 "parking": "street_side"
 },
 {
 "access": "yes",
-"d": 171,
+"d": 175,
 "fee": "yes",
 "parking": "street_side"
 }
@@ -133822,7 +133979,7 @@
 "pool-briz-dmitrov": {
 "parking": [
 {
-"d": 81
+"d": 84
 }
 ],
 "poi": {
@@ -133834,18 +133991,18 @@
 "parking": [
 {
 "access": "yes",
-"d": 64,
+"d": 68,
 "fee": "no",
 "supervised": "yes"
 },
 {
 "access": "yes",
-"d": 198,
+"d": 203,
 "fee": "no",
 "supervised": "no"
 },
 {
-"d": 281
+"d": 278
 }
 ]
 },
@@ -140777,6 +140934,29 @@
 {
 "d": 273,
 "parking": "surface"
+}
+]
+},
+"rink-lytkarino-lsk": {
+"building_addr": "Советская улица, 9А",
+"gates": [
+{
+"barrier": "lift_gate",
+"d": 39
+}
+],
+"parking": [
+{
+"d": 223
+},
+{
+"d": 227
+},
+{
+"d": 244
+},
+{
+"d": 268
 }
 ]
 },
@@ -173161,23 +173341,8 @@
 "building_addr": "Варшавское шоссе, 125 к3",
 "parking": [
 {
-"access": "yes",
-"d": 79,
-"fee": "no",
-"name": "перехватывающая парковка метро ул.Академика Янгеля",
-"parking": "surface"
-},
-{
-"access": "customers",
-"capacity": "25",
-"d": 172,
-"fee": "no",
-"parking": "surface"
-},
-{
-"access": "yes",
-"d": 271,
-"parking": "underground"
+"d": 288,
+"fee": "yes"
 }
 ]
 },
