@@ -19,12 +19,16 @@ Q = [
  {"id": "edu21y-117", "lat": 55.6750, "lon": 37.8580, "radius": 2500, "name": "Ава", "street": "Авиаторов"},
  {"id": "edu21y-111", "lat": 55.5600, "lon": 37.7100, "radius": 3000, "name": "Здоровый", "street": "Зелёные Аллеи"},
  {"id": "edu21y-42", "lat": 55.6780, "lon": 37.2750, "radius": 3500, "name": "АВА", "street": "Вокзальная"},
+ {"id": "edu21x-112", "lat": 55.67058, "lon": 37.44901, "radius": 900, "name": "Пиксель", "street": "Озёрная"},
+ {"id": "edu21x-142", "lat": 55.776, "lon": 37.487, "radius": 1400, "name": "AcademKids", "street": "Новохорошёвский"},
+ {"id": "edu21x-90", "lat": 55.682428, "lon": 37.650354, "radius": 700, "name": "Свой", "street": "Нагатинская"},
+ {"id": "edu21x-113", "lat": 55.6630, "lon": 37.4800, "radius": 1000, "name": "Инжинириум", "street": "Покрышкина"},
 ]
 SITES = ["divnyeribki.ru", "twoneiro.ru", "doctorknyazkov.ru", "zr-vidnoe.ru", "zr-moscow.ru", "abatherapymsk.ru", "abacw.ru",
          "neirocentr.ru", "altera-vita.ru", "yaizmenilsyaaba.ru", "abaplanet.ru", "v-sektre.ru"]
 if __name__ == "__main__":
     p = os.path.join(ROOT, "auto/osm-queries.json")
-    old = [x for x in json.load(open(p)) if not x["id"].startswith("edu21y-")]
+    old = [x for x in json.load(open(p)) if not x["id"].startswith(("edu21y-", "edu21x-1", "edu21x-9"))]
     json.dump(old + Q, open(p, "w"), ensure_ascii=False, indent=1)
     fq = os.path.join(ROOT, "auto/fetch-queue.txt")
     open(fq, "w").write("\n".join("https://" + s + "/" for s in SITES) + "\n" + open(fq).read())
