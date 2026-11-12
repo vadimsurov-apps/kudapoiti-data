@@ -43,6 +43,7 @@ for pid, v in SEL.items():
     q = {"id": qid(v[0]), "lat": lat, "lon": lon, "radius": rad, "name": NAME.get(pid) or (ws[0] if ws else o["name"])[:9]}
     if st:
         c = Q20.core(st); q["street"] = c.split(" ")[-1] if re.match(r"^(\d-|Больш|Мал|Стар|Нов|Верхн|Нижн|Средн)", c) else c
+    if pid == "sdelay-shag-domodedovo": q["street"] = "Энергетиков"
     Q.append(q)
 if __name__ == "__main__":
     p = os.path.join(ROOT, "auto/osm-queries.json")
