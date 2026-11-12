@@ -440,28 +440,27 @@
 ]
 },
 "ace-tennis-flotskaya": {
-"building_addr": "Флотская улица, 15 к2",
 "gates": [
 {
 "barrier": "gate",
-"d": 36
+"d": 12
 }
 ],
 "parking": [
 {
-"d": 177
+"d": 200
 },
 {
-"d": 193,
+"d": 202,
 "parking": "street_side"
 },
 {
 "access": "yes",
-"d": 197,
+"d": 208,
 "parking": "surface"
 },
 {
-"d": 251,
+"d": 240,
 "parking": "street_side"
 }
 ]
@@ -3446,6 +3445,33 @@
 "poi": {
 "contact:website": "https://alpaca-park.com/"
 }
+},
+"altera-vita-musorgskogo": {
+"building_addr": "улица Мусоргского, 5 к2",
+"parking": [
+{
+"access": "yes",
+"d": 46,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 60,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 98,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 223,
+"fee": "no",
+"parking": "lane"
+}
+]
 },
 "altufevsky-sk-pool": {
 "gates": [
@@ -10684,7 +10710,13 @@
 "d": 262,
 "parking": "surface"
 }
-]
+],
+"poi": {
+"contact:phone": "+7 800 1002424",
+"contact:website": "https://www.vtb.ru",
+"opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-17:00",
+"wheelchair": "yes"
+}
 },
 "bakhrushin-theatre-museum": {
 "gates": [
@@ -11403,6 +11435,60 @@
 "d": 185,
 "fee": "yes",
 "parking": "street_side"
+}
+]
+},
+"baranova-english-mnevniki": {
+"building_addr": "улица Мнёвники, 13 к1",
+"building_entrances": [
+{
+"d": 14,
+"entrance": "staircase"
+},
+{
+"d": 16,
+"entrance": "staircase"
+},
+{
+"d": 31,
+"entrance": "yes"
+},
+{
+"d": 36,
+"entrance": "staircase"
+},
+{
+"d": 39,
+"entrance": "staircase"
+}
+],
+"gates": [
+{
+"access": "private",
+"barrier": "gate",
+"d": 39
+},
+{
+"access": "private",
+"barrier": "gate",
+"d": 41
+}
+],
+"parking": [
+{
+"d": 50
+},
+{
+"d": 51,
+"parking": "street_side"
+},
+{
+"d": 52,
+"parking": "street_side"
+},
+{
+"d": 106,
+"parking": "surface"
 }
 ]
 },
@@ -13463,6 +13549,24 @@
 "poi": {
 "opening_hours": "Mo-Fr 09:00-21:00; Sa-Su 09:00-15:00"
 }
+},
+"big-city-english-stoletova": {
+"building_addr": "улица Столетова, 8",
+"parking": [
+{
+"d": 52
+},
+{
+"d": 54
+},
+{
+"d": 69
+},
+{
+"d": 102,
+"parking": "street_side"
+}
+]
 },
 "bigwall-crocus": {
 "building_addr": "Международная улица, 12",
@@ -30450,57 +30554,55 @@
 {
 "access": "private",
 "addr:flats": "101-156",
-"d": 16,
+"d": 4,
 "entrance": "staircase",
 "ref": "3"
 },
 {
 "access": "private",
 "addr:flats": "49-100",
-"d": 30,
+"d": 19,
 "entrance": "staircase",
 "ref": "2"
 },
 {
 "access": "private",
 "addr:flats": "157-208",
-"d": 30,
+"d": 23,
 "entrance": "staircase",
 "ref": "4"
 },
 {
 "access": "private",
 "addr:flats": "209-256",
-"d": 45,
+"d": 37,
 "entrance": "staircase",
 "ref": "5"
 },
 {
 "access": "private",
 "addr:flats": "1-48",
-"d": 50,
+"d": 38,
 "entrance": "staircase",
 "ref": "1"
 }
 ],
 "parking": [
 {
-"d": 49,
+"d": 67,
 "fee": "yes",
 "parking": "street_side"
 },
 {
-"d": 62
+"d": 75
 },
 {
-"access": "yes",
-"d": 112,
-"fee": "no",
+"d": 108,
 "parking": "surface"
 },
 {
 "access": "yes",
-"d": 112,
+"d": 116,
 "fee": "no",
 "parking": "surface"
 }
@@ -42279,12 +42381,9 @@
 "parking": [
 {
 "access": "yes",
-"d": 113,
+"d": 90,
 "fee": "no",
 "parking": "surface"
-},
-{
-"d": 283
 }
 ],
 "poi": {
@@ -42705,22 +42804,22 @@
 "gates": [
 {
 "barrier": "gate",
-"d": 32
+"d": 47
 }
 ],
 "parking": [
 {
 "access": "yes",
 "charge": "40 руб/час",
-"d": 109,
+"d": 121,
 "fee": "yes",
 "parking": "lane"
 },
 {
-"d": 128
+"d": 139
 },
 {
-"d": 153
+"d": 163
 }
 ],
 "poi": {
@@ -50449,6 +50548,23 @@
 }
 ]
 },
+"chernyak-perovskaya": {
+"building_addr": "Перовская улица, 66 к2",
+"parking": [
+{
+"d": 137,
+"name": "Гараж с многофункциональным комплексом",
+"parking": "multi-storey"
+},
+{
+"d": 274
+},
+{
+"d": 295,
+"fee": "no"
+}
+]
+},
 "chernyak-podolsk": {
 "building_addr": "улица Кирова, 50/2",
 "parking": [
@@ -52279,33 +52395,33 @@
 "building_addr": "Советская улица, 58",
 "building_entrances": [
 {
-"addr:flats": "33-64",
-"d": 10,
-"entrance": "staircase",
-"ref": "2"
-},
-{
 "addr:flats": "1-32",
-"d": 17,
+"d": 14,
 "entrance": "staircase",
 "ref": "1"
+},
+{
+"addr:flats": "33-64",
+"d": 22,
+"entrance": "staircase",
+"ref": "2"
 }
 ],
 "parking": [
 {
-"d": 47
+"d": 59
+},
+{
+"d": 127
 },
 {
 "access": "yes",
-"d": 128,
+"d": 135,
 "fee": "no",
 "parking": "surface"
 },
 {
-"d": 135
-},
-{
-"d": 141
+"d": 152
 }
 ]
 },
@@ -58472,6 +58588,23 @@
 {
 "d": 298,
 "parking": "surface"
+}
+]
+},
+"dai-pyat-dzerzhinsky": {
+"building_addr": "Угрешская улица, 24",
+"parking": [
+{
+"d": 50
+},
+{
+"d": 169
+},
+{
+"d": 200
+},
+{
+"d": 244
 }
 ]
 },
@@ -65638,49 +65771,24 @@
 },
 "edupeople-robotics-zhukova": {
 "building_addr": "проспект Маршала Жукова, 51",
-"building_entrances": [
+"gates": [
 {
-"d": 15,
-"entrance": "staircase",
-"ref": "2"
-},
-{
-"d": 17,
-"entrance": "staircase",
-"ref": "3"
-},
-{
-"d": 42,
-"entrance": "staircase",
-"ref": "1"
-},
-{
-"d": 45,
-"entrance": "staircase",
-"ref": "4"
+"access": "private",
+"barrier": "gate",
+"d": 49
 }
 ],
 "parking": [
 {
-"access": "yes",
-"d": 29,
-"fee": "no",
+"d": 73
+},
+{
+"capacity": "46",
+"capacity:disabled": "6",
+"charge": "50 RUB/hour",
+"d": 281,
+"fee": "yes",
 "parking": "surface"
-},
-{
-"access": "yes",
-"d": 33,
-"fee": "no",
-"parking": "surface"
-},
-{
-"d": 37
-},
-{
-"access": "yes",
-"d": 40,
-"fee": "no",
-"parking": "street_side"
 }
 ]
 },
@@ -77700,17 +77808,16 @@
 }
 },
 "galaktika-chess-filevsky": {
-"building_addr": "Кастанаевская улица, 24",
 "parking": [
 {
 "access": "yes",
-"d": 143,
+"d": 144,
 "fee": "no",
 "parking": "surface"
 },
 {
 "access": "permissive",
-"d": 228,
+"d": 221,
 "fee": "no",
 "operator": "Финансовый университет",
 "parking": "surface",
@@ -77718,7 +77825,7 @@
 },
 {
 "access": "permissive",
-"d": 235
+"d": 229
 }
 ],
 "poi": {
@@ -77970,6 +78077,27 @@
 },
 {
 "d": 250
+}
+]
+},
+"garmoniya-lytkarino": {
+"building_addr": "Спортивная улица, 20",
+"parking": [
+{
+"d": 23
+},
+{
+"capacity": "20",
+"d": 214,
+"fee": "no",
+"parking": "surface",
+"supervised": "no"
+},
+{
+"d": 245
+},
+{
+"d": 273
 }
 ]
 },
@@ -87093,7 +87221,7 @@
 ]
 },
 "imperium-krylatskaya": {
-"building_addr": "Крылатская улица, 2 с19",
+"building_addr": "Крылатская улица, 2 с20",
 "parking": [
 {
 "d": 111,
@@ -102788,25 +102916,29 @@
 "building_addr": "Новоостаповская улица, 5 с2",
 "building_entrances": [
 {
-"d": 39,
+"d": 31,
 "entrance": "yes"
 },
 {
-"d": 52,
+"d": 49,
 "entrance": "yes"
 },
 {
-"d": 65,
+"d": 91,
 "entrance": "yes"
 }
 ],
 "parking": [
 {
 "access": "permissive",
-"d": 101,
+"d": 69,
 "fee": "yes",
 "name": "Морозово",
 "parking": "surface"
+},
+{
+"d": 170,
+"parking": "street_side"
 },
 {
 "access": "yes",
@@ -102815,16 +102947,14 @@
 "parking": "surface"
 },
 {
-"access": "yes",
-"d": 180,
-"fee": "yes",
-"parking": "surface"
-},
-{
-"d": 204,
-"name": "Ситилинк"
+"d": 186,
+"parking": "underground"
 }
-]
+],
+"poi": {
+"opening_hours": "Mo-Fr 10:00-19:30; Sa 10:00-18:00",
+"phone": "+7 925 3603336"
+}
 },
 "lastochka-skating-sokolniki": {
 "gates": [
@@ -102976,20 +103106,24 @@
 "gates": [
 {
 "barrier": "gate",
-"d": 37
+"d": 36
 },
 {
 "barrier": "gate",
-"d": 50
+"d": 47
 },
 {
 "barrier": "lift_gate",
+"d": 58
+},
+{
+"barrier": "gate",
 "d": 59
 }
 ],
 "parking": [
 {
-"d": 70
+"d": 73
 },
 {
 "d": 94
@@ -103003,7 +103137,7 @@
 {
 "access": "yes",
 "capacity": "60",
-"d": 139,
+"d": 140,
 "parking": "surface"
 }
 ]
@@ -112923,7 +113057,6 @@
 ]
 },
 "mgfso-badminton-potapovsky": {
-"building_addr": "Чистопрудный бульвар, 14 с4",
 "gates": [
 {
 "barrier": "lift_gate",
@@ -126418,6 +126551,43 @@
 "website": "http://macte.ru/"
 }
 },
+"ostrovok-detstva-mnevniki": {
+"building_addr": "улица Мнёвники, 6",
+"gates": [
+{
+"barrier": "gate",
+"d": 41
+},
+{
+"barrier": "gate",
+"d": 45
+}
+],
+"parking": [
+{
+"d": 100,
+"name": "АТЦ АПРЭО"
+},
+{
+"access": "yes",
+"capacity": "5",
+"d": 135,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"capacity": "6",
+"d": 223,
+"fee": "no",
+"parking": "street_side"
+},
+{
+"d": 229,
+"fee": "no",
+"parking": "street_side"
+}
+]
+},
 "ostrye-kulaki-khoroshevsky": {
 "building_addr": "2-й Хорошёвский проезд, 9 к1",
 "gates": [
@@ -130252,25 +130422,28 @@
 },
 "pirouette-gym-khibinsky": {
 "building_addr": "Хибинский проезд, 10",
-"parking": [
+"gates": [
 {
-"d": 284
-},
-{
-"access": "customers",
-"d": 288,
-"parking": "surface"
-},
-{
-"access": "customers",
-"d": 298,
-"parking": "surface"
+"access": "private",
+"barrier": "gate",
+"d": 47
 }
 ],
-"poi": {
-"phone": "+7 (499) 136-81-80",
-"website": "https://piruet-msk.ru/"
+"parking": [
+{
+"d": 231
+},
+{
+"access": "customers",
+"d": 239,
+"parking": "surface"
+},
+{
+"access": "customers",
+"d": 257,
+"parking": "surface"
 }
+]
 },
 "pirouette-gym-napolny": {
 "building_addr": "Напольный проезд, 7",
@@ -131436,6 +131609,82 @@
 "access": "yes",
 "d": 281,
 "fee": "no"
+}
+]
+},
+"plyvem-v-rech-pyatnitskoe": {
+"building_addr": "Пятницкое шоссе, 11",
+"building_entrances": [
+{
+"addr:flats": "264-330",
+"d": 27,
+"entrance": "staircase",
+"ref": "5"
+},
+{
+"addr:flats": "200-263",
+"d": 30,
+"entrance": "staircase",
+"ref": "4"
+},
+{
+"addr:flats": "331-398",
+"d": 37,
+"entrance": "staircase",
+"ref": "6"
+},
+{
+"addr:flats": "136-199",
+"d": 42,
+"entrance": "staircase",
+"ref": "3"
+},
+{
+"addr:flats": "399-466",
+"d": 52,
+"entrance": "staircase",
+"ref": "7"
+},
+{
+"addr:flats": "467-534",
+"d": 69,
+"entrance": "staircase",
+"ref": "8"
+},
+{
+"addr:flats": "1-67",
+"d": 69,
+"entrance": "staircase",
+"ref": "1"
+},
+{
+"addr:flats": "68-135",
+"d": 81,
+"entrance": "staircase",
+"ref": "2"
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 140,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 168,
+"parking": "street_side"
+},
+{
+"access": "yes",
+"d": 190,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 205,
+"parking": "street_side"
 }
 ]
 },
@@ -134508,6 +134757,48 @@
 "d": 298
 }
 ]
+},
+"prokids-grimau": {
+"gates": [
+{
+"barrier": "gate",
+"d": 37
+},
+{
+"barrier": "gate",
+"d": 40
+}
+],
+"parking": [
+{
+"access": "yes",
+"d": 58,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 120,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 146,
+"fee": "no",
+"parking": "surface"
+},
+{
+"access": "permissive",
+"capacity": "5",
+"d": 203,
+"parking": "surface"
+}
+],
+"poi": {
+"phone": "+7 (906) 095 54 55",
+"website": "https://akademicheskaja.prokids.ru/"
+}
 },
 "prokofiev-museum": {
 "gates": [
@@ -139150,29 +139441,27 @@
 "building_addr": "шоссе Энтузиастов, 12 к2",
 "building_entrances": [
 {
-"d": 154,
+"d": 0,
 "entrance": "main"
 }
 ],
 "parking": [
 {
 "access": "customers",
-"d": 86
+"d": 144
 },
 {
-"d": 194,
-"fee": "yes",
-"operator": "ГКУ АМПП",
-"parking": "street_side"
+"d": 150,
+"parking": "surface"
+},
+{
+"d": 165,
+"parking": "surface"
 },
 {
 "capacity": "231",
-"d": 247,
+"d": 239,
 "parking": "underground"
-},
-{
-"d": 248,
-"parking": "surface"
 }
 ]
 },
@@ -139682,12 +139971,22 @@
 },
 "rink-ostrov-konkovo": {
 "building_addr": "улица Островитянова, 10",
-"parking": [
+"gates": [
 {
-"d": 74
+"barrier": "gate",
+"d": 49
 },
 {
-"d": 76
+"barrier": "lift_gate",
+"d": 59
+}
+],
+"parking": [
+{
+"d": 47
+},
+{
+"d": 49
 }
 ]
 },
@@ -149718,6 +150017,31 @@
 }
 ]
 },
+"smartykids-zelenograd": {
+"building_addr": "площадь Юности, 2 с1",
+"parking": [
+{
+"access": "yes",
+"d": 71,
+"parking": "surface"
+},
+{
+"access": "yes",
+"d": 86,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 114
+},
+{
+"access": "yes",
+"d": 120,
+"fee": "no",
+"parking": "surface"
+}
+]
+},
 "smashclub-ivanteevskaya": {
 "building_addr": "Ивантеевская улица, 13 к1",
 "parking": [
@@ -158178,34 +158502,21 @@
 },
 "tennis-losinka-ostashkovskaya": {
 "building_addr": "Осташковская улица, 14 к1 с3",
-"gates": [
-{
-"barrier": "lift_gate",
-"d": 35
-},
-{
-"access": "private",
-"barrier": "lift_gate",
-"d": 58
-}
-],
 "parking": [
 {
-"d": 75
-},
-{
-"d": 146,
-"fee": "yes",
+"d": 58,
 "parking": "surface"
 },
 {
-"d": 149
+"d": 122,
+"parking": "street_side"
 },
 {
-"access": "yes",
-"d": 165,
-"fee": "yes",
-"parking": "surface"
+"d": 235
+},
+{
+"d": 261,
+"parking": "street_side"
 }
 ]
 },
@@ -166546,37 +166857,77 @@
 },
 "veselye-konki-skhodnenskaya": {
 "building_addr": "Сходненская улица, 56",
-"gates": [
+"building_entrances": [
+{
+"d": 55,
+"entrance": "yes"
+},
+{
+"access": "private",
+"d": 56,
+"door": "loadingdock",
+"entrance": "service",
+"ref": "3"
+},
+{
+"access": "private",
+"d": 57,
+"door": "loadingdock",
+"entrance": "service",
+"ref": "3"
+},
 {
 "access": "yes",
-"barrier": "lift_gate",
-"d": 41
+"d": 57,
+"entrance": "yes"
+},
+{
+"access": "yes",
+"d": 60,
+"entrance": "yes"
+},
+{
+"access": "private",
+"d": 72,
+"entrance": "service",
+"ref": "7"
+},
+{
+"access": "private",
+"d": 76,
+"entrance": "service",
+"ref": "7"
+},
+{
+"access": "yes",
+"d": 78,
+"entrance": "main"
 }
 ],
 "parking": [
 {
 "access": "yes",
-"d": 49,
+"d": 91,
 "fee": "yes",
 "parking": "underground"
+},
+{
+"d": 204
+},
+{
+"access": "yes",
+"capacity": "12",
+"d": 205,
+"fee": "no",
+"parking": "surface"
 },
 {
 "access": "yes",
 "capacity": "55",
 "capacity:disabled": "6",
-"d": 191,
+"d": 225,
 "fee": "yes",
 "operator": "Московский паркинг",
-"parking": "surface"
-},
-{
-"d": 211
-},
-{
-"access": "yes",
-"capacity": "12",
-"d": 215,
-"fee": "no",
 "parking": "surface"
 }
 ]
@@ -172743,6 +173094,45 @@
 },
 {
 "d": 239
+}
+]
+},
+"zdorovy-rebenok-fryazino": {
+"building_addr": "улица Дудкина, 9",
+"gates": [
+{
+"barrier": "gate",
+"d": 54
+}
+],
+"parking": [
+{
+"d": 290
+},
+{
+"d": 297
+}
+]
+},
+"zdorovy-rebenok-ivanteevka": {
+"building_addr": "Хлебозаводская улица, 28 к1",
+"parking": [
+{
+"access": "yes",
+"d": 45,
+"fee": "no",
+"parking": "surface"
+},
+{
+"d": 133,
+"parking": "surface"
+},
+{
+"d": 153
+},
+{
+"d": 175,
+"parking": "surface"
 }
 ]
 },
