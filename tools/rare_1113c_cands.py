@@ -31,6 +31,8 @@ C = [
  ("squash-1210-berezhkovskaya", "Сквош-клуб 12:10", "Москва, Бережковская наб., 20, стр. 64", "Бережковская", "Бережковская", 1200, ""),
  ("squash-ostafyevskaya", "Сквош клуб", "Москва, Остафьевская ул., литГ", "Остафьевская", "Остафьевская ул., 21", 800, "сквош"),
  ("tt-krasny-kit-mytishchi", "Школа настольного тенниса Красный Кит", "Мытищи, Шараповский пр., вл2с3", "Шараповский", "Шараповский", 600, "Красный Кит"),
+ ("rink-yurlovsky", "Ледовый комплекс Юрловский", "Москва, Юрловский пр., вл6", "Юрловский", "Юрловский", 600, "Юрлов"),
+ ("rink-spartak-sporttekh-latsisa", "Спартак - Спорттех", "Москва, ул. Вилиса Лациса, вл26", "Лациса", "Лациса, 26", 600, ""),
  ("volley-like-club-rastunovo", "Like Club волейбол", "село Растуново, Мирная ул., 3", "Мирная", "Домодедово", 15000, "Like"),
 ]
 if __name__ == "__main__":
@@ -38,6 +40,7 @@ if __name__ == "__main__":
     qp = os.path.join(ROOT, "auto", "osm-queries.json")
     qs = json.load(open(qp)); have = {q["id"] for q in qs}; fq = []
     for i, c in enumerate(C):
+        if os.environ.get("ONLY") and c[0] not in os.environ["ONLY"].split(): continue
         pts = [(p["lat"], p["lon"]) for p in P if p.get("lat") and c[4].lower() in ((p.get("address") or "") + " " + p["name"]).lower()]
         if pts:
             ll = (st.median(x for x, _ in pts), st.median(y for _, y in pts))
