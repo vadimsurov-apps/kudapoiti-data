@@ -3,10 +3,15 @@ name: Codex-проверяющий (по подписке ChatGPT, без опл
 # (gpt/slices/<имя>.json) и пишет в нём «@codex …» от имени Вадима (секрет CODEX_PAT). Codex в облаке читает AGENTS.md
 # и наши правила (gpt/RULES.md), проверяет места и коммитит отчёт gpt/reports/<имя>.json в ту же ветку →
 # gpt-pr.yml вливает → gpt.yml применяет. Настройки (Settings → Secrets and variables → Actions → Variables):
-# CODEX_SLICES — сколько пачек держать в работе одновременно (по умолчанию 8 — GitHub запускает расписание реже, чем раз в 20 минут, примерно раз в час), CODEX_N — мест в пачке (25); запуск каждые 20 минут.
+# CODEX_SLICES — сколько пачек держать в работе одновременно (по умолчанию 12; новая пачка выдаётся сразу после сдачи предыдущей), CODEX_N — мест в пачке (25); запуск каждые 20 минут.
 on:
   schedule:
     - cron: "5,25,45 * * * *"   # Вадим 12.11: «надо брать больше мест… 3 по 25 в час — разумно, можно больше, меньше нежелательно»
+  # Вадим 13.11: «Можно его ускорить?» — недельный лимит Codex почти не тратится (≈1% на 330 мест), поэтому новую пачку
+  # выдаём сразу, как только Codex сдал предыдущую, а не ждём расписания GitHub (оно срабатывает раз в час).
+  workflow_run:
+    workflows: ["Приём отчёта Codex из его ответа в pull request"]
+    types: [completed]
   workflow_dispatch:
     inputs:
       slices: { description: "пачек в работе", default: "" }
@@ -33,7 +38,7 @@ jobs:
         if: steps.k.outputs.ok == '1'
         env:
           GH_TOKEN: ${{ secrets.CODEX_PAT }}
-          SLICES: ${{ github.event.inputs.slices || vars.CODEX_SLICES || '8' }}
+          SLICES: ${{ github.event.inputs.slices || vars.CODEX_SLICES || '12' }}
           N: ${{ github.event.inputs.n || vars.CODEX_N || '25' }}
         run: |
           set -e
