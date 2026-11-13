@@ -13,7 +13,7 @@ HN = {"mfteam-polyarnaya": ["21"], "upgrade-molodtsova": ["2 к4", "2к4"], "mus
 def n(s): return re.sub(r"\s+", "", (s or "").replace("корп.", "к").replace("стр.", "с").replace("строение", "с")).lower()
 PT, MISS = {}, {}
 for pid, hns in HN.items():
-    a = A.get("sec13t-" + pid)
+    a = A.get("sec13t2-" + pid) or A.get("sec13t-" + pid)
     if not a:
         MISS[pid] = "нет ответа"; continue
     st = a["query"]["street"].lower()
