@@ -73,17 +73,19 @@
 }
 },
 "archaeology-museum": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://mosmuseum.ru/association/archeology/",
 "https://mosmuseum.ru/visitors/tikets/types/"
 ],
 "status": "works",
 "wrong": {
+"phone": {
+"source": "https://mosmuseum.ru/association/archeology/",
+"value": "+7 (495) 692-00-20"
+},
 "price": {
 "source": "https://mosmuseum.ru/visitors/tikets/types/",
 "value": 400
@@ -129,11 +131,9 @@
 }
 },
 "armoury": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: hours",
 "sources": [
 "https://kreml.ru/",
 "https://kreml.ru/ru/excursions/obzornaia-ekskursiia-po-oruzeinoi-palate",
@@ -144,6 +144,14 @@
 "hours": {
 "source": "https://kreml.ru/ru/excursions/obzornaia-ekskursiia-po-oruzeinoi-palate",
 "value": "пн-ср, пт-вс 10:00-18:00; чт выходной"
+},
+"how": {
+"source": "https://old.kreml.ru/visit-to-kremlin/ticket-prices000eb/vkhodnye-bilety-i-usloviya-poseshcheniya/",
+"value": "Вход: через Боровицкие ворота"
+},
+"url": {
+"source": "https://kreml.ru/",
+"value": "https://kreml.ru/"
 }
 }
 },
