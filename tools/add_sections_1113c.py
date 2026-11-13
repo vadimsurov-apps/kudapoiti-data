@@ -75,7 +75,7 @@ SPEC = [
   'абонемент 12 занятий — 8000 ₽; пробная тренировка бесплатно', 'https://fcimpuls.com/', '+7 950 922-29-35',
   'Футбольная школа Импульс'),
  ('akro-miks-chongarsky', 'Школа акробатики «Акро-Микс» (Чонгарский б-р)', 'школа акробатики', 4, None, 'acrobatics',
-  'Чонгарский б-р, 7', '', 'Акробатика для мальчиков и девочек от 4 лет', 'абонемент 4 часа — 4500 ₽',
+  'Чонгарский б-р, 7', 'Ориентир: здание ТЦ «Место встречи Ангара»', 'Акробатика для мальчиков и девочек от 4 лет', 'абонемент 4 часа — 4500 ₽',
   'https://acromix.ru/', '+7 925 502-29-00', 'Акро-Микс'),
  ('tornado-kirovogradskaya', 'Футбольный клуб «Торнадо» (Кировоградская ул.)', 'футбольный клуб', 5, None, 'football',
   'Кировоградская ул., 23', '', 'Детский футбол: набор детей от 5 лет',
@@ -90,7 +90,10 @@ ACCESS = {}
 
 PT = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "sections_1113c_points.json")))
 PHONE, SRC, URL = {}, {}, {}
+ONLY = set(filter(None, os.environ.get("KP_ONLY", "").split(",")))  # дозапись части мест вторым проходом
 for s in SPEC:
+    if ONLY and s[0] not in ONLY:
+        continue
     pid, name, typ, a0, a1, cats, addr, how, plus, note, site, phone, yan = s
     if pid not in PT:
         continue
