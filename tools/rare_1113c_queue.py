@@ -12,7 +12,22 @@ EXTRA = ["тюбинг Мытищи", "тюбинг Химки", "тюбинг �
          "детская горнолыжная школа Подмосковье", "горнолыжный склон Дмитров", "горнолыжный склон Сергиев Посад",
          "театр зверей Москва", "цирк шапито Подмосковье", "памп-трек Москва", "бадминтон для детей Москва",
          "сквош для детей Москва", "настольный теннис для детей Подмосковье"]
-qs = [q.format(a) for a in AREAS for q in Q] + EXTRA
-fq = [f"https://yandex.ru/maps/1/moscow-and-moscow-oblast/?rr13e{i:03d}=1113c&text=" + u.quote(t) for i, t in enumerate(qs)]
-open(os.path.join(ROOT, "auto", "fetch-queue.txt"), "a").write("\n".join(fq) + "\n")
-print(len(fq))
+if not os.environ.get("PART2"):
+  qs = [q.format(a) for a in AREAS for q in Q] + EXTRA
+  fq = [f"https://yandex.ru/maps/1/moscow-and-moscow-oblast/?rr13e{i:03d}=1113c&text=" + u.quote(t) for i, t in enumerate(qs)]
+  open(os.path.join(ROOT, "auto", "fetch-queue.txt"), "a").write("\n".join(fq) + "\n")
+  print(len(fq))
+# вторая часть: катки и тюбинг в парках Москвы (ключи rr13f*), статьи-подсказки (не источник координат)
+PARKS = ["каток парк 850-летия Москвы", "каток Кузьминки парк", "каток Бабушкинский парк", "каток Перовский парк",
+         "каток Лианозовский парк", "каток Северное Тушино парк", "каток Парк Победы Поклонная гора", "каток Таганский парк",
+         "каток Черкизовский парк", "каток Олимпийская деревня парк", "каток Бутовский парк", "каток Воронцовский парк",
+         "каток Музеон", "каток парк Зарядье", "каток Мещерский парк", "каток Яуза парк", "каток Садовники парк",
+         "каток Отрада парк", "каток Тропарёвский парк", "каток Дубки парк", "каток Ангарские пруды",
+         "тюбинг Кузьминки", "тюбинг Северное Тушино", "тюбинг Бутово", "тюбинг Москва парк ватрушки",
+         "горка для ватрушек Москва парк"]
+if __name__ == "__main__" and os.environ.get("PART2"):
+    fq = [f"https://yandex.ru/maps/1/moscow-and-moscow-oblast/?rr13f{i:03d}=1113c&text=" + u.quote(t) for i, t in enumerate(PARKS)]
+    fq += ["https://www.mos.ru/news/item/162632073/", "https://www.mos.ru/news/item/165541073/",
+           "https://vfokuse.mail.ru/articles/69210990-vse-o-besplatnyh-katkah-moskvy-spisok-adresov-i-pravila-posesheniya/"]
+    open(os.path.join(ROOT, "auto", "fetch-queue.txt"), "a").write("\n".join(fq) + "\n")
+    print(len(fq))
