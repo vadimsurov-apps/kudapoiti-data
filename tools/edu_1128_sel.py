@@ -10,6 +10,9 @@
 «Шагай и Говори», «Сенсорная интеграция, АФК/ЛФК» (Перерва), ABA-терапия (Рождественская), Логос (Троицк).
 Уже есть у нас: ГППЦ «Ясенево» (gppc-yasenevo), «Здоровый ребёнок» на Скандинавском (zdorovy-rebenok-skandinavsky), «Яркие дети» (yarkie-deti-skandinavsky),
 центр нейропсихологии на 9-й Парковой (neiropsikhologiya-9-parkovaya), «Студия знаний» (studiya-znaniy-butlerova), САШ (fok-sash-korneychuka — нужна категория inclusive).
+Отложены (нет здания по точному адресу в справке OSM edu31-*; повтор с «ё» — edu32-52, edu32-165, edu32-166 — ответ не пришёл за запуск):
+gppc-severnoe-izmaylovo (50А), zdorovy-rebenok-troitsk (2-я Нововатутинская, 3), color-chicks-pervomayskaya (19), logoput-chechersky,
+neokids-semenovskaya, neuro-center-brusilova, kiberone-dedovsk-gagarina (14), bambolletti-troitsk (6), algoritmika-moskovsky (3А с1) — иконки в tools/icons_edu_1128.py готовы.
 pid: (ключ карточки, название, тип, категории, от, до, цена, пояснение к цене, плюс, теги, пробное бесплатно)"""
 T = "творчество"
 SEL = {
@@ -113,7 +116,7 @@ SITE_SRC = {"luminus-vernadskogo": "сайт abaluminous.ru (проспект В
             "discovery-aviatsionnaya": "сайт discoveryschool.ru (ул. Авиационная, д. 77, к. 2; «экосистема для детей от 3 до 11 лет»)",
             "baby-club-aviatsionnaya": "сайт baby-club.ru (клубы в Москве: ул. Авиационная, д. 63)",
             "baby-club-dmitrovskoe": "сайт baby-club.ru (клубы в Москве: Дмитровское шоссе, д. 107А, к. 2)"}
-HOW_FIX = {"zdorovy-rebenok-troitsk": "Этаж: 1"}
+HOW_FIX = {"zdorovy-rebenok-troitsk": "Этаж: 1", "academkids-tarkovskogo": None}
 ADDR_FIX = {"gppc-kuzminki-eseninsky": "Москва, Есенинский бул., 12, корп. 2", "aba-v-nashikh-rukakh-nakhabino": "Красногорск, пгт Нахабино, Красноармейская ул., 70",
             "logoput-chechersky": "Москва, Чечёрский пр., 122, корп. 1", "zdorovy-rebenok-troitsk": "Москва, Троицк, 2-я Нововатутинская ул., 3",
             "academkids-tarkovskogo": "Москва, бул. Андрея Тарковского, 5А"}
