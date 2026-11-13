@@ -342692,7 +342692,7 @@
 "pushkino-eraingenerov-ru-contacts": {
 "url": "https://pushkino.eraingenerov.ru/contacts",
 "ok": false,
-"err": "HTTP Error 403: Forbidden",
+"err": "HTTP Error 404: Not Found",
 "tries": 2
 },
 "feeriyaice-com": {
@@ -342894,10 +342894,9 @@
 },
 "yakimanka-coddyschool-com": {
 "url": "https://yakimanka.coddyschool.com/",
-"ok": true,
-"pages": 2,
-"bytes": 16000,
-"tries": 1
+"ok": false,
+"err": "The read operation timed out",
+"tries": 2
 },
 "www-abacus-mos-ru": {
 "url": "https://www.abacus-mos.ru/",
@@ -342971,9 +342970,10 @@
 },
 "www-mishutka-sad-ru": {
 "url": "https://www.mishutka-sad.ru/",
-"ok": false,
-"err": "<urlopen error [Errno 101] Network is unreachable>",
-"tries": 2
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 1
 },
 "mcs-school-ru": {
 "url": "https://mcs-school.ru/",
@@ -343412,5 +343412,11 @@
 "pages": 5,
 "bytes": 16000,
 "tries": 0
+},
+"jungle-kids-ru-contacts": {
+"url": "https://jungle-kids.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
 }
 }
