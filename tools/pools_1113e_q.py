@@ -29,6 +29,8 @@ Q = {
  "nado-plavat-card": ("Надо Плавать школа плавания", "Москва, Тушинская ул., 16А, Надо Плавать", (55.8275, 37.443), 600, "Тушинская", "Плавать"),
  "poplyli-zil": ("Поплыли школа плавания", "Москва, Автозаводская ул., 23А, корп. 4, Поплыли", (55.7045, 37.6375), 500, "Автозаводская", "Поплыли"),
  "kitenok-volgogradsky-32": ("Китёнок", "Москва, Волгоградский просп., 32/5к2", (55.719553, 37.690716), 400, "Волгоградский", "Китёнок"),
+ "mighty-sharks-novogorsk": ("Mighty Sharks", "Химки, Новогорск, Олимпийская ул., 15", (55.9005, 37.3565), 2500, "Олимпийская", "Репаблик"),
+ "mighty-sharks-severny": ("Mighty Sharks", "Москва, ул. Арсюкова, 11", (55.9335, 37.5475), 1500, "Арсюкова", "Северный"),
 }
 AREAS = ["Деловой центр", "Динамо", "Дмитровская", "Добрынинская", "Домодедовская", "Достоевская", "Дубровка", "Жулебино",
          "ЗИЛ", "Зорге", "Зюзино", "Зябликово", "Измайлово"]
@@ -37,6 +39,7 @@ SITES = ["https://octoskills.ru/rannee-plavanie-dlya-detej/", "https://mevis.ru/
          "https://kidsfunclub.ru/", "https://aculata.com/", "https://xn--5-ztbi4ah.xn--p1ai/", "https://mightysharks.ru/",
          "https://rogdenie.ru/", "https://fhall.ru/", "https://sc-piranha.ru/", "https://www.mevis-1.ru/",
          "https://swim-school-1.ru/", "https://www.swimrocket.ru/plavanie-dlya-detey/", "https://www.swimrocket.ru/deti/",
+         "https://mightysharks.ru/mitino", "https://mightysharks.ru/novogorsk", "https://mightysharks.ru/severny",
          "https://octoskills.ru/rannee-plavanie-dlya-detej/studiya-na-starovolynskoj-15k1/",
          "https://octoskills.ru/rannee-plavanie-dlya-detej/studiya-na-starovolynskoj-ulicze-15k1/"]
 if __name__ == "__main__":
