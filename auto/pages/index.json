@@ -325985,7 +325985,7 @@
 "url": "https://swim-school-1.ru/basseyni/eseninskiy",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "swim-school-1-ru-basseyni-dinamo": {
 "url": "https://swim-school-1.ru/basseyni/dinamo",
@@ -325998,13 +325998,13 @@
 "url": "https://swim-school-1.ru/basseyni/kachalovskiy",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "swim-school-1-ru-basseyni-jivopisniy": {
 "url": "https://swim-school-1.ru/basseyni/jivopisniy",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "yandex-ru-maps-1-moscow-and-moscow-oblast-po0-1113u-text-d0-90-d0-ba-d0-b2-d0-b0-d0-b1-d1": {
 "url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?po0=1113u&text=%D0%90%D0%BA%D0%B2%D0%B0%D0%B1%D1%83%D0%BB%D1%8C%D0%BA%D0%BE%2C%20%D0%A0%D0%B5%D1%83%D1%82%D0%BE%D0%B2%2C%20%D0%AE%D0%B1%D0%B8%D0%BB%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF.%2C%2068",
@@ -326159,5 +326159,57 @@
 "pages": 3,
 "bytes": 16000,
 "tries": 0
+},
+"swim-kids-com": {
+"url": "https://swim-kids.com",
+"ok": true,
+"pages": 2,
+"bytes": 16000,
+"tries": 0
+},
+"uchinka-ru": {
+"url": "https://uchinka.ru",
+"ok": true,
+"pages": 3,
+"bytes": 5076,
+"tries": 0
+},
+"marlinswim-ru": {
+"url": "https://marlinswim.ru",
+"ok": false,
+"err": "<urlopen error [Errno 101] Network is unreachable>",
+"tries": 1
+},
+"worldswim-ru": {
+"url": "https://worldswim.ru",
+"ok": true,
+"pages": 1,
+"bytes": 16000,
+"tries": 0
+},
+"aqua-darina-clients-site": {
+"url": "https://aqua-darina.clients.site",
+"ok": true,
+"pages": 1,
+"bytes": 6126,
+"tries": 0
+},
+"worldswim-ru-reutov": {
+"url": "https://worldswim.ru/reutov",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"marlinswim-ru-price": {
+"url": "https://marlinswim.ru/price",
+"ok": false,
+"err": "<urlopen error [Errno 101] Network is unreachable>",
+"tries": 1
+},
+"uchinka-ru-bassejn": {
+"url": "https://uchinka.ru/bassejn",
+"ok": false,
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
+"tries": 1
 }
 }
