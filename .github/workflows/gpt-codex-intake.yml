@@ -10,7 +10,9 @@ permissions:
   pull-requests: write
   issues: write
 concurrency:
-  group: gpt-codex-intake
+  # 13.11: общая очередь отменяла ждущие запуски (GitHub держит в очереди только один) — два отчёта Codex пропали.
+  # Очередь теперь своя у каждого pull request.
+  group: gpt-codex-intake-${{ github.event.issue.number }}
   cancel-in-progress: false
 jobs:
   intake:

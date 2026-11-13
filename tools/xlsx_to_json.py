@@ -155,6 +155,13 @@ def _ya_hours(pid):
     t = (r.get("hours") or "").strip()
     if not t or "lat" not in r or r.get("status") not in (None, "open"):
         return None
+    # 13.11: с серверов GitHub Яндекс отдаёт часы в 12-часовом виде («10:00 AM–8:00 PM») — переводим в 24-часовой
+    def _24(mo):
+        h, mi, ap = int(mo.group(1)), mo.group(2), mo.group(3).upper()
+        h = (h % 12) + (12 if ap == "PM" else 0)
+        return f"{h:02d}:{mi}"
+    t = re.sub(r"(\d{1,2}):(\d{2})[\s\u202f\u00a0]*(AM|PM)", _24, t, flags=re.I)
+    t = re.sub(r"(\d{2}:\d{2})–00:00", r"\1–24:00", t)
     t = re.sub(r",?\s*перерыв[^;]*", "", t)
     t = re.sub(r"^ежедневно,\s*", "ежедневно ", t)
     if "круглосуточно" in t:
