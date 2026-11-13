@@ -39,6 +39,8 @@ def orgs(html):
                     found.append({"id": str(x.get("id") or ""), "title": x.get("title"), "lat": c[1], "lon": c[0],
                                   "address": x.get("fullAddress") or (x.get("address") if isinstance(x.get("address"), str) else None),
                                   "floor": x.get("additionalAddress"), "status": x.get("status"),
+                                  "hours": x.get("workingTimeText"),
+                                  "phone": next((ph.get("number") for ph in (x.get("phones") or []) if isinstance(ph, dict) and ph.get("number")), None),
                                   "entrances": [[e["coordinates"][1], e["coordinates"][0], round(e.get("azimuth") or 0)]
                                                 for e in (x.get("entrances") or []) if isinstance(e, dict) and e.get("coordinates")]})
             for v in x.values():
@@ -122,14 +124,17 @@ def main():
     places = json.load(open(os.path.join(ROOT, "places.json")))["places"]
     old = (datetime.date.today() - datetime.timedelta(days=60)).isoformat()
     todo = [p for p in places if p.get("lat") is not None and p.get("point_door") != "дверь"
-            and (p["id"] not in done or done[p["id"]].get("date", "") < old or done[p["id"]].get("error"))]
+            and (p["id"] not in done or done[p["id"]].get("date", "") < old or done[p["id"]].get("error")
+                 or done[p["id"]].get("v") != 2)]       # v2 (13.11): плюс часы работы и телефон — старые записи перезапросить
     random.Random(today).shuffle(todo)
+    # сначала те, у кого нет записи совсем, потом перезапрос старых
+    todo.sort(key=lambda p: p["id"] in done)
     ok = miss = 0
     for p in todo[:n]:
         r = query(p)
         if r.get("error") == "captcha":
             print("капча — останавливаюсь, продолжу в следующий запуск"); break
-        r["date"] = today; done[p["id"]] = r
+        r["date"] = today; r["v"] = 2; done[p["id"]] = r
         ok += "lat" in r; miss += "none" in r
         time.sleep(random.uniform(4, 8))
     json.dump(done, open(OUT, "w"), ensure_ascii=False, indent=0, sort_keys=True)

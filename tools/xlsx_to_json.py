@@ -142,6 +142,30 @@ def parse_days(spec):
     return out
 
 
+_YA = None
+
+
+def _ya_hours(pid):
+    """Часы организации из Яндекс Карт в нашем формате; None — нет записи, место закрыто или текст не разбирается."""
+    global _YA
+    if _YA is None:
+        path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "auto", "yandex-entrances.json")
+        _YA = json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {}
+    r = _YA.get(pid) or {}
+    t = (r.get("hours") or "").strip()
+    if not t or "lat" not in r or r.get("status") not in (None, "open"):
+        return None
+    t = re.sub(r",?\s*перерыв[^;]*", "", t)
+    t = re.sub(r"^ежедневно,\s*", "ежедневно ", t)
+    if "круглосуточно" in t:
+        t = "круглосуточно"
+    try:
+        mode, week = parse_hours(t)
+    except Exception:
+        return None
+    return t if mode in ("hours", "always") else None
+
+
 def parse_hours(text):
     """
     Текст часов -> (mode, week).
@@ -268,6 +292,12 @@ def convert_row(raw, problems):
             problems.append(f"не разобран сезон «{p['season']}» — нужен формат 11-03")
     p.pop("season", None)
 
+    # Вадим 13.11 (в 03:22 вся карта цветная: «разве сейчас все эти заведения работают?») — у 2/3 мест часов не было
+    # вовсе. Нет своих часов → берём часы той же организации из Яндекс Карт (auto/yandex-entrances.json).
+    if not (p.get("hours") or "").strip():
+        yh = _ya_hours(p["id"])
+        if yh:
+            p["hours"], p["hours_src"] = yh, "Яндекс Карты"
     # Часы работы -> структура для фильтра «открыто сейчас»
     try:
         p["open_mode"], p["open_week"] = parse_hours(p["hours"])

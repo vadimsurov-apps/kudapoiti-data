@@ -2,7 +2,7 @@ name: Входы организаций из Яндекс Карт (точка �
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "17,47 * * * *"
 concurrency:
   group: yandex-entrances
   cancel-in-progress: false
@@ -14,7 +14,7 @@ jobs:
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
-      - run: python3 pipeline/yandex_entrances.py 150
+      - run: python3 pipeline/yandex_entrances.py 220
       - run: |
           git config user.name "kudapoiti-bot"; git config user.email "bot@users.noreply.github.com"
           git add auto/yandex-entrances.json
