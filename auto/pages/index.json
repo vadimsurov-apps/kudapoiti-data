@@ -274929,13 +274929,13 @@
 "url": "https://terfit.ru/t-swim-school/khovrino/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "terfit-ru-t-swim-school-yuzhnoe-butovo": {
 "url": "https://terfit.ru/t-swim-school/yuzhnoe-butovo/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "terfit-ru-t-swim-school-lyubertsy": {
 "url": "https://terfit.ru/t-swim-school/lyubertsy/",
@@ -274955,13 +274955,13 @@
 "url": "https://terfit.ru/t-swim-school/reutov-1/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "terfit-ru-t-swim-school-reutov-2": {
 "url": "https://terfit.ru/t-swim-school/reutov-2/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "terfit-ru-t-swim-school-zelenograd": {
 "url": "https://terfit.ru/t-swim-school/zelenograd/",
@@ -274974,7 +274974,7 @@
 "url": "https://terfit.ru/t-swim-school/zelenograd-2/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "www-triumfswim-ru": {
 "url": "https://www.triumfswim.ru/",
@@ -274985,8 +274985,9 @@
 },
 "aquapingvi-ru-uslugi-grudnichkovoe-plavanie": {
 "url": "https://aquapingvi.ru/uslugi/grudnichkovoe-plavanie",
-"ok": false,
-"err": "HTTP Error 403: Forbidden",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
 "tries": 1
 },
 "aquapingvi-ru-abonementy": {
@@ -274999,13 +275000,27 @@
 "iwillswim-ru-mgpu": {
 "url": "https://iwillswim.ru/mgpu/",
 "ok": false,
-"err": "HTTP Error 456: Unrecoverable Error",
-"tries": 1
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
+"tries": 2
 },
 "iwillswim-ru-raspisanie": {
 "url": "https://iwillswim.ru/raspisanie/",
 "ok": false,
-"err": "HTTP Error 456: Unrecoverable Error",
-"tries": 1
+"err": "HTTP Error 404: Not Found",
+"tries": 2
+},
+"riamo-ru-news-nedvizhimost-raboty-po-kapitalnomu-remontu-bassejna-briz-v-dmitrove-vypolnen": {
+"url": "https://riamo.ru/news/nedvizhimost/raboty-po-kapitalnomu-remontu-bassejna-briz-v-dmitrove-vypolneny-na-50/",
+"ok": true,
+"pages": 4,
+"bytes": 14228,
+"tries": 0
+},
+"yandex-ru-maps-org-neofun-231266554681": {
+"url": "https://yandex.ru/maps/org/neofun/231266554681/",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
 }
 }
