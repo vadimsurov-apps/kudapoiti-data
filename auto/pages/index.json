@@ -314261,14 +314261,14 @@
 "krabyboo-ru-price": {
 "url": "https://krabyboo.ru/price",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 1
+"err": "HTTP Error 403: Forbidden",
+"tries": 2
 },
 "krabyboo-ru-contacts": {
 "url": "https://krabyboo.ru/contacts",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 1
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
+"tries": 2
 },
 "swim-school-1-ru-basseyni-korall": {
 "url": "https://swim-school-1.ru/basseyni/korall",
@@ -314280,8 +314280,8 @@
 "swim-school-1-ru-basseyni-kolomenskiy": {
 "url": "https://swim-school-1.ru/basseyni/kolomenskiy",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 1
+"err": "HTTP Error 403: Forbidden",
+"tries": 2
 },
 "swim-school-1-ru-basseyni-veshnyaki": {
 "url": "https://swim-school-1.ru/basseyni/veshnyaki",
@@ -314300,19 +314300,65 @@
 "swim-school-1-ru-basseyni-kolomensky": {
 "url": "https://swim-school-1.ru/basseyni/kolomensky",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 1
+"err": "HTTP Error 403: Forbidden",
+"tries": 2
 },
 "swim-school-1-ru-basseyni-zorky": {
 "url": "https://swim-school-1.ru/basseyni/zorky",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 1
+"err": "HTTP Error 403: Forbidden",
+"tries": 2
 },
 "swim-school-1-ru-basseyni-koral": {
 "url": "https://swim-school-1.ru/basseyni/koral",
 "ok": false,
+"err": "HTTP Error 403: Forbidden",
+"tries": 2
+},
+"wylart-ru": {
+"url": "https://wylart.ru",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"wylart-ru-contacts": {
+"url": "https://wylart.ru/contacts",
+"ok": false,
 "err": "HTTP Error 404: Not Found",
 "tries": 1
+},
+"balletsp-ru": {
+"url": "https://balletsp.ru",
+"ok": false,
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
+"tries": 1
+},
+"balletsp-ru-contacts": {
+"url": "https://balletsp.ru/contacts",
+"ok": false,
+"err": "HTTP Error 403: Forbidden",
+"tries": 1
+},
+"yandex-ru-maps-org-wylart-146024173587": {
+"url": "https://yandex.ru/maps/org/wylart/146024173587",
+"ok": true,
+"pages": 3,
+"bytes": 10190,
+"tries": 0
+},
+"yandex-ru-maps-org-ballet-sp-41095194072": {
+"url": "https://yandex.ru/maps/org/ballet_sp/41095194072",
+"ok": true,
+"pages": 2,
+"bytes": 4222,
+"tries": 0
+},
+"yandex-ru-maps-org-kartina-art-218070643589": {
+"url": "https://yandex.ru/maps/org/kartina_art/218070643589",
+"ok": true,
+"pages": 4,
+"bytes": 11018,
+"tries": 0
 }
 }
