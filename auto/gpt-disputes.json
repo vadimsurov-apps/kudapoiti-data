@@ -185,10 +185,10 @@
 },
 "arkhangelskoe": {
 "date": "2026-11-12",
-"note": "Парк работает ежедневно по зимнему графику; дворец закрыт на реставрацию.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"note": "Указаны часы парка по зимнему графику; музейные павильоны работают по отдельному расписанию.",
+"resolved": false,
 "sources": [
+"https://arhangelskoe.su/",
 "https://arhangelskoe.su/for_visitor/working_hours/?special_version=Y"
 ],
 "status": "works",
@@ -198,7 +198,7 @@
 "value": "ежедневно 10:00-20:00"
 },
 "url": {
-"source": "https://arhangelskoe.su/for_visitor/working_hours/?special_version=Y",
+"source": "https://arhangelskoe.su/",
 "value": "https://arhangelskoe.su/"
 }
 }
@@ -2003,42 +2003,39 @@
 },
 "climb-lab": {
 "date": "2026-11-12",
-"note": "Официальная страница филиала подтверждает этаж, вход, парковку, часы и контакты.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"note": "Официальный сайт подтверждает филиал на Аминьевской в ТЦ «ОМА».",
+"resolved": false,
 "sources": [
-"https://climb-lab.ru/filials/aminevskaya/",
-"https://climb-lab.ru/registration/aminevskaya/"
+"https://climb-lab.ru/prices/"
 ],
 "status": "works",
 "wrong": {
 "address": {
-"source": "https://climb-lab.ru/filials/aminevskaya/",
-"value": "Очаковское ш., 3А, ТЦ «ОМА», 3 этаж"
+"source": "https://climb-lab.ru/prices/",
+"value": "Москва, Очаковское ш., 3А, ТЦ «ОМА», 3 этаж"
 },
 "hours": {
-"source": "https://climb-lab.ru/filials/aminevskaya/",
+"source": "https://climb-lab.ru/prices/",
 "value": "ежедневно 07:00-00:00"
 },
 "how": {
-"source": "https://climb-lab.ru/filials/aminevskaya/",
+"source": "https://climb-lab.ru/prices/",
 "value": "Вход: со стороны метро Аминьевская\nЭтаж: 3\nПарковка: платная парковка ТЦ «ОМА»"
 },
 "phone": {
-"source": "https://climb-lab.ru/filials/aminevskaya/",
+"source": "https://climb-lab.ru/prices/",
 "value": "+7 (495) 023-39-93"
 },
 "url": {
-"source": "https://climb-lab.ru/filials/aminevskaya/",
+"source": "https://climb-lab.ru/prices/",
 "value": "https://climb-lab.ru/"
 }
 }
 },
 "climb-rockzona": {
 "date": "2026-11-12",
-"note": "Официальная страница контактов подтверждает работу скалодрома.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"note": "Официальная страница контактов подтверждает работу скалодрома по этому адресу.",
+"resolved": false,
 "sources": [
 "https://rzclimbing.ru/o-skalodrome/contact/"
 ],
@@ -2046,7 +2043,7 @@
 "wrong": {
 "hours": {
 "source": "https://rzclimbing.ru/o-skalodrome/contact/",
-"value": "пн 09:00-23:00; вт 15:00-23:00; ср-пт 09:00-23:00; сб-вс 09:00-22:00"
+"value": "пн, ср-пт 09:00-23:00; вт 15:00-23:00; сб-вс 09:00-22:00"
 },
 "phone": {
 "source": "https://rzclimbing.ru/o-skalodrome/contact/",
@@ -2060,24 +2057,15 @@
 },
 "climb-skala-city": {
 "date": "2026-11-12",
-"note": "Официальные контакты расходятся с карточкой по выходным и телефону.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"note": "На официальном сайте в реквизитах указан другой актуальный телефон.",
+"resolved": false,
 "sources": [
-"https://skala-city.ru/contact"
+"https://www.skala-city.ru/"
 ],
 "status": "works",
 "wrong": {
-"address": {
-"source": "https://skala-city.ru/contact",
-"value": "Кутузовский пр-т, 36, стр. 13/14"
-},
-"hours": {
-"source": "https://skala-city.ru/contact",
-"value": "пн-пт 15:00-23:00; сб-вс 11:00-22:00"
-},
 "phone": {
-"source": "https://skala-city.ru/contact",
+"source": "https://www.skala-city.ru/",
 "value": "+7 (966) 112-93-77"
 }
 }
@@ -3140,18 +3128,16 @@
 },
 "karting-lonato": {
 "date": "2026-11-12",
-"note": "Цена 1400 ₽ действует только в счастливые часы по будням; в остальное время дороже.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"note": "Официальный сайт подтверждает адрес, телефон и ежедневный режим.",
+"resolved": false,
 "sources": [
-"https://lonato.ru/contacts/",
-"https://lonato.ru/price/"
+"https://lonato.ru/"
 ],
 "status": "works",
 "wrong": {
 "hours": {
-"source": "https://lonato.ru/contacts/",
-"value": "пн-пт 10:00-00:00; сб-вс 12:30-00:00"
+"source": "https://lonato.ru/",
+"value": "ежедневно 10:00-00:00"
 }
 }
 },
@@ -3172,56 +3158,42 @@
 },
 "karting-timati": {
 "date": "2026-11-12",
-"note": "Официальная страница филиала подтверждает этаж, часы и телефон.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"note": "Сайт ТРЦ подтверждает действующий электрический картинг и часы работы.",
+"resolved": false,
 "sources": [
-"https://rvr.timatikarting.ru/prices.html"
+"https://riviera.su/shop/timati-karting"
 ],
 "status": "works",
 "wrong": {
-"address": {
-"source": "https://rvr.timatikarting.ru/prices.html",
-"value": "ул. Автозаводская, 18, ТРЦ «Ривьера», 2 этаж"
-},
 "hours": {
-"source": "https://rvr.timatikarting.ru/prices.html",
-"value": "ежедневно 10:00-00:00"
-},
-"how": {
-"source": "https://rvr.timatikarting.ru/prices.html",
-"value": "Вход: через ТРЦ «Ривьера»\nЭтаж: 2"
-},
-"phone": {
-"source": "https://rvr.timatikarting.ru/prices.html",
-"value": "+7 (495) 120-43-13"
+"source": "https://riviera.su/shop/timati-karting",
+"value": "ежедневно 10:00-02:00"
 },
 "url": {
-"source": "https://rvr.timatikarting.ru/prices.html",
-"value": "https://rvr.timatikarting.ru/"
+"source": "https://riviera.su/shop/timati-karting",
+"value": "https://riviera.su/shop/timati-karting"
 }
 }
 },
 "karting-xti": {
 "date": "2026-11-12",
-"note": "Официальный сайт подтверждает действующий картинг; в выходные и праздники бронь обязательна.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"note": "В выходные и праздничные дни бронирование заездов обязательно.",
+"resolved": false,
 "sources": [
-"https://x-tipilot.ru/store"
+"https://x-tipilot.ru/"
 ],
 "status": "works",
 "wrong": {
 "hours": {
-"source": "https://x-tipilot.ru/store",
+"source": "https://x-tipilot.ru/",
 "value": "ежедневно 11:00-23:00"
 },
 "phone": {
-"source": "https://x-tipilot.ru/store",
+"source": "https://x-tipilot.ru/",
 "value": "+7 (495) 136-68-16"
 },
 "url": {
-"source": "https://x-tipilot.ru/store",
+"source": "https://x-tipilot.ru/",
 "value": "https://x-tipilot.ru/"
 }
 }
@@ -3446,8 +3418,7 @@
 "kolomna-pastila": {
 "date": "2026-11-12",
 "note": "Официальный сайт сообщает, что посещение возможно только по предварительной записи.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://kolomnapastila.ru/",
 "https://kolomnapastila.ru/contacts/"
@@ -5067,16 +5038,18 @@
 "wrong": {}
 },
 "park-skazka": {
-"applied": "2026-11-12",
 "date": "2026-11-12",
 "note": "Парк временно закрыт 2–26 ноября 2026 года; билет «Стандарт» в будни на сайте стоит 3300 ₽ и имеет единую цену для взрослых и детей.",
-"resolved": true,
-"result": "единая цена 3300 записана",
+"resolved": false,
 "sources": [
 "https://parkskazka.ru/"
 ],
 "status": "works",
 "wrong": {
+"address": {
+"source": "https://parkskazka.ru/",
+"value": "Москва, ул. Крылатская, 18"
+},
 "price": {
 "source": "https://parkskazka.ru/",
 "value": 3300
@@ -5424,12 +5397,26 @@
 },
 "rink-luzhniki": {
 "date": "2026-11-12",
-"note": "Открытых первоисточников недостаточно для надёжной проверки полей.",
-"resolved": true,
-"result": "Сезонный каток: Яндекс «Временно не работает» (сезон 2026/27 не открыт); адрес подтверждён; правило входа детей (с 3 лет) — по kp.ru; цены/часы прошлого сезона не переподтверждены",
-"sources": [],
-"status": "not_found",
-"wrong": {}
+"note": "Официальная страница сообщает об открытии в декабре; актуальное расписание сезона пока не опубликовано.",
+"resolved": false,
+"sources": [
+"https://www.luzhniki.ru/sport/zima-v-luzhnikah/eng-katok/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://www.luzhniki.ru/sport/zima-v-luzhnikah/eng-katok/",
+"value": "Москва, ул. Лужники, 24, стр. 4Б"
+},
+"how": {
+"source": "https://www.luzhniki.ru/sport/zima-v-luzhnikah/eng-katok/",
+"value": "Ориентир: 3 минуты пешком от метро «Воробьёвы горы»\nПарковка: рядом с катком"
+},
+"url": {
+"source": "https://www.luzhniki.ru/sport/zima-v-luzhnikah/eng-katok/",
+"value": "https://katok.luzhniki.ru/"
+}
+}
 },
 "rogym-chertanovskaya": {
 "date": "2026-11-13",
@@ -5608,21 +5595,20 @@
 },
 "sergiev-toy-museum": {
 "date": "2026-11-12",
-"note": "В карточке неполный адрес; официальный сайт подтверждает дом 123.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"note": "В карточке отсутствует номер дома; муниципальный справочник указывает дом 123.",
+"resolved": false,
 "sources": [
-"http://museumot.info/"
+"https://www.sergiev-posad.ru/reference/leisure/exhibitions/"
 ],
 "status": "works",
 "wrong": {
 "address": {
-"source": "http://museumot.info/",
+"source": "https://www.sergiev-posad.ru/reference/leisure/exhibitions/",
 "value": "Сергиев Посад, пр-т Красной Армии, 123"
 },
 "hours": {
-"source": "http://museumot.info/",
-"value": "ср-вс 10:00-17:00"
+"source": "https://www.sergiev-posad.ru/reference/leisure/exhibitions/",
+"value": "пн-вт выходной; ср-вс 10:00-17:00"
 }
 }
 },
