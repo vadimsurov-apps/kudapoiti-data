@@ -31,8 +31,8 @@ def parse(path):
     return nodes, ways, rels
 
 def is_mcc(t):
-    s = " ".join([t.get("network", ""), t.get("name", ""), t.get("operator", "")])
-    return t.get("route") == "train" and ("МЦК" in s or "Московское центральное кольцо" in s)
+    s = " ".join(str(v) for v in t.values()).lower()
+    return t.get("route") in ("train", "light_rail", "subway") and ("мцк" in s or "центральное кольцо" in s or t.get("ref") == "14")
 
 def wanted(rels):
     return {rid for rid, (t, m) in rels.items() if t.get("type") == "route" and (t.get("route") in ("subway", "light_rail") or is_mcc(t))
@@ -70,6 +70,7 @@ def build(rel_path, routes_path):
     for rid in sorted(want, key=int):
         t, mem = rels[rid]; mt = masters.get(rid, {})
         ref = "МЦК" if is_mcc(t) else (t.get("ref") or mt.get("ref") or "?")
+        if ref == "4А": ref = "4"      # Филёвская: ветка в «Москва-Сити» — та же линия, общие станции не дублируем
         colour = t.get("colour") or mt.get("colour") or "#888888"
         lname = (mt.get("name") or t.get("name") or ref).split(":")[0].strip()
         if is_mcc(t): lname = "Московское центральное кольцо"
@@ -191,6 +192,9 @@ if __name__ == "__main__":
     if sys.argv[1] == "ids":
         _, _, rels = parse(sys.argv[2])
         ids = wanted(rels)
+        for rid, (t, m) in rels.items():
+            if t.get("type") == "route" and t.get("route") == "train" and any(k in " ".join(t.values()).lower() for k in ("кольц", "мцк", "мцд")):
+                print("train:", rid, {k: t[k] for k in ("ref", "name", "network", "operator") if k in t}, "взят" if rid in ids else "")
         open("ids.txt", "w").write("".join(f"r{i}\n" for i in sorted(ids, key=int)))
         print("маршрутов:", len(ids))
     else:
