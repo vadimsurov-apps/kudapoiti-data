@@ -1681,6 +1681,39 @@
 "status": "not_found",
 "wrong": {}
 },
+"dmitrov-bolshoe-gnezdo": {
+"date": "2026-11-13",
+"note": "Муниципальный портал Дмитрова подтверждает адрес, телефон, сайт и 3-й этаж.",
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
+"sources": [
+"https://mydmitrov.ru/organization/3365/"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://mydmitrov.ru/organization/3365/",
+"value": "Этаж: 3"
+}
+}
+},
+"dmitrov-samotsvety-mira": {
+"applied": "2026-11-13",
+"date": "2026-11-13",
+"note": "Официальный сайт подтверждает работу только по предварительной записи минимум за день.",
+"resolved": false,
+"result": "применено автоматически; осталось для сверщика: how",
+"sources": [
+"https://www.samocveti-mira.ru/"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://www.samocveti-mira.ru/",
+"value": "Запись: минимум за день до посещения"
+}
+}
+},
 "dog-museum": {
 "date": "2026-11-13",
 "note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
@@ -1694,6 +1727,31 @@
 "how": {
 "source": "https://dogmuseum.ru/",
 "value": "Вход: только по заранее купленному билету, за 10 минут до начала экскурсии"
+}
+}
+},
+"dolgoprudny-dk-vpered": {
+"date": "2026-11-13",
+"note": "Официальный сайт подтверждает ежедневную работу, адрес и телефон.",
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
+"sources": [
+"https://xn--b1adbdx5ai0l.xn--p1ai/контакты/",
+"https://xn--b1adbdx5ai0l.xn--p1ai/открытый-дк/"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://xn--b1adbdx5ai0l.xn--p1ai/открытый-дк/",
+"value": "ежедневно 09:00-23:00"
+},
+"phone": {
+"source": "https://xn--b1adbdx5ai0l.xn--p1ai/открытый-дк/",
+"value": "+7 (495) 408-89-94"
+},
+"url": {
+"source": "https://xn--b1adbdx5ai0l.xn--p1ai/контакты/",
+"value": "https://xn--b1adbdx5ai0l.xn--p1ai/"
 }
 }
 },
@@ -1843,6 +1901,22 @@
 "url": {
 "source": "https://teatrmagic.ru/",
 "value": "https://teatrmagic.ru/"
+}
+}
+},
+"istra-drama-theatre": {
+"date": "2026-11-13",
+"note": "Официальная страница контактов указывает ежедневный режим 09:00–21:00.",
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
+"sources": [
+"https://teatr-istra.ru/kontakty/"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://teatr-istra.ru/kontakty/",
+"value": "ежедневно 09:00-21:00"
 }
 }
 },
@@ -2215,6 +2289,34 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"lenino-snegiri-museum": {
+"date": "2026-11-13",
+"note": "Официальный сайт подтверждает точный адрес, режим и два телефона.",
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
+"sources": [
+"https://www.xn-----elcdibbcrddcndjh3agbbt3csh9c.xn--p1ai/posetitelyam/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://www.xn-----elcdibbcrddcndjh3agbbt3csh9c.xn--p1ai/posetitelyam/",
+"value": "Московская область, м.о. Истра, деревня Ленино, д. 97"
+},
+"hours": {
+"source": "https://www.xn-----elcdibbcrddcndjh3agbbt3csh9c.xn--p1ai/posetitelyam/",
+"value": "вт-вс 09:00-17:00; пн выходной"
+},
+"phone": {
+"source": "https://www.xn-----elcdibbcrddcndjh3agbbt3csh9c.xn--p1ai/posetitelyam/",
+"value": "+7 (498) 316-62-84, +7 (495) 992-78-39"
+},
+"url": {
+"source": "https://www.xn-----elcdibbcrddcndjh3agbbt3csh9c.xn--p1ai/posetitelyam/",
+"value": "https://www.ленино-снегиревский-музей.рф/"
+}
+}
 },
 "lesnaya-skazka": {
 "date": "2026-11-12",
@@ -2694,6 +2796,22 @@
 "adult": 960,
 "child": 780
 }
+}
+}
+},
+"mozhaysk-spektr-cinema": {
+"date": "2026-11-13",
+"note": "Официальный сайт показывает действующий кинотеатр и подтверждает адрес.",
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
+"sources": [
+"https://spektr3d.ru/cinema?facility=spektr-3d"
+],
+"status": "works",
+"wrong": {
+"url": {
+"source": "https://spektr3d.ru/cinema?facility=spektr-3d",
+"value": "https://spektr3d.ru/"
 }
 }
 },
