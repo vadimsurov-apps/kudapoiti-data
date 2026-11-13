@@ -72,6 +72,24 @@
 }
 }
 },
+"archaeology-museum": {
+"applied": "2026-11-13",
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"result": "применено автоматически; осталось для сверщика: price",
+"sources": [
+"https://mosmuseum.ru/association/archeology/",
+"https://mosmuseum.ru/visitors/tikets/types/"
+],
+"status": "works",
+"wrong": {
+"price": {
+"source": "https://mosmuseum.ru/visitors/tikets/types/",
+"value": 400
+}
+}
+},
 "arkhangelskoe": {
 "date": "2026-11-12",
 "note": "Парк работает ежедневно по зимнему графику; дворец закрыт на реставрацию.",
@@ -89,6 +107,43 @@
 "url": {
 "source": "https://arhangelskoe.su/for_visitor/working_hours/?special_version=Y",
 "value": "https://arhangelskoe.su/"
+}
+}
+},
+"armenian-theatre": {
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"sources": [
+"https://www.mosarmteatr.com/ru/"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://www.mosarmteatr.com/ru/",
+"value": [
+6,
+18
+]
+}
+}
+},
+"armoury": {
+"applied": "2026-11-13",
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"result": "применено автоматически; осталось для сверщика: hours",
+"sources": [
+"https://kreml.ru/",
+"https://kreml.ru/ru/excursions/obzornaia-ekskursiia-po-oruzeinoi-palate",
+"https://old.kreml.ru/visit-to-kremlin/ticket-prices000eb/vkhodnye-bilety-i-usloviya-poseshcheniya/"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://kreml.ru/ru/excursions/obzornaia-ekskursiia-po-oruzeinoi-palate",
+"value": "пн-ср, пт-вс 10:00-18:00; чт выходной"
 }
 }
 },
@@ -150,6 +205,25 @@
 "hours": {
 "source": "https://ato-teatr.ru/kontakty",
 "value": "пн-пт 13:00-21:00; сб 11:00-17:00"
+}
+}
+},
+"avtomobili-mira": {
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"sources": [
+"https://automuseum.ru/contacts"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://automuseum.ru/contacts",
+"value": "ежедневно 10:00-21:00"
+},
+"how": {
+"source": "https://automuseum.ru/contacts",
+"value": "Парковка: на территории музея"
 }
 }
 },
@@ -256,6 +330,41 @@
 "url": {
 "source": "https://bunker-42.ru/",
 "value": "https://bunker-42.ru/"
+}
+}
+},
+"bunker-703": {
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"sources": [
+"https://bunker703.ru/",
+"https://bunker703.ru/contacts/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://bunker703.ru/contacts/",
+"value": "2-й Новокузнецкий переулок"
+},
+"how": {
+"source": "https://bunker703.ru/contacts/",
+"value": "Парковка: городская вдоль 2-го Новокузнецкого переулка напротив входа; платная, по воскресеньям и праздникам бесплатная"
+}
+}
+},
+"burganov-house": {
+"date": "2026-11-13",
+"note": "Официальный сайт сообщает, что музей закрыт на капитальный ремонт.",
+"resolved": false,
+"sources": [
+"https://burganov.ru/kontakty/"
+],
+"status": "closed",
+"wrong": {
+"url": {
+"source": "https://burganov.ru/kontakty/",
+"value": "https://burganov.ru/"
 }
 }
 },
@@ -1432,6 +1541,26 @@
 }
 }
 },
+"damuseum": {
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"sources": [
+"https://damuseum.ru/contact/",
+"https://www.damuseum.ru/visitors/"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://www.damuseum.ru/visitors/",
+"value": "вт-ср 11:00-19:00; чт 11:00-21:00; пт 11:00-20:00; сб-вс 12:00-20:00; пн выходной"
+},
+"price": {
+"source": "https://www.damuseum.ru/visitors/",
+"value": 550
+}
+}
+},
 "deti-gor-latsisa": {
 "date": "2026-11-13",
 "note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
@@ -1514,6 +1643,33 @@
 "adult": 100,
 "child": 100
 }
+}
+}
+},
+"gmom": {
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"sources": [
+"https://gmom.ru/",
+"https://new.gmom.ru/biletmg/"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://new.gmom.ru/biletmg/",
+"value": [
+0,
+17
+]
+},
+"hours": {
+"source": "https://new.gmom.ru/biletmg/",
+"value": "вт-ср, пт-вс 10:00-18:00; чт 10:00-21:00; пн и последняя пятница месяца выходной"
+},
+"price": {
+"source": "https://new.gmom.ru/biletmg/",
+"value": 350
 }
 }
 },
@@ -1601,6 +1757,21 @@
 "hours": {
 "source": "https://www.jewish-museum.ru/childrens-center/",
 "value": "пн-чт, вс 12:00-22:00; пт 10:00-15:00; сб выходной"
+}
+}
+},
+"jinr-museum": {
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"sources": [
+"https://museum.jinr.ru/ru/"
+],
+"status": "works",
+"wrong": {
+"url": {
+"source": "https://museum.jinr.ru/ru/",
+"value": "https://museum.jinr.ru/ru/"
 }
 }
 },
@@ -1776,6 +1947,21 @@
 }
 }
 },
+"kostino-korolev": {
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"sources": [
+"https://kostino.com/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://kostino.com/",
+"value": "+7 (495) 512-00-55"
+}
+}
+},
 "krasnogorsk-pobeda": {
 "date": "2026-11-13",
 "note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
@@ -1808,6 +1994,21 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"kz-izmailovo": {
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"sources": [
+"https://zalizmailovo.ru/index.php/contacts"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://zalizmailovo.ru/index.php/contacts",
+"value": "Вход: главный вход с лицевой стороны здания, за гостиницей «Измайлово-Альфа»"
+}
+}
 },
 "lefortovo-park": {
 "date": "2026-11-13",
@@ -2206,6 +2407,25 @@
 }
 }
 },
+"modern-theatre": {
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"sources": [
+"https://www.modern-theatre.ru/buffet/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://www.modern-theatre.ru/buffet/",
+"value": "+7 (499) 261-36-89"
+},
+"url": {
+"source": "https://www.modern-theatre.ru/buffet/",
+"value": "https://www.modern-theatre.ru/"
+}
+}
+},
 "mosfilm": {
 "applied": "2026-11-12",
 "date": "2026-11-12",
@@ -2278,6 +2498,38 @@
 "price": {
 "source": "https://museumofemotions.ru/",
 "value": 900
+}
+}
+},
+"music-museum-kids": {
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"sources": [
+"https://music-museum.ru/detskij-czentr.html",
+"https://music-museum.ru/dettcentr.html",
+"https://music-museum.ru/visit/accessible-museum.html"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://music-museum.ru/detskij-czentr.html",
+"value": [
+0,
+14
+]
+},
+"hours": {
+"source": "https://music-museum.ru/visit/accessible-museum.html",
+"value": "вт-ср 11:00-19:00; чт-пт 12:00-21:00; сб 11:00-20:00; вс 11:00-18:00; пн выходной"
+},
+"phone": {
+"source": "https://music-museum.ru/dettcentr.html",
+"value": "+7 (495) 605-65-15"
+},
+"url": {
+"source": "https://music-museum.ru/detskij-czentr.html",
+"value": "https://music-museum.ru/detskij-czentr.html"
 }
 }
 },
@@ -2456,6 +2708,22 @@
 "status": "not_found",
 "wrong": {}
 },
+"podolie": {
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"sources": [
+"https://xn----htbbcgnqcwbi7b9h.xn--p1ai/",
+"https://xn----htbbcgnqcwbi7b9h.xn--p1ai/contacts"
+],
+"status": "works",
+"wrong": {
+"url": {
+"source": "https://xn----htbbcgnqcwbi7b9h.xn--p1ai/",
+"value": "https://xn----htbbcgnqcwbi7b9h.xn--p1ai/"
+}
+}
+},
 "podzemnaya-moskva": {
 "date": "2026-11-13",
 "note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
@@ -2504,6 +2772,21 @@
 }
 }
 },
+"pushkin-theatre": {
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"sources": [
+"https://gosti.teatrpushkin.ru/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://gosti.teatrpushkin.ru/",
+"value": "Тверской бульвар, 23, стр. 1"
+}
+}
+},
 "rechnoy-vokzal": {
 "date": "2026-11-13",
 "note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
@@ -2528,6 +2811,33 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"romanov-chambers": {
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"sources": [
+"https://shm.ru/museum/pbr/",
+"https://shm.ru/visit/tickets/pbr/"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://shm.ru/visit/tickets/pbr/",
+"value": [
+0,
+17
+]
+},
+"price": {
+"source": "https://shm.ru/visit/tickets/pbr/",
+"value": 700
+},
+"url": {
+"source": "https://shm.ru/museum/pbr/",
+"value": "https://shm.ru/museum/pbr/"
+}
+}
 },
 "russia-my-history": {
 "date": "2026-11-12",
@@ -2842,6 +3152,21 @@
 }
 }
 },
+"tricks-museum": {
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"sources": [
+"https://magic2.ru/"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://magic2.ru/",
+"value": "Вход: от метро «Марксистская», выход 6, по Таганской улице; у дома 38, стр. 1 повернуть направо в парк, далее за сцену к красной башне"
+}
+}
+},
 "tsar-maket": {
 "applied": "2026-11-13",
 "date": "2026-11-13",
@@ -3006,6 +3331,26 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"yunost-odintsovo": {
+"date": "2026-11-13",
+"note": "",
+"resolved": false,
+"sources": [
+"https://unost-cinema.ru/",
+"https://unost-cinema.ru/cinema"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://unost-cinema.ru/cinema",
+"value": "Московская область, г. Одинцово, Школьный проезд, 6"
+},
+"kidsroom": {
+"source": "https://unost-cinema.ru/",
+"value": "есть, детский развлекательный центр «Юнабум»"
+}
+}
 },
 "yuzhnoe-butovo": {
 "date": "2026-11-13",

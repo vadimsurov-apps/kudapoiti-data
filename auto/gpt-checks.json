@@ -99,6 +99,31 @@
 }
 }
 },
+"archaeology-museum": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"address",
+"url"
+],
+"sources": [
+"https://mosmuseum.ru/association/archeology/",
+"https://mosmuseum.ru/visitors/tikets/types/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://mosmuseum.ru/association/archeology/",
+"value": "+7 (495) 692-00-20"
+},
+"price": {
+"source": "https://mosmuseum.ru/visitors/tikets/types/",
+"value": 400
+}
+}
+},
 "arkhangelskoe": {
 "by": "Codex",
 "date": "2026-11-12",
@@ -117,6 +142,55 @@
 "url": {
 "source": "https://arhangelskoe.su/for_visitor/working_hours/?special_version=Y",
 "value": "https://arhangelskoe.su/"
+}
+}
+},
+"armenian-theatre": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"url"
+],
+"sources": [
+"https://www.mosarmteatr.com/ru/"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://www.mosarmteatr.com/ru/",
+"value": [
+6,
+18
+]
+}
+}
+},
+"armoury": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [],
+"sources": [
+"https://kreml.ru/",
+"https://kreml.ru/ru/excursions/obzornaia-ekskursiia-po-oruzeinoi-palate",
+"https://old.kreml.ru/visit-to-kremlin/ticket-prices000eb/vkhodnye-bilety-i-usloviya-poseshcheniya/"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://kreml.ru/ru/excursions/obzornaia-ekskursiia-po-oruzeinoi-palate",
+"value": "пн-ср, пт-вс 10:00-18:00; чт выходной"
+},
+"how": {
+"source": "https://old.kreml.ru/visit-to-kremlin/ticket-prices000eb/vkhodnye-bilety-i-usloviya-poseshcheniya/",
+"value": "Вход: через Боровицкие ворота"
+},
+"url": {
+"source": "https://kreml.ru/",
+"value": "https://kreml.ru/"
 }
 }
 },
@@ -190,6 +264,31 @@
 "hours": {
 "source": "https://ato-teatr.ru/kontakty",
 "value": "пн-пт 13:00-21:00; сб 11:00-17:00"
+}
+}
+},
+"avtomobili-mira": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://automuseum.ru/contacts"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://automuseum.ru/contacts",
+"value": "ежедневно 10:00-21:00"
+},
+"how": {
+"source": "https://automuseum.ru/contacts",
+"value": "Парковка: на территории музея"
 }
 }
 },
@@ -354,6 +453,31 @@
 }
 }
 },
+"bunker-703": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"phone",
+"url"
+],
+"sources": [
+"https://bunker703.ru/",
+"https://bunker703.ru/contacts/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://bunker703.ru/contacts/",
+"value": "2-й Новокузнецкий переулок"
+},
+"how": {
+"source": "https://bunker703.ru/contacts/",
+"value": "Парковка: городская вдоль 2-го Новокузнецкого переулка напротив входа; платная, по воскресеньям и праздникам бесплатная"
+}
+}
+},
 "buratino-pinokkio": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -367,6 +491,26 @@
 ],
 "status": "works",
 "wrong": {}
+},
+"burganov-house": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "Официальный сайт сообщает, что музей закрыт на капитальный ремонт.",
+"ok": [
+"address",
+"phone"
+],
+"sources": [
+"https://burganov.ru/kontakty/"
+],
+"status": "closed",
+"wrong": {
+"url": {
+"source": "https://burganov.ru/kontakty/",
+"value": "https://burganov.ru/"
+}
+}
 },
 "butterflyarium": {
 "by": "Codex",
@@ -1187,6 +1331,20 @@
 "status": "works",
 "wrong": {}
 },
+"chocolate-sokolniki": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"url"
+],
+"sources": [
+"https://sokolniki.mirchocolat.ru/"
+],
+"status": "works",
+"wrong": {}
+},
 "cin-angara": {
 "by": "Codex",
 "date": "2026-11-12",
@@ -1796,6 +1954,46 @@
 }
 }
 },
+"damuseum": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://damuseum.ru/contact/",
+"https://www.damuseum.ru/visitors/"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://www.damuseum.ru/visitors/",
+"value": "вт-ср 11:00-19:00; чт 11:00-21:00; пт 11:00-20:00; сб-вс 12:00-20:00; пн выходной"
+},
+"price": {
+"source": "https://www.damuseum.ru/visitors/",
+"value": 550
+}
+}
+},
+"dary-duba": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"url"
+],
+"sources": [
+"https://daryduba.nethouse.ru/"
+],
+"status": "works",
+"wrong": {}
+},
 "deti-gor-latsisa": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -1926,6 +2124,16 @@
 "status": "not_found",
 "wrong": {}
 },
+"ecoschool-kuskovo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [],
+"sources": [],
+"status": "works",
+"wrong": {}
+},
 "ermitazh": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -2009,6 +2217,16 @@
 "date": "2026-11-12",
 "file": "20261112-2229-0.json",
 "note": "Надёжного подтверждения по первоисточнику недостаточно.",
+"ok": [],
+"sources": [],
+"status": "works",
+"wrong": {}
+},
+"fire-museum": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
 "ok": [],
 "sources": [],
 "status": "works",
@@ -2128,6 +2346,39 @@
 "sources": [],
 "status": "works",
 "wrong": {}
+},
+"gmom": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://gmom.ru/",
+"https://new.gmom.ru/biletmg/"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://new.gmom.ru/biletmg/",
+"value": [
+0,
+17
+]
+},
+"hours": {
+"source": "https://new.gmom.ru/biletmg/",
+"value": "вт-ср, пт-вс 10:00-18:00; чт 10:00-21:00; пн и последняя пятница месяца выходной"
+},
+"price": {
+"source": "https://new.gmom.ru/biletmg/",
+"value": 350
+}
+}
 },
 "gorod-dolgoprudny": {
 "by": "Codex",
@@ -2330,6 +2581,25 @@
 "how": {
 "source": "https://www.jewish-museum.ru/childrens-center/",
 "value": "Вход: с Новосущёвского переулка"
+}
+}
+},
+"jinr-museum": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"phone"
+],
+"sources": [
+"https://museum.jinr.ru/ru/"
+],
+"status": "works",
+"wrong": {
+"url": {
+"source": "https://museum.jinr.ru/ru/",
+"value": "https://museum.jinr.ru/ru/"
 }
 }
 },
@@ -2631,6 +2901,26 @@
 "status": "works",
 "wrong": {}
 },
+"kostino-korolev": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"address",
+"url"
+],
+"sources": [
+"https://kostino.com/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://kostino.com/",
+"value": "+7 (495) 512-00-55"
+}
+}
+},
 "kovcheg-sp": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -2711,6 +3001,27 @@
 ],
 "status": "works",
 "wrong": {}
+},
+"kz-izmailovo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://zalizmailovo.ru/index.php/contacts"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://zalizmailovo.ru/index.php/contacts",
+"value": "Вход: главный вход с лицевой стороны здания, за гостиницей «Измайлово-Альфа»"
+}
+}
 },
 "lefortovo-park": {
 "by": "Codex",
@@ -3337,6 +3648,29 @@
 }
 }
 },
+"modern-theatre": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"address"
+],
+"sources": [
+"https://www.modern-theatre.ru/buffet/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://www.modern-theatre.ru/buffet/",
+"value": "+7 (499) 261-36-89"
+},
+"url": {
+"source": "https://www.modern-theatre.ru/buffet/",
+"value": "https://www.modern-theatre.ru/"
+}
+}
+},
 "monkey-planet": {
 "by": "Codex",
 "date": "2026-11-12",
@@ -3357,6 +3691,20 @@
 ],
 "sources": [
 "https://mori-cinema.ru/cinema_detail/82_mytishchi"
+],
+"status": "works",
+"wrong": {}
+},
+"mori-kuntsevo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"url"
+],
+"sources": [
+"https://mori-cinema.ru/cinema_detail/78049_mori_sinema/"
 ],
 "status": "works",
 "wrong": {}
@@ -3536,6 +3884,42 @@
 ],
 "status": "works",
 "wrong": {}
+},
+"music-museum-kids": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"address"
+],
+"sources": [
+"https://music-museum.ru/detskij-czentr.html",
+"https://music-museum.ru/dettcentr.html",
+"https://music-museum.ru/visit/accessible-museum.html"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://music-museum.ru/detskij-czentr.html",
+"value": [
+0,
+14
+]
+},
+"hours": {
+"source": "https://music-museum.ru/visit/accessible-museum.html",
+"value": "вт-ср 11:00-19:00; чт-пт 12:00-21:00; сб 11:00-20:00; вс 11:00-18:00; пн выходной"
+},
+"phone": {
+"source": "https://music-museum.ru/dettcentr.html",
+"value": "+7 (495) 605-65-15"
+},
+"url": {
+"source": "https://music-museum.ru/detskij-czentr.html",
+"value": "https://music-museum.ru/detskij-czentr.html"
+}
+}
 },
 "na-naberezhnoy": {
 "by": "Codex",
@@ -3857,6 +4241,21 @@
 "status": "works",
 "wrong": {}
 },
+"po-susekam": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"phone",
+"url"
+],
+"sources": [
+"https://posusecam.ru/"
+],
+"status": "works",
+"wrong": {}
+},
 "pobeda-zaraysk": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -3870,6 +4269,28 @@
 ],
 "status": "works",
 "wrong": {}
+},
+"podolie": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"address",
+"hours",
+"phone"
+],
+"sources": [
+"https://xn----htbbcgnqcwbi7b9h.xn--p1ai/",
+"https://xn----htbbcgnqcwbi7b9h.xn--p1ai/contacts"
+],
+"status": "works",
+"wrong": {
+"url": {
+"source": "https://xn----htbbcgnqcwbi7b9h.xn--p1ai/",
+"value": "https://xn----htbbcgnqcwbi7b9h.xn--p1ai/"
+}
+}
 },
 "podolsk-drama": {
 "by": "Codex",
@@ -3928,6 +4349,20 @@
 "status": "not_found",
 "wrong": {}
 },
+"prada3d-balashikha": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"url"
+],
+"sources": [
+"http://balashiha.prada3d.ru/"
+],
+"status": "works",
+"wrong": {}
+},
 "prishvin-dunino": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -3966,6 +4401,26 @@
 "url": {
 "source": "https://gingerbread-msk.ru/",
 "value": "https://gingerbread-msk.ru/"
+}
+}
+},
+"pushkin-theatre": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"phone",
+"url"
+],
+"sources": [
+"https://gosti.teatrpushkin.ru/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://gosti.teatrpushkin.ru/",
+"value": "Тверской бульвар, 23, стр. 1"
 }
 }
 },
@@ -4060,6 +4515,38 @@
 "sources": [],
 "status": "works",
 "wrong": {}
+},
+"romanov-chambers": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"address",
+"phone"
+],
+"sources": [
+"https://shm.ru/museum/pbr/",
+"https://shm.ru/visit/tickets/pbr/"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://shm.ru/visit/tickets/pbr/",
+"value": [
+0,
+17
+]
+},
+"price": {
+"source": "https://shm.ru/visit/tickets/pbr/",
+"value": 700
+},
+"url": {
+"source": "https://shm.ru/museum/pbr/",
+"value": "https://shm.ru/museum/pbr/"
+}
+}
 },
 "rosta-theatre": {
 "by": "Codex",
@@ -4676,6 +5163,25 @@
 }
 }
 },
+"tricks-museum": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"url"
+],
+"sources": [
+"https://magic2.ru/"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://magic2.ru/",
+"value": "Вход: от метро «Марксистская», выход 6, по Таганской улице; у дома 38, стр. 1 повернуть направо в парк, далее за сцену к красной башне"
+}
+}
+},
 "tsagi-scientists-house": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -5095,6 +5601,31 @@
 ],
 "status": "works",
 "wrong": {}
+},
+"yunost-odintsovo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-0545-2.json",
+"note": "",
+"ok": [
+"phone",
+"url"
+],
+"sources": [
+"https://unost-cinema.ru/",
+"https://unost-cinema.ru/cinema"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://unost-cinema.ru/cinema",
+"value": "Московская область, г. Одинцово, Школьный проезд, 6"
+},
+"kidsroom": {
+"source": "https://unost-cinema.ru/",
+"value": "есть, детский развлекательный центр «Юнабум»"
+}
+}
 },
 "yuzhnoe-butovo": {
 "by": "Codex",
