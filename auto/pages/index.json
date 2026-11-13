@@ -322526,20 +322526,20 @@
 "dinozavria-zel-ru-contacts": {
 "url": "https://dinozavria-zel.ru/contacts",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 2
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
+"tries": 3
 },
 "dinozavria-zel-ru-kontakty": {
 "url": "https://dinozavria-zel.ru/kontakty",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "dance-dynamo-ru-chekhov": {
 "url": "https://dance-dynamo.ru/chekhov",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "dance-dynamo-ru": {
 "url": "https://dance-dynamo.ru/",
@@ -322713,13 +322713,13 @@
 "url": "https://adlforward.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "www-ogonekdance-narod-ru": {
 "url": "https://www.ogonekdance.narod.ru/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-"tries": 1
+"tries": 2
 },
 "barhat-studio-ru": {
 "url": "https://barhat-studio.ru/",
@@ -322732,7 +322732,7 @@
 "url": "https://barhat-studio.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "sibars-ru": {
 "url": "https://sibars.ru/",
@@ -322759,22 +322759,65 @@
 "url": "https://sma-knight.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "nerpaswim-ru-contacts": {
 "url": "https://nerpaswim.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "swim-team-msk-ru-contacts": {
 "url": "https://swim-team-msk.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "myswimteam-ru-raspisanie": {
 "url": "https://myswimteam.ru/raspisanie",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 2
+},
+"em-dance-ru-contacts": {
+"url": "https://em-dance.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"em-dance-ru-raspisanie": {
+"url": "https://em-dance.ru/raspisanie",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"em-dance-ru-ceny": {
+"url": "https://em-dance.ru/ceny",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"domikhudoznika-ru-contacts": {
+"url": "https://domikhudoznika.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"domikhudoznika-ru-raspisanie": {
+"url": "https://domikhudoznika.ru/raspisanie",
+"ok": true,
+"pages": 3,
+"bytes": 14493,
+"tries": 0
+},
+"singplay-ru-contacts": {
+"url": "https://singplay.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"singplay-ru-prices": {
+"url": "https://singplay.ru/prices",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
 "tries": 1
