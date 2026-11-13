@@ -305680,5 +305680,37 @@
 "pages": 4,
 "bytes": 16000,
 "tries": 0
+},
+"cheerschool-ru": {
+"url": "https://cheerschool.ru/",
+"ok": false,
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
+"tries": 1
+},
+"cheerschool-ru-contacts": {
+"url": "https://cheerschool.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"aikikaiaikido-ru": {
+"url": "https://aikikaiaikido.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 14575,
+"tries": 0
+},
+"aikikaiaikido-ru-contacts": {
+"url": "https://aikikaiaikido.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: ÐÐ°ÑÐµÑÐ¸Ð°Ð» Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½",
+"tries": 1
+},
+"pay-mso-mossport-ru-gorizont": {
+"url": "https://pay.mso.mossport.ru/gorizont",
+"ok": true,
+"pages": 1,
+"bytes": 16000,
+"tries": 0
 }
 }
