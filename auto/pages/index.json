@@ -345991,10 +345991,9 @@
 },
 "barabulka-com": {
 "url": "https://barabulka.com/",
-"ok": true,
-"pages": 5,
-"bytes": 16000,
-"tries": 0
+"ok": false,
+"err": "<urlopen error [Errno 101] Network is unreachable>",
+"tries": 1
 },
 "miniswimmer-com": {
 "url": "https://miniswimmer.com/",
@@ -346025,7 +346024,7 @@
 "barabulka-com-price": {
 "url": "https://barabulka.com/price",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
+"err": "<urlopen error [Errno 101] Network is unreachable>",
 "tries": 1
 },
 "miniswimmer-com-price": {
@@ -346052,5 +346051,55 @@
 "pages": 2,
 "bytes": 8378,
 "tries": 0
+},
+"moscowtyz-ru": {
+"url": "https://moscowtyz.ru/",
+"ok": false,
+"err": "<urlopen error timed out>",
+"tries": 1
+},
+"moscowtyz-ru-contacts": {
+"url": "https://moscowtyz.ru/contacts/",
+"ok": false,
+"err": "<urlopen error timed out>",
+"tries": 1
+},
+"www-tretyakovgallery-ru-for-visitors-museums-tretyakovskaya-galereya": {
+"url": "https://www.tretyakovgallery.ru/for-visitors/museums/tretyakovskaya-galereya/",
+"ok": true,
+"pages": 1,
+"bytes": 16000,
+"tries": 0
+},
+"pushkinmuseum-art-visitors-index-php": {
+"url": "https://pushkinmuseum.art/visitors/index.php",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"park-meshersky-ru-contacts": {
+"url": "https://park-meshersky.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"mitino-bapark-ru-contacts": {
+"url": "https://mitino.bapark.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"www-mosgorsad-ru-parks-ermitazh": {
+"url": "https://www.mosgorsad.ru/parks/ermitazh",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"coach-doaflip-ru": {
+"url": "https://coach.doaflip.ru/",
+"ok": false,
+"err": "<urlopen error [Errno -2] Name or service not known>",
+"tries": 1
 }
 }
