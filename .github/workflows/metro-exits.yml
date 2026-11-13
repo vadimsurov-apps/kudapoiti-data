@@ -1,4 +1,4 @@
-name: Выходы метро (OSM, раз в неделю)
+name: Выходы метро и схема линий (OSM, раз в неделю)
 on:
   workflow_dispatch:
   schedule:
@@ -31,9 +31,16 @@ jobs:
       - name: Метро из OSM
         run: osmium tags-filter -R mo.osm.pbf n/railway=subway_entrance n/railway=station r/public_transport=stop_area -o metro.osm --overwrite
       - run: python3 pipeline/metro_exits.py
+      - name: Схема линий и пути (для маршрутов)
+        run: |
+          osmium tags-filter -R mo.osm.pbf r/route=subway,light_rail,train r/route_master=subway,light_rail,train r/public_transport=stop_area,stop_area_group -o rel.osm --overwrite
+          python3 pipeline/metro_graph.py ids rel.osm
+          osmium getid -r mo.osm.pbf -i ids.txt -o routes.osm --overwrite
+          ls -la rel.osm routes.osm
+          python3 pipeline/metro_graph.py build rel.osm routes.osm
       - name: Сохранить
         run: |
           git config user.name "kudapoiti-bot"; git config user.email "bot@users.noreply.github.com"
-          git add metro-exits.json auto/metro-exits-skipped.json auto/metro-exits-report.json
+          git add metro-exits.json metro-graph.json auto/metro-exits-skipped.json auto/metro-exits-report.json auto/metro-graph-report.json
           git commit -m "Выходы метро из OSM" || exit 0
           for i in 1 2 3 4 5 6 7 8; do git pull --rebase -q && git push -q && break; sleep 3; done
