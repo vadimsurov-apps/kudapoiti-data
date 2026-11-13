@@ -299832,7 +299832,7 @@
 "url": "https://jjaik.ru/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
-"tries": 2
+"tries": 3
 },
 "spkkanrit-ru": {
 "url": "https://spkkanrit.ru/",
@@ -299887,7 +299887,7 @@
 "url": "https://acromix.ru/filialy",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "fightingacademy-ru": {
 "url": "https://fightingacademy.ru/",
@@ -299900,13 +299900,13 @@
 "url": "https://club-18-fight-fitness.ru/",
 "ok": false,
 "err": "HTTP Error 103: Early Hints",
-"tries": 2
+"tries": 3
 },
 "musa-fighter-ru": {
 "url": "https://musa-fighter.ru/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
-"tries": 2
+"tries": 3
 },
 "yandex-ru-maps-1-moscow-and-moscow-oblast-fwe-medv-los-1113f-text-d0-9c-d0-be-d1-81-d0-ba": {
 "url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?fwe-medv-los=1113f&text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%AF%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88.%2C%20120%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%202",
@@ -299982,13 +299982,13 @@
 "url": "https://metavrclub.ru/",
 "ok": false,
 "err": "<urlopen error [Errno 101] Network is unreachable>",
-"tries": 2
+"tries": 3
 },
 "lazertag-msk-ru-los": {
 "url": "https://lazertag.msk.ru/los",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "lazertag-msk-ru-brateevo": {
 "url": "https://lazertag.msk.ru/brateevo",
@@ -300001,7 +300001,7 @@
 "url": "https://lazertag.msk.ru/petrovsko-razumovskoe",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "lazertag-msk-ru-presnya": {
 "url": "https://lazertag.msk.ru/presnya",
@@ -300700,13 +300700,13 @@
 "url": "https://zapadsport.ru/",
 "ok": false,
 "err": "<urlopen error [Errno 101] Network is unreachable>",
-"tries": 1
+"tries": 2
 },
 "www-karate-mos-ru": {
 "url": "https://www.karate-mos.ru/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 1
+"tries": 2
 },
 "salto-style-ru": {
 "url": "https://salto-style.ru/",
@@ -300727,6 +300727,244 @@
 "ok": true,
 "pages": 3,
 "bytes": 16000,
+"tries": 0
+},
+"www-galleryistra-ru-prices": {
+"url": "http://www.galleryistra.ru/prices",
+"ok": false,
+"err": "<urlopen error timed out>",
+"tries": 1
+},
+"nobacafe-ru-kontakty": {
+"url": "https://nobacafe.ru/kontakty",
+"ok": false,
+"err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
+"tries": 1
+},
+"nobacafe-ru-prices": {
+"url": "https://nobacafe.ru/prices",
+"ok": false,
+"err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
+"tries": 1
+},
+"zdrastecafe-ru-kontakty": {
+"url": "https://zdrastecafe.ru/kontakty",
+"ok": true,
+"pages": 1,
+"bytes": 36,
+"tries": 0
+},
+"zdrastecafe-ru-prices": {
+"url": "https://zdrastecafe.ru/prices",
+"ok": true,
+"pages": 1,
+"bytes": 34,
+"tries": 0
+},
+"fdacademy-ru-prices": {
+"url": "https://fdacademy.ru/prices",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"impulsedsc-ru-kontakty": {
+"url": "https://impulsedsc.ru/kontakty",
+"ok": true,
+"pages": 1,
+"bytes": 7989,
+"tries": 0
+},
+"impulsedsc-ru-prices": {
+"url": "https://impulsedsc.ru/prices",
+"ok": true,
+"pages": 1,
+"bytes": 7987,
+"tries": 0
+},
+"aviapark-com-contacts": {
+"url": "http://aviapark.com/contacts",
+"ok": true,
+"pages": 1,
+"bytes": 41,
+"tries": 0
+},
+"aviapark-com-kontakty": {
+"url": "http://aviapark.com/kontakty",
+"ok": true,
+"pages": 1,
+"bytes": 41,
+"tries": 0
+},
+"aviapark-com-prices": {
+"url": "http://aviapark.com/prices",
+"ok": true,
+"pages": 1,
+"bytes": 39,
+"tries": 0
+},
+"1kitenok-ru-prices": {
+"url": "https://1kitenok.ru/prices",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"school-todes-ru-kontakty": {
+"url": "https://school.todes.ru/kontakty",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"school-todes-ru-prices": {
+"url": "https://school.todes.ru/prices",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"grand-ballet-ru-kontakty": {
+"url": "https://grand-ballet.ru/kontakty",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"www-tkd-otradnoe-ru-contacts": {
+"url": "https://www.tkd-otradnoe.ru/contacts",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"www-tkd-otradnoe-ru-prices": {
+"url": "https://www.tkd-otradnoe.ru/prices",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"spartak-cityfootball-ru-kontakty": {
+"url": "https://spartak.cityfootball.ru/kontakty",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"spartak-cityfootball-ru-prices": {
+"url": "https://spartak.cityfootball.ru/prices",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"s44-mossport-ru-kontakty": {
+"url": "https://s44.mossport.ru/kontakty",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"s44-mossport-ru-prices": {
+"url": "https://s44.mossport.ru/prices",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"mgfso-mossport-ru-kontakty": {
+"url": "https://mgfso.mossport.ru/kontakty",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"mgfso-mossport-ru-prices": {
+"url": "https://mgfso.mossport.ru/prices",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"championika-ru-addr-prices": {
+"url": "https://championika.ru/addr/prices",
+"ok": false,
+"err": "HTTP Error 403: Forbidden",
+"tries": 1
+},
+"dpgaidar-mskobr-ru-kontakty": {
+"url": "https://dpgaidar.mskobr.ru/kontakty",
+"ok": false,
+"err": "<urlopen error timed out>",
+"tries": 1
+},
+"dpgaidar-mskobr-ru-prices": {
+"url": "https://dpgaidar.mskobr.ru/prices",
+"ok": false,
+"err": "<urlopen error timed out>",
+"tries": 1
+},
+"swimming-academy-ru-kontakty": {
+"url": "https://swimming-academy.ru/kontakty",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"swimming-academy-ru-prices": {
+"url": "https://swimming-academy.ru/prices",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"uni-sport-su-kontakty": {
+"url": "https://uni-sport.su/kontakty",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"uni-sport-su-prices": {
+"url": "https://uni-sport.su/prices",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"champacademy-ru-kontakty": {
+"url": "https://champacademy.ru/kontakty",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"champacademy-ru-prices": {
+"url": "https://champacademy.ru/prices",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"aquapups-ru-kontakty": {
+"url": "https://aquapups.ru/kontakty",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"aquapups-ru-prices": {
+"url": "https://aquapups.ru/prices",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"fitnessdeti-ru-kontakty": {
+"url": "https://fitnessdeti.ru/kontakty",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"www-samocveti-mira-ru": {
+"url": "https://www.samocveti-mira.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 2710,
+"tries": 0
+},
+"himkigalery-ru": {
+"url": "https://himkigalery.ru/",
+"ok": true,
+"pages": 3,
+"bytes": 14117,
 "tries": 0
 }
 }
