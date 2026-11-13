@@ -253,16 +253,18 @@
 }
 },
 "arena-solntsevo-hockey": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://arena-solntsevo.ru/shkola"
 ],
 "status": "works",
 "wrong": {
+"how": {
+"source": "https://arena-solntsevo.ru/shkola",
+"value": "Парковка: на территории"
+},
 "price": {
 "source": "https://arena-solntsevo.ru/shkola",
 "value": 17500
@@ -498,38 +500,6 @@
 "status": "not_found",
 "wrong": {}
 },
-"aw-mytishchi": {
-"date": "2026-11-13",
-"note": "Цена 1100 ₽ действует за час пн–чт; пт–вс час стоит 1500 ₽.",
-"resolved": false,
-"sources": [
-"https://mytishchi.another-world.com/",
-"https://mytishchi.another-world.com/about",
-"https://mytishchi.another-world.com/faq"
-],
-"status": "works",
-"wrong": {
-"address": {
-"source": "https://mytishchi.another-world.com/about",
-"value": "Мытищи, ул. Мира, стр. 51, ТЦ «Июнь», павильон 5К-71"
-},
-"age": {
-"source": "https://mytishchi.another-world.com/faq",
-"value": [
-6,
-17
-]
-},
-"hours": {
-"source": "https://mytishchi.another-world.com/about",
-"value": "ежедневно 10:00-22:00"
-},
-"how": {
-"source": "https://mytishchi.another-world.com/about",
-"value": "Вход: через ТЦ «Июнь»\nОриентир: павильон 5К-71"
-}
-}
-},
 "azbuka-football-lazurny": {
 "date": "2026-11-13",
 "note": "Надёжного актуального первоисточника по этому филиалу не найдено.",
@@ -541,8 +511,7 @@
 "azswim-albatros": {
 "date": "2026-11-13",
 "note": "Официальный сайт школы подтверждает площадку, телефон, общий режим и возраст обучения.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://azswim.ru/"
 ],
@@ -712,14 +681,6 @@
 "status": "not_found",
 "wrong": {}
 },
-"beach-volleyball-school-sokol": {
-"date": "2026-11-13",
-"note": "На официальном сайте не удалось найти страницу филиала с проверяемыми реквизитами.",
-"resolved": false,
-"sources": [],
-"status": "not_found",
-"wrong": {}
-},
 "belokamennaya-samokatnaya": {
 "date": "2026-11-13",
 "note": "Официальный сайт школы подтверждает площадку на Самокатной, но не подтверждает указанный этаж; опубликованы актуальные телефоны.",
@@ -783,8 +744,7 @@
 "bkc-shenkursky": {
 "date": "2026-11-13",
 "note": "Официальный список филиалов подтверждает точку; в карточке пропущена литера дома и часы.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.bkc.ru/schools/altufevo/contacts/"
 ],
@@ -1684,8 +1644,7 @@
 "cafe-ketsi-izmaylovsky": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает филиал; в карточке не заполнены часы.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.ketzi.ru/"
 ],
@@ -3527,8 +3486,7 @@
 "cska-basket-golovinskoe": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставл��ны unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://cskabasket.school/addr/"
 ],
@@ -4166,8 +4124,7 @@
 "enjoy-robotics-sloboda": {
 "date": "2026-11-13",
 "note": "Официальная страница подтверждает офис и контакты, но не подтверждает действующую детскую школу по этому адресу.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://enjoy-robotics.ru/aboutus"
 ],
@@ -4322,14 +4279,6 @@
 "value": "https://chess-clubs.ru/raspisaniye/"
 }
 }
-},
-"fenomen-chess-krasnogorsk": {
-"date": "2026-11-13",
-"note": "Указанный филиал не подтверждён актуальным первичным источником; найденный официальный домен теперь описывает только онлайн-занятия.",
-"resolved": false,
-"sources": [],
-"status": "not_found",
-"wrong": {}
 },
 "fk-victory-skating-solntsevo": {
 "date": "2026-11-13",
@@ -4590,27 +4539,6 @@
 "status": "not_found",
 "wrong": {}
 },
-"gzhel-ballet-studio-mitino": {
-"date": "2026-11-13",
-"note": "Официальный сайт подтверждает занятия для детей от 4 лет.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
-"sources": [
-"https://mosballet.ru/contacts",
-"https://mosballet.ru/news/1869-den-otkrytykh-dverej-shkola-tantsev"
-],
-"status": "works",
-"wrong": {
-"hours": {
-"source": "https://mosballet.ru/contacts",
-"value": "пн-сб 08:00-22:00; вс выходной"
-},
-"how": {
-"source": "https://mosballet.ru/news/1869-den-otkrytykh-dverej-shkola-tantsev",
-"value": "Этаж: 3"
-}
-}
-},
 "helikon-opera": {
 "date": "2026-11-13",
 "note": "",
@@ -4699,11 +4627,9 @@
 "wrong": {}
 },
 "hola-futbol-vnukovo": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age, hours, price",
 "sources": [
 "https://holafutbolacademy.com/timetable"
 ],
@@ -4714,8 +4640,7 @@
 "value": [
 3,
 12
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
 },
 "hours": {
 "source": "https://holafutbolacademy.com/timetable",
@@ -4730,8 +4655,7 @@
 "hope-club-krasnobogatyrskaya": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://hopeclub.ru/"
 ],
@@ -5024,8 +4948,7 @@
 "innopark": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://park-inno.ru/contacts/"
 ],
@@ -5065,8 +4988,7 @@
 "ippon-vnukovo": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://yandex.com/maps/org/ippon/218496869543/"
 ],
@@ -5487,11 +5409,9 @@
 "wrong": {}
 },
 "justup-khodynka": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает арену; часы, цена и телефон в карточке устарели.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: hours, price",
 "sources": [
 "https://just-up.club/",
 "https://just-up.club/xodyinskoe-pole.html"
@@ -5501,6 +5421,14 @@
 "hours": {
 "source": "https://just-up.club/xodyinskoe-pole.html",
 "value": "пн-чт, вс 10:00-22:00; пт-сб круглосуточно"
+},
+"how": {
+"source": "https://just-up.club/xodyinskoe-pole.html",
+"value": "Ориентир: отдельно стоящее здание в парке «Ходынское поле», напротив ТРЦ «Авиапарк»\nПарковка: у входа в парк, первые 15 минут бесплатно, далее 50 ₽/ч"
+},
+"phone": {
+"source": "https://just-up.club/",
+"value": "+7 (495) 577-22-79"
 },
 "price": {
 "source": "https://just-up.club/xodyinskoe-pole.html",
@@ -6681,11 +6609,9 @@
 }
 },
 "lets-go-delta-cheer": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает филиал, но возраст в карточке занижен.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://cheerschool.ru/",
 "https://cheerschool.ru/schedule"
@@ -6697,8 +6623,7 @@
 "value": [
 5,
 15
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
 }
 }
 },
@@ -8930,8 +8855,7 @@
 "padlhub-yasenevo": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://padlhub.ru/padelacademy"
 ],
@@ -8946,14 +8870,6 @@
 "value": "+7 (499) 110-77-35"
 }
 }
-},
-"panda-sokolniki": {
-"date": "2026-11-13",
-"note": "Актуальная официальная страница именно площадки в Сокольниках не найдена.",
-"resolved": false,
-"sources": [],
-"status": "not_found",
-"wrong": {}
 },
 "pantery-basket-cheremushkinskaya": {
 "date": "2026-11-13",
@@ -9670,26 +9586,6 @@
 "status": "not_found",
 "wrong": {}
 },
-"rink-krylatskoe": {
-"date": "2026-11-13",
-"note": "Расписание массовых катаний меняется по датам; старые постоянные часы не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
-"sources": [
-"https://megasport.mossport.ru/page/massovye-kataniya/"
-],
-"status": "works",
-"wrong": {
-"how": {
-"source": "https://megasport.mossport.ru/page/massovye-kataniya/",
-"value": "Парковка: платная, зона Р7, 80 ₽/час, первые 15 минут бесплатно"
-},
-"url": {
-"source": "https://megasport.mossport.ru/page/massovye-kataniya/",
-"value": "https://megasport.mossport.ru/page/massovye-kataniya/"
-}
-}
-},
 "rink-luzhniki": {
 "date": "2026-11-12",
 "note": "Официальная страница сообщает об открытии в декабре; актуальное расписание сезона пока не опубликовано.",
@@ -9945,8 +9841,7 @@
 "savvino": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://savvastor.ru/"
 ],
@@ -9969,8 +9864,7 @@
 "school-champions-litvina-sedogo": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.schoolofchampions.msk.ru/"
 ],
@@ -9985,8 +9879,7 @@
 "school-champions-sreda": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.schoolofchampions.msk.ru/"
 ],
@@ -10356,8 +10249,7 @@
 "sindo-sedova": {
 "date": "2026-11-13",
 "note": "Карточка Яндекс Карт помечает клуб как временно закрытый; постоянное закрытие не подтверждено.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://yandex.com/maps/org/mixfight_sindo/50228352261/"
 ],
@@ -10562,8 +10454,7 @@
 "spartak-cityfootball-sokolniki": {
 "date": "2026-11-13",
 "note": "Официальный сайт академии подтверждает площадку, парковку, телефон и возрастной профиль центра.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://spartak.cityfootball.ru/infrastructure",
 "https://spartak.cityfootball.ru/league-contacts"
@@ -10577,11 +10468,9 @@
 }
 },
 "spartak-cityfootball-tulskaya": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальный сайт академии подтверждает площадку, парковку, телефон и возрастной профиль центра.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://spartak.cityfootball.ru/infrastructure",
 "https://spartak.cityfootball.ru/league-contacts"
@@ -10593,8 +10482,11 @@
 "value": [
 8,
 14
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"how": {
+"source": "https://spartak.cityfootball.ru/infrastructure",
+"value": "Парковка: есть на территории центра"
 }
 }
 },
@@ -10942,27 +10834,6 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
-},
-"tennis-capital-yuzhnaya": {
-"date": "2026-11-13",
-"note": "Официальная страница подтверждает бесплатную парковку и два крытых грунтовых корта.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
-"sources": [
-"https://tenniscapital.ru/children",
-"https://tenniscapital.ru/tennis-uzhnaya"
-],
-"status": "works",
-"wrong": {
-"hours": {
-"source": "https://tenniscapital.ru/tennis-uzhnaya",
-"value": "ежедневно 07:00-23:00"
-},
-"phone": {
-"source": "https://tenniscapital.ru/tennis-uzhnaya",
-"value": "+7 (495) 023-21-77"
-}
-}
 },
 "tennis-dmitrov-academy": {
 "applied": "2026-11-13",
@@ -11745,8 +11616,7 @@
 "volna-ceramics-oktyabrsky": {
 "date": "2026-11-13",
 "note": "Официальная страница подтверждает детские занятия; номер кабинета в карточке неверный.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://volnaceramics.com/",
 "https://volnaceramics.com/kids"
@@ -11913,8 +11783,7 @@
 "yourways-entuziastov": {
 "date": "2026-11-13",
 "note": "Надёжного актуального первоисточника с данными именно этой точки найти не удалось.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://yourways.ru/files/other/%D0%94%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B4%D0%BB%D1%8F_%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%B0.pdf"
 ],
