@@ -282,7 +282,7 @@
       ],
       "price_child": 80,
       "price_adult": 250,
-      "free_note": null,
+      "free_note": "дошкольникам — бесплатно; учащимся московских школ и колледжей — бесплатно по карте учащегося (только в кассе музея)",
       "booking": "none",
       "hours": "пн выходной; вт-вс 10:00-18:00",
       "indoor": "yes",
@@ -295,7 +295,7 @@
       "plus": "Животные, мультимедиа-залы и квесты",
       "minus": null,
       "url": "https://www.darwinmuseum.ru/",
-      "source": "https://kudago.com/msk/place/gosudarstvennyj-darvinovskij-muzej/; детский = льготный (уточнить)",
+      "source": "https://kudago.com/msk/place/gosudarstvennyj-darvinovskij-muzej/",
       "verified_at": null,
       "status": "draft",
       "cats": [
@@ -589,7 +589,7 @@
       "price_adult": 2800,
       "free_note": "единый билет от 2 800; до 90 см бесплатно",
       "booking": "recommended",
-      "hours": "ежедневно 12:00-22:00",
+      "hours": "ежедневно 12:00–22:00",
       "indoor": "partial",
       "food": "yes",
       "changing_table": null,
@@ -758,7 +758,7 @@
       "price_adult": null,
       "free_note": null,
       "booking": "required",
-      "hours": "по расписанию",
+      "hours": "касса ежедневно 10:00–19:00; спектакли по расписанию",
       "indoor": "yes",
       "food": null,
       "changing_table": null,
@@ -780,7 +780,7 @@
       "how_to_find": null,
       "phone": "+7 (495) 699-59-79",
       "season_months": null,
-      "open_mode": "schedule",
+      "open_mode": "unknown",
       "open_week": null,
       "point_level": "вход",
       "point_door": "вход_яндекс"
@@ -812,7 +812,7 @@
       "price_adult": null,
       "free_note": null,
       "booking": "required",
-      "hours": "пн выходной; вт-вс 10:30-18:30",
+      "hours": "пн выходной; вт-вс 10:30–18:30",
       "indoor": "yes",
       "food": null,
       "changing_table": null,
@@ -1470,9 +1470,9 @@
       ],
       "price_child": null,
       "price_adult": null,
-      "free_note": "вход по временным слотам",
+      "free_note": "детский билет — с 4 до 13 лет, взрослый — с 14 лет",
       "booking": "recommended",
-      "hours": "ежедневно 10:00-21:00",
+      "hours": "ежедневно 10:00–21:00",
       "indoor": "yes",
       "food": null,
       "changing_table": null,
@@ -1483,7 +1483,7 @@
       "plus": "Большой подвижный макет страны",
       "minus": null,
       "url": "https://myrussiamaket.ru",
-      "source": "https://afisha.yandex.ru/moscow/art/shou-maket-moia-rossiia",
+      "source": "https://afisha.yandex.ru/moscow/art/shou-maket-moia-rossiia; цена зависит от дня и времени входа, время в музее не ограничено",
       "verified_at": null,
       "status": "draft",
       "cats": [
@@ -3603,11 +3603,11 @@
         "развлекательный центр"
       ],
       "metro": "Деловой центр / Выставочная",
-      "address": "Москва, Пресненская наб., 12, башня «Федерация»",
+      "address": "Пресненская наб., 12, башня «Федерация», 89 этаж",
       "lat": 55.749437,
       "lon": 37.537649,
-      "age_min": 3,
-      "age_max": 14,
+      "age_min": 0,
+      "age_max": 17,
       "duration_min": 60,
       "duration_max": 90,
       "energy": "calm",
@@ -3619,11 +3619,11 @@
         "space",
         "science"
       ],
-      "price_child": 1700,
+      "price_child": 2000,
       "price_adult": 2000,
-      "free_note": "в билет входит дегустация сладостей",
+      "free_note": "до 1 года включительно — бесплатно (с одним взрослым — не больше двух малышей, нужен документ о возрасте); с 2 лет — единый билет; дети до 14 лет включительно — только со взрослым (18+)",
       "booking": "recommended",
-      "hours": null,
+      "hours": "ежедневно 10:00–22:00",
       "indoor": "yes",
       "food": "yes",
       "changing_table": null,
@@ -3642,11 +3642,40 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Вход: касса на этаже -2 башни «Федерация»\nЭтаж: смотровая площадка — 89 этаж",
+      "how_to_find": "Вход: касса на этаже -2 башни «Федерация»\nЭтаж: смотровая площадка — 89 этаж (башня «Федерация. Восток», скоростной лифт)",
       "phone": "+7 (495) 151-94-94",
       "season_months": null,
-      "open_mode": "unknown",
-      "open_week": null,
+      "open_mode": "hours",
+      "open_week": [
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ],
+        [
+          600,
+          1320
+        ]
+      ],
       "access": {
         "toilet": "yes",
         "wheelchair": "yes"
@@ -4879,7 +4908,6 @@
       "how_to_find": "Вход: первый со стороны Ленинского проспекта, под колоннадой\nШлагбаум: есть шлагбаум в ~56 м\nПарковка: платная вдоль улицы (~103 м); рядом (~109 м)",
       "phone": "+7 (499) 230-00-93",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -47401,14 +47429,15 @@
       "stroller": "partial",
       "parking": "yes",
       "adult_interest": 1,
-      "plus": "Батуты и игровой центр, сопровождающим детей до 6 лет — бесплатно",
+      "plus": "Батуты и игровой центр; в этом же центре — секция паркура «НЕБО СПОРТ» для детей 5–14 лет: пробное занятие бесплатно, разовое — 2 200 ₽ (запись: +7 499 757-00-95); сопровождающим детей до 6 лет — бесплатно",
       "minus": "В выходные много детей",
       "url": "https://nebojump.ru",
       "source": "OpenStreetMap; акция — с сайта места (робот, 2026-11-05); цена «от»",
       "verified_at": null,
       "status": "draft",
       "cats": [
-        "trampolines"
+        "trampolines",
+        "acrobatics"
       ],
       "coord_exact": true,
       "birthday": true,
@@ -47446,6 +47475,12 @@
           1320
         ]
       ],
+      "cat_ages": {
+        "acrobatics": [
+          5,
+          14
+        ]
+      },
       "point_level": "вход",
       "point_door": "вход_яндекс"
     },
@@ -330934,7 +330969,7 @@
       "url": "https://nebo-sport.ru/sportivnye-napravleniya/detskiy-sport/parkur/",
       "source": "сайт места (проверено 2026-11-06)",
       "verified_at": "2026-11-06",
-      "status": "draft",
+      "status": "closed",
       "cats": [
         "acrobatics"
       ],
@@ -332694,8 +332729,8 @@
       "minus": "Набор в бюджетные группы — по возрасту и отбору, места быстро заканчиваются",
       "url": "https://s104.mossport.ru/",
       "source": "сайт спортшколы Москомспорта (mossport.ru, проверено 2026-11-06); платные группы — по прайсу школы",
-      "verified_at": "2026-11-06",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "pools"
       ],
@@ -332704,7 +332739,6 @@
       "how_to_find": "Парковка: бесплатная наземная (~106 м)",
       "phone": "+7 (495) 733-22-77 доб. 701",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -418160,8 +418194,8 @@
       "minus": "Только для девочек",
       "url": "https://adlforward.ru/",
       "source": "каталог sportschools.ru, «секции для детей у метро Сокол»: «Чирлидинг для девочек с 5 лет. Выступления, участие в соревнованиях, летние сборы. Получение спортивных разрядов.» (проверено 2026-11-10)",
-      "verified_at": "2026-11-10",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "sport",
         "acrobatics"
@@ -418171,7 +418205,6 @@
       "how_to_find": null,
       "phone": "+7 (963) 691-98-64",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -434527,7 +434560,6 @@
       "how_to_find": null,
       "phone": "+7 (963) 603-36-03",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -439697,7 +439729,6 @@
       "how_to_find": null,
       "phone": "+7 (968) 438-66-23",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -440715,7 +440746,7 @@
       "price_adult": null,
       "free_note": "абонемент на месяц от 4000 ₽",
       "booking": "required",
-      "hours": "ежедневно 07:00–22:00",
+      "hours": "ежедневно 07:00–22:00, перерыв 13:00–14:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -440727,8 +440758,8 @@
       "minus": "Есть и взрослые группы",
       "url": "https://nerpaswim.ru/",
       "source": "карточка Яндекс Карт «Клуб плавания «Нерпа»» (Апрелевка, Августовская ул., 40), поиск по району; сайт https://nerpaswim.ru/ (проверено 2026-11-11)",
-      "verified_at": "2026-11-11",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "pools"
       ],
@@ -440737,38 +440768,8 @@
       "how_to_find": null,
       "phone": "+7 (916) 208-54-74",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
-      "open_mode": "hours",
-      "open_week": [
-        [
-          420,
-          1320
-        ],
-        [
-          420,
-          1320
-        ],
-        [
-          420,
-          1320
-        ],
-        [
-          420,
-          1320
-        ],
-        [
-          420,
-          1320
-        ],
-        [
-          420,
-          1320
-        ],
-        [
-          420,
-          1320
-        ]
-      ],
+      "open_mode": "unknown",
+      "open_week": null,
       "point_level": "вход",
       "point_door": "вход_яндекс"
     },
@@ -456788,7 +456789,7 @@
       "url": "https://fightclub.su/",
       "source": "сайт fightclub.su (сеть «Штурм», клуб «Чертаново»; страница «Группы для детей»: возраст по направлениям); карточка Яндекс Карт «Клуб единоборств Штурм» (Азовская ул., 32) (проверено 2026-11-13)",
       "verified_at": "2026-11-13",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "boxing",
         "karate",
@@ -456801,7 +456802,6 @@
       "how_to_find": null,
       "phone": "+7 (495) 181-11-85",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
