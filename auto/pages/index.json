@@ -275055,13 +275055,13 @@
 "url": "https://championika.ru/addr/tayninskaya/",
 "ok": false,
 "err": "HTTP Error 404: Not found",
-"tries": 2
+"tries": 3
 },
 "dpgaidar-mskobr-ru-contacts": {
 "url": "https://dpgaidar.mskobr.ru/contacts",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 2
+"tries": 3
 },
 "tsar-maket-ru-faq": {
 "url": "https://tsar-maket.ru/faq",
@@ -275500,8 +275500,8 @@
 "kff-su-contacts": {
 "url": "https://kff.su/contacts",
 "ok": false,
-"err": "HTTP Error 403: Forbidden",
-"tries": 1
+"err": "HTTP Error 404: Not Found",
+"tries": 2
 },
 "kff-su": {
 "url": "https://kff.su",
@@ -275520,8 +275520,8 @@
 "mindal-food-ru-contacts": {
 "url": "https://mindal-food.ru/contacts",
 "ok": false,
-"err": "HTTP Error 403: Forbidden",
-"tries": 1
+"err": "HTTP Error 404: Not Found",
+"tries": 2
 },
 "resthalif-ru": {
 "url": "https://resthalif.ru",
@@ -275557,5 +275557,38 @@
 "pages": 1,
 "bytes": 41,
 "tries": 0
+},
+"ttleader-pro": {
+"url": "https://ttleader.pro",
+"ok": true,
+"pages": 4,
+"bytes": 6785,
+"tries": 0
+},
+"ttleader-pro-contacts": {
+"url": "https://ttleader.pro/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"s53-mossport-ru-contacts": {
+"url": "https://s53.mossport.ru/contacts",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"chess-mossport-ru-contacts": {
+"url": "https://chess.mossport.ru/contacts",
+"ok": true,
+"pages": 1,
+"bytes": 39,
+"tries": 0
+},
+"mosffm-ru-kontakty": {
+"url": "https://mosffm.ru/kontakty",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
 }
 }
