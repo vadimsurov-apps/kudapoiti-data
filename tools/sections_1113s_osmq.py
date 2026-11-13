@@ -21,10 +21,16 @@ Q = {
  "taekwon-pro-novorossiyskaya": ("Люблино", "Новороссийская", "тхэквондо"),
  "taekwon-pro-karibia": ("Перово", "Зелёный", "Карибия"),
  "taekwon-pro-samory-mashela": ("Коньково", "Саморы Машела", "Гармония"),
+ "strike-fc-yablochkova": ("Тимирязевская", "Яблочкова", "Апиа"),
+ "strike-fc-smolnaya": ("Водный стадион", "Смольная", "Strike"),
+ "strike-fc-molodtsova": ("Бабушкинская", "Молодцова", "Strike"),
+ "strike-fc-lokomotivny": ("Окружная", "Локомотивный", "Strike"),
 }
 if __name__ == "__main__":
+    ONLY = set(sys.argv[1:])
     out = []
     for k, (st, street, nm) in Q.items():
+        if ONLY and k not in ONLY: continue
         if st not in ST: print("нет станции", st); continue
         a, b = ST[st]
         out.append({"id": "sec13s-" + k, "lat": a, "lon": b, "radius": 4000, "name": nm, "street": street})
