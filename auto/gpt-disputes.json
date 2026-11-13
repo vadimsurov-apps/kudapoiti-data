@@ -75,6 +75,35 @@
 }
 }
 },
+"ato-theatre": {
+"date": "2026-11-13",
+"note": "Официальный источник проверен; неподтверждённые поля оставлены unknown.",
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
+"sources": [
+"https://ato-teatr.ru/kontakty",
+"https://ato-teatr.ru/raspisanie",
+"https://www.ato-teatr.ru/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://ato-teatr.ru/kontakty",
+"value": "Москва, 6-я Парковая ул., 15"
+},
+"age": {
+"source": "https://ato-teatr.ru/raspisanie",
+"value": [
+4,
+17
+]
+},
+"hours": {
+"source": "https://ato-teatr.ru/kontakty",
+"value": "пн-пт 13:00-21:00; сб 11:00-17:00"
+}
+}
+},
 "bank-museum": {
 "date": "2026-11-12",
 "note": "Карточка смешивает площадку на Неглинной и детскую экскурсию «Дом рубля» на другой площадке; возраст не подтвержден.",
@@ -863,7 +892,8 @@
 "cin-budapest": {
 "date": "2026-11-13",
 "note": "Сейчас по этому адресу работает КАРО 6 Будапешт, а не старый отдельный кинотеатр.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://www.karofilm.ru/cinema/list"
 ],
@@ -882,7 +912,8 @@
 "cin-eldar": {
 "date": "2026-11-13",
 "note": "Официальная страница подтверждает работу зала; телефон и режим в карточке устарели.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://kinoklub-eldar.ru/contacts/"
 ],
@@ -969,7 +1000,8 @@
 "cin-karo-atrium": {
 "date": "2026-11-13",
 "note": "Официальная афиша сети подтверждает действующий кинотеатр; у сети указан единый телефон.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://www.karofilm.ru/cinema/list"
 ],
@@ -988,7 +1020,8 @@
 "cin-karo-aviapark": {
 "date": "2026-11-13",
 "note": "Официальный список сети подтверждает КАРО Sky 17 Авиапарк.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://www.karofilm.ru/cinema/list"
 ],
@@ -1257,6 +1290,26 @@
 }
 }
 },
+"climb-tokyo": {
+"applied": "2026-11-13",
+"date": "2026-11-13",
+"note": "Официальный источник проверен; неподтверждённые поля оставлены unknown.",
+"resolved": false,
+"result": "применено автоматически; осталось для сверщика: hours",
+"sources": [
+"https://climbin.ru/kids",
+"https://climbin.ru/price",
+"https://climbin.ru/zanyatiya/obuchenie-skalolazaniyu",
+"https://www.climbin.ru/"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://climbin.ru/price",
+"value": "пн,ср,пт 08:00-23:30; вт,чт 15:00-23:30; сб-вс 09:00-22:30"
+}
+}
+},
 "crazy-cart-aviapark": {
 "date": "2026-11-12",
 "note": "Официальная страница филиала подтверждает работу; прокат допускает детей с 3 лет, верхнее ограничение задано весом до 63 кг, поэтому возрастное поле не меняю.",
@@ -1276,6 +1329,14 @@
 "value": "https://crazy-cart.ru/avia/"
 }
 }
+},
+"ecobiocentre": {
+"date": "2026-11-13",
+"note": "Официальный источник проверен; неподтверждённые поля оставлены unknown.",
+"resolved": false,
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "frog-museum": {
 "applied": "2026-11-12",
@@ -1607,6 +1668,23 @@
 "status": "not_found",
 "wrong": {}
 },
+"lionsland": {
+"date": "2026-11-13",
+"note": "Цена в карточке устарела: официальный сайт указывает 750 ₽ детям до 13 лет включительно, 1500 ₽ взрослым и бесплатный вход до 3 лет; поле price оставлено unknown из-за неоднозначного формата двух тарифов.",
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
+"sources": [
+"https://lionsland.ru",
+"https://lionsland.ru/kontaktyi"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://lionsland.ru/kontaktyi",
+"value": "Московская область, г.о. Клин, 500 м вперёд мимо д. Караваево"
+}
+}
+},
 "lt-diky-zapad": {
 "date": "2026-11-12",
 "note": "Надёжного актуального первоисточника с полными данными найти не удалось.",
@@ -1756,6 +1834,28 @@
 "url": {
 "source": "https://mirax-park.com/infrastructure/zoopark/",
 "value": "https://mirax-park.com/infrastructure/zoopark/"
+}
+}
+},
+"mk-zoya": {
+"date": "2026-11-13",
+"note": "Официальный источник проверен; неподтверждённые поля оставлены unknown.",
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
+"sources": [
+"https://mk-zoya.ru",
+"https://mk-zoya.ru/",
+"https://mk-zoya.ru/contact/"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://mk-zoya.ru/",
+"value": "вт-пт 10:00-18:00; сб-вс 10:00-19:00"
+},
+"phone": {
+"source": "https://mk-zoya.ru/contact/",
+"value": "+7 (496) 275-18-75"
 }
 }
 },
@@ -2179,6 +2279,29 @@
 "adult": 700,
 "child": 450
 }
+}
+}
+},
+"tsar-maket": {
+"applied": "2026-11-13",
+"date": "2026-11-13",
+"note": "Официальный источник проверен; неподтверждённые поля оставлены unknown.",
+"resolved": false,
+"result": "применено автоматически; осталось для сверщика: age",
+"sources": [
+"https://tsar-maket.ru/",
+"https://tsar-maket.ru/faq",
+"https://tsar-maket.ru/kontaktyi"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://tsar-maket.ru/faq",
+"value": [
+4,
+14
+],
+"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
 }
 }
 },
