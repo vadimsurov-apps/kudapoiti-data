@@ -110,6 +110,30 @@
 "status": "not_found",
 "wrong": {}
 },
+"akademiya-gimnastiki-ryazansky": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Академия подтверждена официальным сайтом; минимальный возраст — 1,5 года.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://gymnasticsacademy.ru/"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://gymnasticsacademy.ru/",
+"value": [
+1.5,
+17
+]
+}
+}
+},
 "akademiya-ritma-yaroslavskoe": {
 "by": "Codex",
 "date": "2026-11-12",
@@ -517,6 +541,27 @@
 "status": "not_found",
 "wrong": {}
 },
+"art-klass-mitino": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Контакты и вход подтверждены официальной страницей.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://artklass.moscow/contacts"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://artklass.moscow/contacts",
+"value": "Вход: со стороны двора"
+}
+}
+},
 "art-zebra-gruzinskaya": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -708,6 +753,43 @@
 "status": "not_found",
 "wrong": {}
 },
+"aw-mytishchi": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Цена 1100 ₽ действует за час арены пн–чт; пт–вс час стоит 1500 ₽.",
+"ok": [
+"phone",
+"url"
+],
+"sources": [
+"https://mytishchi.another-world.com/",
+"https://mytishchi.another-world.com/about",
+"https://mytishchi.another-world.com/buy"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://mytishchi.another-world.com/about",
+"value": "Мытищи, ул. Мира, стр. 51, ТЦ «Июнь», пав. 5К-71"
+},
+"age": {
+"source": "https://mytishchi.another-world.com/buy",
+"value": [
+6,
+17
+]
+},
+"hours": {
+"source": "https://mytishchi.another-world.com/about",
+"value": "ежедневно 10:00-22:00"
+},
+"price": {
+"source": "https://mytishchi.another-world.com/",
+"value": 1100
+}
+}
+},
 "azbuka-football-lazurny": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -812,6 +894,22 @@
 "ok": [],
 "sources": [],
 "status": "not_found",
+"wrong": {}
+},
+"badminton-club-krasnogorsk": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Официальный сайт подтверждает действующий клуб и второй телефон +7 (916) 935-23-99.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://badmintonkng.ru/"
+],
+"status": "works",
 "wrong": {}
 },
 "badminton-club-skolkovo": {
@@ -1032,6 +1130,22 @@
 "ok": [],
 "sources": [],
 "status": "not_found",
+"wrong": {}
+},
+"beach-volleyball-school-sokol": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Официальный сайт подтверждает площадку; детский возраст по филиалу не указан.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://beach-volleyball.ru/"
+],
+"status": "works",
 "wrong": {}
 },
 "belokamennaya-samokatnaya": {
@@ -1307,6 +1421,29 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"brikobilandiya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-2.json",
+"note": "Страница ТРЦ подтверждает действующую игровую комнату и более позднее закрытие по пятницам и субботам.",
+"ok": [
+"address"
+],
+"sources": [
+"https://riviera.su/shop/bricobilandia"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://riviera.su/shop/bricobilandia",
+"value": "вс-чт 10:00-22:00; пт-сб 10:00-23:00"
+},
+"url": {
+"source": "https://riviera.su/shop/bricobilandia",
+"value": "https://riviera.su/shop/bricobilandia"
+}
+}
 },
 "bronnitsy-museum": {
 "by": "Codex",
@@ -4559,6 +4696,16 @@
 "status": "works",
 "wrong": {}
 },
+"cafe-vostok1-yasnogorskaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Надёжного актуального первоисточника по этому филиалу не найдено.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
 "cafe-winners-yankovskogo": {
 "by": "ChatGPT",
 "date": "2026-11-10",
@@ -5081,6 +5228,24 @@
 }
 }
 },
+"cheryomushki-sk-profsoyuznaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-2.json",
+"note": "Официальный сайт подтверждает действующий комплекс, часы и перечень секций единоборств.",
+"ok": [
+"address",
+"hours",
+"phone",
+"url"
+],
+"sources": [
+"https://cheremushki-sk.ru/",
+"https://cheremushki-sk.ru/contacts"
+],
+"status": "works",
+"wrong": {}
+},
 "chess-csbw-altufyevo": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -5184,6 +5349,22 @@
 "ok": [],
 "sources": [],
 "status": "not_found",
+"wrong": {}
+},
+"chessmax-filion": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Филиал подтверждён официальной страницей.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://chess-maximum.ru/moscow"
+],
+"status": "works",
 "wrong": {}
 },
 "chg-aeroport-sheremetyevo": {
@@ -6246,6 +6427,29 @@
 "status": "works",
 "wrong": {}
 },
+"cooknrun-strogino": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Филиал и адрес подтверждены официальным сайтом.",
+"ok": [
+"address"
+],
+"sources": [
+"https://cookn.run/o-kompanii?city=msk"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://cookn.run/o-kompanii?city=msk",
+"value": "Ориентир: строение 3, вывеска CooknRun"
+},
+"url": {
+"source": "https://cookn.run/o-kompanii?city=msk",
+"value": "https://cookn.run/?city=msk"
+}
+}
+},
 "cosaostra-vvedenskogo": {
 "by": "Codex",
 "date": "2026-11-12",
@@ -6462,6 +6666,16 @@
 "sources": [
 "https://deinega-team.ru/"
 ],
+"status": "works",
+"wrong": {}
+},
+"dekabrskogo-vosstaniya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Парк подтверждён документами mos.ru; точные часы и вход не найдены.",
+"ok": [],
+"sources": [],
 "status": "works",
 "wrong": {}
 },
@@ -6999,6 +7213,21 @@
 }
 }
 },
+"drift-cdm": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Официальная публикация владельца здания подтверждает площадку; актуальные часы и цены первоисточником не подтверждены.",
+"ok": [
+"address",
+"how"
+],
+"sources": [
+"https://hals-development.ru/presscenter/news/9412"
+],
+"status": "works",
+"wrong": {}
+},
 "drive-dance-novoperedelkino": {
 "by": "Codex",
 "date": "2026-11-12",
@@ -7293,6 +7522,25 @@
 "url": {
 "source": "https://egmuseum.ru/",
 "value": "https://egmuseum.ru/"
+}
+}
+},
+"egoryevsk-park-200": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Официальные региональные источники подтверждают парк, Простоквашино и детские площадки.",
+"ok": [
+"address"
+],
+"sources": [
+"https://welcome.mosreg.ru/parks/park-200-let-egor-evsku"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://welcome.mosreg.ru/parks/park-200-let-egor-evsku",
+"value": "+7 (496) 403-15-53"
 }
 }
 },
@@ -7758,6 +8006,54 @@
 "status": "works",
 "wrong": {}
 },
+"fk-angely-plyushchenko-molodenovo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Академия и контакты подтверждены официальным сайтом.",
+"ok": [
+"phone",
+"url"
+],
+"sources": [
+"https://angelsofplushenko.com/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://angelsofplushenko.com/",
+"value": "Одинцовский г.о., д. Молоденово, Речная ул., стр. 19"
+}
+}
+},
+"fk-morozovo-school": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Школа, возраст начала, адрес и режим комплекса подтверждены официальной страницей.",
+"ok": [
+"address",
+"age"
+],
+"sources": [
+"https://arenamorozovo.ru/fk"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://arenamorozovo.ru/fk",
+"value": "ежедневно 05:30-02:00"
+},
+"phone": {
+"source": "https://arenamorozovo.ru/fk",
+"value": "+7 (903) 284-28-48"
+},
+"url": {
+"source": "https://arenamorozovo.ru/fk",
+"value": "https://arenamorozovo.ru/fk"
+}
+}
+},
 "fk-victory-skating-solntsevo": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -7969,6 +8265,33 @@
 }
 }
 },
+"fryazino-dk-istok": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Касса работает вт–сб 11:00–19:00, перерыв 13:00–14:00.",
+"ok": [
+"address"
+],
+"sources": [
+"https://fdkistok.ru/kontakty"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://fdkistok.ru/kontakty",
+"value": "ежедневно 08:00-22:00"
+},
+"phone": {
+"source": "https://fdkistok.ru/kontakty",
+"value": "+7 (496) 255-48-22"
+},
+"url": {
+"source": "https://fdkistok.ru/kontakty",
+"value": "https://fdkistok.ru/"
+}
+}
+},
 "fryazino-grand-cinema": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -8085,6 +8408,22 @@
 "status": "works",
 "wrong": {}
 },
+"gepard-ferganskaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Клуб подтверждён официальной страницей организации.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://gepard-ferganskaja-ulitsa.clients.site/"
+],
+"status": "works",
+"wrong": {}
+},
 "ges2": {
 "by": "Codex",
 "date": "2026-11-12",
@@ -8092,6 +8431,22 @@
 "note": "Надёжного подтверждения по первоисточнику недостаточно.",
 "ok": [],
 "sources": [],
+"status": "works",
+"wrong": {}
+},
+"gladiator-vernadskogo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Филиал присутствует в актуальном списке залов официального сайта.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://sk-gladiator.ru/"
+],
 "status": "works",
 "wrong": {}
 },
@@ -8164,6 +8519,24 @@
 "note": "",
 "ok": [],
 "sources": [],
+"status": "works",
+"wrong": {}
+},
+"gorki-leninskie": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-2.json",
+"note": "Зимой парк открыт до 21:00; официальный сайт отдельно публикует тарифы разных музейных объектов.",
+"ok": [
+"address",
+"hours",
+"phone",
+"url"
+],
+"sources": [
+"https://mgorki.ru/",
+"https://mgorki.ru/o-muzee/kontakty/"
+],
 "status": "works",
 "wrong": {}
 },
@@ -8242,6 +8615,23 @@
 "value": "https://www.sc-grand.ru/"
 }
 }
+},
+"grandballet-smolenskaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-2.json",
+"note": "Официальный сайт подтверждает центральную школу, семь залов, этажи и телефон; заявлено направление «Балет с 2 лет».",
+"ok": [
+"address",
+"phone",
+"url",
+"how"
+],
+"sources": [
+"https://grand-ballet.ru/"
+],
+"status": "works",
+"wrong": {}
 },
 "granit-sambo-mitino": {
 "by": "Codex",
@@ -8460,6 +8850,23 @@
 "status": "works",
 "wrong": {}
 },
+"hide-dark-kostromskaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Филиал подтверждён официальным сайтом; найденная страница контактов содержит противоречивое описание метро, поэтому маршрут не подтверждён.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://strashnotemno.ru/",
+"https://strashnotemno.ru/msk/contacts"
+],
+"status": "works",
+"wrong": {}
+},
 "hip-star-novoperedelkino": {
 "by": "Codex",
 "date": "2026-11-12",
@@ -8532,6 +8939,46 @@
 }
 }
 },
+"hockey-sshor-mytishchi": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Место образовательной деятельности подтверждено официальным сайтом.",
+"ok": [
+"address"
+],
+"sources": [
+"https://sdushor-mo.ru/contacts/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://sdushor-mo.ru/contacts/",
+"value": "+7 (498) 610-05-35"
+},
+"url": {
+"source": "https://sdushor-mo.ru/contacts/",
+"value": "https://sdushor-mo.ru/"
+}
+}
+},
+"hockey-star-danilovskaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Филиал подтверждён официальным сайтом.",
+"ok": [
+"address",
+"phone",
+"url",
+"age"
+],
+"sources": [
+"https://www.hockey-star.ru/"
+],
+"status": "works",
+"wrong": {}
+},
 "hockey-star-krasnogo-mayaka": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -8562,6 +9009,48 @@
 ],
 "sources": [
 "https://hockey-star.ru/schedule/"
+],
+"status": "works",
+"wrong": {}
+},
+"hockeychance-magistralnaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Школа работает; официальный профиль указывает начало занятий с 3–4 лет.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://hockeychance.ru/",
+"https://taplink.cc/hockeychance"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://taplink.cc/hockeychance",
+"value": [
+3,
+17
+]
+}
+}
+},
+"hockeyway-khimki": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Филиал подтверждён официальным сайтом.",
+"ok": [
+"address",
+"phone",
+"url",
+"age"
+],
+"sources": [
+"https://hockeyway.ru/"
 ],
 "status": "works",
 "wrong": {}
@@ -9337,6 +9826,25 @@
 }
 }
 },
+"itc-mytishchi": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Центр и адрес подтверждены официальным сайтом.",
+"ok": [
+"address"
+],
+"sources": [
+"https://tenniscentr.ru/"
+],
+"status": "works",
+"wrong": {
+"url": {
+"source": "https://tenniscentr.ru/",
+"value": "https://tenniscentr.ru/"
+}
+}
+},
 "itronik-serpukhovsky-val": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -9798,6 +10306,30 @@
 }
 }
 },
+"joygym-tushinskaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Центр подтверждён официальным сайтом; занятия заявлены с 1,5 лет.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://joygym.ru"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://joygym.ru",
+"value": [
+1.5,
+14
+]
+}
+}
+},
 "judo-chertanovo-kirovogradskaya": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -9840,6 +10372,29 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"juna-life-aqua": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Официальная страница подтверждает аквапарк, адрес и основной телефон; режим самого аквапарка не найден.",
+"ok": [
+"phone"
+],
+"sources": [
+"https://akvapark.juna-life.ru/prices"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://akvapark.juna-life.ru/prices",
+"value": "Московская обл., д. Красная Горка, вл. 9"
+},
+"url": {
+"source": "https://akvapark.juna-life.ru/prices",
+"value": "https://akvapark.juna-life.ru/"
+}
+}
 },
 "justup-khodynka": {
 "by": "Codex",
@@ -10002,6 +10557,31 @@
 "url": {
 "source": "https://crazy-cart.ru/rio/",
 "value": "https://crazy-cart.ru/rio/"
+}
+}
+},
+"karting-drift-vegas-kashirskoe": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Филиал подтверждён официальным сайтом ТРК; отдельные данные Vegas Karting относятся к другому картодрому.",
+"ok": [],
+"sources": [
+"https://kashirskoe.vegas-city.ru/shopping/v1-driftkarting/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://kashirskoe.vegas-city.ru/shopping/v1-driftkarting/",
+"value": "МКАД, 24-й км, 1, ТРК «Vegas», 2 этаж"
+},
+"phone": {
+"source": "https://kashirskoe.vegas-city.ru/shopping/v1-driftkarting/",
+"value": "+7 (925) 022-28-88"
+},
+"url": {
+"source": "https://kashirskoe.vegas-city.ru/shopping/v1-driftkarting/",
+"value": "https://kashirskoe.vegas-city.ru/shopping/v1-driftkarting/"
 }
 }
 },
@@ -10833,6 +11413,32 @@
 "sources": [],
 "status": "works",
 "wrong": {}
+},
+"kolomna-park-mira": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Парк открыт 05:00–23:00; аттракционы «Карусель» — ежедневно 11:00–21:00, билеты от 250 ₽.",
+"ok": [
+"address",
+"price"
+],
+"sources": [
+"https://karusel-kolomna.ru/",
+"https://welcome.mosreg.ru/parks/park-mira",
+"https://welcome.mosreg.ru/stories/kolomna-dla-detej-sladkaa-pastila-tajny-selka-i-park-s-olenami"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://welcome.mosreg.ru/stories/kolomna-dla-detej-sladkaa-pastila-tajny-selka-i-park-s-olenami",
+"value": "ежедневно 05:00-23:00"
+},
+"url": {
+"source": "https://karusel-kolomna.ru/",
+"value": "https://karusel-kolomna.ru/"
+}
+}
 },
 "kolomna-pastila": {
 "by": "Codex",
@@ -14066,6 +14672,21 @@
 }
 }
 },
+"mosspectacle": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Официальный сайт подтверждает пространство на Покровке; остальные поля не подтверждены.",
+"ok": [
+"address",
+"url"
+],
+"sources": [
+"https://mosspectacle.ru/closed/"
+],
+"status": "works",
+"wrong": {}
+},
 "most-main": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -14454,6 +15075,34 @@
 "url": {
 "source": "https://moscowtyz.ru/",
 "value": "https://moscowtyz.ru/"
+}
+}
+},
+"muar": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Официальная страница также указывает бесплатный вход детям до 6 лет включительно и членам многодетных семей.",
+"ok": [
+"address",
+"url"
+],
+"sources": [
+"https://muar.ru/posetitelyam/bilety-rezhim-raboty/"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://muar.ru/posetitelyam/bilety-rezhim-raboty/",
+"value": "вт 13:00-21:00; ср 11:00-20:00; чт 13:00-21:00; пт-вс 11:00-20:00; пн выходной"
+},
+"how": {
+"source": "https://muar.ru/posetitelyam/bilety-rezhim-raboty/",
+"value": "Парковка: ближайшая городская платн��я — в Староваганьковском переулке; парковки на территории музея нет"
+},
+"phone": {
+"source": "https://muar.ru/posetitelyam/bilety-rezhim-raboty/",
+"value": "+7 (495) 697-13-06"
 }
 }
 },
@@ -15133,6 +15782,21 @@
 "status": "not_found",
 "wrong": {}
 },
+"orion-family-glavmosstroya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Клуб подтверждён официальной страницей учреждения.",
+"ok": [
+"address",
+"url"
+],
+"sources": [
+"https://tks-solntsevo.ru/%D0%BA%D0%BB%D1%83%D0%B1%D1%8B-2/%D1%81%D0%B5%D0%BC%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BB%D1%83%D0%B1-%D0%BE%D1%80%D0%B8%D0%BE%D0%BD/"
+],
+"status": "works",
+"wrong": {}
+},
 "orion-vdnh": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -15290,6 +15954,25 @@
 "sources": [],
 "status": "works",
 "wrong": {}
+},
+"ostrov-diskaveri-flotskaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Площадка в ТЦ «Флотилия» подтверждена официальным сайтом.",
+"ok": [
+"address"
+],
+"sources": [
+"https://discovery-island.ru/hovrino2"
+],
+"status": "works",
+"wrong": {
+"url": {
+"source": "https://discovery-island.ru/hovrino2",
+"value": "https://discovery-island.ru/hovrino2"
+}
+}
 },
 "ostrov-diskaveri-prince-plaza": {
 "by": "Codex",
@@ -15556,6 +16239,16 @@
 }
 }
 },
+"panda-sokolniki": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Не удалось надёжно подтвердить карточку по доступным первоисточникам.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
 "pantery-basket-cheremushkinskaya": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -15565,6 +16258,40 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"park-30-pobedy": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Парк подтверждён официальным документом mos.ru.",
+"ok": [],
+"sources": [
+"https://www.mos.ru/upload/newsfeed/articles/116ca113d6bdc0c105e7760826772e4d/sabbath24.pdf"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://www.mos.ru/upload/newsfeed/articles/116ca113d6bdc0c105e7760826772e4d/sabbath24.pdf",
+"value": "Москва, Кировоградская ул., д. 20–22"
+}
+}
+},
+"park-40-pobedy-zelenograd": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Существование и расположение парка подтверждены муниципальным источником.",
+"ok": [],
+"sources": [
+"https://www.zelenograd.ru/f/10266.pdf"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://www.zelenograd.ru/f/10266.pdf",
+"value": "Москва, Зеленоград, парк 40-летия Победы"
+}
+}
 },
 "park-50-oktyabrya": {
 "by": "Codex",
@@ -15994,6 +16721,31 @@
 "status": "works",
 "wrong": {}
 },
+"podolsk-talalikhin-park": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Официальный канал администрации сообщает новый режим 07:00–23:00, поэтому «круглосуточно» неверно.",
+"ok": [
+"address",
+"price"
+],
+"sources": [
+"https://t.me/s/podolskadm/46901?q=%23%D0%97%D0%BD%D0%B0%D1%82%D1%8C%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%D0%9F%D0%BE%D0%BC%D0%BD%D0%B8%D1%82%D1%8C",
+"https://www.culture.ru/institutes/35593/podolskii-gorodskoi-park-kultury-i-otdykha-im-v-v-talalikhina"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://t.me/s/podolskadm/46901?q=%23%D0%97%D0%BD%D0%B0%D1%82%D1%8C%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%D0%9F%D0%BE%D0%BC%D0%BD%D0%B8%D1%82%D1%8C",
+"value": "ежедневно 07:00-23:00"
+},
+"url": {
+"source": "https://www.culture.ru/institutes/35593/podolskii-gorodskoi-park-kultury-i-otdykha-im-v-v-talalikhina",
+"value": "https://podolskpark.ru/"
+}
+}
+},
 "podolsk-vystavochny-zal": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -16113,6 +16865,39 @@
 "url": {
 "source": "https://shm.ru/museum/hvb/",
 "value": "https://shm.ru/museum/hvb/"
+}
+}
+},
+"polycent-krasnoarmeyskaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Официальная страница содержит адрес, график, телефон и маршрут ко входу.",
+"ok": [],
+"sources": [
+"https://polycent.ru/contacts/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://polycent.ru/contacts/",
+"value": "Красноармейская ул., 4, Центральный дом авиации и космоса ДОСААФ России, 2 этаж"
+},
+"hours": {
+"source": "https://polycent.ru/contacts/",
+"value": "ср, пт 14:00-20:00; сб-вс 10:00-19:00"
+},
+"how": {
+"source": "https://polycent.ru/contacts/",
+"value": "Вход: с торца здания, с улицы Пилота Нестерова\nЭтаж: 2"
+},
+"phone": {
+"source": "https://polycent.ru/contacts/",
+"value": "+7 (499) 490-48-45"
+},
+"url": {
+"source": "https://polycent.ru/contacts/",
+"value": "https://polycent.ru/"
 }
 }
 },
@@ -16502,6 +17287,16 @@
 }
 }
 },
+"pushisty-ostrov": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Не удалось надёжно подтвердить карточку по доступным первоисточникам.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
 "pushkin-museum-prechistenka": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -16626,6 +17421,16 @@
 "value": "http://questrunners.ru/"
 }
 }
+},
+"qwestern-leningradsky": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Не удалось надёжно подтвердить карточку по доступным первоисточникам.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "racketball-strelbishchensky": {
 "by": "Codex",
@@ -16816,6 +17621,29 @@
 "status": "works",
 "wrong": {}
 },
+"rfhockey-aviapark": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Официальный сайт уточняет фактическое начало набора с 3,5 лет.",
+"ok": [
+"address",
+"phone",
+"url",
+"age"
+],
+"sources": [
+"https://rfhockey.ru/",
+"https://rfhockey.ru/privacy"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://rfhockey.ru/",
+"value": "Этаж: 4, ТРЦ «Авиапарк»"
+}
+}
+},
 "rg-studio1-obraztsova": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -16835,6 +17663,26 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"rink-lobnya-ds": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "После модернизации каток вновь открыт; постоянное расписание массовых сеансов не подтверждено.",
+"ok": [
+"address"
+],
+"sources": [
+"https://ds-lobnya.ledokat.ru/",
+"https://lobnya.ru/%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BA%D0%B0%D1%82%D0%BE%D0%BA-%D0%B4%D0%B2%D0%BE%D1%80%D1%86%D0%B0-%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0-%D0%BB%D0%BE%D0%B1%D0%BD%D1%8F-%D0%BE/"
+],
+"status": "works",
+"wrong": {
+"url": {
+"source": "https://ds-lobnya.ledokat.ru/",
+"value": "https://dsplobnya.ru/"
+}
+}
 },
 "rink-luzhniki": {
 "by": "Codex",
@@ -16966,6 +17814,32 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"rublev-museum": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-2.json",
+"note": "У карточки неполные часы: официальный сайт публикует отдельный график по всем дням и сообщает о свободном входе на территорию ежедневно 09:00–21:00.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://www.rublev-museum.ru/visitors/address-and-opening-hours/",
+"https://www.rublev-museum.ru/visitors/faqs/"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://www.rublev-museum.ru/visitors/address-and-opening-hours/",
+"value": "пн, вт, пт 11:00-19:00; чт 13:00-21:00; сб 11:00-21:00; вс 11:00-18:00; ср выходной"
+},
+"how": {
+"source": "https://www.rublev-museum.ru/visitors/faqs/",
+"value": "Парковка: бесплатная у Лефортовского суда, Андроньевская пл., 5/9; платная у Андроньевской пл., 8\nОриентир: постоянная экспозиция и касса слева от Спасского собора"
+}
+}
 },
 "ruk-boy-college18": {
 "by": "Codex",
@@ -17243,6 +18117,23 @@
 "value": "ул. Малая Полянка, 10, стр. 1"
 }
 }
+},
+"sambo-vodny-flotskaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Клуб подтверждён официальным сайтом.",
+"ok": [
+"address",
+"phone",
+"url",
+"age"
+],
+"sources": [
+"https://sambo-vodny.ru/"
+],
+"status": "works",
+"wrong": {}
 },
 "samotsvety-museum": {
 "by": "Codex",
@@ -17886,6 +18777,16 @@
 "status": "not_found",
 "wrong": {}
 },
+"sinegoriya-chess": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Надёжного актуального первоисточника по этому направлению не найдено.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
 "sireneviy-sad": {
 "by": "Codex",
 "date": "2026-11-12",
@@ -17995,6 +18896,38 @@
 }
 }
 },
+"ski-school-kant": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Официальный сайт подтверждает комплекс и обучение детей с 3 лет; часы конкретного склона не зафиксированы.",
+"ok": [],
+"sources": [
+"https://kant-sport.ru/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://kant-sport.ru/",
+"value": "Москва, Электролитный пр., вл. 7Б"
+},
+"age": {
+"source": "https://kant-sport.ru/",
+"value": [
+3,
+17
+]
+},
+"phone": {
+"source": "https://kant-sport.ru/",
+"value": "+7 (495) 669-78-49"
+},
+"url": {
+"source": "https://kant-sport.ru/",
+"value": "https://kant-sport.ru/"
+}
+}
+},
 "ski-smartsnow-balashikha": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -18058,6 +18991,25 @@
 }
 }
 },
+"smena-kapotnya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Стадион подтверждён официальной страницей спортивных объектов.",
+"ok": [
+"address"
+],
+"sources": [
+"https://chertanovo.mossport.ru/sport-objects/"
+],
+"status": "works",
+"wrong": {
+"url": {
+"source": "https://chertanovo.mossport.ru/sport-objects/",
+"value": "https://chertanovo.mossport.ru/sport-objects/"
+}
+}
+},
 "sobranie-museum": {
 "by": "Codex",
 "date": "2026-11-12",
@@ -18084,6 +19036,29 @@
 "phone": {
 "source": "https://mus-col.com/contacts/",
 "value": "+7 (495) 234-06-30"
+}
+}
+},
+"sofia-rg-mkad73": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Официальный сайт указывает набор с 3 лет, группы 6–9 лет и бесплатное пробное занятие.",
+"ok": [
+"age"
+],
+"sources": [
+"https://scsofia.ru/gimnastika-dlya-detej-himki.html"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://scsofia.ru/gimnastika-dlya-detej-himki.html",
+"value": "Химки, МКАД, 73-й км, 7, ТЦ «Арфа», Alex Fitness, 2 этаж"
+},
+"how": {
+"source": "https://scsofia.ru/gimnastika-dlya-detej-himki.html",
+"value": "Этаж: 2, Alex Fitness в ТЦ «Арфа»"
 }
 }
 },
@@ -18408,6 +19383,29 @@
 "status": "works",
 "wrong": {}
 },
+"ss1-zhavoronki": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-2.json",
+"note": "Официальная страница подтверждает детские группы 7–12 лет, 8000 ₽ в месяц и бассейн 25 м на 6 дорожек глубиной до 1,8 м.",
+"ok": [
+"address",
+"phone",
+"url",
+"price",
+"age"
+],
+"sources": [
+"https://swim-school-1.ru/basseyni/javoronki"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://swim-school-1.ru/basseyni/javoronki",
+"value": "ежедневно 07:00-23:00"
+}
+}
+},
 "sshor-41-moskvorechye-lesteva": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -18586,6 +19584,27 @@
 "sources": [],
 "status": "works",
 "wrong": {}
+},
+"swimrocket-medvedkovo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-2.json",
+"note": "Официальная страница подтверждает занятия детей от 4 лет, две чаши 25 м на 4 и 6 дорожек и стоимость от 8000 ₽ в месяц.",
+"ok": [
+"address",
+"url",
+"age"
+],
+"sources": [
+"https://www.swimrocket.ru/bassein-sk-medvedkovo/"
+],
+"status": "works",
+"wrong": {
+"price": {
+"source": "https://www.swimrocket.ru/bassein-sk-medvedkovo/",
+"value": 8000
+}
+}
 },
 "swimrocket-zemlyanoy-val": {
 "by": "Codex",
@@ -18867,6 +19886,26 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"tennis-borodina-degunino": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Официальный сайт подтверждает круглогодичную площадку.",
+"ok": [
+"address",
+"url"
+],
+"sources": [
+"https://tennisborodina.com/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://tennisborodina.com/",
+"value": "+7 (925) 471-74-76"
+}
+}
 },
 "tennis-dmitrov-academy": {
 "by": "Codex",
@@ -19650,6 +20689,16 @@
 "status": "works",
 "wrong": {}
 },
+"tyufeleva-roshcha": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Парк подтверждён реестром озеленённых территорий mos.ru; точные часы и вход не найдены.",
+"ok": [],
+"sources": [],
+"status": "works",
+"wrong": {}
+},
 "tyum-theatre": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -19727,6 +20776,39 @@
 "status": "works",
 "wrong": {}
 },
+"vasiliev-museum": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-2.json",
+"note": "Официальная страница публикует часы, тарифы, бесплатный вход детям до 5 лет и условия детских программ по заявкам.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://museum-slav.com/contacts"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://museum-slav.com/contacts",
+"value": "вт-вс 11:00-19:00"
+},
+"how": {
+"source": "https://museum-slav.com/contacts",
+"value": "Парковка: бесплатная, чуть дальше автобусной остановки\nОриентир: от остановки «Ул. Угличская» пройти 30 м вперёд до калитки ограды музея"
+},
+"price": {
+"source": "https://museum-slav.com/contacts",
+"value": {
+"adult": 400,
+"child": 200,
+"free_under": 5
+}
+}
+}
+},
 "vbv-retro-cars": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -19788,6 +20870,26 @@
 "url": {
 "source": "https://vedogon.ru/",
 "value": "https://vedogon.ru/"
+}
+}
+},
+"velichko-park-skhodnya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Парк и круглосуточный режим подтверждены официальной страницей.",
+"ok": [
+"address",
+"hours"
+],
+"sources": [
+"https://www.parkihimki.ru/park_velichko"
+],
+"status": "works",
+"wrong": {
+"url": {
+"source": "https://www.parkihimki.ru/park_velichko",
+"value": "https://www.parkihimki.ru/park_velichko"
 }
 }
 },
@@ -20037,6 +21139,23 @@
 "value": "https://volley.odin-sport.ru/"
 }
 }
+},
+"volley-rusvolley-planernaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-2.json",
+"note": "Школа работает, но зал на ул. Вилиса Лациса не найден в актуальном официальном списке залов; закрытие филиала прямо не подтверждено.",
+"ok": [
+"phone",
+"url",
+"price"
+],
+"sources": [
+"https://rusvolley.ru/",
+"https://rusvolley.ru/kids/"
+],
+"status": "not_found",
+"wrong": {}
 },
 "volna-ceramics-oktyabrsky": {
 "by": "Codex",
@@ -20305,6 +21424,23 @@
 "status": "works",
 "wrong": {}
 },
+"yakovlev-reutov": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Контакты подтверждены официальной страницей.",
+"ok": [
+"address",
+"hours",
+"phone",
+"url"
+],
+"sources": [
+"https://yakovlevteam.ru/contacts/"
+],
+"status": "works",
+"wrong": {}
+},
 "yandex-museum-avrora": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -20333,6 +21469,38 @@
 "value": "+7 (495) 646-00-32"
 }
 }
+},
+"yaropolets-goncharov-estate": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-1.json",
+"note": "Объект существует; режим посещения не подтверждён.",
+"ok": [],
+"sources": [
+"https://base.garant.ru/412920985/",
+"https://www.culture.ru/institutes/13998/yaropolec-goncharovykh"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://base.garant.ru/412920985/",
+"value": "Московская обл., Волоколамский муниципальный округ, с. Ярополец, Пушкинская ул., 19А"
+},
+"url": {
+"source": "https://www.culture.ru/institutes/13998/yaropolec-goncharovykh",
+"value": "https://www.culture.ru/institutes/13998/yaropolec-goncharovykh"
+}
+}
+},
+"yaropolets-museum": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-0.json",
+"note": "Не удалось надёжно подтвердить карточку по доступным первоисточникам.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "yauza-park": {
 "by": "Codex",
