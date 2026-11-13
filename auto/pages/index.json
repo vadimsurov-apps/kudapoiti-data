@@ -274929,13 +274929,13 @@
 "url": "https://terfit.ru/t-swim-school/khovrino/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "terfit-ru-t-swim-school-yuzhnoe-butovo": {
 "url": "https://terfit.ru/t-swim-school/yuzhnoe-butovo/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "terfit-ru-t-swim-school-lyubertsy": {
 "url": "https://terfit.ru/t-swim-school/lyubertsy/",
@@ -274955,13 +274955,13 @@
 "url": "https://terfit.ru/t-swim-school/reutov-1/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "terfit-ru-t-swim-school-reutov-2": {
 "url": "https://terfit.ru/t-swim-school/reutov-2/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "terfit-ru-t-swim-school-zelenograd": {
 "url": "https://terfit.ru/t-swim-school/zelenograd/",
@@ -274974,7 +274974,7 @@
 "url": "https://terfit.ru/t-swim-school/zelenograd-2/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "www-triumfswim-ru": {
 "url": "https://www.triumfswim.ru/",
@@ -274999,15 +274999,16 @@
 },
 "iwillswim-ru-mgpu": {
 "url": "https://iwillswim.ru/mgpu/",
-"ok": false,
-"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
 "tries": 2
 },
 "iwillswim-ru-raspisanie": {
 "url": "https://iwillswim.ru/raspisanie/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "riamo-ru-news-nedvizhimost-raboty-po-kapitalnomu-remontu-bassejna-briz-v-dmitrove-vypolnen": {
 "url": "https://riamo.ru/news/nedvizhimost/raboty-po-kapitalnomu-remontu-bassejna-briz-v-dmitrove-vypolneny-na-50/",
@@ -275022,5 +275023,18 @@
 "pages": 3,
 "bytes": 16000,
 "tries": 0
+},
+"trad-vkusa-ru": {
+"url": "https://trad-vkusa.ru/",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"trad-vkusa-ru-contacts": {
+"url": "https://trad-vkusa.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
 }
 }
