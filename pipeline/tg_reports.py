@@ -83,9 +83,15 @@ def next_place(chat, state, checks):
     done = {c["place_id"] for c in checks if c.get("date", "") >= fresh}
     skipped = set(state.setdefault("skipped", {}).get(chat, []))
     doubt = doubt_map()
+    # Вадим 13.11 16:16: «Все сомнительные после проверки GPT отправляем Виктории» — сначала карточки, которые GPT уже
+    # проверил и которые остались сомнительными; те, что GPT ещё не смотрел, — после них.
+    try:
+        gpt_seen = set(json.load(open("auto/gpt-checks.json")))
+    except Exception:
+        gpt_seen = set()
     def rank(p):
         cats = p.get("cats") or []
-        return (-doubt.get(p["id"], (0, []))[0], min([PRIORITY.index(c) for c in cats if c in PRIORITY] or [len(PRIORITY)]))
+        return (p["id"] not in gpt_seen, -doubt.get(p["id"], (0, []))[0], min([PRIORITY.index(c) for c in cats if c in PRIORITY] or [len(PRIORITY)]))
     left = [p for p in all_places() if p["id"] not in done and p["id"] not in skipped]
     left.sort(key=rank)
     if left:
