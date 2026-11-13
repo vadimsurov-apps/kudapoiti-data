@@ -1,21 +1,39 @@
-"""fixer 13.11: перерисовка иконки кинотеатра «Победа» (Зарайск) по сообщению Вадима «Аватар не подходит» (был самосвал)."""
+"""Перерисовка иконки по сообщению Вадима 13.11 (робот fixer): cafe-la-riva — «Не подходит аватарка»
+(была рыбалка, не про ресторан). Итальянский ресторан: свой сюжет — неаполитанские струффоли (в реестре нет).
+Запуск: python3 tools/icons_fixer_1113.py → icons-src/cafe-la-riva.svg"""
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from draw_icons import svg, s, eye, sparkle, O
+import draw_icons
+from draw_icons import svg, eye, face, sparkle, s, O
 
-body = f'''
-<rect x="0" y="0" width="128" height="128" fill="#2E2752"/>
-<path d="M118 128 L20 30 L108 22Z" fill="#FFF3B0" opacity=".28"/>
-<rect x="16" y="20" width="96" height="58" rx="5" fill="#FFF8E2" {s()}/>
-<path d="M44 74 Q40 60 52 54 L50 34 Q50 26 56 28 Q60 30 60 40 L61 50 L64 32 Q66 24 72 28 Q75 32 71 44 L68 54 Q82 58 80 74Z" fill="#4A3F7A"/>
-<circle cx="62" cy="62" r="2.4" fill="#FFF8E2"/>
-<path d="M66 68 Q70 71 74 67" fill="none" stroke="#FFF8E2" stroke-width="2.2" stroke-linecap="round"/>
-<path d="M88 128 Q84 104 92 96 L90 80 Q90 74 95 75 Q99 76 99 84 L100 92 L103 78 Q105 72 110 75 Q113 78 110 88 L107 98 Q114 104 112 128Z" fill="#F9C9A8" {s()}/>
-<path d="M96 108 Q100 106 104 108" fill="none" {s('stroke-width="2.2"')}/>
-<rect x="0" y="100" width="80" height="28" fill="#8C2E4B" {s()}/>
-<path d="M0 100 Q13 92 26 100 Q39 92 52 100 Q65 92 78 100" fill="#B23A5E" {s()}/>
-{sparkle(28, 32, 4, "#FFD45E")}{sparkle(100, 30, 3, "#FFD45E")}
-'''
-icon = svg("night", body)
-open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "icons-src", "pobeda-zaraysk.svg"), "w").write(icon)
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "icons-src")
+draw_icons.BG["zz_lariva"] = ("#FFF0F6", "#E0679A")
+
+balls = []
+rows = [(5, 92), (4, 80), (3, 68), (2, 56)]
+for n, y in rows:
+    x0 = 64 - (n - 1) * 10.5
+    for i in range(n):
+        balls.append((x0 + i * 21, y))
+SPR = ["#FF4F7B", "#4FC3F7", "#7CD26E", "#FFFFFF", "#B57CF0", "#FFB21E"]
+body = '<ellipse cx="64" cy="104" rx="50" ry="13" fill="#FFFFFF" ' + s() + '/>'
+body += '<ellipse cx="64" cy="102" rx="38" ry="7" fill="none" stroke="#9FD8F0" stroke-width="2.4"/>'
+for k, (x, y) in enumerate(balls):
+    body += f'<circle cx="{x:.1f}" cy="{y}" r="11.5" fill="#F2A93B" {s()}/>'
+    body += f'<ellipse cx="{x-3.5:.1f}" cy="{y-4}" rx="3.6" ry="2.4" fill="#FFE1A0"/>'
+    for j in range(2):
+        c = SPR[(k * 2 + j) % len(SPR)]
+        dx, dy = (-4 + j * 8, 3 - j * 2)
+        body += f'<path d="M{x+dx-2:.1f} {y+dy} l3.5 -1.6" stroke="{c}" stroke-width="2.6" stroke-linecap="round"/>'
+# лицо горки — на среднем ряду
+body += face(64, 84, d=11, k=1.25)
+# верхний шарик съезжает по склону вправо, как ребёнок с горки
+bx, by = 98, 50
+body += f'<path d="M82 44 q-6 -3 -12 -2 M84 36 q-6 -4 -12 -3" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>'
+body += f'<circle cx="{bx}" cy="{by}" r="11.5" fill="#F7B547" {s()}/>'
+body += f'<ellipse cx="{bx-3}" cy="{by-4}" rx="3.6" ry="2.4" fill="#FFE1A0"/>'
+body += eye(bx - 4, by + 1, 0.6) + eye(bx + 4, by + 1, 0.6)
+body += f'<ellipse cx="{bx}" cy="{by+6.5}" rx="3" ry="2.6" fill="{O}"/>'
+body += sparkle(30, 34, 6) + sparkle(104, 82, 4.5)
+open(os.path.join(OUT, "cafe-la-riva.svg"), "w").write(svg("zz_lariva", body))
 print("ok")
