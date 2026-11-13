@@ -345742,7 +345742,7 @@
 "url": "https://beswim.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 2
+"tries": 3
 },
 "shark-clients-site": {
 "url": "https://shark.clients.site/",
@@ -345991,8 +345991,9 @@
 },
 "barabulka-com": {
 "url": "https://barabulka.com/",
-"ok": false,
-"err": "<urlopen error [Errno 101] Network is unreachable>",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
 "tries": 1
 },
 "miniswimmer-com": {
@@ -346006,7 +346007,7 @@
 "url": "https://artswimchampion.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
-"tries": 1
+"tries": 2
 },
 "mbudo-kashira-ru": {
 "url": "https://mbudo-kashira.ru/",
@@ -346019,31 +346020,31 @@
 "url": "https://sportlyt.edumsko.ru/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 1
+"tries": 2
 },
 "barabulka-com-price": {
 "url": "https://barabulka.com/price",
 "ok": false,
-"err": "<urlopen error [Errno 101] Network is unreachable>",
-"tries": 1
+"err": "HTTP Error 404: Not Found",
+"tries": 2
 },
 "miniswimmer-com-price": {
 "url": "https://miniswimmer.com/price",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "www-morskoy-lvenok-ru-price": {
 "url": "https://www.morskoy-lvenok.ru/price",
 "ok": false,
 "err": "<urlopen error [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1081)>",
-"tries": 1
+"tries": 2
 },
 "hardysport-ru-price": {
 "url": "https://hardysport.ru/price",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "ustinovswim-pro-krasnogorsk": {
 "url": "https://ustinovswim.pro/krasnogorsk",
@@ -346054,15 +346055,16 @@
 },
 "moscowtyz-ru": {
 "url": "https://moscowtyz.ru/",
-"ok": false,
-"err": "<urlopen error timed out>",
+"ok": true,
+"pages": 3,
+"bytes": 11861,
 "tries": 1
 },
 "moscowtyz-ru-contacts": {
 "url": "https://moscowtyz.ru/contacts/",
 "ok": false,
-"err": "<urlopen error timed out>",
-"tries": 1
+"err": "HTTP Error 404: Not Found",
+"tries": 2
 },
 "www-tretyakovgallery-ru-for-visitors-museums-tretyakovskaya-galereya": {
 "url": "https://www.tretyakovgallery.ru/for-visitors/museums/tretyakovskaya-galereya/",
@@ -346082,24 +346084,72 @@
 "url": "https://park-meshersky.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "mitino-bapark-ru-contacts": {
 "url": "https://mitino.bapark.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "www-mosgorsad-ru-parks-ermitazh": {
 "url": "https://www.mosgorsad.ru/parks/ermitazh",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "coach-doaflip-ru": {
 "url": "https://coach.doaflip.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
+"tries": 2
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-po40-1113z-text-d0-a8-d0-ba-d0-be-d0-bb-d0-b0-20": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?po40=1113z&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%BF%D0%BB%D0%B0%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%95%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%A3%D1%81%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%91%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%204%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%2010",
+"ok": true,
+"pages": 5,
+"bytes": 6538,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-po41-1113z-text-d0-90-d0-ba-d0-b2-d0-b0-d1-81-d1": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?po41=1113z&text=%D0%90%D0%BA%D0%B2%D0%B0%D1%81%D1%82%D1%83%D0%B4%D0%B8%D1%8F%20%D0%BD%D0%B0%20%D0%91%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D0%B9%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%91%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%204%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%2010",
+"ok": true,
+"pages": 4,
+"bytes": 6147,
+"tries": 0
+},
+"ustinovswim-pro-dates": {
+"url": "https://ustinovswim.pro/dates/",
+"ok": true,
+"pages": 2,
+"bytes": 4460,
+"tries": 0
+},
+"ustinovswim-pro-price": {
+"url": "https://ustinovswim.pro/price",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
 "tries": 1
+},
+"barabulka-com-pravila": {
+"url": "https://barabulka.com/pravila",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"barabulka-com-kontakty": {
+"url": "https://barabulka.com/kontakty",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"miniswimmer-com-rec": {
+"url": "https://miniswimmer.com/#rec",
+"ok": true,
+"pages": 2,
+"bytes": 16000,
+"tries": 0
 }
 }
