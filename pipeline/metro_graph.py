@@ -74,6 +74,8 @@ def build(rel_path, routes_path):
         colour = t.get("colour") or mt.get("colour") or "#888888"
         lname = (mt.get("name") or t.get("name") or ref).split(":")[0].strip()
         if is_mcc(t): lname = "Московское центральное кольцо"
+        if is_mcc(t) or not re.fullmatch(r"#[0-9A-Fa-f]{6}", colour or ""):
+            colour = "#E8514B" if is_mcc(t) else "#888888"     # приложение понимает только #RRGGBB
         lines.setdefault(ref, {"id": ref, "name": lname, "color": colour})
         stops = []
         for typ, r, role in mem:
