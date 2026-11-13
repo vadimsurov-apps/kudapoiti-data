@@ -5928,6 +5928,29 @@
 "status": "works",
 "wrong": {}
 },
+"chg-aeroport-domodedovo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "Официальный сайт также подтверждает бесплатные круглосуточные пеленальные комнаты на 1 и 2 этажах терминала.",
+"ok": [
+"hours"
+],
+"sources": [
+"https://www.dme.aero/airportguide/children/mother-and-child/"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://www.dme.aero/airportguide/children/mother-and-child/",
+"value": "Вход: терминал 2, вход № 5\nЭтаж: 1\nОриентир: стойка регистрации № 156"
+},
+"url": {
+"source": "https://www.dme.aero/airportguide/children/mother-and-child/",
+"value": "https://www.dme.aero/"
+}
+}
+},
 "chg-aeroport-sheremetyevo": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -5937,6 +5960,27 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"chg-aeroport-vnukovo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "Официальные страницы противоречат друг другу по режиму комнаты: обзор говорит 24/7, страница контактов — 09:00-18:00.",
+"ok": [
+"hours",
+"url"
+],
+"sources": [
+"https://special-partners.vnukovo.ru/ru/kontakti/",
+"https://special-partners.vnukovo.ru/ru/med-first-aid-room/komnata-materi-irebenka/"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://special-partners.vnukovo.ru/ru/kontakti/",
+"value": "Этаж: 3, терминал А"
+}
+}
 },
 "chg-andreevskaya-nab": {
 "by": "Codex",
@@ -5981,6 +6025,34 @@
 "url": {
 "source": "https://best-chg.ru/orehovo",
 "value": "https://best-chg.ru/orehovo"
+}
+}
+},
+"chg-cdm-lubyanka": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "",
+"ok": [
+"address"
+],
+"sources": [
+"https://cdm-moscow.ru/services/pelenalnaya-komnata",
+"https://cdm-moscow.ru/visit"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://cdm-moscow.ru/visit",
+"value": "вс-чт 10:00-22:00; пт, сб 10:00-23:00"
+},
+"how": {
+"source": "https://cdm-moscow.ru/services/pelenalnaya-komnata",
+"value": "Этаж: 2-6, рядом с туалетами; по две комнаты на 2 и 3 этажах, по одной на 4, 5 и 6 этажах"
+},
+"url": {
+"source": "https://cdm-moscow.ru/services/pelenalnaya-komnata",
+"value": "https://cdm-moscow.ru/"
 }
 }
 },
@@ -6034,11 +6106,56 @@
 "status": "not_found",
 "wrong": {}
 },
+"chg-lenta-domodedovo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "Официальный список подтверждает магазин, но не наличие пеленального столика; сам объект пеленальной комнаты не подтверждён.",
+"ok": [
+"hours",
+"url"
+],
+"sources": [
+"https://lenta.com/allmarkets/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://lenta.com/allmarkets/",
+"value": "Домодедово, ул. Кирова, 28, гипермаркет «Лента»"
+}
+}
+},
 "chg-mcd-podolsk": {
 "by": "Codex",
 "date": "2026-11-13",
 "file": "20261113-1624-2.json",
 "note": "Не удалось независимо подтвердить карточку по доступным первоисточникам.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
+"chg-mega-khimki": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "Официальную страницу, подтверждающую конкретный пеленальный столик и ориентир, найти не удалось.",
+"ok": [
+"hours",
+"url"
+],
+"sources": [
+"https://mega.ru/khimki/"
+],
+"status": "works",
+"wrong": {}
+},
+"chg-muzeon": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "Надёжного первоисточника, подтверждающего отдельную пеленальную комнату или столик именно в указанной точке, найти не удалось.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -6053,6 +6170,33 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"chg-olonetsky-skver": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "Надёжного первоисточника, подтверждающего отдельную пеленальную комнату или столик именно в указанной точке, найти не удалось.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
+"chg-park-mitino": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "Найдено подтверждение комнаты матери и ребёнка с пеленальным столиком, но координаты карточки не подтверждены.",
+"ok": [],
+"sources": [
+"https://www.mskagency.ru/materials/3327479"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://www.mskagency.ru/materials/3327479",
+"value": "Ориентир: у беседки со стороны входа с ул. Барышихи, д. 6"
+}
+}
 },
 "chg-park-sokolniki": {
 "by": "Codex",
@@ -6072,6 +6216,16 @@
 "ok": [],
 "sources": [],
 "status": "works",
+"wrong": {}
+},
+"chg-podolsk-bulvar-pobedy": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "Надёжного первоисточника, подтверждающего отдельную пеленальную комнату или столик именно в указанной точке, найти не удалось.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "chg-shishkin-les-istra": {
@@ -6114,6 +6268,18 @@
 "value": "https://tsaritsyno-museum.ru/"
 }
 }
+},
+"chg-vdnh-north": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "Официальный сайт подтверждает комнаты матери и ребёнка на ВДНХ, но не подтверждает отдельную комнату у Северной аллеи и павильона № 66; актуальная флагманская комната находится в арке Южного входа.",
+"ok": [],
+"sources": [
+"https://vdnh.ru/news/4893/"
+],
+"status": "not_found",
+"wrong": {}
 },
 "chistaya-liniya": {
 "by": "Codex",
@@ -7486,6 +7652,36 @@
 "status": "not_found",
 "wrong": {}
 },
+"dixxodrom-izmailovo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "",
+"ok": [
+"phone",
+"url",
+"price"
+],
+"sources": [
+"https://dixxodrom.ru/kontakty/",
+"https://yandex.com/maps/org/diksodrom/1086706159/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://dixxodrom.ru/kontakty/",
+"value": "Москва, Измайловское ш., вл. 73, стр. 4"
+},
+"hours": {
+"source": "https://dixxodrom.ru/kontakty/",
+"value": "пн 12:00-23:00; вт-вс 11:00-23:00"
+},
+"how": {
+"source": "https://dixxodrom.ru/kontakty/",
+"value": "Вход: въезд с Измайловского шоссе по стрелке «картинг»\nОриентир: от метро «Партизанская» идти вдоль Измайловского шоссе"
+}
+}
+},
 "djigit-altufyevo": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -7616,6 +7812,33 @@
 "status": "works",
 "wrong": {}
 },
+"dk-khimik-voskresensk": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "",
+"ok": [
+"address"
+],
+"sources": [
+"https://xn----dtbjavccxfqfkdc6d.xn--p1ai/dk-himik.html"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://xn----dtbjavccxfqfkdc6d.xn--p1ai/dk-himik.html",
+"value": "ежедневно 08:00-23:00"
+},
+"phone": {
+"source": "https://xn----dtbjavccxfqfkdc6d.xn--p1ai/dk-himik.html",
+"value": "+7 (496) 442-56-00"
+},
+"url": {
+"source": "https://xn----dtbjavccxfqfkdc6d.xn--p1ai/dk-himik.html",
+"value": "http://црк-воскресенск.рф"
+}
+}
+},
 "dkhsh-7-pervomayskaya": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -7674,6 +7897,33 @@
 "url": {
 "source": "https://www.culture.ru/institutes/22146/muzei-zapovednik-dmitrovskii-kreml-kaznacheistvo",
 "value": "https://dmmuseum.ru/"
+}
+}
+},
+"dmitrov-kropotkin-house": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "Источник указывает детский и льготный билет 100 ₽.",
+"ok": [
+"address"
+],
+"sources": [
+"https://welcome.mosreg.ru/museums/poslednee-zilise-mateznogo-knaza-anarhista"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://welcome.mosreg.ru/museums/poslednee-zilise-mateznogo-knaza-anarhista",
+"value": "ср-вс 10:00-18:00; пн, вт — выходной"
+},
+"phone": {
+"source": "https://welcome.mosreg.ru/museums/poslednee-zilise-mateznogo-knaza-anarhista",
+"value": "+7 (496) 222-30-40"
+},
+"price": {
+"source": "https://welcome.mosreg.ru/museums/poslednee-zilise-mateznogo-knaza-anarhista",
+"value": 200
 }
 }
 },
@@ -7863,6 +8113,33 @@
 ],
 "status": "works",
 "wrong": {}
+},
+"domodedovo-yolochki": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "",
+"ok": [
+"address"
+],
+"sources": [
+"https://parkidmd.ru/contacts/"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://parkidmd.ru/contacts/",
+"value": "ежедневно 07:00-23:00"
+},
+"phone": {
+"source": "https://parkidmd.ru/contacts/",
+"value": "+7 (985) 555-73-27"
+},
+"url": {
+"source": "https://parkidmd.ru/contacts/",
+"value": "https://parkidmd.ru/"
+}
+}
 },
 "doroga-pamyati": {
 "by": "Codex",
@@ -11960,6 +12237,30 @@
 "status": "works",
 "wrong": {}
 },
+"kashira-museum": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "Источник также указывает льготный билет 80 ₽ и детский мастер-класс 200 ₽.",
+"ok": [
+"address",
+"hours"
+],
+"sources": [
+"https://welcome.mosreg.ru/museums/kasirskij-kraevedceskij-muzej"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://welcome.mosreg.ru/museums/kasirskij-kraevedceskij-muzej",
+"value": "+7 (496) 693-10-06"
+},
+"price": {
+"source": "https://welcome.mosreg.ru/museums/kasirskij-kraevedceskij-muzej",
+"value": 160
+}
+}
+},
 "kc-zelenograd": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -13441,6 +13742,22 @@
 "note": "Надёжного подтверждения по первоисточнику недостаточно.",
 "ok": [],
 "sources": [],
+"status": "works",
+"wrong": {}
+},
+"lemans-karting": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "Официальная страница подтверждает филиал и детские заезды, но актуальные часы и цены на странице не видны.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://lemanskarting.ru/na-2-oy-magistralnoy/"
+],
 "status": "works",
 "wrong": {}
 },
@@ -17259,6 +17576,38 @@
 "status": "works",
 "wrong": {}
 },
+"odintsovo-lazutina-park": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "",
+"ok": [],
+"sources": [
+"https://park-1.ru/contacts/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://park-1.ru/contacts/",
+"value": "Одинцово, 3-й км Красногорского шоссе"
+},
+"phone": {
+"source": "https://park-1.ru/contacts/",
+"value": "+7 (926) 341-20-82"
+},
+"point": {
+"source": "https://park-1.ru/contacts/",
+"value": [
+55.690655,
+37.250219
+]
+},
+"url": {
+"source": "https://park-1.ru/contacts/",
+"value": "https://park-1.ru/"
+}
+}
+},
 "odintsovo-mechta-ksc": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -18925,6 +19274,34 @@
 "status": "works",
 "wrong": {}
 },
+"prioksky-nature-museum": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "",
+"ok": [
+"phone",
+"url"
+],
+"sources": [
+"https://pt-zapovednik.ru/kontakty/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://pt-zapovednik.ru/kontakty/",
+"value": "Московская область, г. о. Серпухов, м. Данки, тер. Заповедная, д. 1"
+},
+"hours": {
+"source": "https://pt-zapovednik.ru/kontakty/",
+"value": "ежедневно 08:30-19:00"
+},
+"how": {
+"source": "https://pt-zapovednik.ru/kontakty/",
+"value": "Ориентир: по Симферопольскому шоссе, поворот по указателю «Серпухов/Данки», далее до вывески «Заповедник/Экскурсионное бюро»"
+}
+}
+},
 "prishvin-dunino": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -19532,6 +19909,33 @@
 "status": "not_found",
 "wrong": {}
 },
+"rink-kasatonov-korolev": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "Часы относятся к арене в целом; массовое катание проводится по отдельному расписанию. Тариф из результата относится к открытому катку центрального ядра, поэтому к этой арене не применён.",
+"ok": [
+"hours"
+],
+"sources": [
+"https://www.sportkorolev.ru/led"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://www.sportkorolev.ru/led",
+"value": "Королёв, Октябрьский бул., 10"
+},
+"phone": {
+"source": "https://www.sportkorolev.ru/led",
+"value": "+7 (495) 511-06-46"
+},
+"url": {
+"source": "https://www.sportkorolev.ru/led",
+"value": "https://www.sportkorolev.ru/led"
+}
+}
+},
 "rink-lobnya-ds": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -19668,6 +20072,30 @@
 "phone": {
 "source": "https://akademiyaotkritiy.ru/services/dopolnitelnye-programmy/robototekhnika/",
 "value": "+7 (915) 398-57-57"
+}
+}
+},
+"rodnik-yasenevaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "",
+"ok": [
+"address"
+],
+"sources": [
+"https://storage.yandexcloud.net/rodnikart/doc/2025/doop/doop_edo_1_10-12.pdf",
+"https://www.culture.ru/institutes/37338/detskaya-shkola-iskusstv-rodnik-yasenevaya-ul"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://www.culture.ru/institutes/37338/detskaya-shkola-iskusstv-rodnik-yasenevaya-ul",
+"value": "+7 (495) 398-04-55"
+},
+"url": {
+"source": "https://www.culture.ru/institutes/37338/detskaya-shkola-iskusstv-rodnik-yasenevaya-ul",
+"value": "https://rodnikart.ru/"
 }
 }
 },
@@ -21373,6 +21801,30 @@
 }
 }
 },
+"sp-zhili-byli": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "Ассоциация частных музеев указывает детский билет 100 ₽.",
+"ok": [
+"address",
+"phone"
+],
+"sources": [
+"https://www.xn--80akahgvf5ajn1b2c.xn--p1ai/o-proekte/geografiya/moskovskaya-oblast/muzej-krestyanskogo-byta-zhili-byli/"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://www.xn--80akahgvf5ajn1b2c.xn--p1ai/o-proekte/geografiya/moskovskaya-oblast/muzej-krestyanskogo-byta-zhili-byli/",
+"value": "ежедневно 11:00-19:00"
+},
+"price": {
+"source": "https://www.xn--80akahgvf5ajn1b2c.xn--p1ai/o-proekte/geografiya/moskovskaya-oblast/muzej-krestyanskogo-byta-zhili-byli/",
+"value": 200
+}
+}
+},
 "spartak-cityfootball-sokolniki": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -22239,6 +22691,43 @@
 "phone": {
 "source": "https://tennisborodina.com/",
 "value": "+7 (925) 471-74-76"
+}
+}
+},
+"tennis-cooltennis-spartakovskaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "Подтвержден большой теннис; настольный теннис на официальных страницах не найден.",
+"ok": [
+"address",
+"url"
+],
+"sources": [
+"https://cooltennis.ru/rules-baumanskaya",
+"https://t.me/s/cooltennisofficial/1221?q=%23CoolNews",
+"https://yandex.com/maps/org/cooltennis/191864026500/"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://t.me/s/cooltennisofficial/1221?q=%23CoolNews",
+"value": [
+3,
+16
+]
+},
+"hours": {
+"source": "https://yandex.com/maps/org/cooltennis/191864026500/",
+"value": "ежедневно 06:00-00:00"
+},
+"phone": {
+"source": "https://yandex.com/maps/org/cooltennis/191864026500/",
+"value": "+7 (934) 888-01-61"
+},
+"price": {
+"source": "https://yandex.com/maps/org/cooltennis/191864026500/",
+"value": 3000
 }
 }
 },
@@ -23881,6 +24370,32 @@
 }
 }
 },
+"vostochny-park-elektrostal": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "Официальный сайт описывает общий Парк культуры и отдыха; принадлежность адреса карточки именно парку «Восточный» не подтверждена.",
+"ok": [],
+"sources": [
+"https://el-park.ru/rules",
+"https://www.el-park.ru/contact"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://el-park.ru/rules",
+"value": "ежедневно 09:00-22:00"
+},
+"phone": {
+"source": "https://www.el-park.ru/contact",
+"value": "+7 (496) 574-34-41"
+},
+"url": {
+"source": "https://www.el-park.ru/contact",
+"value": "https://www.el-park.ru/"
+}
+}
+},
 "vyazemy": {
 "by": "Codex",
 "date": "2026-11-12",
@@ -24524,6 +25039,29 @@
 "status": "works",
 "wrong": {}
 },
+"zelenograd-museum": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "",
+"ok": [
+"address"
+],
+"sources": [
+"https://www.zelenograd.ru/afisha/60217-vystavka-ob-istorii-zelenograda-po-gazetnym-stranicam-otkrylas-v-dome-fleyta/"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://www.zelenograd.ru/afisha/60217-vystavka-ob-istorii-zelenograda-po-gazetnym-stranicam-otkrylas-v-dome-fleyta/",
+"value": "вт, ср, пт-вс 10:00-18:00; чт 13:00-21:00; пн — выходной"
+},
+"how": {
+"source": "https://www.zelenograd.ru/afisha/60217-vystavka-ob-istorii-zelenograda-po-gazetnym-stranicam-otkrylas-v-dome-fleyta/",
+"value": "Вход: третий вход, ближе к Wildberries"
+}
+}
+},
 "zelenograd-museum-hall": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -24658,6 +25196,27 @@
 55.600608,
 38.136993
 ]
+}
+}
+},
+"zhukovsky-sky-museum": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1624-1.json",
+"note": "",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://regions.ru/zhukovsky/blog/muzei-v-zhukovskom-kuda-shodit-i-chto-posmotret-v-gorode-aviatsii"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://regions.ru/zhukovsky/blog/muzei-v-zhukovskom-kuda-shodit-i-chto-posmotret-v-gorode-aviatsii",
+"value": "ср-вс 10:00-18:00"
 }
 }
 },
