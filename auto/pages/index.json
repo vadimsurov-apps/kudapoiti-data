@@ -267800,7 +267800,7 @@
 "url": "https://xn--13-6kc1a4af.xn--p1ai/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>",
-"tries": 2
+"tries": 3
 },
 "quest-stars-ru": {
 "url": "https://quest-stars.ru/",
@@ -268161,7 +268161,7 @@
 "url": "https://kateda.ru/filialy",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "aquapingvi-ru-kontakty": {
 "url": "https://aquapingvi.ru/kontakty",
@@ -268174,7 +268174,7 @@
 "url": "https://dtssm.ru/contacts",
 "ok": false,
 "err": "HTTP Error 402: Payment Required",
-"tries": 2
+"tries": 3
 },
 "yandex-ru-maps-1-moscow-and-moscow-oblast-sz0x0-1113b-text-d1-81-d0-b0-d0-bc-d0-b1-d0-be-2": {
 "url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?sz0x0=1113b&text=%D1%81%D0%B0%D0%BC%D0%B1%D0%BE%20%D0%B4%D0%B7%D1%8E%D0%B4%D0%BE%20%D0%B1%D0%BE%D1%80%D1%8C%D0%B1%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B4%D0%B5%D1%82%D0%B5%D0%B9%20%D0%BC%D0%B5%D1%82%D1%80%D0%BE%20%D0%9F%D0%B0%D1%80%D1%82%D0%B8%D0%B7%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F",
@@ -268893,20 +268893,46 @@
 "www-orange-kot-ru-contacts": {
 "url": "https://www.orange-kot.ru/contacts",
 "ok": false,
-"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
-"tries": 1
+"err": "HTTP Error 404: Not Found",
+"tries": 2
 },
 "www-orange-kot-ru-raspisanie": {
 "url": "https://www.orange-kot.ru/raspisanie",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "2gis-ru-mytishchi-firm-70000001023958799": {
 "url": "https://2gis.ru/mytishchi/firm/70000001023958799",
 "ok": true,
 "pages": 1,
 "bytes": 233,
+"tries": 0
+},
+"yandex-ru-maps-org-danz-art-29358662846": {
+"url": "https://yandex.ru/maps/org/danz_art/29358662846/",
+"ok": true,
+"pages": 2,
+"bytes": 6411,
+"tries": 0
+},
+"danzart-ru-contacts": {
+"url": "https://danzart.ru/contacts/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"danzart-ru-kontakty": {
+"url": "https://danzart.ru/kontakty/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"yandex-ru-maps-org-mone-shagal-74287460229": {
+"url": "https://yandex.ru/maps/org/mone_shagal/74287460229/",
+"ok": true,
+"pages": 3,
+"bytes": 6370,
 "tries": 0
 }
 }
