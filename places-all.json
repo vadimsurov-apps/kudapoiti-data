@@ -891,9 +891,9 @@
       ],
       "price_child": null,
       "price_adult": null,
-      "free_note": "до 6 лет — бесплатно вместе со взрослым на одном месте (нужен документ о возрасте); с 6 лет — полный билет",
+      "free_note": "до 6 лет — бесплатно со взрослым по одному билету, на коленях; отдельное место ребёнку — полный билет; дети до 14 лет — только с законным представителем, у которого свой билет",
       "booking": "required",
-      "hours": "по расписанию",
+      "hours": "представления по расписанию; кассы ежедневно 11:00–19:00, перерыв 15:00–16:00",
       "indoor": "yes",
       "food": null,
       "changing_table": null,
@@ -916,8 +916,13 @@
       "how_to_find": null,
       "phone": "+7 (495) 628-83-49",
       "season_months": null,
-      "open_mode": "schedule",
+      "open_mode": "unknown",
       "open_week": null,
+      "access": {
+        "lift": "yes",
+        "note": "пандус и лифт (подъём через кассовый зал), места для зрителей на колясках — 13 ряд партера, центральный сектор; о посещении заранее предупредить администрацию",
+        "wheelchair": "yes"
+      },
       "point_level": "вход",
       "point_door": "вход_яндекс"
     },
@@ -1715,7 +1720,7 @@
       "price_adult": 0,
       "free_note": "парк бесплатно; музей платно: вт-чт 10:00-18:00, пт-сб 10:00-20:00, вс 10:00-18:00, пн выходной",
       "booking": "none",
-      "hours": "ежедневно 06:00-24:00",
+      "hours": "ежедневно 06:00–24:00",
       "indoor": "no",
       "food": "yes",
       "changing_table": null,
@@ -1938,7 +1943,7 @@
       "price_adult": 280,
       "free_note": "детский = школьный льготный",
       "booking": "none",
-      "hours": "пн выходной; вт,ср,пт,сб 10:00-18:00; чт 12:00-21:00; вс 11:00-18:00; последний вт месяца — санитарный день",
+      "hours": "пн выходной; вт, ср, пт, сб 10:00–18:00; чт 12:00–21:00; вс 11:00–18:00; последний вт месяца — санитарный день",
       "indoor": "yes",
       "food": null,
       "changing_table": null,
@@ -1948,7 +1953,7 @@
       "adult_interest": 2,
       "plus": "Животные и природа, обычно спокойнее, чем в крупных музеях",
       "minus": null,
-      "url": "http://www.gbmt.ru/",
+      "url": "https://www.gbmt.ru/",
       "source": "https://tonkosti.ru/Биологический_музей",
       "verified_at": null,
       "status": "draft",
@@ -3962,7 +3967,7 @@
       "lat": 55.790561,
       "lon": 37.530758,
       "age_min": 1,
-      "age_max": 17,
+      "age_max": 18,
       "duration_min": 120,
       "duration_max": 240,
       "energy": "active",
@@ -9570,7 +9575,7 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": "Точка — вход, ближе всего к м. Мичуринский проспект",
-      "phone": null,
+      "phone": "+7 (499) 145-00-00",
       "season_months": null,
       "open_mode": "always",
       "open_week": null,
@@ -11458,9 +11463,9 @@
       "tags": [
         "sport"
       ],
-      "price_child": 750,
-      "price_adult": 0,
-      "free_note": null,
+      "price_child": null,
+      "price_adult": null,
+      "free_note": "пробная групповая тренировка: детям 3–13 лет — бесплатно, с 14 лет (взрослые группы) — 750 ₽",
       "booking": "recommended",
       "hours": null,
       "indoor": "yes",
@@ -11473,7 +11478,7 @@
       "plus": "Сеть батутных залов по городу",
       "minus": null,
       "url": "https://yourways.ru/",
-      "source": "https://media.halvacard.ru/entertainment/top-batutnyx-parkov-v-moskve; цена «от» за сеанс; взрослым-сопровождающим часто бесплатно; Цена «от», уточняйте детский тариф",
+      "source": "https://media.halvacard.ru/entertainment/top-batutnyx-parkov-v-moskve; Цена «от», уточняйте детский тариф",
       "verified_at": null,
       "status": "draft",
       "cats": [
@@ -14406,7 +14411,7 @@
       "price_adult": 0,
       "free_note": "территория свободна",
       "booking": "none",
-      "hours": "ср-вс 10:00-18:00; пн-вт выходной",
+      "hours": "ср–вс 10:00–18:00 (касса до 17:00); пн, вт и последняя пт месяца — выходные; май–сентябрь по сб до 20:00",
       "indoor": "no",
       "food": "partial",
       "changing_table": null,
@@ -14429,31 +14434,8 @@
       "how_to_find": "Точка — вход",
       "phone": "+7 (496) 667-30-72",
       "season_months": null,
-      "open_mode": "hours",
-      "open_week": [
-        null,
-        null,
-        [
-          600,
-          1080
-        ],
-        [
-          600,
-          1080
-        ],
-        [
-          600,
-          1080
-        ],
-        [
-          600,
-          1080
-        ],
-        [
-          600,
-          1080
-        ]
-      ],
+      "open_mode": "unknown",
+      "open_week": null,
       "point_level": "вход",
       "point_door": "вход_здания"
     },
@@ -15083,7 +15065,7 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": null,
+      "phone": "+7 (495) 645-79-73",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
@@ -16542,11 +16524,11 @@
         "animals",
         "sport"
       ],
-      "price_child": 4000,
-      "price_adult": 4000,
-      "free_note": "цена за занятие / прогулку",
+      "price_child": 5000,
+      "price_adult": null,
+      "free_note": "занятие 1 час — 5 000 ₽; абонемент 4 занятия — 14 000 ₽, 8 занятий — 24 000 ₽ (30 дней)",
       "booking": "required",
-      "hours": "пн-пт 09:00–21:00; сб,вс 09:00–18:00",
+      "hours": "пн–пт 09:00–21:00; сб, вс 09:00–18:00",
       "indoor": "partial",
       "food": "no",
       "changing_table": null,
@@ -16568,7 +16550,6 @@
       "how_to_find": "Парковка: многоуровневая по адресу ул. Хованская, д. 18; проезд на автомобиле по территории парка невозможен",
       "phone": "+7 (903) 165-13-60",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -16600,6 +16581,10 @@
           1080
         ]
       ],
+      "access": {
+        "free": "иппотерапия — скидка 50% детям с инвалидностью I/II группы",
+        "programs": "иппотерапия (занятие 30 минут), нужна справка об отсутствии противопоказаний"
+      },
       "point_level": "вход",
       "point_door": "вход_яндекс"
     },
@@ -16735,7 +16720,6 @@
       "how_to_find": null,
       "phone": "+7 (903) 792-25-06",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -17075,7 +17059,7 @@
       "url": null,
       "source": "https://101hotels.com/recreation/russia/region/blizhnee_podmoskove/entertainment/zoopark; цены уточняйте; Часы и цены уточняйте",
       "verified_at": null,
-      "status": "draft",
+      "status": "closed",
       "cats": [
         "animals"
       ],
@@ -17376,7 +17360,7 @@
       "adult_interest": 3,
       "plus": "Ракеты, спутники и космические корабли под огромным куполом",
       "minus": null,
-      "url": "https://vdnh.ru/cosmos/",
+      "url": "https://vdnh.ru/places/pavilon-34-centr-kosmonavtika-i-aviaciya/",
       "source": "цены уточняйте; Цены уточняйте",
       "verified_at": "2026-11-13",
       "status": "verified",
@@ -17623,7 +17607,7 @@
       "price_adult": null,
       "free_note": null,
       "booking": "none",
-      "hours": "пн,вт,ср,пт,сб 09:30–18:00",
+      "hours": "пн–ср, пт–вс 10:00–17:00; чт выходной",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -17635,42 +17619,44 @@
       "minus": "Очередь на вход, проверка сумок",
       "url": "https://kreml.ru/",
       "source": "билет на территорию уточняйте",
-      "verified_at": null,
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "museums",
         "estates"
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
-      "phone": null,
+      "how_to_find": "Вход: на территорию Кремля — через Кутафью башню\nОриентир: кассы — в Александровском саду",
+      "phone": "+7 (495) 695-41-56",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
-          570,
-          1080
+          600,
+          1020
         ],
         [
-          570,
-          1080
+          600,
+          1020
         ],
         [
-          570,
-          1080
+          600,
+          1020
         ],
         null,
         [
-          570,
-          1080
+          600,
+          1020
         ],
         [
-          570,
-          1080
+          600,
+          1020
         ],
-        null
+        [
+          600,
+          1020
+        ]
       ],
       "point_level": "вход",
       "point_door": "точка_яндекс"
@@ -17943,7 +17929,7 @@
       "price_adult": null,
       "free_note": null,
       "booking": "none",
-      "hours": "вт-вс 10:00–17:00",
+      "hours": "вт–вс 10:00–17:00, перерыв 12:00–13:00; пн выходной",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -17963,38 +17949,11 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
-      "phone": null,
+      "how_to_find": "Вход: в экоцентр — из внутреннего двора",
+      "phone": "+7 (495) 370-07-50",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
-      "open_mode": "hours",
-      "open_week": [
-        null,
-        [
-          600,
-          1020
-        ],
-        [
-          600,
-          1020
-        ],
-        [
-          600,
-          1020
-        ],
-        [
-          600,
-          1020
-        ],
-        [
-          600,
-          1020
-        ],
-        [
-          600,
-          1020
-        ]
-      ],
+      "open_mode": "unknown",
+      "open_week": null,
       "point_level": "вход",
       "point_door": "вход_яндекс"
     },
@@ -18048,7 +18007,6 @@
       "how_to_find": null,
       "phone": "+7 (495) 410-21-49",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -24567,7 +24525,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Этаж: стартовая точка на 6 этаже ЦДМ у входа в Музей детства и на смотровую площадку",
+      "how_to_find": "Этаж: 6",
       "phone": "+7 (495) 777-80-77",
       "season_months": null,
       "open_mode": "hours",
@@ -77554,7 +77512,7 @@
       "minus": null,
       "url": "https://cafe-milfei.ru",
       "source": "https://zoon.ru/msk/gorod-podolsk/restaurants/type-detskaya_komnata/; Яндекс Карты (карточка/выдача: рубрика, адрес, средний чек); качество 2026-11",
-      "verified_at": "2026-11-11",
+      "verified_at": "2026-11-13",
       "status": "verified",
       "cats": [
         "food",
@@ -77563,7 +77521,7 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": "Этаж: 1\nШлагбаум: есть шлагбаум в ~8 м (въезд не для всех)\nПарковка: платная вдоль улицы, 50 ₽ (~21 м); платная вдоль улицы, 50 ₽ (~27 м)",
-      "phone": "+7 (977) 600-01-50",
+      "phone": "+7 (499) 400-24-21",
       "season_months": null,
       "open_mode": "hours",
       "open_week": [
@@ -126741,8 +126699,8 @@
       ],
       "metro": "Братиславская",
       "address": "ул. Перерва, 58",
-      "lat": 55.662821,
-      "lon": 37.760809,
+      "lat": 55.662844,
+      "lon": 37.760538,
       "age_min": 0,
       "age_max": 17,
       "duration_min": 60,
@@ -126776,14 +126734,15 @@
       "cats": [
         "food"
       ],
-      "coord_exact": null,
+      "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": null,
+      "phone": "+7 (499) 649-22-23",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
-      "point_level": "примерно"
+      "point_level": "вход",
+      "point_door": "объект"
     },
     {
       "id": "donner-ballet-krasnokazarmennaya",
@@ -126936,7 +126895,7 @@
       "price_adult": null,
       "free_note": null,
       "booking": "required",
-      "hours": "ежедневно, кроме чт, 10:00–21:00",
+      "hours": "пн–ср, пт–вс 10:00–21:00; чт 11:00–22:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -126958,8 +126917,37 @@
       "how_to_find": "Вход: через ТРЦ «Ривьера»\nЭтаж: 2, центральный атриум, у стеклянных лифтов",
       "phone": "+7 (915) 105-22-65",
       "season_months": null,
-      "open_mode": "unknown",
-      "open_week": null,
+      "open_mode": "hours",
+      "open_week": [
+        [
+          600,
+          1260
+        ],
+        [
+          600,
+          1260
+        ],
+        [
+          600,
+          1260
+        ],
+        [
+          660,
+          1320
+        ],
+        [
+          600,
+          1260
+        ],
+        [
+          600,
+          1260
+        ],
+        [
+          600,
+          1260
+        ]
+      ],
       "point_level": "вход",
       "point_door": "точка_яндекс"
     },
@@ -188100,10 +188088,10 @@
       "adult_interest": 2,
       "plus": "Командные VR-игры на арене: квесты, приключения, шутеры; есть праздники для детей",
       "minus": null,
-      "url": "https://msk.warpoint.ru/",
+      "url": "https://marino.warpoint.ru/",
       "source": "OpenStreetMap; сайт msk.warpoint.ru (проверено 2026-11-05); цена зависит от игры и дня — на сайте; Не для малышей: обычно с 7–8 лет, уточняйте у администратора",
-      "verified_at": "2026-11-05",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "playcenters"
       ],
@@ -207688,7 +207676,7 @@
       "adult_interest": 2,
       "plus": "26 аттракционов, колесо обозрения, верёвочный лабиринт и эко-ферма в сосновом лесу",
       "minus": "Верёвочный лабиринт — с 6 лет",
-      "url": "https://parkidmd.ru/about/elochki/",
+      "url": "https://parkidmd.ru/",
       "source": "https://travelto.ru/blog/kuda-shodit-s-detmi-v-domodedove/",
       "verified_at": "2026-11-13",
       "status": "verified",
@@ -211696,7 +211684,7 @@
       "adult_interest": 3,
       "plus": "Природоведческий зал с животными и птицами местных лесов, находки, крестьянская изба",
       "minus": null,
-      "url": "https://shaturamuseum.ru",
+      "url": "https://shaturamuseum.ru/",
       "source": "https://travelto.ru/blog/kuda-shodit-s-detmi-v-shature/; цены — уточняйте; Часы — уточняйте",
       "verified_at": "2026-11-13",
       "status": "verified",
@@ -212564,7 +212552,7 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": "+7 (496) 227-40-07",
+      "phone": "+7 (496) 222-30-40",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
@@ -223295,7 +223283,7 @@
         "картинг"
       ],
       "metro": "Партизанская",
-      "address": "Москва, Измайловское ш., 73, стр. 4, стадион «Ракета»",
+      "address": "Москва, Измайловское ш., вл. 73, стр. 4",
       "lat": 55.788932,
       "lon": 37.758115,
       "age_min": 5,
@@ -223334,7 +223322,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Вход: с Измайловского шоссе по указателю «картинг»",
+      "how_to_find": "Вход: въезд с Измайловского шоссе по стрелке «картинг»\nОриентир: от метро «Партизанская» идти вдоль Измайловского шоссе",
       "phone": "+7 (499) 367-18-88",
       "season_months": null,
       "open_mode": "hours",
@@ -223399,7 +223387,7 @@
       "price_adult": 1200,
       "free_note": "от 1 200 ₽ за час",
       "booking": "recommended",
-      "hours": "ежедневно 12:00–24:00",
+      "hours": "пн-пт 12:00-00:00; сб-вс 10:00-00:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -223444,11 +223432,11 @@
           1440
         ],
         [
-          720,
+          600,
           1440
         ],
         [
-          720,
+          600,
           1440
         ]
       ],
@@ -241639,7 +241627,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Ориентир: м. «Мякинино», ТЦ Vegas City Hall\nВход: на крыльце, в танцевальной студии X-Temp",
+      "how_to_find": "Ориентир: м. «Мякинино», ТЦ Vegas City Hall",
       "phone": "+7 (499) 455-09-57",
       "season_months": null,
       "open_mode": "hours",
@@ -259715,7 +259703,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Этаж: 2-3 — по две комнаты рядом с туалетами; 4-6 — по одной комнате рядом с туалетами",
+      "how_to_find": "Этаж: 2-6, рядом с туалетами; по две комнаты на 2 и 3 этажах, по одной на 4, 5 и 6 этажах",
       "phone": null,
       "season_months": null,
       "open_mode": "unknown",
@@ -261363,7 +261351,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Вход: Терминал 2, вход № 5\nЭтаж: 1\nОриентир: стойка регистрации № 156",
+      "how_to_find": "Вход: терминал 2, вход № 5\nЭтаж: 1\nОриентир: стойка регистрации № 156",
       "phone": "+7 (495) 933-66-66",
       "season_months": null,
       "open_mode": "always",
@@ -262466,7 +262454,7 @@
         "пеленальная комната"
       ],
       "metro": "— (на машине / электричке)",
-      "address": "Домодедово, ул. Кирова, стр. 28, гипермаркет «Лента»",
+      "address": "Домодедово, ул. Кирова, 28, гипермаркет «Лента»",
       "lat": 55.431534,
       "lon": 37.7513399,
       "age_min": 0,
@@ -310394,7 +310382,7 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": "Парковка: рядом (~87 м); бесплатная наземная (~173 м)\nЭтаж: 1",
-      "phone": "+7 (499) 444-14-78",
+      "phone": "+7 (499) 444-14-78 доб. 5930",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
@@ -322154,7 +322142,7 @@
       "price_adult": null,
       "free_note": null,
       "booking": "required",
-      "hours": null,
+      "hours": "пн, ср, пт 17:00–21:00 (тренировки групп)",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -323262,8 +323250,8 @@
       "address": "Новоясеневский пр-т, 26",
       "lat": 55.604433,
       "lon": 37.532481,
-      "age_min": 3,
-      "age_max": 14,
+      "age_min": 1,
+      "age_max": 17,
       "duration_min": 60,
       "duration_max": 90,
       "energy": "active",
@@ -323278,7 +323266,7 @@
       "price_adult": null,
       "free_note": "первое занятие бесплатно",
       "booking": "required",
-      "hours": "ежедневно 09:00–22:00",
+      "hours": "ежедневно 09:00-22:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -323290,8 +323278,8 @@
       "minus": "Цены абонементов на сайте не опубликованы",
       "url": "https://xn--80af1bf8a.xn--p1ai/shkoly/",
       "source": "сайт места (проверено 2026-11-06); абонемент — у администратора",
-      "verified_at": "2026-11-06",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "gymnastics",
         "acrobatics"
@@ -323302,7 +323290,6 @@
       "phone": "+7 (495) 150-77-55",
       "trial_free": true,
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -323401,8 +323388,8 @@
       "address": "Мытищи, Силикатная ул., 28/2",
       "lat": 55.931075,
       "lon": 37.778902,
-      "age_min": 3,
-      "age_max": 14,
+      "age_min": 1,
+      "age_max": 17,
       "duration_min": 60,
       "duration_max": 90,
       "energy": "active",
@@ -323417,7 +323404,7 @@
       "price_adult": null,
       "free_note": "первое занятие бесплатно",
       "booking": "required",
-      "hours": "ежедневно 09:00–21:00",
+      "hours": "ежедневно 09:00-22:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -323429,7 +323416,7 @@
       "minus": "Цены абонементов на сайте не опубликованы",
       "url": "https://xn--80af1bf8a.xn--p1ai/shkoly/",
       "source": "сайт места (проверено 2026-11-06)",
-      "verified_at": "2026-11-12",
+      "verified_at": "2026-11-13",
       "status": "verified",
       "cats": [
         "gymnastics",
@@ -323445,31 +323432,31 @@
       "open_week": [
         [
           540,
-          1260
+          1320
         ],
         [
           540,
-          1260
+          1320
         ],
         [
           540,
-          1260
+          1320
         ],
         [
           540,
-          1260
+          1320
         ],
         [
           540,
-          1260
+          1320
         ],
         [
           540,
-          1260
+          1320
         ],
         [
           540,
-          1260
+          1320
         ]
       ],
       "point_level": "вход",
@@ -323882,7 +323869,7 @@
       "price_adult": 1700,
       "free_note": "8 занятий — 8400 ₽/мес, разовое 1700 ₽",
       "booking": "required",
-      "hours": "ежедневно 10:00–22:00",
+      "hours": "вт, пт 18:15–20:15 (тренировки групп)",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -323894,8 +323881,8 @@
       "minus": "Пробного занятия в этом филиале нет",
       "url": "https://msk.gymbalance.ru/",
       "source": "сайт места (проверено 2026-11-06)",
-      "verified_at": "2026-11-06",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "gymnastics",
         "rhythmic"
@@ -323905,38 +323892,8 @@
       "how_to_find": "Вход: по пропуску — взрослому нужен документ, фамилию сопровождающего сообщить администратору при записи\nПарковка: бесплатная наземная (~96 м); рядом, вдоль улицы (~106 м)",
       "phone": "+7 (800) 777-67-49",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
-      "open_mode": "hours",
-      "open_week": [
-        [
-          600,
-          1320
-        ],
-        [
-          600,
-          1320
-        ],
-        [
-          600,
-          1320
-        ],
-        [
-          600,
-          1320
-        ],
-        [
-          600,
-          1320
-        ],
-        [
-          600,
-          1320
-        ],
-        [
-          600,
-          1320
-        ]
-      ],
+      "open_mode": "unknown",
+      "open_week": null,
       "point_level": "вход",
       "point_door": "вход_здания"
     },
@@ -328341,8 +328298,8 @@
       "address": "Нагорная ул., 11, корп. 1",
       "lat": 55.680006,
       "lon": 37.608526,
-      "age_min": 5,
-      "age_max": 14,
+      "age_min": 3,
+      "age_max": 16,
       "duration_min": 60,
       "duration_max": 90,
       "energy": "active",
@@ -328425,8 +328382,8 @@
       "address": "Цимлянская ул., 4",
       "lat": 55.673052,
       "lon": 37.776166,
-      "age_min": 5,
-      "age_max": 14,
+      "age_min": 3,
+      "age_max": 16,
       "duration_min": 60,
       "duration_max": 90,
       "energy": "active",
@@ -330712,7 +330669,7 @@
       "price_adult": null,
       "free_note": "пробная тренировка бесплатно",
       "booking": "required",
-      "hours": "пн–пт 10:00–20:00; сб–вс 10:00–14:00",
+      "hours": "ежедневно 10:00–22:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -330739,31 +330696,31 @@
       "open_week": [
         [
           600,
-          1200
+          1320
         ],
         [
           600,
-          1200
+          1320
         ],
         [
           600,
-          1200
+          1320
         ],
         [
           600,
-          1200
+          1320
         ],
         [
           600,
-          1200
+          1320
         ],
         [
           600,
-          840
+          1320
         ],
         [
           600,
-          840
+          1320
         ]
       ],
       "point_level": "вход",
@@ -343502,8 +343459,8 @@
       "minus": "Абонемент недешёвый, группы в конкретном зале — по расписанию сети",
       "url": "https://rusvolley.ru/kids/",
       "source": "rusvolley.ru (адреса /kids, цены — главная), zoon.ru (проверено 2026-11-06)",
-      "verified_at": "2026-11-06",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "volleyball"
       ],
@@ -359213,8 +359170,8 @@
       ],
       "metro": "Озёрная",
       "address": "Мичуринский пр-т, Олимпийская деревня, 2",
-      "lat": 55.674475,
-      "lon": 37.468829,
+      "lat": 55.675863,
+      "lon": 37.473593,
       "age_min": 7,
       "age_max": 17,
       "duration_min": 90,
@@ -367567,7 +367524,7 @@
       "minus": "Занятия в школьном спортзале: пн, ср 16:30–18:30; вход — по записи через тренера",
       "url": "https://i-basket.ru/",
       "source": "i-basket.ru/adresa — список залов сети IBASKET (проверено 2026-11-08); абонемент — по залу, назовут при записи",
-      "verified_at": "2026-11-12",
+      "verified_at": "2026-11-13",
       "status": "verified",
       "cats": [
         "ballgames"
@@ -369297,8 +369254,8 @@
       ],
       "metro": "Химки",
       "address": "Химки, ул. Дружбы, 1А (ТЦ «Новые Химки», 2 этаж)",
-      "lat": 55.887,
-      "lon": 37.433,
+      "lat": 55.899013,
+      "lon": 37.40909,
       "age_min": 3,
       "age_max": 16,
       "duration_min": 60,
@@ -369333,7 +369290,7 @@
       "cats": [
         "dance"
       ],
-      "coord_exact": null,
+      "coord_exact": true,
       "birthday": null,
       "how_to_find": "Вход: через ТЦ «Новые Химки»\nЭтаж: 2\nПарковка: прямо у входа в клуб; бесплатная наземная (~57 м)",
       "phone": "+7 (495) 215-10-90",
@@ -370409,8 +370366,8 @@
       "minus": null,
       "url": "https://s74.mossport.ru/",
       "source": "s74.mossport.ru — «Спортивная инфраструктура» МКСШОР «Север» (проверено 2026-11-08); платные группы — на сайте; Какие секции именно в этом СК и набор по возрасту — уточняйте у спортшколы",
-      "verified_at": "2026-11-08",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "sport"
       ],
@@ -370419,7 +370376,6 @@
       "how_to_find": null,
       "phone": "+7 (499) 444-14-78 (доб. 5040)",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -380719,8 +380675,8 @@
       ],
       "metro": "Профсоюзная",
       "address": "Профсоюзная ул., 62, корп. 5",
-      "lat": 55.677566,
-      "lon": 37.559338,
+      "lat": 55.668621,
+      "lon": 37.547034,
       "age_min": 4,
       "age_max": 17,
       "duration_min": 60,
@@ -380737,7 +380693,7 @@
       "price_adult": null,
       "free_note": null,
       "booking": "required",
-      "hours": "ежедневно 7:00–23:00",
+      "hours": "ежедневно 07:00–23:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -380749,8 +380705,8 @@
       "minus": null,
       "url": "https://cheremushki-sk.ru",
       "source": "карточка в выдаче Яндекс Карт (auto/pages): «множество секций для детей, самбо, карате, айкидо, бокс» (проверено 2026-11-09); цены — у администратора; Много направлений — расписание уточняйте по каждой секции",
-      "verified_at": "2026-11-09",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "martial",
         "boxing",
@@ -386959,7 +386915,7 @@
         "секция гимнастики"
       ],
       "metro": "Коньково",
-      "address": "ул. Академика Капицы, 12",
+      "address": "ул. Академика Капицы, 16 / ул. Академика Капицы, 24",
       "lat": 55.628961,
       "lon": 37.522599,
       "age_min": 3,
@@ -388669,8 +388625,8 @@
       ],
       "metro": "Селигерская",
       "address": "Дубнинская ул., 36А (школа № 1296)",
-      "lat": 55.865674,
-      "lon": 37.545663,
+      "lat": 55.88606,
+      "lon": 37.560831,
       "age_min": 4,
       "age_max": 14,
       "duration_min": 60,
@@ -388686,7 +388642,7 @@
       ],
       "price_child": 4000,
       "price_adult": 4000,
-      "free_note": "8 занятий — от 4000 ₽",
+      "free_note": "8 занятий — от 4 000 ₽ (4–5 лет); 6–9 лет — 4 500 ₽ за 8 занятий",
       "booking": "required",
       "hours": null,
       "indoor": "yes",
@@ -390523,7 +390479,7 @@
       "minus": "Только индивидуальные занятия, групп нет",
       "url": "https://aquapups.ru/",
       "source": "aquapups.ru/babushkinskaya: «Индивидуальные занятия … к детям с 1,5 месяцев до 9 лет», список студий (проверено 2026-11-09); цены — на сайте студии",
-      "verified_at": "2026-11-11",
+      "verified_at": "2026-11-13",
       "status": "verified",
       "cats": [
         "pools"
@@ -390924,8 +390880,8 @@
       ],
       "metro": "Медведково",
       "address": "Заповедная ул., 1",
-      "lat": 55.888204,
-      "lon": 37.662059,
+      "lat": 55.867042,
+      "lon": 37.632142,
       "age_min": 4,
       "age_max": 17,
       "duration_min": 45,
@@ -395823,7 +395779,7 @@
       ],
       "price_child": null,
       "price_adult": null,
-      "free_note": null,
+      "free_note": "абонемент в месяц: 3–5 лет (2 тренировки в неделю по 45 мин) — 9 500 ₽; 5–7 лет (3 тренировки в неделю по 90 мин) — 12 000 ₽; старшие группы (4–5 тренировок в неделю) — 18 000–20 000 ₽; пробное занятие — 500 ₽",
       "booking": "required",
       "hours": null,
       "indoor": "yes",
@@ -395836,7 +395792,7 @@
       "plus": "Художественная гимнастика для девочек с 3 лет",
       "minus": "Только для девочек",
       "url": "https://eut-gymnastics.ru/",
-      "source": "каталог sportschools.ru, «секции для детей у метро Молодёжная»: «Занятия художественной гимнастикой для девочек с 3 лет» (проверено 2026-11-09); цены — у клуба",
+      "source": "каталог sportschools.ru, «секции для детей у метро Молодёжная»: «Занятия художественной гимнастикой для девочек с 3 лет» (проверено 2026-11-09)",
       "verified_at": "2026-11-09",
       "status": "draft",
       "cats": [
@@ -419569,7 +419525,6 @@
       "how_to_find": null,
       "phone": "+7 (925) 202-30-93",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -422831,9 +422786,8 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": null,
+      "phone": "+7 (495) 640-54-36",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -431129,8 +431083,8 @@
       ],
       "metro": "Щелковская",
       "address": "16-я Парковая ул., 20",
-      "lat": 55.80996,
-      "lon": 37.79826,
+      "lat": 55.804237,
+      "lon": 37.830721,
       "age_min": 5,
       "age_max": 14,
       "duration_min": 45,
@@ -431165,7 +431119,7 @@
         "ballgames",
         "football"
       ],
-      "coord_exact": null,
+      "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
       "phone": "+7 (965) 213-32-99",
@@ -432285,7 +432239,7 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": "+7 (496) 258-51-75",
+      "phone": "+7 (963) 695-11-34",
       "season_months": null,
       "hours_src": "Яндекс Карты",
       "open_mode": "hours",
@@ -432924,7 +432878,6 @@
       "how_to_find": null,
       "phone": "+7 (916) 206-47-14",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -434312,8 +434265,8 @@
       "minus": "Дети 7–14 лет — только со взрослым; детям до 12 лет нужна справка об анализах (энтеробиоз)",
       "url": "https://dmitrov-ice.ru/",
       "source": "карточка Яндекс Карт «Бассейн «Дельфин»» (Дмитров, Профессиональная ул., 25), поиск по городу (проверено 2026-11-11)",
-      "verified_at": "2026-11-11",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "pools"
       ],
@@ -434322,7 +434275,6 @@
       "how_to_find": null,
       "phone": "+7 (496) 224-54-68",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -436373,7 +436325,6 @@
       "how_to_find": null,
       "phone": "+7 (926) 834-00-68",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -439015,7 +438966,6 @@
       "how_to_find": null,
       "phone": "+7 (903) 709-58-59",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -440022,7 +439972,6 @@
       "how_to_find": null,
       "phone": "+7 (496) 513-07-36",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -440177,8 +440126,8 @@
       "minus": null,
       "url": "https://fc-bars-official.clients.site/",
       "source": "карточка Яндекс Карт «Футбольный клуб «Барс»» (рп Большие Вязёмы, ул. Институт, вл55с1), поиск по району (проверено 2026-11-11)",
-      "verified_at": "2026-11-11",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "football"
       ],
@@ -440187,7 +440136,6 @@
       "how_to_find": null,
       "phone": "+7 (910) 432-19-28",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -440844,11 +440792,11 @@
       "tags": [
         "sport"
       ],
-      "price_child": null,
+      "price_child": 800,
       "price_adult": null,
-      "free_note": "абонемент на месяц (8 занятий) 5000 ₽",
+      "free_note": "первая тренировка в группе — бесплатно; разовое групповое занятие — 800 ₽; абонемент на месяц: 4 занятия — 3 000 ₽, 8 — 5 000 ₽, 12 — 6 500 ₽",
       "booking": "required",
-      "hours": null,
+      "hours": "ежедневно 07:00–22:30",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -440860,18 +440808,47 @@
       "minus": "Есть и взрослые группы",
       "url": "https://www.rfcmma.ru/",
       "source": "карточка Яндекс Карт «Клуб единоборств RFC» (Московский, 1-й мкр, 158 (ТЦ «Свежий рынок»)), поиск по району; сайт https://www.rfcmma.ru/ (проверено 2026-11-11)",
-      "verified_at": "2026-11-11",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "martial"
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Этаж: 2",
+      "how_to_find": "Этаж: 2, ТЦ «Свежий рынок»",
       "phone": "+7 (926) 564-51-37",
       "season_months": null,
-      "open_mode": "unknown",
-      "open_week": null,
+      "open_mode": "hours",
+      "open_week": [
+        [
+          420,
+          1350
+        ],
+        [
+          420,
+          1350
+        ],
+        [
+          420,
+          1350
+        ],
+        [
+          420,
+          1350
+        ],
+        [
+          420,
+          1350
+        ],
+        [
+          420,
+          1350
+        ],
+        [
+          420,
+          1350
+        ]
+      ],
       "point_level": "вход",
       "point_door": "вход_яндекс"
     },
@@ -441226,7 +441203,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Вход: через ФОК «Торпедо»\nПарковка: на территории ФОК «Торпедо», въезд через шлагбаум",
       "phone": "+7 (495) 790-15-04",
       "season_months": null,
       "hours_src": "Яндекс Карты",
@@ -441602,7 +441579,7 @@
         "школа танцев"
       ],
       "metro": "Аминьевская",
-      "address": "Аминьевское ш., 6",
+      "address": "Аминьевское ш., 6, ТЦ «Квартал»",
       "lat": 55.706649,
       "lon": 37.456763,
       "age_min": 3,
@@ -441622,7 +441599,7 @@
       "price_adult": null,
       "free_note": null,
       "booking": "required",
-      "hours": "ежедневно 10:00–22:00",
+      "hours": "ежедневно 10:00–23:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -441634,8 +441611,8 @@
       "minus": "Есть и взрослые группы",
       "url": "https://dance-school.moscow/",
       "source": "карточка Яндекс Карт «Школа танцев Dance Space» (Аминьевское ш., 6), поиск по району; сайт dance-school.moscow (детям с 3 лет) (проверено 2026-11-11)",
-      "verified_at": "2026-11-11",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "dance"
       ],
@@ -441644,36 +441621,35 @@
       "how_to_find": "Этаж: 4",
       "phone": "+7 (916) 298-27-70",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
           600,
-          1320
+          1380
         ],
         [
           600,
-          1320
+          1380
         ],
         [
           600,
-          1320
+          1380
         ],
         [
           600,
-          1320
+          1380
         ],
         [
           600,
-          1320
+          1380
         ],
         [
           600,
-          1320
+          1380
         ],
         [
           600,
-          1320
+          1380
         ]
       ],
       "point_level": "вход",
@@ -442893,8 +442869,8 @@
       "minus": "Есть и взрослые группы",
       "url": "https://gudgimnast.ru/",
       "source": "карточка Яндекс Карт «Клуб «Гимнастика у дома»» (Москва, Коммунарка, Скандинавский б-р, 2, корп. 8), поиск по району (проверено 2026-11-11)",
-      "verified_at": "2026-11-11",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "gymnastics"
       ],
@@ -442903,7 +442879,6 @@
       "how_to_find": null,
       "phone": "+7 (993) 892-88-94",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -443908,8 +443883,8 @@
       "minus": null,
       "url": "https://shtormh2o.ru/",
       "source": "сайт shtormh2o.ru (список бассейнов, возраст 4–17 лет) (проверено 2026-11-11)",
-      "verified_at": "2026-11-11",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "pools"
       ],
@@ -443918,7 +443893,6 @@
       "how_to_find": null,
       "phone": "+7 (965) 352-30-94",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -445515,7 +445489,7 @@
       "price_adult": null,
       "free_note": "первое занятие бесплатно",
       "booking": "required",
-      "hours": "пн-пт 07:30–22:00; сб 09:00–18:30",
+      "hours": "пн–пт 07:30–22:00; сб 09:00–18:30",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -445527,8 +445501,8 @@
       "minus": null,
       "url": "https://www.titanbjj.ru/",
       "source": "карточка Яндекс Карт «Клуб джиу-джитсу «Титан»» (Петрозаводская ул., 15, корп. 5); сайт titanbjj.ru (группы 3–6, 7–10 лет) (проверено 2026-11-12)",
-      "verified_at": "2026-11-12",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "martial"
       ],
@@ -445537,7 +445511,6 @@
       "how_to_find": null,
       "phone": "+7 (499) 450-58-98",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -445723,7 +445696,7 @@
         "клуб бокса и кикбоксинга"
       ],
       "metro": "Домодедовская",
-      "address": "Домодедовская ул., 28",
+      "address": "Москва, Домодедовская ул., 28, ТЦ «Белград»",
       "lat": 55.60500139,
       "lon": 37.71199415,
       "age_min": 7,
@@ -447800,7 +447773,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Этаж: 3",
+      "how_to_find": "Парковка: бесплатная\nЭтаж: 3",
       "phone": "+7 (903) 587-33-03",
       "season_months": null,
       "open_mode": "unknown",
@@ -450428,7 +450401,7 @@
       "lat": 55.78116888,
       "lon": 37.60081331,
       "age_min": 7,
-      "age_max": 14,
+      "age_max": 15,
       "duration_min": 45,
       "duration_max": 90,
       "energy": "active",
@@ -451477,7 +451450,7 @@
         "клуб художественной гимнастики"
       ],
       "metro": "Нагатинский затон",
-      "address": "Коломенская наб., 8",
+      "address": "Коломенская наб., 8, школа «Покровский квартал»",
       "lat": 55.68110701,
       "lon": 37.70610171,
       "age_min": 3,
@@ -452724,7 +452697,7 @@
       "lat": 55.925889,
       "lon": 37.820448,
       "age_min": 3,
-      "age_max": 11,
+      "age_max": 17,
       "duration_min": 45,
       "duration_max": 90,
       "energy": "active",
@@ -452739,7 +452712,7 @@
       "price_adult": null,
       "free_note": "цирковое искусство: 3–6 лет — 700 ₽, 7–11 лет — 900 ₽ за академический час",
       "booking": "required",
-      "hours": "пн-пт 17:00–21:00",
+      "hours": "пн–пт 17:00–21:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -452751,8 +452724,8 @@
       "minus": null,
       "url": "https://junglecenter.ru/",
       "source": "карточка Яндекс Карт «Jungle» (Королёв, ул. Грабина, 8Б) (проверено 2026-11-12)",
-      "verified_at": "2026-11-12",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "circus",
         "acrobatics",
@@ -452763,7 +452736,6 @@
       "how_to_find": null,
       "phone": "+7 (977) 270-30-50",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -452949,7 +452921,7 @@
       "lat": 55.786350668,
       "lon": 37.493764849,
       "age_min": 3,
-      "age_max": 15,
+      "age_max": 17,
       "duration_min": 45,
       "duration_max": 90,
       "energy": "active",
@@ -452983,7 +452955,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Вход: через КПП №6 ЖК «Хорошевский», ориентир — магазин «Пятёрочка», затем калитка с домофоном и центральный вход школы One! International School",
       "phone": "+7 (495) 255-74-45",
       "season_months": null,
       "hours_src": "Яндекс Карты",
@@ -453115,11 +453087,11 @@
         "клуб художественной гимнастики"
       ],
       "metro": "Химки",
-      "address": "Химки, Совхозная ул., 15, стр. 3",
+      "address": "Химки, Совхозная ул., 15, стр. 3, 2 этаж",
       "lat": 55.899222669,
       "lon": 37.474056806,
-      "age_min": 5,
-      "age_max": null,
+      "age_min": 3,
+      "age_max": 17,
       "duration_min": 45,
       "duration_max": 90,
       "energy": "active",
@@ -453153,7 +453125,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Этаж: 2",
       "phone": "+7 (977) 822-26-98",
       "season_months": null,
       "hours_src": "Яндекс Карты",
