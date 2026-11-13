@@ -326176,9 +326176,10 @@
 },
 "marlinswim-ru": {
 "url": "https://marlinswim.ru",
-"ok": false,
-"err": "<urlopen error [Errno 101] Network is unreachable>",
-"tries": 1
+"ok": true,
+"pages": 1,
+"bytes": 1099,
+"tries": 0
 },
 "worldswim-ru": {
 "url": "https://worldswim.ru",
@@ -326203,13 +326204,27 @@
 "marlinswim-ru-price": {
 "url": "https://marlinswim.ru/price",
 "ok": false,
-"err": "<urlopen error [Errno 101] Network is unreachable>",
+"err": "HTTP Error 404: Not Found",
 "tries": 1
 },
 "uchinka-ru-bassejn": {
 "url": "https://uchinka.ru/bassejn",
 "ok": false,
-"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
+"err": "HTTP Error 404: Not Found",
 "tries": 1
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-c2e-confirm2-cafe-ersh-pererva-58-text-d0-81-d1": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?c2e=confirm2-cafe-ersh-pererva-58&text=%D0%81%D1%80%D1%88%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9F%D0%B5%D1%80%D0%B5%D1%80%D0%B2%D0%B0%2C%2058",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-org-yersh-1108936751": {
+"url": "https://yandex.ru/maps/org/yersh/1108936751/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
 }
 }
