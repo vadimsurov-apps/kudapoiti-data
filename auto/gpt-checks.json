@@ -370,6 +370,38 @@
 "status": "not_found",
 "wrong": {}
 },
+"aqua-termoland": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальный сайт подтверждает комплекс, адрес, режим и телефон; дети до 3 лет проходят бесплатно со взрослым, есть два детских бассейна глубиной 0,3 и 0,6 м.",
+"ok": [
+"address",
+"hours"
+],
+"sources": [
+"https://schelkovo.termoland.ru/",
+"https://schelkovo.termoland.ru/venue-rules/"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://schelkovo.termoland.ru/venue-rules/",
+"value": [
+0,
+17
+]
+},
+"phone": {
+"source": "https://schelkovo.termoland.ru/",
+"value": "+7 (495) 118-06-40"
+},
+"url": {
+"source": "https://schelkovo.termoland.ru/",
+"value": "https://schelkovo.termoland.ru/"
+}
+}
+},
 "archaeology-museum": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -837,6 +869,20 @@
 }
 }
 },
+"azswim-privolnaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальный сайт доступен, но проверяемые значения не удалось надёжно подтвердить на его открытых страницах.",
+"ok": [
+"url"
+],
+"sources": [
+"https://azswim.ru/"
+],
+"status": "works",
+"wrong": {}
+},
 "babushkinsky": {
 "by": "Codex",
 "date": "2026-11-12",
@@ -866,6 +912,26 @@
 ],
 "status": "works",
 "wrong": {}
+},
+"baby-dance-voskresensk-novlyansky": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Карточка филиала в Яндекс Картах подтверждает работу, адрес, этаж и телефон; точный недельный режим из доступной страницы не извлечён.",
+"ok": [
+"address",
+"how"
+],
+"sources": [
+"https://yandex.com/maps/org/baby_dance/171198948030/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://yandex.com/maps/org/baby_dance/171198948030/",
+"value": "+7 (999) 988-92-69"
+}
+}
 },
 "babya-dolya-kolomna": {
 "by": "Codex",
@@ -5019,6 +5085,20 @@
 "status": "works",
 "wrong": {}
 },
+"chaika-swim-school": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальный сайт доступен, но проверяемые значения не удалось надёжно подтвердить на его открытых страницах.",
+"ok": [
+"url"
+],
+"sources": [
+"https://chaikaschool.com/"
+],
+"status": "works",
+"wrong": {}
+},
 "champion-sync-zemlyanoy-val": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -6550,6 +6630,27 @@
 3,
 16
 ]
+}
+}
+},
+"cska-football-yasenevo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальная страница филиала подтверждает работу, адрес и набор 3–16 лет; 8 тренировок в месяц стоят 8 500 ₽, первая ознакомительная тренировка бесплатная.",
+"ok": [
+"address",
+"url",
+"age"
+],
+"sources": [
+"https://dufa-cska.com/centers/yasenevo/"
+],
+"status": "works",
+"wrong": {
+"price": {
+"source": "https://dufa-cska.com/centers/yasenevo/",
+"value": 8500
 }
 }
 },
@@ -15059,6 +15160,35 @@
 }
 }
 },
+"msu-botanical": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальный сайт подтверждает сезонное закрытие до весны, адрес, вход, телефон и координаты входа; исходная точка смещена примерно на 286 м.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://botsad.msu.ru/",
+"https://botsad.msu.ru/kontakty/"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://botsad.msu.ru/",
+"value": "закрыт до весны"
+},
+"point": {
+"source": "https://botsad.msu.ru/kontakty/",
+"value": [
+55.705305,
+37.523554
+]
+}
+}
+},
 "mtyuz": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -15454,6 +15584,42 @@
 "status": "works",
 "wrong": {}
 },
+"nevsky-bears-altufyevo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальная страница московских филиалов подтверждает адрес, телефон, возраст 9–17 лет и цену пробной тренировки 1 100 ₽.",
+"ok": [
+"address",
+"phone",
+"url",
+"price",
+"age"
+],
+"sources": [
+"https://nevsky-bears.ru/moscow/"
+],
+"status": "works",
+"wrong": {}
+},
+"nevsky-bears-izmaylovo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальная страница московских филиалов подтверждает адрес, телефон, возраст 9–17 лет и цену пробной тренировки 1 100 ₽.",
+"ok": [
+"address",
+"phone",
+"url",
+"price",
+"age"
+],
+"sources": [
+"https://nevsky-bears.ru/moscow/"
+],
+"status": "works",
+"wrong": {}
+},
 "nevsky-bears-panferova": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -15462,6 +15628,24 @@
 "ok": [],
 "sources": [],
 "status": "not_found",
+"wrong": {}
+},
+"nevsky-bears-tsaritsyno": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальная страница московских филиалов подтверждает адрес, телефон, возраст 9–17 лет и цену пробной тренировки 1 100 ₽.",
+"ok": [
+"address",
+"phone",
+"url",
+"price",
+"age"
+],
+"sources": [
+"https://nevsky-bears.ru/moscow/"
+],
+"status": "works",
 "wrong": {}
 },
 "nevsky-bears-vodny": {
@@ -16181,6 +16365,35 @@
 "status": "works",
 "wrong": {}
 },
+"padel-v-padel-kurkino": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальный сайт подтверждает клуб, адрес в ТЦ «Парус», вход, этаж и телефон; возраст и часы не подтверждены.",
+"ok": [],
+"sources": [
+"https://v-padel.ru/contact"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://v-padel.ru/contact",
+"value": "Новокуркинское ш., 1, ТЦ «Парус», 5 этаж"
+},
+"how": {
+"source": "https://v-padel.ru/contact",
+"value": "Вход: с улицы со стороны Новокуркинского шоссе\nЭтаж: 5, подняться на лифте"
+},
+"phone": {
+"source": "https://v-padel.ru/contact",
+"value": "+7 (916) 169-09-03"
+},
+"url": {
+"source": "https://v-padel.ru/contact",
+"value": "https://v-padel.ru/"
+}
+}
+},
 "padlhub-nagatino": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -16238,6 +16451,20 @@
 "value": "+7 (499) 110-77-35"
 }
 }
+},
+"panda-meshchersky": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальный сайт доступен; сезонное закрытие, цену и возрастные ограничения конкретного парка надёжно подтвердить не удалось.",
+"ok": [
+"url"
+],
+"sources": [
+"https://pandapark.org"
+],
+"status": "works",
+"wrong": {}
 },
 "panda-sokolniki": {
 "by": "Codex",
@@ -16593,6 +16820,20 @@
 "status": "works",
 "wrong": {}
 },
+"pirouette-miklukho-maklaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальный сайт доступен, но проверяемые значения не удалось надёжно подтвердить на его открытых страницах.",
+"ok": [
+"url"
+],
+"sources": [
+"https://piruet-msk.ru/"
+],
+"status": "works",
+"wrong": {}
+},
 "planeta-kvn": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -16900,6 +17141,22 @@
 "value": "https://polycent.ru/"
 }
 }
+},
+"polytech-main": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальный документ подтверждает адрес здания и проведение строительных работ, но не даёт достаточного основания автоматически применять статус закрытия.",
+"ok": [
+"address",
+"url"
+],
+"sources": [
+"https://polymus.ru",
+"https://polymus.ru/media/_media/files/1531923874.12/POLITEH_programma-rabot_SMR.pdf"
+],
+"status": "works",
+"wrong": {}
 },
 "pool-arkhimed-dubna": {
 "by": "Codex",
@@ -18239,6 +18496,98 @@
 }
 }
 },
+"schoolball-fiztekh": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальный список филиалов подтверждает адрес, телефон и режим; новость школы подтверждает группы 4–14 лет.",
+"ok": [
+"address",
+"phone",
+"url",
+"age"
+],
+"sources": [
+"https://schoolball.ru/contacts",
+"https://schoolball.ru/news/117"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://schoolball.ru/contacts",
+"value": "ежедневно 10:00-20:00"
+}
+}
+},
+"schoolball-krylatskoe": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальный список филиалов подтверждает адрес, телефон и режим; новость школы подтверждает группы 4–14 лет.",
+"ok": [
+"address",
+"phone",
+"url",
+"age"
+],
+"sources": [
+"https://schoolball.ru/contacts",
+"https://schoolball.ru/news/117"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://schoolball.ru/contacts",
+"value": "ежедневно 10:00-20:00"
+}
+}
+},
+"schoolball-myakinino": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальный список филиалов подтверждает адрес, телефон и режим; новость школы подтверждает группы 4–14 лет.",
+"ok": [
+"address",
+"phone",
+"url",
+"age"
+],
+"sources": [
+"https://schoolball.ru/contacts",
+"https://schoolball.ru/news/117"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://schoolball.ru/contacts",
+"value": "ежедневно 10:00-20:00"
+}
+}
+},
+"schoolball-rimskaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальный список филиалов подтверждает адрес, телефон и режим; новость школы подтверждает группы 4–14 лет.",
+"ok": [
+"address",
+"phone",
+"url",
+"age"
+],
+"sources": [
+"https://schoolball.ru/contacts",
+"https://schoolball.ru/news/117"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://schoolball.ru/contacts",
+"value": "ежедневно 10:00-20:00"
+}
+}
+},
 "scriabin-museum": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -19292,6 +19641,40 @@
 "status": "works",
 "wrong": {}
 },
+"sport-katok-mayak": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Страница площадки подтверждает набор 3,5–8 лет, адрес, координаты и условия парковки; указанная точка смещена примерно на 405 м.",
+"ok": [
+"address",
+"url"
+],
+"sources": [
+"https://www.sport-katok.ru/sections/school/schedule/mayak/"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://www.sport-katok.ru/sections/school/schedule/mayak/",
+"value": [
+3.5,
+8
+]
+},
+"how": {
+"source": "https://www.sport-katok.ru/sections/school/schedule/mayak/",
+"value": "Парковка: бесплатно около катка по заранее оформленному пропуску на parkspot.ru; бесплатные места есть вдоль подъездной дороги"
+},
+"point": {
+"source": "https://www.sport-katok.ru/sections/school/schedule/mayak/",
+"value": [
+55.607351,
+37.572836
+]
+}
+}
+},
 "sport-museum": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -19753,6 +20136,38 @@
 }
 }
 },
+"tchaikovsky-hall": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальные контакты подтверждают адрес и справочный телефон; правила допускают детей с 3 лет, билет нужен каждому зрителю независимо от возраста.",
+"ok": [
+"phone"
+],
+"sources": [
+"https://dev.meloman.ru/rules/ticket-rules-full/",
+"https://meloman.ru/hall/koncertnyj-zal-chajkovskogo",
+"https://meloman.ru/slushatelyam/contacts/"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://meloman.ru/slushatelyam/contacts/",
+"value": "Триумфальная пл., 4"
+},
+"age": {
+"source": "https://dev.meloman.ru/rules/ticket-rules-full/",
+"value": [
+3,
+17
+]
+},
+"url": {
+"source": "https://meloman.ru/hall/koncertnyj-zal-chajkovskogo",
+"value": "https://meloman.ru/hall/koncertnyj-zal-chajkovskogo"
+}
+}
+},
 "teatr-armii": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -19907,6 +20322,20 @@
 }
 }
 },
+"tennis-derzhava-krylatskoe": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальный сайт доступен; остальные значения надёжно проверить не удалось.",
+"ok": [
+"url"
+],
+"sources": [
+"https://clubworld-power.wixsite.com/derzavatennis"
+],
+"status": "works",
+"wrong": {}
+},
 "tennis-dmitrov-academy": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -19977,6 +20406,23 @@
 ],
 "sources": [
 "http://tepigra.ru/"
+],
+"status": "works",
+"wrong": {}
+},
+"termoland-butovo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальный сайт филиала подтверждает работу, адрес, режим и телефон; цены и возрастные условия не подтверждены на доступной странице.",
+"ok": [
+"address",
+"hours",
+"phone",
+"url"
+],
+"sources": [
+"https://butovo.termoland.ru/"
 ],
 "status": "works",
 "wrong": {}
@@ -20284,6 +20730,16 @@
 }
 }
 },
+"tour-pokrov-chocolate": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Не удалось найти первоисточник, однозначно подтверждающий действующий музей шоколада по этому адресу.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
 "toy-museum": {
 "by": "Codex",
 "date": "2026-11-12",
@@ -20406,6 +20862,23 @@
 "how": {
 "source": "https://magic2.ru/",
 "value": "Вход: от метро «Марксистская», выход 6, по Таганской улице; у дома 38, стр. 1 повернуть направо в парк, далее за сцену к красной башне"
+}
+}
+},
+"troparyovo-beach": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Территория работает как зона отдыха; по последней найденной официальной проверке 23.07.2026 купание не рекомендовалось из-за качества воды.",
+"ok": [],
+"sources": [
+"https://77.rospotrebnadzor.ru/index.php/press-centr/press-relizy/15628-o-kontrole-za-zonami-otdykha-v-gorode-moskve-23-07-2026"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://77.rospotrebnadzor.ru/index.php/press-centr/press-relizy/15628-o-kontrole-za-zonami-otdykha-v-gorode-moskve-23-07-2026",
+"value": "ул. Академика Виноградова, 12, зона отдыха «Тропарёво»"
 }
 }
 },
@@ -20673,6 +21146,31 @@
 "status": "not_found",
 "wrong": {}
 },
+"tvoya-podacha-iyun": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальный сайт подтверждает действующую школу, адрес, этаж, ориентир, часы и телефон; возраст не указан.",
+"ok": [
+"address",
+"hours",
+"how"
+],
+"sources": [
+"https://www.tvoya-podacha.ru/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://www.tvoya-podacha.ru/",
+"value": "+7 (968) 575-72-62"
+},
+"url": {
+"source": "https://www.tvoya-podacha.ru/",
+"value": "https://www.tvoya-podacha.ru/"
+}
+}
+},
 "twinkle-kids-mytnaya": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -20843,6 +21341,25 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"vdnh-neftegrad": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1553-4.json",
+"note": "Официальная страница ВДНХ подтверждает действующую бесплатную интерактивную площадку и круглосуточный режим; точный возраст не указан.",
+"ok": [
+"hours"
+],
+"sources": [
+"https://vdnh.ru/places/detskaya-interaktivnaya-ploshchadka-neftegrad/"
+],
+"status": "works",
+"wrong": {
+"url": {
+"source": "https://vdnh.ru/places/detskaya-interaktivnaya-ploshchadka-neftegrad/",
+"value": "https://vdnh.ru/places/detskaya-interaktivnaya-ploshchadka-neftegrad/"
+}
+}
 },
 "vedogon-theatre": {
 "by": "Codex",
