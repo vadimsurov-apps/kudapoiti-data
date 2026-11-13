@@ -90,6 +90,14 @@ def main(src="metro.osm"):
     if mos:
         for e in good:
             e["mos"] = round(min(dist(e["lat"], e["lon"], m[0], m[1]) for m in mos))
+    # сверка с входами станций из Яндекс Карт (pipeline/metro_yandex.py): ya — метров до ближайшего входа Яндекса.
+    # Яндекс часто отдаёт не все входы станции, поэтому большое расстояние — «не подтверждено», а не «ошибка».
+    if os.path.exists("auto/metro-exits-yandex.json"):
+        yp = [p for v in json.load(open("auto/metro-exits-yandex.json")).values() for p in v.get("ent", [])]
+        for e in good:
+            d = min((dist(e["lat"], e["lon"], p[0], p[1]) for p in yp), default=None)
+            if d is not None and d <= 40: e["ya"] = round(d)
+        print("подтверждено Яндексом ≤40 м:", sum(1 for e in good if "ya" in e), "из", len(good))
     out = {"version": datetime.date.today().isoformat(), "source": "OpenStreetMap (railway=subway_entrance)",
            "mos_checked": bool(mos), "exits": good}
     json.dump(out, open("metro-exits.json", "w"), ensure_ascii=False, separators=(",", ":"))
