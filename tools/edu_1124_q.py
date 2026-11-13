@@ -7,16 +7,17 @@ with contextlib.redirect_stdout(io.StringIO()):
 from edu_1124_sel import SEL
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 E = {"24:" + k: v for k, v in json.load(open(os.path.join(ROOT, "tools/edu_1124_ext.json"))).items()}
+E.update({"24x:" + k: v for k, v in json.load(open(os.path.join(ROOT, "tools/edu_1124_ext2.json"))).items()})
 D = {n.lower().replace("ё", "е"): (a, b) for n, a, b in MET}
 TOWN = {"Одинцово": (55.6780, 37.2770), "Мытищи": (55.9116, 37.7300), "Подольск": (55.4310, 37.5450), "Балашиха": (55.7800, 37.9500)}
 FIXST = {"бульвар генерала карбышева": "октябрьское поле"}
 MANUAL = {"24:163": ("партизанская", 2000)}
-NAME = {"chernyak-mironovskaya": "Черняк", "zdorovy-rebenok-novatorov": "Здоровый", "popova-neuro-kommunarka": "Попов",
+NAME = {"dom-ras-rybalko": "РАС", "akademiya-rechi-stroginsky": "академия", "chernyak-mironovskaya": "Черняк", "zdorovy-rebenok-novatorov": "Здоровый", "popova-neuro-kommunarka": "Попов",
         "vernoe-reshenie-kravchenko": "Верное", "akademiya-rechi-zelenodolskaya": "академия", "akademiya-rechi-tukhachevskogo": "академия"}
 def near_station(key):
     if key in MANUAL: return MANUAL[key]
-    n = key.split(":")[1]
-    f = glob.glob(os.path.join(ROOT, f"auto/pages/*-ev{n}-1124e-*.txt"))[0]
+    a, n = key.split(":")
+    f = glob.glob(os.path.join(ROOT, f"auto/pages/*-{'ex' if a == '24x' else 'ev'}{n}-1124e-*.txt"))[0]
     L = [l.strip() for l in open(f).read().split("\n### ")[0].splitlines() if l.strip()]
     if "Как добраться" not in L: return None, None
     i = L.index("Как добраться")
@@ -25,7 +26,7 @@ def near_station(key):
     except ValueError: return None, None
     st = st.lower().replace("ё", "е")
     return FIXST.get(st, st), m
-def qid(key): return f"edu24-{key.split(':')[1]}"
+def qid(key): a, b = key.split(":"); return f"edu{a}-{b}"
 Q = []
 for pid, v in SEL.items():
     o = E.get(v[0])
