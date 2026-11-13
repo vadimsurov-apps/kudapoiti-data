@@ -29,8 +29,9 @@ def main(src="metro.osm"):
             nid = el.get("id"); lat = float(el.get("lat")); lon = float(el.get("lon"))
             if t.get("railway") == "subway_entrance":
                 exits[nid] = (lat, lon, t)
-            elif t.get("railway") == "station" and (t.get("station") == "subway" or t.get("subway") == "yes"):
-                if t.get("name"):
+            elif t.get("railway") == "station" and (t.get("station") in ("subway", "light_rail", "monorail") or t.get("subway") == "yes"
+                                                    or "МЦК" in (t.get("network") or "") or "метрополитен" in (t.get("network") or "").lower()):
+                if t.get("name") and not t["name"].startswith("Москва-"):
                     stations[nid] = (lat, lon, t)
             el.clear()
         elif el.tag == "relation":
@@ -66,8 +67,10 @@ def main(src="metro.osm"):
             names = sorted({n[1] for n in near if n[0] <= near[0][0] + 120}); how = "near"
         if not names:
             skipped.append({"osm": nid, "lat": lat, "lon": lon, "why": "станция не определена", "tags": t}); continue
-        if not near or near[0][0] > 350:
+        if how != "stop_area" and (not near or near[0][0] > 350):
             skipped.append({"osm": nid, "lat": lat, "lon": lon, "why": "дальше 350 м от станции", "tags": t}); continue
+        if "МЦК" in (t.get("network") or ""):
+            names = [n if "МЦК" in n else n + " (МЦК)" for n in names]
         e = {"id": "n" + nid, "lat": round(lat, 7), "lon": round(lon, 7), "station": " / ".join(names), "by": how}
         ref = (t.get("ref") or "").strip()
         if ref: e["ref"] = ref
@@ -92,6 +95,11 @@ def main(src="metro.osm"):
     json.dump(out, open("metro-exits.json", "w"), ensure_ascii=False, separators=(",", ":"))
     json.dump(skipped, open("auto/metro-exits-skipped.json", "w"), ensure_ascii=False, indent=0)
     st = {e["station"] for e in good}
+    have = {x.replace(" (МЦК)", "") for e in good for x in e["station"].split(" / ")}
+    none = sorted({clean(s[2].get("name")) for s in stations.values()} - have)
+    json.dump({"date": out["version"], "exits": len(good), "skipped": len(skipped), "stations_without_exits": none},
+              open("auto/metro-exits-report.json", "w"), ensure_ascii=False, indent=1)
+    print("станции без выходов:", none)
     print(f"выходов: {len(good)}, станций: {len(st)}, станций метро в OSM: {len({clean(s[2].get('name')) for s in stations.values()})}, "
           f"с номером: {sum(1 for e in good if e.get('ref'))}, пропущено: {len(skipped)}, официальных точек: {len(mos)}")
     if mos:
