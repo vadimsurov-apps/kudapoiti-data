@@ -73,16 +73,67 @@ def all_places():
     return json.load(open("places.json"))["places"]
 
 
+def _load(path, default):
+    try:
+        return json.load(open(path))
+    except Exception:
+        return default
+
+
+def doubt_map():
+    """Насколько сомнительна каждая карточка (Вадим 13.11: «Виктории на проверку сначала самые сомнительные и недостоверные
+    карточки. Как только они все будут уточнены, сможет перейти к остальным сомнительным»). Чем больше балл — тем раньше.
+    Возвращает {id: (балл, [причины])}."""
+    ver = _load("auto/verified.json", {}); ya = _load("auto/yandex-entrances.json", {})
+    disputes = _load("auto/gpt-disputes.json", {}); answers_ = _load(ANS, {})
+    reps = _load(REP, []); reps = reps if isinstance(reps, list) else reps.get("reports", [])
+    unsolved = {r.get("place_id") for r in reps if answers_.get(str(r.get("id")), {}).get("status") == "need_source"}
+    ago = lambda d: time.strftime("%Y-%m-%d", time.gmtime(time.time() - d * 86400))
+    out = {}
+    for p in all_places():
+        pid = p["id"]; score = 0; why = []
+        d = disputes.get(pid)
+        if d and not d.get("resolved"):
+            st = d.get("status")
+            score += 8 if st in ("closed", "moved") else 6 if st == "not_found" else 5
+            why.append({"closed": "GPT считает, что место закрыто", "moved": "GPT считает, что место переехало",
+                        "not_found": "GPT не нашёл подтверждений, что место существует"}.get(st, "GPT нашёл расхождения"))
+        door = p.get("point_door")
+        if door == "объект": score += 3; why.append("точка не на входе (центр объекта)")
+        elif door == "вход_здания": score += 2; why.append("точка на входе здания, не проверено, что это вход места")
+        elif door == "точка_яндекс": score += 1
+        if ya.get(pid, {}).get("none"): score += 3; why.append("в Яндекс Картах место не найдено")
+        v = ver.get(pid, {}); food = "food" in (p.get("cats") or [])
+        fields = [("address", "адрес", 30, p.get("address")), ("hours", "часы", 30, p.get("hours")),
+                  ("phone", "телефон", 60, p.get("phone")), ("url", "сайт", 60, p.get("url")),
+                  ("how", "как найти", 90, p.get("how_to_find"))]
+        if not food: fields.append(("price_child", "цена", 30, p.get("price_child") if p.get("price_child") is not None else p.get("price_adult")))
+        nocheck = []
+        for k, title, days, val in fields:
+            e = v.get(k) or (v.get("price_adult") if k == "price_child" else None)
+            if not (e and e.get("date", "") >= ago(days)):
+                score += 1; nocheck.append(title)
+                if val in (None, "", []): score += 1
+        if nocheck: why.append("не подтверждено: " + ", ".join(nocheck))
+        if pid in unsolved: score += 2; why.append("есть правка без источника")
+        out[pid] = (score, why)
+    return out
+
+
 def next_place(chat, state, checks):
-    """Следующая карточка: на карте, не проверена людьми за 30 дней, не пропущена этим человеком; важные категории первыми."""
+    """Следующая карточка: на карте, не проверена людьми за 30 дней, не пропущена этим человеком;
+    сначала самые сомнительные (doubt_map), при равенстве — важные категории."""
     fresh = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 30 * 86400))
     done = {c["place_id"] for c in checks if c.get("date", "") >= fresh}
     skipped = set(state.setdefault("skipped", {}).get(chat, []))
+    doubt = doubt_map()
     def rank(p):
         cats = p.get("cats") or []
-        return min([PRIORITY.index(c) for c in cats if c in PRIORITY] or [len(PRIORITY)])
+        return (-doubt.get(p["id"], (0, []))[0], min([PRIORITY.index(c) for c in cats if c in PRIORITY] or [len(PRIORITY)]))
     left = [p for p in all_places() if p["id"] not in done and p["id"] not in skipped]
     left.sort(key=rank)
+    if left:
+        left[0] = dict(left[0], _doubt=doubt.get(left[0]["id"], (0, []))[1])
     return (left[0] if left else None), len(left)
 
 
@@ -103,6 +154,7 @@ def card_text(p, left):
     if "kidsroom" in (p.get("cats") or []): lines.append("🧸 Детская комната: есть")
     if p.get("plus"): lines.append(f"👍 {p['plus']}")
     if p.get("minus"): lines.append(f"⚠️ {p['minus']}")
+    if p.get("_doubt"): lines += ["", "❗ Почему сомнительно: " + "; ".join(p["_doubt"])]
     lines += ["", "Сверьте с Яндекс Картами / сайтом / звонком. «Наша точка» — где стоит метка в приложении: она должна быть ровно на входе."]
     return "\n".join(lines)
 
@@ -313,6 +365,11 @@ def greet_checkers(state):
                       "где этот вход виден, — панорама Яндекса с вывеской места или карта Яндекса/2ГИС с отметкой входа. "
                       "Без скриншота точку не переносим.", CHECK_KB)
             state["greeted_proof_geo"].append(chat)
+        if chat != OWNER and chat not in state.setdefault("greeted_doubt", []):
+            say(chat, f"🔎 {name}, новый порядок проверки: сначала идут самые сомнительные карточки — те, где меньше всего "
+                      "подтверждено. На каждой внизу строка «❗ Почему сомнительно» — на это и смотрите в первую очередь. "
+                      "Когда они закончатся, пойдут остальные.", CHECK_KB)
+            state["greeted_doubt"].append(chat)
 
 
 def git(*a):
