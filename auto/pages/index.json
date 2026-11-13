@@ -334377,25 +334377,25 @@
 "url": "https://www.park-kuzminki.ru/contacts",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-"tries": 2
+"tries": 3
 },
 "p-kp-ru-contacts": {
 "url": "https://p-kp.ru/contacts",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "parktaganskiy-ru-contacts": {
 "url": "https://parktaganskiy.ru/contacts",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "parktaganskiy-ru-attractions": {
 "url": "https://parktaganskiy.ru/attractions",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 2
+"tries": 3
 },
 "museum-gol-ru-museum-vyazyomy": {
 "url": "https://museum-gol.ru/museum/vyazyomy/",
@@ -334415,7 +334415,7 @@
 "url": "https://katok.luzhniki.ru/prices",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "mxatgorkogo-ru-contacts": {
 "url": "https://mxatgorkogo.ru/contacts",
@@ -334428,13 +334428,13 @@
 "url": "https://moscowzoo.ru/contacts",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
-"tries": 2
+"tries": 3
 },
 "ostafyevomuseum-ru-contacts": {
 "url": "https://ostafyevomuseum.ru/contacts",
 "ok": false,
 "err": "<urlopen error _ssl.c:1063: The handshake operation timed out>",
-"tries": 2
+"tries": 3
 },
 "arhangelskoe-su-tickets": {
 "url": "https://arhangelskoe.su/tickets/",
@@ -334833,6 +334833,32 @@
 "ok": true,
 "pages": 5,
 "bytes": 16000,
+"tries": 0
+},
+"www-greatcircus-ru-faq": {
+"url": "https://www.greatcircus.ru/faq",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"www-greatcircus-ru-pravila": {
+"url": "https://www.greatcircus.ru/pravila",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"agatsukan-ru-contacts": {
+"url": "https://agatsukan.ru/contacts",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"ratiborgym-ru-voykovskaya": {
+"url": "https://ratiborgym.ru/voykovskaya",
+"ok": true,
+"pages": 1,
+"bytes": 9808,
 "tries": 0
 }
 }
