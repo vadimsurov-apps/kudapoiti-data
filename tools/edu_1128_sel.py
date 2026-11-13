@@ -113,8 +113,10 @@ SITE_SRC = {"luminus-vernadskogo": "сайт abaluminous.ru (проспект В
             "discovery-aviatsionnaya": "сайт discoveryschool.ru (ул. Авиационная, д. 77, к. 2; «экосистема для детей от 3 до 11 лет»)",
             "baby-club-aviatsionnaya": "сайт baby-club.ru (клубы в Москве: ул. Авиационная, д. 63)",
             "baby-club-dmitrovskoe": "сайт baby-club.ru (клубы в Москве: Дмитровское шоссе, д. 107А, к. 2)"}
-HOW_FIX = {}
-ADDR_FIX = {"gppc-kuzminki-eseninsky": "Москва, Есенинский бул., 12, корп. 2"}
+HOW_FIX = {"zdorovy-rebenok-troitsk": "Этаж: 1"}
+ADDR_FIX = {"gppc-kuzminki-eseninsky": "Москва, Есенинский бул., 12, корп. 2", "aba-v-nashikh-rukakh-nakhabino": "Красногорск, пгт Нахабино, Красноармейская ул., 70",
+            "logoput-chechersky": "Москва, Чечёрский пр., 122, корп. 1", "zdorovy-rebenok-troitsk": "Москва, Троицк, 2-я Нововатутинская ул., 3",
+            "academkids-tarkovskogo": "Москва, бул. Андрея Тарковского, 5А"}
 PROG = {
  "luminus-vernadskogo": "ABA-терапия, Денверская модель (ESDM) для детей с признаками РАС 1–4 лет, АФК, коммуникативная группа, помощь детям с РАС, СДВГ и ОВЗ",
  "aba-v-nashikh-rukakh-nakhabino": "ABA-терапия, игровая терапия DIR/Floortime, адаптивная физкультура для детей с особенностями развития 0–7 лет",
