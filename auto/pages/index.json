@@ -281205,19 +281205,19 @@
 "url": "https://www.teatrvg.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "ka4elimusic-ru": {
 "url": "https://ka4elimusic.ru",
 "ok": false,
-"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
-"tries": 1
+"err": "HTTP Error 403: Forbidden",
+"tries": 2
 },
 "ka4elimusic-ru-contacts": {
 "url": "https://ka4elimusic.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "muzkolomna-ru": {
 "url": "https://muzkolomna.ru",
@@ -281230,13 +281230,13 @@
 "url": "https://muzkolomna.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "baletskazka-ru-contacts": {
 "url": "https://baletskazka.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "yandex-ru-maps-org-ballet-elion-67612244013": {
 "url": "https://yandex.ru/maps/org/ballet_elion/67612244013/",
@@ -281586,6 +281586,95 @@
 "ok": true,
 "pages": 5,
 "bytes": 16000,
+"tries": 0
+},
+"lednf-ru": {
+"url": "https://lednf.ru/",
+"ok": true,
+"pages": 4,
+"bytes": 8198,
+"tries": 0
+},
+"maus-stroitel-ru": {
+"url": "https://maus-stroitel.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"bagration-sport-ru": {
+"url": "https://bagration-sport.ru/",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"fok-lukhovitsy-ru": {
+"url": "https://fok-lukhovitsy.ru/",
+"ok": true,
+"pages": 4,
+"bytes": 15960,
+"tries": 0
+},
+"mirsportastal-ru": {
+"url": "https://mirsportastal.ru/",
+"ok": false,
+"err": "<urlopen error timed out>",
+"tries": 1
+},
+"xn-7sbabh1bgaebqkj5ad-xn-p1ai": {
+"url": "https://xn----7sbabh1bgaebqkj5ad.xn--p1ai/",
+"ok": false,
+"err": "<urlopen error [Errno -2] Name or service not known>",
+"tries": 1
+},
+"snej-com": {
+"url": "https://snej.com/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"oscartennis-ru": {
+"url": "https://oscartennis.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 5196,
+"tries": 0
+},
+"icetkg-ru": {
+"url": "https://icetkg.ru/",
+"ok": true,
+"pages": 2,
+"bytes": 8843,
+"tries": 0
+},
+"sk-kashira-ru": {
+"url": "https://sk-kashira.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 13106,
+"tries": 0
+},
+"yandex-ru-maps-org-ledovy-dvorets-im-kasatonova-a-v-97984422409": {
+"url": "https://yandex.ru/maps/org/ledovy_dvorets_im_kasatonova_a_v_/97984422409/",
+"ok": true,
+"pages": 2,
+"bytes": 8477,
+"tries": 0
+},
+"yandex-ru-maps-org-ledovaya-arena-psb-patriot-112391936798": {
+"url": "https://yandex.ru/maps/org/ledovaya_arena_psb_patriot/112391936798/",
+"ok": true,
+"pages": 2,
+"bytes": 6146,
+"tries": 0
+},
+"yandex-ru-maps-org-shkola-figurnogo-kataniya-yekateriny-bobrovoy-104429978929": {
+"url": "https://yandex.ru/maps/org/shkola_figurnogo_kataniya_yekateriny_bobrovoy/104429978929/",
+"ok": true,
+"pages": 3,
+"bytes": 7474,
 "tries": 0
 }
 }
