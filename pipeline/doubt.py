@@ -48,6 +48,7 @@ def doubt_map(places=None, gpt=True):
                 score += 1; nocheck.append(title)
                 if val in (None, "", []): score += 1
         if nocheck: why.append("не подтверждено: " + ", ".join(nocheck))
+        if p.get("hours_doubt"): score += 4; why.append("часы «круглосуточно» выглядят ошибкой — уточнить настоящие часы")
         if pid in unsolved: score += 2; why.append("есть правка без источника")
         out[pid] = (score, why)
     return out
