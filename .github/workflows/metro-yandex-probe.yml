@@ -1,10 +1,13 @@
 name: metro-yandex-probe
 on: workflow_dispatch
+permissions:
+  contents: write
 jobs:
   p:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: python3 pipeline/metro_yandex_probe.py
-      - uses: actions/upload-artifact@v4
-        with: {name: probe, path: probe/}
+      - run: |
+          git config user.name "kudapoiti-bot"; git config user.email "bot@users.noreply.github.com"
+          git checkout -q --orphan probe && git rm -rfq --cached . && git add -f probe && git commit -qm probe && git push -fq origin probe
