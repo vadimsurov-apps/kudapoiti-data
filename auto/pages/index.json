@@ -312799,18 +312799,68 @@
 "url": "https://xn--80aaeg1bnbjqi.xn--p1ai/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 1
+"tries": 2
 },
 "voshodgym-ru-contacts": {
 "url": "https://voshodgym.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "eut-gymnastics-ru-contacts": {
 "url": "https://eut-gymnastics.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
+"tries": 2
+},
+"www-artballetfly-su-contacts": {
+"url": "https://www.artballetfly.su/contacts",
+"ok": false,
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
+"tries": 1
+},
+"kk-danceclub-ru": {
+"url": "https://kk-danceclub.ru/",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"kk-danceclub-ru-contacts": {
+"url": "https://kk-danceclub.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"vidnoe-dance-ru": {
+"url": "https://vidnoe-dance.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 16000,
+"tries": 0
+},
+"vidnoe-dance-ru-contacts": {
+"url": "https://vidnoe-dance.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"fasolka-school-ru": {
+"url": "https://fasolka-school.ru/",
+"ok": false,
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
+"tries": 1
+},
+"fasolka-school-ru-contacts": {
+"url": "https://fasolka-school.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"xn-ctbhcb0akr6ak-xn-p1ai-contacts": {
+"url": "https://xn----ctbhcb0akr6ak.xn--p1ai/contacts",
+"ok": false,
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>",
 "tries": 1
 }
 }
