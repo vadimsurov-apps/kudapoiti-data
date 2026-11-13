@@ -584,6 +584,21 @@
 }
 }
 },
+"atom-sandbox": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Доступная официальная страница не позволила подтвердить отдельную зону «Атомарёнок», возраст, часы и цену.",
+"ok": [
+"phone",
+"url"
+],
+"sources": [
+"https://atom.museum"
+],
+"status": "works",
+"wrong": {}
+},
 "avtokombinat-museum": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -715,6 +730,20 @@
 "value": "https://dsports-skolkovo.ru/"
 }
 }
+},
+"balashikha-kartinka": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Сайт не отдал проверяемое содержимое; адрес, часы и цены оставлены unknown.",
+"ok": [
+"url"
+],
+"sources": [
+"http://muzeykartinka.ru"
+],
+"status": "works",
+"wrong": {}
 },
 "balashikha-kraeved": {
 "by": "Codex",
@@ -4594,6 +4623,20 @@
 "status": "works",
 "wrong": {}
 },
+"cdt-maryina-roshcha": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Адрес исторического учреждения подтверждается, но актуальную работу центра и программы первичным источником подтвердить не удалось.",
+"ok": [
+"address"
+],
+"sources": [
+"https://obrmos.ru/go/go_z-o/z_o_svao.html"
+],
+"status": "not_found",
+"wrong": {}
+},
 "cdt-zamoskvorechye": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -4613,6 +4656,30 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"champions-chess-komsomolskaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Сеть и бесплатное пробное занятие подтверждены, но адрес именно этого филиала на доступной странице не виден.",
+"ok": [
+"url",
+"age"
+],
+"sources": [
+"https://champion-chesskids.ru/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://champion-chesskids.ru/",
+"value": "+7 (916) 307-89-10"
+},
+"price": {
+"source": "https://champion-chesskids.ru/",
+"value": 0
+}
+}
 },
 "champions-chess-kotovskogo": {
 "by": "Codex",
@@ -4645,6 +4712,30 @@
 ],
 "status": "works",
 "wrong": {}
+},
+"champions-chess-oktyabrya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Сеть и бесплатное пробное занятие подтверждены, но адрес именно этого филиала на доступной странице не виден.",
+"ok": [
+"url",
+"age"
+],
+"sources": [
+"https://champion-chesskids.ru/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://champion-chesskids.ru/",
+"value": "+7 (916) 307-89-10"
+},
+"price": {
+"source": "https://champion-chesskids.ru/",
+"value": 0
+}
+}
 },
 "chapaevsky-park": {
 "by": "Codex",
@@ -4829,6 +4920,16 @@
 "status": "not_found",
 "wrong": {}
 },
+"chg-andreevskaya-nab": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Первичного источника, подтверждающего пеленальный стол именно в указанном туалете, не найдено.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
 "chg-best-zakharova": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -4865,11 +4966,31 @@
 }
 }
 },
+"chg-cherkizovsky-park": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Надёжного первичного источника существования отдельной комнаты на указанном берегу не найдено.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
 "chg-filatov-lug": {
 "by": "Codex",
 "date": "2026-11-13",
 "file": "20261113-1401-3.json",
 "note": "Надёжного актуального первоисточника с данными именно этой точки найти не удалось.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
+"chg-kolomenskoe-dyakovo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Официальный сайт подтверждает временные ограничения у 1-й улицы Дьякова городища, но не подтверждает отдельную пеленальную комнату в этой точке.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -4884,6 +5005,27 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"chg-tsaritsyno": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Официальный источник подтверждает три комнаты, а не единственную точку у произвольного туалета.",
+"ok": [],
+"sources": [
+"https://tsaritsyno-museum.ru/the_museum/press-center/news/v-tsaritsynskom-parke-poyavilis-statsionarnye-komnaty-materi-i-rebenka/"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://tsaritsyno-museum.ru/the_museum/press-center/news/v-tsaritsynskom-parke-poyavilis-statsionarnye-komnaty-materi-i-rebenka/",
+"value": "Ориентир: комнаты матери и ребенка у Первого Кавалерского корпуса и у входов № 7 и № 10"
+},
+"url": {
+"source": "https://tsaritsyno-museum.ru/the_museum/press-center/news/v-tsaritsynskom-parke-poyavilis-statsionarnye-komnaty-materi-i-rebenka/",
+"value": "https://tsaritsyno-museum.ru/"
+}
+}
 },
 "chistaya-liniya": {
 "by": "Codex",
@@ -6285,6 +6427,30 @@
 "status": "works",
 "wrong": {}
 },
+"doaflip-zhukova": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Официальная страница указывает входной билет 1200 ₽ в будни и 1500 ₽ в выходные; тренировки оплачиваются отдельно.",
+"ok": [
+"address",
+"phone"
+],
+"sources": [
+"https://coach.doaflip.ru/zhukova"
+],
+"status": "works",
+"wrong": {
+"price": {
+"source": "https://coach.doaflip.ru/zhukova",
+"value": 1200
+},
+"url": {
+"source": "https://coach.doaflip.ru/zhukova",
+"value": "https://coach.doaflip.ru/zhukova"
+}
+}
+},
 "dobroznanie-zelenograd": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -6657,6 +6823,16 @@
 }
 }
 },
+"eco-bio-center-pavposad": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Официальный домен ecobiocentre.ru находится в списке запрещённых источников; актуальную работу по другому первичному источнику подтвердить не удалось.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
 "ecobiocentre": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -6691,6 +6867,39 @@
 "url": {
 "source": "https://egoradmin.ru/activities/culture",
 "value": "http://dk-konina.ru/"
+}
+}
+},
+"egoryevsk-history-museum": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Взрослый билет 300 ₽, льготный 150 ₽, дошкольники бесплатно; касса до 17:30.",
+"ok": [
+"address"
+],
+"sources": [
+"https://egmuseum.ru/",
+"https://egmuseum.ru/hours",
+"https://egmuseumold.ru/czena-biletov"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://egmuseum.ru/hours",
+"value": "вт-вс 10:00-18:00; пн выходной"
+},
+"phone": {
+"source": "https://egmuseum.ru/hours",
+"value": "+7 (49640) 4-41-78"
+},
+"price": {
+"source": "https://egmuseumold.ru/czena-biletov",
+"value": 300
+},
+"url": {
+"source": "https://egmuseum.ru/",
+"value": "https://egmuseum.ru/"
 }
 }
 },
@@ -6886,6 +7095,16 @@
 "date": "2026-11-13",
 "file": "20261113-1243-2.json",
 "note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
+"fd-11-parkovaya": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Первичный источник школы не найден; данные стороннего справочника не применялись.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -7093,6 +7312,20 @@
 ],
 "sources": [
 "https://www.mos.ru/upload/documents/files/3787/spisoksekciidlyasaita-integrirovannie.pdf"
+],
+"status": "works",
+"wrong": {}
+},
+"fok-sash-korneychuka": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Официальная страница в поиске не раскрыла данные конкретной секции, поэтому остальные поля unknown.",
+"ok": [
+"url"
+],
+"sources": [
+"https://s93.mossport.ru/"
 ],
 "status": "works",
 "wrong": {}
@@ -9049,6 +9282,16 @@
 "value": "+7 (991) 762-46-68"
 }
 }
+},
+"karting-star-drift-zhukovsky": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Первичный источник или актуальная карточка филиала в ТЦ «Океан» не найдены.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "karting-timati": {
 "by": "Codex",
@@ -11669,6 +11912,29 @@
 "status": "not_found",
 "wrong": {}
 },
+"malevich-park": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Официальный сайт объединения парков подтверждает действующий парк; точку входа проверить не удалось.",
+"ok": [
+"address",
+"hours",
+"price"
+],
+"sources": [
+"https://odinparki.ru/?id=139228",
+"https://tonkosti.ru/Парк_Малевича",
+"https://welcome.mosreg.ru/stories/park-malevica-art-park-s-glubokim-smyslom"
+],
+"status": "works",
+"wrong": {
+"url": {
+"source": "https://odinparki.ru/?id=139228",
+"value": "https://odinparki.ru/"
+}
+}
+},
 "malysh-house": {
 "by": "Codex",
 "date": "2026-11-12",
@@ -11927,6 +12193,28 @@
 "address": {
 "source": "https://mba.mossport.ru/news/moskovskaya-basketbolnaya-akademiya-obyavlyaet-nabor-detey-dlya-zanyatiy-basketbolom/",
 "value": "Нижняя Первомайская ул., 52"
+}
+}
+},
+"mba-zelenograd": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Официальный источник подтверждает бюджетные тренировки, но набор относится к конкретным годам рождения.",
+"ok": [
+"address",
+"url",
+"price"
+],
+"sources": [
+"https://mba.mossport.ru/news/nabor-v-ssh-zelenograd-/",
+"https://mba.mossport.ru/page/strukturnye-podrazdeleniya/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://mba.mossport.ru/page/strukturnye-podrazdeleniya/",
+"value": "+7 (495) 952-26-73"
 }
 }
 },
@@ -13209,6 +13497,22 @@
 }
 }
 },
+"na-donskoy-center": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Официальный сайт подтверждает действующи�� занятия по адресу; возраст зависит от конкретной программы.",
+"ok": [
+"address",
+"hours",
+"url"
+],
+"sources": [
+"https://dnttm.su/?p=16517"
+],
+"status": "works",
+"wrong": {}
+},
 "na-naberezhnoy": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -13413,6 +13717,32 @@
 "sources": [],
 "status": "works",
 "wrong": {}
+},
+"nlbc-badminton-luzhniki": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Официальный сайт также указывает первое занятие бесплатно и группы 6–9 и 10–17 лет.",
+"ok": [
+"address",
+"url",
+"price",
+"age"
+],
+"sources": [
+"https://bc-newliga.ru/"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://bc-newliga.ru/",
+"value": "Этаж: 4, блок C"
+},
+"phone": {
+"source": "https://bc-newliga.ru/",
+"value": "+7 (916) 791-13-33"
+}
+}
 },
 "nlbc-badminton-turchaninov": {
 "by": "Codex",
@@ -13956,6 +14286,23 @@
 ],
 "sources": [
 "https://nevel.club/rvr/"
+],
+"status": "works",
+"wrong": {}
+},
+"padlhub-terekhovo": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Официальный сайт указывает группы 6–8, 8–10 и 10–14 лет, до 6 детей, а не до 4.",
+"ok": [
+"address",
+"url",
+"price",
+"age"
+],
+"sources": [
+"https://padlhub.ru/padelacademy"
 ],
 "status": "works",
 "wrong": {}
@@ -14772,6 +15119,34 @@
 }
 }
 },
+"pumptrack-marino": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Текущая точка относится к другой части парка и находится примерно в 3,2 км от опубликованных координат памп-трека.",
+"ok": [
+"price"
+],
+"sources": [
+"https://fk-ramps.ru/projects/asfaltovyj-pamp-trek-v-marino",
+"https://jumbocrew.ru/info/spoty-dlya-serfskejta-skejta-longborda/",
+"https://t.me/s/club77go/1580?q=%23skateordie"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://fk-ramps.ru/projects/asfaltovyj-pamp-trek-v-marino",
+"value": "Москва, ул. Марьинский Парк, 4, парк 850-летия Москвы"
+},
+"point": {
+"source": "https://t.me/s/club77go/1580?q=%23skateordie",
+"value": [
+55.650312,
+37.783276
+]
+}
+}
+},
 "pushchino-eco-museum": {
 "by": "Codex",
 "date": "2026-11-13",
@@ -15007,6 +15382,31 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"rba-basket-skolka": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Официальная страница подтверждает бесплатную пробную тренировку; возраст указан классами, поэтому age unknown.",
+"ok": [
+"address",
+"url"
+],
+"sources": [
+"https://rbacademy.ru/gyms",
+"https://rbacademy.ru/shkola-skolka.html"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://rbacademy.ru/shkola-skolka.html",
+"value": "вт, чт 16:30-18:40; сб 10:00-13:30 по расписанию групп"
+},
+"phone": {
+"source": "https://rbacademy.ru/shkola-skolka.html",
+"value": "+7 (495) 565-37-07"
+}
+}
 },
 "rechnoy-vokzal": {
 "by": "Codex",
@@ -15527,6 +15927,16 @@
 "http://www.scriabinmuseum.ru/"
 ],
 "status": "works",
+"wrong": {}
+},
+"sdts-lyublino-chess": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Актуальная шахматная секция, цена и возраст на первичном источнике не подтверждены; противоречивые справочники не использованы.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "sergiev-toy-museum": {
@@ -16062,6 +16472,22 @@
 }
 }
 },
+"skolkovo-tennis-school": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Официальная страница подтверждает детские групповые тренировки, но не показывает проверяемые границы возраста.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://www.skolkovotennis.ru/groupchildrens"
+],
+"status": "works",
+"wrong": {}
+},
 "sobranie-museum": {
 "by": "Codex",
 "date": "2026-11-12",
@@ -16333,6 +16759,35 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"sshor-spartak-basket-lyubertsy": {
+"by": "Codex",
+"date": "2026-11-13",
+"file": "20261113-1401-1.json",
+"note": "Официальные сведения учреждения не указывают строение 1 и этаж 3.",
+"ok": [],
+"sources": [
+"https://www.shorspartakbasket.ru/osnovnie_svedeniya"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://www.shorspartakbasket.ru/osnovnie_svedeniya",
+"value": "Люберцы, Смирновская ул., 2А"
+},
+"hours": {
+"source": "https://www.shorspartakbasket.ru/osnovnie_svedeniya",
+"value": "пн-пт 10:00-18:00; сб-вс выходной"
+},
+"phone": {
+"source": "https://www.shorspartakbasket.ru/osnovnie_svedeniya",
+"value": "+7 (495) 559-32-10"
+},
+"url": {
+"source": "https://www.shorspartakbasket.ru/osnovnie_svedeniya",
+"value": "https://www.shorspartakbasket.ru/"
+}
+}
 },
 "sshor92-solntsevo-badminton": {
 "by": "Codex",

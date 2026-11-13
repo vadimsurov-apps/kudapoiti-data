@@ -578,7 +578,8 @@
 "belokamennaya-samokatnaya": {
 "date": "2026-11-13",
 "note": "Официальный сайт школы подтверждает площадку на Самокатной, но не подтверждает указанный этаж; опубликованы актуальные телефоны.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://kamelzon.ru/"
 ],
@@ -621,7 +622,8 @@
 "bk-club-michurinsky": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает действующий центр и адрес в ЖК «Шуваловский».",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://bk-club.com/"
 ],
@@ -2369,6 +2371,17 @@
 }
 }
 },
+"cdt-maryina-roshcha": {
+"date": "2026-11-13",
+"note": "Адрес исторического учреждения подтверждается, но актуальную работу центра и программы первичным источником подтвердить не удалось.",
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
+"sources": [
+"https://obrmos.ru/go/go_z-o/z_o_svao.html"
+],
+"status": "not_found",
+"wrong": {}
+},
 "champion-sync-zemlyanoy-val": {
 "date": "2026-11-13",
 "note": "Надёжный актуальный первоисточник для этой карточки не найден; поля оставлены unknown.",
@@ -2376,6 +2389,40 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"champions-chess-komsomolskaya": {
+"applied": "2026-11-13",
+"date": "2026-11-13",
+"note": "Сеть и бесплатное пробное занятие подтверждены, но адрес именно этого филиала на доступной странице не виден.",
+"resolved": false,
+"result": "применено автоматически; осталось для сверщика: price",
+"sources": [
+"https://champion-chesskids.ru/"
+],
+"status": "works",
+"wrong": {
+"price": {
+"source": "https://champion-chesskids.ru/",
+"value": 0
+}
+}
+},
+"champions-chess-oktyabrya": {
+"applied": "2026-11-13",
+"date": "2026-11-13",
+"note": "Сеть и бесплатное пробное занятие подтверждены, но адрес именно этого филиала на доступной странице не виден.",
+"resolved": false,
+"result": "применено автоматически; осталось для сверщика: price",
+"sources": [
+"https://champion-chesskids.ru/"
+],
+"status": "works",
+"wrong": {
+"price": {
+"source": "https://champion-chesskids.ru/",
+"value": 0
+}
+}
 },
 "chekhov-house-kudrinskaya": {
 "date": "2026-11-13",
@@ -2448,6 +2495,14 @@
 "status": "not_found",
 "wrong": {}
 },
+"chg-andreevskaya-nab": {
+"date": "2026-11-13",
+"note": "Первичного источника, подтверждающего пеленальный стол именно в указанном туалете, не найдено.",
+"resolved": false,
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
 "chg-best-zakharova": {
 "applied": "2026-11-13",
 "date": "2026-11-13",
@@ -2473,9 +2528,25 @@
 }
 }
 },
+"chg-cherkizovsky-park": {
+"date": "2026-11-13",
+"note": "Надёжного первичного источника существования отдельной комнаты на указанном берегу не найдено.",
+"resolved": false,
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
 "chg-filatov-lug": {
 "date": "2026-11-13",
 "note": "Надёжного актуального первоисточника с данными именно этой точки найти не удалось.",
+"resolved": false,
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
+"chg-kolomenskoe-dyakovo": {
+"date": "2026-11-13",
+"note": "Официальный сайт подтверждает временные ограничения у 1-й улицы Дьякова городища, но не подтверждает отдельную пеленальную комнату в этой точке.",
 "resolved": false,
 "sources": [],
 "status": "not_found",
@@ -2488,6 +2559,26 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"chg-tsaritsyno": {
+"date": "2026-11-13",
+"note": "Официальный источник подтверждает три комнаты, а не единственную точку у произвольного туалета.",
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
+"sources": [
+"https://tsaritsyno-museum.ru/the_museum/press-center/news/v-tsaritsynskom-parke-poyavilis-statsionarnye-komnaty-materi-i-rebenka/"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://tsaritsyno-museum.ru/the_museum/press-center/news/v-tsaritsynskom-parke-poyavilis-statsionarnye-komnaty-materi-i-rebenka/",
+"value": "Ориентир: комнаты матери и ребенка у Первого Кавалерского корпуса и у входов № 7 и № 10"
+},
+"url": {
+"source": "https://tsaritsyno-museum.ru/the_museum/press-center/news/v-tsaritsynskom-parke-poyavilis-statsionarnye-komnaty-materi-i-rebenka/",
+"value": "https://tsaritsyno-museum.ru/"
+}
+}
 },
 "chkalov-arena-letnaya": {
 "date": "2026-11-13",
@@ -3363,6 +3454,23 @@
 }
 }
 },
+"doaflip-zhukova": {
+"applied": "2026-11-13",
+"date": "2026-11-13",
+"note": "Официальная страница указывает входной билет 1200 ₽ в будни и 1500 ₽ в выходные; тренировки оплачиваются отдельно.",
+"resolved": false,
+"result": "применено автоматически; осталось для сверщика: price",
+"sources": [
+"https://coach.doaflip.ru/zhukova"
+],
+"status": "works",
+"wrong": {
+"price": {
+"source": "https://coach.doaflip.ru/zhukova",
+"value": 1200
+}
+}
+},
 "dobroznanie-zelenograd": {
 "date": "2026-11-13",
 "note": "Страница учреждения подтверждает корпус и отдельный вход; название подразделения сейчас указано как КЦ «Доброволец».",
@@ -3605,6 +3713,14 @@
 }
 }
 },
+"eco-bio-center-pavposad": {
+"date": "2026-11-13",
+"note": "Официальный домен ecobiocentre.ru находится в списке запрещённых источников; актуальную работу по другому первичному источнику подтвердить не удалось.",
+"resolved": false,
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
 "ecobiocentre": {
 "date": "2026-11-13",
 "note": "Официальный источник проверен; неподтверждённые поля оставлены unknown.",
@@ -3629,6 +3745,25 @@
 "url": {
 "source": "https://egoradmin.ru/activities/culture",
 "value": "http://dk-konina.ru/"
+}
+}
+},
+"egoryevsk-history-museum": {
+"applied": "2026-11-13",
+"date": "2026-11-13",
+"note": "Взрослый билет 300 ₽, льготный 150 ₽, дошкольники бесплатно; касса до 17:30.",
+"resolved": false,
+"result": "применено автоматически; осталось для сверщика: price",
+"sources": [
+"https://egmuseum.ru/",
+"https://egmuseum.ru/hours",
+"https://egmuseumold.ru/czena-biletov"
+],
+"status": "works",
+"wrong": {
+"price": {
+"source": "https://egmuseumold.ru/czena-biletov",
+"value": 300
 }
 }
 },
@@ -3738,6 +3873,14 @@
 "evraziytsy-zemlyanoy-val": {
 "date": "2026-11-13",
 "note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
+"resolved": false,
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
+"fd-11-parkovaya": {
+"date": "2026-11-13",
+"note": "Первичный источник школы не найден; данные стороннего справочника не применялись.",
 "resolved": false,
 "sources": [],
 "status": "not_found",
@@ -4412,7 +4555,8 @@
 "izmailovo-park": {
 "date": "2026-11-13",
 "note": "Проверены первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://izmailovsky-park.ru/",
 "https://www.mosgor-park.ru/parks/izmailovskiy-park/"
@@ -4851,6 +4995,14 @@
 }
 }
 },
+"karting-star-drift-zhukovsky": {
+"date": "2026-11-13",
+"note": "Первичный источник или актуальная карточка филиала в ТЦ «Океан» не найдены.",
+"resolved": false,
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
 "karting-timati": {
 "date": "2026-11-12",
 "note": "Сайт ТРЦ подтверждает действующий электрический картинг и часы работы.",
@@ -5247,26 +5399,20 @@
 "wrong": {}
 },
 "kolomna-lazhechnikov": {
+"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальный сайт музея подтверждает работу; усадьба занимает дома 192А и 194, часы в карточке неполные, телефон не тот.",
 "resolved": false,
+"result": "применено автоматически; осталось для сверщика: hours",
 "sources": [
 "https://kolomnamuzej.ru/index.php/about/struktura",
 "https://www.kolomnamuzej.ru/index.php/posetitelyam/novosti/izmenenie-grafika-raboty-muzeya-zapovednika-kolomenskij-kreml"
 ],
 "status": "works",
 "wrong": {
-"address": {
-"source": "https://kolomnamuzej.ru/index.php/about/struktura",
-"value": "Коломна, ул. Октябрьской Революции, 192А, 194"
-},
 "hours": {
 "source": "https://www.kolomnamuzej.ru/index.php/posetitelyam/novosti/izmenenie-grafika-raboty-muzeya-zapovednika-kolomenskij-kreml",
 "value": "ср-вс 10:00-17:00; пн, вт — выходные; последняя пт месяца — санитарный день"
-},
-"phone": {
-"source": "https://kolomnamuzej.ru/index.php/about/struktura",
-"value": "+7 (496) 618-61-43"
 }
 }
 },
@@ -5488,7 +5634,8 @@
 "kremlin-elka": {
 "date": "2026-11-13",
 "note": "Актуальная официальная страница подтверждает представление; каждому посетителю, включая сопровождающего, нужен билет.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://kremlinpalace.org/events/novogodnie-elochnye-predstavleniya-230"
 ],
@@ -6060,7 +6207,8 @@
 "lib255-zelenograd-kids": {
 "date": "2026-11-13",
 "note": "Проверены первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://zelbiblio.ru/"
 ],
@@ -6537,6 +6685,24 @@
 "status": "not_found",
 "wrong": {}
 },
+"malevich-park": {
+"date": "2026-11-13",
+"note": "Официальный сайт объединения парков подтверждает действующий парк; точку входа проверить не удалось.",
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
+"sources": [
+"https://odinparki.ru/?id=139228",
+"https://tonkosti.ru/Парк_Малевича",
+"https://welcome.mosreg.ru/stories/park-malevica-art-park-s-glubokim-smyslom"
+],
+"status": "works",
+"wrong": {
+"url": {
+"source": "https://odinparki.ru/?id=139228",
+"value": "https://odinparki.ru/"
+}
+}
+},
 "malysh-house": {
 "date": "2026-11-12",
 "note": "Надёжного актуального первоисточника с полными данными найти не удалось.",
@@ -6670,7 +6836,8 @@
 "mba-golyanovo": {
 "date": "2026-11-13",
 "note": "Официальная карточка подразделения подтверждает работу, адрес и сайт; официальный телефон отличается, на странице основных сведений указан режим объекта.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://mba.mossport.ru/basic-information/",
 "https://mba.mossport.ru/golyanovo/",
@@ -6699,7 +6866,8 @@
 "mba-pervomayskaya": {
 "date": "2026-11-13",
 "note": "Официальный сайт академии подтверждает подразделение и телефон, но адрес публикует без строения 10.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://mba.mossport.ru/news/moskovskaya-basketbolnaya-akademiya-obyavlyaet-nabor-detey-dlya-zanyatiy-basketbolom/",
 "https://mba.mossport.ru/regtoschool/"
@@ -6709,6 +6877,23 @@
 "address": {
 "source": "https://mba.mossport.ru/news/moskovskaya-basketbolnaya-akademiya-obyavlyaet-nabor-detey-dlya-zanyatiy-basketbolom/",
 "value": "Нижняя Первомайская ул., 52"
+}
+}
+},
+"mba-zelenograd": {
+"date": "2026-11-13",
+"note": "Официальный источник подтверждает бюджетные тренировки, но набор относится к конкретным годам рождения.",
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
+"sources": [
+"https://mba.mossport.ru/news/nabor-v-ssh-zelenograd-/",
+"https://mba.mossport.ru/page/strukturnye-podrazdeleniya/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://mba.mossport.ru/page/strukturnye-podrazdeleniya/",
+"value": "+7 (495) 952-26-73"
 }
 }
 },
@@ -6810,7 +6995,8 @@
 "mgfso-badminton-potapovsky": {
 "date": "2026-11-13",
 "note": "Проверены первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://mgfso.mossport.ru/bdmntn/"
 ],
@@ -6894,26 +7080,20 @@
 }
 },
 "mitsuden-chertanovskaya": {
+"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальная страница подтверждает действующую секцию, но указывает строение 1, другой телефон тренера и расписание групп.",
 "resolved": false,
+"result": "применено автоматически; осталось для сверщика: hours",
 "sources": [
 "https://mitsuden.ru/karate-dlya-vzroslyh-v-moskve/",
 "https://mitsuden.ru/karate-v-moskve/"
 ],
 "status": "works",
 "wrong": {
-"address": {
-"source": "https://mitsuden.ru/karate-dlya-vzroslyh-v-moskve/",
-"value": "Чертановская ул., 30, стр. 1"
-},
 "hours": {
 "source": "https://mitsuden.ru/karate-dlya-vzroslyh-v-moskve/",
 "value": "пн, ср, пт 17:00-21:00"
-},
-"phone": {
-"source": "https://mitsuden.ru/karate-dlya-vzroslyh-v-moskve/",
-"value": "+7 (919) 771-11-19"
 }
 }
 },
@@ -7241,7 +7421,8 @@
 "mssuor3-tennis-tkatskaya": {
 "date": "2026-11-13",
 "note": "Проверены первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://muor.mossport.ru/"
 ],
@@ -7487,10 +7668,31 @@
 }
 }
 },
+"nlbc-badminton-luzhniki": {
+"date": "2026-11-13",
+"note": "Официальный сайт также указывает первое занятие бесплатно и группы 6–9 и 10–17 лет.",
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
+"sources": [
+"https://bc-newliga.ru/"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://bc-newliga.ru/",
+"value": "Этаж: 4, блок C"
+},
+"phone": {
+"source": "https://bc-newliga.ru/",
+"value": "+7 (916) 791-13-33"
+}
+}
+},
 "nlbc-badminton-turchaninov": {
 "date": "2026-11-13",
 "note": "Официальный сайт клуба подтверждает адрес, вход, этаж и телефон точки у метро «Парк культуры».",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://bc-newliga.ru/"
 ],
@@ -8242,6 +8444,29 @@
 }
 }
 },
+"pumptrack-marino": {
+"applied": "2026-11-13",
+"date": "2026-11-13",
+"note": "Текущая точка относится к другой части парка и находится примерно в 3,2 км от опубликованных координат памп-трека.",
+"resolved": false,
+"result": "применено автоматически; осталось для сверщика: point",
+"sources": [
+"https://fk-ramps.ru/projects/asfaltovyj-pamp-trek-v-marino",
+"https://jumbocrew.ru/info/spoty-dlya-serfskejta-skejta-longborda/",
+"https://t.me/s/club77go/1580?q=%23skateordie"
+],
+"status": "works",
+"wrong": {
+"point": {
+"source": "https://t.me/s/club77go/1580?q=%23skateordie",
+"value": [
+55.650312,
+37.783276
+],
+"why": "дальше 500 м — возможно другой филиал"
+}
+}
+},
 "pushchino-eco-museum": {
 "date": "2026-11-13",
 "note": "Место подтверждено актуальной страницей первоисточника.",
@@ -8367,6 +8592,24 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"rba-basket-skolka": {
+"applied": "2026-11-13",
+"date": "2026-11-13",
+"note": "Официальная страница подтверждает бесплатную пробную тренировку; возраст указан классами, поэтому age unknown.",
+"resolved": false,
+"result": "применено автоматически; осталось для сверщика: hours",
+"sources": [
+"https://rbacademy.ru/gyms",
+"https://rbacademy.ru/shkola-skolka.html"
+],
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://rbacademy.ru/shkola-skolka.html",
+"value": "вт, чт 16:30-18:40; сб 10:00-13:30 по расписанию групп"
+}
+}
 },
 "rechnoy-vokzal": {
 "date": "2026-11-13",
@@ -8623,6 +8866,14 @@
 "satorikan-aikido-koroleva": {
 "date": "2026-11-13",
 "note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
+"resolved": false,
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
+"sdts-lyublino-chess": {
+"date": "2026-11-13",
+"note": "Актуальная шахматная секция, цена и возраст на первичном источнике не подтверждены; противоречивые справочники не использованы.",
 "resolved": false,
 "sources": [],
 "status": "not_found",
@@ -8948,7 +9199,8 @@
 "ski-smartsnow-balashikha": {
 "date": "2026-11-13",
 "note": "Проверены первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://yandex.com/maps/org/shkola_gornolyzhnogo_masterstva_i_snouborda_smartsnow/157861883505/"
 ],
@@ -9091,6 +9343,34 @@
 "sources": [],
 "status": "not_found",
 "wrong": {}
+},
+"sshor-spartak-basket-lyubertsy": {
+"date": "2026-11-13",
+"note": "Официальные сведения учреждения не указывают строение 1 и этаж 3.",
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
+"sources": [
+"https://www.shorspartakbasket.ru/osnovnie_svedeniya"
+],
+"status": "works",
+"wrong": {
+"address": {
+"source": "https://www.shorspartakbasket.ru/osnovnie_svedeniya",
+"value": "Люберцы, Смирновская ул., 2А"
+},
+"hours": {
+"source": "https://www.shorspartakbasket.ru/osnovnie_svedeniya",
+"value": "пн-пт 10:00-18:00; сб-вс выходной"
+},
+"phone": {
+"source": "https://www.shorspartakbasket.ru/osnovnie_svedeniya",
+"value": "+7 (495) 559-32-10"
+},
+"url": {
+"source": "https://www.shorspartakbasket.ru/osnovnie_svedeniya",
+"value": "https://www.shorspartakbasket.ru/"
+}
+}
 },
 "sshor92-solntsevo-badminton": {
 "date": "2026-11-13",
@@ -10009,9 +10289,11 @@
 }
 },
 "voskhod-pool-shchorsa": {
+"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальный каталог Мосспортобъекта подтверждает действующий 25-метровый бассейн, адрес и режим.",
 "resolved": false,
+"result": "применено автоматически; осталось для сверщика: hours",
 "sources": [
 "https://mso.mossport.ru/"
 ],
