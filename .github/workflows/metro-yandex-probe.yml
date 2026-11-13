@@ -1,0 +1,10 @@
+name: metro-yandex-probe
+on: workflow_dispatch
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 pipeline/metro_yandex_probe.py
+      - uses: actions/upload-artifact@v4
+        with: {name: probe, path: probe/}
