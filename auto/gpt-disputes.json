@@ -863,8 +863,7 @@
 "cin-budapest": {
 "date": "2026-11-13",
 "note": "Сейчас по этому адресу работает КАРО 6 Будапешт, а не старый отдельный кинотеатр.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.karofilm.ru/cinema/list"
 ],
@@ -883,8 +882,7 @@
 "cin-eldar": {
 "date": "2026-11-13",
 "note": "Официальная страница подтверждает работу зала; телефон и режим в карточке устарели.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://kinoklub-eldar.ru/contacts/"
 ],
@@ -971,8 +969,7 @@
 "cin-karo-atrium": {
 "date": "2026-11-13",
 "note": "Официальная афиша сети подтверждает действующий кинотеатр; у сети указан единый телефон.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.karofilm.ru/cinema/list"
 ],
@@ -991,8 +988,7 @@
 "cin-karo-aviapark": {
 "date": "2026-11-13",
 "note": "Официальный список сети подтверждает КАРО Sky 17 Авиапарк.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.karofilm.ru/cinema/list"
 ],
@@ -1068,8 +1064,7 @@
 "cin-pyat-zvezd": {
 "date": "2026-11-13",
 "note": "Кинотеатр вновь работает после обновления 2025 года; цена зависит от сеанса.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://5zvezd.ru/cinemas/novokuznetskaya"
 ],
@@ -1683,8 +1678,7 @@
 "mc-novikov-space": {
 "date": "2026-11-13",
 "note": "Школа работает в ТЦ «Гименей» на 2 этаже; мастер-классы доступны с 4 лет.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://online.novikovspace.com/kids/detskye-kulinarnye-kyrsy-i-masterclassy"
 ],
@@ -1718,8 +1712,7 @@
 "mc-zil": {
 "date": "2026-11-13",
 "note": "Адрес и телефон верны, но карточка ошибочно представляет все занятия как бесплатные.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://zilcc.ru/about"
 ],
@@ -2047,19 +2040,40 @@
 "wrong": {}
 },
 "tour-krasny-oktyabr": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальная страница организатора указывает другое строение, цену и расписание.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://www.gid-po-shokoladu.ru/"
 ],
 "status": "works",
 "wrong": {
+"address": {
+"source": "https://www.gid-po-shokoladu.ru/",
+"value": "Берсеневская наб., 6, стр. 1"
+},
+"age": {
+"source": "https://www.gid-po-shokoladu.ru/",
+"value": [
+6,
+17
+]
+},
+"hours": {
+"source": "https://www.gid-po-shokoladu.ru/",
+"value": "вт-чт 12:00-21:00; пт 12:00-18:00; сб-вс 12:00-20:00"
+},
+"phone": {
+"source": "https://www.gid-po-shokoladu.ru/",
+"value": "+7 (968) 010-07-88"
+},
 "price": {
 "source": "https://www.gid-po-shokoladu.ru/",
 "value": 2500
+},
+"url": {
+"source": "https://www.gid-po-shokoladu.ru/",
+"value": "https://www.gid-po-shokoladu.ru/"
 }
 }
 },
@@ -2072,11 +2086,9 @@
 "wrong": {}
 },
 "tour-ostankino-tv": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "В карточке неверны минимальный возраст и отсутствуют актуальные цены, режим и контакты.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age, hours, price",
 "sources": [
 "https://ex-ostankino.ru/"
 ],
@@ -2087,16 +2099,27 @@
 "value": [
 12,
 17
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
 },
 "hours": {
 "source": "https://ex-ostankino.ru/",
 "value": "пн-пт 11:00, 15:00; сб 11:00, 13:30; вс выходной"
 },
+"how": {
+"source": "https://ex-ostankino.ru/",
+"value": "Вход: только по предварительной записи и с оригиналом документа"
+},
+"phone": {
+"source": "https://ex-ostankino.ru/",
+"value": "+7 (495) 617-76-38, +7 (966) 135-84-31"
+},
 "price": {
 "source": "https://ex-ostankino.ru/",
 "value": 1200
+},
+"url": {
+"source": "https://ex-ostankino.ru/",
+"value": "https://ex-ostankino.ru/"
 }
 }
 },
