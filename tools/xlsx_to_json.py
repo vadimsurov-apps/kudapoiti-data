@@ -614,7 +614,17 @@ def main():
             fl = None
         if fl and p.get("point_door") in ("вход_яндекс", "точка_яндекс") and "этаж" not in (p.get("how_to_find") or "").lower():
             p["how_to_find"] = ((p.get("how_to_find") or "") + "\nЭтаж: " + fl.group(1)).strip()
-    shown = [p for p in places if p["point_level"] == "вход" and p.get("lat") is not None and p.get("status") != "closed"]
+    # Вадим 13.11: «Места должны появляться на карте вместе с уникальной картинкой» — без своей иконки место на карту не идёт
+    # (исходник icons-src/<id>.svg или встроенная p/img/<id>.png); в places-all.json у него no_icon: true — рисует «художник».
+    _root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+    _svg = {f[:-4] for f in os.listdir(os.path.join(_root, "icons-src")) if f.endswith(".svg")}
+    _img = {f[:-4] for f in os.listdir(os.path.join(_root, "p", "img")) if f.endswith(".png")} if os.path.isdir(os.path.join(_root, "p", "img")) else set()
+    for p in places:
+        if p["id"] not in _svg and p["id"] not in _img:
+            p["no_icon"] = True
+    shown = [p for p in places if p["point_level"] == "вход" and p.get("lat") is not None and p.get("status") != "closed"
+             and not p.get("no_icon")]
+    print("без своей иконки (на карту не идут):", sum(1 for p in places if p.get("no_icon")))
     for path, lst in ((all_path, places), (dst, shown)):
         with open(path, "w", encoding="utf-8") as f:
             json.dump({"version": date.today().isoformat(),
