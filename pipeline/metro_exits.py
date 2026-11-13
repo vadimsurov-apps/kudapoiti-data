@@ -46,7 +46,7 @@ def main(src="metro.osm"):
         st = [stations[m] for m in mem if m in stations]
         name = clean(st[0][2].get("name") if st else t.get("name"))
         colour = (st[0][2].get("colour") if st else None) or t.get("colour")
-        if not name:
+        if not name or name.startswith("Москва-"):   # вокзалы — не метро
             continue
         for m in mem:
             if m in exits:
