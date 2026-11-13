@@ -13,7 +13,14 @@ def last(pid):
     d = [v.get("date", "") for v in ver.get(pid, {}).values() if isinstance(v, dict)] + [gpt.get(pid, {}).get("date", "")]
     return max(d) if d else ""
 pri = {"food": 0, "kidsroom": 0, "playcenters": 1, "pools": 1, "dance": 2}
-places.sort(key=lambda p: (bool(gpt.get(p["id"])), last(p["id"]), min([pri.get(c, 5) for c in p.get("cats") or []] or [5])))
+# Вадим 13.11: «может дать ему тоже сначала самые сложные проверить?» — сначала те, что GPT ещё не проверял, и среди них
+# самые сомнительные (pipeline/doubt.py: нет в Яндексе, точка не на входе, неподтверждённые и пустые поля).
+import sys
+sys.path.insert(0, os.path.join(ROOT, "pipeline"))
+from doubt import doubt_map
+doubt = doubt_map(places, gpt=False)
+places.sort(key=lambda p: (bool(gpt.get(p["id"])), -doubt.get(p["id"], (0, []))[0], last(p["id"]),
+                           min([pri.get(c, 5) for c in p.get("cats") or []] or [5])))
 q = [{"id": p["id"], **{k: p.get(k) for k in FIELDS}} for p in places[:800]]
 os.makedirs(os.path.join(ROOT, "gpt", "reports"), exist_ok=True)
 json.dump({"date": datetime.date.today().isoformat(), "places": q}, open(os.path.join(ROOT, "gpt", "queue.json"), "w"),
