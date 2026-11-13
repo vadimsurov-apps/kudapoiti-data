@@ -5,7 +5,7 @@
 - Сообщения → auto/reports.json (status new) — коммит сразу после каждого нового сообщения.
 - Раз в минуту git pull: решения робота-исправителя из auto/report-answers.json → ответ человеку.
 Нужен секрет репозитория TELEGRAM_BOT_TOKEN. Запуск: python3 pipeline/tg_reports.py [--minutes 345]"""
-import json, os, subprocess, sys, time, urllib.parse, urllib.request
+import json, os, re, subprocess, sys, time, urllib.parse, urllib.request
 
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 if not TOKEN:
@@ -217,6 +217,14 @@ def handle_call_callback(act, pid, chat, mid, names, places, state):
     return False
 
 
+OWNER = "276326022"   # Вадим: его правки принимаются без скриншота
+
+
+def needs_proof(chat):
+    """Вадим 13.11: правка проверяющей — «всегда с подтверждением скрином, чтобы был понятен источник»."""
+    return chat in checkers() and chat != OWNER
+
+
 def handle_callback(cb, places, reports, state, checks):
     chat = str(cb["message"]["chat"]["id"]); data = cb.get("data", "")
     names = checkers()
@@ -239,9 +247,16 @@ def handle_callback(cb, places, reports, state, checks):
                        "date": time.strftime("%Y-%m-%d"), "time": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())})
         call_quiet("editMessageReplyMarkup", chat_id=chat, message_id=mid,
                    reply_markup=json.dumps({"inline_keyboard": [[{"text": "✏️ Пишу, что не так…", "callback_data": "noop:x"}]]}))
-        say(chat, f"✍️ «{places.get(pid, pid)}»: напишите, что не так и как правильно (часы, цена, телефон, вход, этаж…). "
-                  "Можно несколькими сообщениями. Метка не на входе — пришлите геопозицию входа: 📎 → «Геопозиция» "
-                  "(или координаты текстом). Можно фото вывески.\n\nКогда закончите — «▶️ Следующая карточка».", NEXT_KB)
+        if needs_proof(chat):
+            say(chat, f"✍️ «{places.get(pid, pid)}»: напишите, что не так и как правильно (часы, цена, телефон, вход, этаж…), "
+                      "и ОБЯЗАТЕЛЬНО пришлите скриншот, где это видно: сайт места, Яндекс Карты, 2ГИС (можно ссылку). "
+                      "Лучше одним сообщением — скриншот с подписью. Без скриншота правка не вносится.\n\n"
+                      "Метка не на входе — пришлите геопозицию входа: 📎 → «Геопозиция» (скриншот для неё не нужен).\n\n"
+                      "Когда закончите — «▶️ Следующая карточка».", NEXT_KB)
+        else:
+            say(chat, f"✍️ «{places.get(pid, pid)}»: напишите, что не так и как правильно (часы, цена, телефон, вход, этаж…). "
+                      "Можно несколькими сообщениями. Метка не на входе — пришлите геопозицию входа: 📎 → «Геопозиция» "
+                      "(или координаты текстом). Можно фото вывески.\n\nКогда закончите — «▶️ Следующая карточка».", NEXT_KB)
         return True
     if act == "close":
         # заявка на удаление: робот-исправитель сверит (её скриншот «Больше не работает» в Яндексе — уже источник)
@@ -286,6 +301,12 @@ def greet_checkers(state):
                       f"Раз в {PROOF_EVERY} звонков бот попросит скриншот журнала вызовов («Телефон» → «Недавние») — "
                       "так звонки засчитываются.", CHECK_KB)
             state["greeted_call"].append(chat)
+        if chat != OWNER and chat not in state.setdefault("greeted_proof", []):
+            say(chat, f"📸 {name}, новое правило для «✏️ Есть ошибка»: к каждой правке нужен скриншот (или ссылка), где видно, "
+                      "как правильно, — сайт места, Яндекс Карты, 2ГИС. Удобнее всего одним сообщением: скриншот с подписью "
+                      "«часы 10–22» или «средний чек 1500». Со скриншотом правка вносится сразу, без него — не вносится. "
+                      "Для геопозиции входа скриншот не нужен.", CHECK_KB)
+            state["greeted_proof"].append(chat)
 
 
 def git(*a):
@@ -370,6 +391,23 @@ def handle(u, places, reports, state):
         say(chat, f"📝 Записали к «{places.get(pid, pid)}». Можно дописать ещё или нажать «📞 Следующий звонок».", NEXTCALL_KB)
         return True
     if chat in names and state.get("fixing", {}).get(chat):
+        if needs_proof(chat) and not location:
+            has_link = bool(re.search(r"https?://\S+", text))
+            if photo_file or has_link:
+                # скриншот/ссылка — источник для этого сообщения и для ждущих правок к тому же месту
+                n = 0
+                for r in reports[:-1]:
+                    if r.get("chat") == chat and r.get("place_id") == pid and r.get("awaits_proof"):
+                        r["awaits_proof"] = False; r["proof_report"] = reports[-1]["id"]
+                        r["proof_file"] = photo_file; r["proof_link"] = text if has_link else None; n += 1
+                reports[-1]["proof"] = True
+                say(chat, f"📸 Источник получен — правку к «{places.get(pid, pid)}» внесём после сверки со скриншотом. "
+                          "Можно дописать ещё или нажать «▶️ Следующая карточка».", NEXT_KB)
+            else:
+                reports[-1]["awaits_proof"] = True
+                say(chat, f"📝 Записали к «{places.get(pid, pid)}». Теперь пришлите скриншот (или ссылку), где это видно, — "
+                          "сайт места, Яндекс Карты, 2ГИС. Без него правку не внесём.", NEXT_KB)
+            return True
         say(chat, f"📝 Записали к «{places.get(pid, pid)}». Можно дописать ещё или нажать «▶️ Следующая карточка».", NEXT_KB)
         return True
     say(chat, DONE)
