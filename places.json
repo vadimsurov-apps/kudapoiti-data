@@ -815,7 +815,7 @@
       "price_adult": null,
       "free_note": null,
       "booking": "required",
-      "hours": "пн — выходной; вт–вс 10:30–18:30",
+      "hours": "пн выходной; вт-вс 10:30-18:30",
       "indoor": "yes",
       "food": null,
       "changing_table": null,
@@ -838,8 +838,34 @@
       "how_to_find": "Ориентир: от м. «Достоевская» — 7 минут пешком, от «Цветного бульвара» и «Проспекта Мира» — 15 минут; электробусы М5 и с538 — до остановки «Театр зверей им. Дурова»",
       "phone": "+7 (495) 631-30-47",
       "season_months": null,
-      "open_mode": "unknown",
-      "open_week": null,
+      "open_mode": "hours",
+      "open_week": [
+        null,
+        [
+          630,
+          1110
+        ],
+        [
+          630,
+          1110
+        ],
+        [
+          630,
+          1110
+        ],
+        [
+          630,
+          1110
+        ],
+        [
+          630,
+          1110
+        ],
+        [
+          630,
+          1110
+        ]
+      ],
       "point_level": "вход",
       "point_door": "вход_яндекс"
     },
@@ -20871,7 +20897,7 @@
       "price_adult": 1250,
       "free_note": null,
       "booking": "recommended",
-      "hours": "ежедневно 10:00–23:00",
+      "hours": "ежедневно 10:00-23:00",
       "indoor": "yes",
       "food": "yes",
       "changing_table": null,
@@ -31452,7 +31478,7 @@
       "minus": null,
       "url": "https://cafe-anderson.ru/cafe/",
       "source": "https://cafeanderson.com/cafe; средний чек ~1500 ₽ на взрослого; Аниматоры не каждый день — уточняйте расписание",
-      "verified_at": "2026-11-11",
+      "verified_at": "2026-11-13",
       "status": "verified",
       "cats": [
         "food",
@@ -33626,7 +33652,7 @@
       "minus": null,
       "url": "https://mavlyutov-rg.ru/",
       "source": "tomesto.ru/moskva/places/muu-mukomolnyy (игровая комната, детское меню); точка — объект «Muu» в OpenStreetMap (node/13456206745), рядом Ozon и «Ароматный мир», как на скриншоте Вадима 2026-11-08",
-      "verified_at": "2026-11-11",
+      "verified_at": "2026-11-13",
       "status": "verified",
       "cats": [
         "food",
@@ -79620,7 +79646,7 @@
       "address": "Старокачаловская ул., 1Д",
       "lat": 55.56770203,
       "lon": 37.5847568,
-      "age_min": 4,
+      "age_min": 3,
       "age_max": 17,
       "duration_min": 45,
       "duration_max": 90,
@@ -129743,6 +129769,453 @@
       },
       "point_level": "вход",
       "point_door": "вход_яндекс"
+    },
+    {
+      "id": "dostizhenie-lugovoy",
+      "name": "Центр «Достижение» (Луговой пр.)",
+      "type": [
+        "центр нейропсихологии и ранней коррекции"
+      ],
+      "metro": "Марьино",
+      "address": "Москва, Луговой пр., 6",
+      "lat": 55.649636,
+      "lon": 37.751339,
+      "age_min": 0,
+      "age_max": 17,
+      "duration_min": 45,
+      "duration_max": 60,
+      "energy": "calm",
+      "loud": null,
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "partial",
+      "tags": [
+        "creativity"
+      ],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": "ранняя помощь (абонемент) — 25000 ₽; курс логопедического массажа (10 дней) — 15000 ₽",
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": null,
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Нейропсихолог, логопеды, детский психолог и психотерапевт; ранняя помощь, коррекция дислексии и дисграфии, логопедический массаж, подготовка к школе; Вход и помещение доступны на коляске, есть пандус и доступный туалет",
+      "minus": null,
+      "url": null,
+      "source": "Яндекс Карты: карточка организации (рубрика, адрес, этаж/вход, телефон, сайт, услуги, цены и возраст групп, доступность), выдача «АФК для детей с ДЦП метро Борисово», 13.11.2026; https://yandex.ru/maps/org/dostizhenie/191594898008/",
+      "verified_at": "2026-11-13",
+      "status": "draft",
+      "cats": [
+        "inclusive",
+        "psych",
+        "speech"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": "Этаж: 1",
+      "phone": "+7 (916) 782-79-79",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "access": {
+        "note": "Вход на коляске — доступно, помещение — доступно, есть пандус (Яндекс Карты)",
+        "parking": "yes",
+        "programs": "ранняя помощь, нейропсихолог, логопеды, детский психолог и психотерапевт",
+        "toilet": "yes",
+        "vision": "тактильная плитка (Яндекс Карты)",
+        "wheelchair": "yes"
+      },
+      "point_level": "вход",
+      "point_door": "объект"
+    },
+    {
+      "id": "chernyak-izyumskaya",
+      "name": "Коррекционно-логопедический центр Марии Черняк (Изюмская ул.)",
+      "type": [
+        "коррекционно-логопедический центр"
+      ],
+      "metro": "Улица Скобелевская",
+      "address": "Москва, Изюмская ул., 57, корп. 2",
+      "lat": 55.542781,
+      "lon": 37.564709,
+      "age_min": 0,
+      "age_max": 17,
+      "duration_min": 45,
+      "duration_max": 60,
+      "energy": "calm",
+      "loud": null,
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "partial",
+      "tags": [
+        "creativity"
+      ],
+      "price_child": 3000,
+      "price_adult": null,
+      "free_note": "запуск речи неговорящих детей — 3000 ₽ за занятие",
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": null,
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Логопеды, дефектологи и нейропсихолог: запуск речи, коррекция ОНР и дизартрии, дислексии и дисграфии; АВА-терапия, адаптивная физкультура, нейрофитнес, массаж, подготовка к школе",
+      "minus": null,
+      "url": null,
+      "source": "Яндекс Карты: карточка организации (рубрика, адрес, этаж/вход, телефон, сайт, услуги, цены и возраст групп, доступность), выдача «коррекционный центр для детей метро Бульвар Адмирала Ушакова», 13.11.2026; https://yandex.ru/maps/org/korrekcionno_logopedicheskii_centr_marii_chernyak/14511877163/",
+      "verified_at": "2026-11-13",
+      "status": "draft",
+      "cats": [
+        "inclusive",
+        "speech",
+        "psych",
+        "lfk"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (977) 848-72-75",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "access": {
+        "note": "Вход на коляске — недоступно, помещение — недоступно (Яндекс Карты)",
+        "programs": "АВА-терапия, адаптивная физкультура, логопеды и дефектологи",
+        "wheelchair": "no"
+      },
+      "point_level": "вход",
+      "point_door": "объект"
+    },
+    {
+      "id": "masterskaya-zhizni-beringov",
+      "name": "Центр «Мастерская жизни» (Берингов пр.)",
+      "type": [
+        "центр развития для детей с ментальными особенностями"
+      ],
+      "metro": "Свиблово",
+      "address": "Москва, Берингов пр., 3",
+      "lat": 55.856214,
+      "lon": 37.659176,
+      "age_min": 0,
+      "age_max": 17,
+      "duration_min": 45,
+      "duration_max": 60,
+      "energy": "calm",
+      "loud": null,
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "partial",
+      "tags": [
+        "creativity"
+      ],
+      "price_child": 3000,
+      "price_adult": null,
+      "free_note": "занятие с инструктором — 3000 ₽ за час; кураторское сопровождение — 13000 ₽ в месяц",
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": null,
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Центр для детей и молодых людей с ментальными особенностями: ABA-подход — ESDM для малышей 0–5 лет, классический ABA, тренинг Хенли; общение, бытовые навыки и самостоятельность; бесплатные профессиональные пробы для подростков с 13 лет (бариста, флорист, повар, кондитер)",
+      "minus": null,
+      "url": "https://life-workshop.ru/",
+      "source": "Яндекс Карты: карточка организации (рубрика, адрес, этаж/вход, телефон, сайт, услуги, цены и возраст групп, доступность), выдача «сенсорная комната для детей метро Ботанический сад», 13.11.2026; https://yandex.ru/maps/org/masterskaya_zhizni/131687247363/; сайт life-workshop.ru (для детей и молодых людей с ментальными особенностями; ESDM для детей от 0 до 5 лет; адрес Берингов пр., 3)",
+      "verified_at": "2026-11-13",
+      "status": "draft",
+      "cats": [
+        "inclusive",
+        "psych"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (993) 270-30-60",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "access": {
+        "programs": "ABA-подход (ESDM для детей 0–5 лет, классический ABA, тренинг Хенли), коммуникативная группа, бытовые навыки, бесплатные профессиональные пробы для подростков с особенностями развития с 13 лет"
+      },
+      "point_level": "вход",
+      "point_door": "объект"
+    },
+    {
+      "id": "kiberone-admirala-lazareva",
+      "name": "KIBERone (ул. Адмирала Лазарева)",
+      "type": [
+        "школа программирования"
+      ],
+      "metro": "Улица Горчакова",
+      "address": "Москва, ул. Адмирала Лазарева, 27",
+      "lat": 55.545977,
+      "lon": 37.529844,
+      "age_min": 6,
+      "age_max": 14,
+      "duration_min": 45,
+      "duration_max": 60,
+      "energy": "calm",
+      "loud": null,
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "partial",
+      "tags": [
+        "creativity"
+      ],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": null,
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": null,
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "IT-школа для детей: группы 6–8, 9–11 и 12–14 лет — Roblox Studio, Google Blockly, 3D-моделирование, презентации",
+      "minus": null,
+      "url": "https://u-butovo.kiber-one.com/",
+      "source": "Яндекс Карты: карточка организации (рубрика, адрес, этаж/вход, телефон, сайт, услуги, цены и возраст групп, доступность), выдача «программирование для детей метро Бульвар Адмирала Ушакова», 13.11.2026; https://yandex.ru/maps/org/kiberone/9244445531/; сайт u-butovo.kiber-one.com",
+      "verified_at": "2026-11-13",
+      "status": "draft",
+      "cats": [
+        "coding",
+        "robotics"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (495) 199-87-03",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход",
+      "point_door": "объект"
+    },
+    {
+      "id": "logos-dolgoprudny-naberezhnaya",
+      "name": "Образовательный клуб «Логос» (Долгопрудный, Набережная ул.)",
+      "type": [
+        "образовательный клуб"
+      ],
+      "metro": null,
+      "address": "Долгопрудный, Набережная ул., 19, корп. 2",
+      "lat": 55.96132,
+      "lon": 37.522865,
+      "age_min": 1,
+      "age_max": 17,
+      "duration_min": 45,
+      "duration_max": 60,
+      "energy": "calm",
+      "loud": null,
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "partial",
+      "tags": [
+        "creativity"
+      ],
+      "price_child": 1300,
+      "price_adult": null,
+      "free_note": "«Мышематика» 4–7 лет — 1300 ₽; группа раннего развития — 680 ₽",
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": null,
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "«Мышематика» Жени Кац для 4–7 лет, олимпиадная математика для 1–11 классов, подготовка в физико-математические лицеи, раннее развитие 1,5–4,5 лет, подготовка к школе 4–7 лет, английский 5–15 лет, логопед с 3 лет",
+      "minus": null,
+      "url": "https://logos-club.ru/",
+      "source": "Яндекс Карты: карточка организации (рубрика, адрес, этаж/вход, телефон, сайт, услуги, цены и возраст групп, доступность), выдача «инклюзивный центр для детей Подмосковье», 13.11.2026; https://yandex.ru/maps/org/logos/1673139902/; сайт logos-club.ru (филиал-2: ул. Набережная, 19, корп. 2)",
+      "verified_at": "2026-11-13",
+      "status": "draft",
+      "cats": [
+        "math",
+        "early",
+        "school",
+        "languages"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": "Этаж: 1",
+      "phone": "+7 (977) 872-25-94",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "cat_ages": {
+        "early": [
+          1,
+          4
+        ],
+        "math": [
+          4,
+          17
+        ],
+        "school": [
+          4,
+          7
+        ],
+        "languages": [
+          5,
+          15
+        ]
+      },
+      "point_level": "вход",
+      "point_door": "объект"
+    },
+    {
+      "id": "solnyshko-kibalchicha",
+      "name": "Частный детский сад «Солнышко» (ул. Кибальчича)",
+      "type": [
+        "частный детский сад"
+      ],
+      "metro": "ВДНХ",
+      "address": "Москва, ул. Кибальчича, 8, стр. 1",
+      "lat": 55.814954,
+      "lon": 37.650772,
+      "age_min": 1,
+      "age_max": 7,
+      "duration_min": 45,
+      "duration_max": 60,
+      "energy": "calm",
+      "loud": null,
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "partial",
+      "tags": [
+        "creativity"
+      ],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": null,
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": null,
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Частные ясли с 1 года и детский сад полного дня для 3–5 и 5–7 лет, подготовка к школе 5–7 лет, пятиразовое питание, прогулки два раза в день, занятия с психологом",
+      "minus": null,
+      "url": "https://anomir.ru/",
+      "source": "Яндекс Карты: карточка организации (рубрика, адрес, этаж/вход, телефон, сайт, услуги, цены и возраст групп, доступность), выдача «обучение чтению детей метро Белокаменная», 13.11.2026; https://yandex.ru/maps/org/solnyshko/1109358966/",
+      "verified_at": "2026-11-13",
+      "status": "draft",
+      "cats": [
+        "kindergarten",
+        "school"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (495) 775-10-55",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "cat_ages": {
+        "kindergarten": [
+          1,
+          7
+        ],
+        "school": [
+          5,
+          7
+        ]
+      },
+      "point_level": "вход",
+      "point_door": "объект"
+    },
+    {
+      "id": "baby-club-khimki-kosmodemyanskoy",
+      "name": "Бэби-клуб (Химки, ул. Зои Космодемьянской)",
+      "type": [
+        "центр развития ребёнка"
+      ],
+      "metro": null,
+      "address": "Химки, ул. Зои Космодемьянской, 5",
+      "lat": 55.885066,
+      "lon": 37.447742,
+      "age_min": 0,
+      "age_max": 7,
+      "duration_min": 45,
+      "duration_max": 60,
+      "energy": "calm",
+      "loud": null,
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "partial",
+      "tags": [
+        "creativity"
+      ],
+      "price_child": 1600,
+      "price_adult": null,
+      "free_note": "раннее развитие (8 мес – 1,5 года) — 1600 ₽; мини-сад с 9:00 до 13:00 — 2400 ₽",
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": null,
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Раннее развитие с 8 месяцев, программы по ступеням до 7 лет, мини-сад на 4 часа для 2,5–7 лет, сенсорное развитие 2–4 лет, чтение для 5–6 лет, подготовка к школе 5–7 лет, музыка 2–6 лет",
+      "minus": null,
+      "url": "https://baby-club.ru/",
+      "source": "Яндекс Карты: карточка организации (рубрика, адрес, этаж/вход, телефон, сайт, услуги, цены и возраст групп, доступность), выдача «скорочтение для детей Подмосковье», 13.11.2026; https://yandex.ru/maps/org/baby_club/1167580678/; сайт baby-club.ru",
+      "verified_at": "2026-11-13",
+      "status": "draft",
+      "cats": [
+        "early",
+        "kindergarten",
+        "school",
+        "reading"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (985) 813-78-26",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "cat_ages": {
+        "early": [
+          0,
+          3
+        ],
+        "kindergarten": [
+          2,
+          7
+        ],
+        "school": [
+          5,
+          7
+        ],
+        "reading": [
+          5,
+          6
+        ]
+      },
+      "point_level": "вход",
+      "point_door": "объект"
     },
     {
       "id": "zamania-5avenue",
@@ -186509,8 +186982,8 @@
       "minus": null,
       "url": "https://лотос-бассейн.рф/",
       "source": "сайт лотос-бассейн.рф (auto/pages): возраст, формат занятий; карточка Яндекс Карт «Лотос» (Ставропольская ул., 13): цены (проверено 2026-11-12)",
-      "verified_at": "2026-11-12",
-      "status": "draft",
+      "verified_at": "2026-11-13",
+      "status": "verified",
       "cats": [
         "pools"
       ],
@@ -186519,7 +186992,6 @@
       "how_to_find": null,
       "phone": "+7 (926) 173-85-83",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -187069,7 +187541,7 @@
       "url": "https://1kitenok.ru/",
       "source": "карточка Яндекс Карт «Китёнок» (Производственная ул., 10, корп. 2; сеть «Китёнок»): адрес, цена первой тренировки, телефон; сайт сети 1kitenok.ru (auto/pages): каждый центр — для детей с рождения до 10 лет, индивидуальные занятия, температура воды (проверено 2026-11-13)",
       "verified_at": "2026-11-13",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "pools"
       ],
@@ -187078,7 +187550,6 @@
       "how_to_find": null,
       "phone": "+7 (925) 544-35-69",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -187153,16 +187624,15 @@
       "url": "https://iwillswim.ru/mgpu/",
       "source": "сайт iwillswim.ru (auto/pages): бассейн МГПУ, ул. Касаткина, 23 — размеры, глубина и температура чаш, группы, справка, телефон; карточка Яндекс Карт «Буду Плыть» (ул. Касаткина, 23) (проверено 2026-11-13)",
       "verified_at": "2026-11-13",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "pools"
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Парковка: бесплатная, возле бассейна",
+      "how_to_find": "Парковка: бесплатная возле бассейна",
       "phone": "+7 (495) 106-65-56",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -187854,7 +188324,7 @@
       "url": "https://rogdenie.ru/",
       "source": "карточка Яндекс Карт «Второе рождение» (Косинская ул., 12Б): услуги с возрастом и ценой, длина и число дорожек, телефон, сайт (проверено 2026-11-13)",
       "verified_at": "2026-11-13",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "pools"
       ],
@@ -187863,7 +188333,6 @@
       "how_to_find": null,
       "phone": "+7 903 798-54-88 (доб. 2)",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         null,
@@ -188233,7 +188702,7 @@
       "url": "https://swim-school-1.ru/basseyni/fili",
       "source": "сайт swim-school-1.ru/basseyni/fili (auto/pages): адрес Большая Филёвская ул., 18, возраст групп, цена в месяц, описание бассейна, «Хочу на бесплатное пробное занятие», телефон школы (проверено 2026-11-13)",
       "verified_at": "2026-11-13",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "pools"
       ],
@@ -188242,7 +188711,6 @@
       "how_to_find": null,
       "phone": "+7 (499) 455-58-51",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -188317,7 +188785,7 @@
       "url": "https://swim-school-1.ru/basseyni/mgsu",
       "source": "сайт swim-school-1.ru/basseyni/mgsu (auto/pages): адрес Ярославское ш., 26, стр. 4, возраст групп, цена в месяц, описание бассейна, «Хочу на бесплатное пробное занятие», телефон школы (проверено 2026-11-13)",
       "verified_at": "2026-11-13",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "pools"
       ],
@@ -188326,7 +188794,6 @@
       "how_to_find": null,
       "phone": "+7 (499) 455-58-51",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -188401,7 +188868,7 @@
       "url": "https://swim-school-1.ru/basseyni/mgtu-baumana",
       "source": "сайт swim-school-1.ru/basseyni/mgtu-baumana (auto/pages): адрес Госпитальная наб., 4, стр. 1, возраст групп, цена в месяц, описание бассейна, «Хочу на бесплатное пробное занятие», телефон школы (проверено 2026-11-13)",
       "verified_at": "2026-11-13",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "pools"
       ],
@@ -188410,7 +188877,6 @@
       "how_to_find": null,
       "phone": "+7 (499) 455-58-51",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -188452,7 +188918,7 @@
         "школа плавания"
       ],
       "metro": "Народное Ополчение",
-      "address": "ул. Генерала Глаголева, 10, корп. 3",
+      "address": "ул. Генерала Глаголева, 10, корп. 3, стр. 2",
       "lat": 55.78158635,
       "lon": 37.46637136,
       "age_min": 7,
@@ -188472,7 +188938,7 @@
       "price_adult": null,
       "free_note": "группа 7–12 лет — 10 900 ₽ в месяц (8 тренировок); группа 7–13 лет по выходным — 6600 ₽ (4 занятия); пробное занятие бесплатно",
       "booking": "required",
-      "hours": "ежедневно 10:00–22:00",
+      "hours": "ежедневно 07:00-23:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -188485,7 +188951,7 @@
       "url": "https://swim-school-1.ru/basseyni/serebryanniy",
       "source": "сайт swim-school-1.ru/basseyni/serebryanniy (auto/pages): адрес ул. Генерала Глаголева, 10, корп. 3, возраст групп, цена в месяц, описание бассейна, «Хочу на бесплатное пробное занятие», телефон школы (проверено 2026-11-13)",
       "verified_at": "2026-11-13",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "pools"
       ],
@@ -188494,36 +188960,35 @@
       "how_to_find": null,
       "phone": "+7 (499) 455-58-51",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
-          600,
-          1320
+          420,
+          1380
         ],
         [
-          600,
-          1320
+          420,
+          1380
         ],
         [
-          600,
-          1320
+          420,
+          1380
         ],
         [
-          600,
-          1320
+          420,
+          1380
         ],
         [
-          600,
-          1320
+          420,
+          1380
         ],
         [
-          600,
-          1320
+          420,
+          1380
         ],
         [
-          600,
-          1320
+          420,
+          1380
         ]
       ],
       "point_level": "вход",
@@ -189748,7 +190213,7 @@
       "price_adult": null,
       "free_note": "плавание для детей 3–6 лет — 9000 ₽ в месяц (8 занятий); пробное занятие бесплатно",
       "booking": "required",
-      "hours": "ежедневно 07:00–22:00",
+      "hours": "ежедневно 07:00-23:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -189761,7 +190226,7 @@
       "url": "https://swim-school-1.ru/basseyni",
       "source": "сайт swim-school-1.ru/basseyni (auto/pages): «Домодедовская — Каширское шоссе, д. 65 к.1 — дети от 2 лет», «Бесплатное пробное занятие»; карточка Яндекс Карт «Школа плавания № 1» (Каширское ш., 65, корп. 1): «Плавание для детей 3-6 лет (8 занятий в мес.) — обучение на малой глубине — 9000 ₽», телефон (проверено 2026-11-13)",
       "verified_at": "2026-11-13",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "pools"
       ],
@@ -189770,36 +190235,35 @@
       "how_to_find": null,
       "phone": "+7 (909) 977-55-58",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
           420,
-          1320
+          1380
         ],
         [
           420,
-          1320
+          1380
         ],
         [
           420,
-          1320
+          1380
         ],
         [
           420,
-          1320
+          1380
         ],
         [
           420,
-          1320
+          1380
         ],
         [
           420,
-          1320
+          1380
         ],
         [
           420,
-          1320
+          1380
         ]
       ],
       "point_level": "вход",
@@ -190472,7 +190936,7 @@
       "price_adult": null,
       "free_note": "индивидуальное занятие — 1850 ₽; абонемент на 4 занятия — 7000 ₽, на 8 — 12 000 ₽, на 12 — 15 600 ₽; первое пробное занятие — 900 ₽",
       "booking": "required",
-      "hours": "ежедневно 09:00–20:00",
+      "hours": "ежедневно 09:00-21:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": "yes",
@@ -190485,7 +190949,7 @@
       "url": "https://krabyboo.ru/",
       "source": "сайт krabyboo.ru (auto/pages): «индивидуальные занятия плаванием детей от 2 месяцев до 7 лет», «Поддерживается температура воды 32⁰С», «пеленальные столики, фены, игровая комната, онлайн трансляция занятий», цены 1850 / 7000 / 12000 / 15600 ₽, «Стоимость первого пробного занятия 900₽», справки, адрес «Раменское, ул. Приборостроителей 1А», телефон; карточка Яндекс Карт «Крабибу» (Раменское, ул. Приборостроителей, 1А): те же цены (проверено 2026-11-13)",
       "verified_at": "2026-11-13",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "pools",
         "kidsroom"
@@ -190495,36 +190959,35 @@
       "how_to_find": null,
       "phone": "+7 (925) 049-94-55",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
           540,
-          1200
+          1260
         ],
         [
           540,
-          1200
+          1260
         ],
         [
           540,
-          1200
+          1260
         ],
         [
           540,
-          1200
+          1260
         ],
         [
           540,
-          1200
+          1260
         ],
         [
           540,
-          1200
+          1260
         ],
         [
           540,
-          1200
+          1260
         ]
       ],
       "point_level": "вход",
@@ -205350,7 +205813,7 @@
       "url": "https://lednf.ru/",
       "source": "сайт lednf.ru (auto/pages): «Массовое катание для взрослых 340 р./45 мин., для детей до 14 лет 220 р./45 мин.», «Прокат коньков для взрослых 300 р./45 мин., для детей (до 34 размера) 250 р./45 мин.», «Расписание сеансов массового катания обновляется каждую неделю в соответствии с графиком спортивных мероприятий школы», «детская игровая комната, помещения для проката и заточки коньков… кафе “Пельменчик”», «Современная школа фигурного катания для детей от 3 лет», «Адрес ул. Профсоюзная 36Б», +7 (925) 036-00-63; карточка Яндекс Карт (auto/pages, 13.11) «Ледовый дворец Наро-Фоминск им. В. Шалимова, Спортивная школа, каток, Профсоюзная ул., 36Б, Наро-Фоминск», lednf.ru (проверено 2026-11-13)",
       "verified_at": "2026-11-13",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "rinks",
         "figureskating",
@@ -205361,7 +205824,6 @@
       "how_to_find": null,
       "phone": "+7 (925) 036-00-63",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -246655,7 +247117,7 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": "Ориентир: бассейн «Акватория ЗИЛ»\nПарковка: рядом (~121 м)",
-      "phone": "+7 (495) 125-19-15",
+      "phone": "+7 (495) 135-10-48",
       "season_months": null,
       "hours_src": "Яндекс Карты",
       "open_mode": "hours",
@@ -248607,7 +249069,7 @@
         "школа плавания"
       ],
       "metro": "Тульская",
-      "address": "Варшавское ш., 14, стр. 2",
+      "address": "Варшавское ш., 14, стр. 1",
       "lat": 55.69557682,
       "lon": 37.61982875,
       "age_min": 3,
@@ -248646,7 +249108,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Парковка: рядом, вдоль улицы (~222 м)",
+      "how_to_find": "Парковка: собственная бесплатная",
       "phone": "+7 (910) 337-49-59",
       "season_months": null,
       "open_mode": "unknown",
@@ -280533,7 +280995,7 @@
       "price_adult": null,
       "free_note": "первое пробное занятие бесплатно",
       "booking": "required",
-      "hours": null,
+      "hours": "ежедневно 08:00-20:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -280546,7 +281008,7 @@
       "url": "https://arsenal-kids.ru/",
       "source": "сайт arsenal-kids.ru (отделение «Новаторская»: «Москва, улица Академика Пилюгина, д. 14А», «Возрастные группы: 6–8 и 9–13 лет», «Футбольная школа для детей от 6 до 14 лет», «Пробное занятие — БЕСПЛАТНО!»); карточка Яндекс Карт «Арсенал» (ул. Академика Пилюгина, 14А, сайт arsenal-kids.ru) (проверено 2026-11-13)",
       "verified_at": "2026-11-13",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "football"
       ],
@@ -280555,8 +281017,37 @@
       "how_to_find": null,
       "phone": "+7 (967) 090-77-99",
       "season_months": null,
-      "open_mode": "unknown",
-      "open_week": null,
+      "open_mode": "hours",
+      "open_week": [
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ]
+      ],
       "point_level": "вход",
       "point_door": "объект"
     },
@@ -280570,7 +281061,7 @@
       "address": "ул. Крылатские Холмы, 45, корп. 2",
       "lat": 55.762389,
       "lon": 37.413612,
-      "age_min": 6,
+      "age_min": 4,
       "age_max": 14,
       "duration_min": 45,
       "duration_max": 90,
@@ -280586,7 +281077,7 @@
       "price_adult": null,
       "free_note": "первое пробное занятие бесплатно",
       "booking": "required",
-      "hours": null,
+      "hours": "ежедневно 08:00-20:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -280599,7 +281090,7 @@
       "url": "https://arsenal-kids.ru/",
       "source": "сайт arsenal-kids.ru (отделение «Крылатское»: «Москва, улица Крылатские Холмы, д. 45, корп. 2», «Возрастные группы: 6–8, 9–11 и 12–14 лет», «Футбольная школа для детей от 6 до 14 лет», «Пробное занятие — БЕСПЛАТНО!») (проверено 2026-11-13)",
       "verified_at": "2026-11-13",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "football"
       ],
@@ -280608,8 +281099,37 @@
       "how_to_find": null,
       "phone": "+7 (967) 090-77-99",
       "season_months": null,
-      "open_mode": "unknown",
-      "open_week": null,
+      "open_mode": "hours",
+      "open_week": [
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ]
+      ],
       "point_level": "вход",
       "point_door": "объект"
     },
@@ -280623,7 +281143,7 @@
       "address": "Ореховый б-р, 21, корп. 2",
       "lat": 55.613662,
       "lon": 37.723922,
-      "age_min": 6,
+      "age_min": 4,
       "age_max": 14,
       "duration_min": 45,
       "duration_max": 90,
@@ -280639,7 +281159,7 @@
       "price_adult": null,
       "free_note": "первое пробное занятие бесплатно",
       "booking": "required",
-      "hours": null,
+      "hours": "ежедневно 08:00-20:00",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -280652,7 +281172,7 @@
       "url": "https://arsenal-kids.ru/",
       "source": "сайт arsenal-kids.ru (отделение «Домодедовская»: «Москва, Ореховый бульвар, д. 21, корп. 2», «Возрастные группы: 6–8, 9–11 и 12–14 лет», «Футбольная школа для детей от 6 до 14 лет», «Пробное занятие — БЕСПЛАТНО!») (проверено 2026-11-13)",
       "verified_at": "2026-11-13",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "football"
       ],
@@ -280661,8 +281181,37 @@
       "how_to_find": null,
       "phone": "+7 (967) 090-77-99",
       "season_months": null,
-      "open_mode": "unknown",
-      "open_week": null,
+      "open_mode": "hours",
+      "open_week": [
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ],
+        [
+          480,
+          1200
+        ]
+      ],
       "point_level": "вход",
       "point_door": "объект"
     },
