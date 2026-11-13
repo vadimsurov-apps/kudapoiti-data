@@ -28,8 +28,8 @@
 "abc-aba-matveevskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -233,28 +233,12 @@
 "adl-forward-cheer-vrubelya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address"
-],
-"sources": [
-"https://adlforward.ru/index.html"
-],
-"status": "works",
-"wrong": {
-"age": {
-"source": "https://adlforward.ru/index.html",
-"value": [
-7,
-17
-]
-},
-"url": {
-"source": "https://adlforward.ru/index.html",
-"value": "https://adlforward.ru/"
-}
-}
+"file": "20261113-1630-0.json",
+"note": "Надёжного первоисточника с данными именно этой точки найти не удалось.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "aerial-city-deck": {
 "by": "Codex",
@@ -291,11 +275,11 @@
 "aerial-gym-obraztsova": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1720-0.json",
+"note": "Надёжный первоисточник именно этого филиала не найден; поля оставлены unknown.",
 "ok": [],
 "sources": [],
-"status": "works",
+"status": "not_found",
 "wrong": {}
 },
 "aiki-club-stolyarny": {
@@ -311,10 +295,14 @@
 "aikido-na-taganke": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждё��ные поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1630-0.json",
+"note": "Карточка подтверждена официальным сайтом.",
+"ok": [
+"url"
+],
+"sources": [
+"https://aikikaiaikido.ru/"
+],
 "status": "works",
 "wrong": {}
 },
@@ -542,10 +530,9 @@
 "akro-miks-kastanaevskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1720-0.json",
+"note": "Официальный сайт подтверждает работу организации; сведения именно об этом филиале на доступной странице не подтверждены.",
 "ok": [
-"address",
 "url"
 ],
 "sources": [
@@ -596,21 +583,12 @@
 "akuly-zemlyanoy-val": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address"
-],
-"sources": [
-"https://azswim.ru/"
-],
-"status": "works",
-"wrong": {
-"url": {
-"source": "https://azswim.ru/",
-"value": "https://azswim.ru/"
-}
-}
+"file": "20261113-1630-0.json",
+"note": "Надёжного первоисточника с данными именно этой точки найти не удалось.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "akvakids-korolev-lesnaya": {
 "by": "Codex",
@@ -733,49 +711,44 @@
 "ambiland-okeania": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые пол�� оставлены unknown.",
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "hours",
 "phone",
-"url",
-"age"
+"url"
 ],
 "sources": [
-"https://ambi.land/",
 "https://ambi.land/parks/okeaniya"
 ],
 "status": "works",
 "wrong": {
+"age": {
+"source": "https://ambi.land/parks/okeaniya",
+"value": [
+1,
+12
+]
+},
 "how": {
 "source": "https://ambi.land/parks/okeaniya",
 "value": "Вход: через ТРЦ «Океания»\nЭтаж: 4\nПарковка: парковка ТРЦ"
 },
 "price": {
 "source": "https://ambi.land/parks/okeaniya",
-"value": {
-"adult": 0,
-"child_1_4": 1500,
-"child_5_plus_friday": 3200,
-"child_5_plus_weekday": 3000,
-"child_5_plus_weekend": 3500
-}
+"value": 1500
 }
 }
 },
 "amerikansky-klub-znamenka": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
-"ok": [
-"url"
-],
-"sources": [
-"https://www.english-language.ru/"
-],
-"status": "works",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "andrakhanova-polkovaya": {
@@ -959,23 +932,12 @@
 "aptekarsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address",
-"url"
-],
-"sources": [
-"https://hortus.msu.ru/",
-"https://hortus.msu.ru/location.html"
-],
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
 "status": "works",
-"wrong": {
-"how": {
-"source": "https://hortus.msu.ru/location.html",
-"value": "Вход: главный вход по адресу пр. Мира, 26, стр. 1"
-}
-}
+"wrong": {}
 },
 "aqua-class-alekseevskaya": {
 "by": "Codex",
@@ -1040,8 +1002,8 @@
 "aqville-miklukho": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Надёжного актуального первоисточника с данными именно этого филиала не найдено.",
+"file": "20261113-1653-3.json",
+"note": "Надёжного подтверждения по доступным первоисточникам не найдено.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -1060,16 +1022,10 @@
 "arbatclass-sivtsev": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address",
-"phone",
-"url"
-],
-"sources": [
-"https://arbatclass.ru/"
-],
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
 "status": "works",
 "wrong": {}
 },
@@ -1231,8 +1187,8 @@
 "ars-musica-lyapidevskogo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -1337,8 +1293,8 @@
 "art-impulse-abelmanovskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -1420,12 +1376,25 @@
 "asvl-malomoskovskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным ��ервоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1630-0.json",
+"note": "Карточка подтверждена официальным сайтом.",
+"ok": [
+"address",
+"phone",
+"url",
+"age"
+],
+"sources": [
+"https://asvl.ru/",
+"https://asvl.ru/academic-drawing"
+],
 "status": "works",
-"wrong": {}
+"wrong": {
+"how": {
+"source": "https://asvl.ru/academic-drawing",
+"value": "Вход: через проходную слева от АЗС «Лукойл»\nЭтаж: 2, помещение 212"
+}
+}
 },
 "atmoquest-novinsky": {
 "by": "Codex",
@@ -1570,24 +1539,12 @@
 "attitude-koneva": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address",
-"phone",
-"age"
-],
-"sources": [
-"https://attitude-gimnastik.ru/contacts/",
-"https://attitude-gimnastik.ru/gimnastika-na-panphilovskoy/"
-],
-"status": "works",
-"wrong": {
-"url": {
-"source": "https://attitude-gimnastik.ru/contacts/",
-"value": "https://attitude-gimnastik.ru/"
-}
-}
+"file": "20261113-1720-0.json",
+"note": "Надёжный первоисточник именно этого филиала не найден; поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "aurum-azovskaya": {
 "by": "Codex",
@@ -1787,12 +1744,40 @@
 "baby-club-kastanaevskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1630-0.json",
+"note": "Карточка подтверждена официальным сайтом.",
+"ok": [
+"address",
+"phone"
+],
+"sources": [
+"https://baby-club.ru/clubs/moscow/",
+"https://baby-club.ru/clubs/moscow/na-kastanaevskoj/",
+"https://baby-club.ru/clubs/moscow/na-kastanaevskoj/kindergarten/",
+"https://baby-club.ru/clubs/moscow/na-kastanaevskoj/org-info/osnovnye-svedeniya/"
+],
 "status": "works",
-"wrong": {}
+"wrong": {
+"age": {
+"source": "https://baby-club.ru/clubs/moscow/",
+"value": [
+0.67,
+7
+]
+},
+"hours": {
+"source": "https://baby-club.ru/clubs/moscow/na-kastanaevskoj/org-info/osnovnye-svedeniya/",
+"value": "пн-пт 08:30-19:30"
+},
+"how": {
+"source": "https://baby-club.ru/clubs/moscow/na-kastanaevskoj/kindergarten/",
+"value": "Вход: со стороны парковочной площадки\nЭтаж: 1"
+},
+"url": {
+"source": "https://baby-club.ru/clubs/moscow/na-kastanaevskoj/org-info/osnovnye-svedeniya/",
+"value": "https://baby-club.ru/clubs/moscow/na-kastanaevskoj/"
+}
+}
 },
 "baby-club-krupskoy-1": {
 "by": "Codex",
@@ -1953,24 +1938,16 @@
 "bagration-tkd-kastanaevskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
-"address",
-"phone",
 "url"
 ],
 "sources": [
-"https://itf-bagration.ru/",
-"https://itf-bagration.ru/schedule"
+"https://www.itf-bagration.ru/"
 ],
 "status": "works",
-"wrong": {
-"hours": {
-"source": "https://itf-bagration.ru/schedule",
-"value": "пн, ср, пт 18:00-20:30"
-}
-}
+"wrong": {}
 },
 "balashikha-kartinka": {
 "by": "Codex",
@@ -2009,8 +1986,8 @@
 "balashikha-pekhorka-park": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -2187,8 +2164,8 @@
 "batut-apelsin-balashikha": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -2217,25 +2194,12 @@
 "batut-miklukho-maklaya-32a": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address"
-],
-"sources": [
-"https://yandex.com/maps/213/moscow/search/%D0%91%D0%B0%D1%82%D1%83%D1%82%D0%BD%D1%8B%D0%B5%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%D1%8B%20%D0%BD%D0%B0%20%D0%9F%D1%80%D0%BE%D1%81%D0%BE%D1%8E%D0%B7%D0%BD%D0%BE%D0%B9%20%D1%83%D0%BB%D0%B8%D1%86%D0%B5/"
-],
-"status": "works",
-"wrong": {
-"hours": {
-"source": "https://yandex.com/maps/213/moscow/search/%D0%91%D0%B0%D1%82%D1%83%D1%82%D0%BD%D1%8B%D0%B5%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%D1%8B%20%D0%BD%D0%B0%20%D0%9F%D1%80%D0%BE%D1%81%D0%BE%D1%8E%D0%B7%D0%BD%D0%BE%D0%B9%20%D1%83%D0%BB%D0%B8%D1%86%D0%B5/",
-"value": "ежедневно 10:00-22:00"
-},
-"how": {
-"source": "https://yandex.com/maps/213/moscow/search/%D0%91%D0%B0%D1%82%D1%83%D1%82%D0%BD%D1%8B%D0%B5%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%D1%8B%20%D0%BD%D0%B0%20%D0%9F%D1%80%D0%BE%D1%81%D0%BE%D1%8E%D0%B7%D0%BD%D0%BE%D0%B9%20%D1%83%D0%BB%D0%B8%D1%86%D0%B5/",
-"value": "Этаж: 2"
-}
-}
+"file": "20261113-1653-2.json",
+"note": "Надёжного актуального первоисточника с данными именно этой точки найти не удалось.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "batut-planetium-zelenograd": {
 "by": "Codex",
@@ -2318,30 +2282,16 @@
 "be-yourself-selskokhozyaystvennaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
-"address",
-"phone",
-"url",
-"age"
+"url"
 ],
 "sources": [
-"https://beyourself-school.ru",
-"https://beyourself-school.ru/",
-"https://beyourself-school.ru/svedenia"
+"https://beyourself-school.ru"
 ],
 "status": "works",
-"wrong": {
-"hours": {
-"source": "https://beyourself-school.ru/svedenia",
-"value": "пн-пт 09:00-20:00; сб 10:00-18:00"
-},
-"how": {
-"source": "https://beyourself-school.ru/",
-"value": "Вход: секция 9"
-}
-}
+"wrong": {}
 },
 "beach-volleyball-school-sokol": {
 "by": "Codex",
@@ -2461,8 +2411,8 @@
 "bkc-myasnitskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -2726,21 +2676,12 @@
 "brays-skating-sokolniki": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address"
-],
-"sources": [
-"https://briceclub.ru/"
-],
-"status": "works",
-"wrong": {
-"url": {
-"source": "https://briceclub.ru/",
-"value": "https://briceclub.ru/"
-}
-}
+"file": "20261113-1720-0.json",
+"note": "Надёжный первоисточник именно этого филиала не найден; поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "brikobilandiya": {
 "by": "Codex",
@@ -2811,26 +2752,16 @@
 "bud-soboy-korolyova": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт досту��ен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
-"address",
-"hours",
-"phone",
 "url"
 ],
 "sources": [
-"https://budsoboy.com/rules",
-"https://www.budsoboy.com",
-"https://www.budsoboy.com/"
+"https://www.budsoboy.com"
 ],
 "status": "works",
-"wrong": {
-"how": {
-"source": "https://www.budsoboy.com/",
-"value": "Вход: подъезд 1, строго по паспорту\nЭтаж: 7"
-}
-}
+"wrong": {}
 },
 "buff-kastanaevskaya": {
 "by": "Codex",
@@ -4020,11 +3951,10 @@
 "cafe-dodo-vidnoe-komsomola": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Действующая страница места подтверждает работу.",
+"file": "20261113-1653-3.json",
+"note": "Карточка подтверждена официальным источником.",
 "ok": [
-"address",
-"url"
+"address"
 ],
 "sources": [
 "https://dodopizza.ru/vidnoe/contacts/lenkom46a"
@@ -4034,6 +3964,10 @@
 "hours": {
 "source": "https://dodopizza.ru/vidnoe/contacts/lenkom46a",
 "value": "ежедневно 10:00-23:00"
+},
+"url": {
+"source": "https://dodopizza.ru/vidnoe/contacts/lenkom46a",
+"value": "https://dodopizza.ru/vidnoe/contacts/lenkom46a"
 }
 }
 },
@@ -4184,17 +4118,11 @@
 "cafe-galereya-sokolniki-istra": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Официальный сайт подтверждает, что это банкетный зал для заранее запланированных мероприятий, а не кафе со свободным посещением.",
-"ok": [
-"address",
-"phone",
-"url"
-],
-"sources": [
-"https://galleryistra.ru/"
-],
-"status": "works",
+"file": "20261113-1653-3.json",
+"note": "Надёжного подтверждения по доступным первоисточникам не найдено.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "cafe-gambrinus-konkovo": {
@@ -4780,8 +4708,8 @@
 "cafe-kazbegi-klin": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Надёжного актуального первоисточника с данными именно этого филиала не найдено.",
+"file": "20261113-1653-3.json",
+"note": "Надёжного подтверждения по доступным первоисточникам не найдено.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -6248,22 +6176,12 @@
 "cafe-solnechny-moskovsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address",
-"phone"
-],
-"sources": [
-"https://solnechnyj.clients.site/"
-],
-"status": "works",
-"wrong": {
-"url": {
-"source": "https://solnechnyj.clients.site/",
-"value": "https://solnechnyj.clients.site/"
-}
-}
+"file": "20261113-1630-0.json",
+"note": "Надёжного первоисточника с данными именно этой точки найти не удалось.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "cafe-starik-khinkalych-kolomna": {
 "by": "Codex",
@@ -6478,8 +6396,8 @@
 "cafe-tanuki-preobrazhenskaya-5": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Надёжного актуального первоисточника с данными именно этого филиала не найдено.",
+"file": "20261113-1653-3.json",
+"note": "Надёжного подтверждения по доступным первоисточникам не найдено.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -6957,27 +6875,12 @@
 "cbs-sivtsev-45": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address",
-"phone",
-"url"
-],
-"sources": [
-"https://cbs.moscow/contacts/"
-],
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
 "status": "works",
-"wrong": {
-"hours": {
-"source": "https://cbs.moscow/contacts/",
-"value": "пн-пт 09:30-20:00; сб-вс 09:30-18:00"
-},
-"how": {
-"source": "https://cbs.moscow/contacts/",
-"value": "Вход: на территорию со стороны пер. Сивцев Вражек\nПарковка: своей парковки нет, рядом городская"
-}
-}
+"wrong": {}
 },
 "cbs1-kids-volgogradsky-91": {
 "by": "Codex",
@@ -7059,9 +6962,10 @@
 "cdm-observation": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
+"file": "20261113-1647-0.json",
+"note": "Карточка подтверждена первоисточником.",
 "ok": [
+"address",
 "price"
 ],
 "sources": [
@@ -7075,11 +6979,7 @@
 },
 "how": {
 "source": "https://audioguide.cdm-moscow.ru/smotrovaya_ploshadka",
-"value": "Этаж: 6"
-},
-"url": {
-"source": "https://audioguide.cdm-moscow.ru/smotrovaya_ploshadka",
-"value": "https://audioguide.cdm-moscow.ru/smotrovaya_ploshadka"
+"value": "Этаж: стартовая точка на 6 этаже ЦДМ у входа в Музей детства и на смотровую площадку"
 }
 }
 },
@@ -7222,12 +7122,24 @@
 "championika-taymyrskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1720-0.json",
+"note": "Официальный источник подтверждает работу и указанные поля; остальные сведения не удалось независимо подтвердить.",
+"ok": [
+"phone",
+"url",
+"price",
+"age"
+],
+"sources": [
+"https://championika.ru/addr/object562.html"
+],
 "status": "works",
-"wrong": {}
+"wrong": {
+"address": {
+"source": "https://championika.ru/addr/object562.html",
+"value": "Москва, Таймырская ул., 4"
+}
+}
 },
 "championika-tayninskaya": {
 "by": "Codex",
@@ -7528,11 +7440,11 @@
 "chess-club-egoryevsk": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1720-0.json",
+"note": "Надёжный первоисточник именно этого филиала не найден; поля оставлены unknown.",
 "ok": [],
 "sources": [],
-"status": "works",
+"status": "not_found",
 "wrong": {}
 },
 "chess-csbw-altufyevo": {
@@ -7723,44 +7635,40 @@
 "chestny-boy-ostrovityanova": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address",
-"phone",
-"url"
-],
-"sources": [
-"https://sportvsegda.ru"
-],
-"status": "works",
-"wrong": {
-"price": {
-"source": "https://sportvsegda.ru",
-"value": 7500
-}
-}
+"file": "20261113-1720-0.json",
+"note": "Надёжный первоисточник именно этого филиала не найден; поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "chg-aeroport-domodedovo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
-"note": "Официальный сайт также подтверждает бесплатные круглосуточные пеленальные комнаты на 1 и 2 этажах терминала.",
+"file": "20261113-1634-0.json",
+"note": "",
 "ok": [
 "hours"
 ],
 "sources": [
-"https://www.dme.aero/airportguide/children/mother-and-child/"
+"https://dns.dme.ru/airportguide/children/mother-and-child/"
 ],
 "status": "works",
 "wrong": {
-"how": {
-"source": "https://www.dme.aero/airportguide/children/mother-and-child/",
-"value": "Вход: терминал 2, вход № 5\nЭтаж: 1\nОриентир: стойка регистрации № 156"
+"age": {
+"source": "https://dns.dme.ru/airportguide/children/mother-and-child/",
+"value": [
+0,
+8
+]
 },
-"url": {
-"source": "https://www.dme.aero/airportguide/children/mother-and-child/",
-"value": "https://www.dme.aero/"
+"how": {
+"source": "https://dns.dme.ru/airportguide/children/mother-and-child/",
+"value": "Вход: Терминал 2, вход № 5\nЭтаж: 1\nОриентир: стойка регистрации № 156"
+},
+"price": {
+"source": "https://dns.dme.ru/airportguide/children/mother-and-child/",
+"value": 0
 }
 }
 },
@@ -7777,23 +7685,12 @@
 "chg-aeroport-vnukovo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
-"note": "Официальные страницы противоречат друг другу по режиму комнаты: обзор говорит 24/7, страница контактов — 09:00-18:00.",
-"ok": [
-"hours",
-"url"
-],
-"sources": [
-"https://special-partners.vnukovo.ru/ru/kontakti/",
-"https://special-partners.vnukovo.ru/ru/med-first-aid-room/komnata-materi-irebenka/"
-],
+"file": "20261113-1634-0.json",
+"note": "",
+"ok": [],
+"sources": [],
 "status": "works",
-"wrong": {
-"how": {
-"source": "https://special-partners.vnukovo.ru/ru/kontakti/",
-"value": "Этаж: 3, терминал А"
-}
-}
+"wrong": {}
 },
 "chg-afimall": {
 "by": "Codex",
@@ -7867,28 +7764,17 @@
 "chg-cdm-lubyanka": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
+"file": "20261113-1634-0.json",
 "note": "",
-"ok": [
-"address"
-],
+"ok": [],
 "sources": [
-"https://cdm-moscow.ru/services/pelenalnaya-komnata",
-"https://cdm-moscow.ru/visit"
+"https://cdm-moscow.ru/services/pelenalnaya-komnata"
 ],
 "status": "works",
 "wrong": {
-"hours": {
-"source": "https://cdm-moscow.ru/visit",
-"value": "вс-чт 10:00-22:00; пт, сб 10:00-23:00"
-},
 "how": {
 "source": "https://cdm-moscow.ru/services/pelenalnaya-komnata",
-"value": "Этаж: 2-6, рядом с туалетами; по две комнаты на 2 и 3 этажах, по одной на 4, 5 и 6 этажах"
-},
-"url": {
-"source": "https://cdm-moscow.ru/services/pelenalnaya-komnata",
-"value": "https://cdm-moscow.ru/"
+"value": "Этаж: 2-3 — по две комнаты рядом с туалетами; 4-6 — по одной комнате рядом с туалетами"
 }
 }
 },
@@ -8069,10 +7955,9 @@
 "chg-lenta-domodedovo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
-"note": "Официальный список подтверждает магазин, но не наличие пеленального столика; сам объект пеленальной комнаты не подтверждён.",
+"file": "20261113-1634-0.json",
+"note": "",
 "ok": [
-"hours",
 "url"
 ],
 "sources": [
@@ -8082,14 +7967,14 @@
 "wrong": {
 "address": {
 "source": "https://lenta.com/allmarkets/",
-"value": "Домодедово, ул. Кирова, 28, гипермаркет «Лента»"
+"value": "Домодедово, ул. Кирова, стр. 28, гипермаркет «Лента»"
 }
 }
 },
 "chg-mcd-ostafyevo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
+"file": "20261113-1706-4.json",
 "note": "Не удалось независимо подтвердить данные по доступным первоисточникам.",
 "ok": [],
 "sources": [],
@@ -8119,26 +8004,21 @@
 "chg-mega-khimki": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
-"note": "Официальную страницу, подтверждающую конкретный пеленальный столик и ориентир, найти не удалось.",
-"ok": [
-"hours",
-"url"
-],
-"sources": [
-"https://mega.ru/khimki/"
-],
+"file": "20261113-1634-0.json",
+"note": "",
+"ok": [],
+"sources": [],
 "status": "works",
 "wrong": {}
 },
 "chg-muzeon": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
-"note": "Надёжного первоисточника, подтверждающего отдельную пеленальную комнату или столик именно в указанной точке, найти не удалось.",
+"file": "20261113-1634-0.json",
+"note": "",
 "ok": [],
 "sources": [],
-"status": "not_found",
+"status": "works",
 "wrong": {}
 },
 "chg-mytishchi-station": {
@@ -8177,11 +8057,11 @@
 "chg-olonetsky-skver": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
-"note": "Надёжного первоисточника, подтверждающего отдельную пеленальную комнату или столик именно в указанной точке, найти не удалось.",
+"file": "20261113-1634-0.json",
+"note": "",
 "ok": [],
 "sources": [],
-"status": "not_found",
+"status": "works",
 "wrong": {}
 },
 "chg-park-50-let-oktyabrya": {
@@ -8235,19 +8115,12 @@
 "chg-park-mitino": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
-"note": "Найдено подтверждение комнаты матери и ребёнка с пеленальным столиком, но координаты карточки не подтверждены.",
+"file": "20261113-1634-0.json",
+"note": "",
 "ok": [],
-"sources": [
-"https://www.mskagency.ru/materials/3327479"
-],
+"sources": [],
 "status": "works",
-"wrong": {
-"how": {
-"source": "https://www.mskagency.ru/materials/3327479",
-"value": "Ориентир: у беседки со стороны входа с ул. Барышихи, д. 6"
-}
-}
+"wrong": {}
 },
 "chg-park-ostankino": {
 "by": "Codex",
@@ -8282,18 +8155,18 @@
 "chg-park-vorontsovsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1630-0.json",
+"note": "Надёжного первоисточника с данными именно этой точки найти не удалось.",
 "ok": [],
 "sources": [],
-"status": "works",
+"status": "not_found",
 "wrong": {}
 },
 "chg-park-yauza-severodvinskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Не удалось подтвердить именно эту точку по допустимому первоисточнику; все поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Надёжного актуального первоисточника с данными именно этой точки найти не удалось.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -8302,11 +8175,11 @@
 "chg-podolsk-bulvar-pobedy": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
-"note": "Надёжного первоисточника, подтверждающего отдельную пеленальную комнату или столик именно в указанной точке, найти не удалось.",
+"file": "20261113-1634-0.json",
+"note": "",
 "ok": [],
 "sources": [],
-"status": "not_found",
+"status": "works",
 "wrong": {}
 },
 "chg-podsolnechnaya": {
@@ -8322,7 +8195,7 @@
 "chg-pryamikov-park": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
+"file": "20261113-1706-4.json",
 "note": "Не удалось независимо подтвердить данные по доступным первоисточникам.",
 "ok": [],
 "sources": [],
@@ -8435,14 +8308,23 @@
 "chg-vdnh-north": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
-"note": "Официальный сайт подтверждает комнаты матери и ребёнка на ВДНХ, но не подтверждает отдельную комнату у Северной аллеи и павильона № 66; актуальная флагманская комната находится в арке Южного входа.",
+"file": "20261113-1634-0.json",
+"note": "",
 "ok": [],
 "sources": [
-"https://vdnh.ru/news/4893/"
+"https://vdnh.ru/orion/faq/"
 ],
-"status": "not_found",
-"wrong": {}
+"status": "works",
+"wrong": {
+"hours": {
+"source": "https://vdnh.ru/orion/faq/",
+"value": "ежедневно 10:00-21:00"
+},
+"how": {
+"source": "https://vdnh.ru/orion/faq/",
+"value": "Ориентир: левое крыло арки Главного входа, рядом с Южной станцией канатной дороги"
+}
+}
 },
 "chg-vegas-kashirskoe": {
 "by": "Codex",
@@ -8942,12 +8824,27 @@
 "cin-mega-bd": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальная страница сети подтверждает работу кинотеатра, адрес и 1 этаж; вход № 8 не подтверждён.",
 "ok": [],
-"sources": [],
+"sources": [
+"https://kinoteatr.ru/raspisanie-kinoteatrov/belaya-dacha/"
+],
 "status": "works",
-"wrong": {}
+"wrong": {
+"address": {
+"source": "https://kinoteatr.ru/raspisanie-kinoteatrov/belaya-dacha/",
+"value": "Котельники, 1-й Покровский пр., 1, ТЦ «МЕГА Белая Дача», 1 этаж"
+},
+"how": {
+"source": "https://kinoteatr.ru/raspisanie-kinoteatrov/belaya-dacha/",
+"value": "Этаж: 1"
+},
+"url": {
+"source": "https://kinoteatr.ru/raspisanie-kinoteatrov/belaya-dacha/",
+"value": "https://kinoteatr.ru/raspisanie-kinoteatrov/belaya-dacha/"
+}
+}
 },
 "cin-mega-teply-stan": {
 "by": "Codex",
@@ -9637,12 +9534,31 @@
 "cosmos": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Надёжного подтверждения по первоисточнику не найдено; поля оставлены unknown.",
-"ok": [],
-"sources": [],
-"status": "not_found",
-"wrong": {}
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
+"ok": [
+"address",
+"hours"
+],
+"sources": [
+"https://kosmo-museum.ru/contacts",
+"https://kosmo-museum.ru/static_pages/splanirovat-vizit"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://kosmo-museum.ru/static_pages/splanirovat-vizit",
+"value": "Ориентир: стилобат монумента «Покорителям космоса», в двух минутах от выхода метро «ВДНХ»"
+},
+"phone": {
+"source": "https://kosmo-museum.ru/contacts",
+"value": "+7 (499) 750-23-00, доб. 1016"
+},
+"url": {
+"source": "https://kosmo-museum.ru/contacts",
+"value": "https://kosmo-museum.ru/"
+}
+}
 },
 "cosmozar-reutov": {
 "by": "Codex",
@@ -9696,8 +9612,8 @@
 "crazy-cart-rio-dmitrovka": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -9833,15 +9749,11 @@
 "cska-rugby-khodynsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address"
-],
-"sources": [
-"https://rugbymos.ru/sections"
-],
-"status": "works",
+"file": "20261113-1630-0.json",
+"note": "Надёжного первоисточника с данными именно этой точки найти не удалось.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "dai-pyat-dzerzhinsky": {
@@ -10093,19 +10005,22 @@
 "delfin-pool-mytishchi-letnaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
 "ok": [
-"address",
 "phone",
 "url"
 ],
 "sources": [
-"https://www.brigantina-swim.ru/",
 "https://www.brigantina-swim.ru/contacts/"
 ],
 "status": "works",
-"wrong": {}
+"wrong": {
+"address": {
+"source": "https://www.brigantina-swim.ru/contacts/",
+"value": "Мытищи, Лётная ул., 34А"
+}
+}
 },
 "delfin-pool-solnechnogorsk": {
 "by": "Codex",
@@ -10140,11 +10055,19 @@
 "der-walz-chertanovo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
-"ok": [],
-"sources": [],
-"status": "not_found",
+"file": "20261113-1647-0.json",
+"note": "Карточка подтверждена первоисточником.",
+"ok": [
+"address",
+"hours",
+"phone",
+"url",
+"how"
+],
+"sources": [
+"https://www.derwaltz.ru/map"
+],
+"status": "works",
 "wrong": {}
 },
 "deti-gor-latsisa": {
@@ -10305,22 +10228,20 @@
 "dixxodrom-izmailovo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
+"file": "20261113-1634-0.json",
 "note": "",
 "ok": [
 "phone",
-"url",
-"price"
+"url"
 ],
 "sources": [
-"https://dixxodrom.ru/kontakty/",
-"https://yandex.com/maps/org/diksodrom/1086706159/"
+"https://dixxodrom.ru/kontakty/"
 ],
 "status": "works",
 "wrong": {
 "address": {
 "source": "https://dixxodrom.ru/kontakty/",
-"value": "Москва, Измайловское ш., вл. 73, стр. 4"
+"value": "Москва, Измайловское ш., 73, стр. 4, стадион «Ракета»"
 },
 "hours": {
 "source": "https://dixxodrom.ru/kontakty/",
@@ -10328,7 +10249,7 @@
 },
 "how": {
 "source": "https://dixxodrom.ru/kontakty/",
-"value": "Вход: въезд с Измайловского шоссе по стрелке «картинг»\nОриентир: от метро «Партизанская» идти вдоль Измайловского шоссе"
+"value": "Вход: с Измайловского шоссе по указателю «картинг»"
 }
 }
 },
@@ -10465,29 +10386,12 @@
 "dk-khimik-voskresensk": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
+"file": "20261113-1634-0.json",
 "note": "",
-"ok": [
-"address"
-],
-"sources": [
-"https://xn----dtbjavccxfqfkdc6d.xn--p1ai/dk-himik.html"
-],
+"ok": [],
+"sources": [],
 "status": "works",
-"wrong": {
-"hours": {
-"source": "https://xn----dtbjavccxfqfkdc6d.xn--p1ai/dk-himik.html",
-"value": "ежедневно 08:00-23:00"
-},
-"phone": {
-"source": "https://xn----dtbjavccxfqfkdc6d.xn--p1ai/dk-himik.html",
-"value": "+7 (496) 442-56-00"
-},
-"url": {
-"source": "https://xn----dtbjavccxfqfkdc6d.xn--p1ai/dk-himik.html",
-"value": "http://црк-воскресенск.рф"
-}
-}
+"wrong": {}
 },
 "dkhsh-7-pervomayskaya": {
 "by": "Codex",
@@ -10553,27 +10457,23 @@
 "dmitrov-kropotkin-house": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
-"note": "Источник указывает детский и льготный билет 100 ₽.",
+"file": "20261113-1634-0.json",
+"note": "",
 "ok": [
 "address"
 ],
 "sources": [
-"https://welcome.mosreg.ru/museums/poslednee-zilise-mateznogo-knaza-anarhista"
+"https://www.culture.ru/institutes/22140/dom-petra-alekseevicha-kropotkina"
 ],
 "status": "works",
 "wrong": {
-"hours": {
-"source": "https://welcome.mosreg.ru/museums/poslednee-zilise-mateznogo-knaza-anarhista",
-"value": "ср-вс 10:00-18:00; пн, вт — выходной"
-},
 "phone": {
-"source": "https://welcome.mosreg.ru/museums/poslednee-zilise-mateznogo-knaza-anarhista",
-"value": "+7 (496) 222-30-40"
+"source": "https://www.culture.ru/institutes/22140/dom-petra-alekseevicha-kropotkina",
+"value": "+7 (496) 227-40-07"
 },
-"price": {
-"source": "https://welcome.mosreg.ru/museums/poslednee-zilise-mateznogo-knaza-anarhista",
-"value": 200
+"url": {
+"source": "https://www.culture.ru/institutes/22140/dom-petra-alekseevicha-kropotkina",
+"value": "https://dmmuseum.ru/"
 }
 }
 },
@@ -10607,10 +10507,14 @@
 "dmsh-42-petrovsko-razumovsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1630-0.json",
+"note": "Карточка подтверждена официальным сайтом.",
+"ok": [
+"url"
+],
+"sources": [
+"https://42.music.mos.ru/"
+],
 "status": "works",
 "wrong": {}
 },
@@ -10634,16 +10538,23 @@
 "dmsh-98-kronshtadtsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Государственный портал подтверждает действующую школу и адрес, но указывает другой телефон.",
 "ok": [
+"address",
 "url"
 ],
 "sources": [
-"https://98.music.mos.ru"
+"https://98.music.mos.ru",
+"https://www.culture.ru/institutes/37978/detskaya-muzykalnaya-shkola-98"
 ],
 "status": "works",
-"wrong": {}
+"wrong": {
+"phone": {
+"source": "https://www.culture.ru/institutes/37978/detskaya-muzykalnaya-shkola-98",
+"value": "+7 (495) 454-04-36"
+}
+}
 },
 "dmsh-lista-kosinskaya": {
 "by": "Codex",
@@ -10802,18 +10713,29 @@
 "dom-gimnastiki-kolskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
-"status": "works",
-"wrong": {}
+"file": "20261113-1630-0.json",
+"note": "Официальный сайт сейчас указывает другой адрес студии.",
+"ok": [
+"hours",
+"phone",
+"url"
+],
+"sources": [
+"https://dom-gimnastiki.ru/"
+],
+"status": "moved",
+"wrong": {
+"address": {
+"source": "https://dom-gimnastiki.ru/",
+"value": "Игарский пр-д, 8, 2 этаж"
+}
+}
 },
 "dom-khudozhnikov-khimki": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -10869,7 +10791,7 @@
 "domodedovo-yolochki": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
+"file": "20261113-1634-0.json",
 "note": "",
 "ok": [
 "address"
@@ -10889,7 +10811,7 @@
 },
 "url": {
 "source": "https://parkidmd.ru/contacts/",
-"value": "https://parkidmd.ru/"
+"value": "https://parkidmd.ru/about/elochki/"
 }
 }
 },
@@ -10927,11 +10849,11 @@
 "dosimi-novopeschanaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Надёжного подтверждения по первоисточнику не найдено; поля оставлены unknown.",
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
 "ok": [],
 "sources": [],
-"status": "not_found",
+"status": "works",
 "wrong": {}
 },
 "dostoevsky-house-moscow": {
@@ -11152,15 +11074,14 @@
 "durov": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "phone",
 "url"
 ],
 "sources": [
-"https://www.ugolokdurova.ru/",
 "https://www.ugolokdurova.ru/contacts/"
 ],
 "status": "works",
@@ -11174,8 +11095,8 @@
 "durova": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "phone",
@@ -11185,7 +11106,12 @@
 "https://www.teatrium.ru/entreprise/contacts/"
 ],
 "status": "works",
-"wrong": {}
+"wrong": {
+"how": {
+"source": "https://www.teatrium.ru/entreprise/contacts/",
+"value": "Парковка: городская муниципальная, зона № 3119, количество мест ограничено"
+}
+}
 },
 "dynamo-boxing-arena": {
 "by": "Codex",
@@ -11330,8 +11256,8 @@
 "ec-leader-izmaylovsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -11384,11 +11310,15 @@
 "edinstvo-gym-lyublinskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Надёжный первоисточник именно этого филиала в ходе проверки не найден.",
-"ok": [],
-"sources": [],
-"status": "not_found",
+"file": "20261113-1720-0.json",
+"note": "Официальный сайт подтверждает работу организации; сведения именно об этом филиале на доступной странице не подтверждены.",
+"ok": [
+"url"
+],
+"sources": [
+"https://rgymnastics.tilda.ws/"
+],
+"status": "works",
 "wrong": {}
 },
 "egc-mari-porechnaya": {
@@ -11626,19 +11556,18 @@
 "elektrostal-sovremennik": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
-"address",
-"phone"
+"address"
 ],
 "sources": [
-"https://kino-sovremennik.ru/"
+"https://www.culture.ru/institutes/59257/kinocentr-sovremennik"
 ],
 "status": "works",
 "wrong": {
 "url": {
-"source": "https://kino-sovremennik.ru/",
+"source": "https://www.culture.ru/institutes/59257/kinocentr-sovremennik",
 "value": "https://kino-sovremennik.ru/"
 }
 }
@@ -11918,13 +11847,14 @@
 "fc-zhulebino-privolnaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1630-0.json",
+"note": "Карточка подтверждена официальным сайтом.",
 "ok": [
-"address"
+"phone",
+"url"
 ],
 "sources": [
-"https://dufa-mos.ru/zhulebino/"
+"https://fczhulebino.ru/"
 ],
 "status": "works",
 "wrong": {}
@@ -12384,18 +12314,24 @@
 "fk-ledyanye-krylya-ostafyevskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
 "address",
-"url",
-"price"
+"url"
 ],
 "sources": [
 "https://icewings.ru/"
 ],
 "status": "works",
 "wrong": {
+"age": {
+"source": "https://icewings.ru/",
+"value": [
+3,
+17
+]
+},
 "phone": {
 "source": "https://icewings.ru/",
 "value": "+7 (995) 997-77-77"
@@ -12433,8 +12369,8 @@
 "fk-mozerteam-luzhniki": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -12476,48 +12412,42 @@
 "fk-volosozhar-sokolniki": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
+"file": "20261113-1647-0.json",
+"note": "Карточка подтверждена первоисточником.",
 "ok": [
-"address",
 "url"
 ],
 "sources": [
-"https://volosozhar.ru/zimnie-sbory"
+"https://volosozhar.ru/figurnoe-katanie-i-tancy-na-ldu-obuchenie-dlya-detej"
 ],
 "status": "works",
-"wrong": {}
+"wrong": {
+"address": {
+"source": "https://volosozhar.ru/figurnoe-katanie-i-tancy-na-ldu-obuchenie-dlya-detej",
+"value": "Москва, ул. Сокольнический Вал, 1Б, стр. 2, Ледовый дворец «Сокольники»"
+},
+"age": {
+"source": "https://volosozhar.ru/figurnoe-katanie-i-tancy-na-ldu-obuchenie-dlya-detej",
+"value": [
+3.5,
+17
+]
+}
+}
 },
 "flamingo-club-vavilova": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
-"address",
-"phone"
+"url"
 ],
 "sources": [
-"https://rgflamingo-club.ru/newcheremyshki"
+"https://rgflamingo-club.ru"
 ],
 "status": "works",
-"wrong": {
-"age": {
-"source": "https://rgflamingo-club.ru/newcheremyshki",
-"value": [
-3,
-12
-]
-},
-"how": {
-"source": "https://rgflamingo-club.ru/newcheremyshki",
-"value": "Парковка: бесплатная"
-},
-"url": {
-"source": "https://rgflamingo-club.ru/newcheremyshki",
-"value": "https://rgflamingo-club.ru/newcheremyshki"
-}
-}
+"wrong": {}
 },
 "flash-fencing-ramenskoe": {
 "by": "Codex",
@@ -12662,30 +12592,42 @@
 "footballmsk-novozavodskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1630-0.json",
+"note": "Карточка подтверждена официальным сайтом.",
+"ok": [
+"url"
+],
+"sources": [
+"https://footballmsk.ru/"
+],
 "status": "works",
 "wrong": {}
 },
 "footballmsk-peschanaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1630-0.json",
+"note": "Карточка подтверждена официальным сайтом.",
+"ok": [
+"url"
+],
+"sources": [
+"https://footballmsk.ru/"
+],
 "status": "works",
 "wrong": {}
 },
 "footballmsk-razumovskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1630-0.json",
+"note": "Карточка подтверждена официальным сайтом.",
+"ok": [
+"url"
+],
+"sources": [
+"https://footballmsk.ru/"
+],
 "status": "works",
 "wrong": {}
 },
@@ -12712,12 +12654,21 @@
 "fort-boyard-tushinskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Не удалось подтвердить именно эту точку по допустимому первоисточнику; все поля оставлены unknown.",
-"ok": [],
-"sources": [],
-"status": "not_found",
-"wrong": {}
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
+"ok": [
+"address"
+],
+"sources": [
+"https://fort-bojard-pochtovaja-ulitsa.clients.site/"
+],
+"status": "works",
+"wrong": {
+"phone": {
+"source": "https://fort-bojard-pochtovaja-ulitsa.clients.site/",
+"value": "+7 (499) 715-19-47"
+}
+}
 },
 "fort-boyard-varshavka": {
 "by": "Codex",
@@ -12889,11 +12840,11 @@
 "fun-banger-markos-mall": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1630-0.json",
+"note": "Надёжного первоисточника с данными именно этой точки найти не удалось.",
 "ok": [],
 "sources": [],
-"status": "works",
+"status": "not_found",
 "wrong": {}
 },
 "fun-ekocentr-krasnaya-sosna": {
@@ -12983,27 +12934,18 @@
 "fun-legrovaya-butovo-mall": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address"
-],
-"sources": [
-"https://legrovaya.ru/"
-],
-"status": "works",
-"wrong": {
-"url": {
-"source": "https://legrovaya.ru/",
-"value": "https://legrovaya.ru/"
-}
-}
+"file": "20261113-1720-0.json",
+"note": "Надёжный первоисточник именно этого филиала не найден; поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "fun-moresvinok-taganka": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -13034,7 +12976,7 @@
 "fun-muzey-dalekoy-galaktiki": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
+"file": "20261113-1706-4.json",
 "note": "Не удалось независимо подтвердить данные по доступным первоисточникам.",
 "ok": [],
 "sources": [],
@@ -13070,8 +13012,8 @@
 "fun-shkola-banya-leninsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -13118,21 +13060,25 @@
 "fun-traektoriya-vzleta-mai": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
+"file": "20261113-1647-0.json",
+"note": "Карточка подтверждена первоисточником.",
 "ok": [
 "address",
 "phone",
 "url"
 ],
 "sources": [
-"https://traektoria.education/contact-us/"
+"https://traektoria.education/birthday/",
+"https://traektoria.education/courses/lego-prostye-mekhanizmy/"
 ],
 "status": "works",
 "wrong": {
-"hours": {
-"source": "https://traektoria.education/contact-us/",
-"value": "пн-сб 09:00-19:00; вс 10:00-18:00"
+"age": {
+"source": "https://traektoria.education/courses/lego-prostye-mekhanizmy/",
+"value": [
+4,
+17
+]
 }
 }
 },
@@ -13422,8 +13368,8 @@
 "glukhovsky-park-noginsk": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
 "hours",
 "phone"
@@ -13485,12 +13431,23 @@
 "go-drums-syromyatnichesky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1630-0.json",
+"note": "Карточка подтверждена официальным сайтом.",
+"ok": [
+"address",
+"url",
+"age"
+],
+"sources": [
+"https://www.godrums.ru/"
+],
 "status": "works",
-"wrong": {}
+"wrong": {
+"hours": {
+"source": "https://www.godrums.ru/",
+"value": "ежедневно 10:00-22:00"
+}
+}
 },
 "gogol-house": {
 "by": "Codex",
@@ -13919,11 +13876,20 @@
 "gzhel-ballet-studio-mitino": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Надёжного актуального первоисточника с данными именно этого филиала не найдено.",
-"ok": [],
-"sources": [],
-"status": "not_found",
+"file": "20261113-1653-3.json",
+"note": "Карточка подтверждена официальным источником.",
+"ok": [
+"address",
+"hours",
+"phone",
+"url",
+"how"
+],
+"sources": [
+"https://mosballet.ru/contacts",
+"https://mosballet.ru/news/1869-den-otkrytykh-dverej-shkola-tantsev"
+],
+"status": "works",
 "wrong": {}
 },
 "gzhel-dance-theatre": {
@@ -13944,8 +13910,8 @@
 "hackerson-garibaldi": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -14248,22 +14214,30 @@
 "hockey-montreal-butovo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
 "address",
 "url",
 "age"
 ],
 "sources": [
-"https://montrealbutovo.ru/contacts",
-"https://montrealbutovo.ru/hockeyclub"
+"https://montrealbutovo.ru/hockeyclub",
+"https://montrealbutovo.ru/kontakty"
 ],
 "status": "works",
 "wrong": {
 "hours": {
-"source": "https://montrealbutovo.ru/contacts",
+"source": "https://montrealbutovo.ru/kontakty",
 "value": "ежедневно 06:00-00:00"
+},
+"phone": {
+"source": "https://montrealbutovo.ru/kontakty",
+"value": "+7 (495) 796-46-08"
+},
+"price": {
+"source": "https://montrealbutovo.ru/hockeyclub",
+"value": 12000
 }
 }
 },
@@ -14297,8 +14271,8 @@
 "hockey-rus-mha-zyablikovo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -14398,8 +14372,8 @@
 "hockey-star-golubinskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -14462,11 +14436,15 @@
 "hockey-star-novoyasenevsky26": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Не удалось подтвердить именно эту точку по допустимому первоисточнику; все поля оставлены unknown.",
-"ok": [],
-"sources": [],
-"status": "not_found",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
+"ok": [
+"url"
+],
+"sources": [
+"https://www.hockey-star.ru/"
+],
+"status": "works",
 "wrong": {}
 },
 "hockey-star-ostafyevskaya": {
@@ -14518,11 +14496,15 @@
 "hockey-star-starostina": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Не удалось подтвердить именно эту точку по допустимому первоисточнику; все поля оставлены unknown.",
-"ok": [],
-"sources": [],
-"status": "not_found",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
+"ok": [
+"url"
+],
+"sources": [
+"https://www.hockey-star.ru/"
+],
+"status": "works",
 "wrong": {}
 },
 "hockey-star-talalikhina": {
@@ -14566,31 +14548,12 @@
 "hockey-verkhovod-solntsevo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address",
-"phone",
-"age"
-],
-"sources": [
-"https://sp-hockey.ru/"
-],
-"status": "works",
-"wrong": {
-"hours": {
-"source": "https://sp-hockey.ru/",
-"value": "пн-пт 10:00-22:00"
-},
-"price": {
-"source": "https://sp-hockey.ru/",
-"value": 20000
-},
-"url": {
-"source": "https://sp-hockey.ru/",
-"value": "https://sp-hockey.ru/"
-}
-}
+"file": "20261113-1653-2.json",
+"note": "Надёжного актуального первоисточника с данными именно этой точки найти не удалось.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "hockeychance-magistralnaya": {
 "by": "Codex",
@@ -14715,9 +14678,10 @@
 "horse-sozidatel": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
 "ok": [
+"address",
 "phone",
 "url"
 ],
@@ -14725,12 +14689,7 @@
 "https://ksk-sozidatel.ru/"
 ],
 "status": "works",
-"wrong": {
-"address": {
-"source": "https://ksk-sozidatel.ru/",
-"value": "Лыткарино, 6-й мкр., стр. 27"
-}
-}
+"wrong": {}
 },
 "horse-volshebny-les": {
 "by": "Codex",
@@ -14764,11 +14723,15 @@
 "husky-basket-novodmitrovskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Не удалось подтвердить именно эту точку по допустимому первоисточнику; все поля оставлены unknown.",
-"ok": [],
-"sources": [],
-"status": "not_found",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
+"ok": [
+"url"
+],
+"sources": [
+"https://husbasket.ru/filialy/"
+],
+"status": "works",
 "wrong": {}
 },
 "husky-basket-novogireevo": {
@@ -15045,8 +15008,8 @@
 "igrovoy-ugolok-medikov": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Надёжного актуального первоисточника с данными именно этого филиала не найдено.",
+"file": "20261113-1653-3.json",
+"note": "Надёжного подтверждения по доступным первоисточникам не найдено.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -15253,71 +15216,50 @@
 "ils-odintsovo-nedelina": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "phone",
-"url",
-"age"
+"url"
 ],
 "sources": [
-"https://ils-school.com/",
-"https://ils-school.com/anglijskij-jazyk/odintsovo"
+"https://ils-school.com/anglijskij-jazyk"
 ],
 "status": "works",
-"wrong": {
-"how": {
-"source": "https://ils-school.com/anglijskij-jazyk/odintsovo",
-"value": "Ориентир: БЦ WEST-EAST"
-}
-}
+"wrong": {}
 },
 "ils-odintsovo-novosportivnaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "phone",
-"url",
-"age"
+"url"
 ],
 "sources": [
-"https://ils-school.com/",
-"https://ils-school.com/anglijskij-jazyk/odintsovo"
+"https://ils-school.com/anglijskij-jazyk"
 ],
 "status": "works",
-"wrong": {
-"how": {
-"source": "https://ils-school.com/anglijskij-jazyk/odintsovo",
-"value": "Вход: отдельный вход в СОШ № 6"
-}
-}
+"wrong": {}
 },
 "ils-odintsovo-severnaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "phone",
-"url",
-"age"
+"url"
 ],
 "sources": [
-"https://ils-school.com/",
-"https://ils-school.com/anglijskij-jazyk/odintsovo"
+"https://ils-school.com/anglijskij-jazyk"
 ],
 "status": "works",
-"wrong": {
-"how": {
-"source": "https://ils-school.com/anglijskij-jazyk/odintsovo",
-"value": "Ориентир: ЖК «Одинбург»"
-}
-}
+"wrong": {}
 },
 "ilyinskoe-village-museum": {
 "by": "Codex",
@@ -15463,8 +15405,8 @@
 "intellect-center-rimskogo-korsakova": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "url"
@@ -15557,19 +15499,11 @@
 "iq-kids-dmitrovskoe-74": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
-"ok": [
-"address",
-"phone",
-"url",
-"age"
-],
-"sources": [
-"https://academyiqkids.ru/",
-"https://academyiqkids.ru/zanyatiya/mentalnaya-arifmetika-ucmas-v-moskve/"
-],
-"status": "works",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "iq007-grizodubovoy": {
@@ -15686,21 +15620,20 @@
 "irbis-myakinino": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
 "address",
-"phone",
 "url"
 ],
 "sources": [
-"https://irbis-studio.ru/contacts/"
+"https://irbis-studio.ru/9-12-let/"
 ],
 "status": "works",
 "wrong": {
 "how": {
-"source": "https://irbis-studio.ru/contacts/",
-"value": "Ориентир: м. «Мякинино», ТЦ Vegas City Hall"
+"source": "https://irbis-studio.ru/9-12-let/",
+"value": "Ориентир: м. «Мякинино», ТЦ Vegas City Hall\nВход: на крыльце, в танцевальной студии X-Temp"
 }
 }
 },
@@ -15838,8 +15771,8 @@
 "istok-art-lukinskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -15935,8 +15868,8 @@
 "ivanteevka-museum": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -16590,7 +16523,7 @@
 "juniorcode-voskresensk": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
+"file": "20261113-1706-4.json",
 "note": "Не удалось независимо подтвердить данные по доступным первоисточникам.",
 "ok": [],
 "sources": [],
@@ -16747,8 +16680,8 @@
 "kamburova-theatre": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -16785,12 +16718,28 @@
 "kanatka": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Официальная страница не появилась в доступных результатах; текущие часы и тарифы не подтверждены.",
-"ok": [],
-"sources": [],
-"status": "not_found",
-"wrong": {}
+"file": "20261113-1647-0.json",
+"note": "Официальный тариф: детский билет 7–13 лет — 700 ₽ туда-обратно; взрослый 14+ — 1000 ₽.",
+"ok": [
+"url"
+],
+"sources": [
+"https://srkvg.ru/kanatnaya-doroga/tarify/"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://srkvg.ru/kanatnaya-doroga/tarify/",
+"value": [
+7,
+17
+]
+},
+"price": {
+"source": "https://srkvg.ru/kanatnaya-doroga/tarify/",
+"value": 700
+}
+}
 },
 "karate-1-medikov": {
 "by": "Codex",
@@ -16839,33 +16788,23 @@
 "karate-nikolaeva-marksistskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [
-"url"
-],
-"sources": [
-"https://karate-nikolaeva.ru/"
-],
-"status": "works",
-"wrong": {
-"address": {
-"source": "https://karate-nikolaeva.ru/",
-"value": "Москва, Марксистская ул., 9, стр. 1"
-}
-}
+"file": "20261113-1720-0.json",
+"note": "Надёжный первоисточник именно этого филиала не найден; поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "karate-yasenevo-yasnogorskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1720-0.json",
+"note": "Официальный сайт подтверждает работу организации; сведения именно об этом филиале на доступной странице не подтверждены.",
 "ok": [
-"address",
 "url"
 ],
 "sources": [
-"https://nskf-moscow.ru/"
+"https://www.nskf-moscow.ru/"
 ],
 "status": "works",
 "wrong": {}
@@ -17015,7 +16954,7 @@
 "karting-e-go": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
+"file": "20261113-1706-4.json",
 "note": "Не удалось независимо подтвердить данные по доступным первоисточникам.",
 "ok": [],
 "sources": [],
@@ -17097,28 +17036,29 @@
 "karting-shikana-ostrov": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Официальная страница подтверждает детский карт от 1700 ₽, но опубликованное возрастное правило найдено только для взрослого карта (14+).",
+"file": "20261113-1647-0.json",
+"note": "Карточка подтверждена первоисточником.",
 "ok": [
 "address",
 "hours"
 ],
 "sources": [
-"https://dreamisland.ru/attractions/vzroslyy-kart",
-"https://dreamisland.ru/objects/karting"
+"https://dreamisland.ru/news/v-ostrove-mechty-otkrylsya-pervyy-v-rossii-tematicheskiy-karting-shikana",
+"https://dreamisland.ru/objects/karting",
+"https://dreamisland.ru/rules/karting_attractions/karts"
 ],
 "status": "works",
 "wrong": {
 "age": {
-"source": "https://dreamisland.ru/attractions/vzroslyy-kart",
+"source": "https://dreamisland.ru/rules/karting_attractions/karts",
 "value": [
-14,
+6,
 17
 ]
 },
 "phone": {
 "source": "https://dreamisland.ru/objects/karting",
-"value": "+7 (495) 221-00-00"
+"value": "+7 (495) 221-11-12"
 },
 "price": {
 "source": "https://dreamisland.ru/objects/karting",
@@ -17261,8 +17201,8 @@
 "kashira-museum": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
-"note": "Источник также указывает льготный билет 80 ₽ и детский мастер-класс 200 ₽.",
+"file": "20261113-1634-0.json",
+"note": "",
 "ok": [
 "address",
 "hours"
@@ -17285,11 +17225,11 @@
 "kateda-shabolovka": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1720-0.json",
+"note": "Надёжный первоисточник именно этого филиала не найден; поля оставлены unknown.",
 "ok": [],
 "sources": [],
-"status": "works",
+"status": "not_found",
 "wrong": {}
 },
 "kc-zelenograd": {
@@ -17394,15 +17334,15 @@
 "khimki-podrezkovo-park": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
 "address",
-"phone",
-"url"
+"hours",
+"url",
+"price"
 ],
 "sources": [
-"https://www.parkihimki.ru/",
 "https://www.parkihimki.ru/park_podrezkovo"
 ],
 "status": "works",
@@ -17639,8 +17579,8 @@
 "kids-town-volokolamskoe": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Надёжного актуального первоисточника с данными именно этого филиала не найдено.",
+"file": "20261113-1653-3.json",
+"note": "Надёжного подтверждения по доступным первоисточникам не найдено.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -17730,12 +17670,29 @@
 "kinorebenok-khodynsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1630-0.json",
+"note": "Карточка подтверждена официальным сайтом.",
+"ok": [
+"address",
+"phone",
+"url",
+"age"
+],
+"sources": [
+"https://kinorebenok.ru/",
+"https://kinorebenok.ru/o-kompanii"
+],
 "status": "works",
-"wrong": {}
+"wrong": {
+"hours": {
+"source": "https://kinorebenok.ru/o-kompanii",
+"value": "ежедневно 10:00-21:00"
+},
+"price": {
+"source": "https://kinorebenok.ru/",
+"value": 14000
+}
+}
 },
 "kitenok-krasnogorsk-ilyinskoe": {
 "by": "Codex",
@@ -18427,15 +18384,11 @@
 "kolomna-shvedov": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
-"ok": [
-"url"
-],
-"sources": [
-"https://kolomna-sweetshop.ru"
-],
-"status": "works",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "kolomna-toy-museum": {
@@ -18586,8 +18539,8 @@
 "korolev-tsvetaeva": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -18836,8 +18789,8 @@
 "krasovskaya-ballet-suvorovskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -19151,16 +19104,11 @@
 "kumite-dojo-krasnogorsk": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address",
-"how"
-],
-"sources": [
-"https://yandex.com/maps/org/kumite_dojo/230238262065/"
-],
-"status": "works",
+"file": "20261113-1720-0.json",
+"note": "Надёжный первоисточник именно этого филиала не найден; поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "kung-fukids-taganskaya": {
@@ -19249,33 +19197,12 @@
 "kva-kva-puziki-pushkino": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address"
-],
-"sources": [
-"https://qva-qva-puziki.1c-umi.ru/contacts/",
-"https://qva-qva-puziki.1c-umi.ru/uslugi/kva/"
-],
-"status": "works",
-"wrong": {
-"age": {
-"source": "https://qva-qva-puziki.1c-umi.ru/uslugi/kva/",
-"value": [
-0,
-3
-]
-},
-"phone": {
-"source": "https://qva-qva-puziki.1c-umi.ru/contacts/",
-"value": "+7 (925) 907-48-08"
-},
-"url": {
-"source": "https://qva-qva-puziki.1c-umi.ru/contacts/",
-"value": "https://qva-qva-puziki.1c-umi.ru/"
-}
-}
+"file": "20261113-1720-0.json",
+"note": "Надёжный первоисточник именно этого филиала не найден; поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "kvantum-panferova": {
 "by": "Codex",
@@ -19325,12 +19252,25 @@
 "ladushki-biryulevskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
-"ok": [],
-"sources": [],
-"status": "not_found",
-"wrong": {}
+"file": "20261113-1647-0.json",
+"note": "Карточка подтверждена первоисточником.",
+"ok": [
+"address",
+"phone",
+"url",
+"age"
+],
+"sources": [
+"https://ladushky.com/",
+"https://ladushky.com/offis/kontakty/"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://ladushky.com/offis/kontakty/",
+"value": "Вход: главный вход в здание\nЭтаж: 4, подняться на лифте"
+}
+}
 },
 "ladushki-kuchino": {
 "by": "Codex",
@@ -19569,18 +19509,27 @@
 "lemans-karting": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
-"note": "Официальная страница подтверждает филиал и детские заезды, но актуальные часы и цены на странице не видны.",
+"file": "20261113-1634-0.json",
+"note": "",
 "ok": [
 "address",
 "phone",
 "url"
 ],
 "sources": [
-"https://lemanskarting.ru/na-2-oy-magistralnoy/"
+"https://lemanskarting.ru/na-2-oy-magistralnoy/contacts/"
 ],
 "status": "works",
-"wrong": {}
+"wrong": {
+"hours": {
+"source": "https://lemanskarting.ru/na-2-oy-magistralnoy/contacts/",
+"value": "пн-пт 14:00-24:00; сб-вс 12:00-24:00"
+},
+"how": {
+"source": "https://lemanskarting.ru/na-2-oy-magistralnoy/contacts/",
+"value": "Ориентир: двухэтажное стеклянное здание с вывеской «ЛЕМАН»"
+}
+}
 },
 "lenino-snegiri-museum": {
 "by": "Codex",
@@ -19669,8 +19618,8 @@
 "letal-i-shagal": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "phone",
@@ -19679,7 +19628,6 @@
 "age"
 ],
 "sources": [
-"https://letalishagal.ru/",
 "https://letalishagal.ru/schedule.html"
 ],
 "status": "works",
@@ -20526,8 +20474,8 @@
 "lingoschool-ramenskoe": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -20582,13 +20530,12 @@
 "lis-club-skobelevskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "phone",
-"url",
-"age"
+"url"
 ],
 "sources": [
 "https://lis-club.ru/"
@@ -20620,29 +20567,12 @@
 "lisse-arbat": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
-"ok": [
-"phone",
-"url",
-"age"
-],
-"sources": [
-"https://lisse-art.ru/",
-"https://lisse-art.ru/gruppy/aktyorskie-kursy-dlya-detey-i-podrostkov",
-"https://lisse-art.ru/kontakty"
-],
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
 "status": "works",
-"wrong": {
-"address": {
-"source": "https://lisse-art.ru/kontakty",
-"value": "ул. Арбат, 35, Центральный Дом актёра им. Яблочкиной"
-},
-"how": {
-"source": "https://lisse-art.ru/kontakty",
-"value": "Вход: с пер. Калошин; предварительная запись нужна для пропуска\nЭтаж: 3, аудитория 346, дальний лифт"
-}
-}
+"wrong": {}
 },
 "lobnya-museum": {
 "by": "Codex",
@@ -20688,12 +20618,33 @@
 "logocentr-umnitsa-izmaylovo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1630-0.json",
+"note": "Карточка подтверждена официальным сайтом.",
+"ok": [
+"address",
+"url"
+],
+"sources": [
+"https://logo-umnitsa.ru/"
+],
 "status": "works",
-"wrong": {}
+"wrong": {
+"age": {
+"source": "https://logo-umnitsa.ru/",
+"value": [
+0.58,
+12
+]
+},
+"hours": {
+"source": "https://logo-umnitsa.ru/",
+"value": "пн-пт 09:00-21:00; сб-вс 09:00-18:00"
+},
+"phone": {
+"source": "https://logo-umnitsa.ru/",
+"value": "+7 (964) 779-97-44"
+}
+}
 },
 "logoped-trofimova-vyemki": {
 "by": "Codex",
@@ -20737,22 +20688,30 @@
 "love-dance-rudneva": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
+"file": "20261113-1647-0.json",
+"note": "Карточка подтверждена первоисточником.",
 "ok": [
 "address",
 "hours",
-"phone",
-"url",
-"how",
-"age"
+"url"
 ],
 "sources": [
-"https://lovedancestudio.ru/",
-"https://lovedancestudio.ru/butovo"
+"https://lovedancestudio.ru/"
 ],
 "status": "works",
-"wrong": {}
+"wrong": {
+"age": {
+"source": "https://lovedancestudio.ru/",
+"value": [
+3,
+17
+]
+},
+"how": {
+"source": "https://lovedancestudio.ru/",
+"value": "Этаж: 5"
+}
+}
 },
 "lt-anklav": {
 "by": "Codex",
@@ -21188,8 +21147,8 @@
 "magic-step-otkrytoe": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Надёжного актуального первоисточника с данными именно этого филиала не найдено.",
+"file": "20261113-1653-3.json",
+"note": "Надёжного подтверждения по доступным первоисточникам не найдено.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -21198,8 +21157,8 @@
 "makarov-team-odintsovo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Надёжного актуального первоисточника с данными именно этого филиала не найдено.",
+"file": "20261113-1653-3.json",
+"note": "Надёжного подтверждения по доступным первоисточникам не найдено.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -21301,16 +21260,25 @@
 "maly-theatre": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальные правила указывают ежедневную работу кассы 10:00–20:00.",
 "ok": [
+"address",
+"phone",
 "url"
 ],
 "sources": [
-"https://www.maly.ru/"
+"https://www.maly.ru/",
+"https://www.maly.ru/address",
+"https://www.maly.ru/tickets/rules"
 ],
 "status": "works",
-"wrong": {}
+"wrong": {
+"hours": {
+"source": "https://www.maly.ru/tickets/rules",
+"value": "ежедневно 10:00-20:00"
+}
+}
 },
 "malysh-house": {
 "by": "Codex",
@@ -21506,15 +21474,11 @@
 "masterskaya-talantov-marksistskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
-"ok": [
-"address"
-],
-"sources": [
-"https://mo-taganka.ru/files/taganka/otheti/2021/1_gbu_centr_zaslushivanie_rukovoditelya.pdf"
-],
-"status": "works",
+"file": "20261113-1647-0.json",
+"note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "matita-tsvetnoy": {
@@ -21729,20 +21693,26 @@
 "mba-trinta": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
 "address",
-"phone"
+"hours",
+"phone",
+"url"
 ],
 "sources": [
-"https://mba.mossport.ru/kp/"
+"https://mba.mossport.ru/sport-center/trinta",
+"https://mba.mossport.ru/trinta/"
 ],
 "status": "works",
 "wrong": {
-"url": {
-"source": "https://mba.mossport.ru/kp/",
-"value": "https://mba.mossport.ru/kp/"
+"age": {
+"source": "https://mba.mossport.ru/trinta/",
+"value": [
+4,
+17
+]
 }
 }
 },
@@ -21905,11 +21875,11 @@
 "mental-arifmetika-lyubertsy": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1630-0.json",
+"note": "Надёжного первоисточника с данными именно этой точки найти не удалось.",
 "ok": [],
 "sources": [],
-"status": "works",
+"status": "not_found",
 "wrong": {}
 },
 "meshchersky": {
@@ -22384,11 +22354,9 @@
 "molodaya-gvardiya-lobnya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1720-0.json",
+"note": "Официальный сайт подтверждает работу организации; сведения именно об этом филиале на доступной странице не подтверждены.",
 "ok": [
-"address",
-"phone",
 "url"
 ],
 "sources": [
@@ -22420,8 +22388,8 @@
 "montessori-grata-pavlova": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -22450,8 +22418,8 @@
 "moreon": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "phone",
@@ -22990,16 +22958,33 @@
 "moya-vselennaya-korolev": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
 "sources": [
-"https://korolev-montessori.ru"
+"https://www.korolev-montessori.ru/",
+"https://www.korolev-montessori.ru/royalpines"
 ],
 "status": "works",
-"wrong": {}
+"wrong": {
+"address": {
+"source": "https://www.korolev-montessori.ru/royalpines",
+"value": "Королёв, ул. Пролетарская, 15/2, стр. 1"
+},
+"age": {
+"source": "https://www.korolev-montessori.ru/",
+"value": [
+0,
+18
+]
+},
+"hours": {
+"source": "https://www.korolev-montessori.ru/",
+"value": "пн-пт 08:30-17:00"
+}
+}
 },
 "mozhaysk-gerasimov-house": {
 "by": "Codex",
@@ -23191,12 +23176,21 @@
 "ms-orienta-chess": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1720-0.json",
+"note": "Официальный источник подтверждает работу и указанные поля; остальные сведения не удалось независимо подтвердить.",
+"ok": [
+"url"
+],
+"sources": [
+"https://chess.mossport.ru/"
+],
 "status": "works",
-"wrong": {}
+"wrong": {
+"address": {
+"source": "https://chess.mossport.ru/",
+"value": "Москва, Федеративный пр-т, 37Б"
+}
+}
 },
 "ms-sambo70-champion": {
 "by": "Codex",
@@ -23358,42 +23352,22 @@
 "ms-yug-kantemirovsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address",
-"phone"
-],
-"sources": [
-"https://yug.mossport.ru/page/raspisanie-platnykh-sektsiy/"
-],
-"status": "works",
-"wrong": {
-"url": {
-"source": "https://yug.mossport.ru/page/raspisanie-platnykh-sektsiy/",
-"value": "https://yug.mossport.ru/"
-}
-}
+"file": "20261113-1630-0.json",
+"note": "Надёжного первоисточника с данными именно этой точки найти не удалось.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "ms-yug-orekhovo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address",
-"phone"
-],
-"sources": [
-"https://yug.mossport.ru/page/raspisanie-platnykh-sektsiy/"
-],
-"status": "works",
-"wrong": {
-"url": {
-"source": "https://yug.mossport.ru/page/raspisanie-platnykh-sektsiy/",
-"value": "https://yug.mossport.ru/"
-}
-}
+"file": "20261113-1630-0.json",
+"note": "Надёжного первоисточника с данными именно этой точки найти не удалось.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "mssuor3-tennis-tkatskaya": {
 "by": "Codex",
@@ -23789,8 +23763,8 @@
 "musicclasses-lipchanskogo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -23835,11 +23809,17 @@
 "myswimteam-polyany": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Надёжного актуального первоисточника с данными именно этого филиала не найдено.",
-"ok": [],
-"sources": [],
-"status": "not_found",
+"file": "20261113-1653-3.json",
+"note": "Карточка подтверждена официальным источником.",
+"ok": [
+"address",
+"url",
+"age"
+],
+"sources": [
+"https://myswimteam.ru/"
+],
+"status": "works",
 "wrong": {}
 },
 "mytishchi-history-museum": {
@@ -23896,29 +23876,21 @@
 "na-vadkovskom": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
-"ok": [
-"url"
-],
-"sources": [
-"https://navadkovscom.ru"
-],
-"status": "works",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "naive-museum-soyuzny": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
-"ok": [
-"url"
-],
-"sources": [
-"https://naive-museum.ru/"
-],
-"status": "works",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "naro-fominsk-kids-library": {
@@ -24108,8 +24080,8 @@
 "neokids-zhebrunova": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальная страница контактов подтверждает филиал, адрес и телефон логопеда.",
 "ok": [
 "address",
 "phone"
@@ -24172,10 +24144,9 @@
 "neotkrytye-ostrova": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
-"address",
 "url"
 ],
 "sources": [
@@ -24221,15 +24192,11 @@
 "neuro-logo-kuznetsova": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
-"ok": [
-"url"
-],
-"sources": [
-"https://neuro-logo.ru/"
-],
-"status": "works",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "nevsky-bears-altufyevo": {
@@ -24445,8 +24412,8 @@
 "neyroigrovaya-shchelkovsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Надёжного актуального первоисточника с данными именно этого филиала не найдено.",
+"file": "20261113-1653-3.json",
+"note": "Надёжного подтверждения по доступным первоисточникам не найдено.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -24753,11 +24720,11 @@
 "obraztsov": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Надёжного подтверждения по первоисточнику не найдено; поля оставлены unknown.",
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
 "ok": [],
 "sources": [],
-"status": "not_found",
+"status": "works",
 "wrong": {}
 },
 "oceanarium-rio": {
@@ -24780,34 +24747,23 @@
 "octoskills-anokhina": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "url"
 ],
 "sources": [
-"https://octoskills.ru/",
-"https://octoskills.ru/akvastudii/studiya-na-akademika-anohina-26/",
-"https://octoskills.ru/poleznye-materialy/trenery/"
+"https://octoskills.ru/akvastudii/studiya-na-akademika-anohina-26-copy/"
 ],
 "status": "works",
-"wrong": {
-"hours": {
-"source": "https://octoskills.ru/poleznye-materialy/trenery/",
-"value": "ежедневно 09:00-21:00"
-},
-"price": {
-"source": "https://octoskills.ru/akvastudii/studiya-na-akademika-anohina-26/",
-"value": 3350
-}
-}
+"wrong": {}
 },
 "odintsovo-bondareva-theatre": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -24820,34 +24776,12 @@
 "odintsovo-lazutina-park": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
+"file": "20261113-1634-0.json",
 "note": "",
 "ok": [],
-"sources": [
-"https://park-1.ru/contacts/"
-],
+"sources": [],
 "status": "works",
-"wrong": {
-"address": {
-"source": "https://park-1.ru/contacts/",
-"value": "Одинцово, 3-й км Красногорского шоссе"
-},
-"phone": {
-"source": "https://park-1.ru/contacts/",
-"value": "+7 (926) 341-20-82"
-},
-"point": {
-"source": "https://park-1.ru/contacts/",
-"value": [
-55.690655,
-37.250219
-]
-},
-"url": {
-"source": "https://park-1.ru/contacts/",
-"value": "https://park-1.ru/"
-}
-}
+"wrong": {}
 },
 "odintsovo-mechta-ksc": {
 "by": "Codex",
@@ -24871,8 +24805,8 @@
 "ogloblin-house-oz": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -24885,11 +24819,11 @@
 "ogni-moskvy": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Надёжного подтверждения по первоисточнику не найдено; поля оставлены unknown.",
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
 "ok": [],
 "sources": [],
-"status": "not_found",
+"status": "works",
 "wrong": {}
 },
 "ognivo": {
@@ -25711,16 +25645,10 @@
 "paint-school-vnukovo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address",
-"phone",
-"url"
-],
-"sources": [
-"https://paint-school.ru/"
-],
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
 "status": "works",
 "wrong": {}
 },
@@ -26029,14 +25957,13 @@
 "pbk-cska-shcherbinka": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
-"phone",
 "url"
 ],
 "sources": [
-"https://cskabasket.school/contacts.html"
+"https://cskabasket.school/addr/"
 ],
 "status": "works",
 "wrong": {}
@@ -26054,10 +25981,9 @@
 "pbk-cska-tekstilshchiki": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1720-0.json",
+"note": "Официальный источник подтверждает работу и указанные поля; остальные сведения не удалось независимо подтвердить.",
 "ok": [
-"address",
 "phone",
 "url",
 "age"
@@ -26066,20 +25992,25 @@
 "https://cskabasket.school/addr/"
 ],
 "status": "works",
-"wrong": {}
+"wrong": {
+"address": {
+"source": "https://cskabasket.school/addr/",
+"value": "Москва, Волжский б-р, 16, корп. 2"
+}
+}
 },
 "peppi-myachkovsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "phone",
 "url"
 ],
 "sources": [
-"https://links.pippienglish.ru/",
+"https://english4kids.pippienglish.ru/",
 "https://pippienglish.ru/"
 ],
 "status": "works",
@@ -26092,7 +26023,7 @@
 ]
 },
 "how": {
-"source": "https://links.pippienglish.ru/",
+"source": "https://english4kids.pippienglish.ru/",
 "value": "Вход: слева от подъезда № 3"
 }
 }
@@ -26134,19 +26065,12 @@
 "pervy-dialog-kommunarka": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Не удалось найти допустимый первоисточник для полной проверки.",
 "ok": [],
-"sources": [
-"https://first-dialog.ru/"
-],
-"status": "works",
-"wrong": {
-"url": {
-"source": "https://first-dialog.ru/",
-"value": "https://first-dialog.ru/"
-}
-}
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "peter-dutch-house": {
 "by": "Codex",
@@ -26218,8 +26142,8 @@
 "pik-zevsa-khimki-michurina": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Надёжного актуального первоисточника с данными именно этого филиала не найдено.",
+"file": "20261113-1653-3.json",
+"note": "Надёжного подтверждения по доступным первоисточникам не найдено.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -26228,13 +26152,10 @@
 "piksel-podolsk": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Карточка ведёт на страницу летнего лагеря, тогда как действующий филиал и проход подтверждены основным сайтом сети.",
-"ok": [
-"url"
-],
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"ok": [],
 "sources": [
-"https://citycamp.clubpixel.ru",
 "https://clubpixel.ru/podolsk1"
 ],
 "status": "works",
@@ -26252,7 +26173,11 @@
 },
 "how": {
 "source": "https://clubpixel.ru/podolsk1",
-"value": "Вход: через калитку, прямо и налево\nЭтаж: 3, офисы 31 и 32А\nОриентир: рядом с Подольским краеведческим музеем"
+"value": "Этаж: 3\nОриентир: офисы 31 и 32А"
+},
+"url": {
+"source": "https://clubpixel.ru/podolsk1",
+"value": "https://clubpixel.ru/podolsk1"
 }
 }
 },
@@ -26283,37 +26208,28 @@
 "pirouette-gym-khibinsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
-"phone"
+"url"
 ],
 "sources": [
-"https://piruet-msk.ru/khudozhestvennaya-gimnastika-metro-sviblovo"
+"https://piruet-msk.ru/"
 ],
 "status": "works",
-"wrong": {
-"address": {
-"source": "https://piruet-msk.ru/khudozhestvennaya-gimnastika-metro-sviblovo",
-"value": "Москва, Хибинский пр-д, 12"
-},
-"how": {
-"source": "https://piruet-msk.ru/khudozhestvennaya-gimnastika-metro-sviblovo",
-"value": "Вход: через серую калитку, затем 50 м до входа в колледж\nЭтаж: 1, зал справа от входа\nПарковка: бесплатная"
-},
-"url": {
-"source": "https://piruet-msk.ru/khudozhestvennaya-gimnastika-metro-sviblovo",
-"value": "https://piruet-msk.ru/khudozhestvennaya-gimnastika-metro-sviblovo"
-}
-}
+"wrong": {}
 },
 "pirouette-gym-napolny": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1720-0.json",
+"note": "Официальный сайт подтверждает работу организации; сведения именно об этом филиале на доступной странице не подтверждены.",
+"ok": [
+"url"
+],
+"sources": [
+"https://piruet-msk.ru/"
+],
 "status": "works",
 "wrong": {}
 },
@@ -26334,25 +26250,16 @@
 "pirouette-zarechye": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1720-0.json",
+"note": "Официальный сайт подтверждает работу организации; сведения именно об эт��м филиале на доступной странице не подтверждены.",
 "ok": [
-"address",
 "url"
 ],
 "sources": [
-"https://piruet-msk.ru/khudojestvennaya-gimnastika-skolkovo-zarechye"
+"https://piruet-msk.ru/"
 ],
 "status": "works",
-"wrong": {
-"age": {
-"source": "https://piruet-msk.ru/khudojestvennaya-gimnastika-skolkovo-zarechye",
-"value": [
-3,
-14
-]
-}
-}
+"wrong": {}
 },
 "pishi-igrai-mira-180": {
 "by": "Codex",
@@ -26515,20 +26422,25 @@
 "plyvi-s-alisoy-pochtovaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Действующая страница места подтверждает работу.",
+"file": "20261113-1653-3.json",
+"note": "Карточка подтверждена официальным источником.",
 "ok": [
 "address",
-"hours",
-"phone",
-"url",
-"age"
+"url"
 ],
 "sources": [
-"https://aliceandbimbie.ru/pochtovaya"
+"https://aliceandbimbie.ru/oferta3"
 ],
 "status": "works",
-"wrong": {}
+"wrong": {
+"age": {
+"source": "https://aliceandbimbie.ru/oferta3",
+"value": [
+0,
+7
+]
+}
+}
 },
 "po-susekam": {
 "by": "Codex",
@@ -26584,19 +26496,19 @@
 "podolsk-dk-oktyabr": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
 "address",
 "phone"
 ],
 "sources": [
-"http://dk-october.ru/"
+"https://www.culture.ru/institutes/33056/dvorec-kultury-oktyabr-g-podolska"
 ],
 "status": "works",
 "wrong": {
 "url": {
-"source": "http://dk-october.ru/",
+"source": "https://www.culture.ru/institutes/33056/dvorec-kultury-oktyabr-g-podolska",
 "value": "http://dk-october.ru/"
 }
 }
@@ -26696,8 +26608,8 @@
 "podsolnukh-balashikha": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -26739,12 +26651,13 @@
 "pogruzhenie-riviera": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальные контакты подтверждают филиал; оферта указыва��т 3-й этаж, а не 2-й. На странице филиала есть программы 6+, 8+, 10+, 12+ и 16+.",
+"file": "20261113-1706-4.json",
+"note": "Официальная оферта указывает 3-й этаж, а не 2-й; на площадке есть игры 6+.",
 "ok": [
 "address",
 "phone",
-"url"
+"url",
+"age"
 ],
 "sources": [
 "https://www.pogruzhenye.ru",
@@ -26754,13 +26667,6 @@
 ],
 "status": "works",
 "wrong": {
-"age": {
-"source": "https://www.pogruzhenye.ru/",
-"value": [
-6,
-16
-]
-},
 "how": {
 "source": "https://www.pogruzhenye.ru/upload/pdf/oferta.pdf",
 "value": "Вход: через ТРЦ «Ривьера»\nЭтаж: 3"
@@ -26909,15 +26815,13 @@
 "polyot-pulkovskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
-"address",
-"phone",
 "url"
 ],
 "sources": [
-"https://polyot.moscow/page71945947.html"
+"https://polyot.moscow/"
 ],
 "status": "works",
 "wrong": {}
@@ -26941,8 +26845,8 @@
 "pony-invakon": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "phone",
@@ -27008,8 +26912,8 @@
 "pool-chayka-ozery": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Надёжного актуального первоисточника с данными именно этого филиала не найдено.",
+"file": "20261113-1653-3.json",
+"note": "Надёжного подтверждения по доступным первоисточникам не найдено.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -27215,30 +27119,16 @@
 "prioksky-nature-museum": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
+"file": "20261113-1634-0.json",
 "note": "",
 "ok": [
-"phone",
 "url"
 ],
 "sources": [
-"https://pt-zapovednik.ru/kontakty/"
+"https://pt-zapovednik.ru/informatsionnye-materialy/"
 ],
 "status": "works",
-"wrong": {
-"address": {
-"source": "https://pt-zapovednik.ru/kontakty/",
-"value": "Московская область, г. о. Серпухов, м. Данки, тер. Заповедная, д. 1"
-},
-"hours": {
-"source": "https://pt-zapovednik.ru/kontakty/",
-"value": "ежедневно 08:30-19:00"
-},
-"how": {
-"source": "https://pt-zapovednik.ru/kontakty/",
-"value": "Ориентир: по Симферопольскому шоссе, поворот по указателю «Серпухов/Данки», далее до вывески «Заповедник/Экскурсионное бюро»"
-}
-}
+"wrong": {}
 },
 "prishvin-dunino": {
 "by": "Codex",
@@ -27579,10 +27469,14 @@
 "questkinder-among-us": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1630-0.json",
+"note": "Карточка подтверждена официальным сайтом.",
+"ok": [
+"url"
+],
+"sources": [
+"https://questkinder.events/"
+],
 "status": "works",
 "wrong": {}
 },
@@ -27643,8 +27537,8 @@
 "raduga-hor-reutov": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -27742,8 +27636,8 @@
 "rannee-plavanie-khimki-yunnatov": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Надёжного актуального первоисточника с данными именно этого филиала не найдено.",
+"file": "20261113-1653-3.json",
+"note": "Надёжного подтверждения по доступным первоисточникам не найдено.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -27752,30 +27646,16 @@
 "ratibor-radiatorskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
-"address",
-"phone",
 "url"
 ],
 "sources": [
 "https://ratiborgym.ru/"
 ],
 "status": "works",
-"wrong": {
-"age": {
-"source": "https://ratiborgym.ru/",
-"value": [
-6,
-16
-]
-},
-"price": {
-"source": "https://ratiborgym.ru/",
-"value": 5000
-}
-}
+"wrong": {}
 },
 "ratnaya-istoriya-museum": {
 "by": "Codex",
@@ -27840,18 +27720,24 @@
 "real-swim-odintsovo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Надёжного актуального первоисточника с данными именно этого филиала не найдено.",
-"ok": [],
-"sources": [],
-"status": "not_found",
+"file": "20261113-1653-3.json",
+"note": "Карточка подтверждена официальным источником.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://real-swim-ulitsa-makovskogo.clients.site/"
+],
+"status": "works",
 "wrong": {}
 },
 "realnoe-risovanie-azovskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -28023,8 +27909,8 @@
 "rg-school-litvina-sedogo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Действующая страница места подтверждает работу.",
+"file": "20261113-1653-3.json",
+"note": "Карточка подтве��ждена официальным источником.",
 "ok": [
 "address",
 "url"
@@ -28180,8 +28066,8 @@
 "rink-kasatonov-korolev": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
-"note": "Часы относятся к арене в целом; массовое катание проводится по отдельному расписанию. Тариф из результата относится к открытому катку центрального ядра, поэтому к этой арене не применён.",
+"file": "20261113-1634-0.json",
+"note": "",
 "ok": [
 "hours"
 ],
@@ -28501,51 +28387,22 @@
 "ritm-mosfilmovskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address",
-"phone",
-"url"
-],
-"sources": [
-"https://ritm-music.ru/"
-],
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
 "status": "works",
-"wrong": {
-"hours": {
-"source": "https://ritm-music.ru/",
-"value": "пн-пт 11:00-20:00; сб 10:00-19:00"
-},
-"how": {
-"source": "https://ritm-music.ru/",
-"value": "Вход: с улицы, со стороны первого подъезда"
-}
-}
+"wrong": {}
 },
 "rnbsh-maryinskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address",
-"url"
-],
-"sources": [
-"https://rnbsh.ru/contacts"
-],
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
 "status": "works",
-"wrong": {
-"hours": {
-"source": "https://rnbsh.ru/contacts",
-"value": "пн-пт 09:00-21:00; сб-вс 10:00-16:00"
-},
-"phone": {
-"source": "https://rnbsh.ru/contacts",
-"value": "+7 (495) 204-22-77, доб. 3"
-}
-}
+"wrong": {}
 },
 "robbo-energeticheskaya": {
 "by": "Codex",
@@ -28620,26 +28477,12 @@
 "rodnik-yasenevaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
+"file": "20261113-1634-0.json",
 "note": "",
-"ok": [
-"address"
-],
-"sources": [
-"https://storage.yandexcloud.net/rodnikart/doc/2025/doop/doop_edo_1_10-12.pdf",
-"https://www.culture.ru/institutes/37338/detskaya-shkola-iskusstv-rodnik-yasenevaya-ul"
-],
+"ok": [],
+"sources": [],
 "status": "works",
-"wrong": {
-"phone": {
-"source": "https://www.culture.ru/institutes/37338/detskaya-shkola-iskusstv-rodnik-yasenevaya-ul",
-"value": "+7 (495) 398-04-55"
-},
-"url": {
-"source": "https://www.culture.ru/institutes/37338/detskaya-shkola-iskusstv-rodnik-yasenevaya-ul",
-"value": "https://rodnikart.ru/"
-}
-}
+"wrong": {}
 },
 "rogym-chertanovskaya": {
 "by": "Codex",
@@ -28943,17 +28786,10 @@
 "russkaya-rech-vlasova": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address",
-"phone",
-"url",
-"age"
-],
-"sources": [
-"https://rusrech.ru/"
-],
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
 "status": "works",
 "wrong": {}
 },
@@ -29594,18 +29430,11 @@
 "schoolball-novokosino": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
-"ok": [
-"address",
-"hours",
-"phone",
-"url"
-],
-"sources": [
-"https://schoolball.ru/contacts"
-],
-"status": "works",
+"file": "20261113-1647-0.json",
+"note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "schoolball-okskaya": {
@@ -29630,44 +29459,34 @@
 "schoolball-planernaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
 "address",
 "hours",
+"url",
 "price"
 ],
 "sources": [
 "https://schoolball.ru/club_zhemchuzhina",
-"https://schoolball.ru/clubs"
+"https://schoolball.ru/contacts"
 ],
 "status": "works",
 "wrong": {
 "phone": {
-"source": "https://schoolball.ru/clubs",
+"source": "https://schoolball.ru/contacts",
 "value": "+7 (495) 120-60-06"
-},
-"url": {
-"source": "https://schoolball.ru/club_zhemchuzhina",
-"value": "https://schoolball.ru/club_zhemchuzhina"
 }
 }
 },
 "schoolball-pyatnitskoe": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
-"ok": [
-"address",
-"hours",
-"phone",
-"url"
-],
-"sources": [
-"https://schoolball.ru/contacts"
-],
-"status": "works",
+"file": "20261113-1647-0.json",
+"note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "schoolball-rimskaya": {
@@ -29719,33 +29538,33 @@
 "schoolball-ukhtomskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
-"ok": [
-"address",
-"hours",
-"phone",
-"url"
-],
-"sources": [
-"https://schoolball.ru/contacts"
-],
-"status": "works",
+"file": "20261113-1647-0.json",
+"note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "schoolford-ratnaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [
+"address",
+"phone",
 "url"
 ],
 "sources": [
-"https://schoolford.ru/"
+"https://schoolford.ru/contacts/moskva-ratnaya-10"
 ],
 "status": "works",
-"wrong": {}
+"wrong": {
+"hours": {
+"source": "https://schoolford.ru/contacts/moskva-ratnaya-10",
+"value": "пн-пт 10:00-20:00; сб 10:00-17:00; вс 12:00-17:00"
+}
+}
 },
 "schooltv-voronezhskaya": {
 "by": "Codex",
@@ -30157,14 +29976,13 @@
 "sharobot-reutov": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "url"
 ],
 "sources": [
-"https://sharobot.ru/",
 "https://sharobot.ru/reutov"
 ],
 "status": "works",
@@ -30218,10 +30036,9 @@
 "shatura-museum": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
-"address",
 "phone"
 ],
 "sources": [
@@ -30229,13 +30046,17 @@
 ],
 "status": "works",
 "wrong": {
+"address": {
+"source": "https://shatura.ru/about/attractions",
+"value": "Шатура, Черноозерский пр-д, 2"
+},
 "hours": {
 "source": "https://shatura.ru/about/attractions",
 "value": "вт-пт 09:00-18:00; сб 09:00-15:00"
 },
 "url": {
 "source": "https://shatura.ru/about/attractions",
-"value": "https://shaturamuseum.ru/"
+"value": "https://shaturamuseum.ru"
 }
 }
 },
@@ -30326,8 +30147,8 @@
 "sheinin-tennis-plyushchikha": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Доступного первоисточника с данными площадки не найдено.",
+"file": "20261113-1647-0.json",
+"note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -30336,20 +30157,25 @@
 "shkola-myacha-mikhailova": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1630-0.json",
+"note": "Карточка подтверждена официальным сайтом.",
 "ok": [
 "address",
-"phone"
+"phone",
+"url"
 ],
 "sources": [
-"https://schoolball.ru/contacts"
+"https://schoolball.ru/club_raketa"
 ],
 "status": "works",
 "wrong": {
 "hours": {
-"source": "https://schoolball.ru/contacts",
-"value": "ежедневно 10:00-20:00"
+"source": "https://schoolball.ru/club_raketa",
+"value": "вт, чт 18:00-20:00"
+},
+"price": {
+"source": "https://schoolball.ru/club_raketa",
+"value": 6000
 }
 }
 },
@@ -30366,11 +30192,11 @@
 "shtorm-guu": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Надёжного подтверждения по первоисточнику не найдено; поля оставлены unknown.",
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
 "ok": [],
 "sources": [],
-"status": "not_found",
+"status": "works",
 "wrong": {}
 },
 "shtorm-luzhniki": {
@@ -30501,33 +30327,22 @@
 "sinergiya-music-balashikha": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
-"url",
-"how"
+"url"
 ],
 "sources": [
-"https://synergymusicschool.ru",
-"https://synergymusicschool.ru/balashikha"
+"https://synergymusicschool.ru"
 ],
 "status": "works",
-"wrong": {
-"address": {
-"source": "https://synergymusicschool.ru/balashikha",
-"value": "Балашиха, ш. Энтузиастов, 54А, ТЦ «Галион», 3 этаж"
-},
-"phone": {
-"source": "https://synergymusicschool.ru/balashikha",
-"value": "+7 (915) 217-19-29"
-}
-}
+"wrong": {}
 },
 "sinkot-kirovogradsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -30577,8 +30392,8 @@
 "skate-dvij-ramenskoe": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
+"file": "20261113-1647-0.json",
+"note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -30669,8 +30484,8 @@
 "ski-rodina-skhodnya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -30876,8 +30691,8 @@
 "smolsky-swim-novoorlovskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
+"file": "20261113-1647-0.json",
+"note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -30938,11 +30753,16 @@
 "sofia-sport-kronshtadtsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Надёжный первоисточник именно этого филиала в ходе проверки не найден.",
-"ok": [],
-"sources": [],
-"status": "not_found",
+"file": "20261113-1720-0.json",
+"note": "Официальный источник подтверждает работу и указанные поля; остальные сведения не удалось независимо подтвердить.",
+"ok": [
+"url",
+"age"
+],
+"sources": [
+"https://scsofia.ru/"
+],
+"status": "works",
 "wrong": {}
 },
 "solnce-moskvy": {
@@ -31010,8 +30830,8 @@
 "sovenok-yaroslavskaya-8k6": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -31190,47 +31010,28 @@
 "sp-zhili-byli": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
-"note": "Ассоциация частных музеев указывает детский билет 100 ₽.",
-"ok": [
-"address",
-"phone"
-],
-"sources": [
-"https://www.xn--80akahgvf5ajn1b2c.xn--p1ai/o-proekte/geografiya/moskovskaya-oblast/muzej-krestyanskogo-byta-zhili-byli/"
-],
+"file": "20261113-1634-0.json",
+"note": "",
+"ok": [],
+"sources": [],
 "status": "works",
-"wrong": {
-"hours": {
-"source": "https://www.xn--80akahgvf5ajn1b2c.xn--p1ai/o-proekte/geografiya/moskovskaya-oblast/muzej-krestyanskogo-byta-zhili-byli/",
-"value": "ежедневно 11:00-19:00"
-},
-"price": {
-"source": "https://www.xn--80akahgvf5ajn1b2c.xn--p1ai/o-proekte/geografiya/moskovskaya-oblast/muzej-krestyanskogo-byta-zhili-byli/",
-"value": 200
-}
-}
+"wrong": {}
 },
 "spartak-cityfootball-rublevo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
+"file": "20261113-1647-0.json",
+"note": "Карточка подтверждена первоисточником.",
 "ok": [
 "address",
+"phone",
 "url"
 ],
 "sources": [
-"https://spartak.cityfootball.ru/infrastructure",
-"https://store.spartak.cityfootball.ru/page/contacts"
+"https://spartak.cityfootball.ru/league-contacts"
 ],
 "status": "works",
-"wrong": {
-"phone": {
-"source": "https://store.spartak.cityfootball.ru/page/contacts",
-"value": "+7 (499) 460-16-65"
-}
-}
+"wrong": {}
 },
 "spartak-cityfootball-sokolniki": {
 "by": "Codex",
@@ -31361,8 +31162,8 @@
 "spn-khimki-michurina": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Надёжного актуального первоисточника с данными именно этого филиала не найдено.",
+"file": "20261113-1653-3.json",
+"note": "Надёжного подтверждения по доступным первоисточникам не найдено.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -31552,8 +31353,8 @@
 "ss1-korall-krasnoselsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Действующая страница места подтверждает работу.",
+"file": "20261113-1653-3.json",
+"note": "Карточка подтверждена официальным источником.",
 "ok": [
 "address",
 "url",
@@ -31588,10 +31389,11 @@
 "ss1-veshnyaki-kosinskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Действующая страница места подтверждает работу.",
+"file": "20261113-1653-3.json",
+"note": "Карточка подтверждена официальным источником.",
 "ok": [
 "address",
+"phone",
 "url",
 "price",
 "age"
@@ -31600,12 +31402,7 @@
 "https://swim-school-1.ru/basseyni/veshnyaki"
 ],
 "status": "works",
-"wrong": {
-"hours": {
-"source": "https://swim-school-1.ru/basseyni/veshnyaki",
-"value": "ежедневно 07:00-23:00"
-}
-}
+"wrong": {}
 },
 "ss1-zhavoronki": {
 "by": "Codex",
@@ -31633,10 +31430,11 @@
 "ss1-zorky-krasnogorsk": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Действующая страница места подтверждает работу.",
+"file": "20261113-1653-3.json",
+"note": "Карточка подтверждена официальным источником.",
 "ok": [
 "address",
+"phone",
 "url",
 "price",
 "age"
@@ -31745,12 +31543,28 @@
 "stanislavsky-studio-chernyshevskogo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1630-0.json",
+"note": "Карточка подтверждена официальным сайтом.",
+"ok": [
+"address",
+"phone",
+"url",
+"age"
+],
+"sources": [
+"https://stanislavsky-studio.com/"
+],
 "status": "works",
-"wrong": {}
+"wrong": {
+"hours": {
+"source": "https://stanislavsky-studio.com/",
+"value": "сб 11:00-18:00; вс 11:00-18:00"
+},
+"price": {
+"source": "https://stanislavsky-studio.com/",
+"value": 15000
+}
+}
 },
 "stantsiya-talantov-chess": {
 "by": "Codex",
@@ -31809,11 +31623,17 @@
 "starzzz-yuzhnobutovskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
-"ok": [],
-"sources": [],
-"status": "not_found",
+"file": "20261113-1647-0.json",
+"note": "Карточка подтверждена первоисточником.",
+"ok": [
+"address",
+"phone",
+"url"
+],
+"sources": [
+"https://starzzz.moscow/educator/fortepiano/"
+],
+"status": "works",
 "wrong": {}
 },
 "stella-rublevskoe": {
@@ -31881,16 +31701,36 @@
 "strannoe-mesto": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [
+"address",
+"phone",
 "url"
 ],
 "sources": [
-"https://stmesto.ru"
+"https://stmesto.ru/",
+"https://stmesto.ru/contacts/",
+"https://stmesto.ru/quest/strannoe-mesto/"
 ],
 "status": "works",
-"wrong": {}
+"wrong": {
+"age": {
+"source": "https://stmesto.ru/quest/strannoe-mesto/",
+"value": [
+10,
+17
+]
+},
+"how": {
+"source": "https://stmesto.ru/contacts/",
+"value": "Вход: через ворота бывшего лагеря «Волна», корпус № 1\nОриентир: остановка «Детский санаторий»"
+},
+"price": {
+"source": "https://stmesto.ru/quest/strannoe-mesto/",
+"value": 8000
+}
+}
 },
 "stremlenie-basket-kalanchevskaya": {
 "by": "Codex",
@@ -31923,15 +31763,11 @@
 "studia-academia": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
-"ok": [
-"url"
-],
-"sources": [
-"https://studia-academia.ru/"
-],
-"status": "works",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "studio1815-otradny": {
@@ -31962,8 +31798,8 @@
 "studiya-znaniy-butlerova": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -32056,8 +31892,8 @@
 "swimmer-chekhov": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
+"file": "20261113-1647-0.json",
+"note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -32254,8 +32090,8 @@
 "tancuy-tut-tsvetnoy": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
+"file": "20261113-1647-0.json",
+"note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -32342,8 +32178,8 @@
 "teatr-alt-uglichskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -32421,26 +32257,21 @@
 "teikaboom-crocus-mall": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "hours",
 "url"
 ],
 "sources": [
-"https://teikaboom.ru/",
-"https://teikaboom.ru/parks/trts-krokus-siti-moll/",
-"https://teikaboom.ru/wp-content/uploads/2024/01/pravila-povedeniya-v-aktiviti-parkah-i-semejnyh-restoranah-seti-teika-boom-by-ksenia-borodina.pdf"
+"https://teikaboom.ru/parks/trts-krokus-siti-moll/"
 ],
 "status": "works",
 "wrong": {
-"age": {
-"source": "https://teikaboom.ru/wp-content/uploads/2024/01/pravila-povedeniya-v-aktiviti-parkah-i-semejnyh-restoranah-seti-teika-boom-by-ksenia-borodina.pdf",
-"value": [
-0,
-16
-]
+"how": {
+"source": "https://teikaboom.ru/parks/trts-krokus-siti-moll/",
+"value": "Вход: центральный вход ТРЦ «Крокус Сити Молл» со стороны фонтана, пройти до эскалатора\nЭтаж: 2"
 },
 "phone": {
 "source": "https://teikaboom.ru/parks/trts-krokus-siti-moll/",
@@ -32570,39 +32401,18 @@
 "tennis-cooltennis-spartakovskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
-"note": "Подтвержден большой теннис; настольный теннис на официальных страницах не найден.",
+"file": "20261113-1634-0.json",
+"note": "",
 "ok": [
 "address",
+"phone",
 "url"
 ],
 "sources": [
-"https://cooltennis.ru/rules-baumanskaya",
-"https://t.me/s/cooltennisofficial/1221?q=%23CoolNews",
-"https://yandex.com/maps/org/cooltennis/191864026500/"
+"https://cooltennis.ru/contacts"
 ],
 "status": "works",
-"wrong": {
-"age": {
-"source": "https://t.me/s/cooltennisofficial/1221?q=%23CoolNews",
-"value": [
-3,
-16
-]
-},
-"hours": {
-"source": "https://yandex.com/maps/org/cooltennis/191864026500/",
-"value": "ежедневно 06:00-00:00"
-},
-"phone": {
-"source": "https://yandex.com/maps/org/cooltennis/191864026500/",
-"value": "+7 (934) 888-01-61"
-},
-"price": {
-"source": "https://yandex.com/maps/org/cooltennis/191864026500/",
-"value": 3000
-}
-}
+"wrong": {}
 },
 "tennis-davydenko-odintsovo": {
 "by": "Codex",
@@ -32622,43 +32432,12 @@
 "tennis-derzhava-fili": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
-"ok": [
-"url"
-],
-"sources": [
-"https://clubworld-power.wixsite.com/derzavatennis",
-"https://clubworld-power.wixsite.com/derzavatennis/adress",
-"https://clubworld-power.wixsite.com/derzavatennis/book-online",
-"https://clubworld-power.wixsite.com/derzavatennis/tennis-kids"
-],
-"status": "works",
-"wrong": {
-"address": {
-"source": "https://clubworld-power.wixsite.com/derzavatennis/adress",
-"value": "Малая Филёвская ул., 34, корп. 1 (Училище олимпийского резерва)"
-},
-"age": {
-"source": "https://clubworld-power.wixsite.com/derzavatennis/book-online",
-"value": [
-5,
-15
-]
-},
-"hours": {
-"source": "https://clubworld-power.wixsite.com/derzavatennis/tennis-kids",
-"value": "ежедневно 08:00-20:00"
-},
-"phone": {
-"source": "https://clubworld-power.wixsite.com/derzavatennis",
-"value": "+7 (919) 770-35-75"
-},
-"price": {
-"source": "https://clubworld-power.wixsite.com/derzavatennis/tennis-kids",
-"value": 11000
-}
-}
+"file": "20261113-1647-0.json",
+"note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "tennis-derzhava-krylatskoe": {
 "by": "Codex",
@@ -32733,8 +32512,8 @@
 "tennis-kamneva-taganskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -32844,15 +32623,11 @@
 "terra-mystic-sokol": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
-"ok": [
-"url"
-],
-"sources": [
-"https://msk.terrm.ru"
-],
-"status": "works",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "tertsiya-lenskaya": {
@@ -33005,20 +32780,28 @@
 "tkd-otradnoe": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-0.json",
-"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1630-0.json",
+"note": "Карточка подтверждена официальным сайтом.",
+"ok": [
+"address",
+"hours",
+"phone",
+"url",
+"age"
+],
+"sources": [
+"https://www.tkd-otradnoe.ru/",
+"https://www.tkd-otradnoe.ru/contacts/"
+],
 "status": "works",
 "wrong": {}
 },
 "tkd-yug-novatorov": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1720-0.json",
+"note": "Официальный сайт подтверждает работу организации; сведения именно об этом филиале на доступной странице не подтверждены.",
 "ok": [
-"address",
 "url"
 ],
 "sources": [
@@ -33105,14 +32888,13 @@
 "todes-moskovsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "url"
 ],
 "sources": [
-"https://school.todes.ru/",
 "https://school.todes.ru/schools/studios/NEW_MSC/MOS"
 ],
 "status": "works",
@@ -33573,8 +33355,8 @@
 "tropinki-4-parkovaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
 "url"
 ],
@@ -33607,16 +33389,13 @@
 "ts-stanislavskogo-rudneva": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1811-0.json",
-"note": "Официальный сайт проверен; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1803-0.json",
+"note": "Официальный сайт доступен; остальные сведения не удалось надёжно подтвердить.",
 "ok": [
-"address",
-"phone",
 "url"
 ],
 "sources": [
-"https://ts-stanislavskogo.ru",
-"https://ts-stanislavskogo.ru/galery"
+"https://ts-stanislavskogo.ru"
 ],
 "status": "works",
 "wrong": {}
@@ -33756,8 +33535,8 @@
 "tsarskaya-paseka": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
+"file": "20261113-1647-0.json",
+"note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -33819,15 +33598,11 @@
 "tsentr-kreativa-babyegorodsky": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не ��далось независимо подтвердить по доступным первоисточникам.",
-"ok": [
-"url"
-],
-"sources": [
-"https://risuem.su"
-],
-"status": "works",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "tshk-karate-cheryomushki": {
@@ -33850,8 +33625,8 @@
 "tsmit-robotics-zamorenova": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Официальный сайт из карточки не дал доступной страницы с проверяемыми данными филиала.",
+"file": "20261113-1647-0.json",
+"note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -34307,15 +34082,19 @@
 "vdnh": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Официальный сайт подтверждает адрес и общий телефон; режим территории на доступной странице не найден.",
+"file": "20261113-1647-0.json",
+"note": "Карточка подтверждена первоисточником.",
 "ok": [
 "address",
+"hours",
 "phone",
-"url"
+"url",
+"price"
 ],
 "sources": [
-"https://vdnh.ru/"
+"https://vdnh.ru/official/contacty/",
+"https://vdnh.ru/upload/vdnh/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%20%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D0%B5%D0%B3%D0%BE%20%D1%80%D0%B0%D1%81%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BA%D0%B0%20%D0%BD%D0%B0%20%D1%82%D0%B5%D1%80%D1%80%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B8%20%D0%92%D0%94%D0%9D%D0%A5%20%281624770%20v1%29.pdf",
+"https://vdnh.ru/visitors/FAQ/"
 ],
 "status": "works",
 "wrong": {}
@@ -34388,27 +34167,28 @@
 "vdnh-kosmos-pavilion": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Карточка подтверждена официальным источником.",
+"file": "20261113-1647-0.json",
+"note": "Карточка подтверждена первоисточником.",
 "ok": [
+"address",
 "phone"
 ],
 "sources": [
-"https://vdnh.ru/places/pavilon-34-centr-kosmonavtika-i-aviaciya/"
+"https://vdnh.ru/cosmos/contact/"
 ],
 "status": "works",
 "wrong": {
-"address": {
-"source": "https://vdnh.ru/places/pavilon-34-centr-kosmonavtika-i-aviaciya/",
-"value": "Москва, просп. Мира, 119, павильон №34"
-},
 "hours": {
-"source": "https://vdnh.ru/places/pavilon-34-centr-kosmonavtika-i-aviaciya/",
+"source": "https://vdnh.ru/cosmos/contact/",
 "value": "вт-вс 11:00-22:00; пн выходной"
 },
+"how": {
+"source": "https://vdnh.ru/cosmos/contact/",
+"value": "Парковка: многоуровневый паркинг по адресу ул. Хованская, 18"
+},
 "url": {
-"source": "https://vdnh.ru/places/pavilon-34-centr-kosmonavtika-i-aviaciya/",
-"value": "https://vdnh.ru/places/pavilon-34-centr-kosmonavtika-i-aviaciya/"
+"source": "https://vdnh.ru/cosmos/contact/",
+"value": "https://vdnh.ru/cosmos/"
 }
 }
 },
@@ -34536,16 +34316,11 @@
 "veselye-konki-skhodnenskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address",
-"how"
-],
-"sources": [
-"https://icemgroup.ru/"
-],
-"status": "works",
+"file": "20261113-1720-0.json",
+"note": "Надёжный первоисточник именно этого филиала не найден; поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "victory-museum": {
@@ -34573,8 +34348,8 @@
 "vidnoe-central-park": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
@@ -34587,14 +34362,13 @@
 "vidnoe-dk": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-2.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1653-2.json",
+"note": "Официальный первоисточник подтверждает, что место работает.",
 "ok": [
-"address",
 "url"
 ],
 "sources": [
-"https://dkvidnoe.ru/"
+"https://dkvidnoe.ru"
 ],
 "status": "works",
 "wrong": {}
@@ -34708,11 +34482,11 @@
 "viktoriya-khor-annino": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1740-0.json",
-"note": "Надёжного подтверждения по первоисточнику не найдено; поля оставлены unknown.",
+"file": "20261113-1732-1.json",
+"note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
 "ok": [],
 "sources": [],
-"status": "not_found",
+"status": "works",
 "wrong": {}
 },
 "villi-vinky-kibalchicha": {
@@ -34783,15 +34557,11 @@
 "vkusoterriya-1905": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
-"ok": [
-"url"
-],
-"sources": [
-"https://vkusoterria.ru"
-],
-"status": "works",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "vl-pushkin-basmannaya": {
@@ -34998,22 +34768,12 @@
 "volna-uspekha-trofimova": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1653-0.json",
-"note": "Официальная страница подтверждает площадку и абонемент 12 400 ₽ за 8 занятий; размеры чаши не опубликованы.",
-"ok": [
-"address",
-"url"
-],
-"sources": [
-"https://volna-yspeha.ru/pools/basseyn-yuzhnoportovyy-v-yuvao/"
-],
-"status": "works",
-"wrong": {
-"price": {
-"source": "https://volna-yspeha.ru/pools/basseyn-yuzhnoportovyy-v-yuvao/",
-"value": 12400
-}
-}
+"file": "20261113-1647-0.json",
+"note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "volokolamsk-kremlin": {
 "by": "Codex",
@@ -35183,34 +34943,18 @@
 "vostochny-park-elektrostal": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
-"note": "Официальный сайт описывает общий Парк культуры и отдыха; принадлежность адреса карточки именно парку «Восточный» не подтверждена.",
+"file": "20261113-1634-0.json",
+"note": "",
 "ok": [],
-"sources": [
-"https://el-park.ru/rules",
-"https://www.el-park.ru/contact"
-],
+"sources": [],
 "status": "works",
-"wrong": {
-"hours": {
-"source": "https://el-park.ru/rules",
-"value": "ежедневно 09:00-22:00"
-},
-"phone": {
-"source": "https://www.el-park.ru/contact",
-"value": "+7 (496) 574-34-41"
-},
-"url": {
-"source": "https://www.el-park.ru/contact",
-"value": "https://www.el-park.ru/"
-}
-}
+"wrong": {}
 },
 "vse-govoryat-shchelkovo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
 "phone",
@@ -35483,10 +35227,15 @@
 "yakovlev-balashiha-sovetskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
-"ok": [],
-"sources": [],
+"file": "20261113-1720-0.json",
+"note": "Официальный источник подтверждает работу и указанные поля; остальные сведения не удалось независимо подтвердить.",
+"ok": [
+"address",
+"url"
+],
+"sources": [
+"https://yakovlevteam.ru/contacts/"
+],
 "status": "works",
 "wrong": {}
 },
@@ -35586,10 +35335,10 @@
 "yarkova-gym-fryazevskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1720-0.json",
+"note": "Официальный источник подтверждает работу и указанные поля; остальные сведения не удалось независимо подтвердить.",
 "ok": [
-"address",
+"phone",
 "url"
 ],
 "sources": [
@@ -35601,10 +35350,10 @@
 "yarkova-gym-napolny": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1713-1.json",
-"note": "Карточка проверена по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"file": "20261113-1720-0.json",
+"note": "Официальный источник подтверждает работу и указанные поля; остальные сведения не удалось независимо подтвердить.",
 "ok": [
-"address",
+"phone",
 "url"
 ],
 "sources": [
@@ -35721,8 +35470,8 @@
 "yula-park-cheremushkinskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Надёжного актуального первоисточника с данными именно этого филиала не найдено.",
+"file": "20261113-1653-3.json",
+"note": "Надёжного подтверждения по доступным первоисточникам не найдено.",
 "ok": [],
 "sources": [],
 "status": "not_found",
@@ -36000,15 +35749,14 @@
 "zapad-vostok-odintsovo": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Карточка филиала на Яндекс Картах подтверждает адрес, телефон и работу; подробности направлений и возраста не проверены.",
+"file": "20261113-1653-3.json",
+"note": "Карточка подтверждена официальным источником.",
 "ok": [
 "address",
-"hours",
 "phone"
 ],
 "sources": [
-"https://yandex.by/maps/org/soyuz_razvitiya_boyevykh_iskusstv_zapad_vostok/161796644103/"
+"https://kwon-rus.ru/page/delivery"
 ],
 "status": "works",
 "wrong": {}
@@ -36057,15 +35805,11 @@
 "zaraysk-baranka": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1746-0.json",
-"note": "Остальные сведения не удалось независимо подтвердить по доступным первоисточникам.",
-"ok": [
-"url"
-],
-"sources": [
-"http://baranochnaya.ru"
-],
-"status": "works",
+"file": "20261113-1740-1.json",
+"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "zaraysk-golubkina": {
@@ -36159,18 +35903,29 @@
 "zarinyan-karate-suzdalskaya": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1647-3.json",
-"note": "Действующая страница места подтверждает работу.",
+"file": "20261113-1653-3.json",
+"note": "Карточка подтверждена официальным источником.",
 "ok": [
 "address",
-"url",
-"age"
+"url"
 ],
 "sources": [
-"https://iko-moscow.ru/coaches/zarinian-ashot-kamoievich"
+"https://iko-moscow.ru/gyms/shkola-karatie-zms-ashota-zariniana-m-novokosino-stadion-olimp"
 ],
 "status": "works",
-"wrong": {}
+"wrong": {
+"age": {
+"source": "https://iko-moscow.ru/gyms/shkola-karatie-zms-ashota-zariniana-m-novokosino-stadion-olimp",
+"value": [
+4,
+17
+]
+},
+"phone": {
+"source": "https://iko-moscow.ru/gyms/shkola-karatie-zms-ashota-zariniana-m-novokosino-stadion-olimp",
+"value": "+7 (925) 928-25-89"
+}
+}
 },
 "zelenograd-dom-lani": {
 "by": "Codex",
@@ -36185,25 +35940,12 @@
 "zelenograd-museum": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
+"file": "20261113-1634-0.json",
 "note": "",
-"ok": [
-"address"
-],
-"sources": [
-"https://www.zelenograd.ru/afisha/60217-vystavka-ob-istorii-zelenograda-po-gazetnym-stranicam-otkrylas-v-dome-fleyta/"
-],
+"ok": [],
+"sources": [],
 "status": "works",
-"wrong": {
-"hours": {
-"source": "https://www.zelenograd.ru/afisha/60217-vystavka-ob-istorii-zelenograda-po-gazetnym-stranicam-otkrylas-v-dome-fleyta/",
-"value": "вт, ср, пт-вс 10:00-18:00; чт 13:00-21:00; пн — выходной"
-},
-"how": {
-"source": "https://www.zelenograd.ru/afisha/60217-vystavka-ob-istorii-zelenograda-po-gazetnym-stranicam-otkrylas-v-dome-fleyta/",
-"value": "Вход: третий вход, ближе к Wildberries"
-}
-}
+"wrong": {}
 },
 "zelenograd-museum-hall": {
 "by": "Codex",
@@ -36383,29 +36125,18 @@
 "zhukovsky-sky-museum": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1624-1.json",
+"file": "20261113-1634-0.json",
 "note": "",
-"ok": [
-"address",
-"phone",
-"url"
-],
-"sources": [
-"https://regions.ru/zhukovsky/blog/muzei-v-zhukovskom-kuda-shodit-i-chto-posmotret-v-gorode-aviatsii"
-],
+"ok": [],
+"sources": [],
 "status": "works",
-"wrong": {
-"hours": {
-"source": "https://regions.ru/zhukovsky/blog/muzei-v-zhukovskom-kuda-shodit-i-chto-posmotret-v-gorode-aviatsii",
-"value": "ср-вс 10:00-18:00"
-}
-}
+"wrong": {}
 },
 "zhukovsky-strela": {
 "by": "Codex",
 "date": "2026-11-13",
-"file": "20261113-1659-4.json",
-"note": "Официальный сайт найден; остальные поля не подтверждены страницей с данными именно этого филиала.",
+"file": "20261113-1706-4.json",
+"note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
 "ok": [
 "url"
 ],
