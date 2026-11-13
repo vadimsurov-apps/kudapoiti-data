@@ -7,7 +7,7 @@ def addr_clean(a):
     parts = [p.strip() for p in a.split(",")]
     keep = [p for p in parts if not re.search(r"этаж|вход|офис|подъезд|кабинет|аудитория|Здание|помещении|метро|Между|Отдельный|Окружной|напр", p, re.I)]
     s = ", ".join(keep)
-    return s if re.search(r"Москва|Балашиха|Химки|Подольск|Реутов|Королёв", s) else "Москва, " + s
+    return s if re.search(r"Москва|Балашиха|Химки|Подольск|Реутов|Королёв|Домодедово|Серпухов|Щёлково|Фрязино|Красногорск|Коммунарка|Московский|посёлок|д\.", s) else "Москва, " + s
 SEL = [c for c in C if not c["dup"] and c["n"] not in SKIP]
 if __name__ == "__main__":
     urls = []
