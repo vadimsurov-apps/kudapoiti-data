@@ -1899,8 +1899,7 @@
 "mayakovsky-main": {
 "date": "2026-11-13",
 "note": "Официальный сайт уточняет строение 1; часы относятся к кассе.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "http://www.mayakovsky.ru/",
 "https://www.mayakovsky.ru/about/contacts/"
@@ -1920,8 +1919,7 @@
 "mayakovsky-sretenka": {
 "date": "2026-11-13",
 "note": "В карточке указан неверный адрес сцены; официальный сайт указывает Пушкарёв переулок, 21/24. Часы относятся к кассе.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "http://www.mayakovsky.ru/",
 "https://www.mayakovsky.ru/about/contacts/"
@@ -2364,11 +2362,9 @@
 }
 },
 "samotsvety-museum": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает работу, адрес и актуальные режим, телефон и полный входной билет.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://gemmuseum.ru/",
 "https://gemmuseum.ru/%D0%A1%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C-%D0%B1%D0%B8%D0%BB%D0%B5%D1%82%D0%BE%D0%B2/",
@@ -2377,6 +2373,14 @@
 ],
 "status": "works",
 "wrong": {
+"hours": {
+"source": "https://gemmuseum.ru/%D0%AD%D0%BA%D1%81%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B8-%D0%B4%D0%BB%D1%8F-%D1%88%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D0%B3%D1%80%D1%83%D0%BF%D0%BF/",
+"value": "вт-вс 11:00-18:00"
+},
+"phone": {
+"source": "https://gemmuseum.ru/",
+"value": "+7 (985) 352-99-29"
+},
 "price": {
 "source": "https://gemmuseum.ru/%D0%A1%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C-%D0%B1%D0%B8%D0%BB%D0%B5%D1%82%D0%BE%D0%B2/",
 "value": 300
