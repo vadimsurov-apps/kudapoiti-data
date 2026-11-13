@@ -338240,7 +338240,7 @@
 "url": "https://www.lytkarinomuseum.ru/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
-"tries": 1
+"tries": 2
 },
 "jungle-kids-ru": {
 "url": "https://jungle-kids.ru/",
@@ -338253,7 +338253,7 @@
 "url": "https://museum.angstrem.ru/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
-"tries": 1
+"tries": 2
 },
 "360-ru-news-mosobl-muzejnyj-kompleks-usadby-jakova-brjusa-otrestavrirovali-v-podmoskove": {
 "url": "https://360.ru/news/mosobl/muzejnyj-kompleks-usadby-jakova-brjusa-otrestavrirovali-v-podmoskove/",
@@ -338308,7 +338308,7 @@
 "url": "https://xn-----flcefbdfgejefqnl3akka5byc.xn--p1ai/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
-"tries": 1
+"tries": 2
 },
 "www-xn-8sbarjjejn1cza0e-xn-p1ai": {
 "url": "https://www.xn----8sbarjjejn1cza0e.xn--p1ai/",
@@ -338319,8 +338319,34 @@
 },
 "www-xn-80akahgvf5ajn1b2c-xn-p1ai": {
 "url": "https://www.xn--80akahgvf5ajn1b2c.xn--p1ai/",
+"ok": true,
+"pages": 3,
+"bytes": 8676,
+"tries": 1
+},
+"usadba-brusa-ru": {
+"url": "https://usadba-brusa.ru/",
+"ok": true,
+"pages": 2,
+"bytes": 8423,
+"tries": 0
+},
+"mooncatpark-ru-rules": {
+"url": "https://mooncatpark.ru/rules/",
 "ok": false,
-"err": "The read operation timed out",
+"err": "<urlopen error [Errno 101] Network is unreachable>",
+"tries": 1
+},
+"www-xn-8sbarjjejn1cza0e-xn-p1ai-rezhim-raboty": {
+"url": "https://www.xn----8sbarjjejn1cza0e.xn--p1ai/rezhim-raboty",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"www-xn-8sbarjjejn1cza0e-xn-p1ai-stoimost-biletov": {
+"url": "https://www.xn----8sbarjjejn1cza0e.xn--p1ai/stoimost-biletov",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
 "tries": 1
 }
 }
