@@ -346007,7 +346007,7 @@
 "url": "https://artswimchampion.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -3] Temporary failure in name resolution>",
-"tries": 2
+"tries": 3
 },
 "mbudo-kashira-ru": {
 "url": "https://mbudo-kashira.ru/",
@@ -346020,31 +346020,31 @@
 "url": "https://sportlyt.edumsko.ru/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 2
+"tries": 3
 },
 "barabulka-com-price": {
 "url": "https://barabulka.com/price",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 2
+"err": "<urlopen error [Errno 101] Network is unreachable>",
+"tries": 3
 },
 "miniswimmer-com-price": {
 "url": "https://miniswimmer.com/price",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "www-morskoy-lvenok-ru-price": {
 "url": "https://www.morskoy-lvenok.ru/price",
 "ok": false,
 "err": "<urlopen error [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1081)>",
-"tries": 2
+"tries": 3
 },
 "hardysport-ru-price": {
 "url": "https://hardysport.ru/price",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "ustinovswim-pro-krasnogorsk": {
 "url": "https://ustinovswim.pro/krasnogorsk",
@@ -346063,8 +346063,8 @@
 "moscowtyz-ru-contacts": {
 "url": "https://moscowtyz.ru/contacts/",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 2
+"err": "<urlopen error timed out>",
+"tries": 3
 },
 "www-tretyakovgallery-ru-for-visitors-museums-tretyakovskaya-galereya": {
 "url": "https://www.tretyakovgallery.ru/for-visitors/museums/tretyakovskaya-galereya/",
@@ -346084,25 +346084,25 @@
 "url": "https://park-meshersky.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "mitino-bapark-ru-contacts": {
 "url": "https://mitino.bapark.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "www-mosgorsad-ru-parks-ermitazh": {
 "url": "https://www.mosgorsad.ru/parks/ermitazh",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "coach-doaflip-ru": {
 "url": "https://coach.doaflip.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 2
+"tries": 3
 },
 "yandex-ru-maps-1-moscow-and-moscow-oblast-po40-1113z-text-d0-a8-d0-ba-d0-be-d0-bb-d0-b0-20": {
 "url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?po40=1113z&text=%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%BF%D0%BB%D0%B0%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%95%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%A3%D1%81%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%91%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%204%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%2010",
@@ -346129,7 +346129,7 @@
 "url": "https://ustinovswim.pro/price",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "barabulka-com-pravila": {
 "url": "https://barabulka.com/pravila",
@@ -346151,5 +346151,25 @@
 "pages": 2,
 "bytes": 16000,
 "tries": 0
+},
+"dodopizza-ru-moscow-cheremushki-contacts": {
+"url": "https://dodopizza.ru/moscow/cheremushki/contacts",
+"ok": true,
+"pages": 1,
+"bytes": 53,
+"tries": 0
+},
+"cafeesse-com": {
+"url": "https://cafeesse.com/",
+"ok": true,
+"pages": 2,
+"bytes": 5680,
+"tries": 0
+},
+"cafeesse-com-contacts": {
+"url": "https://cafeesse.com/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
 }
 }
