@@ -24,12 +24,21 @@ Q = {
  "shkola-plavaniya-shchorsa": ("Школа плавания", "Москва, ул. Щорса, 6", (55.646672, 37.403031), 300, "Щорса", "плавани"),
  "fitness-hall-shcherbinka": ("Фитнес Холл", "Щербинка, ул. Чапаева, 8А", (55.5075, 37.565), 1500, "Чапаева", "Холл"),
  "moskvich-volgogradsky": ("Москвич, бассейн", "Москва, Волгоградский просп., 46/15с7", (55.7095, 37.722), 800, "Волгоградский", "Москвич"),
+ "akvaladushki-shagala": ("Акваладушки", "Москва, наб. Марка Шагала, 11, корп. 3", (55.6935, 37.6335), 1200, "Марка Шагала", "ладушки"),
+ "child-ocean-belova": ("Child Ocean", "Москва, ул. Генерала Белова, 26, стр. 9", (55.6085, 37.7185), 1000, "Генерала Белова", "Ocean"),
+ "nado-plavat-card": ("Надо Плавать школа плавания", "Москва, Тушинская ул., 16А, Надо Плавать", (55.8275, 37.443), 600, "Тушинская", "Плавать"),
+ "poplyli-zil": ("Поплыли школа плавания", "Москва, Автозаводская ул., 23А, корп. 4, Поплыли", (55.7045, 37.6375), 500, "Автозаводская", "Поплыли"),
  "kitenok-volgogradsky-32": ("Китёнок", "Москва, Волгоградский просп., 32/5к2", (55.719553, 37.690716), 400, "Волгоградский", "Китёнок"),
 }
 AREAS = ["Деловой центр", "Динамо", "Дмитровская", "Добрынинская", "Домодедовская", "Достоевская", "Дубровка", "Жулебино",
          "ЗИЛ", "Зорге", "Зюзино", "Зябликово", "Измайлово"]
 SITES = ["https://octoskills.ru/rannee-plavanie-dlya-detej/", "https://mevis.ru/", "https://www.swimrocket.ru/bassein",
-         "https://www.swimrocket.ru/detskie-gruppy"]
+         "https://www.swimrocket.ru/detskie-gruppy",
+         "https://kidsfunclub.ru/", "https://aculata.com/", "https://xn--5-ztbi4ah.xn--p1ai/", "https://mightysharks.ru/",
+         "https://rogdenie.ru/", "https://fhall.ru/", "https://sc-piranha.ru/", "https://www.mevis-1.ru/",
+         "https://swim-school-1.ru/", "https://www.swimrocket.ru/plavanie-dlya-detey/", "https://www.swimrocket.ru/deti/",
+         "https://octoskills.ru/rannee-plavanie-dlya-detej/studiya-na-starovolynskoj-15k1/",
+         "https://octoskills.ru/rannee-plavanie-dlya-detej/studiya-na-starovolynskoj-ulicze-15k1/"]
 if __name__ == "__main__":
     lines, out = list(SITES), []
     for i, (pid, (nm, addr, c, r, st, match)) in enumerate(Q.items()):
