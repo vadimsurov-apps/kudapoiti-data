@@ -2001,6 +2001,22 @@
 }
 }
 },
+"cafe-syrovarnya-vdnh": {
+"date": "2026-11-13",
+"note": "Официальная страница филиала подтверждает, что ресторан работает; точка входа, средний чек и возраст не подтверждены.",
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
+"sources": [
+"https://www.syrovarnya.com/vdnkh"
+],
+"status": "works",
+"wrong": {
+"how": {
+"source": "https://www.syrovarnya.com/vdnkh",
+"value": "Ориентир: территория «Солнце Москвы»\nПарковка: городская платная рядом, 40 ₽/час"
+}
+}
+},
 "cafe-syrovarnya-zhulebino": {
 "date": "2026-11-13",
 "note": "Официальная страница подтверждает действующий филиал; неподтверждённые поля оставлены unknown.",
@@ -2115,6 +2131,17 @@
 }
 }
 },
+"cafe-uryuk-marshala-zhukova": {
+"date": "2026-11-13",
+"note": "Официальная страница сообщает, что ресторан временно закрыт на обновление.",
+"resolved": true,
+"result": "закрыто автоматически (GPT со ссылкой)",
+"sources": [
+"https://uryk.ru/msk/restaurants/marsala-zukova-48k1"
+],
+"status": "closed",
+"wrong": {}
+},
 "cafe-winners-yankovskogo": {
 "date": "2026-11-10",
 "note": "Яндекс Карты и 2ГИС подтверждают филиал в корпусе 6. Яндекс показывает вход в 3 м от точки очереди. Второй вход и расположение игровой независимо не подтверждены.",
@@ -2131,6 +2158,60 @@
 "phone": {
 "source": "https://yandex.ru/maps/org/228762962915/",
 "value": "+7 (965) 030-15-15"
+}
+}
+},
+"cafe-yakitoriya-donskogo": {
+"applied": "2026-11-13",
+"date": "2026-11-13",
+"note": "Официальная страница филиала подтверждает, что ресторан работает; точка входа, средний чек и возраст не подтверждены.",
+"resolved": false,
+"result": "применено автоматически; осталось для сверщика: kidsroom",
+"sources": [
+"https://yakitoriya.ru/restaurants/bulvar-dmitriya-donskogo",
+"https://yakitoriya.ru/restaurants/kids"
+],
+"status": "works",
+"wrong": {
+"kidsroom": {
+"source": "https://yakitoriya.ru/restaurants/kids",
+"value": "есть; аниматор пт-вс 14:00-19:00"
+}
+}
+},
+"cafe-yakitoriya-leninsky": {
+"applied": "2026-11-13",
+"date": "2026-11-13",
+"note": "Официальная страница филиала подтверждает, что ресторан работает; точка входа, средний чек и возраст не подтверждены.",
+"resolved": false,
+"result": "применено автоматически; осталось для сверщика: kidsroom",
+"sources": [
+"https://yakitoriya.ru/restaurants/kids",
+"https://yakitoriya.ru/restaurants/universitet"
+],
+"status": "works",
+"wrong": {
+"kidsroom": {
+"source": "https://yakitoriya.ru/restaurants/kids",
+"value": "есть; аниматор пт-вс 14:00-19:00"
+}
+}
+},
+"cafe-yakitoriya-volgogradsky": {
+"applied": "2026-11-13",
+"date": "2026-11-13",
+"note": "Официальная страница филиала подтверждает, что ресторан работает; точка входа, средний чек и возраст не подтверждены.",
+"resolved": false,
+"result": "применено автоматически; осталось для сверщика: kidsroom",
+"sources": [
+"https://yakitoriya.ru/restaurants/kids",
+"https://yakitoriya.ru/restaurants/proletarskaya"
+],
+"status": "works",
+"wrong": {
+"kidsroom": {
+"source": "https://yakitoriya.ru/restaurants/kids",
+"value": "есть; аниматор пт-вс 12:00-18:00"
 }
 }
 },
@@ -2313,7 +2394,8 @@
 "chkalov-arena-letnaya": {
 "date": "2026-11-13",
 "note": "Официальный канал арены подтверждает адрес, набор в хоккей и фигурное катание и минимальный возраст 3 года.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://t.me/s/chkalov_arena/885"
 ],
@@ -3392,7 +3474,8 @@
 "dzyudokan-stromynka": {
 "date": "2026-11-13",
 "note": "Официальный сайт сейчас указывает филиалы на Стромынке, 11, а не на Стромынке, 20, корп. 1.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://judokan.ru/kontakty/"
 ],
@@ -5390,9 +5473,11 @@
 }
 },
 "legion-tennis": {
+"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает филиал; опубликованы разовое занятие 2000 ₽, бесплатное пробное и набор с 4 лет.",
 "resolved": false,
+"result": "применено автоматически; осталось для сверщика: age, price",
 "sources": [
 "https://www.fit-l.com/akademiya-tennisa/detskij-tennis/",
 "https://www.fit-l.com/sobytiya/124-otkryt-nabor-v-detskie-gruppy-tennis/"
@@ -5404,7 +5489,8 @@
 "value": [
 4,
 17
-]
+],
+"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
 },
 "price": {
 "source": "https://www.fit-l.com/akademiya-tennisa/detskij-tennis/",
@@ -8242,7 +8328,8 @@
 "severa-fight-koroleva": {
 "date": "2026-11-13",
 "note": "Официальная оферта подтверждает адрес и группы начиная с 3 лет; верхняя граница детского возраста из источника не установлена.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://severa.club/",
 "https://severa.club/files/dogovor_oferta-2023-2024.pdf"
@@ -8506,9 +8593,11 @@
 }
 },
 "soyuz-sport-volgina": {
+"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает действующий клуб, контакты и секции; 1000 ₽ не подтверждается как актуальная цена занятия.",
 "resolved": false,
+"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://www.ssport.ru/contacts/",
 "https://www.ssport.ru/detskij_klub/boks/",
@@ -9391,7 +9480,8 @@
 "viking-fc-solntsevo": {
 "date": "2026-11-13",
 "note": "Филиал подтверждён официальной страницей клуба; возраст в карточке округлён вверх.",
-"resolved": false,
+"resolved": true,
+"result": "применено автоматически (GPT со ссылкой)",
 "sources": [
 "https://dfcviking.ru/filials/shkola-v-solntsevo/"
 ],
