@@ -346129,7 +346129,7 @@
 "url": "https://ustinovswim.pro/price",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "barabulka-com-pravila": {
 "url": "https://barabulka.com/pravila",
@@ -346170,6 +346170,57 @@
 "url": "https://cafeesse.com/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
+"tries": 2
+},
+"www-cmaf-ru-visit": {
+"url": "https://www.cmaf.ru/visit/",
+"ok": false,
+"err": "<urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1081)>",
 "tries": 1
+},
+"www-mmdm-ru": {
+"url": "https://www.mmdm.ru/",
+"ok": false,
+"err": "The read operation timed out",
+"tries": 1
+},
+"www-mmdm-ru-about-contacts": {
+"url": "https://www.mmdm.ru/about/contacts/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"tsaritsyno-museum-ru-visit": {
+"url": "https://tsaritsyno-museum.ru/visit/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"gmik-ru-visit": {
+"url": "https://gmik.ru/visit/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"strikefc-ru-contacts": {
+"url": "https://strikefc.ru/contacts",
+"ok": true,
+"pages": 2,
+"bytes": 1983,
+"tries": 0
+},
+"museumzaraysk-ru": {
+"url": "https://museumzaraysk.ru/",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"www-borodino-ru-visit": {
+"url": "https://www.borodino.ru/visit/",
+"ok": true,
+"pages": 1,
+"bytes": 35,
+"tries": 0
 }
 }
