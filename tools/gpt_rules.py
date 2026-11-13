@@ -7,7 +7,10 @@ WANT = ("Качество карточек", "Уроки разборов с В�
 
 
 def main():
-    md = open(os.path.join(ROOT, "CLAUDE.md"), encoding="utf-8").read()
+    import sys
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from rules_all import full
+    md = full()   # ядро CLAUDE.md + rules/*.md (свод разнесён по файлам 13.11)
     secs = re.split(r"(?m)^## ", md)
     out = ["# Правила данных «Куда пойти с детьми» — для независимого проверяющего (ChatGPT)",
            "Это выдержка из главного свода правил (CLAUDE.md), собирается автоматически. Всё, что здесь сказано, обязательно и для тебя:",
