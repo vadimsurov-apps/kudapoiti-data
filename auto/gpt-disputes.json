@@ -270,17 +270,30 @@
 }
 },
 "bambi-land": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальный сайт: без предварительной записи; взрослы�� и детский билет 7–14 лет — 1500 ₽, 1–6 лет — 500 ₽, до года бесплатно.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://bambiland.ru/",
 "https://bambiland.ru/price/"
 ],
 "status": "works",
 "wrong": {
+"age": {
+"source": "https://bambiland.ru/price/",
+"value": [
+0,
+14
+]
+},
+"hours": {
+"source": "https://bambiland.ru/price/",
+"value": "ежедневно 10:00-16:00"
+},
+"phone": {
+"source": "https://bambiland.ru/price/",
+"value": "+7 (495) 109-33-11"
+},
 "price": {
 "source": "https://bambiland.ru/price/",
 "value": 1500
@@ -336,11 +349,9 @@
 "wrong": {}
 },
 "bronnitsy-museum": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает часы; региональный официальный путеводитель указывает входной билет 160 ₽.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://bronmuzei.ru/",
 "https://welcome.mosreg.ru/museums/skromnyj-muzej-v-zdanii-byvsej-zemskoj-upravy"
@@ -1101,11 +1112,9 @@
 }
 },
 "chekhov-house-kudrinskaya": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальная страница подтверждает актуальные часы, справочный телефон и полный билет 450 ₽.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: hours, price",
 "sources": [
 "https://www.goslitmuz.ru/museums/dom-muzey-a-p-chekhova/"
 ],
@@ -1115,9 +1124,17 @@
 "source": "https://www.goslitmuz.ru/museums/dom-muzey-a-p-chekhova/",
 "value": "вт, пт-вс 11:00-18:00; ср-чт 11:00-21:00; пн — выходной"
 },
+"phone": {
+"source": "https://www.goslitmuz.ru/museums/dom-muzey-a-p-chekhova/",
+"value": "+7 (495) 695-53-08"
+},
 "price": {
 "source": "https://www.goslitmuz.ru/museums/dom-muzey-a-p-chekhova/",
 "value": 450
+},
+"url": {
+"source": "https://www.goslitmuz.ru/museums/dom-muzey-a-p-chekhova/",
+"value": "https://www.goslitmuz.ru/museums/dom-muzey-a-p-chekhova/"
 }
 }
 },
@@ -2062,8 +2079,7 @@
 "kolomna-pastila-factory": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает ежедневную работу и посещение только с экскурсией; цена зависит от программы.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://musey.kolomna-pastila.com/"
 ],
@@ -2090,8 +2106,7 @@
 "kolomna-samovar": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает действующий музей, адрес и телефон; режим и цена на доступной странице не указаны.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.domsamovara.com/"
 ],
@@ -2138,8 +2153,7 @@
 "krivyakino-park": {
 "date": "2026-11-13",
 "note": "Официальная страница учреждения подтверждает адрес и ограниченные часы парка, а не круглосуточную работу.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://culture-vos.ru/uchrezhdeniya/strukturnye-podrazdeleniya/2381-mu-kulturnyy-tsentr-usadba-krivyakino.html"
 ],
@@ -2345,8 +2359,7 @@
 "lobnya-museum": {
 "date": "2026-11-13",
 "note": "Музей действует; официальный/государственный каталог подтверждает адрес и телефон.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.culture.ru/institutes/29175/muzei-istorii-goroda-lobnya",
 "https://www.lobnyamuseum.ru/"
@@ -2800,11 +2813,9 @@
 }
 },
 "noginsk-museum": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальные источники подтверждают реквизиты; взрослый билет 150 ₽, льготный 50 ₽.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://noginsk-museum.ru/",
 "https://welcome.mosreg.ru/museums/noginskij-muzejno-vystavocnyj-centr"
@@ -2917,8 +2928,7 @@
 "park-50-oktyabrya": {
 "date": "2026-11-13",
 "note": "Официальный сайт парка подтверждает круглосуточную работу и уточняет адрес и главный вход.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://parkfili.ru/50-letia-oktyabrya_txt",
 "https://www.parkfili.ru/50let"
@@ -3227,29 +3237,37 @@
 }
 },
 "serpukhov-dolls": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает часы и телефон; вход в музей бесплатный, экскурсия оплачивается отдельно.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://icedollhouse.ru/",
 "https://welcome.mosreg.ru/museums/muzej-kukol-i-dom-morozenogo"
 ],
 "status": "works",
 "wrong": {
+"hours": {
+"source": "https://icedollhouse.ru/",
+"value": "ежедневно 09:00-21:00"
+},
+"phone": {
+"source": "https://icedollhouse.ru/",
+"value": "+7 (905) 704-29-59"
+},
 "price": {
 "source": "https://welcome.mosreg.ru/museums/muzej-kukol-i-dom-morozenogo",
 "value": 0
+},
+"url": {
+"source": "https://icedollhouse.ru/",
+"value": "https://icedollhouse.ru/"
 }
 }
 },
 "serpukhov-history-museum": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает сезонный режим; единый взрослый билет для граждан РФ и СНГ — 600 ₽, школьный — 360 ₽.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: hours, price",
 "sources": [
 "https://serpuhov-museum.ru/",
 "https://serpuhov-museum.ru/kontakty/",
@@ -3261,17 +3279,24 @@
 "source": "https://serpuhov-museum.ru/kontakty/",
 "value": "октябрь-апрель: ср-чт 10:30-17:00; пт-сб 10:30-19:00; вс 10:30-18:00; май-сентябрь: ср-чт, вс 10:30-18:00; пт 10:30-20:00; сб 10:30-19:00; пн-вт — выходной"
 },
+"phone": {
+"source": "https://serpuhov-museum.ru/kontakty/",
+"value": "+7 (985) 641-07-40"
+},
 "price": {
 "source": "https://serpuhov-museum.ru/posetitelyam/tseny/vhodnye-bilety/",
 "value": 600
+},
+"url": {
+"source": "https://serpuhov-museum.ru/",
+"value": "https://serpuhov-museum.ru/"
 }
 }
 },
 "shalyapin-house": {
 "date": "2026-11-13",
 "note": "Карточка смешивает московскую усадьбу с устаревшими/неподтверждёнными реквизитами; подтверждён только уточнённый адрес.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.culture.ru/institutes/22312/muzei-usadba-f-i-shalyapina"
 ],
@@ -3310,8 +3335,7 @@
 "sp-matryoshka-museum": {
 "date": "2026-11-13",
 "note": "Официальная афиша музея подтверждает действующую экскурсию и место сбора.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://sp-mz.ru/events/afisha/ekskursiya-muzei-russkoi-matreshki"
 ],
@@ -3326,8 +3350,7 @@
 "sp-park-chudes": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает работу, адрес, ориентир и телефон; сезонный режим не удалось привести к требуемому формату.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://parkchudes-sp.ru/"
 ],
@@ -3405,11 +3428,9 @@
 "wrong": {}
 },
 "tolstoy-khamovniki": {
-"applied": "2026-11-13",
 "date": "2026-11-13",
 "note": "Официальный музей подтверждает режим; полный билет на дом и территорию — 500 ₽, детям до 14 лет и многодетным семьям доступен бесплатный вход без экскурсии.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: hours, price",
 "sources": [
 "https://tolstoymuseum.ru/about/museum-and-branches/khamovniki/",
 "https://tolstoymuseum.ru/contacts/addresses-and-schedule/",
@@ -3424,6 +3445,10 @@
 "price": {
 "source": "https://tolstoymuseum.ru/wp-content/uploads/2025/08/%D0%9F%D1%80%D0%B5%D0%B9%D1%81%D0%BA%D1%83%D1%80%D0%B0%D0%BD%D1%82-%D0%A5%D0%B0%D0%BC%D0%BE%D0%B2%D0%BD%D0%B8%D0%BA%D0%B8.pdf",
 "value": 500
+},
+"url": {
+"source": "https://tolstoymuseum.ru/about/museum-and-branches/khamovniki/",
+"value": "https://tolstoymuseum.ru/about/museum-and-branches/khamovniki/"
 }
 }
 },
@@ -3646,8 +3671,7 @@
 "vedogon-theatre": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает работу театра, адрес и часы кассы; телефон в карточке не совпадает с телефоном кассы.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://vedogon.ru/",
 "https://vedogon.ru/tickets"
