@@ -234,9 +234,14 @@ function sorted(list) {
 }
 
 function priceLine(p) {
-  const t = new Set(p.type || []);
-  if (t.has("кафе") || t.has("ресторан")) return p.price_adult ? "Средний чек ≈ " + rub(p.price_adult) : null;
-  const lesson = ["спортивная секция", "детский бассейн", "бассейн", "мастер-класс", "мастерская", "конный клуб", "скалодром"].some(x => t.has(x));
+  const t = new Set(p.type || []), c = new Set(p.cats || []);
+  // Вадим 14.11: «В кафе и ресторанах нет билетов. Есть средний чек» — заведение питания определяем по категории food,
+  // а не по типу, в точности равному «кафе» (иначе «ресторан с детской комнатой» получал «Детский билет»)
+  if (c.has("food")) return p.price_adult ? "Средний чек ≈ " + rub(p.price_adult) + " на взрослого" : null;
+  const LESSON = ["football","ballgames","volleyball","hockey","figureskating","gymnastics","rhythmic","acrobatics","racket","tabletennis","squash","padel","badminton","chess","sport","boxing","wrestling","sambo","judo","karate","taekwondo","martial","dance","ballet","singing","music","theaterstudio","drawing","ceramics","montessori","early","kindergarten","school","reading","math","mentalmath","languages","robotics","coding","lego","speech","lfk","psych","pools","inclusive"];
+  const TICKET = ["playcenters","trampolines","amusement","ropes","climbing","karting","quests","museums","science","shows","circus","animaltheater","cinema","tours","animals","water","transport","estates","rinks","sledding","ski"];
+  const lesson = (LESSON.some(x => c.has(x)) && !TICKET.some(x => c.has(x))) ||
+    ["спортивная секция", "детский бассейн", "бассейн", "мастер-класс", "мастерская", "конный клуб", "скалодром"].some(x => t.has(x));
   if (p.price_child === 0 && !p.price_adult) return "Бесплатно";
   if (p.price_child) return (lesson ? "Занятие от " : "Детский билет ") + rub(p.price_child);
   return null;
