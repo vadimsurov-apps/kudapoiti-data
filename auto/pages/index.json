@@ -322518,9 +322518,10 @@
 },
 "dinozavria-zel-ru": {
 "url": "https://dinozavria-zel.ru/",
-"ok": false,
-"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
-"tries": 1
+"ok": true,
+"pages": 1,
+"bytes": 2732,
+"tries": 0
 },
 "dinozavria-zel-ru-contacts": {
 "url": "https://dinozavria-zel.ru/contacts",
@@ -322531,7 +322532,20 @@
 "dinozavria-zel-ru-kontakty": {
 "url": "https://dinozavria-zel.ru/kontakty",
 "ok": false,
-"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
+"err": "HTTP Error 404: Not Found",
 "tries": 1
+},
+"dance-dynamo-ru-chekhov": {
+"url": "https://dance-dynamo.ru/chekhov",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"dance-dynamo-ru": {
+"url": "https://dance-dynamo.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
 }
 }
