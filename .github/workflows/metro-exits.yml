@@ -1,0 +1,47 @@
+name: Выходы метро (OSM, раз в неделю)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "40 1 * * 1"
+concurrency:
+  group: metro-exits
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  m:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -q && sudo apt-get install -y -q osmium-tool
+      - id: day
+        run: echo "d=$(date -u +%F)" >> $GITHUB_OUTPUT
+      - uses: actions/cache@v4
+        with:
+          path: mo.osm.pbf
+          key: osm-mo-${{ steps.day.outputs.d }}
+          restore-keys: osm-mo-
+      - name: Выгрузка OSM (если нет в кэше)
+        run: |
+          if [ ! -f mo.osm.pbf ]; then
+            curl -sSL -o cfd.osm.pbf https://download.geofabrik.de/russia/central-fed-district-latest.osm.pbf
+            osmium extract -b 35.1,54.2,40.3,57.0 cfd.osm.pbf -o mo.osm.pbf --overwrite
+          fi
+      - name: Метро из OSM
+        run: osmium tags-filter -R mo.osm.pbf n/railway=subway_entrance n/railway=station r/public_transport=stop_area -o metro.osm --overwrite
+      - name: Официальный набор mos.ru (если доступен)
+        continue-on-error: true
+        run: |
+          for u in "https://apidata.mos.ru/v1/datasets/624/rows?\$top=2000&api_key=${{ secrets.MOS_API_KEY }}" "https://data.mos.ru/api/rows/getresultwithcount?datasetId=624&top=2000" "https://data.mos.ru/odata/catalog/624/rows?\$top=2000"; do
+            code=$(curl -sS -m 40 -A "Mozilla/5.0" -o mos.tmp -w '%{http_code}' "$u" || true)
+            echo "${u%%api_key*} -> $code $(head -c 120 mos.tmp 2>/dev/null)"
+            if [ "$code" = "200" ] && head -c 1 mos.tmp | grep -q '\['; then mv mos.tmp mos.json; break; fi
+          done
+      - run: python3 pipeline/metro_exits.py
+      - name: Сохранить
+        run: |
+          git config user.name "kudapoiti-bot"; git config user.email "bot@users.noreply.github.com"
+          git add metro-exits.json auto/metro-exits-skipped.json
+          git commit -m "Выходы метро из OSM" || exit 0
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
