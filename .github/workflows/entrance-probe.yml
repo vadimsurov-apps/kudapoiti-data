@@ -1,0 +1,15 @@
+name: Проба Яндекс (временная)
+on: { workflow_dispatch: {} }
+permissions: { contents: write }
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: { sparse-checkout: "pipeline\nauto/entrance-probe-out.json", sparse-checkout-cone-mode: false }
+      - run: |
+          mkdir -p auto && python3 pipeline/_probe_tmp.py
+          python3 -c "import base64,json;json.dump({'message':'проба','branch':'main','content':base64.b64encode(open('auto/entrance-probe-out.json','rb').read()).decode()},open('/tmp/p.json','w'))"
+          gh api -X PUT "repos/$GITHUB_REPOSITORY/contents/auto/entrance-probe-out.json" --input /tmp/p.json > /dev/null
+        env: { GH_TOKEN: "${{ github.token }}" }
