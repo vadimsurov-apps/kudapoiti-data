@@ -12,7 +12,7 @@ if __name__ == "__main__":
     out = []
     for k, ll in LL.items():
         if not ll: print("нет координат", k); continue
-        q = {"id": "cr14i-" + k, "lat": ll[0], "lon": ll[1], "radius": 150, "name": NM[k], "geom": True}
+        q = {"id": "cr14i-" + k, "lat": ll[0], "lon": ll[1], "radius": (400 if k == "naydi-sebya-lesnaya" else 150), "name": NM[k], "geom": True}
         if q["id"] not in have: out.append(q)
     json.dump(old + out, open(p, "w"), ensure_ascii=False, indent=1)
     print("новых запросов", len(out))
