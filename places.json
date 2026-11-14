@@ -14297,7 +14297,7 @@
       "price_adult": 0,
       "free_note": "территория свободна",
       "booking": "none",
-      "hours": null,
+      "hours": "ежедневно 07:00–19:00",
       "indoor": "no",
       "food": "partial",
       "changing_table": null,
@@ -14320,8 +14320,37 @@
       "how_to_find": "Точка — вход",
       "phone": null,
       "season_months": null,
-      "open_mode": "unknown",
-      "open_week": null,
+      "open_mode": "hours",
+      "open_week": [
+        [
+          420,
+          1140
+        ],
+        [
+          420,
+          1140
+        ],
+        [
+          420,
+          1140
+        ],
+        [
+          420,
+          1140
+        ],
+        [
+          420,
+          1140
+        ],
+        [
+          420,
+          1140
+        ],
+        [
+          420,
+          1140
+        ]
+      ],
       "point_level": "вход",
       "point_door": "вход_здания"
     },
@@ -26792,7 +26821,7 @@
       "adult_interest": 2,
       "plus": "Небольшой исторический кинозал прямо на Красной площади",
       "minus": "Детские сеансы — по расписанию, проверяйте афишу",
-      "url": null,
+      "url": "https://gum.ru/kinozal/",
       "source": "цена зависит от сеанса; детям до 3 лет часто бесплатно без места",
       "verified_at": null,
       "status": "draft",
@@ -26801,8 +26830,8 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Этаж: 3\nОриентир: в здании ГУМа",
-      "phone": null,
+      "how_to_find": "Вход: отдельный вход с Ветошного переулка или через ГУМ\nЭтаж: 3, 3-я линия",
+      "phone": "+7 (495) 620-30-62",
       "season_months": null,
       "open_mode": "schedule",
       "open_week": null,
@@ -27575,57 +27604,6 @@
       "open_week": null,
       "point_level": "вход",
       "point_door": "вход_здания"
-    },
-    {
-      "id": "view-imperia",
-      "name": "Музей-смотровая «Империя» (Москва-Сити)",
-      "type": [
-        "смотровая площадка"
-      ],
-      "metro": "Выставочная",
-      "address": "Пресненская наб., 6, стр. 2, башня «Империя»",
-      "lat": 55.749679,
-      "lon": 37.537612,
-      "age_min": 0,
-      "age_max": 17,
-      "duration_min": 30,
-      "duration_max": 60,
-      "energy": "calm",
-      "loud": "no",
-      "dark": "no",
-      "crowded": "partial",
-      "sit_still": "no",
-      "tags": [],
-      "price_child": 1000,
-      "price_adult": 1000,
-      "free_note": null,
-      "booking": "none",
-      "hours": null,
-      "indoor": "yes",
-      "food": "partial",
-      "changing_table": null,
-      "cloakroom": null,
-      "stroller": "partial",
-      "parking": null,
-      "adult_interest": 3,
-      "plus": "Смотровая с музеем на 56-м этаже",
-      "minus": null,
-      "url": "https://xn----8sbmbobd0axemcqo2q.xn--p1ai/",
-      "source": "https://www.sputnik8.com/ru/moscow/activities/25982-bilet-v-muzey-smotrovuyu-bashni-imperiya-moskva-siti; цена «от»; Цены уточняйте",
-      "verified_at": null,
-      "status": "draft",
-      "cats": [
-        "tours"
-      ],
-      "coord_exact": true,
-      "birthday": null,
-      "how_to_find": null,
-      "phone": "+7 (499) 647-70-94",
-      "season_months": null,
-      "open_mode": "unknown",
-      "open_week": null,
-      "point_level": "вход",
-      "point_door": "объект"
     },
     {
       "id": "mc-lila-pastry",
@@ -29529,8 +29507,8 @@
         "sport"
       ],
       "price_child": 1000,
-      "price_adult": 1000,
-      "free_note": null,
+      "price_adult": null,
+      "free_note": "первая тренировка — бесплатно",
       "booking": "required",
       "hours": "пн-чт 09:00–21:00",
       "indoor": "yes",
@@ -29543,9 +29521,9 @@
       "plus": "Самбо для детей, первая тренировка бесплатно",
       "minus": "Самбо: группы по возрасту, запись заранее",
       "url": "https://chalykh-sambo.clients.site/",
-      "source": "OpenStreetMap; акция — с сайта места, проверено 2026-11-04; цена «от» за занятие; первое — см. акцию",
-      "verified_at": null,
-      "status": "draft",
+      "source": "OpenStreetMap; акция — с сайта места, проверено 2026-11-04",
+      "verified_at": "2026-11-14",
+      "status": "verified",
       "cats": [
         "sambo"
       ],
@@ -29576,6 +29554,10 @@
         null,
         null
       ],
+      "access": {
+        "note": "вход доступен для коляски, помещение — частично (Яндекс Карты)",
+        "wheelchair": "limited"
+      },
       "point_level": "вход",
       "point_door": "вход_яндекс"
     },
@@ -35090,7 +35072,7 @@
       "price_adult": 2250,
       "free_note": null,
       "booking": "recommended",
-      "hours": "ежедневно 10:00–22:00",
+      "hours": "пн-чт 10:00–22:00; пт 10:00–23:00; сб-вс 10:00–22:00",
       "indoor": "yes",
       "food": "yes",
       "changing_table": null,
@@ -35133,7 +35115,7 @@
         ],
         [
           600,
-          1320
+          1380
         ],
         [
           600,
@@ -71201,6 +71183,60 @@
       "point_door": "вход_яндекс"
     },
     {
+      "id": "cafe-eat-play-marfino",
+      "name": "Eat&Play (Марфино)",
+      "type": [
+        "кафе с детской игровой комнатой"
+      ],
+      "metro": "Улица Милашенкова",
+      "address": "ул. Кашёнкин Луг, 8, корп. 3",
+      "lat": 55.825902,
+      "lon": 37.596169,
+      "age_min": 0,
+      "age_max": 17,
+      "duration_min": 60,
+      "duration_max": 150,
+      "energy": "calm",
+      "loud": null,
+      "dark": "no",
+      "crowded": "partial",
+      "sit_still": "no",
+      "tags": [
+        "creativity"
+      ],
+      "price_child": null,
+      "price_adult": 1500,
+      "free_note": null,
+      "booking": null,
+      "hours": null,
+      "indoor": "yes",
+      "food": "yes",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": null,
+      "parking": null,
+      "adult_interest": 3,
+      "plus": "Кафе на Кашёнкином Лугу: завтраки, салаты, пицца и кофе; Есть детская игровая комната",
+      "minus": null,
+      "url": null,
+      "source": "Яндекс Карты (карточка заведения 12.11: рубрика, адрес, средний счёт, отзывы; аспекты «Детская комната» 95% (119 отзывов), «С детьми» 91%, «Детское меню» 86%; подборки «Заведения общественного питания в Москве с детской игровой зоной», «Рестораны, кафе и пиццерии с игровой комнатой для детей в Москве»; награда «Хорошее место 2026»; телефон +7 (903) 570-29-91); качество 2026-11",
+      "verified_at": "2026-11-12",
+      "status": "draft",
+      "cats": [
+        "food",
+        "kidsroom"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (903) 570-29-91",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход",
+      "point_door": "вход_здания"
+    },
+    {
       "id": "cafe-semeyny-ochag-pechatniki",
       "name": "Семейный Очаг (Печатники)",
       "type": [
@@ -79506,15 +79542,15 @@
       "minus": null,
       "url": "https://dosimistar-sokol.clients.site",
       "source": "Яндекс Карты: карточка организации (рубрика, адрес, этаж/вход, телефон, сайт, услуги, возраст групп), выдача «балетная школа для детей метро Аэропорт», 11.11.2026; сайт dosimistar-sokol.clients.site (возраст групп)",
-      "verified_at": "2026-11-11",
-      "status": "draft",
+      "verified_at": "2026-11-14",
+      "status": "verified",
       "cats": [
         "music",
         "singing"
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Парковка: рядом, наземная (~75 м); бесплатная наземная (~128 м)",
       "phone": "+7 (967) 155-79-86",
       "season_months": null,
       "open_mode": "hours",
@@ -79545,6 +79581,9 @@
         ],
         null
       ],
+      "access": {
+        "wheelchair": "no"
+      },
       "point_level": "вход",
       "point_door": "вход_яндекс"
     },
@@ -80233,7 +80272,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Парковка: рядом, наземная (~155 м)",
       "phone": "+7 (901) 188-16-21",
       "season_months": null,
       "open_mode": "hours",
@@ -80613,15 +80652,15 @@
       "minus": null,
       "url": "https://academykrb.ru",
       "source": "Яндекс Карты: выдача «вокал для детей метро Белорусская» и карточка организации (адрес, этаж, телефон, сайт, услуги), 11.11.2026; возраст — карточка Яндекс Карт, «Товары и услуги» (программы «от 8 до 17 лет»)",
-      "verified_at": "2026-11-11",
-      "status": "draft",
+      "verified_at": "2026-11-14",
+      "status": "verified",
       "cats": [
         "singing",
         "theaterstudio"
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Парковка: рядом, наземная (~29 м)",
       "phone": "+7 (968) 510-80-86",
       "season_months": null,
       "open_mode": "hours",
@@ -80655,6 +80694,10 @@
           1320
         ]
       ],
+      "access": {
+        "note": "вход и помещение доступны для коляски (Яндекс Карты)",
+        "wheelchair": "yes"
+      },
       "point_level": "вход",
       "point_door": "вход_яндекс"
     },
@@ -81425,10 +81468,9 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Вход: подъезд 1, квартира 3",
+      "how_to_find": "Вход: подъезд 1, кв. 3",
       "phone": "+7 (926) 371-28-85",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -82130,7 +82172,7 @@
       "tags": [
         "music"
       ],
-      "price_child": null,
+      "price_child": 1200,
       "price_adult": null,
       "free_note": null,
       "booking": "required",
@@ -82158,6 +82200,10 @@
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
+      "access": {
+        "note": "вход и помещение доступны для коляски (Яндекс Карты)",
+        "wheelchair": "yes"
+      },
       "point_level": "вход",
       "point_door": "вход_здания"
     },
@@ -82211,6 +82257,10 @@
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
+      "access": {
+        "note": "вход и помещение доступны для коляски (Яндекс Карты)",
+        "wheelchair": "yes"
+      },
       "point_level": "вход",
       "point_door": "вход_здания"
     },
@@ -82349,6 +82399,10 @@
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
+      "access": {
+        "note": "вход и помещение доступны для коляски (Яндекс Карты)",
+        "wheelchair": "yes"
+      },
       "point_level": "вход",
       "point_door": "вход_здания"
     },
@@ -83550,17 +83604,16 @@
       "minus": null,
       "url": "https://vk.com/lisztmusicschool",
       "source": "Яндекс Карты: карточка организации yandex.ru/maps/org/gbou_dod_goroda_moskvy_detskaya_muzykalnaya_shkola_imeni_ferentsa_lista/1039520136 (адрес, этаж/вход, телефон, сайт, услуги), 12.11.2026; возраст — карточка Яндекс Карт, платные услуги («Возраст: 4-5 лет», «6-7 лет», «6-17 лет»)",
-      "verified_at": "2026-11-12",
-      "status": "draft",
+      "verified_at": "2026-11-14",
+      "status": "verified",
       "cats": [
         "music"
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Парковка: рядом (~64 м)",
       "phone": "+7 (499) 373-75-08",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -83630,17 +83683,16 @@
       "minus": null,
       "url": "http://dmsh.su",
       "source": "Яндекс Карты: карточка организации yandex.ru/maps/org/d_d_shostakovich_children_music_school/18346566662 (адрес, этаж/вход, телефон, сайт, услуги), 12.11.2026; возраст — карточка Яндекс Карт, платные услуги («Возраст: 4-5 лет», «5-6 лет», «6-17 лет», «12-17 лет»)",
-      "verified_at": "2026-11-12",
-      "status": "draft",
+      "verified_at": "2026-11-14",
+      "status": "verified",
       "cats": [
         "music"
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Парковка: бесплатная наземная (~234 м)",
       "phone": "+7 (495) 375-10-11",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -85360,6 +85412,9 @@
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
+      "access": {
+        "wheelchair": "no"
+      },
       "point_level": "вход",
       "point_door": "вход_здания"
     },
@@ -181783,7 +181838,6 @@
       "how_to_find": null,
       "phone": "+7 (977) 923-02-77",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -201894,7 +201948,7 @@
       "address": "ул. Щорса, 6",
       "lat": 55.646721,
       "lon": 37.403048,
-      "age_min": 3,
+      "age_min": 4,
       "age_max": 17,
       "duration_min": 45,
       "duration_max": 45,
@@ -201909,7 +201963,7 @@
       ],
       "price_child": null,
       "price_adult": null,
-      "free_note": "первое занятие в группе — 1000 ₽",
+      "free_note": "первое групповое занятие — 1000 ₽",
       "booking": "required",
       "hours": null,
       "indoor": "yes",
@@ -201917,11 +201971,11 @@
       "changing_table": null,
       "cloakroom": null,
       "stroller": null,
-      "parking": null,
+      "parking": "yes",
       "adult_interest": 1,
-      "plus": "Школа подбирает ребёнку группу по возрасту — 5–6, 7–9, 10–12 или 13–17 лет — и по уровню подготовки; Занимаются в бассейне «Восход» в Солнцеве",
-      "minus": "На первое занятие нужна медицинская справка для бассейна, родителю — сменная обувь; Малышей до 5 лет не берут",
-      "url": "https://swimmingmoscow.ru/",
+      "plus": "В «Восходе» группы 4–7 и 6–16 лет по уровню подготовки, до 10 детей, занятие 45 минут; Глубина бассейна 1,2–1,8 м, вода 28 °C; Родители ждут в холле у раздевалок",
+      "minus": "На первое занятие нужна медицинская справка для бассейна, родителю — сменная обувь",
+      "url": "https://swimmingmoscow.ru/voshod/",
       "source": "сайт swimmingmoscow.ru (auto/pages): «Москва · школа плавания · 6 бассейнов», «Сколько лет вашему ребёнку? 5-6 лет, 7-9 лет, 10-12 лет, 13-17 лет», «Подбор группы по возрасту и уровню», «Первое занятие в группе - 1 000 ₽», «Что взять на первое занятие? Понадобятся очки, шапочка, плавки или купальник, шлёпанцы, полотенце и медицинская справка для бассейна. Родителю также нужна сменная обувь», «+7 (968) 909-33-90», «Солнцево · Москва, ул. Щорса, 6», «Восход - м. Солнцево» (проверено 2026-11-14)",
       "verified_at": "2026-11-14",
       "status": "draft",
@@ -201930,7 +201984,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Парковка: бесплатная перед спортивным комплексом, обычно есть места\nОриентир: от м. Солнцево выход № 2 прямо по ул. Богданова ~10 минут",
       "phone": "+7 (968) 909-33-90",
       "season_months": null,
       "open_mode": "unknown",
@@ -234562,9 +234616,9 @@
         "water",
         "sport"
       ],
-      "price_child": 1700,
-      "price_adult": 1700,
-      "free_note": "пробное 1700 ₽ (бесплатно при покупке абонемента); разовое 3000 ₽",
+      "price_child": 3000,
+      "price_adult": null,
+      "free_note": "пробное — 1700 ₽ или бесплатно при покупке абонемента; разовое занятие (30 мин) — 3000 ₽; абонемент на 4 занятия — 9500 ₽",
       "booking": "required",
       "hours": "ежедневно 9:00–21:00",
       "indoor": "yes",
@@ -234645,9 +234699,9 @@
         "water",
         "sport"
       ],
-      "price_child": 3200,
-      "price_adult": 1700,
-      "free_note": "пробное 1700 ₽ (бесплатно при покупке абонемента); разовое 3200 ₽",
+      "price_child": 3000,
+      "price_adult": null,
+      "free_note": "пробное — 1700 ₽ или бесплатно при покупке абонемента; разовое занятие (30 мин) — 3000 ₽; абонемент на 4 занятия — 9500 ₽",
       "booking": "required",
       "hours": "ежедневно 9:00–21:00",
       "indoor": "yes",
@@ -234896,7 +234950,7 @@
       ],
       "price_child": 3000,
       "price_adult": null,
-      "free_note": "пробное занятие — 1700 ₽ или бесплатно при покупке абонемента; разовое — 3000 ₽; абонемент на 4 занятия — 9700 ₽ (2425 ₽ за занятие); занятия индивидуальные, 30 минут",
+      "free_note": "пробное — 1700 ₽ или бесплатно при покупке абонемента; разовое занятие (30 мин) — 3000 ₽; абонемент на 4 занятия — 9500 ₽",
       "booking": "required",
       "hours": "ежедневно 09:00-21:00",
       "indoor": "yes",
@@ -259944,7 +259998,7 @@
       "lat": 55.675989,
       "lon": 37.681262,
       "age_min": 4,
-      "age_max": 14,
+      "age_max": 17,
       "duration_min": 60,
       "duration_max": 60,
       "energy": "active",
@@ -260301,7 +260355,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Парковка: бесплатная наземная (~245 м)",
       "phone": "+7 (977) 630-58-07",
       "season_months": null,
       "open_mode": "hours",
@@ -272448,7 +272502,9 @@
     {
       "id": "delfin-pool-solnechnogorsk",
       "name": "Детский бассейн «Дельфин» (Солнечногорск)",
-      "type": [],
+      "type": [
+        "детский бассейн"
+      ],
       "metro": "— (на машине / электричке)",
       "address": "Солнечногорск, ул. Тельнова, 3/2",
       "lat": 56.179478,
@@ -272491,6 +272547,58 @@
       "birthday": null,
       "how_to_find": "Парковка: рядом со зданием",
       "phone": null,
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход",
+      "point_door": "вход_здания"
+    },
+    {
+      "id": "babyshark-shatura",
+      "name": "Детский бассейн BabyShark (Шатура)",
+      "type": [],
+      "metro": "— (на машине / электричке)",
+      "address": "Шатура, Московская ул., 41",
+      "lat": 55.593346,
+      "lon": 39.549856,
+      "age_min": 0,
+      "age_max": 6,
+      "duration_min": 45,
+      "duration_max": 90,
+      "energy": "active",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "partial",
+      "sit_still": "no",
+      "tags": [
+        "water",
+        "sport"
+      ],
+      "price_child": 850,
+      "price_adult": null,
+      "free_note": "пробное занятие 850 ₽",
+      "booking": "required",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Грудничковое плавание и индивидуальные занятия в бассейне для малышей от 2 месяцев до 6 лет, по 30 минут",
+      "minus": null,
+      "url": null,
+      "source": "карточка Яндекс Карт «Детский бассейн BabyShark» (Шатура, Московская ул., 41), поиск по городу (проверено 2026-11-11)",
+      "verified_at": "2026-11-11",
+      "status": "draft",
+      "cats": [
+        "pools"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": "+7 (963) 600-00-58",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
@@ -272624,7 +272732,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Парковка: рядом (~57 м)",
       "phone": "+7 (926) 834-00-68",
       "season_months": null,
       "open_mode": "hours",
