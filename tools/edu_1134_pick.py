@@ -11,7 +11,7 @@ from edu_1134_sel import SEL as SEL29, ADDR_FIX
 A21.E.update({"34:" + k: v for k, v in json.load(open(os.path.join(ROOT, "tools/edu_1134_ext.json"))).items()})
 _e2 = os.path.join(ROOT, "tools/edu_1134_ext2.json")
 if os.path.exists(_e2): A21.E.update({"34g:" + k: v for k, v in json.load(open(_e2)).items()})
-A21.TOWNS = A21.TOWNS + tuple(t for t in ("Одинцово", "Видное", "Московский", "Балашиха", "Мытищи", "Краснознаменск", "Звенигород", "Дедовск", "Троицк", "Павловский Посад", "Красногорск", "Талдом", "Шатура", "Луховицы", "Ленинский г. о.", "Лосино-Петровский", "Щёлково", "Руза", "Подольск", "Королёв", "Люберцы", "Раменское", "Электросталь", "Химки", "Долгопрудный") if t not in A21.TOWNS)
+A21.TOWNS = A21.TOWNS + tuple(t for t in ("Одинцово", "Видное", "Московский", "Балашиха", "Мытищи", "Краснознаменск", "Звенигород", "Дедовск", "Троицк", "Павловский Посад", "Красногорск", "Талдом", "Шатура", "Луховицы", "Ленинский г. о.", "Лосино-Петровский", "Щёлково", "Руза", "Подольск", "Королёв", "Люберцы", "Раменское", "Электросталь", "Химки", "Долгопрудный", "Жуковский", "Пушкино", "Реутов", "посёлок Поведники", "Люберцы") if t not in A21.TOWNS)
 ANS = json.load(open(os.path.join(ROOT, "auto", "osm-answers.json")))
 HN_FIX = {}
 norm, house, osm_hn = P25.norm, P25.house, P25.osm_hn
@@ -35,7 +35,7 @@ for pid, (key, qid) in JOBS.items():  # точки, поправленные в�
     addr = ADDR_FIX.get(pid) or A21.addr_how(key)[0]
     hn = HN_FIX.get(pid) or house(addr)
     got = None
-    for q in (qid,):
+    for q in (qid, "edu40r-" + pid):  # повторная справка edu40r
         ans = ANS.get(q)
         if not ans or got: continue
         if pid.startswith("gppc-"):
