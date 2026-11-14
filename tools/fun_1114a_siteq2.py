@@ -1,7 +1,7 @@
 """Робот fun 1114a: сайты кандидатов OSM (часы, цены) → auto/fetch-queue.txt."""
 import os, urllib.parse
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-SITES = ["https://zoolandia-istra.ru/", "https://attragrad.ru/", "https://ecocenter-vg.tilda.ws/", "https://museum.timacad.ru/",
+SITES = ["https://gabrileon.ru/", "https://zoolandia-istra.ru/", "https://attragrad.ru/", "https://ecocenter-vg.tilda.ws/", "https://museum.timacad.ru/",
          "https://museumsport.ru/", "https://www.trk-mari.ru/", "https://www.avenue-sw.ru/", "https://www.waypark.ru/",
          "https://june-mytishi.ru/", "https://www.tcperlovsky.ru/"]
 Q = {"tank": "Танковый музей Кубинка", "kosmo": "Павильон 34 Космонавтика и авиация ВДНХ"}
