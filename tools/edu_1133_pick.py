@@ -35,7 +35,7 @@ for pid, (key, qid) in JOBS.items():  # точки, поправленные в�
     addr = ADDR_FIX.get(pid) or A21.addr_how(key)[0]
     hn = HN_FIX.get(pid) or house(addr)
     got = None
-    for q in (qid,):
+    for q in (qid, "edu39r-" + pid):  # 14.11 (24-й запуск): повторная справка edu39r (улица без «ё», центр у дома)
         ans = ANS.get(q)
         if not ans or got: continue
         if pid.startswith("gppc-"):
