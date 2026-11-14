@@ -9,6 +9,10 @@ Q = {  # id: (lat, lon, radius, имя, улица)
  "psb-patriot": (55.5700, 36.8150, 3500, "Ледов", ""),
  "orion-zheldor": (55.7441, 38.0193, 600, "Орион", ""),
  "salyut-dolgoprudny": (55.9330, 37.5150, 2500, "Салют", "Ракетостроителей"),
+ "molokovo-shkolnaya": (55.5660, 37.8300, 2500, "", "Школьная"),
+ "aysberg-khimki": (55.8905, 37.4862, 400, "Айсберг", ""),
+ "technopolis-zelenograd": (55.9900, 37.1500, 3000, "Arena", ""),
+ "arena-legend-ozery": (54.8550, 38.5500, 3000, "Легенд", "Парковая"),
 }
 p = os.path.join(ROOT, "auto/osm-queries.json")
 q = [x for x in json.load(open(p)) if not x["id"].startswith("rare14e-")]
