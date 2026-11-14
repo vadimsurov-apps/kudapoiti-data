@@ -15,3 +15,10 @@ if __name__ == "__main__":
     old = open(p).read().rstrip("\n").split("\n")
     open(p, "w").write("\n".join(old + [l for l in fq if l not in old]) + "\n")
     print(len(fq))
+# шаг 3: сайты новых мест (детские группы, возраст, часы)
+SITES = ["https://sharkskills.ru/", "https://aliishanov.ru/", "https://zavadovskaya.club/", "https://polyus-arena.ru/",
+         "https://polyus-arena.ru/contacts/", "https://nevsky-bears.ru/moscow/nagatinskaya/", "https://pandavolleyhall.ru/"]
+if __name__ == "__main__" and "--sites" in __import__("sys").argv:
+    p = os.path.join(ROOT, "auto/fetch-queue.txt")
+    old = open(p).read().rstrip("\n").split("\n")
+    open(p, "w").write("\n".join(old + [l for l in SITES if l not in old]) + "\n")
