@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import openpyxl
 from openpyxl.styles import Font, Alignment, Border, Side
 with contextlib.redirect_stdout(io.StringIO()):
-    import add_edu_1134 as A31
+    import add_edu_1133 as A31
 A = A31.A
 from batch_helpers import SRC
 from edu_1134_sel import SEL as SEL30, SITE_SRC as SS30, HOW_FIX as HF30, ADDR_FIX
