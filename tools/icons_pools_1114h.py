@@ -1,6 +1,9 @@
 """Иконки робота pools, 2026-11-14 (08 UTC). Каждая придумана и нарисована отдельно (правило абсолютной
 уникальности): свой герой, своя сцена, своя компоновка и палитра. Герои сверены с реестром icons-src/subjects.txt
 (таких героев в реестре нет), картинки — tools/check_unique.py.
+Записаны svg и строки реестра 6 добавленных мест. Иконки kitik-veshnyakovskaya (плавунчик), laguna-boba-borisovsky (шилоклювка)
+и chayka-gazoprovod (чайка-моевка с доской) нарисованы впрок: места не добавлены (нет точки) — при добавлении проверить
+уникальность заново.
 Запуск: python3 tools/icons_pools_1114h.py [id …]  → python3 tools/render_icons.py <id…> → python3 tools/check_unique.py <id…>."""
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
