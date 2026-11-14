@@ -357984,13 +357984,13 @@
 "url": "https://cbsuzao.mos.ru/moscow-libraries/detail/3645181.html",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 2
+"tries": 3
 },
 "xn-e1acbgdprqwf8k-xn-p1ai": {
 "url": "https://xn--e1acbgdprqwf8k.xn--p1ai/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-"tries": 2
+"tries": 3
 },
 "www-tmig-su-contacts": {
 "url": "http://www.tmig.su/contacts/",
@@ -358002,8 +358002,8 @@
 "museum-timacad-ru-about": {
 "url": "https://museum.timacad.ru/about/",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 2
+"err": "HTTP Error 403: Forbidden",
+"tries": 3
 },
 "mgfso-mossport-ru-sport-center": {
 "url": "https://mgfso.mossport.ru/sport-center/",
@@ -358015,14 +358015,14 @@
 "katok-luzhniki-ru-contacts": {
 "url": "https://katok.luzhniki.ru/contacts",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 2
+"err": "HTTP Error 403: Forbidden",
+"tries": 3
 },
 "ustinovswim-pro-contacts": {
 "url": "https://ustinovswim.pro/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "megasport-mossport-ru-schedule": {
 "url": "https://megasport.mossport.ru/schedule",
@@ -358051,5 +358051,126 @@
 "pages": 5,
 "bytes": 16000,
 "tries": 0
+},
+"vashgogis-ru": {
+"url": "https://vashgogis.ru/",
+"ok": true,
+"pages": 1,
+"bytes": 11734,
+"tries": 0
+},
+"vashgogis-ru-contacts": {
+"url": "https://vashgogis.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"atriaserp-ru-contacts": {
+"url": "https://atriaserp.ru/contacts/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"atriaserp-ru-kontakty": {
+"url": "https://atriaserp.ru/kontakty/",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"rg-nika-ru-contacts": {
+"url": "https://rg-nika.ru/contacts",
+"ok": true,
+"pages": 3,
+"bytes": 16000,
+"tries": 0
+},
+"rg-nika-ru-raspisanie": {
+"url": "https://rg-nika.ru/raspisanie",
+"ok": false,
+"err": "HTTP Error 403: Forbidden",
+"tries": 1
+},
+"w-academy-ru-contacts": {
+"url": "https://w-academy.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"w-academy-ru-raspisanie": {
+"url": "https://w-academy.ru/raspisanie",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"mfteam-ru-contacts": {
+"url": "https://mfteam.ru/contacts/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"mfteam-ru-raspisanie": {
+"url": "https://mfteam.ru/raspisanie/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"el-flamingo-ru-contacts": {
+"url": "https://el-flamingo.ru/contacts",
+"ok": true,
+"pages": 1,
+"bytes": 1179,
+"tries": 0
+},
+"chessdmd-ru-contacts": {
+"url": "https://chessdmd.ru/contacts",
+"ok": false,
+"err": "HTTP Error 456: Unrecoverable Error",
+"tries": 1
+},
+"tkd-eridan-ru-contacts": {
+"url": "https://tkd-eridan.ru/contacts",
+"ok": false,
+"err": "HTTP Error 403: Forbidden",
+"tries": 1
+},
+"tkd-eridan-ru-raspisanie": {
+"url": "https://tkd-eridan.ru/raspisanie",
+"ok": false,
+"err": "HTTP Error 403: Forbidden",
+"tries": 1
+},
+"barsteamram-ru-contacts": {
+"url": "https://barsteamram.ru/contacts",
+"ok": false,
+"err": "HTTP Error 403: Forbidden",
+"tries": 1
+},
+"tochkanevesomosti-ru-contacts": {
+"url": "https://tochkanevesomosti.ru/contacts",
+"ok": false,
+"err": "HTTP Error 403: Forbidden",
+"tries": 1
+},
+"probalero-ru-contacts": {
+"url": "https://probalero.ru/contacts",
+"ok": true,
+"pages": 1,
+"bytes": 12461,
+"tries": 0
+},
+"balashikha-gymnastics-ru-zaly": {
+"url": "https://balashikha-gymnastics.ru/zaly/",
+"ok": true,
+"pages": 2,
+"bytes": 2730,
+"tries": 0
+},
+"karate-judo-schelkovo-ru-raspisanie": {
+"url": "https://karate-judo-schelkovo.ru/raspisanie",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
 }
 }
