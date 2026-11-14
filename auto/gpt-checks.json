@@ -5692,15 +5692,14 @@
 "cafe-bonbon-dubna": {
 "by": "Codex",
 "date": "2026-11-14",
-"file": "20261114-0025-0.json",
+"file": "20261114-0015-2.json",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [
 "address",
-"hours",
 "phone"
 ],
 "sources": [
-"https://bibl-dubna.ru/kraevedenie/knigi-o-dubne/2-uncategorised"
+"https://dubna.ru/article/2020/02/kafe-piccerii-bistro"
 ],
 "status": "works",
 "wrong": {}
@@ -6925,25 +6924,14 @@
 "cafe-dzhondzholi-novogireevo": {
 "by": "Codex",
 "date": "2026-11-14",
-"file": "20261114-0025-0.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address",
-"phone",
-"url"
-],
-"sources": [
-"https://ch1ef.ru/restaurants/perovo"
-],
-"status": "works",
-"wrong": {
-"hours": {
-"source": "https://ch1ef.ru/restaurants/perovo",
-"value": "пн-чт, вс 11:00-23:00; пт, сб 11:00-24:00"
-}
-}
+"file": "20261114-0021-1.json",
+"note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
-"cafe-dzhondzholi-volgogradsky-117": {
+"cafe-dzhondzholi-mira": {
 "by": "Codex",
 "date": "2026-11-14",
 "file": "20261114-0000-0.json",
@@ -9208,15 +9196,11 @@
 "cafe-muu-shchuseva": {
 "by": "Codex",
 "date": "2026-11-14",
-"file": "20261114-0025-0.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"ok": [
-"url"
-],
-"sources": [
-"https://mavlyutov-rg.ru/muu"
-],
-"status": "works",
+"file": "20261114-0021-1.json",
+"note": "Не удалось независимо подтвердить карточку по допустимому первоисточнику.",
+"ok": [],
+"sources": [],
+"status": "not_found",
 "wrong": {}
 },
 "cafe-myaso-ryba-evropolis": {
@@ -11671,38 +11655,53 @@
 "cafe-v-okoshkakh": {
 "by": "Codex",
 "date": "2026-11-14",
-"file": "20261114-0025-0.json",
+"file": "20261114-0015-2.json",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [
-"address",
-"url"
+"phone",
+"url",
+"kidsroom"
 ],
 "sources": [
 "https://vokoshkah.ru/"
 ],
 "status": "works",
-"wrong": {}
+"wrong": {
+"address": {
+"source": "https://vokoshkah.ru/",
+"value": "Москва, 5-я Парковая ул., 25"
+},
+"hours": {
+"source": "https://vokoshkah.ru/",
+"value": "ежедневно 11:00-23:00"
+}
+}
 },
 "cafe-varenichnaya-proletarskaya": {
 "by": "Codex",
 "date": "2026-11-14",
-"file": "20261114-0025-0.json",
+"file": "20261114-0015-2.json",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [
-"address",
-"hours",
 "phone",
-"url",
-"kidsroom"
+"url"
 ],
 "sources": [
 "https://varenichnaya1.ru/tpost/1b81t6s8l1-varenichnaya-1-proletarskaya"
 ],
 "status": "works",
 "wrong": {
-"price": {
+"address": {
 "source": "https://varenichnaya1.ru/tpost/1b81t6s8l1-varenichnaya-1-proletarskaya",
-"value": 700
+"value": "Москва, Воронцовская ул., 50"
+},
+"hours": {
+"source": "https://varenichnaya1.ru/tpost/1b81t6s8l1-varenichnaya-1-proletarskaya",
+"value": "ежедневно 10:30-23:00"
+},
+"kidsroom": {
+"source": "https://varenichnaya1.ru/tpost/1b81t6s8l1-varenichnaya-1-proletarskaya",
+"value": "есть детский уголок"
 }
 }
 },
@@ -12285,21 +12284,12 @@
 "cafe-zdes-byl-chekhov-zvenigorod": {
 "by": "Codex",
 "date": "2026-11-14",
-"file": "20261114-0025-0.json",
-"note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"ok": [
-"address"
-],
-"sources": [
-"https://welcome.mosreg.ru/restaurants/kofejna-zdes-byl-cehov"
-],
-"status": "works",
-"wrong": {
-"phone": {
-"source": "https://welcome.mosreg.ru/restaurants/kofejna-zdes-byl-cehov",
-"value": "+7 (926) 043-21-23"
-}
-}
+"file": "20261114-0015-2.json",
+"note": "Надёжный первоисточник с данными именно этого филиала не найден.",
+"ok": [],
+"sources": [],
+"status": "not_found",
+"wrong": {}
 },
 "cafe-zdraste-krasulinskaya-19": {
 "by": "Codex",
@@ -12346,13 +12336,16 @@
 "cafe-zdraste-odintsovo-biryuzova": {
 "by": "Codex",
 "date": "2026-11-14",
-"file": "20261114-0025-0.json",
+"file": "20261114-0015-2.json",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "ok": [
-"url"
+"address",
+"phone",
+"url",
+"kidsroom"
 ],
 "sources": [
-"https://zdrastecafe.ru/"
+"https://zdrastecafe.ru"
 ],
 "status": "works",
 "wrong": {}
