@@ -354267,13 +354267,13 @@
 "url": "https://teatrluny.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 2
+"tries": 3
 },
 "teatrluny-ru-contacts": {
 "url": "https://teatrluny.ru/contacts/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 2
+"tries": 3
 },
 "tchaikovsky-house": {
 "url": "https://tchaikovsky.house/",
@@ -354286,7 +354286,7 @@
 "url": "https://tchaikovsky.house/visitors/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "muranovo-museum-ru-ru-visitors": {
 "url": "http://muranovo-museum.ru/ru/visitors/",
@@ -354298,8 +354298,8 @@
 "dmmuseum-ru-contacts": {
 "url": "https://dmmuseum.ru/contacts/",
 "ok": false,
-"err": "<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1081)>",
-"tries": 2
+"err": "<urlopen error timed out>",
+"tries": 3
 },
 "pushkinmuseum-art-education-museyon-index-php-lang-ru": {
 "url": "https://pushkinmuseum.art/education/museyon/index.php?lang=ru",
@@ -354943,6 +354943,65 @@
 "ok": true,
 "pages": 5,
 "bytes": 16000,
+"tries": 0
+},
+"msk-musbot-ru": {
+"url": "https://msk.musbot.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"tsaritsyno-museum-ru-the-museum-contact": {
+"url": "https://tsaritsyno-museum.ru/the_museum/contact/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"butterflarium-ru-contacts": {
+"url": "https://butterflarium.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"www-muzeon-ru": {
+"url": "https://www.muzeon.ru/",
+"ok": true,
+"pages": 2,
+"bytes": 12205,
+"tries": 0
+},
+"ges-2-org-visit": {
+"url": "https://ges-2.org/visit",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"illuzion-cinema-ru": {
+"url": "https://illuzion-cinema.ru/",
+"ok": false,
+"err": "<urlopen error [Errno -2] Name or service not known>",
+"tries": 1
+},
+"www-borodino-ru-kontakty": {
+"url": "https://www.borodino.ru/kontakty/",
+"ok": true,
+"pages": 1,
+"bytes": 38,
+"tries": 0
+},
+"zvenmuz-ru": {
+"url": "https://zvenmuz.ru/",
+"ok": false,
+"err": "<urlopen error [Errno -2] Name or service not known>",
+"tries": 1
+},
+"invacon-ru-contacts": {
+"url": "https://invacon.ru/contacts",
+"ok": true,
+"pages": 2,
+"bytes": 2476,
 "tries": 0
 }
 }
