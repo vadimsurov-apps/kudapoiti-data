@@ -125,8 +125,7 @@
 "acro-center-zil": {
 "date": "2026-11-13",
 "note": "Не удалось подтвердить карточку по доступному первоисточнику; поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [],
 "status": "not_found",
 "wrong": {}
@@ -182,8 +181,7 @@
 "active-style-uralskaya": {
 "date": "2026-11-14",
 "note": "Надёжного первоисточника с актуальными данными именно этого филиала найти не удалось; поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [],
 "status": "not_found",
 "wrong": {}
@@ -211,8 +209,7 @@
 "adem-kakhovka": {
 "date": "2026-11-14",
 "note": "Действующая школа подтверждена официальной страницей ТРЦ и офертой школы.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://primeplaza.ru/adem"
 ],
@@ -351,7 +348,6 @@
 "wrong": {}
 },
 "aikido-kashirskoe-39": {
-"applied": "2026-11-14",
 "date": "2026-11-14",
 "note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
 "resolved": false,
@@ -486,11 +482,9 @@
 }
 },
 "akademiya-chempionov-klenovy": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "Официальный сайт указывает детей 4–12 лет, бесплатное пробное занятие и второй этаж.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://champacademy.ru/",
 "https://champacademy.ru/sambo-klenoviy-bulvar",
@@ -504,8 +498,7 @@
 "value": [
 4,
 12
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
 }
 }
 },
@@ -790,16 +783,18 @@
 "wrong": {}
 },
 "akvaklub-more-kommunarka": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "Проверено по официальному источнику.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://aquaclubmore.ru/"
 ],
 "status": "works",
 "wrong": {
+"hours": {
+"source": "https://aquaclubmore.ru/",
+"value": "ежедневно 09:00-21:00"
+},
 "price": {
 "source": "https://aquaclubmore.ru/",
 "value": 2900
@@ -837,8 +832,7 @@
 "akvazavrik-odintsovo": {
 "date": "2026-11-14",
 "note": "Официальная страница клуба подтверждает филиал, возраст и ориентир входа.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://akvazavrik.taplink.ws/"
 ],
@@ -925,8 +919,7 @@
 "aleksandrov-boxing-dosflota": {
 "date": "2026-11-14",
 "note": "Актуальность подтверждена официальным сайтом; остальные данные филиала надёжно не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://alexandrovboxing.com/"
 ],
@@ -1063,8 +1056,7 @@
 "altis-tkd-korolev": {
 "date": "2026-11-13",
 "note": "Действующая официальная страница подтверждает указанные поля; остальные данные на ней однозначно не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.altiscentr.ru/"
 ],
@@ -1107,6 +1099,17 @@
 ],
 "status": "works",
 "wrong": {
+"age": {
+"source": "https://ambi.land/parks/okeaniya",
+"value": [
+1,
+12
+]
+},
+"how": {
+"source": "https://ambi.land/parks/okeaniya",
+"value": "Вход: через ТРЦ «Океания»\nЭтаж: 4\nПарковка: парковка ТРЦ"
+},
 "price": {
 "source": "https://ambi.land/parks/okeaniya",
 "value": 1500
@@ -1246,8 +1249,7 @@
 "anvio-vr-cdm": {
 "date": "2026-11-13",
 "note": "Официальный источник не дал надёжно проверить остальные поля.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://moscow.anvio.com/"
 ],
@@ -1416,6 +1418,10 @@
 ],
 "status": "works",
 "wrong": {
+"hours": {
+"source": "https://aqua-nemo.ru/detskiy-basseyn",
+"value": "ежедневно 09:00-21:00"
+},
 "price": {
 "source": "https://aqua-nemo.ru/detskiy-basseyn",
 "value": 2900
@@ -1443,8 +1449,7 @@
 "aqua-schastye-belyaevo": {
 "date": "2026-11-13",
 "note": "Проверено по официальному источнику.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://aquahappy.ru/"
 ],
@@ -1575,8 +1580,7 @@
 "aquababy-profsoyuznaya": {
 "date": "2026-11-13",
 "note": "Официальная страница подтверждает, что место работает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://aquababyclub.ru/profsoyuznaya"
 ],
@@ -1610,8 +1614,7 @@
 "aquapups-marino-novocherkassky": {
 "date": "2026-11-13",
 "note": "Проверено по официальному источнику.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://aquapups.ru/"
 ],
@@ -1952,8 +1955,7 @@
 "art-people-likhacheva": {
 "date": "2026-11-14",
 "note": "Карточка филиала в Яндекс Картах подтверждает адрес и телефон.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://yandex.com/maps/org/art_people_studio/181435348821/"
 ],
@@ -2018,11 +2020,9 @@
 }
 },
 "artistic-swim-davydkovskaya": {
-"applied": "2026-11-14",
 "date": "2026-11-14",
 "note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://artisticsport.ru/"
 ],
@@ -2033,8 +2033,11 @@
 "value": [
 4,
 14
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"url": {
+"source": "https://artisticsport.ru/",
+"value": "https://artisticsport.ru/"
 }
 }
 },
@@ -2049,8 +2052,7 @@
 "asvl-malomoskovskaya": {
 "date": "2026-11-13",
 "note": "Карточка подтверждена официальным сайтом.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://asvl.ru/",
 "https://asvl.ru/academic-drawing"
@@ -2205,8 +2207,7 @@
 "attitude-berzarina": {
 "date": "2026-11-13",
 "note": "Официальные контакты подтверждают действующее отделение и уточняют название школьного подразделения.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://attitude-gimnastik.ru/",
 "https://attitude-gimnastik.ru/contacts/"
@@ -2497,8 +2498,7 @@
 "baby-club-kastanaevskaya": {
 "date": "2026-11-13",
 "note": "Карточка подтверждена официальным сайтом.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://baby-club.ru/clubs/moscow/",
 "https://baby-club.ru/clubs/moscow/na-kastanaevskoj/",
@@ -2578,8 +2578,7 @@
 "baby-club-pokrovka": {
 "date": "2026-11-13",
 "note": "Официальный источник не дал надёжно проверить остальные поля.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://baby-club.ru/"
 ],
@@ -2722,8 +2721,7 @@
 "badm-bauman-mytishchi": {
 "date": "2026-11-14",
 "note": "Проверены официальные сайты и карточки организаций; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://mf.bmstu.ru/sveden/objects/"
 ],
@@ -2742,8 +2740,7 @@
 "badm-khimki-salyut": {
 "date": "2026-11-14",
 "note": "Профильная карточка площадки подтверждает клуб и адрес, но описывает взрослые тренировки; детский возраст не подтверждён.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://vbadminton.ru/evropa/rossiya/moskovskaya-oblast/dolgoprudnyy/place/fok-salyut"
 ],
@@ -2760,7 +2757,6 @@
 "date": "2026-11-14",
 "note": "Проверены официальные сайты и карточки организаций; неподтверждённые поля оставлены unknown.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age, price",
 "sources": [
 "https://kurkinosport.tb.ru/"
 ],
@@ -2771,12 +2767,27 @@
 "value": [
 4,
 17
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"hours": {
+"source": "https://kurkinosport.tb.ru/",
+"value": "ежедневно 08:00-24:00"
+},
+"how": {
+"source": "https://kurkinosport.tb.ru/",
+"value": "Парковка: бесплатная"
+},
+"phone": {
+"source": "https://kurkinosport.tb.ru/",
+"value": "+7 (926) 111-83-70"
 },
 "price": {
 "source": "https://kurkinosport.tb.ru/",
 "value": 1800
+},
+"url": {
+"source": "https://kurkinosport.tb.ru/",
+"value": "https://kurkinosport.tb.ru/"
 }
 }
 },
@@ -3014,8 +3025,7 @@
 "batut-detsky-stupino": {
 "date": "2026-11-14",
 "note": "Карточка Яндекс Карт подтверждает работу и телефон; полный недельный график в доступном представлении не показан.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.bebeshka.info/stupino/detskiy-razvlekatelnyy-batutnyy-tsentr-kosmos-702527/",
 "https://yandex.com/maps/org/83022009677/"
@@ -3157,8 +3167,7 @@
 "bball-mytishchi": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает адрес и бесплатное пробное занятие; возрастные диапазоны на странице не видны.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.b-ball.ru/"
 ],
@@ -3339,8 +3348,7 @@
 "biathlon-yunost-vladimirskaya": {
 "date": "2026-11-14",
 "note": "Справочная карточка подтверждает действующую школу; официальный источник с графиком не найден.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.bebeshka.info/moskva/sshor-yunost-moskvy-po-biatlonu-1153078/"
 ],
@@ -3378,20 +3386,38 @@
 "date": "2026-11-14",
 "note": "Сезонный объект существует, но сейчас закрыт из-за окончания летнего сезона; трудность доступна с 5 лет, боулдеринг с 10 лет.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://bigwallsport.ru/usloviya-okazaniya-uslug",
 "https://www.luzhniki.ru/activities/aktivnyj-otdyh/skalodrom/"
 ],
 "status": "works",
 "wrong": {
+"address": {
+"source": "https://www.luzhniki.ru/activities/aktivnyj-otdyh/skalodrom/",
+"value": "ул. Лужники, 24, стр. 46"
+},
 "age": {
 "source": "https://bigwallsport.ru/usloviya-okazaniya-uslug",
 "value": [
 5,
 17
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"hours": {
+"source": "https://www.luzhniki.ru/activities/aktivnyj-otdyh/skalodrom/",
+"value": "ежедневно 10:00-23:00"
+},
+"how": {
+"source": "https://www.luzhniki.ru/activities/aktivnyj-otdyh/skalodrom/",
+"value": "Вход: справа от здания по адресу ул. Лужники, 24, стр. 46"
+},
+"phone": {
+"source": "https://www.luzhniki.ru/activities/aktivnyj-otdyh/skalodrom/",
+"value": "+7 (499) 653-50-20"
+},
+"url": {
+"source": "https://bigwallsport.ru/usloviya-okazaniya-uslug",
+"value": "https://bigwallsport.ru/"
 }
 }
 },
@@ -3430,9 +3456,17 @@
 ],
 "status": "works",
 "wrong": {
+"phone": {
+"source": "https://pt-zapovednik.ru/chastye-voprosy/",
+"value": "+7 (4967) 707-145; +7 (985) 904-74-13"
+},
 "price": {
 "source": "https://pt-zapovednik.ru/chastye-voprosy/",
 "value": "дети 6-17 лет — 400 ₽ в будни, 500 ₽ в выходные; взрослые — 600 ₽ в будни, 800 ₽ в выходные плюс сбор 300 ₽; дети до 6 лет бесплатно"
+},
+"url": {
+"source": "https://pt-zapovednik.ru/chastye-voprosy/",
+"value": "https://pt-zapovednik.ru/"
 }
 }
 },
@@ -3775,8 +3809,7 @@
 "brain-sport-kosino": {
 "date": "2026-11-13",
 "note": "Действующая официальная страница подтверждает указанные поля; остальные данные на ней однозначно не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://brain-sport.ru/"
 ],
@@ -3904,11 +3937,9 @@
 "wrong": {}
 },
 "budu-plyt-mgpu": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://iwillswim.ru/mgpu/"
 ],
@@ -4176,8 +4207,7 @@
 "cafe-alibabaevich-lyubertsy": {
 "date": "2026-11-14",
 "note": "Работа места подтверждена актуальным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://vasyaalibaba.ru/"
 ],
@@ -4212,8 +4242,7 @@
 "cafe-allo-pizza-borovskoe-50": {
 "date": "2026-11-13",
 "note": "Официальная страница подтверждает, что место работает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://allopizza.su/",
 "https://allopizza.su/msk/kommunarka/otzyvy"
@@ -4247,8 +4276,7 @@
 "cafe-alma-ramenki": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает филиал и публикует раздельный график по дням.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://almarestaurant.ru/"
 ],
@@ -4283,8 +4311,7 @@
 "cafe-anderson-mitino-dubravnaya": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://cafe-anderson.ru/cafe/",
 "https://cafe-anderson.ru/nn/cafe/"
@@ -4327,8 +4354,7 @@
 "cafe-anna-varenina-korabelnaya": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает работу кафе, адрес и часы; официальный Telegram на сайте указывает телефон.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://annavarenina.ru/"
 ],
@@ -4359,8 +4385,7 @@
 "cafe-aquarium-ryazansky": {
 "date": "2026-11-13",
 "note": "На официальном сайте указан другой телефон; адрес и часы совпадают. Детская комната на доступной странице не подтверждена.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://aquarium-homecafe.ru/"
 ],
@@ -4456,7 +4481,23 @@
 "wrong": {
 "kidsroom": {
 "source": "https://bbgrill.rest/company",
+"value": "Москва, Автозаводская ул., 18, ТРЦ «Ривьера», 3 этаж"
+},
+"how": {
+"source": "https://bbgrill.rest/company",
+"value": "Вход: через ТРЦ «Ривьера»\nЭтаж: 3"
+},
+"kidsroom": {
+"source": "https://bbgrill.rest/company",
 "value": "есть"
+},
+"phone": {
+"source": "https://bbgrill.rest/company",
+"value": "+7 (495) 900-10-49"
+},
+"url": {
+"source": "https://bbgrill.rest/company",
+"value": "https://bbgrill.rest/"
 }
 }
 },
@@ -4517,11 +4558,9 @@
 }
 },
 "cafe-bereg-strogino": {
-"applied": "2026-11-14",
 "date": "2026-11-14",
 "note": "Ресторан работает; адрес и средний чек подтверждены, добавлены сайт, часы и телефон.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: hours",
 "sources": [
 "https://bereg.moscow",
 "https://moscowrestaurant.ru/restaurants/bereg",
@@ -4533,6 +4572,14 @@
 "hours": {
 "source": "https://moscowrestaurant.ru/restaurants/bereg",
 "value": "пн-чт, вс 12:00-23:00; пт-сб 12:00-00:00"
+},
+"phone": {
+"source": "https://www.restoran.ru/msk/detailed/restaurants/bereg-moscow/",
+"value": "+7 (495) 929-70-40"
+},
+"url": {
+"source": "https://bereg.moscow",
+"value": "https://bereg.moscow"
 }
 }
 },
@@ -4767,8 +4814,7 @@
 "cafe-casa-rosa-pushkino": {
 "date": "2026-11-14",
 "note": "Проверены первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.ds77.ru/firms/2182873/",
 "https://yandex.com/maps/org/casa_rosa/218546000063/"
@@ -4935,8 +4981,7 @@
 "cafe-chaihona-ulyanova": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://chaihona.ru/restaurants/dmitriya-ulyanova-51"
 ],
@@ -5274,8 +5319,7 @@
 "cafe-dodo-dubninskaya-50": {
 "date": "2026-11-13",
 "note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://dodopizza.ru/moscow/contacts/dubninskaya50"
 ],
@@ -5290,8 +5334,7 @@
 "cafe-dodo-elektrostal-yalagina": {
 "date": "2026-11-14",
 "note": "Карточка филиала подтверждает работу, адрес и часы; в адрес нужно добавить ТЦ и этаж.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://dodopizza.ru/elektrostal/bonusactions",
 "https://yandex.com/maps/org/dodo_pitstsa/196908414479/"
@@ -5507,8 +5550,7 @@
 "cafe-dodo-vidnoe-komsomola": {
 "date": "2026-11-13",
 "note": "Карточка подтверждена официальным источником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://dodopizza.ru/vidnoe/contacts/lenkom46a"
 ],
@@ -5588,8 +5630,7 @@
 "cafe-dyushes-balashikha": {
 "date": "2026-11-14",
 "note": "Карточка проверена по официальному сайту.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://dushes-cafe.ru/kontakty/"
 ],
@@ -5681,8 +5722,7 @@
 "cafe-dzhondzholi-volgogradsky-117": {
 "date": "2026-11-13",
 "note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://ch1ef.ru/sitemap.xml/restaurants/dzondzoli-kuzminki"
 ],
@@ -5766,8 +5806,7 @@
 "cafe-firdusi-ozeretskoe": {
 "date": "2026-11-14",
 "note": "Карточка проверена по официальному сайту.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://firdusi.ru/kontakty.html"
 ],
@@ -5806,8 +5845,7 @@
 "cafe-fishbox-zakharovo": {
 "date": "2026-11-14",
 "note": "Карточка проверена по официальному сайту.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://fishbox-rest.ru/"
 ],
@@ -5886,8 +5924,7 @@
 "cafe-florentini-sosenki": {
 "date": "2026-11-13",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://florentinicafe.ru/restaurants/dubrovka/"
 ],
@@ -6092,8 +6129,7 @@
 "cafe-grand-family": {
 "date": "2026-11-14",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.timeout.ru/msk/place/restoran_grand_femili"
 ],
@@ -6185,8 +6221,7 @@
 "cafe-gruzinskie-kanikuly-mytishchi": {
 "date": "2026-11-14",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.june-mytishi.ru/",
 "https://yandex.ru/maps/org/gruzinskiye_kanikuly/1359974201/"
@@ -6497,8 +6532,7 @@
 "cafe-ilpatio-serpukhov": {
 "date": "2026-11-13",
 "note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://serpukhov.ilpatio.ru/restaurants/r/kombo-serpukhov-moskovskoe-sh-55s1-b-klass/"
 ],
@@ -6582,8 +6616,7 @@
 "cafe-insight-podolsk": {
 "date": "2026-11-14",
 "note": "Работа заведения подтверждена указанным источником; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://yandex.com/maps/org/insight/147052408450/"
 ],
@@ -6654,8 +6687,7 @@
 "cafe-ivanovskoe-konny": {
 "date": "2026-11-14",
 "note": "Комплекс работает под названием Horseka; первоисточник федерации подтверждает адрес в городском округе Черноголовка, а не Богородском.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.equestrian.ru/files/2024/34257.pdf"
 ],
@@ -6839,8 +6871,7 @@
 "cafe-kedr-zaytsevo": {
 "date": "2026-11-14",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://kedr-res.ru/"
 ],
@@ -6924,8 +6955,7 @@
 "cafe-khata-klyazma": {
 "date": "2026-11-14",
 "note": "Работа заведения подтверждена указанным источником; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://restoranhata.ru/home"
 ],
@@ -7006,8 +7036,7 @@
 "cafe-kikukhana-kvartal": {
 "date": "2026-11-14",
 "note": "Официальные контакты подтверждают филиал, но в карточке отсутствуют этаж, телефон и сайт.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://kikuhana.ru/contacts"
 ],
@@ -7055,8 +7084,7 @@
 "cafe-kitchen-anokhina": {
 "date": "2026-11-13",
 "note": "Поля без прямого подтверждения первоисточником оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://cafe-kitchen.ru/cafe/na-akademika-anohina/"
 ],
@@ -7099,8 +7127,7 @@
 "cafe-kitchen-krylatskoe": {
 "date": "2026-11-13",
 "note": "Официальная страница филиала подтверждает часы, телефон, игровую и собственную парковку со шлагбаумом.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://cafe-kitchen.ru/cafe/kafe-kitchen-v-krylatskom/"
 ],
@@ -7115,8 +7142,7 @@
 "cafe-kitchen-reutov": {
 "date": "2026-11-13",
 "note": "Поля без прямого подтверждения первоисточником оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "http://cafe-kitchen.ru/cafe/v-reutove/",
 "https://cafe-kitchen.ru/cafe/",
@@ -7167,11 +7193,9 @@
 }
 },
 "cafe-klevo-petrovka": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает детскую анимацию, но не отдельную детскую комнату.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: kidsroom",
 "sources": [
 "https://petrovka.klevo.rest/"
 ],
@@ -7206,8 +7230,7 @@
 "cafe-klich-zilart": {
 "date": "2026-11-14",
 "note": "Карточка проверена по официальному сайту.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://klich.moscow/",
 "https://klich.moscow/detskaya-komnata"
@@ -7239,8 +7262,7 @@
 "cafe-knyaz-bagration": {
 "date": "2026-11-13",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://knyazbagration.ru/"
 ],
@@ -7253,16 +7275,18 @@
 }
 },
 "cafe-kolbasoff-mitino": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: kidsroom",
 "sources": [
 "https://kolbasoff.su/restaurants/address/12"
 ],
 "status": "works",
 "wrong": {
+"how": {
+"source": "https://kolbasoff.su/restaurants/address/12",
+"value": "Вход: через ТЦ «Плаза»\nЭтаж: 2\nПарковка: бесплатная"
+},
 "kidsroom": {
 "source": "https://kolbasoff.su/restaurants/address/12",
 "value": "есть детский лабиринт"
@@ -7288,8 +7312,7 @@
 "cafe-kolbasoff-sokolniki": {
 "date": "2026-11-13",
 "note": "Поля без прямого подтверждения первоисточником оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://kolbasoff.su/restaurants",
 "https://kolbasoff.su/restaurants/address/3"
@@ -7321,8 +7344,7 @@
 "cafe-korchma-nametkina-13": {
 "date": "2026-11-13",
 "note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://korchma.ru/restaurants/nametkina-ul-d13g/"
 ],
@@ -7353,8 +7375,7 @@
 "cafe-korgi-skhodnya": {
 "date": "2026-11-14",
 "note": "Карточка организации подтверждает работу, адрес, телефон и игровую зону для детей.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://korgi-jubilejnyj-proezd.clients.site/"
 ],
@@ -7369,8 +7390,7 @@
 "cafe-kovcheg-odintsovo": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает ресторан и бесплатную парковку у входа, но не подтверждает детскую комнату.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://restorankovcheg.ru/",
 "https://restorankovcheg.ru/contacts/"
@@ -7600,8 +7620,7 @@
 "cafe-listok-fili": {
 "date": "2026-11-14",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://listok-cafe.ru/"
 ],
@@ -7850,8 +7869,7 @@
 "cafe-marani-zhukovka": {
 "date": "2026-11-14",
 "note": "Карточка проверена по официальному сайту.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://gg-group.ru/maranig"
 ],
@@ -7900,8 +7918,7 @@
 "cafe-maska-fili": {
 "date": "2026-11-14",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.cafe-maska.com/"
 ],
@@ -7952,8 +7969,7 @@
 "cafe-meluna-pushkino": {
 "date": "2026-11-13",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://melyna.ru/contacts"
 ],
@@ -7974,19 +7990,29 @@
 "wrong": {}
 },
 "cafe-merkaleto-tsaritsyno": {
-"applied": "2026-11-14",
 "date": "2026-11-14",
 "note": "Работа заведения подтверждена указанным источником; неподтверждённые поля оставлены unknown.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: kidsroom",
 "sources": [
 "https://mercaleto.ru/"
 ],
 "status": "works",
 "wrong": {
+"hours": {
+"source": "https://mercaleto.ru/",
+"value": "вс-чт 11:00-22:00; пт-сб 11:00-23:00"
+},
 "kidsroom": {
 "source": "https://mercaleto.ru/",
 "value": "есть уголок для детских игр"
+},
+"phone": {
+"source": "https://mercaleto.ru/",
+"value": "+7 (495) 928-14-33"
+},
+"url": {
+"source": "https://mercaleto.ru/",
+"value": "https://mercaleto.ru/"
 }
 }
 },
@@ -8001,9 +8027,25 @@
 ],
 "status": "works",
 "wrong": {
+"address": {
+"source": "https://mestnye.rest/",
+"value": "Москва, ул. Василисы Кожиной, 13"
+},
+"hours": {
+"source": "https://mestnye.rest/",
+"value": "ежедневно 10:00-23:00"
+},
 "kidsroom": {
 "source": "https://mestnye.rest/",
 "value": "есть"
+},
+"phone": {
+"source": "https://mestnye.rest/",
+"value": "+7 (925) 444-05-12"
+},
+"url": {
+"source": "https://mestnye.rest/",
+"value": "https://mestnye.rest/"
 }
 }
 },
@@ -8206,8 +8248,7 @@
 "cafe-muu-mukomolny": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://mavlyutov-rg.ru/muu"
 ],
@@ -8319,8 +8360,7 @@
 "cafe-navat-novy-arbat": {
 "date": "2026-11-14",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://regional2.resto.ru/place/15567"
 ],
@@ -8411,8 +8451,7 @@
 "cafe-nikolsky-zelenograd": {
 "date": "2026-11-13",
 "note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://nikolsky.rest/contacts/"
 ],
@@ -8425,16 +8464,18 @@
 }
 },
 "cafe-niyama-butovo-mall": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: kidsroom",
 "sources": [
 "https://niyama.ru/restaurants/niyama-butovo/"
 ],
 "status": "works",
 "wrong": {
+"how": {
+"source": "https://niyama.ru/restaurants/niyama-butovo/",
+"value": "Вход: через ТЦ «Бутово Молл»\nПарковка: бесплатная"
+},
 "kidsroom": {
 "source": "https://niyama.ru/restaurants/niyama-butovo/",
 "value": "есть просторная игровая зона"
@@ -8631,8 +8672,7 @@
 "cafe-novye-gorki-korolev": {
 "date": "2026-11-14",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://novie-gorky.ru/restoran/"
 ],
@@ -8899,8 +8939,7 @@
 "cafe-otdykh-podolsk": {
 "date": "2026-11-14",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://welcome.mosreg.ru/restaurants/restoran-otdyh-2"
 ],
@@ -8978,8 +9017,7 @@
 "cafe-pancho-mega": {
 "date": "2026-11-14",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://panchopizza.ru/",
 "https://t.me/s/pancho_msc"
@@ -8999,8 +9037,7 @@
 "cafe-panduri-ramenskoe": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://panduri-rest.ru/",
 "https://panduri-rest.ru/service/gruzinskaya/"
@@ -9092,8 +9129,7 @@
 "cafe-piknik-novinki": {
 "date": "2026-11-14",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://piknikrest.ru/tpost/unz0orhpi1-sezonnoe-menyu?amp=true"
 ],
@@ -9237,11 +9273,9 @@
 }
 },
 "cafe-pomidoroff-mytishchi": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: kidsroom",
 "sources": [
 "https://pomidoroff-pizza.ru/about"
 ],
@@ -9250,6 +9284,10 @@
 "kidsroom": {
 "source": "https://pomidoroff-pizza.ru/about",
 "value": "есть детский уголок"
+},
+"phone": {
+"source": "https://pomidoroff-pizza.ru/about",
+"value": "+7 (903) 130-40-63"
 }
 }
 },
@@ -9523,8 +9561,7 @@
 "cafe-river-club-moscow": {
 "date": "2026-11-14",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://riverclubmoscow.ru/",
 "https://riverclubmoscow.ru/contacts"
@@ -9579,8 +9616,7 @@
 "cafe-royal-borovskoe": {
 "date": "2026-11-14",
 "note": "Работа места подтверждена актуальным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://royal-peredelkino.ru/contact"
 ],
@@ -9639,8 +9675,7 @@
 "cafe-rublevka-village": {
 "date": "2026-11-14",
 "note": "Официальный сайт комплекса подтверждает ресторан, адрес, часы, телефон и детскую комнату.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://rublevkavillage.ru/"
 ],
@@ -9690,8 +9725,7 @@
 "cafe-russkie-traditsii-reutov": {
 "date": "2026-11-14",
 "note": "Официальный сайт описывает шесть банкетных залов и бесплатную парковку, но не подтверждает детскую комнату.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://rus-trad.ru/",
 "https://rus-trad.ru/contacts"
@@ -9707,8 +9741,7 @@
 "cafe-russky-dvorik-sergiev": {
 "date": "2026-11-13",
 "note": "Поля без прямого подтверждения первоисточником оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://en.rus-dvorik.ru/kontakty/",
 "https://rus-dvorik.ru/",
@@ -9811,8 +9844,7 @@
 "cafe-seneshal-solnechnogorsk": {
 "date": "2026-11-13",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://seneshal.com/wp-content/uploads/2025/04/svadba-v-formate-chefs-table-1.pdf"
 ],
@@ -9874,8 +9906,7 @@
 "cafe-shale-berezka": {
 "date": "2026-11-14",
 "note": "Карточка проверена по официальному сайту.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://chaletnovogorsk.ru/"
 ],
@@ -9911,7 +9942,6 @@
 "date": "2026-11-14",
 "note": "Часы в карточке ошибочно сокращены до ежедневных 12:00-24:00; официальный сайт указывает продлённую работу по пятницам и субботам.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: hours",
 "sources": [
 "https://shato-manavi.ru/",
 "https://shato-manavi.ru/contact"
@@ -10013,8 +10043,7 @@
 "cafe-shvili-krasny-kit": {
 "date": "2026-11-13",
 "note": "Поля без прямого подтверждения первоисточником оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://shvilibistro.ru/",
 "https://shvilibistro.ru/detskie-komnaty/",
@@ -10040,8 +10069,7 @@
 "cafe-sir-krolik-korolev": {
 "date": "2026-11-14",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.sir-rabbit.ru/"
 ],
@@ -10147,8 +10175,7 @@
 "cafe-soho-country-club": {
 "date": "2026-11-14",
 "note": "Работа заведения подтверждена указанным источником; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://sohofamily.ru/soho-country-club"
 ],
@@ -10175,8 +10202,7 @@
 "cafe-sosedi-michurinsky": {
 "date": "2026-11-14",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://sosedicafe.ru/michurinskiy"
 ],
@@ -10207,8 +10233,7 @@
 "cafe-sovenok-korolev": {
 "date": "2026-11-14",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://totadres.ru/korolev/org/sovenok/3799039"
 ],
@@ -10256,8 +10281,7 @@
 "cafe-strekoza-kryuchkovo": {
 "date": "2026-11-14",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://restoran-strekoza.ru/"
 ],
@@ -10590,8 +10614,7 @@
 "cafe-tapchan-leningradskoe": {
 "date": "2026-11-13",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://tapchancafe.ru/restaurants/na-leningradskom-shosse"
 ],
@@ -10663,8 +10686,7 @@
 "cafe-tartufo-barvikha": {
 "date": "2026-11-14",
 "note": "Работа заведения подтверждена указанным источником; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://tartuforestoran.ru/"
 ],
@@ -10755,8 +10777,7 @@
 "cafe-thali-fusion": {
 "date": "2026-11-14",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://thali.moscow/"
 ],
@@ -10807,8 +10828,7 @@
 "cafe-tokio-city-miklukho": {
 "date": "2026-11-13",
 "note": "Официальная афиша филиала подтверждает ТЦ «МЦ» и второй этаж; детскую комнату не подтверждает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.tokyo-city.ru/events/Detskie-master-klassy1/"
 ],
@@ -11018,8 +11038,7 @@
 "cafe-uryk-by-osh-kirovogradskaya-13a": {
 "date": "2026-11-14",
 "note": "Официальный материал сети подтверждает филиал и детскую программу, но указывает другой телефон.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://static.uryuk.me/5ee7e18bb316a.pdf",
 "https://uryk.ru"
@@ -11253,8 +11272,7 @@
 "cafe-village-balashikha": {
 "date": "2026-11-14",
 "note": "Работа заведения подтверждена указанным источником; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://village-rest.ru/"
 ],
@@ -11378,8 +11396,7 @@
 "cafe-vse-len-vdnh": {
 "date": "2026-11-13",
 "note": "Проверено по официальному сайту; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://vselen-vdnh.ru/news/"
 ],
@@ -11551,11 +11568,9 @@
 }
 },
 "cafe-yakitoriya-pervomayskaya": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "Официальная страница детских мероприятий указывает анимацию по пятницам, субботам и воскресеньям с 13:00 до 18:00, а не только сб–вс 14:00–18:00.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: kidsroom",
 "sources": [
 "https://yakitoriya.ru/restaurants/kids",
 "https://yakitoriya.ru/restaurants/pervomajskaya"
@@ -11776,8 +11791,7 @@
 "cafe-zdraste-ochakovskoe-5": {
 "date": "2026-11-14",
 "note": "Официальная страница сети подтверждает действующий филиал по этому адресу.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://zdraste.ru/locations/"
 ],
@@ -12020,8 +12034,7 @@
 "cdm-observation": {
 "date": "2026-11-13",
 "note": "Карточка подтверждена первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://audioguide.cdm-moscow.ru/smotrovaya_ploshadka"
 ],
@@ -12089,7 +12102,6 @@
 "wrong": {}
 },
 "chaika-pool": {
-"applied": "2026-11-14",
 "date": "2026-11-14",
 "note": "Карточка проверена по официальному сайту места.",
 "resolved": false,
@@ -12099,6 +12111,13 @@
 ],
 "status": "works",
 "wrong": {
+"age": {
+"source": "https://chayka-sport.ru/cards",
+"value": [
+3,
+17
+]
+},
 "price": {
 "source": "https://chayka-sport.ru/cards",
 "value": 850
@@ -12132,9 +12151,21 @@
 ],
 "status": "works",
 "wrong": {
+"how": {
+"source": "https://fclub-champion.ru/",
+"value": "Ориентир: манеж РФЛ «Арена»"
+},
+"phone": {
+"source": "https://fclub-champion.ru/",
+"value": "+7 (916) 307-89-10"
+},
 "price": {
 "source": "https://fclub-champion.ru/",
 "value": 4500
+},
+"url": {
+"source": "https://fclub-champion.ru/",
+"value": "https://fclub-champion.ru/"
 }
 }
 },
@@ -12172,6 +12203,29 @@
 "note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
 "resolved": true,
 "result": "применено автоматически (GPT со ссылкой)",
+"sources": [
+"https://chempionov.ru/childschool/",
+"https://chempionov.ru/contact/"
+],
+"status": "works",
+"wrong": {
+"age": {
+"source": "https://chempionov.ru/childschool/",
+"value": [
+4,
+18
+]
+},
+"hours": {
+"source": "https://chempionov.ru/childschool/",
+"value": "пн-пт 08:00-22:00; сб-вс 09:00-21:00"
+}
+}
+},
+"champion-tennis-novaya-doroga": {
+"date": "2026-11-14",
+"note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
+"resolved": false,
 "sources": [
 "https://chempionov.ru/childschool/",
 "https://chempionov.ru/contact/"
@@ -12258,8 +12312,7 @@
 "championika-taymyrskaya": {
 "date": "2026-11-13",
 "note": "Официальный источник подтверждает работу и указанные поля; остальные сведения не удалось независимо подтвердить.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://championika.ru/addr/object562.html"
 ],
@@ -12295,8 +12348,15 @@
 "value": [
 4,
 12
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"phone": {
+"source": "https://champacademy.ru/sambo-molodezhnaya",
+"value": "+7 (985) 988-96-70"
+},
+"url": {
+"source": "https://champacademy.ru/sambo-molodezhnaya",
+"value": "https://champacademy.ru/sambo-molodezhnaya"
 }
 }
 },
@@ -12389,8 +12449,7 @@
 "chekhov-lopasnya-museum": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.agoch.ru/activities/culture"
 ],
@@ -12405,8 +12464,7 @@
 "chekhov-matrix-cinema": {
 "date": "2026-11-14",
 "note": "Официальная страница сети подтверждает филиал в Чехове, этаж и телефон.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.matrix-cinema.ru/contacts"
 ],
@@ -12621,8 +12679,7 @@
 "chess-forsazh-orekhovo": {
 "date": "2026-11-14",
 "note": "Надёжного актуального первоисточника с данными именно этого филиала найти не удалось.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://50chess.ru/kluby/"
 ],
@@ -12640,8 +12697,7 @@
 "chess-korolevstvo-brateevo": {
 "date": "2026-11-14",
 "note": "Надёжного актуального первоисточника с данными именно этого филиала найти не удалось.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://chessarea.ru/"
 ],
@@ -12651,8 +12707,7 @@
 "chess-korolevstvo-donskoy": {
 "date": "2026-11-14",
 "note": "Надёжного актуального первоисточника с данными именно этого филиала найти не удалось.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://chessarea.ru/"
 ],
@@ -12694,8 +12749,7 @@
 "chess-krasnoznamensk": {
 "date": "2026-11-14",
 "note": "Надёжного актуального первоисточника с данными именно этого филиала найти не удалось.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://50chess.ru/kluby/"
 ],
@@ -12728,8 +12782,7 @@
 "chess-lider-odintsovo": {
 "date": "2026-11-14",
 "note": "Надёжного актуального первоисточника с данными именно этого филиала найти не удалось.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://50chess.ru/kluby/"
 ],
@@ -12747,8 +12800,7 @@
 "chess-olimp-kozhukhovo": {
 "date": "2026-11-14",
 "note": "Надёжного актуального первоисточника с данными именно этого филиала найти не удалось.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "http://davidovacenter.ru/"
 ],
@@ -12758,8 +12810,7 @@
 "chess-olimpik-mytishchi": {
 "date": "2026-11-14",
 "note": "Проверены официальные сайты и карточки организаций; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://50chess.ru/clubs/shahmatnyy-klub-olimpik/"
 ],
@@ -12826,8 +12877,7 @@
 "chess-znatok-nakhabino": {
 "date": "2026-11-14",
 "note": "Проверены официальные сайты и карточки организаций; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://yandex.tj/maps/org/intellektualny_klub_znatok/68054498093/"
 ],
@@ -12907,8 +12957,7 @@
 "chessmax-nora": {
 "date": "2026-11-14",
 "note": "Надёжного актуального первоисточника с данными именно этого филиала найти не удалось.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://chess-maximum.ru/moscow"
 ],
@@ -12966,8 +13015,11 @@
 "value": [
 0,
 8
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"how": {
+"source": "https://dns.dme.ru/airportguide/children/mother-and-child/",
+"value": "Вход: Терминал 2, вход № 5\nЭтаж: 1\nОриентир: стойка регистрации № 156"
 },
 "price": {
 "source": "https://dns.dme.ru/airportguide/children/mother-and-child/",
@@ -13131,8 +13183,7 @@
 "chg-botanica": {
 "date": "2026-11-13",
 "note": "Официальный сайт ТРЦ подтверждает две комнаты — на 1-м и 2-м этажах в зонах санузлов.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://botanicamall.ru/terms/komnata-materi-i-rebenka"
 ],
@@ -13328,8 +13379,7 @@
 "chg-lenta-domodedovo": {
 "date": "2026-11-13",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://lenta.com/allmarkets/"
 ],
@@ -13397,8 +13447,7 @@
 "chg-moscow-zoo": {
 "date": "2026-11-14",
 "note": "Место внутри работающего зоопарка; главный вход временно закрыт, действуют два других входа.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://moscowzoo.ru/visitors/routes"
 ],
@@ -13693,8 +13742,7 @@
 "chg-trc-kapitoliy-vernadskogo": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает ТЦ, адрес и режим; отдельная комната и её этаж не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.kapitoliy.ru/ru/malls/kapitoliy-vernadskogo/shopping"
 ],
@@ -13873,8 +13921,7 @@
 "chg-vdnh-north": {
 "date": "2026-11-13",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://vdnh.ru/orion/faq/"
 ],
@@ -14012,8 +14059,7 @@
 "chudo-chado-skobelevskaya": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает филиал и показывает занятия с одного года, поэтому возраст карточки исправлен.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://chudoclub.ru/%D0%B4%D0%BB%D1%8F-%D0%B4%D0%B5%D1%82%D0%B5%D0%B9-%D0%BE%D1%82-1-%D0%B4%D0%BE-3-%D0%BB%D0%B5%D1%82/"
 ],
@@ -14393,8 +14439,7 @@
 "cin-mega-bd": {
 "date": "2026-11-13",
 "note": "Официальная страница сети подтверждает работу кинотеатра, адрес и 1 этаж; вход № 8 не подтверждён.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://kinoteatr.ru/raspisanie-kinoteatrov/belaya-dacha/"
 ],
@@ -14673,8 +14718,7 @@
 "classic-ballet-andropova": {
 "date": "2026-11-14",
 "note": "Официальный сайт школы найден; сведения конкретного филиала не удалось надёжно извлечь, поэтому они unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://baletclassic.ru/"
 ],
@@ -14774,8 +14818,7 @@
 "climb-cska-leningradsky": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://cska.ru/objects/sports_schools/sportivnaya-shkola-po-skalolazaniyu110/"
 ],
@@ -14826,8 +14869,7 @@
 "climb-gran-ramenskoe": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://yandex.com/maps/org/gran/170847395487/"
 ],
@@ -15107,8 +15149,7 @@
 "cosmos": {
 "date": "2026-11-13",
 "note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://kosmo-museum.ru/contacts",
 "https://kosmo-museum.ru/static_pages/splanirovat-vizit"
@@ -15485,8 +15526,7 @@
 "dance-park-odintsovo": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://odi-jump.ru/"
 ],
@@ -15574,8 +15614,7 @@
 "daveks-tikhoretsky": {
 "date": "2026-11-14",
 "note": "Официальная страница филиала подтверждает работу, адрес и набор детей 4–17 лет.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://daveksfc.ru/shkola-futbola-v-lyublino"
 ],
@@ -15699,8 +15738,7 @@
 "delfin-pool-mytishchi-letnaya": {
 "date": "2026-11-13",
 "note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.brigantina-swim.ru/contacts/"
 ],
@@ -15761,7 +15799,6 @@
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: hours",
 "sources": [
 "https://xn--d1acsmafifm.xn--p1ai/obiekti/bassein"
 ],
@@ -15770,6 +15807,14 @@
 "hours": {
 "source": "https://xn--d1acsmafifm.xn--p1ai/obiekti/bassein",
 "value": "пн-пт 07:00-23:00, перерыв 13:00-14:00; сб 07:00-23:00; вс 08:00-23:00"
+},
+"phone": {
+"source": "https://xn--d1acsmafifm.xn--p1ai/obiekti/bassein",
+"value": "+7 (495) 120-51-20"
+},
+"url": {
+"source": "https://xn--d1acsmafifm.xn--p1ai/obiekti/bassein",
+"value": "https://xn--d1acsmafifm.xn--p1ai/"
 }
 }
 },
@@ -16024,8 +16069,7 @@
 "dinamo-center-petrovka": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает комплекс, но карточка ошибочно описывает секции единоборств: актуальный сайт посвящён теннису.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://dynamo-center.ru/",
 "https://dynamo-center.ru/kontakty"
@@ -16098,15 +16142,26 @@
 "date": "2026-11-14",
 "note": "Карточка неверно называет и размещает объект: официальный Зоосад «Дивный» находится в Падиково, а не в Нахабино.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: hours",
 "sources": [
 "https://www.kskdivniy.ru/zoosad/rezhim-raboty-i-kontakty/"
 ],
 "status": "works",
 "wrong": {
+"address": {
+"source": "https://www.kskdivniy.ru/zoosad/rezhim-raboty-i-kontakty/",
+"value": "муниципальный округ Истра, д. Падиково, ул. Конная, КСК «Дивный»"
+},
 "hours": {
 "source": "https://www.kskdivniy.ru/zoosad/rezhim-raboty-i-kontakty/",
 "value": "вт-вс 11:00-19:00; перерыв 14:00-15:00; пн выходной"
+},
+"phone": {
+"source": "https://www.kskdivniy.ru/zoosad/rezhim-raboty-i-kontakty/",
+"value": "+7 (929) 911-23-29"
+},
+"url": {
+"source": "https://www.kskdivniy.ru/zoosad/rezhim-raboty-i-kontakty/",
+"value": "https://www.kskdivniy.ru/zoosad/"
 }
 }
 },
@@ -16299,8 +16354,7 @@
 "dmitrov-kropotkin-house": {
 "date": "2026-11-13",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.culture.ru/institutes/22140/dom-petra-alekseevicha-kropotkina"
 ],
@@ -16352,8 +16406,7 @@
 "dmsh-98-kronshtadtsky": {
 "date": "2026-11-13",
 "note": "Государственный портал подтверждает действующую школу и адрес, но указывает другой телефон.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://98.music.mos.ru",
 "https://www.culture.ru/institutes/37978/detskaya-muzykalnaya-shkola-98"
@@ -16468,8 +16521,7 @@
 "dom-gimnastiki-kolskaya": {
 "date": "2026-11-13",
 "note": "Официальный сайт сейчас указывает другой адрес студии.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://dom-gimnastiki.ru/"
 ],
@@ -16520,8 +16572,7 @@
 "domodedovo-batutti": {
 "date": "2026-11-14",
 "note": "Карточка проверена по официальному сайту места.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://batutti.ru/"
 ],
@@ -16816,8 +16867,7 @@
 "dulevo-porcelain": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://dfz.ru/museum/"
 ],
@@ -16852,8 +16902,7 @@
 "durov": {
 "date": "2026-11-13",
 "note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.ugolokdurova.ru/contacts/"
 ],
@@ -16868,8 +16917,7 @@
 "durova": {
 "date": "2026-11-13",
 "note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.teatrium.ru/entreprise/contacts/"
 ],
@@ -17137,8 +17185,7 @@
 "egc-armada-kirovogradskaya": {
 "date": "2026-11-13",
 "note": "Статус подтверждён актуальным источником; остальные непроверенные поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.europegym.ru/",
 "https://www.europegym.ru/contacts/"
@@ -17162,8 +17209,7 @@
 "egc-kashirskaya-plaza": {
 "date": "2026-11-13",
 "note": "Официальная страница называет филиал «Орехово» и подробно описывает парковку ТЦ.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.europegym.ru/centers/orehovo.html",
 "https://www.europegym.ru/llm-info/"
@@ -17255,8 +17301,7 @@
 "egc-loko-sport": {
 "date": "2026-11-13",
 "note": "Официальная страница подробно подтверждает проезд, этаж и условия парковки.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.europegym.ru/centers/loko.html"
 ],
@@ -17382,8 +17427,7 @@
 "egc-troparevo-leninsky": {
 "date": "2026-11-13",
 "note": "Официальная страница филиала указывает занятия с 1 года, общий телефон сети и условия подземной парковки.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://europegym.ru",
 "https://www.europegym.ru/centers/troparevo.html",
@@ -17430,8 +17474,7 @@
 "egc-zum": {
 "date": "2026-11-13",
 "note": "Официальная страница называет филиал «ЗИЛ», указывает единый телефон сети, занятия с 1 года и подземный паркинг.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.europegym.ru/centers/zil.html"
 ],
@@ -17646,8 +17689,7 @@
 "elektrostal-sovremennik": {
 "date": "2026-11-13",
 "note": "Официальный первоисточник подтверждает, что место работает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.culture.ru/institutes/59257/kinocentr-sovremennik"
 ],
@@ -18159,8 +18201,7 @@
 "fd-solntsevo-bogdanova": {
 "date": "2026-11-14",
 "note": "Официальный сайт сети FD найден; актуальная страница отделения на Богданова не обнаружена.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://fitnessdeti.ru/"
 ],
@@ -18183,8 +18224,7 @@
 "fd-tushino-latsisa": {
 "date": "2026-11-14",
 "note": "Справочная карточка подтверждает филиал; официальный сайт в доступных результатах не найден.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://orgzz.ru/msk/co/fitness_deti/1464802"
 ],
@@ -18559,8 +18599,7 @@
 "fk-led-khimki": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://na-ldu.ru/",
 "https://na-ldu.ru/trainings/timetable-prices/khimki.html"
@@ -18618,17 +18657,22 @@
 }
 },
 "fk-led-zheleznodorozhny": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "На странице филиала опубликованы актуальные расписание и цены; 10:00-21:00 не является расписанием школы.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: hours",
 "sources": [
 "https://na-ldu.ru/",
 "https://na-ldu.ru/trainings/timetable-prices/balashikha-pionerskaya.html"
 ],
 "status": "works",
 "wrong": {
+"age": {
+"source": "https://na-ldu.ru/",
+"value": [
+3.5,
+17
+]
+},
 "hours": {
 "source": "https://na-ldu.ru/trainings/timetable-prices/balashikha-pionerskaya.html",
 "value": "вт,чт 17:45-20:00; сб 18:00-20:15"
@@ -18655,8 +18699,7 @@
 "fk-ledyanye-krylya-ostafyevskaya": {
 "date": "2026-11-13",
 "note": "Официальный первоисточник подтверждает, что место работает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://icewings.ru/"
 ],
@@ -18678,8 +18721,7 @@
 "fk-magical-ice-nemchinovka": {
 "date": "2026-11-13",
 "note": "Карточка подтверждена официальным источником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://magical-ice.ru/"
 ],
@@ -18742,8 +18784,7 @@
 "fk-volosozhar-sokolniki": {
 "date": "2026-11-13",
 "note": "Карточка подтверждена первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://volosozhar.ru/figurnoe-katanie-i-tancy-na-ldu-obuchenie-dlya-detej"
 ],
@@ -18857,8 +18898,7 @@
 "flash-fencing-istra": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает филиал и уточняет левое крыло; сведения о парковке не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://fcflash.ru/",
 "https://fcflash.ru/istra"
@@ -18922,8 +18962,7 @@
 "flier-music-museum-oz": {
 "date": "2026-11-14",
 "note": "Карточка федерального портала Культура.РФ подтверждает музей при школе искусств.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.culture.ru/institutes/42373/muzei-istorii-muzykalnykh-tradicii-g-orekhovo-zuevo"
 ],
@@ -19008,11 +19047,9 @@
 "wrong": {}
 },
 "fok-nakhabino": {
-"applied": "2026-11-14",
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает действующий бассейн; минимальный возраст и верхняя граница детских групп в карточке неверны.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://foknahabino.ru/",
 "https://foknahabino.ru/bassejn",
@@ -19026,8 +19063,7 @@
 "value": [
 7,
 16
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
 }
 }
 },
@@ -19058,6 +19094,14 @@
 "football-lab-novokuznetskaya": {
 "date": "2026-11-14",
 "note": "Надёжный первоисточник именно этого филиала не найден.",
+"resolved": false,
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
+"football-lab-pokhodny": {
+"date": "2026-11-14",
+"note": "Актуальность подтверждена официальным сайтом; остальные данные филиала надёжно не подтверждены.",
 "resolved": false,
 "sources": [],
 "status": "not_found",
@@ -19106,8 +19150,7 @@
 "fort-boyard-borisovo": {
 "date": "2026-11-14",
 "note": "Официальная страница подтверждает площадку в ТРЦ «Ключевой» и ежедневную работу.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://fbgroups.ru/moscow/"
 ],
@@ -19150,8 +19193,7 @@
 "fort-boyard-mytishchi": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://eventarea.ru/fort"
 ],
@@ -19186,8 +19228,7 @@
 "fort-boyard-tushinskaya": {
 "date": "2026-11-13",
 "note": "Официальный первоисточник подтверждает, что место работает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://fort-bojard-pochtovaja-ulitsa.clients.site/"
 ],
@@ -19319,8 +19360,7 @@
 "french-kiss-factory-tour": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://frenchkiss-events.ru/kak-dobratsya/"
 ],
@@ -19493,7 +19533,6 @@
 "date": "2026-11-14",
 "note": "Официальная страница подтверждает действующий квест, адрес, телефон и цену от 7000 ₽ за команду; подъезд отдельно не подтверждён текстом страницы.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://atmo-kids.ru/quests/laboratoryz"
 ],
@@ -19538,16 +19577,14 @@
 "value": [
 12,
 17
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
 }
 }
 },
 "fun-dali-picasso-basmannaya": {
 "date": "2026-11-13",
 "note": "Официальная страница подтверждает работу, адрес и режим; этаж первоисточником не подтверждён.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://iskusstvo.org/proekty-fonda-iskusstvo-natsiy/vystavka-dali-i-pikasso/"
 ],
@@ -19578,8 +19615,7 @@
 "fun-dzhumandzhi-filion": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает филиал, но режим работы карточки завышен на два часа.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://jumanji-moscow.ru/nug/"
 ],
@@ -19650,8 +19686,15 @@
 "value": [
 6,
 17
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"phone": {
+"source": "https://dutroitsk.ru/museum/",
+"value": "+7 (925) 172-41-81"
+},
+"url": {
+"source": "https://dutroitsk.ru/museum/",
+"value": "https://dutroitsk.ru/museum/"
 }
 }
 },
@@ -19666,8 +19709,7 @@
 "fun-gmii-pushkin-main": {
 "date": "2026-11-14",
 "note": "Официальная страница подтверждает работу; часы в карточке устарели.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://pushkinmuseum.art/",
 "https://www.pushkinmuseum.art/museum/buildings/main/?lang=ru"
@@ -19793,11 +19835,9 @@
 }
 },
 "fun-lucky-lama-istra": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://lucky-llama.ru/",
 "https://lucky-llama.ru/istra"
@@ -19813,8 +19853,7 @@
 "fun-milyutinsky-sad": {
 "date": "2026-11-13",
 "note": "Официальный документ Москвы указывает адрес Покровский бульвар, 10; остальные поля не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.mos.ru/upload/documents/files/5927/AktGikeRazdelOSOKNRTSgMoskvaBTryohsvyatitelskiiperd3KTBEpdfRazdelOSOKNRTSgMoskvaBTryohsvyatitelskiiperd3KTBE.pdf"
 ],
@@ -19861,8 +19900,7 @@
 "fun-muzey-lozopleteniya-ruza": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://welcome.mosreg.ru/museums/muzej-lozopletenia-v-fabricnom-kvartale"
 ],
@@ -19932,8 +19970,7 @@
 "fun-traektoriya-vzleta-mai": {
 "date": "2026-11-13",
 "note": "Карточка подтверждена первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://traektoria.education/birthday/",
 "https://traektoria.education/courses/lego-prostye-mekhanizmy/"
@@ -20036,8 +20073,7 @@
 "funzone-riviera": {
 "date": "2026-11-14",
 "note": "Карточка проверена по официальному сайту места.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://funzone.ru/"
 ],
@@ -20139,8 +20175,7 @@
 "garmoniya-lytkarino": {
 "date": "2026-11-13",
 "note": "Официальная страница найдена; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://црл-гармония.рф/"
 ],
@@ -20334,8 +20369,7 @@
 "glukhovsky-park-noginsk": {
 "date": "2026-11-13",
 "note": "Официальный первоисточник подтверждает, что место работает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://parkmo.ru/kontakty-parkov/"
 ],
@@ -20388,8 +20422,7 @@
 "go-drums-syromyatnichesky": {
 "date": "2026-11-13",
 "note": "Карточка подтверждена официальным сайтом.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.godrums.ru/"
 ],
@@ -20467,24 +20500,37 @@
 "wrong": {}
 },
 "golf-mcc-kids": {
-"applied": "2026-11-14",
 "date": "2026-11-14",
 "note": "Официальная страница подтверждает детскую академию и групповые занятия; прежний возраст 5+ и цена не подтверждены.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://moscowcountryclub.ru/recreation/golf/",
 "https://www.mccgolf.ru/news/moscow-country-club-obyavlyaet-nabor-detey-v-detskuyu-akademiyu-golfa/"
 ],
 "status": "works",
 "wrong": {
+"address": {
+"source": "https://moscowcountryclub.ru/recreation/golf/",
+"value": "Московская область, г.о. Красногорск, пгт Нахабино, ул. Международная, 1А"
+},
 "age": {
 "source": "https://www.mccgolf.ru/news/moscow-country-club-obyavlyaet-nabor-detey-v-detskuyu-akademiyu-golfa/",
 "value": [
 7,
 17
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"hours": {
+"source": "https://moscowcountryclub.ru/recreation/golf/",
+"value": "ежедневно 09:00-18:00"
+},
+"phone": {
+"source": "https://moscowcountryclub.ru/recreation/golf/",
+"value": "+7 (495) 626-59-10"
+},
+"url": {
+"source": "https://moscowcountryclub.ru/recreation/golf/",
+"value": "https://moscowcountryclub.ru/recreation/golf/"
 }
 }
 },
@@ -21186,8 +21232,7 @@
 "gymnastic-fabritsiusa": {
 "date": "2026-11-13",
 "note": "Официальный сайт указывает возраст с 1,5 года, поэтому целочисленное значение 1 в карточке неточно.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://gymnastic.pro/"
 ],
@@ -21234,8 +21279,7 @@
 "gymstar-klenovy": {
 "date": "2026-11-14",
 "note": "Актуальность подтверждена официальным сайтом; остальные данные филиала надёжно не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://gym-star.ru/"
 ],
@@ -21485,6 +21529,14 @@
 ],
 "status": "works",
 "wrong": {
+"hours": {
+"source": "https://montrealbutovo.ru/kontakty",
+"value": "ежедневно 06:00-00:00"
+},
+"phone": {
+"source": "https://montrealbutovo.ru/kontakty",
+"value": "+7 (495) 796-46-08"
+},
 "price": {
 "source": "https://montrealbutovo.ru/hockeyclub",
 "value": 12000
@@ -21687,8 +21739,7 @@
 "hockey-star-starostina": {
 "date": "2026-11-13",
 "note": "Остальные сведения не удалось надёжно подтвердить по первоисточнику.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://hockey-star.ru/",
 "https://www.hockey-star.ru/"
@@ -21926,8 +21977,7 @@
 "husky-land-skazka": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://parkskazka.com/places/husky/"
 ],
@@ -21967,8 +22017,7 @@
 "ibasket-babushkinskaya": {
 "date": "2026-11-14",
 "note": "Адрес из карточки отсутствует в актуальном официальном перечне залов iBasket.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://i-basket.ru/adresa"
 ],
@@ -21986,8 +22035,7 @@
 "ibasket-bataysky": {
 "date": "2026-11-14",
 "note": "Адрес из карточки отсутствует в актуальном официальном перечне залов iBasket.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://i-basket.ru/adresa"
 ],
@@ -21997,8 +22045,7 @@
 "ibasket-butovo": {
 "date": "2026-11-14",
 "note": "Адрес из карточки отсутствует в актуальном официальном перечне залов iBasket.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://i-basket.ru/adresa"
 ],
@@ -22033,8 +22080,7 @@
 "ibasket-kashirskoe-116": {
 "date": "2026-11-13",
 "note": "Официальная страница подтверждает, что место работает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://i-basket.ru/adresa",
 "https://i-basket.ru/domodedovskaya"
@@ -22076,8 +22122,7 @@
 "ibasket-koshkina": {
 "date": "2026-11-13",
 "note": "Официальная страница подтверждает, что место работает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://i-basket.ru/adresa",
 "https://i-basket.ru/kantemirovskaya"
@@ -22125,8 +22170,7 @@
 "ibasket-orshanskaya": {
 "date": "2026-11-14",
 "note": "Адрес из карточки отсутствует в актуальном официальном перечне залов iBasket.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://i-basket.ru/adresa"
 ],
@@ -22144,8 +22188,7 @@
 "ibasket-podolsk": {
 "date": "2026-11-14",
 "note": "Адрес из карточки отсутствует в актуальном официальном перечне залов iBasket.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://i-basket.ru/adresa"
 ],
@@ -22155,8 +22198,7 @@
 "ibasket-strogino": {
 "date": "2026-11-14",
 "note": "Адрес из карточки отсутствует в актуальном официальном перечне залов iBasket.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://i-basket.ru/adresa"
 ],
@@ -22701,8 +22743,7 @@
 "inside-pyatnitskoe": {
 "date": "2026-11-13",
 "note": "Официальный источник не дал надёжно проверить остальные поля.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://inhor.ru/"
 ],
@@ -22746,8 +22787,7 @@
 "intellect-center-rimskogo-korsakova": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://intellect.center/"
 ],
@@ -22856,8 +22896,7 @@
 "iq-logo-volzhsky": {
 "date": "2026-11-13",
 "note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://iqlogo.ru/"
 ],
@@ -22992,8 +23031,7 @@
 "iq007-nagatinskaya-56a": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает филиал; часы, цена и вход не найдены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://iq007-nzm.ru/"
 ],
@@ -23011,8 +23049,7 @@
 "iq007-shvernika": {
 "date": "2026-11-13",
 "note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://schooliq007.ru/"
 ],
@@ -23064,8 +23101,7 @@
 "irbis-myakinino": {
 "date": "2026-11-13",
 "note": "Официальный первоисточник подтверждает, что место работает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://irbis-studio.ru/9-12-let/"
 ],
@@ -23265,8 +23301,7 @@
 "ivhockey-morozovo": {
 "date": "2026-11-14",
 "note": "Справочная карточка подтверждает школу; официальный источник IVhockey не найден.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.bebeshka.info/moskva/ivhockey-955194/"
 ],
@@ -23553,8 +23588,7 @@
 "joki-joya-kosino": {
 "date": "2026-11-14",
 "note": "Карточка проверена по официальному сайту места.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://joki-joya.ru/map/"
 ],
@@ -23650,7 +23684,6 @@
 }
 },
 "joki-joya-mozaika": {
-"applied": "2026-11-14",
 "date": "2026-11-14",
 "note": "Карточка проверена по официальному сайту места.",
 "resolved": false,
@@ -23660,6 +23693,13 @@
 ],
 "status": "works",
 "wrong": {
+"age": {
+"source": "https://joki-joya.ru/park/mozaika/",
+"value": [
+0,
+17
+]
+},
 "price": {
 "source": "https://joki-joya.ru/park/mozaika/",
 "value": 1590
@@ -23669,8 +23709,7 @@
 "joki-joya-oblaka": {
 "date": "2026-11-14",
 "note": "Карточка проверена по официальному сайту места.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://joki-joya.ru/park/oblaka/"
 ],
@@ -23823,8 +23862,7 @@
 "judo-olympic-village-80": {
 "date": "2026-11-14",
 "note": "Официальный сайт спорткомплекса подтверждает действующее направление дзюдо и адрес.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://skod80.mossport.ru/booking_service/",
 "https://skod80.mossport.ru/sports/dzyudo-80"
@@ -24054,11 +24092,9 @@
 "wrong": {}
 },
 "kalachnaya": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "Официальный источник не дал надёжно проверить остальные поля.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://kolomnakalach.ru/",
 "https://kolomnakalach.ru/blog/2026/05/11/анонс-ночь-музеев-2026/",
@@ -24071,8 +24107,11 @@
 "value": [
 5,
 17
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"how": {
+"source": "https://kolomnakalach.ru/blog/2026/05/11/анонс-ночь-музеев-2026/",
+"value": "Вход: со стороны Пятницких ворот"
 }
 }
 },
@@ -24110,7 +24149,6 @@
 "date": "2026-11-13",
 "note": "Официальный тариф: детский билет 7–13 лет — 700 ₽ туда-обратно; взрослый 14+ — 1000 ₽.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age, price",
 "sources": [
 "https://srkvg.ru/kanatnaya-doroga/tarify/"
 ],
@@ -24121,8 +24159,7 @@
 "value": [
 7,
 17
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
 },
 "price": {
 "source": "https://srkvg.ru/kanatnaya-doroga/tarify/",
@@ -24290,8 +24327,7 @@
 "karting-adm-myachkovo": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает контакты и текущий график картинга.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://admraceway.ru/contactinformation/"
 ],
@@ -24500,8 +24536,7 @@
 "karting-nagornoe": {
 "date": "2026-11-14",
 "note": "Яндекс Карты подтверждают действующий картинг; полный график по дням не показан.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://yandex.com/maps/org/karting/131372966959/"
 ],
@@ -24590,8 +24625,7 @@
 "karting-rus-molokovo": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://welcome.mosreg.ru/ideas/karting-rus"
 ],
@@ -24620,6 +24654,17 @@
 ],
 "status": "works",
 "wrong": {
+"age": {
+"source": "https://dreamisland.ru/rules/karting_attractions/karts",
+"value": [
+6,
+17
+]
+},
+"phone": {
+"source": "https://dreamisland.ru/objects/karting",
+"value": "+7 (495) 221-11-12"
+},
 "price": {
 "source": "https://dreamisland.ru/objects/karting",
 "value": 1700
@@ -24820,8 +24865,7 @@
 "kauri-kommunarka": {
 "date": "2026-11-13",
 "note": "Проверено по официальному источнику.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://kauri.pro/"
 ],
@@ -24896,8 +24940,7 @@
 "khimki-dk-rodina": {
 "date": "2026-11-14",
 "note": "Официальный сайт ДК подтверждает адрес, режим и телефон администратора.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://xn--80ahbompep.xn--p1ai/contacts"
 ],
@@ -25031,11 +25074,9 @@
 }
 },
 "khrustalny-konek-luzhniki": {
-"applied": "2026-11-14",
 "date": "2026-11-14",
 "note": "Актуальность подтверждена официальным сайтом; остальные данные филиала надёжно не подтверждены.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://www.xkonek.ru/"
 ],
@@ -25046,8 +25087,11 @@
 "value": [
 4,
 17
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"url": {
+"source": "https://www.xkonek.ru/",
+"value": "https://www.xkonek.ru/"
 }
 }
 },
@@ -25165,8 +25209,7 @@
 "kiberone-lobachevskogo": {
 "date": "2026-11-13",
 "note": "Официальная страница филиалов подтверждает адрес и исправленный режим работы.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://moscowob.kiber-one.com/o-kibershkole/lokacii/"
 ],
@@ -25291,8 +25334,7 @@
 "kidburg-skazki": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает работу театра, но адрес в карточке устарел: дом 18 вместо 16, корп. 2.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://theatre.kidburg.ru/"
 ],
@@ -25443,8 +25485,7 @@
 "kinglish-rossoshanskaya": {
 "date": "2026-11-13",
 "note": "Подтверждены только сведения, прямо опубликованные на официальном сайте; точка и остальные поля не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://kinglishschool.ru",
 "https://kinglishschool.ru/"
@@ -25482,17 +25523,19 @@
 }
 },
 "kinorebenok-khodynsky": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "Карточка подтверждена официальным сайтом.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://kinorebenok.ru/",
 "https://kinorebenok.ru/o-kompanii"
 ],
 "status": "works",
 "wrong": {
+"hours": {
+"source": "https://kinorebenok.ru/o-kompanii",
+"value": "ежедневно 10:00-21:00"
+},
 "price": {
 "source": "https://kinorebenok.ru/",
 "value": 14000
@@ -25836,7 +25879,6 @@
 "date": "2026-11-14",
 "note": "Официальный сайт музейного центра подтверждает адрес, режим и телефон.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: hours",
 "sources": [
 "https://klin-museum.ru/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B/"
 ],
@@ -25845,6 +25887,14 @@
 "hours": {
 "source": "https://klin-museum.ru/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B/",
 "value": "ср-вс 09:00-18:00; пн-вт выходной; перерыв 13:00-14:00"
+},
+"phone": {
+"source": "https://klin-museum.ru/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B/",
+"value": "+7 (49624) 2-81-69"
+},
+"url": {
+"source": "https://klin-museum.ru/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B/",
+"value": "https://klin-museum.ru/"
 }
 }
 },
@@ -26328,16 +26378,31 @@
 "date": "2026-11-14",
 "note": "Фабрика и экскурсионные программы подтверждены официальным путеводителем Московской области.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://welcome.mosreg.ru/ideas/risovanie-sokoladom",
 "https://www.confael.ru/"
 ],
 "status": "works",
 "wrong": {
+"address": {
+"source": "https://welcome.mosreg.ru/ideas/risovanie-sokoladom",
+"value": "Московская обл., г.о. Красногорск, ул. Коммунальный квартал, 3"
+},
+"hours": {
+"source": "https://welcome.mosreg.ru/ideas/risovanie-sokoladom",
+"value": "ежедневно 09:00-18:00"
+},
+"phone": {
+"source": "https://welcome.mosreg.ru/ideas/risovanie-sokoladom",
+"value": "+7 (916) 343-92-22"
+},
 "price": {
 "source": "https://welcome.mosreg.ru/ideas/risovanie-sokoladom",
 "value": "экскурсия «Шоколадный мастер» — 2680 ₽; мастер-класс «Шоколадный художник» — 2100 ₽; шоколадное рисование — 600 ₽"
+},
+"url": {
+"source": "https://www.confael.ru/",
+"value": "https://www.confael.ru/"
 }
 }
 },
@@ -26472,8 +26537,7 @@
 "korolev-usadba-kostino": {
 "date": "2026-11-14",
 "note": "Региональный туристический портал подтверждает действующий музей, адрес, режим, цену и телефон.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://welcome.mosreg.ru/places/all/cernaa-sapka-lenina-i-istoria-bolsevskoj-kommuny"
 ],
@@ -26544,8 +26608,7 @@
 "kosmo-kids-novocheremushkinskaya": {
 "date": "2026-11-13",
 "note": "Официальный источник подтверждает, что место работает; остальные поля не удалось надёжно проверить.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://akademicheskaya.kosmo-kids.ru/"
 ],
@@ -26671,8 +26734,7 @@
 "krabibu-ramenskoe": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://krabyboo.ru/"
 ],
@@ -27249,8 +27311,7 @@
 "ladushki-biryulevskaya": {
 "date": "2026-11-13",
 "note": "Карточка подтверждена первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://ladushky.com/",
 "https://ladushky.com/offis/kontakty/"
@@ -27510,8 +27571,7 @@
 "lemans-karting": {
 "date": "2026-11-13",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://lemanskarting.ru/na-2-oy-magistralnoy/contacts/"
 ],
@@ -28148,8 +28208,7 @@
 "liga-robotov-profsoyuznaya-27": {
 "date": "2026-11-13",
 "note": "Официальный источник не дал надёжно проверить остальные поля.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://cheremushki.msk.ligarobotov.ru/"
 ],
@@ -28284,8 +28343,7 @@
 "lis-club-skobelevskaya": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://lis-club.ru/"
 ],
@@ -28420,11 +28478,9 @@
 }
 },
 "logocentr-umnitsa-izmaylovo": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "Карточка подтверждена официальным сайтом.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://logo-umnitsa.ru/"
 ],
@@ -28435,8 +28491,15 @@
 "value": [
 0.58,
 12
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"hours": {
+"source": "https://logo-umnitsa.ru/",
+"value": "пн-пт 09:00-21:00; сб-вс 09:00-18:00"
+},
+"phone": {
+"source": "https://logo-umnitsa.ru/",
+"value": "+7 (964) 779-97-44"
 }
 }
 },
@@ -28530,23 +28593,24 @@
 }
 },
 "losiny-biostation": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "Официальный источник подтверждает работу, но опубликованные графики различаются; указан актуальный график страницы комплекса.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: point",
 "sources": [
 "https://losinyiostrov.ru/ekotsentry/losinaya-biostantsiya/ob-ekokomplekse/"
 ],
 "status": "works",
 "wrong": {
+"hours": {
+"source": "https://losinyiostrov.ru/ekotsentry/losinaya-biostantsiya/ob-ekokomplekse/",
+"value": "пн выходной; вт-вс 10:00-16:00"
+},
 "point": {
 "source": "https://losinyiostrov.ru/ekotsentry/losinaya-biostantsiya/ob-ekokomplekse/",
 "value": [
 55.882019,
 37.771515
-],
-"why": "дальше 500 м — возможно другой филиал"
+]
 }
 }
 },
@@ -28579,8 +28643,7 @@
 "love-dance-rudneva": {
 "date": "2026-11-13",
 "note": "Карточка подтверждена первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://lovedancestudio.ru/"
 ],
@@ -28646,8 +28709,7 @@
 "lt-arena-kiberport": {
 "date": "2026-11-13",
 "note": "Официальная страница найдена; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://lt-arena.ru/",
 "https://lt-arena.ru/contacts/cyberport",
@@ -28731,8 +28793,7 @@
 "lt-laserland": {
 "date": "2026-11-13",
 "note": "Официальный источник не дал надёжно проверить остальные поля.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://laser-land.ru/",
 "https://pay.laser-land.ru/"
@@ -29102,8 +29163,7 @@
 "mainstream-dance-kids": {
 "date": "2026-11-13",
 "note": "Официальный источник не дал надёжно проверить остальные поля.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.msdance.ru/"
 ],
@@ -29182,8 +29242,7 @@
 "malenkiy-plovets-mytishchi": {
 "date": "2026-11-13",
 "note": "Официальная страница подтверждает, что место работает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://mplovec.ru/filialyi/filial-myitishhi"
 ],
@@ -29259,8 +29318,7 @@
 "maly-theatre": {
 "date": "2026-11-13",
 "note": "Официальные правила указывают ежедневную работу кассы 10:00–20:00.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.maly.ru/",
 "https://www.maly.ru/address",
@@ -29716,8 +29774,7 @@
 "mba-trinta": {
 "date": "2026-11-13",
 "note": "Официальный первоисточник подтверждает, что место работает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://mba.mossport.ru/sport-center/trinta",
 "https://mba.mossport.ru/trinta/"
@@ -29926,8 +29983,7 @@
 "medynsky-pool": {
 "date": "2026-11-13",
 "note": "Проверено по официальному источнику.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://mso.mossport.ru/sport-center/medynsky"
 ],
@@ -30047,16 +30103,14 @@
 "value": [
 3,
 16
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
 }
 }
 },
 "mesh-khersonskaya": {
 "date": "2026-11-14",
 "note": "Официальный сайт учреждения подтверждает занятия и уточняет адрес: корпус 2, строение 1.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://mesh.mossport.ru/news/nabor-v-gruppy-ushu-detei-ot-4-kh-let/"
 ],
@@ -30146,6 +30200,10 @@
 "price": {
 "source": "https://meteorfootball.ru/teams/",
 "value": 6200
+},
+"url": {
+"source": "https://meteorfootball.ru/teams/",
+"value": "https://meteorfootball.ru/"
 }
 }
 },
@@ -30160,8 +30218,7 @@
 "meu-dam-rabochaya": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает филиал, адрес, детские и взрослые занятия кунг-фу и тайским боксом.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.kungfu-moskva.ru/"
 ],
@@ -30194,7 +30251,6 @@
 }
 },
 "miet-museum": {
-"applied": "2026-11-14",
 "date": "2026-11-14",
 "note": "Официальный сайт МИЭТ подтверждает музей и бесплатные экскурсии 12+ по предварительной регистрации; карточка ошибочно допускает возраст с рождения.",
 "resolved": false,
@@ -30210,20 +30266,26 @@
 "value": [
 12,
 17
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"phone": {
+"source": "https://old.miet.ru/structure/s/3455",
+"value": "+7 (499) 720-87-27"
 },
 "price": {
 "source": "https://old.miet.ru/news/167973",
 "value": 0
+},
+"url": {
+"source": "https://old.miet.ru/structure/s/3455",
+"value": "https://old.miet.ru/structure/s/3455"
 }
 }
 },
 "mighty-sharks-mitino": {
 "date": "2026-11-13",
 "note": "Действующая официальная страница подтверждает указанные поля; остальные данные на ней однозначно не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://mightysharks.ru/mitino"
 ],
@@ -30257,8 +30319,7 @@
 "minaeva-neuro-marfinskaya": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает адрес и часы, но указывает другой телефон.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://neuropsy-centr.ru/kontakty/"
 ],
@@ -30730,8 +30791,7 @@
 "moreon": {
 "date": "2026-11-13",
 "note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://more-on.ru/"
 ],
@@ -30746,8 +30806,7 @@
 "morepuziki-mozhayskoe": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает действующий бассейн и индивидуальный формат занятий.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://morepuziki.ru/"
 ],
@@ -30892,8 +30951,7 @@
 "value": [
 1,
 14
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
 }
 }
 },
@@ -31118,8 +31176,7 @@
 "moya-vselennaya-korolev": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.korolev-montessori.ru/",
 "https://www.korolev-montessori.ru/royalpines"
@@ -31237,11 +31294,9 @@
 "wrong": {}
 },
 "ms-moskvorechye-handball": {
-"applied": "2026-11-14",
 "date": "2026-11-14",
 "note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://handball.mossport.ru/"
 ],
@@ -31252,8 +31307,7 @@
 "value": [
 8,
 17
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
 }
 }
 },
@@ -31278,8 +31332,7 @@
 "ms-orienta-chess": {
 "date": "2026-11-13",
 "note": "Официальный источник подтверждает работу и указанные поля; остальные сведения не удалось независимо подтвердить.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://chess.mossport.ru/"
 ],
@@ -31481,6 +31534,22 @@
 "ms-zapad-krylatskie-kholmy": {
 "date": "2026-11-13",
 "note": "Не удалось найти актуальную официальную страницу именно этого филиала.",
+"resolved": false,
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
+"ms-yug-orekhovo": {
+"date": "2026-11-13",
+"note": "Надёжного первоисточника с данными именно этой точки найти не удалось.",
+"resolved": false,
+"sources": [],
+"status": "not_found",
+"wrong": {}
+},
+"ms-zapad-krylatskie-kholmy": {
+"date": "2026-11-13",
+"note": "Не удалось найти актуальную официальную страницу именно этого филиала.",
 "resolved": true,
 "result": "применено автоматически (GPT со ссылкой)",
 "sources": [],
@@ -31664,11 +31733,9 @@
 }
 },
 "murena-severny": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "Официальная страница подтверждает, что место работает.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://murenaswim.ru/kontakty",
 "https://www.murenaswim.ru/bassejny/tssp-severnyj"
@@ -32261,8 +32328,7 @@
 "neirokinezio-novocheremushkinskaya": {
 "date": "2026-11-13",
 "note": "Подтверждены только сведения, прямо опубликованные на официальном сайте; точка и остальные поля не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://2cnk.ru",
 "https://2cnk.ru/"
@@ -32349,8 +32415,7 @@
 "neokids-zhebrunova": {
 "date": "2026-11-13",
 "note": "Официальная страница контактов подтверждает филиал, адрес и телефон логопеда.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://neokids-centr.ru/contacts"
 ],
@@ -32416,8 +32481,7 @@
 "neurofitness-kievskaya": {
 "date": "2026-11-13",
 "note": "Официальный сайт доступен; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://neurofitness.ru/",
 "https://neurofitness.ru/contacts"
@@ -32549,8 +32613,7 @@
 "neyroklass-privolnaya": {
 "date": "2026-11-13",
 "note": "Официальный источник не дал надёжно проверить остальные поля.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://neuro-logo-motion.ru/"
 ],
@@ -33129,8 +33192,7 @@
 "olimpia-iska-nezhinskaya": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает клуб и филиал на Нежинской; точные контакты и режим филиала на доступной странице не опубликованы.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.isca-club.ru/fotogalereya/"
 ],
@@ -33305,8 +33367,7 @@
 "oro-dance-sharik": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает филиал; режим работы и цена в карточке требуют исправления.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://orostudio.ru/kids",
 "https://orostudio.ru/price"
@@ -33451,8 +33512,7 @@
 "ostrov-druzhby-ramenki": {
 "date": "2026-11-13",
 "note": "Официальная страница найдена; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://ostrovdruzhby.ru/",
 "https://ostrovdruzhby.ru/tpost/15sbkhmv21-nabiraem-gruppi-na-novii-uchebnii-god"
@@ -33561,9 +33621,25 @@
 ],
 "status": "works",
 "wrong": {
+"hours": {
+"source": "https://www.padel-a33.ru/",
+"value": "ежедневно 07:00-23:00"
+},
+"how": {
+"source": "https://www.padel-a33.ru/",
+"value": "Вход: заезд со стороны Трудовой улицы"
+},
+"phone": {
+"source": "https://www.padel-a33.ru/",
+"value": "+7 (977) 135-35-33"
+},
 "price": {
 "source": "https://www.padel-a33.ru/",
 "value": 2800
+},
+"url": {
+"source": "https://www.padel-a33.ru/",
+"value": "https://www.padel-a33.ru/"
 }
 }
 },
@@ -33717,8 +33793,7 @@
 "padel-mospadel-dmitrovskoe": {
 "date": "2026-11-14",
 "note": "Официальный сайт и Яндекс Карты подтверждают филиал; недельный график не извлечён.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://xn--80aidybmhp.xn--p1ai/",
 "https://yandex.com/maps/org/mospadel/95860755334/"
@@ -33761,8 +33836,7 @@
 "padel-pari-admiral-gribki": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://paripadel.ru/oferta-admiral/"
 ],
@@ -33777,8 +33851,7 @@
 "padel-pash-novokosino": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.fitmost.ru/studioinfo/15143/pash-padel-m-kosino"
 ],
@@ -33809,8 +33882,7 @@
 "padel-tayna-mytishchi": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://findsport.ru/playground/5799"
 ],
@@ -33829,8 +33901,7 @@
 "padel-technorockets-zelenograd": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://arenaplay.ru/technopolis/aptechnorockets"
 ],
@@ -33890,8 +33961,7 @@
 "padel-x4-arktika-vidnoe": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://x4padel.ru/moscow/vidnoe"
 ],
@@ -33930,6 +34000,10 @@
 ],
 "status": "works",
 "wrong": {
+"address": {
+"source": "https://www.kskdivniy.ru/museum/",
+"value": "Истринский г. о., д. Падиково, КСК «Дивный»"
+},
 "price": {
 "source": "https://www.kskdivniy.ru/museum/",
 "value": 0
@@ -34210,8 +34284,7 @@
 "pbk-cska-tekstilshchiki": {
 "date": "2026-11-13",
 "note": "Официальный источник подтверждает работу и указанные поля; остальные сведения не удалось независимо подтвердить.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://cskabasket.school/addr/"
 ],
@@ -34226,8 +34299,7 @@
 "peppi-myachkovsky": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://english4kids.pippienglish.ru/",
 "https://pippienglish.ru/"
@@ -34399,8 +34471,7 @@
 "piksel-podolsk": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://clubpixel.ru/podolsk1"
 ],
@@ -34446,8 +34517,7 @@
 "piranya-zarechye": {
 "date": "2026-11-13",
 "note": "Действующая официальная страница подтверждает указанные поля; остальные данные на ней однозначно не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://sc-piranha.ru/"
 ],
@@ -34462,8 +34532,7 @@
 "pirouette-chistoprudny": {
 "date": "2026-11-13",
 "note": "Официальная страница филиала содержит подробну�� схему прохода; зал находится на -1 этаже.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://piruet-msk.ru/",
 "https://piruet-msk.ru/khudozhestvennaya-gimnastika-metro-chistie-prudi"
@@ -34750,11 +34819,9 @@
 "wrong": {}
 },
 "plyvi-s-alisoy-pochtovaya": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "Карточка подтверждена официальным источником.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://aliceandbimbie.ru/oferta3"
 ],
@@ -34765,8 +34832,7 @@
 "value": [
 0,
 7
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
 }
 }
 },
@@ -34798,8 +34864,7 @@
 "podolsk-dk-oktyabr": {
 "date": "2026-11-13",
 "note": "Официальный первоисточник подтверждает, что место работает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.culture.ru/institutes/33056/dvorec-kultury-oktyabr-g-podolska"
 ],
@@ -34822,8 +34887,7 @@
 "podolsk-kpc-dubrovitsy": {
 "date": "2026-11-14",
 "note": "Официальный сайт учреждения подтверждает адрес, ежедневный режим и телефон.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://dubrovici.ru/documents/"
 ],
@@ -34935,8 +34999,7 @@
 "pogruzhenie-riviera": {
 "date": "2026-11-13",
 "note": "Официальная оферта указывает 3-й этаж, а не 2-й; на площадке есть игры 6+.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.pogruzhenye.ru",
 "https://www.pogruzhenye.ru/",
@@ -34986,8 +35049,7 @@
 "pokrovsky-chamber": {
 "date": "2026-11-14",
 "note": "Проверены первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.bolshoi.ru/",
 "https://www.mos.ru/upload/documents/files/4672/AktGIKE_Bolshoiteatr.pdf"
@@ -35216,8 +35278,7 @@
 "pool-malino-zelenograd": {
 "date": "2026-11-13",
 "note": "Проверено по официальному источнику.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://mso.mossport.ru/sport-center/malino"
 ],
@@ -35514,8 +35575,7 @@
 "pradar-pony": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает клуб, адрес, лошадей и пони; свободное развлекательное катание без записи не подтверждено.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://pradarclub.ru/upload/iblock/79c/Pradar_driving_directions.pdf",
 "https://www.pradarclub.ru/company/partners/luchanova-polina-borisovna/"
@@ -35539,8 +35599,7 @@
 "praktika-kids-kalanchevskaya": {
 "date": "2026-11-14",
 "note": "Филиал и детские занятия подтверждены карточкой филиала и официальным сайтом сети.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://praktika.fit/",
 "https://yandex.com/maps/org/praktika_kids/19706387893/"
@@ -35579,11 +35638,9 @@
 "wrong": {}
 },
 "princessa-gym-babaevskaya": {
-"applied": "2026-11-14",
 "date": "2026-11-14",
 "note": "Официальный сайт указывает сеть для девочек 3–9 лет и подтверждает телефон, но филиал на Бабаевской в доступном тексте не подтверждён.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://www.clubprintsessa.ru/"
 ],
@@ -35594,8 +35651,11 @@
 "value": [
 3,
 9
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"url": {
+"source": "https://www.clubprintsessa.ru/",
+"value": "https://www.clubprintsessa.ru/"
 }
 }
 },
@@ -35654,8 +35714,7 @@
 "proekt-luch-yasenevo": {
 "date": "2026-11-14",
 "note": "Работа места подтверждена актуальной страницей источника.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://xn--e1akdjegrj0b.xn--p1ai/"
 ],
@@ -35768,8 +35827,7 @@
 "prometey-sambo-pobedy": {
 "date": "2026-11-13",
 "note": "Действующая официальная страница подтверждает указанные поля; остальные данные на ней однозначно не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://sambo-zao.ru/"
 ],
@@ -35900,8 +35958,7 @@
 "ptitsa-schastya-varshavskoe": {
 "date": "2026-11-13",
 "note": "Подтверждены только сведения, прямо опубликованные на официальном сайте; точка и остальные поля не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://happiness-bird.ru",
 "https://happiness-bird.ru/contacts/",
@@ -36039,8 +36096,7 @@
 "put-boksera-krasnoproletarskaya": {
 "date": "2026-11-13",
 "note": "Телефон карточки отличается от актуального телефона на официальном сайте.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://put-boksera.ru/"
 ],
@@ -36100,8 +36156,7 @@
 "quest-hide-dark": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает филиал; карточка ошибочно указывает этаж -1 и не содержит второго телефона.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://strashnotemno.ru/",
 "https://www.strashnotemno.ru/msk/contacts",
@@ -36221,8 +36276,7 @@
 "raduga-climb-shcherbinka": {
 "date": "2026-11-14",
 "note": "Официальная страница подтверждает скалодром, адрес, первый этаж, парковку и телефон.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://src-raduga.ru/skalodrom"
 ],
@@ -36435,8 +36489,7 @@
 "razvivaysya-kolomna": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает филиал и уточняет вход, этаж и режим.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.rastudio.org/o-nas"
 ],
@@ -36669,8 +36722,7 @@
 "reutov-dk-mir": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает адрес, телефон и режим кассы; общий режим площадки не найден.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.dkreutov.ru/index.php/contacts"
 ],
@@ -36718,8 +36770,7 @@
 "rfhockey-fili": {
 "date": "2026-11-14",
 "note": "Официальный сайт школы работает, но этот филиал и его адрес на сайте не найдены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://rfhockey.ru/"
 ],
@@ -36729,8 +36780,7 @@
 "rfhockey-snezhkom": {
 "date": "2026-11-14",
 "note": "Официальный сайт школы работает, но этот филиал и его адрес на сайте не найдены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://rfhockey.ru/"
 ],
@@ -36854,8 +36904,7 @@
 "rink-babushkinsky-metelitsa": {
 "date": "2026-11-14",
 "note": "Сезонный каток подтверждён, но актуальный график и цены сезона 2026/27 не опубликованы в найденном первоисточнике.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.afisha.ru/msk/sportbuilding/metelica-54458/"
 ],
@@ -37018,8 +37067,7 @@
 "rink-kasatonov-korolev": {
 "date": "2026-11-13",
 "note": "",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.sportkorolev.ru/led"
 ],
@@ -37291,8 +37339,7 @@
 "rink-platinum-zelenograd": {
 "date": "2026-11-13",
 "note": "Официальный каталог подтверждает действующий ледовый центр и режим работы объекта.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://mso.mossport.ru/"
 ],
@@ -37324,8 +37371,7 @@
 "rink-snegir-arena-marushkino": {
 "date": "2026-11-13",
 "note": "Официальная страница подтверждает, что место работает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://arenasnegir.ru/contacts",
 "https://arenasnegir.ru/katok-arena-snegir"
@@ -37737,8 +37783,7 @@
 "ropes-krona-grebnevo": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://usadbagrebnevo.ru/novosti-usadby/verevochnyy-park-udivitelnoe-priklyuchenie/",
 "https://welcome.mosreg.ru/ideas/verevocnyj-park-krona"
@@ -37783,8 +37828,7 @@
 "ropes-vverkh-lyubertsy": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://citiprokat.ru/luberci"
 ],
@@ -37799,8 +37843,7 @@
 "rostok-melnikova": {
 "date": "2026-11-14",
 "note": "Работа места подтверждена актуальной страницей источника.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://yandex.com/maps/org/rostok/215429466255/"
 ],
@@ -38086,8 +38129,7 @@
 "rusvolley-paveletskaya": {
 "date": "2026-11-14",
 "note": "Проверены официальные сайты и карточки организаций; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://rusvolley.ru/orusvolley/"
 ],
@@ -38604,8 +38646,7 @@
 "schoolball-planernaya": {
 "date": "2026-11-13",
 "note": "Официальный первоисточник подтверждает, что место работает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://schoolball.ru/club_zhemchuzhina",
 "https://schoolball.ru/contacts"
@@ -38671,8 +38712,7 @@
 "schoolford-ratnaya": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://schoolford.ru/contacts/moskva-ratnaya-10"
 ],
@@ -38735,8 +38775,7 @@
 "sdyusshor-balashikha": {
 "date": "2026-11-14",
 "note": "Прежнее название СДЮСШОР «Балашиха» устарело: объект указан как стадион «Труд» СШОР «Метеор».",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://balashiha.ru/activities/sport"
 ],
@@ -38781,8 +38820,7 @@
 "seiken-shchapovo": {
 "date": "2026-11-14",
 "note": "Работа места подтверждена актуальной страницей источника.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://seiken.pro/o-klube.html"
 ],
@@ -39091,8 +39129,7 @@
 "severnoe-siyanie-skhodnenskaya": {
 "date": "2026-11-14",
 "note": "Актуальность подтверждена официальным сайтом; остальные данные филиала надёжно не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://ssice.ru/filialy"
 ],
@@ -39254,8 +39291,7 @@
 "shatura-museum": {
 "date": "2026-11-13",
 "note": "Официальный первоисточник подтверждает, что место работает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://shatura.ru/about/attractions"
 ],
@@ -39982,9 +40018,17 @@
 ],
 "status": "works",
 "wrong": {
+"phone": {
+"source": "https://yandex.com/maps/org/shkola_tennisa_smart_tennis/126132604340/",
+"value": "+7 (905) 560-80-62"
+},
 "price": {
 "source": "https://smart-tennis.moscow/locations/premier",
 "value": 1000
+},
+"url": {
+"source": "https://smart-tennis.moscow/locations/premier",
+"value": "https://smart-tennis.moscow/locations/premier"
 }
 }
 },
@@ -40028,8 +40072,7 @@
 "smekayka-skating-sokolniki": {
 "date": "2026-11-14",
 "note": "Актуальная страница организации указывает занятия на Большой Тихоновской, а не в ЛД «Сокольники»; подтверждён только минимальный возраст 4 года, поэтому диапазон оставлен unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://smekayka-skate.clients.site/"
 ],
@@ -40048,8 +40091,7 @@
 "smekayka-swim-olenya": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает организацию и телефон, но актуальные сведения именно о филиале на Большой Оленьей не найдены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.smekayka.ru/2009-07-04-13-16-08.html"
 ],
@@ -40210,8 +40252,7 @@
 "solntse-v-serdtse-skladochnaya": {
 "date": "2026-11-13",
 "note": "Официальная страница найдена; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://solisincordis.ru/"
 ],
@@ -40441,8 +40482,7 @@
 "sp-dom-remesel": {
 "date": "2026-11-14",
 "note": "Официальный сайт Лавры подтверждает работу, адрес, ориентир и телефон.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.stsl.ru/master-klassy/o-troitskom-dome-remesel/"
 ],
@@ -40733,8 +40773,7 @@
 "splash-obraztsova": {
 "date": "2026-11-14",
 "note": "Работа места подтверждена актуальной страницей источника.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://splash-school.com/bassejn-bejt-shvidler-obrazcova/"
 ],
@@ -40778,8 +40817,7 @@
 "sport-dance-sosensky": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает адрес, этаж, телефон, часы и бесплатную парковку рядом.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://sport-dance-kmk.ru/",
 "https://sport-dance-kmk.ru/cost"
@@ -40934,11 +40972,9 @@
 "wrong": {}
 },
 "squash-sport-lines-ivanteevskaya": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://slsquash.ru/",
 "https://slsquash.ru/gruppovye-zanyatiya/",
@@ -40946,6 +40982,14 @@
 ],
 "status": "works",
 "wrong": {
+"hours": {
+"source": "https://slsquash.ru/gruppovye-zanyatiya/",
+"value": "ежедневно 08:00-23:00"
+},
+"how": {
+"source": "https://slsquash.ru/skvosh-klub-klassa-a-sportivnye-linii/",
+"value": "Вход: справа от центрального входа, над дверью вывеска «Сквош-клуб «Спортивные линии»\nЭтаж: 4\nПарковка: бесплатная"
+},
 "price": {
 "source": "https://slsquash.ru/gruppovye-zanyatiya/",
 "value": 16500
@@ -40963,8 +41007,7 @@
 "ss1-altaysky": {
 "date": "2026-11-14",
 "note": "Филиал присутствует в актуальном официальном списке и на странице оплаты школы.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://swim-school-1.ru/basseyni/altayskiy",
 "https://swim-school-1.ru/ceny",
@@ -40997,8 +41040,7 @@
 "ss1-burevestnik-plyushchikha": {
 "date": "2026-11-14",
 "note": "Филиал и актуальный набор подтверждены официальной страницей школы.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://swim-school-1.ru/basseyni/burevestnik"
 ],
@@ -41013,8 +41055,7 @@
 "ss1-dinamo-leningradskoe": {
 "date": "2026-11-14",
 "note": "Филиал и актуальный набор подтверждены официальной страницей школы.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://swim-school-1.ru/basseyni/dinamo"
 ],
@@ -41037,6 +41078,13 @@
 ],
 "status": "works",
 "wrong": {
+"age": {
+"source": "https://swim-school-1.ru/basseyni/fitnespraktika",
+"value": [
+7,
+12
+]
+},
 "price": {
 "source": "https://swim-school-1.ru/basseyni/fitnespraktika",
 "value": 6500
@@ -41097,8 +41145,7 @@
 "ss1-luzhniki": {
 "date": "2026-11-14",
 "note": "Филиал и актуальный набор подтверждены официальной страницей школы.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://swim-school-1.ru/basseyni/lujniki"
 ],
@@ -41268,8 +41315,7 @@
 "stal-fencing-khoroshevsky": {
 "date": "2026-11-14",
 "note": "Проверены официальные сайты и карточки организаций; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://mosfencing.ru/organisation/"
 ],
@@ -41290,16 +41336,18 @@
 "wrong": {}
 },
 "stanislavsky-studio-chernyshevskogo": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "Карточка подтверждена официальным сайтом.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://stanislavsky-studio.com/"
 ],
 "status": "works",
 "wrong": {
+"hours": {
+"source": "https://stanislavsky-studio.com/",
+"value": "сб 11:00-18:00; вс 11:00-18:00"
+},
 "price": {
 "source": "https://stanislavsky-studio.com/",
 "value": 15000
@@ -41357,13 +41405,16 @@
 ],
 "status": "works",
 "wrong": {
+"address": {
+"source": "https://taganskij.mystarfish.ru/",
+"value": "пр-д Шелихова, 2"
+},
 "age": {
 "source": "https://taganskij.mystarfish.ru/",
 "value": [
 0,
 7
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
 },
 "price": {
 "source": "https://taganskij.mystarfish.ru/",
@@ -41473,11 +41524,9 @@
 "wrong": {}
 },
 "strannoe-mesto": {
-"applied": "2026-11-14",
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age, price",
 "sources": [
 "https://stmesto.ru/",
 "https://stmesto.ru/contacts/",
@@ -41490,8 +41539,11 @@
 "value": [
 10,
 17
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"how": {
+"source": "https://stmesto.ru/contacts/",
+"value": "Вход: через ворота бывшего лагеря «Волна», корпус № 1\nОриентир: остановка «Детский санаторий»"
 },
 "price": {
 "source": "https://stmesto.ru/quest/strannoe-mesto/",
@@ -41721,8 +41773,7 @@
 "sun-school-2-filevskaya": {
 "date": "2026-11-13",
 "note": "Официальный источник подтверждает, что место работает; остальные поля не удалось надёжно проверить.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://sunschool.pro/contacts"
 ],
@@ -41865,8 +41916,7 @@
 "swimclub-kosinskaya": {
 "date": "2026-11-14",
 "note": "Работа места подтверждена актуальной страницей источника.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://swimclubteam.ru/",
 "https://yandex.com/maps/213/moscow/house/kosinskaya_ulitsa_12b/Z04YfgRjTEwHQFtvfXtzdXViYQ%3D%3D/inside/"
@@ -42190,8 +42240,7 @@
 "tam-dance-nezhinskaya": {
 "date": "2026-11-14",
 "note": "Действующая студия подтверждена страницей отделения СТК «Динамо» и к��рточкой Яндекс Карт.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://dance-dynamo.ru/nezhinskaya/",
 "https://yandex.by/maps/org/tam_dance_studio/191745143495/"
@@ -42239,12 +42288,18 @@
 "date": "2026-11-14",
 "note": "Работа места подтверждена актуальной страницей источника.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://cdo.moscow/branch/kapoeyra-na-polezhaevskoy-tantsemaniya/"
 ],
 "status": "works",
 "wrong": {
+"age": {
+"source": "https://cdo.moscow/branch/kapoeyra-na-polezhaevskoy-tantsemaniya/",
+"value": [
+4,
+17
+]
+},
 "price": {
 "source": "https://cdo.moscow/branch/kapoeyra-na-polezhaevskoy-tantsemaniya/",
 "value": 500
@@ -42373,16 +42428,26 @@
 "value": [
 3,
 12
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"hours": {
+"source": "https://teikaboom.ru/parks/trts-rivera/",
+"value": "пн-чт 10:00-22:00; пт-сб 10:00-23:00; вс 10:00-22:00"
+},
+"phone": {
+"source": "https://teikaboom.ru/parks/trts-rivera/",
+"value": "+7 (495) 154-64-22"
+},
+"url": {
+"source": "https://teikaboom.ru/parks/trts-rivera/",
+"value": "https://teikaboom.ru/parks/trts-rivera/"
 }
 }
 },
 "teikaboom-crocus-mall": {
 "date": "2026-11-13",
 "note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://teikaboom.ru/parks/trts-krokus-siti-moll/"
 ],
@@ -42401,8 +42466,7 @@
 "teikaboom-kvartal-west": {
 "date": "2026-11-14",
 "note": "Карточка проверена по официальному сайту места.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://teikaboom.ru/parks/mfk-kvartal-west/"
 ],
@@ -42488,8 +42552,7 @@
 "tennis-alfa-ramenskoe": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает детские занятия, но не их возрастные границы.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://alfatennis.ru/"
 ],
@@ -42526,11 +42589,9 @@
 "wrong": {}
 },
 "tennis-art-otradnoe": {
-"applied": "2026-11-14",
 "date": "2026-11-14",
 "note": "Проверено по доступным первоисточникам; неподтверждённые поля оставлены unknown.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://tennisart.ru/zanyatiya_v_abonementnykh_gruppakh",
 "https://www.tennisart.ru/"
@@ -42542,8 +42603,11 @@
 "value": [
 7,
 16
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"phone": {
+"source": "https://www.tennisart.ru/",
+"value": "+7 (916) 040-09-73; +7 (499) 204-24-05"
 }
 }
 },
@@ -42638,11 +42702,22 @@
 "wrong": {
 "age": {
 "source": "https://cooltennis.ru/lapino",
+"value": "Одинцовский г. о., д. Лапино, 1-е Успенское ш., КП «Новое Лапино», 33"
+},
+"age": {
+"source": "https://cooltennis.ru/lapino",
 "value": [
 4,
 14
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"how": {
+"source": "https://cooltennis.ru/lapino",
+"value": "Вход: в здании фитнес-клуба «Лапино», в 2 минутах пешком от входа в КП «Новое Лапино»\nПарковка: сразу на съезде с 1-го Успенского шоссе"
+},
+"phone": {
+"source": "https://cooltennis.ru/lapino",
+"value": "8 (800) 600-83-69"
 },
 "price": {
 "source": "https://cooltennis.ru/lapino",
@@ -42806,8 +42881,7 @@
 "tennis-park-ryazansky": {
 "date": "2026-11-13",
 "note": "Официальный сайт подтверждает адрес, телефон, возраст и платную парковку; правила указывают иной режим работы.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://tennis-park.ru/",
 "https://tennis-park.ru/data/uploads/files/tennis_rules_2024.pdf"
@@ -42904,8 +42978,7 @@
 "tennis-team-nakhabino": {
 "date": "2026-11-14",
 "note": "Яндекс Карты подтверждают действующий клуб; расписание по дням не извлечено.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://yandex.com/maps/org/tennis_team/194518600064/"
 ],
@@ -42948,8 +43021,7 @@
 "tennis-viktori-miklukho": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://victory-tennis.ru/"
 ],
@@ -42997,8 +43069,7 @@
 "tennis-way-shchelkovo": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает работу теннисного клуба, но данные именно филиала в Щёлкове на доступной странице подтвердить не удалось.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://tennis-way.ru/"
 ],
@@ -43186,11 +43257,9 @@
 }
 },
 "tiki-taka-pokhodny": {
-"applied": "2026-11-14",
 "date": "2026-11-14",
 "note": "Актуальность подтверждена официальным сайтом; остальные данные филиала надёжно не подтверждены.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://ttcamp.ru/shodnenskaya"
 ],
@@ -43201,8 +43270,11 @@
 "value": [
 4,
 9
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"url": {
+"source": "https://ttcamp.ru/shodnenskaya",
+"value": "https://ttcamp.ru/shodnenskaya"
 }
 }
 },
@@ -43372,8 +43444,7 @@
 "tochilka-lyubertsy": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает студию и адрес; занятия есть для детей разных возрастов, но единый диапазон не указан.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://tochilka-studio.ru/"
 ],
@@ -43433,8 +43504,7 @@
 "todes-dokukina": {
 "date": "2026-11-14",
 "note": "Филиал подтверждён собственной страницей TODES.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://school.todes.ru/schools/studios/MSC/SVI"
 ],
@@ -43513,8 +43583,7 @@
 "todes-moskovsky": {
 "date": "2026-11-13",
 "note": "Проверены доступные официальные источники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://school.todes.ru/schools/studios/NEW_MSC/MOS"
 ],
@@ -43692,8 +43761,7 @@
 "tour-gzhel": {
 "date": "2026-11-14",
 "note": "В карточке указан другой населённый пункт: официальный адрес экскурсионного производства — село Речицы. Экскурсии принимают ежедневно по временным слотам.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://farfor-gzhel.ru/lp/excursions/"
 ],
@@ -44029,8 +44097,7 @@
 "triumf-mgpu": {
 "date": "2026-11-13",
 "note": "Действующая официальная страница подтверждает указанные поля; остальные данные на ней однозначно не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.triumfswim.ru/"
 ],
@@ -44265,8 +44332,7 @@
 "tsifra-pilyugina": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает центр, ежедневный режим и возраст 1–12 лет.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://cifra-kids.ru/"
 ],
@@ -44337,8 +44403,7 @@
 "tsvetkov-karate-rabochaya": {
 "date": "2026-11-13",
 "note": "Официальная страница подтверждает, что место работает.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://tsvetkov-karate.ru/"
 ],
@@ -44488,7 +44553,6 @@
 "date": "2026-11-14",
 "note": "Официальная страница подтверждает трассу у Николаевки; опубликованный режим относится к 4–8 января, поэтому дан как неизвестный. Возраст в карточке неверен.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://klin-gorizont.ru/tubing"
 ],
@@ -44499,16 +44563,22 @@
 "value": [
 6,
 17
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"phone": {
+"source": "https://klin-gorizont.ru/tubing",
+"value": "+7 (977) 577-35-77"
+},
+"url": {
+"source": "https://klin-gorizont.ru/tubing",
+"value": "https://klin-gorizont.ru/tubing"
 }
 }
 },
 "tube-krasnaya-gorka": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает действующий курорт и тюбинговую трассу; цена и возраст на просмотренной странице не подтверждены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.podolsksnow.ru/"
 ],
@@ -44664,8 +44734,7 @@
 "tvorcheskaya-studiya-4-fili": {
 "date": "2026-11-14",
 "note": "Карточка подтверждена доступным первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.studiya4.com/",
 "https://www.studiya4.com/prices"
@@ -44769,8 +44838,7 @@
 "uchim-risovat-snezhnaya": {
 "date": "2026-11-14",
 "note": "Студия действует под названием школа рисования «Баня»; официальный сайт подробно описывает вход.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://v-bane.com/contacts"
 ],
@@ -44962,7 +45030,6 @@
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает действующий музей; площадь и программа в карточке устарели, детские программы рассчитаны на 6–15 лет.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: age",
 "sources": [
 "https://xn--e1adhj9a.online/"
 ],
@@ -44973,8 +45040,19 @@
 "value": [
 6,
 15
-],
-"why": "сужает возраст — проверить, что это возраст допуска, а не категория билета"
+]
+},
+"hours": {
+"source": "https://xn--e1adhj9a.online/",
+"value": "ежедневно 10:00-18:00"
+},
+"phone": {
+"source": "https://xn--e1adhj9a.online/",
+"value": "+7 (926) 963-50-70; +7 (999) 942-32-35"
+},
+"url": {
+"source": "https://xn--e1adhj9a.online/",
+"value": "https://xn--e1adhj9a.online/"
 }
 }
 },
@@ -45161,8 +45239,7 @@
 "vdnh-kosmos-pavilion": {
 "date": "2026-11-13",
 "note": "Карточка подтверждена первоисточником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://vdnh.ru/cosmos/contact/"
 ],
@@ -45403,8 +45480,7 @@
 "vidnoe-zemlyanichny-gorod": {
 "date": "2026-11-14",
 "note": "Официальный сайт совхоза подтверждает действующий центр и его содержание; точные контакты, режим и адрес центра на просмотренной странице не установлены.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://sovhozlenina.ru/"
 ],
@@ -45483,8 +45559,7 @@
 "viking-fc-nekrasovka": {
 "date": "2026-11-14",
 "note": "Официальный сайт клуба подтверждает отделение в СК «Некрасовский», телефон и наличие парковки.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://dfcviking.ru/news/nekrasovka-football/"
 ],
@@ -45686,11 +45761,9 @@
 "wrong": {}
 },
 "vodny-mir-lyublinskaya": {
-"applied": "2026-11-14",
 "date": "2026-11-14",
 "note": "Официальный сайт указывает занятия для детей от 2 месяцев до 5 лет и бассейн 6×10 м глубиной 1,1 м.",
 "resolved": false,
-"result": "применено автоматически; осталось для сверщика: price",
 "sources": [
 "https://rannee-plavanie.ru/",
 "https://rannee-plavanie.ru/abonementy"
@@ -46367,8 +46440,7 @@
 "wanderia-zhukovsky": {
 "date": "2026-11-13",
 "note": "Проверено по официальному источнику.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://wanderia.ru/"
 ],
@@ -46421,8 +46493,7 @@
 "warpoint-prime-plaza": {
 "date": "2026-11-13",
 "note": "Проверено по официальному источнику.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://msk.warpoint.ru/price"
 ],
@@ -46749,6 +46820,10 @@
 "source": "https://www.koniyauza.ru/adres.html",
 "value": "пн-пт 11:00-21:00; сб-вс летом 10:00-20:00; сб-вс зимой 11:00-17:00"
 },
+"how": {
+"source": "https://www.koniyauza.ru/adres.html",
+"value": "Ориентир: деревянная арка «Лосиный Остров», далее по дороге в лес в горку, налево по основной дороге до красного кирпичного особняка, за ним направо в ворота\nПарковка: бесплатная на ул. Богатырский Мост; въезд в парк на личном транспорте запрещён"
+},
 "price": {
 "source": "https://www.koniyauza.ru/price.html",
 "value": 700
@@ -46807,7 +46882,6 @@
 "wrong": {}
 },
 "yunabum-odintsovo": {
-"applied": "2026-11-14",
 "date": "2026-11-14",
 "note": "Карточка проверена по официальному сайту места.",
 "resolved": false,
@@ -46817,6 +46891,21 @@
 ],
 "status": "works",
 "wrong": {
+"age": {
+"source": "https://unaboom.ru/",
+"value": [
+2,
+14
+]
+},
+"hours": {
+"source": "https://unaboom.ru/",
+"value": "ежедневно 10:00-22:00"
+},
+"phone": {
+"source": "https://unaboom.ru/",
+"value": "+7 (980) 469-79-27"
+},
 "price": {
 "source": "https://unaboom.ru/",
 "value": 900
@@ -47040,8 +47129,7 @@
 "zamania-zelenopark": {
 "date": "2026-11-14",
 "note": "Карточка проверена по официальному сайту места.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://zamania.ru/contacts"
 ],
@@ -47187,8 +47275,7 @@
 "zarinyan-karate-suzdalskaya": {
 "date": "2026-11-13",
 "note": "Карточка подтверждена официальным источником.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://iko-moscow.ru/gyms/shkola-karatie-zms-ashota-zariniana-m-novokosino-stadion-olimp"
 ],
@@ -47218,8 +47305,7 @@
 "zdorovy-rebenok-fryazino": {
 "date": "2026-11-13",
 "note": "Официальная страница найдена; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://zr-friazino.ru/",
 "https://zr-friazino.ru/about/"
@@ -47398,8 +47484,7 @@
 "zhavoronki-msk": {
 "date": "2026-11-13",
 "note": "Проверены доступные первоисточники; неподтверждённые поля оставлены unknown.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://madsarr.mossport.ru/"
 ],
@@ -47422,8 +47507,7 @@
 "zhivopisnaya-marshala-novikova": {
 "date": "2026-11-14",
 "note": "Сайт подтверждает адрес, ежедневные часы, телефон и курсы рисования от 1500 ₽.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://zhivopisnaya-centr.ru/service/art_terapiya/"
 ],
@@ -47609,8 +47693,7 @@
 "zoloto-forta-vegas": {
 "date": "2026-11-14",
 "note": "Официальный сайт подтверждает площадку в VEGAS Каширское.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://zoloto-forta-moscow.ru/"
 ],
@@ -47629,8 +47712,7 @@
 "zolotoy-klyuchik-dmitrovskoe": {
 "date": "2026-11-14",
 "note": "Официальный сайт театра-студии подтверждает адрес и контакты.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://theatre-goldenkey.ru/"
 ],
@@ -47752,8 +47834,7 @@
 "zvezda-dance-playpark": {
 "date": "2026-11-14",
 "note": "Официальная страница филиала указывает возраст 6–14 лет и расписание групп.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://zvezdadance.ru/pro/"
 ],
@@ -47841,8 +47922,7 @@
 "zvezdny": {
 "date": "2026-11-14",
 "note": "Космоцентр принимает по предварительной записи; экскурсии в Музее Центра временно недоступны с 16.06.2025 из-за ремонта.",
-"resolved": true,
-"result": "применено автоматически (GPT со ссылкой)",
+"resolved": false,
 "sources": [
 "https://www.gctc.ru/main.php?id=5746"
 ],
