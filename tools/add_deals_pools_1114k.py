@@ -28,6 +28,11 @@ for pid, where in (("okeanika-tekstilshchiki", "в Текстильщиках (�
     NEW.append(deal(pid, "free", "free", "Первое занятие бесплатно",
                     "Детская школа плавания «Океаника» %s: первое пробное занятие в группе — бесплатно. Для детей от 2 до 15 лет; "
                     "с собой справка для бассейна." % where, "https://okeanika-swim.com/"))
+for pid, where in (("artistic-manhattan", "в бассейне «Манхэттен» у метро «Дмитровская»"),
+                   ("artistic-fitnes-park-izmaylovo", "в «Фитнес Парке» у метро «Партизанская»")):
+    NEW.append(deal(pid, "free", "free", "Пробное занятие бесплатно",
+                    "Клуб синхронного плавания «Артистик» %s: бесплатное пробное занятие. Группы для детей с 4 лет; многодетным "
+                    "семьям — скидка 5 %%." % where, "https://artisticsport.ru/"))
 if __name__ == "__main__":
     ids = set(sys.argv[1:])
     d = json.load(open(P))

@@ -447,23 +447,43 @@ ICONS["volna-olgino"] = W("#FFF4D6", "#FFC2A1", f"""
 SUBJ["volna-olgino"] = ("прозрачный морской ангел клион с крылышками и оранжевым сердечком внутри",
                         "парит, расправив крылышки, в круглом пузыре тёплой бирюзовой воды, фон сливочно-персиковый")
 
-# 26. Школа спортивно-оздоровительного плавания, Рублёвское ш. — рыба-прилипала едет на плавательной доске
-ICONS["shsop-rublevskoe-48"] = W("#D6FFD9", "#6FD08A", f"""
-<path d="M-6 76 Q30 68 64 76 T134 74 V134 H-6Z" fill="#1F6FD1" {s()}/>
-<path d="M34 70 Q30 52 48 50 L104 46 Q120 46 120 60 Q120 74 104 74 L50 78 Q36 80 34 70Z" fill="#FF7A3C" {s()}/>
-<path d="M44 62 H110" stroke="#FFC29E" stroke-width="4" stroke-linecap="round"/>
-<path d="M18 50 L4 38 L8 54 L2 66Z" fill="#3E4A5C" {s(T2)}/>
-<path d="M14 54 Q20 34 50 34 Q80 34 92 48 Q82 60 50 60 Q24 62 14 54Z" fill="#5C6B80" {s()}/>
-<path d="M20 50 Q50 42 88 48" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
-<rect x="60" y="28" width="24" height="8" rx="4" fill="#3E4A5C" {s(T2)}/>
-<path d="M64 28 v8 M70 28 v8 M76 28 v8" stroke="#9FB0C4" stroke-width="2"/>
-{eye(78, 46, 1.0)}
-<path d="M82 54 Q87 56 90 52" fill="none" {s(T2)}/>
-<path d="M10 96 q8 -5 16 0 M48 104 q8 -5 16 0 M90 98 q8 -5 16 0" fill="none" stroke="#9BC4FF" stroke-width="3" stroke-linecap="round"/>
-<path d="M124 52 l8 -4 M124 62 l9 0 M124 72 l8 4" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-""", 30, 20)
-SUBJ["shsop-rublevskoe-48"] = ("серая рыба-прилипала с белой полосой на боку и ребристой присоской на макушке",
-                               "лежит животом на оранжевой плавательной доске и катится на ней по синей воде, фон светло-зелёный")
+# 26. Клуб синхронного плавания «Артистик», «Манхэттен» — пять серебристых корюшек выстроились звездой (вид сверху)
+import math as _m
+_fish = ""
+for _k in range(5):
+    _a = -90 + _k * 72
+    _fish += (f'<g transform="rotate({_a} 64 64) translate(64 64)">'
+              f'<path d="M14 0 Q26 -11 44 -6 Q52 -2 52 0 Q52 2 44 6 Q26 11 14 0Z" fill="#DCE8F2" {s(T2)}/>'
+              f'<path d="M14 0 L4 -7 L6 0 L4 7Z" fill="#9FB6CC" {s(T2)}/>'
+              f'<path d="M22 -3 Q32 -6 44 -3" fill="none" stroke="#7FD0C2" stroke-width="3" stroke-linecap="round"/>'
+              f'<circle cx="46" cy="0" r="2.2" fill="{O}"/></g>')
+ICONS["artistic-manhattan"] = W("#7A4BE0", "#2E1A7A", f"""
+<circle cx="64" cy="64" r="56" fill="#3A6BE8" opacity=".55"/>
+<circle cx="64" cy="64" r="40" fill="none" stroke="#fff" stroke-width="2.6" opacity=".45"/>
+{_fish}
+{sparkle(64, 64, 9, "#FFE27A")}
+{sparkle(20, 22, 5, "#FFE27A")}{sparkle(108, 22, 5, "#FFE27A")}{sparkle(18, 106, 4, "#FFE27A")}{sparkle(110, 104, 4, "#FFE27A")}
+""", 50, 50)
+SUBJ["artistic-manhattan"] = ("пять серебристых рыбок-корюшек с бирюзовой полоской на спинке",
+                              "выстроились в воде звездой хвостами к центру, как синхронистки в фигуре, вид сверху, в середине золотая искра, вода фиолетово-синяя")
+
+# 27. Клуб синхронного плавания «Артистик», «Фитнес Парк» — утка-шилохвость держит «шпагат» лапками над водой
+ICONS["artistic-fitnes-park-izmaylovo"] = W("#FFE9F3", "#FF9CC4", f"""
+<path d="M64 60 L26 22 M64 60 L102 22" fill="none" stroke="{O}" stroke-width="11" stroke-linecap="round"/>
+<path d="M64 60 L26 22 M64 60 L102 22" fill="none" stroke="#8C99A6" stroke-width="6" stroke-linecap="round"/>
+<path d="M26 22 L10 16 L18 30 L12 36Z M102 22 L118 16 L110 30 L116 36Z" fill="#F28B2E" {s(T2)}/>
+<path d="M64 26 L60 6 L64 -2 L68 6Z" fill="#3A3F4A" {s(T2)}/>
+<path d="M44 84 Q44 44 64 26 Q84 44 84 84Z" fill="#fff" {s()}/>
+<path d="M50 84 Q52 56 64 40 Q76 56 78 84Z" fill="#C9D1DA"/>
+<path d="M-6 84 Q30 76 64 84 T134 82 V134 H-6Z" fill="#12A5B5" {s()}/>
+<ellipse cx="64" cy="86" rx="30" ry="6" fill="none" stroke="#fff" stroke-width="3" opacity=".9"/>
+<path d="M64 96 Q60 108 64 118" fill="none" stroke="#6B4A36" stroke-width="9" stroke-linecap="round" opacity=".55"/>
+<circle cx="64" cy="122" r="8" fill="#6B4A36" opacity=".55"/>
+<path d="M14 104 q8 -5 16 0 M98 104 q8 -5 16 0" fill="none" stroke="#BFF5F0" stroke-width="3" stroke-linecap="round"/>
+{sparkle(30, 56, 6)}{sparkle(100, 58, 5)}{sparkle(64, 14, 4)}
+""", 50, 20)
+SUBJ["artistic-fitnes-park-izmaylovo"] = ("серо-белая утка-шилохвость с длинным острым хвостом",
+                                          "нырнула вниз головой и держит над бирюзовой водой «шпагат» — две лапки с оранжевыми ластами врозь и хвост-шило свечкой, фон розовый")
 
 if __name__ == "__main__":
     ids = sys.argv[1:] or list(ICONS)
