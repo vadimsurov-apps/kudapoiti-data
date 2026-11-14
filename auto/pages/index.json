@@ -382211,31 +382211,31 @@
 "url": "https://swimmingmoscow.ru/prices/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "swim-school-1-ru-basseyni-zhivopisniy": {
 "url": "https://swim-school-1.ru/basseyni/zhivopisniy",
 "ok": false,
-"err": "HTTP Error 403: Forbidden",
-"tries": 1
+"err": "HTTP Error 404: Not Found",
+"tries": 2
 },
 "swim-school-1-ru-basseyni-zhivopisnyy": {
 "url": "https://swim-school-1.ru/basseyni/zhivopisnyy",
 "ok": false,
-"err": "HTTP Error 403: Forbidden",
-"tries": 1
+"err": "HTTP Error 404: Not Found",
+"tries": 2
 },
 "kulturaceramics-ru-contacts": {
 "url": "https://kulturaceramics.ru/contacts",
 "ok": false,
-"err": "HTTP Error 403: Forbidden",
-"tries": 1
+"err": "HTTP Error 404: Not Found",
+"tries": 2
 },
 "scduet-ru-contacts": {
 "url": "https://scduet.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "nebesasport-moscow-ru-contacts": {
 "url": "https://nebesasport-moscow.ru/contacts",
@@ -382247,8 +382247,8 @@
 "shito-kai-ru-contacts": {
 "url": "https://shito-kai.ru/contacts",
 "ok": false,
-"err": "HTTP Error 403: Forbidden",
-"tries": 1
+"err": "HTTP Error 404: Not Found",
+"tries": 2
 },
 "www-project-football-com-contacts": {
 "url": "https://www.project-football.com/contacts",
@@ -382473,5 +382473,62 @@
 "pages": 3,
 "bytes": 3636,
 "tries": 0
+},
+"safaripark50-ru": {
+"url": "https://safaripark50.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"safaripark50-ru-contacts": {
+"url": "https://safaripark50.ru/contacts",
+"ok": true,
+"pages": 2,
+"bytes": 7466,
+"tries": 0
+},
+"mk-zoya-ru": {
+"url": "https://mk-zoya.ru/",
+"ok": true,
+"pages": 3,
+"bytes": 11426,
+"tries": 0
+},
+"mk-zoya-ru-contacts": {
+"url": "https://mk-zoya.ru/contacts/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"redpoint-msk-ru-price": {
+"url": "https://redpoint.msk.ru/price",
+"ok": false,
+"err": "<urlopen error [Errno 111] Connection refused>",
+"tries": 1
+},
+"redpoint-msk-ru-contacts": {
+"url": "https://redpoint.msk.ru/contacts",
+"ok": false,
+"err": "<urlopen error [Errno 111] Connection refused>",
+"tries": 1
+},
+"rusrech-ru-contacts": {
+"url": "https://rusrech.ru/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"mintyelephant-tilda-ws-contacts": {
+"url": "https://mintyelephant.tilda.ws/contacts",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"lilaschool-life-masterclass": {
+"url": "https://lilaschool.life/masterclass",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
 }
 }
