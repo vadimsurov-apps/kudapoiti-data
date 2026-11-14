@@ -354963,7 +354963,7 @@
 "url": "https://butterflarium.ru/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "www-muzeon-ru": {
 "url": "https://www.muzeon.ru/",
@@ -354976,13 +354976,13 @@
 "url": "https://ges-2.org/visit",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "illuzion-cinema-ru": {
 "url": "https://illuzion-cinema.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 1
+"tries": 2
 },
 "www-borodino-ru-kontakty": {
 "url": "https://www.borodino.ru/kontakty/",
@@ -354995,13 +354995,61 @@
 "url": "https://zvenmuz.ru/",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 1
+"tries": 2
 },
 "invacon-ru-contacts": {
 "url": "https://invacon.ru/contacts",
 "ok": true,
 "pages": 2,
 "bytes": 2476,
+"tries": 0
+},
+"illusion-cinema-ru-contacts": {
+"url": "https://illusion-cinema.ru/contacts/",
+"ok": true,
+"pages": 2,
+"bytes": 4072,
+"tries": 0
+},
+"illusion-cinema-ru": {
+"url": "https://illusion-cinema.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"butterflarium-ru-kontakty": {
+"url": "https://butterflarium.ru/kontakty/",
+"ok": true,
+"pages": 2,
+"bytes": 4282,
+"tries": 0
+},
+"vdnh-ru-places-dom-babochek": {
+"url": "https://vdnh.ru/places/dom-babochek/",
+"ok": true,
+"pages": 4,
+"bytes": 16000,
+"tries": 0
+},
+"www-culture-ru-institutes-10987-borodinskii-voenno-istoricheskii-muzei-zapovednik": {
+"url": "https://www.culture.ru/institutes/10987/borodinskii-voenno-istoricheskii-muzei-zapovednik",
+"ok": false,
+"err": "HTTP Error 425: ",
+"tries": 1
+},
+"msk-musbot-ru-contacts": {
+"url": "https://msk.musbot.ru/contacts/",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"ges-2-org": {
+"url": "https://ges-2.org/",
+"ok": true,
+"pages": 5,
+"bytes": 14058,
 "tries": 0
 }
 }
