@@ -2,7 +2,7 @@
 python3 tools/sections_1114ze_cards.py"""
 import json, os, re, urllib.parse
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-KEEP = {7,14,20,25,28,36,55,59,65,69,92,93,114,115,123,124,126,133,135,136,140,143,145,147,148,152,165,167,176,178,185,187,191,195,200,203,204,210}
+KEEP = {2,7,20,41,50,59,66,84,85,86,116,119,141,145,163,166,167,175,176,186,197,208,218}
 if __name__ == "__main__":
     C = json.load(open(os.path.join(ROOT, "tools/sections_1114ze_cands.json")))
     urls = []
