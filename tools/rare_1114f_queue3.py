@@ -11,3 +11,10 @@ if __name__ == "__main__":
     old = open(p).read().rstrip("\n").split("\n")
     open(p, "w").write("\n".join(old + [l for l in fq if l not in old]) + "\n")
     print(len(fq))
+# шаг 5: сайты Навка Арены и Арены Сталкер (правила массового катания, возраст, часы)
+SITES = ["https://navkaarena.ru/", "https://navkaarena.ru/katok/", "https://navkaarena.ru/contacts/", "https://arena-stalker.ru/",
+         "https://arena-stalker.ru/contacts/", "https://sharkskills.ru/"]
+if __name__ == "__main__" and "--sites" in __import__("sys").argv:
+    p = os.path.join(ROOT, "auto/fetch-queue.txt")
+    old = open(p).read().rstrip("\n").split("\n")
+    open(p, "w").write("\n".join(old + [l for l in SITES if l not in old]) + "\n")
