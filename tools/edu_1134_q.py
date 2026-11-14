@@ -24,7 +24,7 @@ def near_station(key):
     try: m = float(d.split()[0].replace(",", ".")) * (1000 if "км" in d else 1)
     except ValueError: return None, None
     return st.lower().replace("ё", "е"), m
-MAN = {}
+MAN = {"baby-club-savitskogo": (55.5120, 37.5700)}
 def qid(key): w, n = key.split(":"); return ("edu40g-" if w == "34g" else "edu40-") + n
 Q, MISS = [], []
 for pid, v in SEL.items():
