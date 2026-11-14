@@ -26430,7 +26430,7 @@
       "price_adult": 400,
       "free_note": null,
       "booking": "none",
-      "hours": "по расписанию",
+      "hours": "ежедневно 10:00–03:00",
       "indoor": "yes",
       "food": "yes",
       "changing_table": null,
@@ -26450,10 +26450,39 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": "Внутри ТЦ «Океания»\nЭтаж: 4",
-      "phone": null,
+      "phone": "+7 (495) 419-33-44",
       "season_months": null,
-      "open_mode": "schedule",
-      "open_week": null,
+      "open_mode": "hours",
+      "open_week": [
+        [
+          600,
+          1620
+        ],
+        [
+          600,
+          1620
+        ],
+        [
+          600,
+          1620
+        ],
+        [
+          600,
+          1620
+        ],
+        [
+          600,
+          1620
+        ],
+        [
+          600,
+          1620
+        ],
+        [
+          600,
+          1620
+        ]
+      ],
       "point_level": "вход",
       "point_door": "точка_яндекс"
     },
@@ -26832,59 +26861,6 @@
       "open_week": null,
       "point_level": "вход",
       "point_door": "вход_яндекс"
-    },
-    {
-      "id": "cin-gorizont",
-      "name": "Кинотеатр «Формула Кино Горизонт»",
-      "type": [
-        "кинотеатр"
-      ],
-      "metro": "Фрунзенская",
-      "address": "Комсомольский пр-т, 21/10",
-      "lat": 55.728111,
-      "lon": 37.584349,
-      "age_min": 3,
-      "age_max": 14,
-      "duration_min": 90,
-      "duration_max": 120,
-      "energy": "calm",
-      "loud": "partial",
-      "dark": "yes",
-      "crowded": "partial",
-      "sit_still": "yes",
-      "tags": [
-        "theatre"
-      ],
-      "price_child": 400,
-      "price_adult": 400,
-      "free_note": null,
-      "booking": "none",
-      "hours": "по расписанию",
-      "indoor": "yes",
-      "food": "yes",
-      "changing_table": null,
-      "cloakroom": null,
-      "stroller": "partial",
-      "parking": null,
-      "adult_interest": 2,
-      "plus": "Кинотеатр в Хамовниках",
-      "minus": "Детские сеансы — по расписанию, проверяйте афишу",
-      "url": null,
-      "source": "цена зависит от сеанса; детям до 3 лет часто бесплатно без места",
-      "verified_at": null,
-      "status": "draft",
-      "cats": [
-        "cinema"
-      ],
-      "coord_exact": true,
-      "birthday": null,
-      "how_to_find": null,
-      "phone": null,
-      "season_months": null,
-      "open_mode": "schedule",
-      "open_week": null,
-      "point_level": "вход",
-      "point_door": "объект"
     },
     {
       "id": "cin-kinomax-vodny",
@@ -27729,9 +27705,9 @@
       "tags": [
         "creativity"
       ],
-      "price_child": 0,
+      "price_child": 1500,
       "price_adult": 0,
-      "free_note": null,
+      "free_note": "мастерские для детей и подростков — 1500 ₽ за занятие; квесты для детей и подростков — 1800 ₽",
       "booking": "required",
       "hours": "по записи",
       "indoor": "yes",
@@ -27744,7 +27720,7 @@
       "plus": "Галереи и детский квест-экскурсия «Останови маляра!»",
       "minus": "Экскурсии платные — от 1300 ₽",
       "url": "https://www.winzavod.ru/",
-      "source": "https://t-j.ru/list/moscow-for-teens/; цена «от» за занятие",
+      "source": "https://t-j.ru/list/moscow-for-teens/",
       "verified_at": null,
       "status": "draft",
       "cats": [
@@ -27757,6 +27733,10 @@
       "season_months": null,
       "open_mode": "schedule",
       "open_week": null,
+      "access": {
+        "note": "по данным Яндекс Карт вход для коляски недоступен, помещения — частично доступны",
+        "wheelchair": "no"
+      },
       "point_level": "вход",
       "point_door": "объект"
     },
@@ -29907,10 +29887,10 @@
       "tags": [
         "animals"
       ],
-      "price_child": 1200,
-      "price_adult": 1200,
-      "free_note": null,
-      "booking": "recommended",
+      "price_child": 750,
+      "price_adult": 1500,
+      "free_note": "до 3 лет — бесплатно; детский билет до 13 лет включительно — 750 ₽; с 14 лет — взрослый, 1500 ₽; многодетным семьям — скидка 10 % (взять документы)",
+      "booking": "none",
       "hours": "ежедневно 10:00–16:30",
       "indoor": "no",
       "food": "partial",
@@ -29922,7 +29902,7 @@
       "plus": "Львы, тигры и другие большие кошки в просторных вольерах",
       "minus": "Далеко от Москвы, много ходить",
       "url": "https://lionsland.ru",
-      "source": "OpenStreetMap; акция — с сайта места, проверено 2026-11-04; цена «от»",
+      "source": "OpenStreetMap; акция — с сайта места, проверено 2026-11-04",
       "verified_at": null,
       "status": "draft",
       "cats": [
@@ -30962,7 +30942,7 @@
         "кинотеатр"
       ],
       "metro": "— (на машине / электричке)",
-      "address": null,
+      "address": "Мытищи, ул. Мира, 51",
       "lat": 55.919877,
       "lon": 37.707551,
       "age_min": 3,
@@ -30981,7 +30961,7 @@
       "price_adult": null,
       "free_note": null,
       "booking": "none",
-      "hours": "по расписанию",
+      "hours": "ежедневно 10:00–01:00",
       "indoor": "yes",
       "food": "yes",
       "changing_table": null,
@@ -31003,8 +30983,37 @@
       "how_to_find": "Этаж: 2",
       "phone": null,
       "season_months": null,
-      "open_mode": "schedule",
-      "open_week": null,
+      "open_mode": "hours",
+      "open_week": [
+        [
+          600,
+          1500
+        ],
+        [
+          600,
+          1500
+        ],
+        [
+          600,
+          1500
+        ],
+        [
+          600,
+          1500
+        ],
+        [
+          600,
+          1500
+        ],
+        [
+          600,
+          1500
+        ],
+        [
+          600,
+          1500
+        ]
+      ],
       "point_level": "вход",
       "point_door": "точка_яндекс"
     },
@@ -118623,9 +118632,9 @@
       "tags": [
         "creativity"
       ],
-      "price_child": null,
+      "price_child": 3800,
       "price_adult": null,
-      "free_note": null,
+      "free_note": "индивидуальное занятие АВА-терапии (70–80 мин, с курацией) — 3800 ₽, от 4 часов в неделю; составление индивидуальной АВА-программы — 10 000 ₽",
       "booking": "required",
       "hours": "ежедневно 09:00–19:00",
       "indoor": "yes",
@@ -119063,9 +119072,9 @@
       "tags": [
         "creativity"
       ],
-      "price_child": null,
+      "price_child": 2900,
       "price_adult": null,
-      "free_note": null,
+      "free_note": "логопед от 5 лет и детский психолог — 2900 ₽ (45 мин); логопед при задержке речи — 3250 ₽ (45 мин); АФК и нейропсихолог — 3350 ₽ (45 мин); ESDM/АБА — 3450 ₽ (50 мин); диагностика — 3500–7000 ₽",
       "booking": "required",
       "hours": "пн-пт 10:00–20:00; сб 12:00–16:00",
       "indoor": "yes",
@@ -119091,7 +119100,6 @@
       "how_to_find": "Помещение 9Н",
       "phone": "+7 (980) 464-05-05",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -119352,7 +119360,6 @@
       "how_to_find": null,
       "phone": "+7 (495) 292-32-60",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -119527,7 +119534,6 @@
       "how_to_find": null,
       "phone": "+7 (495) 106-60-11",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -119587,7 +119593,7 @@
       ],
       "price_child": null,
       "price_adult": null,
-      "free_note": null,
+      "free_note": "групповые абонементы на 4 занятия: «Мышематика» 5600–6000 ₽, IT и креативные курсы 8700–9600 ₽, олимпиадная математика 9400–10 400 ₽, олимпиадное программирование 12 700–14 000 ₽; индивидуальные — 14 400–17 200 ₽ за 4 занятия; первое занятие бесплатно",
       "booking": "required",
       "hours": "ежедневно 09:00–20:00",
       "indoor": "yes",
@@ -119612,7 +119618,6 @@
       "how_to_find": "Ориентир: офисное здание Moscow Business School\nПарковка: бесплатная городская рядом со зданием\nЭтаж: 1",
       "phone": "+7 (903) 591-16-59",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -119706,7 +119711,6 @@
       "how_to_find": "Вход: помещение 2, в центре «5 Green Education»",
       "phone": "+7 (495) 150-59-65",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -119799,7 +119803,6 @@
       "how_to_find": null,
       "phone": "+7 (989) 592-52-33",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -120335,7 +120338,6 @@
       "how_to_find": null,
       "phone": "+7 (965) 229-82-54",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -120521,7 +120523,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": null,
+      "how_to_find": "Помещение 17/1",
       "phone": "+7 (919) 102-03-33",
       "season_months": null,
       "open_mode": "hours",
@@ -120968,7 +120970,6 @@
       "how_to_find": null,
       "phone": "+7 (909) 902-22-33",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -121056,7 +121057,6 @@
       "how_to_find": null,
       "phone": "+7 (926) 338-12-82",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -121763,9 +121763,9 @@
       "tags": [
         "creativity"
       ],
-      "price_child": 7200,
+      "price_child": 1500,
       "price_adult": null,
-      "free_note": "подготовка к школе 5–7 лет — 7200 ₽ (абонемент)",
+      "free_note": "мини-сад (4 часа): разовое посещение — 1500 ₽, 3 раза в неделю — 15 000 ₽/мес, 5 дней — 20 000 ₽/мес; развивающие занятия 3–5 лет — абонемент на 8 занятий (2 раза в неделю по 45 мин) 7200 ₽",
       "booking": "required",
       "hours": "пн-пт 09:00–20:00; сб 10:00–14:30",
       "indoor": "yes",
@@ -121792,7 +121792,6 @@
       "how_to_find": null,
       "phone": "+7 (925) 766-40-10",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -122707,7 +122706,7 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Этаж: 2, кабинет 223",
+      "how_to_find": "Этаж: 2, кабинет 213",
       "phone": "+7 (926) 891-51-59",
       "season_months": null,
       "hours_src": "Яндекс Карты",
@@ -122968,7 +122967,6 @@
       "how_to_find": null,
       "phone": "+7 (965) 230-15-91",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -146342,7 +146340,7 @@
         "хаски-парк"
       ],
       "metro": "— (на машине / электричке)",
-      "address": "Московская обл., Рузский городской округ",
+      "address": "Московская обл., Рузский г. о., д. Бараново",
       "lat": 55.622409,
       "lon": 36.250995,
       "age_min": 0,
@@ -146361,8 +146359,8 @@
       "price_child": 800,
       "price_adult": 800,
       "free_note": "экскурсия к хаски и катания — разные тарифы",
-      "booking": "recommended",
-      "hours": "ежедневно 10:00–17:00",
+      "booking": "required",
+      "hours": "вт–вс 10:00–17:00; пн — выходной",
       "indoor": "no",
       "food": "yes",
       "changing_table": null,
@@ -146384,38 +146382,8 @@
       "how_to_find": null,
       "phone": "+7 (926) 211-11-27",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
-      "open_mode": "hours",
-      "open_week": [
-        [
-          600,
-          1020
-        ],
-        [
-          600,
-          1020
-        ],
-        [
-          600,
-          1020
-        ],
-        [
-          600,
-          1020
-        ],
-        [
-          600,
-          1020
-        ],
-        [
-          600,
-          1020
-        ],
-        [
-          600,
-          1020
-        ]
-      ],
+      "open_mode": "unknown",
+      "open_week": null,
       "point_level": "вход",
       "point_door": "точка_яндекс"
     },
@@ -146503,7 +146471,7 @@
         "детский театр"
       ],
       "metro": "Чистые пруды",
-      "address": "ул. Макаренко (новая сцена ДМТЮА)",
+      "address": "Москва, ул. Макаренко, 4, стр. 1",
       "lat": 55.76147353,
       "lon": 37.64759446,
       "age_min": 3,
@@ -146521,7 +146489,7 @@
       ],
       "price_child": null,
       "price_adult": null,
-      "free_note": "билет нужен каждому зрителю, включая детей; цены — в афише",
+      "free_note": "бесплатного входа нет: билет нужен каждому зрителю, включая детей любого возраста",
       "booking": "required",
       "hours": "по расписанию",
       "indoor": "yes",
@@ -146543,10 +146511,15 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": "+7 (495) 625-32-37",
+      "phone": "+7 (495) 699-76-30",
       "season_months": null,
       "open_mode": "schedule",
       "open_week": null,
+      "access": {
+        "lift": "yes",
+        "note": "в здании 4 лифта, но вход для коляски, по данным Яндекс Карт, недоступен",
+        "wheelchair": "no"
+      },
       "point_level": "вход",
       "point_door": "вход_яндекс"
     },
@@ -146664,7 +146637,7 @@
         "музей"
       ],
       "metro": "Петровский парк",
-      "address": "ул. Красноармейская, 4",
+      "address": "Москва, ул. Красноармейская, 4",
       "lat": 55.79728161,
       "lon": 37.54918759,
       "age_min": 0,
@@ -146681,11 +146654,11 @@
         "space",
         "science"
       ],
-      "price_child": null,
-      "price_adult": null,
-      "free_note": null,
+      "price_child": 300,
+      "price_adult": 400,
+      "free_note": "дошкольники — 250 ₽; школьники, студенты, члены многодетных семей — 300 ₽; взрослые — 400 ₽",
       "booking": "none",
-      "hours": "ср–вс 10:00–18:00",
+      "hours": "ср–вс 10:00–18:00 (касса до 17:00); пн, вт — выходной",
       "indoor": "yes",
       "food": "no",
       "changing_table": null,
@@ -146696,7 +146669,7 @@
       "plus": "Модели первых самолётов, ракет и первого спутника; мастер-классы для детей",
       "minus": "Небольшая экспозиция",
       "url": "https://aviacosmosdom.ru/",
-      "source": "OpenStreetMap; сайт aviacosmosdom.ru (проверено 2026-11-05); цену смотрите на сайте",
+      "source": "OpenStreetMap; сайт aviacosmosdom.ru (проверено 2026-11-05)",
       "verified_at": "2026-11-05",
       "status": "draft",
       "cats": [
@@ -146707,31 +146680,8 @@
       "how_to_find": "Этаж: 1",
       "phone": "+7 (495) 614-38-61",
       "season_months": null,
-      "open_mode": "hours",
-      "open_week": [
-        null,
-        null,
-        [
-          600,
-          1080
-        ],
-        [
-          600,
-          1080
-        ],
-        [
-          600,
-          1080
-        ],
-        [
-          600,
-          1080
-        ],
-        [
-          600,
-          1080
-        ]
-      ],
+      "open_mode": "unknown",
+      "open_week": null,
       "point_level": "вход",
       "point_door": "вход_яндекс"
     },
@@ -146962,7 +146912,7 @@
         "детский театр"
       ],
       "metro": "Динамо",
-      "address": null,
+      "address": "Москва, Ленинградский просп., 31, стр. 3",
       "lat": 55.784122,
       "lon": 37.560335,
       "age_min": 3,
@@ -147001,10 +146951,14 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": "Этаж: цокольный",
-      "phone": null,
+      "phone": "+7 (916) 615-16-95",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
+      "access": {
+        "note": "по данным Яндекс Карт вход для коляски недоступен (цокольный этаж)",
+        "wheelchair": "no"
+      },
       "point_level": "вход",
       "point_door": "точка_яндекс"
     },
@@ -147465,7 +147419,7 @@
         "театр"
       ],
       "metro": "Беговая",
-      "address": "ул. Беговая, 5",
+      "address": "Москва, ул. Беговая, 5",
       "lat": 55.776717,
       "lon": 37.554958,
       "age_min": 6,
@@ -147504,7 +147458,7 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": "+7 (495) 945-32-45",
+      "phone": "+7 (499) 728-07-67",
       "season_months": null,
       "open_mode": "unknown",
       "open_week": null,
@@ -148374,7 +148328,7 @@
         "кинотеатр"
       ],
       "metro": "— (на машине / электричке)",
-      "address": "г. Павловский Посад, Павловская ул., 26",
+      "address": "Павловский Посад, Павловская ул., 26 (БЦ «Алёнушка», 6 этаж)",
       "lat": 55.781583,
       "lon": 38.651852,
       "age_min": 3,
@@ -148412,10 +148366,9 @@
       ],
       "coord_exact": true,
       "birthday": null,
-      "how_to_find": "Этаж: 6",
-      "phone": "+7 (496) 435-10-08, +7 (915) 387-48-53",
+      "how_to_find": "Вход: в БЦ «Алёнушка»\nЭтаж: 6",
+      "phone": "+7 (915) 387-48-53",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -149065,7 +149018,7 @@
         "музей"
       ],
       "metro": "— (на машине / электричке)",
-      "address": "г. Балашиха, мкр. Заря, ул. Ленина, 6",
+      "address": "Балашиха, мкр. Заря, ул. Ленина, 6",
       "lat": 55.758526,
       "lon": 38.088197,
       "age_min": 0,
@@ -149085,7 +149038,7 @@
       "price_adult": null,
       "free_note": null,
       "booking": "none",
-      "hours": "ср-вс 10:00–17:00",
+      "hours": "ср–вс 10:00–17:00",
       "indoor": "partial",
       "food": "no",
       "changing_table": null,
@@ -149105,9 +149058,8 @@
       "coord_exact": true,
       "birthday": null,
       "how_to_find": null,
-      "phone": null,
+      "phone": "+7 (498) 665-41-38",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         null,
@@ -206127,6 +206079,363 @@
       "point_door": "вход_яндекс"
     },
     {
+      "id": "chg-tsum",
+      "name": "Пеленальная комната — ЦУМ",
+      "type": [
+        "пеленальная комната"
+      ],
+      "metro": "Театральная",
+      "address": "Москва, ул. Петровка, 2, ЦУМ",
+      "lat": 55.760815,
+      "lon": 37.619865,
+      "age_min": 0,
+      "age_max": 17,
+      "duration_min": 10,
+      "duration_max": 20,
+      "energy": "calm",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "partial",
+      "tags": [],
+      "price_child": 0,
+      "price_adult": 0,
+      "free_note": null,
+      "booking": "none",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": "yes",
+      "cloakroom": null,
+      "stroller": "yes",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Комната матери и ребёнка в ЦУМе на Петровке, в двух шагах от Большого театра",
+      "minus": null,
+      "url": null,
+      "source": "Яндекс Карты, выдача «Комната матери и ребенка, Москва, ул. Петровка, 2, ЦУМ» (кэш auto/pages, fnn-tsum-1114fn, 14.11.2026): первой — «Комната матери и ребенка … Открыто до 10:00 PM», рядом «ЦУМ ПВЗ … Москва, ул. Петровка, 2»; выдача «комната матери и ребенка ЦУМ» (fnk8-1114fn) — комнаты «Открыто до 10:00 PM»; полного графика нет — часы не пишем; точка — объект OSM relation/2669485 «ЦУМ» (shop=department_store, улица Петровка 2, auto/osm-answers.json)",
+      "verified_at": "2026-11-14",
+      "status": "draft",
+      "cats": [
+        "changing"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": null,
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход",
+      "point_door": "объект"
+    },
+    {
+      "id": "chg-park-zaryadye",
+      "name": "Пеленальная комната — парк «Зарядье»",
+      "type": [
+        "пеленальная комната"
+      ],
+      "metro": "Китай-город",
+      "address": "Москва, ул. Варварка, 6, парк «Зарядье»",
+      "lat": 55.750523,
+      "lon": 37.629025,
+      "age_min": 0,
+      "age_max": 17,
+      "duration_min": 10,
+      "duration_max": 20,
+      "energy": "calm",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "partial",
+      "tags": [],
+      "price_child": 0,
+      "price_adult": 0,
+      "free_note": null,
+      "booking": "none",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": "yes",
+      "cloakroom": null,
+      "stroller": "yes",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Комнаты матери и ребёнка в парке «Зарядье» у Кремля",
+      "minus": null,
+      "url": null,
+      "source": "Яндекс Карты, выдача «комната матери и ребенка Парк Зарядье» (кэш auto/pages, fnk17-1114fn, 14.11.2026): «Зарядье … Городской парк», следом «Комната матери и ребёнка … Открыто до 9:00 PM», «Комната матери и ребенка … Открыто до 11:00 PM», «Комната матери и ребёнка … Открыто до 10:00 PM»; выдача «Комната матери и ребенка, Москва, ул. Варварка, 6, парк Зарядье» (fnn-zaryadye-1114fn): «Зарядье», «Комната матери и ребёнка … Открыто до 9:00 PM»; полного графика нет — часы не пишем; точка — объект OSM relation/1555621 «парк «Зарядье»» (leisure=park, auto/osm-answers.json)",
+      "verified_at": "2026-11-14",
+      "status": "draft",
+      "cats": [
+        "changing"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": null,
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход",
+      "point_door": "объект"
+    },
+    {
+      "id": "chg-mega-belaya-dacha",
+      "name": "Пеленальная комната — ТЦ «МЕГА Белая Дача»",
+      "type": [
+        "пеленальная комната"
+      ],
+      "metro": "Котельники",
+      "address": "Котельники, 1-й Покровский пр., 5, ТЦ «МЕГА Белая Дача»",
+      "lat": 55.656206,
+      "lon": 37.845015,
+      "age_min": 0,
+      "age_max": 17,
+      "duration_min": 10,
+      "duration_max": 20,
+      "energy": "calm",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "partial",
+      "tags": [],
+      "price_child": 0,
+      "price_adult": 0,
+      "free_note": null,
+      "booking": "none",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": "yes",
+      "cloakroom": null,
+      "stroller": "yes",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Комната матери и ребёнка в ТЦ «МЕГА Белая Дача» в Котельниках",
+      "minus": null,
+      "url": "https://mega.ru/",
+      "source": "Яндекс Карты, выдача «комната матери и ребенка ТРЦ Kapitoliy Белая Дача» (кэш auto/pages, fnk27-1114fn, 14.11.2026): первой — «Комната матери и ребенка … Открыто до 11:00 PM», следом «Мега … Открыто до 11:00 PM, Торговый центр, Котельники, 1-й Покровский пр., 5, подъезд 1»; карточка ТЦ (fnn-mega-bd-1114fn): «Котельники, 1-й Покровский пр., 5», mega.ru, «Открыто до 11:00 PM»; полного графика нет — часы не пишем; точка — объект OSM relation/9413131 «Мега Белая Дача» (shop=mall, auto/osm-answers.json)",
+      "verified_at": "2026-11-14",
+      "status": "draft",
+      "cats": [
+        "changing"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": null,
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход",
+      "point_door": "объект"
+    },
+    {
+      "id": "chg-park-perovsky",
+      "name": "Пеленальная комната — Перовский парк",
+      "type": [
+        "пеленальная комната"
+      ],
+      "metro": "Перово",
+      "address": "Москва, ул. Лазо, 7, стр. 1, Перовский парк",
+      "lat": 55.741392,
+      "lon": 37.774638,
+      "age_min": 0,
+      "age_max": 17,
+      "duration_min": 10,
+      "duration_max": 20,
+      "energy": "calm",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "no",
+      "sit_still": "partial",
+      "tags": [],
+      "price_child": 0,
+      "price_adult": 0,
+      "free_note": null,
+      "booking": "none",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": "yes",
+      "cloakroom": null,
+      "stroller": "yes",
+      "parking": null,
+      "adult_interest": 1,
+      "plus": "Комната матери и ребёнка в Перовском парке на улице Лазо",
+      "minus": null,
+      "url": null,
+      "source": "Яндекс Карты, выдача «комната матери и ребенка Перовский парк» (кэш auto/pages, fnv-perovsky-1114fn, 14.11.2026): первой — «Комната матери и ребенка … График работы не указан, Инфраструктура отдыха, Москва, ул. Лазо, 7, стр. 1», следом «Перовский парк … Городской парк»; график не указан — часы не пишем; точка — объект OSM relation/9746128 «Перовский парк» (leisure=park, «Москва, улица Лазо, 7», auto/candidates.json)",
+      "verified_at": "2026-11-14",
+      "status": "draft",
+      "cats": [
+        "changing"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": null,
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход",
+      "point_door": "объект"
+    },
+    {
+      "id": "fun-muzey-sovremennoy-istorii",
+      "name": "Музей современной истории России (Тверская, 21)",
+      "type": [
+        "музей"
+      ],
+      "metro": "Тверская",
+      "address": "Москва, Тверская ул., 21, стр. 1",
+      "lat": 55.766114,
+      "lon": 37.601527,
+      "age_min": 0,
+      "age_max": 17,
+      "duration_min": 45,
+      "duration_max": 90,
+      "energy": "calm",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "partial",
+      "sit_still": "partial",
+      "tags": [],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": "Билеты — 150–500 ₽, есть льготные",
+      "booking": "none",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": null,
+      "adult_interest": 3,
+      "plus": "Большой музей истории России XX–XXI веков на Тверской, в двух шагах от Пушкинской площади; есть аудиогид и льготные билеты",
+      "minus": null,
+      "url": "https://sovrhistory.ru/",
+      "source": "Яндекс Карты, карточка «Государственный центральный музей современной истории России» (кэш auto/pages, fnd-sovr-1114fn, 14.11.2026): «Москва, Тверская ул., 21, стр. 1», sovrhistory.ru, «Билеты : 150–500 ₽», «Льготные билеты», «Аудиогид», «Пушкинская 167 м», «Открыто до 8:00 PM» (сб); сайт sovrhistory.ru, «Контакты» (кэш auto/pages, osm-relation-16685841): «Адрес : 125375, Россия, Москва, Тверская ул., дом 21, стр. 1», «Общий телефон : +7 (495) 699-52-17»; график в OSM (вт, чт–вс до 19:00) расходится с Яндексом (сб до 20:00) — часы не пишем; объект OSM relation/16685841 (tourism=museum, Тверская улица 21)",
+      "verified_at": "2026-11-14",
+      "status": "draft",
+      "cats": [
+        "museums"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": "Метро: «Пушкинская» — 170 м",
+      "phone": "+7 (495) 699-52-17",
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход",
+      "point_door": "объект"
+    },
+    {
+      "id": "fun-tankovy-muzey-kubinka",
+      "name": "Танковый музей (Кубинка)",
+      "type": [
+        "музей"
+      ],
+      "metro": "— (на машине / электричке)",
+      "address": "Московская обл., Одинцовский г.о., Кубинка, Танковый музей",
+      "lat": 55.565646,
+      "lon": 36.715028,
+      "age_min": 0,
+      "age_max": 17,
+      "duration_min": 45,
+      "duration_max": 180,
+      "energy": "medium",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "partial",
+      "sit_still": "partial",
+      "tags": [],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": null,
+      "booking": "none",
+      "hours": null,
+      "indoor": "partial",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": null,
+      "adult_interest": 3,
+      "plus": "Огромная коллекция бронетехники в павильонах: тяжёлые танки и САУ СССР, лёгкие танки, иностранная техника — мальчишки и папы уходят отсюда счастливыми",
+      "minus": null,
+      "url": "http://www.mbtvt.ru/",
+      "source": "Яндекс Карты, карточка «Танковый музей» (кэш auto/pages, fno6-1114fn, 14.11.2026): «Танковый музей … Музей, Московская область, Одинцовский городской округ, территориальное управление Кубинка», «Открыто до 7:00 PM» (сб), рядом «Павильон № 1: тяжёлые танки и САУ СССР», «Павильон № 3, лёгкие танки СССР», «Павильон № 5: Бронетанковая техника иностранных государств … Кубинка, городок Кубинка-1», 15039 оценок; полного графика нет — часы не пишем; объект OSM relation/5246176 «Бронетанковый музей в Кубинке», сайт www.mbtvt.ru (auto/candidates.json)",
+      "verified_at": "2026-11-14",
+      "status": "draft",
+      "cats": [
+        "museums"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": null,
+      "phone": null,
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход",
+      "point_door": "объект"
+    },
+    {
+      "id": "fun-podzemny-muzey-zaryadye",
+      "name": "Подземный музей в парке «Зарядье»",
+      "type": [
+        "музей"
+      ],
+      "metro": "Китай-город",
+      "address": "Москва, ул. Варварка, 6, стр. 6, парк «Зарядье»",
+      "lat": 55.750006,
+      "lon": 37.628812,
+      "age_min": 0,
+      "age_max": 17,
+      "duration_min": 45,
+      "duration_max": 60,
+      "energy": "calm",
+      "loud": "no",
+      "dark": "no",
+      "crowded": "partial",
+      "sit_still": "partial",
+      "tags": [],
+      "price_child": null,
+      "price_adult": null,
+      "free_note": "Билеты — 250–500 ₽, есть льготные",
+      "booking": "none",
+      "hours": null,
+      "indoor": "yes",
+      "food": "no",
+      "changing_table": null,
+      "cloakroom": null,
+      "stroller": "partial",
+      "parking": null,
+      "adult_interest": 3,
+      "plus": "Музей прямо под землёй парка «Зарядье», у Варварки — удобно совместить с прогулкой по парку; есть льготные билеты",
+      "minus": null,
+      "url": "https://welcome.zaryadyepark.ru/",
+      "source": "Яндекс Карты, карточка «Подземный музей» (кэш auto/pages, fnd-podzemny-1114fn, 14.11.2026): «Музей», «Москва, ул. Варварка, 6, стр. 6, Парк Зарядье», welcome.zaryadyepark.ru, «Билеты : 250–500 ₽», «Льготные билеты», «Китай-город 580 м», «Открыто до 8:00 PM» (сб); полного графика нет — часы не пишем; объект OSM node/5022259604 «Подземный музей» (tourism=museum, auto/candidates.json, справка verify-3-zaryadye)",
+      "verified_at": "2026-11-14",
+      "status": "draft",
+      "cats": [
+        "museums"
+      ],
+      "coord_exact": true,
+      "birthday": null,
+      "how_to_find": "Метро: «Китай-город» — 580 м",
+      "phone": null,
+      "season_months": null,
+      "open_mode": "unknown",
+      "open_week": null,
+      "point_level": "вход",
+      "point_door": "объект"
+    },
+    {
       "id": "octoskills-fili-grad",
       "name": "Детский бассейн OctoSkills (Фили Град)",
       "type": [
@@ -216894,7 +217203,7 @@
       "url": "https://swim-school-1.ru/",
       "source": "сайт swim-school-1.ru/basseyni/ranhigs (auto/pages): «Бассейн “РАНХиГС”. Группы по плаванию для детей и взрослых лет по адресу: Москва, улица Садовники, дом 4 корпус 2», «Группа №1. Группа для детей. Для начинающих… Понедельник, среда 18:00-18:45 (8 занятий в месяц)… Возраст: 7-13 лет… В месяц 9000», «Группа №5… Для продвинутых… Понедельник, среда 17:45-18:30», «Группа №2… Суббота, воскресенье 10:45-11:30», «Группа №3… Воскресенье 11:30-12:15 (4 занятия в месяц)… В месяц 5500», «Группа №4… Суббота 11:30-12:15», «Индивидуальные занятия… Возраст: 7-13 лет. 1 занятие-3300», «Бассейн «РАНХиГС» расположен по адресу: Москва, улица Садовники, 4 корпус 2. Рядом метро Коломенская. Бассейн включает 6 дорожек по 25 метров», «для детей от 7 лет и взрослых», «У нас есть пробное бесплатное занятие», «+7 (499) 455 58 51»; в общем списке бассейнов школы у «РАНХиГС» стоит другой адрес — «проспект Вернадского, 82с3», карточка взята по странице бассейна (адрес на ней назван трижды, метро «Коломенская») (проверено 2026-11-14)",
       "verified_at": "2026-11-14",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "pools"
       ],
@@ -216903,7 +217212,6 @@
       "how_to_find": null,
       "phone": "+7 (499) 455-58-51",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -217273,7 +217581,9 @@
       ],
       "access": {
         "free": "скидка на абонемент детям с ограниченными возможностями",
-        "programs": "адаптивное плавание для детей с особенностями развития, тренеры-реабилитологи"
+        "parking": "yes",
+        "programs": "адаптивное плавание для детей с особенностями развития, тренеры-реабилитологи",
+        "wheelchair": "yes"
       },
       "point_level": "вход",
       "point_door": "вход_яндекс"
@@ -218287,7 +218597,7 @@
       "url": "https://www.swimrocket.ru/bassein-mgyua/",
       "source": "сайт swimrocket.ru/bassein-mgyua (auto/pages): «Бассейн МГЮА ул. Бакунинская, 13 ст1 в Москве», «Бассейн МГЮА. в Центральном Административном Округе (ЦАО). по адресу ул. Бакунинская, 13 ст1. Бассейн МГЮА. 25 метров, 6 дорожек. Расположен в близости от станций метро Бауманская, Красносельская и Электрозаводская», «Учим плавать взрослых любого возраста и детей от 4 лет», «мы проводим занятия в следующих форматах: Группы по плаванию для взрослых. Группы по плаванию для детей. Индивидуальные занятия по плаванию для взрослых и детей. Групповые и индивидуальные занятия по сухому плаванию», «Кроль. Кроль на спине. Брасс. Дельфин», «+7(495)-132-00-15» (проверено 2026-11-14)",
       "verified_at": "2026-11-14",
-      "status": "draft",
+      "status": "verified",
       "cats": [
         "pools"
       ],
@@ -218296,7 +218606,6 @@
       "how_to_find": null,
       "phone": "+7 (495) 132-00-15",
       "season_months": null,
-      "hours_src": "Яндекс Карты",
       "open_mode": "hours",
       "open_week": [
         [
@@ -284244,7 +284553,7 @@
         "клуб единоборств"
       ],
       "metro": "Рижская",
-      "address": "Трифоновская ул., 56, подъезд 7",
+      "address": "Москва, Трифоновская ул., 56, подъезд 7, цокольный этаж",
       "lat": 55.7895,
       "lon": 37.632258,
       "age_min": 3,
@@ -287148,7 +287457,7 @@
       "adult_interest": 1,
       "plus": "Плавание для детей в группах и персонально, подготовка к стартам и заплывам на открытой воде; бассейн СК «Буревестник» 25 м × 8 дорожек",
       "minus": "Группы и для взрослых",
-      "url": "https://www.swimrocket.ru",
+      "url": "https://www.swimrocket.ru/bassein-burevestnik/",
       "source": "каталог sportschools.ru, «секции для детей у метро Фрунзенская»: «Обучение плаванию детей и взрослых. Персональные и групповые тренировки в бассейне и на открытой воде. Подготовка к соревнованиям по плаванию, заплывам, триатло» (проверено 2026-11-10)",
       "verified_at": "2026-11-10",
       "status": "draft",
