@@ -485,6 +485,28 @@ ICONS["artistic-fitnes-park-izmaylovo"] = W("#FFE9F3", "#FF9CC4", f"""
 SUBJ["artistic-fitnes-park-izmaylovo"] = ("серо-белая утка-шилохвость с длинным острым хвостом",
                                           "нырнула вниз головой и держит над бирюзовой водой «шпагат» — две лапки с оранжевыми ластами врозь и хвост-шило свечкой, фон розовый")
 
+# 28. Детский бассейн «Пять утят» (груднички, один на один с инструктором) — камышница учит плавать пушистого птенца
+ICONS["pyat-utyat-fili"] = W("#FFF9D6", "#FFE27A", f"""
+<path d="M-6 76 Q30 68 64 76 T134 74 V134 H-6Z" fill="#35B8C9" {s()}/>
+<path d="M96 60 L116 48 Q116 66 108 74Z" fill="#fff" {s(T2)}/>
+<path d="M38 80 Q40 54 68 54 Q98 54 108 72 Q100 92 70 92 Q44 92 38 80Z" fill="#3A3F4A" {s()}/>
+<path d="M56 78 Q76 72 98 80" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+<path d="M50 60 Q42 42 46 32" fill="none" stroke="#3A3F4A" stroke-width="12" stroke-linecap="round"/>
+<circle cx="46" cy="30" r="14" fill="#3A3F4A" {s()}/>
+<path d="M34 24 Q28 22 30 32 L20 36 L34 36Z" fill="#F23B3B" {s(T2)}/>
+<path d="M20 36 l-8 2 l8 2Z" fill="#FFD23B" {s(T2)}/>
+<circle cx="44" cy="28" r="4" fill="#fff"/><circle cx="43" cy="28.6" r="2.2" fill="{O}"/>
+<g transform="translate(12 2)"><circle cx="24" cy="92" r="12" fill="#2B2B33" {s()}/>
+<path d="M14 84 l-4 -6 M22 80 l0 -8 M30 82 l4 -6" stroke="{O}" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M12 92 L2 94 L12 98Z" fill="#F23B3B" {s(T2)}/>
+<circle cx="20" cy="90" r="3" fill="#fff"/><circle cx="19.4" cy="90.4" r="1.6" fill="{O}"/>
+<ellipse cx="29" cy="96" rx="3.6" ry="2.2" fill="#FF7FA8" opacity=".8"/></g>
+<path d="M6 108 q8 -5 16 0 M40 112 q8 -5 16 0 M84 108 q8 -5 16 0" fill="none" stroke="#C8F6FB" stroke-width="3" stroke-linecap="round"/>
+<path d="M36 100 q6 -4 12 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+""", 60, 20)
+SUBJ["pyat-utyat-fili"] = ("чёрная водяная курочка камышница с красно-жёлтым клювом и её пушистый чёрный птенец",
+                           "мама плывёт рядом и присматривает, а взъерошенный птенец впервые сам гребёт по бирюзовой воде, небо лимонное")
+
 if __name__ == "__main__":
     ids = sys.argv[1:] or list(ICONS)
     for i in ids:
