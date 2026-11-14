@@ -369302,13 +369302,13 @@
 "url": "https://atmosfera-sport.ru",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 1
+"tries": 2
 },
 "naive-museum-ru-visitors": {
 "url": "https://naive-museum.ru/visitors",
 "ok": false,
-"err": "<urlopen error [Errno 101] Network is unreachable>",
-"tries": 1
+"err": "HTTP Error 404: Not Found",
+"tries": 2
 },
 "tmig-su-afisha": {
 "url": "https://tmig.su/afisha",
@@ -369321,18 +369321,19 @@
 "url": "https://lazertag-kvant.ru",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
-"tries": 1
+"tries": 2
 },
 "dsbg-ru": {
 "url": "https://dsbg.ru/",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 1
+"tries": 2
 },
 "lama-sport-ru": {
 "url": "https://lama-sport.ru/",
-"ok": false,
-"err": "<urlopen error [Errno 101] Network is unreachable>",
+"ok": true,
+"pages": 5,
+"bytes": 13901,
 "tries": 1
 },
 "krasnogorsk-arena-ru": {
@@ -369346,7 +369347,7 @@
 "url": "https://micarena.ru/",
 "ok": false,
 "err": "<urlopen error timed out>",
-"tries": 1
+"tries": 2
 },
 "hurricane-tt-ru": {
 "url": "https://hurricane-tt.ru/",
@@ -369359,36 +369360,67 @@
 "url": "https://volleycrab.ru/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
-"tries": 1
+"tries": 2
 },
 "sharkskills-ru": {
 "url": "https://sharkskills.ru/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
-"tries": 1
+"tries": 2
 },
 "arena-istra-ru": {
 "url": "https://arena-istra.ru/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>",
-"tries": 1
+"tries": 2
 },
 "katok-top-massovoe-katanie": {
 "url": "https://katok.top/massovoe-katanie",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "dsbg-ru-massovoe-katanie": {
 "url": "https://dsbg.ru/massovoe-katanie",
 "ok": false,
 "err": "HTTP Error 403: Forbidden",
-"tries": 1
+"tries": 2
 },
 "www-table-tennis-club-ru": {
 "url": "https://www.table-tennis-club.ru/",
 "ok": false,
 "err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
+"tries": 2
+},
+"www-tretyakovgallery-ru-for-visitors-benefits": {
+"url": "https://www.tretyakovgallery.ru/for-visitors/benefits/",
+"ok": true,
+"pages": 1,
+"bytes": 341,
+"tries": 0
+},
+"muranovo-museum-ru-ru-visitors-tickets": {
+"url": "https://muranovo-museum.ru/ru/visitors/tickets/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"www-wushu-su-kontakty": {
+"url": "https://www.wushu.su/kontakty",
+"ok": false,
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>",
+"tries": 1
+},
+"mplovec-ru-kontakty": {
+"url": "https://mplovec.ru/kontakty/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"agatsukan-ru-kontakty": {
+"url": "https://agatsukan.ru/kontakty/",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
 "tries": 1
 }
 }
