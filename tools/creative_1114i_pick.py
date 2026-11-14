@@ -1,4 +1,4 @@
-"""Точки из справки OSM cr14g-*: объект OSM с названием места → «объект»; иначе входы на контуре здания с номером дома
+"""Точки из справки OSM cr14i-*: объект OSM с названием места → «объект»; иначе входы на контуре здания с номером дома
 из адреса: ровно один вход → «вход»; иначе — «дом» (координаты Яндекса), место скрыто до сверки."""
 import json, os, re, sys, math
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -6,9 +6,9 @@ from creative_1114i_data import D, LL
 PTS = {pid: (ll, "") for pid, ll in LL.items()}
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 A = json.load(open(os.path.join(ROOT, "auto/osm-answers.json")))
-NAMES = {"babydance": ["babydance", "baby dance"], "tanzsreda": ["танц_среда", "танц среда", "tanz"], "mango": ["mango", "манго"],
-         "planeta-place": ["planeta"], "art-keramika": ["art керамика", "арт керамика"], "ya-akter": ["актер", "актёр"], "yaris": ["ярис"],
-         "zigma": ["зигма", "zigma"], "salsa": ["salsa", "сальса"], "emusian": ["эмюзиан", "emusian"]}
+NAMES = {"millenium": ["миллениум", "millenium"], "zhete": ["жете", "jete"], "premiera": ["премьер", "дом актёра", "дом актера"],
+         "deti-rayka": ["райка", "библиотека № 108", "библиотека №108"], "artist": ["артист"], "surik": ["сурик"], "risuem": ["рисуем"],
+         "naydi": ["найди"], "a-golos": ["голос"]}
 def hn(addr):
     m = re.search(r",\s*(\d+[А-Яа-я]?)(?:,\s*(корп\.|стр\.)\s*(\d+))?\s*$", addr)
     if not m: return None
@@ -34,9 +34,10 @@ def on_ring(lat, lon, geom):
     return False
 out = {}
 for pid in D:
-    q = A.get(f"cr14g-{pid}")
+    q = A.get(f"cr14i-{pid}")
     ll = PTS[pid][0]
     if not q:
+        if pid == "naydi-sebya-lesnaya": print("нет ответа", pid); continue
         out[pid] = {"lat": ll[0], "lon": ll[1], "level": "дом", "osm": None, "why": "справки OSM ещё нет"}
         print("нет ответа", pid); continue
     keys = next(v for k, v in NAMES.items() if pid.startswith(k))
@@ -54,10 +55,16 @@ for pid in D:
         b = blds[0]
         ents = [e for e in q["entrances"] if e.get("entrance") and on_ring(e["lat"], e["lon"], b["geom"])]
         ents = list({e["osm"]: e for e in ents}.values())
+    if pid == "naydi-sebya-lesnaya" and blds and "Лесная" not in (blds[0].get("addr:street") or ""): ents = []
     if len(ents) == 1:
         e = ents[0]
         out[pid] = {"lat": e["lat"], "lon": e["lon"], "level": "вход", "osm": e["osm"],
                     "why": f'единственный вход (entrance={e["entrance"]}) здания {blds[0]["osm"]} (дом {blds[0]["addr:housenumber"]})'}
+    elif pid == "naydi-sebya-lesnaya" and blds and "Лесная" in (blds[0].get("addr:street") or ""):
+        b = blds[0]
+        out[pid] = {"lat": b["lat"], "lon": b["lon"], "level": "дом", "osm": b["osm"], "why": f'здание {b["osm"]} (дом {b["addr:housenumber"]}), входов на контуре: {len(ents)}'}
+    elif pid == "naydi-sebya-lesnaya":
+        print("нет здания", pid); continue
     else:
         out[pid] = {"lat": ll[0], "lon": ll[1], "level": "дом", "osm": None,
                     "why": f'здание {"найдено" if blds else "не найдено"} в OSM, входов на контуре: {len(ents)}'}
