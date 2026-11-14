@@ -8,7 +8,9 @@ LINES = ["https://laguna-boba.ru/", "https://laguna-boba.ru/price", "https://dvv
          "https://detskij-bassejn-kitik.clients.site/",
          "https://glubinaswim.ru/", "https://chaikaschool.com/sinhronnoe-plavanie", "https://chaikaschool.com/sportivnoe-plavanie"]
 for i, q in enumerate(["Глубина бассейн обучение плаванию улица Берзарина 32", "Кря-Ква детский бассейн Ступино",
-                       "Аквариум бассейн Луховицы Парковая 1 цены", "Мама, я плыву центр раннего плавания филиалы"]):
+                       "Аквариум бассейн Луховицы Парковая 1 цены", "Мама, я плыву центр раннего плавания филиалы",
+                       "Чайка школа синхронного плавания, Москва, ул. Крылатские Холмы, 15, корп. 2", "Чайка синхронное плавание, Красногорск, Советская ул., 15",
+                       "Чайка, деревня Сосенки, Сосновая ул., 1Б", "Чайка синхронное плавание, Москва, Автозаводская ул., 23А, корп. 4"]):
     LINES.append(Y % (i, urllib.parse.quote(q)))
 if __name__ == "__main__":
     p = os.path.join(ROOT, "auto/fetch-queue.txt")
