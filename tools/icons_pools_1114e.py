@@ -1,6 +1,9 @@
 """Иконки робота pools, 2026-11-14 (05 UTC). Каждая придумана и нарисована отдельно (правило абсолютной
 уникальности): свой герой, своя сцена, своя компоновка и палитра. Герои сверены с реестром icons-src/subjects.txt
 (таких героев в реестре нет), картинки — tools/check_unique.py.
+Записаны svg и строки реестра 14 добавленных мест. Иконки ss1-neptun-federativny (гоголь), ss1-kolomensky (чибис),
+ss1-odintsovo-mozhayskoe (крохаль), flamingo-selyatino (ходулочник), falko-zarechye (ларга), barrakuda-zvenigorod (синхронистка)
+и akvarel-zvenigorod (мандаринка) нарисованы впрок: места не добавлены (нет точки) — при добавлении проверить уникальность заново.
 Запуск: python3 tools/icons_pools_1114e.py [id …]  → python3 tools/render_icons.py <id…> → python3 tools/check_unique.py <id…>."""
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
