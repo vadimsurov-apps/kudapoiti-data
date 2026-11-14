@@ -275,6 +275,196 @@ ICONS["shsop-krylatskoe"] = W("#D9ECFF", "#6FA8F0", f'''
 SUBJ["shsop-krylatskoe"] = ("белая морская птица фаэтон с красным клювом, чёрной бровью и двумя длинными перьями-лентами в хвосте",
                             "плывёт по бирюзовой воде, а перья-ленты хвоста развеваются высоко за спиной, небо голубое")
 
+# ---------- места, ждавшие справку OSM ----------
+# 16. Школа плавания № 1, бассейн МГУСиТ — розовая рыба-капля в плавательных очках
+ICONS["ss1-mgusit"] = W("#C9F2FF", "#4FB6E8", f"""
+<path d="M-6 112 Q30 104 64 112 T134 110 V134 H-6Z" fill="#2E7FC4" {s()}/>
+<path d="M18 86 Q10 46 44 34 Q78 22 102 44 Q122 64 112 90 Q98 110 62 108 Q26 108 18 86Z" fill="#F7B8C4" {s()}/>
+<path d="M52 70 Q62 98 78 72 Q70 62 52 70Z" fill="#F29AAE" {s(T2)}/>
+<path d="M44 92 Q64 102 86 92" fill="none" {s(T3)}/>
+<rect x="28" y="46" width="30" height="20" rx="9" fill="#3EA8F0" {s()}/><rect x="70" y="46" width="30" height="20" rx="9" fill="#3EA8F0" {s()}/>
+<path d="M58 56 H70 M28 54 L16 50 M100 54 L112 50" fill="none" {s(T3)}/>
+<circle cx="44" cy="56" r="4" fill="{O}"/><circle cx="84" cy="56" r="4" fill="{O}"/>
+<path d="M34 50 q5 -3 10 0 M76 50 q5 -3 10 0" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+{BL.format(32, 78)}{BL.format(98, 78)}
+<path d="M112 84 L126 76 L122 96Z" fill="#F29AAE" {s(T2)}/>
+{bub(108, 18, 5)}{bub(20, 22, 3.4)}
+""", 40, 26)
+SUBJ["ss1-mgusit"] = ("розовая рыба-капля с большим носом-картошкой",
+                      "смотрит прямо на зрителя сквозь голубые плавательные очки и довольно улыбается, вода светло-голубая")
+
+# 17. Школа плавания № 1, бассейн железнодорожного университета — жёлтая подлодка идёт по дорожке
+ICONS["ss1-miit"] = W("#0F5E8C", "#062B47", f"""
+<path d="M-4 22 H132" stroke="#FFD23B" stroke-width="5" stroke-dasharray="12 8"/>
+<path d="M-4 112 H132" stroke="#FFD23B" stroke-width="5" stroke-dasharray="12 8"/>
+<path d="M22 70 L6 56 L8 84Z" fill="#E8542A" {s(T2)}/>
+<circle cx="12" cy="70" r="4" fill="#B9C6D1" {s(T2)}/>
+<rect x="56" y="30" width="22" height="22" rx="5" fill="#F2B200" {s()}/>
+<path d="M70 30 V18 H86" fill="none" {s("stroke-width=\"5\"")}/>
+<path d="M70 30 V18 H86" fill="none" stroke="#B9C6D1" stroke-width="2.4"/>
+<rect x="20" y="46" width="94" height="48" rx="24" fill="#FFD23B" {s()}/>
+<path d="M24 78 H110" stroke="#F2B200" stroke-width="4"/>
+<circle cx="46" cy="66" r="9" fill="#BEEBFF" {s(T2)}/><circle cx="70" cy="66" r="9" fill="#BEEBFF" {s(T2)}/>
+{eye(46, 66, 0.9)}{eye(70, 66, 0.9)}
+<path d="M90 70 Q97 76 104 70" fill="none" {s(T2)}/>
+{BL.format(96, 62)}
+{bub(116, 40, 4)}{bub(122, 26, 2.6)}{bub(100, 104, 3)}
+""", 50, 40)
+SUBJ["ss1-miit"] = ("жёлтая подводная лодка с двумя иллюминаторами-глазами, перископом и красным винтом",
+                    "идёт строго по своей дорожке между двумя жёлтыми пунктирными разметками, как поезд по расписанию, вода тёмно-синяя")
+
+# 18. Школа плавания № 1, Центр водных видов спорта (50-метровые бассейны) — огромная белуга на всю дорожку
+ICONS["ss1-motsvs"] = W("#FFE9B8", "#F7A55C", f"""
+<rect x="-6" y="44" width="140" height="90" fill="#1877C9" {s()}/>
+<path d="M-4 60 H132 M-4 110 H132" stroke="#fff" stroke-width="4" stroke-dasharray="6 6"/>
+<path d="M14 86 L-4 70 L0 88 L-6 104Z" fill="#6B7C8C" {s(T2)}/>
+<path d="M10 88 Q30 70 70 70 Q104 70 126 84 Q112 100 70 100 Q30 100 10 88Z" fill="#8FA1B0" {s()}/>
+<path d="M16 90 Q60 98 122 86 Q106 100 70 100 Q34 100 16 90Z" fill="#EEF2F5"/>
+<path d="M30 74 l4 -8 l4 7 M46 71 l4 -8 l4 8 M62 70 l4 -8 l4 8 M78 70 l4 -8 l4 9" fill="#6B7C8C" {s(T2)}/>
+<path d="M106 92 q2 8 -2 12 M114 90 q3 8 0 12" fill="none" {s(T2)}/>
+{eye(104, 82, 1.0)}
+<text x="64" y="34" font-family="Arial" font-weight="700" font-size="22" text-anchor="middle" fill="{O}">50 м</text>
+<path d="M22 28 H40 M88 28 H106 M22 22 V34 M106 22 V34" stroke="{O}" stroke-width="3" stroke-linecap="round"/>
+""", 50, 10)
+SUBJ["ss1-motsvs"] = ("огромная серая белуга с белым брюхом, шипами-жучками вдоль спины и усиками",
+                      "вытянулась во всю длину дорожки между белыми разделителями, над водой размерная стрелка «50 м», небо оранжевое")
+
+# 19. Школа плавания № 1, бассейн «Надежда» — красно-белый буёк с флажком качается на волне
+ICONS["ss1-nadezhda-krupskoy"] = W("#E3FBF3", "#7ADCC0", f"""
+<path d="M64 40 V10" stroke="{O}" stroke-width="5" stroke-linecap="round"/>
+<path d="M64 10 L92 18 L64 28Z" fill="#FFD23B" {s(T2)}/>
+<path d="M40 100 Q34 40 64 38 Q94 40 88 100Z" fill="#F23B3B" {s()}/>
+<path d="M38 74 Q64 66 90 74 L89 92 Q64 84 39 92Z" fill="#fff" {s(T2)}/>
+{eye(54, 58, 1.2)}{eye(74, 58, 1.2)}
+<path d="M58 68 Q64 73 70 68" fill="none" {s(T2)}/>
+{BL.format(46, 66)}{BL.format(82, 66)}
+<path d="M-6 100 Q16 88 38 100 Q64 114 90 100 Q112 88 134 100 V134 H-6Z" fill="#2563C9" {s()}/>
+<path d="M14 112 q8 -5 16 0 M56 118 q8 -5 16 0 M98 112 q8 -5 16 0" fill="none" stroke="#9BC4FF" stroke-width="3" stroke-linecap="round"/>
+<path d="M22 84 q-8 -4 -10 -12 M106 84 q8 -4 10 -12" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+""", 50, 30)
+SUBJ["ss1-nadezhda-krupskoy"] = ("красный буёк-неваляшка с белым пояском и жёлтым флажком на макушке",
+                                 "качается на синей волне и улыбается — до него точно можно доплыть, фон мятно-зелёный")
+
+# 20. Школа плавания № 1, «Орехово-Борисово» — птичка зуёк пробует воду лапкой с бортика
+ICONS["ss1-orekhovo-borisovo"] = W("#FFF0E0", "#F5B98A", f"""
+<path d="M-6 98 H70 V134 H-6Z" fill="#F4F6F8" {s()}/>
+<path d="M12 98 V134 M36 98 V134 M60 98 V134 M-6 116 H70" stroke="#B9C6D1" stroke-width="2.4"/>
+<path d="M70 104 Q90 98 102 104 T134 102 V134 H70Z" fill="#25A7D9" {s()}/>
+<path d="M36 76 L34 98 M34 98 l-8 0 M34 98 l6 2" fill="none" stroke="#F28B2E" stroke-width="4" stroke-linecap="round"/>
+<path d="M50 76 L78 104 M78 104 l8 -2" fill="none" stroke="#F28B2E" stroke-width="4" stroke-linecap="round"/>
+<path d="M16 62 Q20 40 44 42 Q66 44 68 62 Q62 80 42 80 Q22 80 16 62Z" fill="#C9A77C" {s()}/>
+<path d="M22 70 Q42 84 64 70 Q58 80 42 80 Q28 80 22 70Z" fill="#fff"/>
+<path d="M16 62 L2 56 L10 70Z" fill="#8A6A45" {s(T2)}/>
+<circle cx="66" cy="38" r="16" fill="#fff" {s()}/>
+<path d="M50 36 Q66 14 82 36 Q66 28 50 36Z" fill="#C9A77C" {s(T2)}/>
+<path d="M54 50 Q66 58 78 50" fill="none" stroke="#2B2B33" stroke-width="6" stroke-linecap="round"/>
+<path d="M81 36 L96 40 L81 44Z" fill="#F28B2E" {s(T2)}/>
+{eye(70, 38, 1.05)}
+<path d="M84 96 q6 -8 2 -14 M96 100 q8 -4 10 -12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+""", 60, 20)
+SUBJ["ss1-orekhovo-borisovo"] = ("маленькая птичка зуёк песочного цвета с чёрным галстуком на шее и оранжевым клювом",
+                                 "стоит на белом кафельном бортике на одной ноге, а второй лапкой осторожно пробует голубую воду, фон персиковый")
+
+# 21. Школа плавания № 1, бассейн РЭУ им. Плеханова — сомик-анциструс, присосавшись, начищает кафель до блеска
+ICONS["ss1-reu-plekhanova"] = W("#9BE0F2", "#3B9CCB", f"""
+<rect x="-6" y="-6" width="140" height="140" fill="#7CCDE8"/>
+<path d="M-6 32 H134 M-6 64 H134 M-6 96 H134 M32 -6 V134 M64 -6 V134 M96 -6 V134" stroke="#fff" stroke-width="3" opacity=".8"/>
+<path d="M46 96 L26 116 L44 114 L52 126 L60 102Z" fill="#5E4630" {s(T2)}/>
+<path d="M40 100 Q30 60 52 36 Q70 20 88 34 Q100 48 92 72 Q82 100 56 106Z" fill="#8A6A45" {s()}/>
+<circle cx="56" cy="78" r="4" fill="#5E4630"/><circle cx="72" cy="88" r="3" fill="#5E4630"/><circle cx="50" cy="60" r="3" fill="#5E4630"/><circle cx="80" cy="70" r="3.4" fill="#5E4630"/>
+<path d="M44 70 Q26 62 20 74 Q30 82 44 80Z M90 62 Q108 60 110 72 Q100 78 88 74Z" fill="#5E4630" {s(T2)}/>
+<ellipse cx="72" cy="28" rx="15" ry="9" fill="#F4C9A0" {s()}/>
+<path d="M62 24 l-6 -10 M70 20 l-2 -11 M78 20 l4 -10 M84 24 l8 -8" fill="none" {s(T2)}/>
+{eye(60, 46, 1.0)}{eye(82, 44, 1.0)}
+{sparkle(104, 22, 9)}{sparkle(22, 30, 6)}{sparkle(110, 104, 5)}
+""", 50, 50)
+SUBJ["ss1-reu-plekhanova"] = ("коричневый в крапинку сомик-анциструс с ртом-присоской и усиками-щёточкой",
+                              "присосался к голубой кафельной стенке бассейна и начищает плитку — вокруг белые искры чистоты")
+
+# 22. Школа плавания № 1, «Раменки» — уточка чирок с зелёной полосой у глаза лежит на воде звёздочкой
+ICONS["ss1-ramenki"] = W("#3FC6C0", "#147C86", f"""
+<circle cx="64" cy="66" r="50" fill="none" stroke="#fff" stroke-width="3" opacity=".5"/>
+<circle cx="64" cy="66" r="38" fill="none" stroke="#fff" stroke-width="3" opacity=".35"/>
+<path d="M42 54 Q20 44 12 28 Q32 30 48 44Z M86 54 Q108 44 116 28 Q96 30 80 44Z" fill="#9A7B5B" {s()}/>
+<path d="M28 34 Q36 36 42 44 M100 34 Q92 36 86 44" fill="none" stroke="#3FBF6A" stroke-width="5" stroke-linecap="round"/>
+<path d="M52 92 L44 114 L56 108 L60 118 Z M76 92 L84 114 L72 108 L68 118Z" fill="#F28B2E" {s(T2)}/>
+<ellipse cx="64" cy="72" rx="24" ry="28" fill="#E9DCC8" {s()}/>
+<circle cx="56" cy="72" r="2.4" fill="#9A7B5B"/><circle cx="70" cy="80" r="2.4" fill="#9A7B5B"/><circle cx="64" cy="66" r="2.4" fill="#9A7B5B"/><circle cx="58" cy="86" r="2.4" fill="#9A7B5B"/>
+<circle cx="64" cy="38" r="17" fill="#A8572E" {s()}/>
+<path d="M50 34 Q58 28 64 36 Q58 42 50 40Z M78 34 Q70 28 64 36 Q70 42 78 40Z" fill="#2F9E5B" {s(T2)}/>
+<path d="M58 46 Q64 56 70 46Z" fill="#3B3355" {s(T2)}/>
+{eye(56, 36, 0.8)}{eye(72, 36, 0.8)}
+""", 50, 50)
+SUBJ["ss1-ramenki"] = ("уточка чирок с каштановой головой, зелёными полосками у глаз и крапчатым животом",
+                       "лежит на спине на воде «звёздочкой», раскинув крылья и оранжевые лапы, от неё расходятся круги, вода бирюзовая, вид сверху")
+
+# 23. Школа плавания № 1, 50-метровый бассейн РГУФК — птица змеешейка: над водой только длинная шея
+ICONS["ss1-rgufk"] = W("#FFD8E4", "#F285A8", f"""
+<path d="M-6 86 Q30 78 64 86 T134 84 V134 H-6Z" fill="#274B9F" {s()}/>
+<path d="M40 96 Q36 60 56 50 Q76 42 70 26 Q66 16 78 12" fill="none" stroke="{O}" stroke-width="17" stroke-linecap="round"/>
+<path d="M40 96 Q36 60 56 50 Q76 42 70 26 Q66 16 78 12" fill="none" stroke="#5E4630" stroke-width="11" stroke-linecap="round"/>
+<path d="M42 84 Q38 62 54 54" fill="none" stroke="#E9DCC8" stroke-width="4" stroke-linecap="round"/>
+<path d="M82 6 L118 14 L84 18Z" fill="#F2C53B" {s(T2)}/>
+<circle cx="78" cy="12" r="3.4" fill="#fff"/><circle cx="79" cy="12" r="1.9" fill="{O}"/>
+<path d="M-6 100 Q30 92 64 100 T134 98 V134 H-6Z" fill="#3563C4"/>
+<ellipse cx="40" cy="98" rx="16" ry="4" fill="none" stroke="#fff" stroke-width="2.6" opacity=".9"/>
+<path d="M74 110 q8 -5 16 0 M98 104 q8 -5 16 0 M10 112 q8 -5 16 0" fill="none" stroke="#9BB8FF" stroke-width="3" stroke-linecap="round"/>
+<path d="M92 60 l5 2 l-5 2 M104 50 l5 2 l-5 2" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+""", 30, 20)
+SUBJ["ss1-rgufk"] = ("тёмно-коричневая птица змеешейка с длинной S-образной шеей и острым жёлтым клювом",
+                     "плывёт так, что всё тело под водой, а над синей гладью торчит одна изогнутая шея, как перископ, небо розовое")
+
+# 24. Школа плавания № 1, «Ховрино» (только индивидуальные занятия) — зубастая рыба зубатка и тренерский секундомер
+ICONS["ss1-khovrino"] = W("#E5E0FF", "#9C8CF0", f"""
+<path d="M-6 54 Q30 46 64 54 T134 52 V134 H-6Z" fill="#0F8FA8" {s()}/>
+<path d="M8 96 Q4 70 34 68 L86 66 Q116 64 120 86 Q118 108 88 108 L34 112 Q10 114 8 96Z" fill="#6E7FA3" {s()}/>
+<path d="M30 70 q4 20 0 40 M46 69 q4 20 0 40 M62 68 q4 20 0 40" fill="none" stroke="#4E5D80" stroke-width="5"/>
+<path d="M22 68 Q50 50 84 66Z" fill="#4E5D80" {s(T2)}/>
+<path d="M84 92 H118 Q114 104 98 104 Q88 102 84 92Z" fill="#fff" {s(T2)}/>
+<path d="M92 92 v8 M100 92 v10 M108 92 v9" stroke="{O}" stroke-width="2.4"/>
+{eye(96, 80, 1.15)}
+{BL.format(84, 88)}
+<circle cx="98" cy="28" r="17" fill="#FFD23B" {s()}/><circle cx="98" cy="28" r="11" fill="#fff" {s(T2)}/>
+<path d="M98 28 V20 M98 28 L104 31 M92 8 H104 M98 8 V11" fill="none" {s(T2)}/>
+""", 30, 20)
+SUBJ["ss1-khovrino"] = ("серо-синяя полосатая рыба зубатка с широкой улыбкой во все белые зубы",
+                        "плывёт одна по бирюзовой дорожке, а над водой висит жёлтый тренерский секундомер — занятие только для неё, небо сиреневое")
+
+# 25. Семейно-оздоровительный центр «Волна» (груднички с 2 месяцев, тёплая вода) — прозрачный морской ангел клион
+ICONS["volna-olgino"] = W("#FFF4D6", "#FFC2A1", f"""
+<circle cx="64" cy="64" r="46" fill="#7FE0E0" opacity=".9" {s()}/>
+<path d="M22 64 Q44 52 64 64 T106 64" fill="none" stroke="#fff" stroke-width="4" opacity=".8" stroke-linecap="round"/>
+<path d="M50 50 Q22 30 20 54 Q28 66 50 60Z M78 50 Q106 30 108 54 Q100 66 78 60Z" fill="#DDF6FF" {s()}/>
+<path d="M50 44 Q50 26 64 26 Q78 26 78 44 Q80 76 64 100 Q48 76 50 44Z" fill="#EAFBFF" {s()}/>
+<path d="M58 56 Q64 48 70 56 Q72 70 64 82 Q56 70 58 56Z" fill="#FF8A5C"/>
+<path d="M56 26 Q54 16 60 14 M72 26 Q74 16 68 14" fill="none" {s(T2)}/>
+{eye(58, 40, 0.9)}{eye(70, 40, 0.9)}
+<path d="M61 47 Q64 50 67 47" fill="none" {s("stroke-width=\"2\"")}/>
+{BL.format(53, 46)}{BL.format(75, 46)}
+{bub(98, 92, 4)}{bub(30, 90, 3)}
+<path d="M100 14 q6 6 0 12 q-6 6 0 12" fill="none" stroke="#FF8A5C" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+""", 50, 30)
+SUBJ["volna-olgino"] = ("прозрачный морской ангел клион с крылышками и оранжевым сердечком внутри",
+                        "парит, расправив крылышки, в круглом пузыре тёплой бирюзовой воды, фон сливочно-персиковый")
+
+# 26. Школа спортивно-оздоровительного плавания, Рублёвское ш. — рыба-прилипала едет на плавательной доске
+ICONS["shsop-rublevskoe-48"] = W("#D6FFD9", "#6FD08A", f"""
+<path d="M-6 76 Q30 68 64 76 T134 74 V134 H-6Z" fill="#1F6FD1" {s()}/>
+<path d="M34 70 Q30 52 48 50 L104 46 Q120 46 120 60 Q120 74 104 74 L50 78 Q36 80 34 70Z" fill="#FF7A3C" {s()}/>
+<path d="M44 62 H110" stroke="#FFC29E" stroke-width="4" stroke-linecap="round"/>
+<path d="M18 50 L4 38 L8 54 L2 66Z" fill="#3E4A5C" {s(T2)}/>
+<path d="M14 54 Q20 34 50 34 Q80 34 92 48 Q82 60 50 60 Q24 62 14 54Z" fill="#5C6B80" {s()}/>
+<path d="M20 50 Q50 42 88 48" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+<rect x="60" y="28" width="24" height="8" rx="4" fill="#3E4A5C" {s(T2)}/>
+<path d="M64 28 v8 M70 28 v8 M76 28 v8" stroke="#9FB0C4" stroke-width="2"/>
+{eye(78, 46, 1.0)}
+<path d="M82 54 Q87 56 90 52" fill="none" {s(T2)}/>
+<path d="M10 96 q8 -5 16 0 M48 104 q8 -5 16 0 M90 98 q8 -5 16 0" fill="none" stroke="#9BC4FF" stroke-width="3" stroke-linecap="round"/>
+<path d="M124 52 l8 -4 M124 62 l9 0 M124 72 l8 4" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+""", 30, 20)
+SUBJ["shsop-rublevskoe-48"] = ("серая рыба-прилипала с белой полосой на боку и ребристой присоской на макушке",
+                               "лежит животом на оранжевой плавательной доске и катится на ней по синей воде, фон светло-зелёный")
+
 if __name__ == "__main__":
     ids = sys.argv[1:] or list(ICONS)
     for i in ids:
