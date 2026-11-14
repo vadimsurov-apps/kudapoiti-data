@@ -350130,26 +350130,26 @@
 "moscowtyz-ru-visitors": {
 "url": "https://moscowtyz.ru/visitors/",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 2
+"err": "<urlopen error timed out>",
+"tries": 3
 },
 "mplovec-ru-price": {
 "url": "https://mplovec.ru/price/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "prirodcentr-ru-contacts": {
 "url": "https://prirodcentr.ru/contacts/",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "mosparks-ru-about-park-druzhby": {
 "url": "https://mosparks.ru/about/park-druzhby",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 2
+"tries": 3
 },
 "yandex-ru-maps-1-moscow-and-moscow-oblast-fxp-0-1114a-ll-37-40767-2c55-88494-z-17-text-for": {
 "url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?fxp-0=1114a&ll=37.40767%2C55.88494&z=17&text=Fort%20Boyart",
@@ -350491,7 +350491,7 @@
 "url": "https://xn----8sbacgokdt1a3a6c.xn--p1ai/kontakty",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "yandex-ru-maps-1-moscow-and-moscow-oblast-v2x-confirm2-ural-skazy-1114-text-d0-9c-d1-83-d0": {
 "url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?v2x=confirm2-ural-skazy-1114&text=%D0%9C%D1%83%D0%B7%D0%B5%D0%B9%20%D1%83%D1%80%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D1%85%20%D1%81%D0%BA%D0%B0%D0%B7%D0%BE%D0%B2%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B1%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2075%2C%20%D0%BA%D0%BE%D1%80%D0%BF.%202",
@@ -350504,19 +350504,54 @@
 "url": "https://miniswimmer.com/contacts",
 "ok": false,
 "err": "HTTP Error 404: Not Found",
-"tries": 1
+"tries": 2
 },
 "miniswimmer-com-kontakty": {
 "url": "https://miniswimmer.com/kontakty",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
-"tries": 1
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
+"tries": 2
 },
 "yandex-ru-maps-1-moscow-and-moscow-oblast-v2x-confirm2-miniswimmer-1114-text-mini-20swimme": {
 "url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?v2x=confirm2-miniswimmer-1114&text=Mini%20Swimmer%2C%20%D0%9E%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8C%D1%81%D0%BA%D0%B8%D0%B9%2C%20%D1%83%D0%BB.%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%2022",
 "ok": true,
 "pages": 4,
 "bytes": 4878,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-fxe-varshavsky-1114a-text-d0-9c-d0-be-d1-81-d0-b": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?fxe-varshavsky=1114a&text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%92%D0%B0%D1%80%D1%88%D0%B0%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%2C%2087%D0%91",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-fxe-newriga-1114a-text-d0-98-d1-81-d1-82-d1-80-d": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?fxe-newriga=1114a&text=%D0%98%D1%81%D1%82%D1%80%D0%B0%2C%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BD%D1%8F%20%D0%9F%D0%BE%D0%BA%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5%2C%20%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2033",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-fxe-waypark-1114a-text-d0-9f-d1-83-d1-82-d0-b8-d": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?fxe-waypark=1114a&text=%D0%9F%D1%83%D1%82%D0%B8%D0%BB%D0%BA%D0%BE%D0%B2%D0%BE%2C%20%D0%9C%D0%9A%D0%90%D0%94%2071-%D0%B9%20%D0%BA%D0%B8%D0%BB%D0%BE%D0%BC%D0%B5%D1%82%D1%80%2C%2016%D0%90",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-fxe-mari-1114a-text-d0-9c-d0-be-d1-81-d0-ba-d0-b": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?fxe-mari=1114a&text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9F%D0%BE%D1%80%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2010",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
+"tries": 0
+},
+"yandex-ru-maps-1-moscow-and-moscow-oblast-fxe-lovemall-1114a-text-d0-9c-d0-be-d1-81-d0-ba": {
+"url": "https://yandex.ru/maps/1/moscow-and-moscow-oblast/?fxe-lovemall=1114a&text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9B%D1%8E%D0%B1%D0%BB%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%20153",
+"ok": true,
+"pages": 5,
+"bytes": 16000,
 "tries": 0
 }
 }
