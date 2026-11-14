@@ -369307,7 +369307,7 @@
 "naive-museum-ru-visitors": {
 "url": "https://naive-museum.ru/visitors",
 "ok": false,
-"err": "HTTP Error 404: Not Found",
+"err": "<urlopen error [Errno 101] Network is unreachable>",
 "tries": 1
 },
 "tmig-su-afisha": {
@@ -369321,6 +369321,74 @@
 "url": "https://lazertag-kvant.ru",
 "ok": false,
 "err": "<urlopen error [Errno -2] Name or service not known>",
+"tries": 1
+},
+"dsbg-ru": {
+"url": "https://dsbg.ru/",
+"ok": false,
+"err": "HTTP Error 403: Forbidden",
+"tries": 1
+},
+"lama-sport-ru": {
+"url": "https://lama-sport.ru/",
+"ok": false,
+"err": "<urlopen error [Errno 101] Network is unreachable>",
+"tries": 1
+},
+"krasnogorsk-arena-ru": {
+"url": "https://krasnogorsk-arena.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 6877,
+"tries": 0
+},
+"micarena-ru": {
+"url": "https://micarena.ru/",
+"ok": false,
+"err": "<urlopen error timed out>",
+"tries": 1
+},
+"hurricane-tt-ru": {
+"url": "https://hurricane-tt.ru/",
+"ok": true,
+"pages": 5,
+"bytes": 6791,
+"tries": 0
+},
+"volleycrab-ru": {
+"url": "https://volleycrab.ru/",
+"ok": false,
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1081)>",
+"tries": 1
+},
+"sharkskills-ru": {
+"url": "https://sharkskills.ru/",
+"ok": false,
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
+"tries": 1
+},
+"arena-istra-ru": {
+"url": "https://arena-istra.ru/",
+"ok": false,
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>",
+"tries": 1
+},
+"katok-top-massovoe-katanie": {
+"url": "https://katok.top/massovoe-katanie",
+"ok": false,
+"err": "HTTP Error 404: Not Found",
+"tries": 1
+},
+"dsbg-ru-massovoe-katanie": {
+"url": "https://dsbg.ru/massovoe-katanie",
+"ok": false,
+"err": "HTTP Error 403: Forbidden",
+"tries": 1
+},
+"www-table-tennis-club-ru": {
+"url": "https://www.table-tennis-club.ru/",
+"ok": false,
+"err": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f",
 "tries": 1
 }
 }
